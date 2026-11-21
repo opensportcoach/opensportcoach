@@ -13,10 +13,9 @@
 <h3 align="center">A personal coach for strength, endurance, races and fuelling — that reads your watch,<br>plans your week, reviews every session, and puts the workout on your wrist.</h3>
 
 <p align="center">
-  <a href="#-try-it-in-one-minute">Try the demo</a> ·
-  <a href="#-what-it-does">Features</a> ·
-  <a href="#-set-it-up">Set it up</a> ·
-  <a href="#-how-it-works">How it works</a> ·
+  <a href="#what-it-does">Features</a> ·
+  <a href="#set-it-up">Set it up</a> ·
+  <a href="#how-it-works">How it works</a> ·
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
 
@@ -37,19 +36,7 @@ It is not a training-plan template and not another dashboard. It is a coach you 
 Everything runs **on your own computer**. Your training and health data never comes to us — there is no
 "us": no server, no account, no subscription. It's free and open source (Apache-2.0).
 
-## ⚡ Try it in one minute
-
-See the app with **Rocky**, a synthetic athlete, before you connect anything of your own:
-
-```bash
-git clone https://github.com/opensportcoach/opensportcoach.git && cd opensportcoach
-(cd app/channel && npm ci) && cd app/web && npm ci && npm run dev
-```
-
-Open **http://localhost:5173** and click around: Today, the season, a swim review, the plan board. Ask
-the (mock) coach to *Plan my week*. Needs Node.js 24+ — no data of yours, no Claude account.
-
-## 🏆 What it does
+## What it does
 
 ### Today's call — train, adapt or rest, with the reasons
 
@@ -147,7 +134,7 @@ your phone and in both themes, and an opt-in, read-only briefing can follow you 
 - **Nothing reaches your watch without your yes**, after a validation gate and the full test suite.
 - **It never invents data.** If a pull fails, it says so.
 
-## 🔌 Works with your setup
+## Works with your setup
 
 | | **Garmin** | **Any device — your own files** | **Strava** (subscribers) |
 |---|:---:|:---:|:---:|
@@ -165,7 +152,7 @@ sources hold the same session, the duplicate is detected and the weaker copy dro
 > **Why not the Strava API?** Strava's API terms forbid putting its data into an AI model. Its own MCP
 > connector and your own exported files are the routes Strava allows — so they're the only ones we use.
 
-## 🚀 Set it up
+## Set it up
 
 **You need:** macOS or Linux · Python 3.12+ · Node.js 24+ · [Claude Code](https://claude.com/claude-code)
 with a Claude plan that includes it · about 15 minutes.
@@ -213,7 +200,7 @@ Say **"Hi, I'm Rocky — set me up."** (with your own name). The coach runs one 
 
 More in [`GUIDE.md`](GUIDE.md): what you can say, the weekly rhythm, what to do when a number looks wrong.
 
-## 🧠 How it works
+## How it works
 
 ```mermaid
 flowchart LR
@@ -240,7 +227,7 @@ flowchart LR
 Design notes: [`docs/DESIGN.md`](docs/DESIGN.md) · the daily loop and its gates:
 [`WORKFLOW.md`](WORKFLOW.md) · Garmin workout formats: [`workouts/FORMAT.md`](workouts/FORMAT.md).
 
-## 🔒 Your data stays yours
+## Your data stays yours
 
 - Everything about you lives in `athletes/<you>/` and `data/<you>/` on your computer. **This repository
   ignores both** — they are never committed here. Want version history? Make `athletes/` your own
@@ -252,7 +239,7 @@ Design notes: [`docs/DESIGN.md`](docs/DESIGN.md) · the daily loop and its gates
 - What the coach reads is sent to your AI provider under **your** agreement with them — read their
   privacy terms.
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md). What would help most: more devices
 and file formats, more sports' workout formats, translations of the app, and tests. Never include anyone's
@@ -260,7 +247,7 @@ real training or health data — the synthetic athlete Rocky is there for that.
 
 Found a security or privacy problem? Please report it privately: [`SECURITY.md`](SECURITY.md).
 
-## ⚖️ License, disclaimer and trademarks
+## License, disclaimer and trademarks
 
 [Apache License 2.0](LICENSE) — see [`NOTICE`](NOTICE). **OpenSportCoach is not medical advice and comes
 with no warranty; you train at your own risk** — read [`DISCLAIMER.md`](DISCLAIMER.md).
