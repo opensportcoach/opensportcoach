@@ -2,7 +2,7 @@
 """One-time interactive Garmin Connect login for ONE athlete — the athlete types it themselves.
 
     cd ~/opensportcoach
-    .venv/bin/python scripts/login.py --athlete alex
+    .venv/bin/python scripts/login.py --athlete rocky
 
 Prompts for THAT PERSON's Garmin email and password (hidden) and an MFA code if Garmin asks.
 Claude never types these — the person does, in their own terminal. Tokens are saved to

@@ -1,6 +1,6 @@
 /** The execution score in the app (docs/DESIGN.md (fuelling and score) §5–6; boards Score-Badge, Score-Card, Score-States).
  * Every number and sentence is scripts/session_score.py's: the demo fixtures carry the engine's output for
- * Alex's sessions (a gym day done as planned, rides with nothing planned, a swim and sports it has no rule
+ * Rocky's sessions (a gym day done as planned, rides with nothing planned, a swim and sports it has no rule
  * for), and app/fixtures/score/cases.json the engine's output for synthetic sessions — a Mostly gym day
  * with an exercise not started, an interval ride, an Unclear ride, a provisional one. The page adds up
  * nothing and phrases nothing. */

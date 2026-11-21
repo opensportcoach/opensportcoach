@@ -3,7 +3,6 @@
 #
 # Usage: ./scripts/coach.sh [--spike] [claude args...]
 #   --spike   two throwaway athletes (ann, bob) in a temp folder: nothing real is touched.
-#             Follow app/channel/SPIKE.md.
 #
 # Run it in a terminal (Terminal.app, or the desktop app's terminal panel). The channel needs the
 # development-channel flag during the research preview, and Claude Code shows a warning dialog for
@@ -69,7 +68,7 @@ if [ "${1:-}" = "--spike" ]; then
   echo '{"athlete": "bob"}' > "$SPIKE/data/sessions/sess-bob-spike"   # for the "second athlete" check
   export OSC_ATHLETES_ROOT="$SPIKE/athletes" OSC_DATA_ROOT="$SPIKE/data"
   echo "SPIKE — throwaway athletes Ann and Bob in $SPIKE. Nothing real is touched."
-  echo "Follow app/channel/SPIKE.md."
+  echo "Say \"ann — run the app\" in the session; nothing real is read or written."
 fi
 
 # The MCP config is written per launch, with absolute paths, so it works from any shell.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the synthetic Demo athlete ("Alex") and write the app's fixtures FROM THE REAL ENGINE.
+"""Build the synthetic Demo athlete ("Rocky") and write the app's fixtures FROM THE REAL ENGINE.
 
     .venv/bin/python app/fixtures/make_demo.py            # writes app/fixtures/demo/
     .venv/bin/python app/fixtures/make_demo.py --keep /tmp/demo-root   # also keep the athlete tree
@@ -30,7 +30,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 PY = str(REPO / ".venv" / "bin" / "python")
-NAME, DISPLAY = "demo", "Alex"
+NAME, DISPLAY = "demo", "Rocky"
 # Real Zwift workouts, read off their pages with scripts/zwift_workouts.py (2026-11-05): every planned
 # Zwift ride names one (memory/convention/zwift-workout-named.md), the demo's too.
 ZWIFT = {
@@ -45,7 +45,7 @@ TODAY = dt.date.today()
 SPARSE = False
 
 # --- the program -----------------------------------------------------------------------------
-PROGRAM_PY = '''"""Alex's program — SYNTHETIC, for the app's fixtures (app/fixtures/make_demo.py)."""
+PROGRAM_PY = '''"""Rocky's program — SYNTHETIC, for the app's fixtures (app/fixtures/make_demo.py)."""
 from __future__ import annotations
 
 BLOCK = {{"name": "Hypertrophy", "start": "{block_start}", "weeks": 16}}
@@ -167,7 +167,7 @@ SEASON = {{"race": "coastline-703", "blocks": [
 
 # The Demo athlete's swim and circuit, declared as any athlete's are (scripts/workout_dsl.py). The latest
 # swim and the circuit below follow them, so their workout pages carry a review (scripts/session_review.py).
-SESSIONS_PY = '''"""Alex's swim and conditioning circuit — synthetic, for the app's fixtures."""
+SESSIONS_PY = '''"""Rocky's swim and conditioning circuit — synthetic, for the app's fixtures."""
 from workout_dsl import Repeat, Rest, Station, Swim, circuit_workout, swim_workout
 
 WORKOUTS = {
@@ -216,7 +216,7 @@ def scaffold(root: Path, env: dict) -> Path:
     run(["scripts/new_athlete.py", NAME, "--display", DISPLAY], env)
     a = root / "athletes" / NAME
     cfg = json.loads((a / "athlete.json").read_text())
-    cfg["garmin"] = {"display_name": f"demo-{DISPLAY.lower()}", "full_name": f"{DISPLAY} M."}
+    cfg["garmin"] = {"display_name": f"demo-{DISPLAY.lower()}", "full_name": f"{DISPLAY} B."}
     cfg["managed_workouts"] = ["d1", "d2", "d3"]
     cfg["protected_workout_ids"] = [111, 112, 113]
     cfg["app"] = {"accent": "#9DC4EE"}
@@ -757,7 +757,7 @@ def endurance_review(env: dict, a: Path) -> dict | None:
 
 
 def write_fuel(a: Path, data: Path) -> None:
-    """Alex's fuel (docs/DESIGN.md (fuelling and score)): real products from the shared catalog, a bottle recipe, a gut
+    """Rocky's fuel (docs/DESIGN.md (fuelling and score)): real products from the shared catalog, a bottle recipe, a gut
     trained to 60 g/h — set up a month ago — and the latest ride logged; the one before it is left
     unlogged, so it asks to be logged (the Workouts filter). The new athlete has no setup."""
     if SPARSE:
@@ -870,7 +870,7 @@ def results() -> dict:
                                "from": (nxt + dt.timedelta(days=4)).isoformat(), "to": (nxt + dt.timedelta(days=5)).isoformat()}],
                           "needs_push": True},
         "push_plan": {"kind": "push_plan", "request_id": "r3", "athlete": NAME, "display": DISPLAY,
-                      "garmin_account": "Alex M.", "protected": 3, "script": "sync",
+                      "garmin_account": "Rocky B.", "protected": 3, "script": "sync",
                       "actions": [{"verb": "replace", "workout": "D1 · Push", "key": "d1", "old_id": 4101,
                                    "dates": [nxt.isoformat()]},
                                   {"verb": "replace", "workout": "D3 · Legs", "key": "d3", "old_id": 4103,
@@ -878,7 +878,7 @@ def results() -> dict:
                                   {"verb": "in_sync", "workout": "D2 · Pull", "key": "d2", "old_id": 4102, "dates": []}],
                       "plan_hash": "3f9a1c0d7e52b6a4"},
         "push_result": {"kind": "push_result", "request_id": "r3", "plan_hash": "3f9a1c0d7e52b6a4", "ok": True,
-                        "in_sync": True, "message": "2 of 2 changes verified on Alex M.",
+                        "in_sync": True, "message": "2 of 2 changes verified on Rocky B.",
                         "actions": [{"verb": "replace", "workout": "D1 · Push", "date": nxt.isoformat(), "status": "verified"},
                                     {"verb": "replace", "workout": "D3 · Legs", "date": (nxt + dt.timedelta(days=5)).isoformat(),
                                      "status": "verified"}]},

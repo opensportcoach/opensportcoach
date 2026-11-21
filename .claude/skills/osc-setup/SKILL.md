@@ -15,7 +15,7 @@ file. **Ask; never assume.** Their answer outranks any default.
   unfinished setup. Run `.venv/bin/python scripts/setup_status.py` and go to the first open section.
 - If the session is bound to **someone else**: stop. A session is never rebound; they start a new one.
 - If it is unbound and they are new: ask the name they want to be called and a short folder name
-  (lowercase, e.g. `alex`). Ask **step 2** (data source) first — the scaffold needs it — then:
+  (lowercase, e.g. `rocky`). Ask **step 2** (data source) first — the scaffold needs it — then:
 
 ```bash
 .venv/bin/python scripts/new_athlete.py <name> --display <Name> --sources <garmin | files | files,strava>

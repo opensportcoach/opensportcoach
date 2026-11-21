@@ -2,8 +2,8 @@
  "kind": "push_plan",
  "request_id": "r3",
  "athlete": "demo",
- "display": "Alex",
- "garmin_account": "Alex M.",
+ "display": "Rocky",
+ "garmin_account": "Rocky B.",
  "protected": 3,
  "script": "sync",
  "actions": [

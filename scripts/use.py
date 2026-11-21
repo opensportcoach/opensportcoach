@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Lock THIS Claude session to one athlete. Run once, at the start of a session.
 
-    .venv/bin/python scripts/use.py alex
+    .venv/bin/python scripts/use.py rocky
 
 WHY (2026-09-24). Several athletes can use the same folder, the same Mac and the same macOS user,
 and never at the same time. So a session does not know who it is coaching until someone says so,

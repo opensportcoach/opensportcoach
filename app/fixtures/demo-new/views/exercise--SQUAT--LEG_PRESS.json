@@ -1,7 +1,7 @@
 {
  "view": "exercise",
  "athlete": "demo",
- "generated_at": "2026-11-21T14:16:15",
+ "generated_at": "2026-11-21T15:15:18",
  "category": "SQUAT",
  "name": "LEG_PRESS",
  "label": "Leg Press",
@@ -35,7 +35,7 @@
    "weight": 120.0,
    "reps": 12,
    "since": "2026-11-21",
-   "since_ts": "2026-11-21 14:16:12",
+   "since_ts": "2026-11-21 15:15:15",
    "changes": []
   }
  ],

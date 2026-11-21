@@ -1,4 +1,5 @@
-garminconnect[workout]
-curl_cffi
-garmin-fit-sdk
+# Exact versions, tested by CI. Dependabot proposes updates as pull requests, which CI tests first.
+garminconnect[workout]==0.3.20
+curl_cffi==0.17.0
+garmin-fit-sdk==21.222.0
 jsonschema==4.23.0

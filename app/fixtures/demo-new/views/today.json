@@ -1,7 +1,7 @@
 {
  "view": "today",
  "athlete": "demo",
- "generated_at": "2026-11-21T14:16:13",
+ "generated_at": "2026-11-21T15:15:16",
  "today": {
   "date": "2026-11-20",
   "readiness": {
@@ -2670,8 +2670,8 @@
   "due": []
  },
  "freshness": {
-  "data_as_of": "2026-11-21T14:16:13",
-  "cache": "cache as of 2026-11-21 14:16",
+  "data_as_of": "2026-11-21T15:15:15",
+  "cache": "cache as of 2026-11-21 15:15",
   "warnings": [],
   "coach_ran": null
  },

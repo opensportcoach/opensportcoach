@@ -851,7 +851,7 @@ def test_app_fixtures_build_and_honour_their_contracts():
                     assert set(v["reviews"]) <= entries, (v["id"], v["reviews"], entries)
                 ride = next(v for v in views.values() if v["group"] == "bike")
                 assert ride["reviews"] == [f"{ride['date']}-{ride['id']}-review.md"], ride["reviews"]
-                # Its fuel: logged by Alex — a bottle and a gel, 80 g — through fuel.py (make_demo.write_fuel).
+                # Its fuel: logged by Rocky — a bottle and a gel, 80 g — through fuel.py (make_demo.write_fuel).
                 assert ride["fuel"]["taken"]["g"] == 80 and ride["fuel"]["taken"]["source"] == "you", ride["fuel"]
                 assert not ride["fuel"]["due"] and ride["fuel"]["pantry"], ride["fuel"]
                 for v in views.values():
@@ -861,7 +861,7 @@ def test_app_fixtures_build_and_honour_their_contracts():
                 cv = json.loads((Path(tmp) / "views" / "calendar.json").read_text())
                 assert [x["title"] for x in cv["planned"]] == ["Zwift · VO2 45 min", "Long ride · Z2"], cv.get("planned")
                 # Each names its intent, and its fuel comes from it (docs/DESIGN.md (fuelling and score) §4.3): the 45-minute
-                # VO2 ride needs none, the 150-minute long ride is planned in Alex's own products.
+                # VO2 ride needs none, the 150-minute long ride is planned in Rocky's own products.
                 vo2, long_ride = cv["planned"]
                 assert vo2["intent"] == "vo2" and vo2["fuel"]["needed"] is False, vo2["fuel"]
                 assert long_ride["fuel"]["needed"] and long_ride["fuel"]["items"], long_ride["fuel"]

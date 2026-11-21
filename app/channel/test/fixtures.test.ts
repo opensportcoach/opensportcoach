@@ -24,7 +24,7 @@ test('fixtures mode serves the Demo views and a mock coach end to end', async ()
   try {
     await until(async () => (await fetch(`${BASE}/api/state`).catch(() => undefined))?.ok || undefined);
     const state = await (await fetch(`${BASE}/api/state`)).json();
-    assert.equal(state.display, 'Alex');
+    assert.equal(state.display, 'Rocky');
     assert.equal(state.mode, 'fixtures');
     assert.equal(state.outdated, false, 'a server just started runs the code on disk');
     const today = await (await fetch(`${BASE}/api/views/today`)).json();

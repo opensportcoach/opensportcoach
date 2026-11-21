@@ -66,7 +66,7 @@ export const fuelChecked = () => vi.fn(async (action: 'log' | 'setup', body: unk
 
 export function store(over: Partial<Store> = {}, state: Partial<AppState> = {}): Store {
   return {
-    state: { athlete: 'demo', display: 'Alex', garmin_account: 'Alex M.', mode: 'fixtures', coach: 'online', requests: [],
+    state: { athlete: 'demo', display: 'Rocky', garmin_account: 'Rocky B.', mode: 'fixtures', coach: 'online', requests: [],
       status: null, refresh: { state: 'idle' }, ...state },
     error: null, dataVersion: 0, refreshing: false, views: new ViewCache(),
     ask: askChecked(), confirm: vi.fn(async () => ({}) as never), refresh: vi.fn(async () => undefined), fuel: fuelChecked(),

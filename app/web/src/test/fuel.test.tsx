@@ -1,6 +1,6 @@
 /** Fuel in the app (docs/DESIGN.md (fuelling and score) §6): the workout page's Fuel card — planned beside taken, the log
  * form that sends what the server accepts — Today's fuel items and the planned long ride's line, the setup
- * for a new athlete, and the Workouts list. On the committed demo fixtures (2026-10-17): Alex owns a Maurten
+ * for a new athlete, and the Workouts list. On the committed demo fixtures (2026-10-17): Rocky owns a Maurten
  * Gel 160 and a MNSTRY Fast Carb bottle, logged the latest ride, and hasn't logged the one before it. */
 import { cleanup, fireEvent, screen, waitFor, within } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';

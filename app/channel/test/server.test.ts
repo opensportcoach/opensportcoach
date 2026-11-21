@@ -1,7 +1,7 @@
 /**
  * End to end, without Claude: spawn the real server, speak MCP to it over stdio the way Claude
  * Code does, attach it to a throwaway athlete's session, then drive the HTTP side like the page.
- * Proves everything the spike can prove on its own; the live checks are in SPIKE.md.
+ * Proves everything the spike can prove on its own; the live checks need a coach session (scripts/coach.sh --spike).
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';

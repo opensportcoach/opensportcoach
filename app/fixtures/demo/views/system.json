@@ -1,13 +1,13 @@
 {
  "view": "system",
  "athlete": "demo",
- "generated_at": "2026-11-21T14:16:11",
- "display": "Alex",
- "garmin_account": "Alex M.",
+ "generated_at": "2026-11-21T15:15:14",
+ "display": "Rocky",
+ "garmin_account": "Rocky B.",
  "accent": "#9DC4EE",
  "refresh": null,
- "data_as_of": "2026-11-21T14:16:08",
- "cache": "cache as of 2026-11-21 14:16",
+ "data_as_of": "2026-11-21T15:15:10",
+ "cache": "cache as of 2026-11-21 15:15",
  "warnings": [],
  "block": {
   "name": "Hypertrophy",
