@@ -3089,6 +3089,18 @@ def test_session_start_exports_the_session_and_asks_who_to_coach():
         assert "Athlete: Bob" in r.stdout, "a resumed session must come back bound, with its banner"
         r = _py(["scripts/hooks/session_start.py"], base, stdin="not json")
         assert r.returncode == 0, "a hook must never break session start"
+        # Someone new is sent to the setup skill, never to use.py with a folder that doesn't exist.
+        r = _py(["scripts/hooks/session_start.py"], base, stdin=json.dumps({"session_id": "sess-0006"}))
+        assert "/osc-setup" in r.stdout and "Someone NEW" in r.stdout, r.stdout
+        r = _py(["scripts/use.py", "zed"], {**base, "OSC_SESSION": "sess-0006"})
+        assert r.returncode != 0 and "/osc-setup" in (r.stdout + r.stderr), "an unknown name points to the setup"
+        # A fresh clone: nobody is set up — the first thing the coach does is /osc-setup.
+        empty = tmp / "nobody"
+        empty.mkdir()
+        r = _py(["scripts/hooks/session_start.py"], {**base, "OSC_ATHLETES_ROOT": str(empty)},
+                stdin=json.dumps({"session_id": "sess-0007"}))
+        assert r.returncode == 0 and "nobody is set up" in r.stdout and "/osc-setup" in r.stdout, r.stdout
+        assert "use.py" not in r.stdout, "a fresh clone has nobody to bind"
 
 
 def test_a_new_athlete_scaffold_passes_every_engine_invariant():

@@ -43,12 +43,24 @@ def main() -> None:
     if name:
         print(banner(athlete.load(name), full=True))
         return
+    names = [athlete.load(n).display for n in athlete.known()]
+    if not names:
+        # A fresh clone: nobody is set up yet. Everything starts with the setup conversation.
+        print("OSC · Welcome — nobody is set up on this computer yet.\n"
+              "Whatever the person's first message is (\"hi\", \"set me up\", a training question), "
+              "start the setup with the /osc-setup skill: it asks their name, does the safety step "
+              "first, creates their folder and binds this session. Do not plan, pull data or create "
+              "anything before it. If they'd rather just look around first, the demo app runs with "
+              "synthetic data: (cd app/channel && npm ci) && cd app/web && npm ci && npm run dev")
+        return
     print("OSC · No athlete is bound to this session.\n"
-          f"Athletes: {', '.join(athlete.load(n).display for n in athlete.known())}.\n"
+          f"Athletes: {', '.join(names)}.\n"
           "Before anything athlete-specific — reading their files, running a script, planning — "
           "find out who you are coaching. If the first message names them, use that; otherwise "
           "ask. Then bind the session, once:\n"
           "    .venv/bin/python scripts/use.py <name>\n"
+          "Someone NEW — not one of the athletes above — is set up with the /osc-setup skill "
+          "instead, never with use.py.\n"
           "A session is never rebound. Until it is bound, every athlete script refuses to run.")
 
 

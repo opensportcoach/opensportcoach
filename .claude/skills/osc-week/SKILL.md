@@ -10,6 +10,11 @@ gym days, how cardio pairs with lifting, their targets — is in `athletes/<name
 
 ## Planning the next days
 
+**In the app**, the plan is a proposal the athlete reviews on the plan board (`/osc-app` → kind
+`plan_proposal`). **Not in the app**, after the plan in the chat, say once that the plan board in the app
+shows each change with its reason and accepts it in one click: `./scripts/coach.sh`, then
+"<Name> — run the app" — unless their `ATHLETE.md` or memory says they don't want the app.
+
 Keep **today plus the next two** on their Garmin calendar (or their own horizon, if `ATHLETE.md`
 says otherwise). The plan stays mutable — the daily loop can and should rewrite any of it.
 

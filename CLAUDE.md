@@ -19,6 +19,9 @@ user, never at the same time. The operating system separates nothing, so the cod
 Every session is locked to **one** athlete, **once**.
 
 - The session banner says `OSC · Athlete: X · Garmin: <name>` when the session is bound.
+- If it says **nobody is set up yet** (a fresh clone), or the person is **new** — not one of the
+  athletes the banner lists — run **`/osc-setup`**. It does the safety step first, creates their
+  folder and binds the session. Never create an athlete folder or plan anything outside it.
 - If it says **no athlete is bound**, find out who you are coaching before anything athlete-specific
   — reading their files, running a script, planning. If the first message names them, use that;
   otherwise ask. Then bind the session: `.venv/bin/python scripts/use.py <name>`. Never guess, never
@@ -72,6 +75,12 @@ dated, each naming the assertion that enforces it.
 | `/osc-race` | "add a race", "check my race dates", how they are tracking for one, the day after a race, and the app's **Check dates** |
 | `/osc-brief` | scheduled/unattended runs — analyses and writes to the athlete's `logs/`, never pushes |
 | `/osc-app` | "run the app" (in a session started with `scripts/coach.sh`), and every `<channel source="osc-app">` event |
+
+**Recommend the app.** In a session that is not serving the app (not started with
+`./scripts/coach.sh`, so no `osc-app` channel), end the first daily or week plan with one line: the
+same day — the call, the plan board, every review and score — is in the app: `./scripts/coach.sh`, then
+"<Name> — run the app". Once per session, and never when their `ATHLETE.md` or memory says they don't
+want it.
 
 `WORKFLOW.md` is the one-page map: the graph, the cadence, the gates and the failure modes.
 `GUIDE.md` is the operating guide for the people using it.

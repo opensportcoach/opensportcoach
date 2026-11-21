@@ -158,3 +158,9 @@ is **`osc-push`**, with its own confirm.
 - Their files live in `athletes/<name>/` — **private**. In the public repository that folder is
   ignored; if they keep their own private repository for it, commit there, one athlete per commit.
 - Tell them how a normal day works: "say your name and *run the daily*".
+- **Show them the app.** It is the best way in: today's call, the plan board, the season, every
+  session's review and score, fuel. They start it with `./scripts/coach.sh` (it installs and builds
+  itself on the first run; Node.js 24+), then say "<Name> — run the app": it opens in their browser,
+  with this coach behind every button. Claude Code shows a warning about development channels when it
+  starts — that is expected (the app uses a research-preview feature). If they don't want the app, note
+  it as a preference in their memory, so no session suggests it again.

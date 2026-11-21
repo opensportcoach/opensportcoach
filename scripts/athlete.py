@@ -241,7 +241,8 @@ def load(name: str) -> Athlete:
         sys.exit(f"'{name}' is not a valid athlete name.")
     root = ATHLETES_DIR / name
     if not (root / "athlete.json").is_file():
-        sys.exit(f"No athlete '{name}' (athletes: {', '.join(known()) or 'none'}).")
+        sys.exit(f"No athlete '{name}' (athletes: {', '.join(known()) or 'none'}). "
+                 "Someone new? Set them up with the /osc-setup skill.")
     return Athlete(name, root)
 
 
