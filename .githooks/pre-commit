@@ -21,8 +21,9 @@ import subprocess
 import sys
 from pathlib import Path
 
-root = Path(subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True,
-                           text=True, check=True).stdout.strip())
+# The engine's root from this file's own place, not from the repository being committed: the athletes'
+# own private repository (athletes/, .githooks/athletes/pre-commit) runs these same checks.
+root = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(root / "scripts"))
 import athlete  # noqa: E402
 

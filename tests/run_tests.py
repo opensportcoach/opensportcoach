@@ -3027,6 +3027,41 @@ def test_precommit_lets_a_merge_bring_in_each_athletes_own_commits_and_nothing_m
         assert r.returncode != 0 and "2 athletes" in r.stderr, "a plain commit spanning two athletes"
 
 
+def test_the_athletes_own_repository_keeps_one_athlete_per_commit():
+    """athletes/ as its own private repository (athletes/README.md): its commits never pass the engine's
+    hook, so .githooks/athletes/pre-commit runs the same rule there. A throwaway engine with a nested
+    athletes repository: one athlete's commit passes, a commit spanning two is refused."""
+    import shutil
+    import tempfile
+    with tempfile.TemporaryDirectory() as tmp:
+        eng = Path(tmp)
+        (eng / "scripts").mkdir()
+        for f in ("athlete.py", "leak_scan.py", "sources.py", "sports.py"):   # what the hooks import
+            shutil.copy(ROOT / "scripts" / f, eng / "scripts" / f)
+        shutil.copytree(ROOT / ".githooks", eng / ".githooks")
+        ath = eng / "athletes"
+        for who in ("ann", "bob"):
+            (ath / who).mkdir(parents=True)
+            (ath / who / "log.md").write_text("start\n")
+        env = {**_env(), "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@example.com",
+               "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@example.com"}
+        git = lambda *a, ok=True: subprocess.run(["git", *a], cwd=ath, env=env, capture_output=True,  # noqa: E731
+                                                  text=True, check=ok)
+        git("init", "-q")
+        git("config", "core.hooksPath", "../.githooks/athletes")
+        git("add", "ann/log.md")
+        r = git("commit", "-qm", "ann only", ok=False)
+        assert r.returncode == 0, f"one athlete's commit was refused: {r.stderr}"
+        git("add", "bob/log.md")
+        r = git("commit", "-qm", "bob only", ok=False)
+        assert r.returncode == 0, r.stderr
+        (ath / "ann" / "log.md").write_text("x\n")
+        (ath / "bob" / "log.md").write_text("y\n")
+        git("add", "-A")
+        r = git("commit", "-qm", "both", ok=False)
+        assert r.returncode != 0 and "2 athletes" in r.stderr, "a commit spanning two athletes in their repository"
+
+
 def test_session_start_exports_the_session_and_asks_who_to_coach():
     import tempfile
     with tempfile.TemporaryDirectory() as tmp:
