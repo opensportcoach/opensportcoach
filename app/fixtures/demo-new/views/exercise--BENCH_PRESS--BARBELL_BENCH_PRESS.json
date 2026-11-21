@@ -1,0 +1,250 @@
+{
+ "view": "exercise",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:15",
+ "category": "BENCH_PRESS",
+ "name": "BARBELL_BENCH_PRESS",
+ "label": "Barbell Bench Press",
+ "muscle": "Chest",
+ "logged_as": "total",
+ "prescriptions": [
+  {
+   "day": "d1",
+   "exid": "D1E1",
+   "routine": "Bench press",
+   "category": "BENCH_PRESS",
+   "name": "BARBELL_BENCH_PRESS",
+   "label": "Barbell Bench Press",
+   "sets": 4,
+   "value": 8,
+   "weight": 80.0,
+   "rest_s": 150,
+   "kind": "reps",
+   "phase": "strength",
+   "per_hand": false,
+   "machine": false
+  }
+ ],
+ "history": [
+  {
+   "cat": "BENCH_PRESS",
+   "name": "BARBELL_BENCH_PRESS",
+   "day": "d1",
+   "id": "D1E1",
+   "sets": 4,
+   "weight": 80.0,
+   "reps": 8,
+   "since": "2026-11-21",
+   "since_ts": "2026-11-21 14:16:12",
+   "changes": []
+  }
+ ],
+ "audit": [
+  {
+   "day": "d1",
+   "exid": "D1E1",
+   "category": "BENCH_PRESS",
+   "name": "BARBELL_BENCH_PRESS",
+   "sets": 4,
+   "value": 8,
+   "weight": 80.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 1,
+   "met": 1,
+   "status": "ok",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-21",
+   "skipped": 0,
+   "implied_e1rm": 101.3,
+   "best_e1rm": 101.3,
+   "verdict": "ok",
+   "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-11-21     1    1  ok"
+  }
+ ],
+ "trend": [
+  {
+   "category": "BENCH_PRESS",
+   "name": "BARBELL_BENCH_PRESS",
+   "day": null,
+   "label": "Barbell Bench Press",
+   "class": "FLAT",
+   "score": "e1rm",
+   "points": [
+    {
+     "date": "2026-11-09",
+     "score": 98.2,
+     "weight": 77.5,
+     "reps": 8,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-16",
+     "score": 101.3,
+     "weight": 80.0,
+     "reps": 8,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-21",
+     "score": 101.3,
+     "weight": 80.0,
+     "reps": 8,
+     "annotated": false
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "date": "2026-11-09",
+   "day": "d1",
+   "activity_id": 21000000001,
+   "sets": [
+    {
+     "weight": 77.5,
+     "reps": 8,
+     "weight_logged": 77.5,
+     "reps_logged": 8,
+     "e1rm": 98.2
+    },
+    {
+     "weight": 77.5,
+     "reps": 8,
+     "weight_logged": 77.5,
+     "reps_logged": 8,
+     "e1rm": 98.2
+    },
+    {
+     "weight": 77.5,
+     "reps": 8,
+     "weight_logged": 77.5,
+     "reps_logged": 8,
+     "e1rm": 98.2
+    },
+    {
+     "weight": 77.5,
+     "reps": 6,
+     "weight_logged": 77.5,
+     "reps_logged": 6,
+     "e1rm": 93.0
+    }
+   ],
+   "top": {
+    "weight": 77.5,
+    "reps": 8,
+    "weight_logged": 77.5,
+    "reps_logged": 8,
+    "e1rm": 98.2
+   },
+   "volume": 2325,
+   "best_e1rm": 98.2,
+   "annotated": false
+  },
+  {
+   "date": "2026-11-16",
+   "day": "d1",
+   "activity_id": 21000000007,
+   "sets": [
+    {
+     "weight": 80.0,
+     "reps": 8,
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "e1rm": 101.3
+    },
+    {
+     "weight": 80.0,
+     "reps": 8,
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "e1rm": 101.3
+    },
+    {
+     "weight": 80.0,
+     "reps": 8,
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "e1rm": 101.3
+    },
+    {
+     "weight": 80.0,
+     "reps": 8,
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "e1rm": 101.3
+    }
+   ],
+   "top": {
+    "weight": 80.0,
+    "reps": 8,
+    "weight_logged": 80.0,
+    "reps_logged": 8,
+    "e1rm": 101.3
+   },
+   "volume": 2560,
+   "best_e1rm": 101.3,
+   "annotated": false
+  },
+  {
+   "date": "2026-11-21",
+   "day": "d1",
+   "activity_id": 21000000011,
+   "sets": [
+    {
+     "weight": 80.0,
+     "reps": 8,
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "e1rm": 101.3
+    },
+    {
+     "weight": 80.0,
+     "reps": 8,
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "e1rm": 101.3
+    },
+    {
+     "weight": 80.0,
+     "reps": 8,
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "e1rm": 101.3
+    },
+    {
+     "weight": 80.0,
+     "reps": 8,
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "e1rm": 101.3
+    }
+   ],
+   "top": {
+    "weight": 80.0,
+    "reps": 8,
+    "weight_logged": 80.0,
+    "reps_logged": 8,
+    "e1rm": 101.3
+   },
+   "volume": 2560,
+   "best_e1rm": 101.3,
+   "annotated": false
+  }
+ ],
+ "defs": {
+  "e1rm": {
+   "source": "computed",
+   "definition": "Estimated 1-rep max (Epley): load × (1 + reps / 30), reps capped at 12. Per-hand lifts use the per-hand load; plate-loaded machines have none."
+  },
+  "audit": {
+   "source": "computed",
+   "definition": "Prescription check: ok · watch (missed once) · stale (asked 2+ sessions, never met) · impossible (implies an e1RM more than 8 kg above your best) · abandoned (no session in 21+ days)."
+  },
+  "progression": {
+   "source": "computed",
+   "definition": "Each lift judged over its sessions since mid-June: progressing = latest session's best beats the previous best by more than 2%; flat = within 2% of the previous best; stalled = no new best in 3+ sessions; regressed = latest below 95% of the best; 1 point = only one session so far."
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "kind": "race_check",
+ "request_id": "r9",
+ "checked": "2026-11-19",
+ "races": [
+  {
+   "id": "hill-country-gravel",
+   "status": "differs",
+   "source_kind": "official",
+   "source": "https://example.com/hill-country-gravel",
+   "found": {
+    "date": "2026-12-19",
+    "start": "08:00"
+   },
+   "note": "The organiser's page lists the Saturday; the entry says Sunday."
+  }
+ ],
+ "markdown": "Hill Country Gravel: the organiser's page names the Saturday, your entry the Sunday. Nothing changed — which date stands?"
+}

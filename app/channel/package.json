@@ -1,0 +1,16 @@
+{
+  "name": "osc-app-channel",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "The OpenSportCoach app's channel server: MCP channel into the coach session + the local HTTP/SSE API (docs/DESIGN.md (the app))",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1"
+  }
+}

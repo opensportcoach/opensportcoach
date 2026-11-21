@@ -1,0 +1,43 @@
+{
+ "view": "memory",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:11",
+ "facts": [
+  {
+   "file": "athlete/goal.md",
+   "title": "Goal: hypertrophy on an endurance base",
+   "type": "athlete",
+   "status": "active",
+   "since": "2026-06-01",
+   "source": "intake (synthetic)",
+   "enforced_by": null
+  },
+  {
+   "file": "equipment/gym.md",
+   "title": "Gym: commercial, dumbbells to 40 kg",
+   "type": "equipment",
+   "status": "active",
+   "since": "2026-06-01",
+   "source": "intake (synthetic)",
+   "enforced_by": null
+  },
+  {
+   "file": "medical/shoulder.md",
+   "title": "No behind-the-neck pressing",
+   "type": "medical",
+   "status": "active",
+   "since": "2026-06-01",
+   "source": "intake (synthetic)",
+   "enforced_by": "athletes/demo/tests.py::test_no_behind_the_neck_pressing"
+  },
+  {
+   "file": "preference/brief.md",
+   "title": "Brief: short, recommendation first",
+   "type": "preference",
+   "status": "active",
+   "since": "2026-06-01",
+   "source": "intake (synthetic)",
+   "enforced_by": null
+  }
+ ]
+}

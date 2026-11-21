@@ -1,0 +1,139 @@
+{
+ "view": "exercise",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:15",
+ "category": "SQUAT",
+ "name": "LEG_PRESS",
+ "label": "Leg Press",
+ "muscle": "Quads",
+ "logged_as": "plates",
+ "prescriptions": [
+  {
+   "day": "d3",
+   "exid": "D3E3",
+   "routine": "Leg press",
+   "category": "SQUAT",
+   "name": "LEG_PRESS",
+   "label": "Leg Press",
+   "sets": 3,
+   "value": 12,
+   "weight": 120.0,
+   "rest_s": 120,
+   "kind": "reps",
+   "phase": "hypertrophy",
+   "per_hand": false,
+   "machine": true
+  }
+ ],
+ "history": [
+  {
+   "cat": "SQUAT",
+   "name": "LEG_PRESS",
+   "day": "d3",
+   "id": "D3E3",
+   "sets": 3,
+   "weight": 120.0,
+   "reps": 12,
+   "since": "2026-11-21",
+   "since_ts": "2026-11-21 14:16:12",
+   "changes": []
+  }
+ ],
+ "audit": [
+  {
+   "day": "d3",
+   "exid": "D3E3",
+   "category": "SQUAT",
+   "name": "LEG_PRESS",
+   "sets": 3,
+   "value": 12,
+   "weight": 120.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-14",
+   "skipped": 0,
+   "implied_e1rm": 168.0,
+   "best_e1rm": 168.0,
+   "verdict": "FRESH — not tried yet",
+   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-21     0    0  FRESH — not tried yet"
+  }
+ ],
+ "trend": [
+  {
+   "category": "SQUAT",
+   "name": "LEG_PRESS",
+   "day": null,
+   "label": "Leg Press",
+   "class": "1 POINT",
+   "score": "disc load",
+   "points": [
+    {
+     "date": "2026-11-14",
+     "score": 120.0,
+     "weight": 120.0,
+     "reps": 12,
+     "annotated": false
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "date": "2026-11-14",
+   "day": "d3",
+   "activity_id": 21000000005,
+   "sets": [
+    {
+     "weight": 120.0,
+     "reps": 12,
+     "weight_logged": 120.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 120.0,
+     "reps": 12,
+     "weight_logged": 120.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 120.0,
+     "reps": 11,
+     "weight_logged": 120.0,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 120.0,
+    "reps": 12,
+    "weight_logged": 120.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4200,
+   "best_e1rm": null,
+   "annotated": false
+  }
+ ],
+ "defs": {
+  "e1rm": {
+   "source": "computed",
+   "definition": "Estimated 1-rep max (Epley): load × (1 + reps / 30), reps capped at 12. Per-hand lifts use the per-hand load; plate-loaded machines have none."
+  },
+  "audit": {
+   "source": "computed",
+   "definition": "Prescription check: ok · watch (missed once) · stale (asked 2+ sessions, never met) · impossible (implies an e1RM more than 8 kg above your best) · abandoned (no session in 21+ days)."
+  },
+  "progression": {
+   "source": "computed",
+   "definition": "Each lift judged over its sessions since mid-June: progressing = latest session's best beats the previous best by more than 2%; flat = within 2% of the previous best; stalled = no new best in 3+ sessions; regressed = latest below 95% of the best; 1 point = only one session so far."
+  }
+ }
+}

@@ -1,0 +1,904 @@
+{
+ "view": "exercise",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:12",
+ "category": "SQUAT",
+ "name": "LEG_PRESS",
+ "label": "Leg Press",
+ "muscle": "Quads",
+ "logged_as": "plates",
+ "prescriptions": [
+  {
+   "day": "d3",
+   "exid": "D3E3",
+   "routine": "Leg press",
+   "category": "SQUAT",
+   "name": "LEG_PRESS",
+   "label": "Leg Press",
+   "sets": 3,
+   "value": 12,
+   "weight": 120.0,
+   "rest_s": 120,
+   "kind": "reps",
+   "phase": "hypertrophy",
+   "per_hand": false,
+   "machine": true
+  }
+ ],
+ "history": [
+  {
+   "cat": "SQUAT",
+   "name": "LEG_PRESS",
+   "day": "d3",
+   "id": "D3E3",
+   "sets": 3,
+   "weight": 120.0,
+   "reps": 12,
+   "since": "2026-11-21",
+   "since_ts": "2026-11-21 14:16:07",
+   "changes": []
+  }
+ ],
+ "audit": [
+  {
+   "day": "d3",
+   "exid": "D3E3",
+   "category": "SQUAT",
+   "name": "LEG_PRESS",
+   "sets": 3,
+   "value": 12,
+   "weight": 120.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-14",
+   "skipped": 0,
+   "implied_e1rm": 168.0,
+   "best_e1rm": 168.0,
+   "verdict": "FRESH — not tried yet",
+   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-21     0    0  FRESH — not tried yet"
+  }
+ ],
+ "trend": [
+  {
+   "category": "SQUAT",
+   "name": "LEG_PRESS",
+   "day": null,
+   "label": "Leg Press",
+   "class": "FLAT",
+   "score": "disc load",
+   "points": [
+    {
+     "date": "2026-07-18",
+     "score": 105.0,
+     "weight": 105.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-07-25",
+     "score": 107.5,
+     "weight": 107.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-08-01",
+     "score": 107.5,
+     "weight": 107.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-08-08",
+     "score": 107.5,
+     "weight": 107.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-08-15",
+     "score": 110.0,
+     "weight": 110.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-08-22",
+     "score": 110.0,
+     "weight": 110.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-08-29",
+     "score": 110.0,
+     "weight": 110.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-09-05",
+     "score": 112.5,
+     "weight": 112.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-09-12",
+     "score": 112.5,
+     "weight": 112.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-09-19",
+     "score": 112.5,
+     "weight": 112.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-09-26",
+     "score": 115.0,
+     "weight": 115.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-10-03",
+     "score": 115.0,
+     "weight": 115.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-10-10",
+     "score": 115.0,
+     "weight": 115.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-10-17",
+     "score": 100.0,
+     "weight": 100.0,
+     "reps": 12,
+     "annotated": true
+    },
+    {
+     "date": "2026-10-24",
+     "score": 117.5,
+     "weight": 117.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-10-31",
+     "score": 117.5,
+     "weight": 117.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-07",
+     "score": 120.0,
+     "weight": 120.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-14",
+     "score": 120.0,
+     "weight": 120.0,
+     "reps": 12,
+     "annotated": false
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "date": "2026-07-18",
+   "day": "d3",
+   "activity_id": 21000000004,
+   "sets": [
+    {
+     "weight": 105.0,
+     "reps": 12,
+     "weight_logged": 105.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 105.0,
+     "reps": 12,
+     "weight_logged": 105.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 105.0,
+     "reps": 12,
+     "weight_logged": 105.0,
+     "reps_logged": 12,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 105.0,
+    "reps": 12,
+    "weight_logged": 105.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3780,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-07-25",
+   "day": "d3",
+   "activity_id": 21000000009,
+   "sets": [
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 107.5,
+     "reps": 11,
+     "weight_logged": 107.5,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 107.5,
+    "reps": 12,
+    "weight_logged": 107.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3762,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-08-01",
+   "day": "d3",
+   "activity_id": 21000000015,
+   "sets": [
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 107.5,
+     "reps": 10,
+     "weight_logged": 107.5,
+     "reps_logged": 10,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 107.5,
+    "reps": 12,
+    "weight_logged": 107.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3655,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-08-08",
+   "day": "d3",
+   "activity_id": 21000000020,
+   "sets": [
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 107.5,
+    "reps": 12,
+    "weight_logged": 107.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3870,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-08-15",
+   "day": "d3",
+   "activity_id": 21000000026,
+   "sets": [
+    {
+     "weight": 110.0,
+     "reps": 12,
+     "weight_logged": 110.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 110.0,
+     "reps": 12,
+     "weight_logged": 110.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 110.0,
+     "reps": 11,
+     "weight_logged": 110.0,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 110.0,
+    "reps": 12,
+    "weight_logged": 110.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3850,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-08-22",
+   "day": "d3",
+   "activity_id": 21000000031,
+   "sets": [
+    {
+     "weight": 110.0,
+     "reps": 12,
+     "weight_logged": 110.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 110.0,
+     "reps": 12,
+     "weight_logged": 110.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 110.0,
+     "reps": 10,
+     "weight_logged": 110.0,
+     "reps_logged": 10,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 110.0,
+    "reps": 12,
+    "weight_logged": 110.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3740,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-08-29",
+   "day": "d3",
+   "activity_id": 21000000037,
+   "sets": [
+    {
+     "weight": 110.0,
+     "reps": 12,
+     "weight_logged": 110.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 110.0,
+     "reps": 12,
+     "weight_logged": 110.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 110.0,
+     "reps": 12,
+     "weight_logged": 110.0,
+     "reps_logged": 12,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 110.0,
+    "reps": 12,
+    "weight_logged": 110.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3960,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-09-05",
+   "day": "d3",
+   "activity_id": 21000000042,
+   "sets": [
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 112.5,
+     "reps": 10,
+     "weight_logged": 112.5,
+     "reps_logged": 10,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 112.5,
+    "reps": 12,
+    "weight_logged": 112.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3825,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-09-12",
+   "day": "d3",
+   "activity_id": 21000000048,
+   "sets": [
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 112.5,
+     "reps": 11,
+     "weight_logged": 112.5,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 112.5,
+    "reps": 12,
+    "weight_logged": 112.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3938,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-09-19",
+   "day": "d3",
+   "activity_id": 21000000053,
+   "sets": [
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 112.5,
+    "reps": 12,
+    "weight_logged": 112.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4050,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-09-26",
+   "day": "d3",
+   "activity_id": 21000000059,
+   "sets": [
+    {
+     "weight": 115.0,
+     "reps": 12,
+     "weight_logged": 115.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 115.0,
+     "reps": 12,
+     "weight_logged": 115.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 115.0,
+     "reps": 11,
+     "weight_logged": 115.0,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 115.0,
+    "reps": 12,
+    "weight_logged": 115.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4025,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-10-03",
+   "day": "d3",
+   "activity_id": 21000000064,
+   "sets": [
+    {
+     "weight": 115.0,
+     "reps": 12,
+     "weight_logged": 115.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 115.0,
+     "reps": 12,
+     "weight_logged": 115.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 115.0,
+     "reps": 11,
+     "weight_logged": 115.0,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 115.0,
+    "reps": 12,
+    "weight_logged": 115.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4025,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-10-10",
+   "day": "d3",
+   "activity_id": 21000000070,
+   "sets": [
+    {
+     "weight": 115.0,
+     "reps": 12,
+     "weight_logged": 115.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 115.0,
+     "reps": 12,
+     "weight_logged": 115.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 115.0,
+     "reps": 12,
+     "weight_logged": 115.0,
+     "reps_logged": 12,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 115.0,
+    "reps": 12,
+    "weight_logged": 115.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4140,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-10-17",
+   "day": "d3",
+   "activity_id": 21000000075,
+   "sets": [
+    {
+     "weight": 100.0,
+     "reps": 12,
+     "weight_logged": 100.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 100.0,
+     "reps": 12,
+     "weight_logged": 100.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 100.0,
+     "reps": 11,
+     "weight_logged": 100.0,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 100.0,
+    "reps": 12,
+    "weight_logged": 100.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3500,
+   "best_e1rm": null,
+   "annotated": true
+  },
+  {
+   "date": "2026-10-24",
+   "day": "d3",
+   "activity_id": 21000000081,
+   "sets": [
+    {
+     "weight": 117.5,
+     "reps": 12,
+     "weight_logged": 117.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 117.5,
+     "reps": 12,
+     "weight_logged": 117.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 117.5,
+     "reps": 11,
+     "weight_logged": 117.5,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 117.5,
+    "reps": 12,
+    "weight_logged": 117.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4112,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-10-31",
+   "day": "d3",
+   "activity_id": 21000000086,
+   "sets": [
+    {
+     "weight": 117.5,
+     "reps": 12,
+     "weight_logged": 117.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 117.5,
+     "reps": 12,
+     "weight_logged": 117.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 117.5,
+     "reps": 12,
+     "weight_logged": 117.5,
+     "reps_logged": 12,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 117.5,
+    "reps": 12,
+    "weight_logged": 117.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4230,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-11-07",
+   "day": "d3",
+   "activity_id": 21000000092,
+   "sets": [
+    {
+     "weight": 120.0,
+     "reps": 12,
+     "weight_logged": 120.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 120.0,
+     "reps": 12,
+     "weight_logged": 120.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 120.0,
+     "reps": 11,
+     "weight_logged": 120.0,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 120.0,
+    "reps": 12,
+    "weight_logged": 120.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4200,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-11-14",
+   "day": "d3",
+   "activity_id": 21000000097,
+   "sets": [
+    {
+     "weight": 120.0,
+     "reps": 12,
+     "weight_logged": 120.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 120.0,
+     "reps": 12,
+     "weight_logged": 120.0,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 120.0,
+     "reps": 11,
+     "weight_logged": 120.0,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 120.0,
+    "reps": 12,
+    "weight_logged": 120.0,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 4200,
+   "best_e1rm": null,
+   "annotated": false
+  }
+ ],
+ "defs": {
+  "e1rm": {
+   "source": "computed",
+   "definition": "Estimated 1-rep max (Epley): load × (1 + reps / 30), reps capped at 12. Per-hand lifts use the per-hand load; plate-loaded machines have none."
+  },
+  "audit": {
+   "source": "computed",
+   "definition": "Prescription check: ok · watch (missed once) · stale (asked 2+ sessions, never met) · impossible (implies an e1RM more than 8 kg above your best) · abandoned (no session in 21+ days)."
+  },
+  "progression": {
+   "source": "computed",
+   "definition": "Each lift judged over its sessions since mid-June: progressing = latest session's best beats the previous best by more than 2%; flat = within 2% of the previous best; stalled = no new best in 3+ sessions; regressed = latest below 95% of the best; 1 point = only one session so far."
+  }
+ }
+}

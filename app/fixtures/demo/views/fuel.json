@@ -1,0 +1,402 @@
+{
+ "view": "fuel",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:11",
+ "catalog": [
+  {
+   "id": "maurten-gel-160",
+   "brand": "Maurten",
+   "name": "Gel 160",
+   "form": "gel",
+   "serving_g": 65,
+   "carbs_g": 40,
+   "kcal": 160,
+   "glucose_fructose": "1:0.8",
+   "sodium_mg": null,
+   "caffeine_mg": 0,
+   "source": "https://www.maurten.com/products/gel-160-us-ca",
+   "source_kind": "maker",
+   "checked": "2026-11-06",
+   "note": "Maker's page: 40 g carbohydrate, about 160 kcal, a 65 g sachet, glucose to fructose 1:0.8. No caffeine in the ingredient list. Sodium is only on the nutrition panel, an image on the page; retailer listings disagree (30 mg, 100 mg), so it stays unrecorded until it is read off the pack.",
+   "display": {
+    "slot": "gel",
+    "mono": "GEL",
+    "shape": "gel"
+   }
+  },
+  {
+   "id": "mnstry-fast-carb-mango",
+   "brand": "MNSTRY",
+   "name": "Fast Carb Mango",
+   "form": "drink_mix",
+   "serving_g": 43,
+   "carbs_per_100g": 92.3,
+   "kcal": 162.5,
+   "glucose_fructose": "2:1",
+   "sodium_mg": 200,
+   "caffeine_mg": 0,
+   "source": "https://mnstry.com/en/products/fast-carb-mango",
+   "source_kind": "maker",
+   "checked": "2026-11-06",
+   "note": "Maker's page: 40 g carbohydrate per 500 ml in a 2:1 glucose to fructose ratio, 200 mg sodium. Nutrition table: per 100 g 378 kcal, 92.3 g carbohydrate (37.2 g sugars), 1.18 g salt; per serving (43 g, two MNSTRY spoons in 500 ml) 162.5 kcal, 39.7 g carbohydrate, 0.5 g salt. Ingredients: maltodextrin, fructose, mango fruit powder, citrates, salt; no caffeine. kcal and sodium_mg are per 43 g serving.",
+   "display": {
+    "slot": "1",
+    "mono": "FC",
+    "shape": "bottle"
+   }
+  },
+  {
+   "id": "mnstry-slow-carb-heat",
+   "brand": "MNSTRY",
+   "name": "Slow Carb Heat",
+   "form": "drink_mix",
+   "serving_g": 46,
+   "carbs_per_100g": 87.6,
+   "kcal": 170,
+   "glucose_fructose": "1:1",
+   "sodium_mg": 260,
+   "caffeine_mg": 0,
+   "source": "https://mnstry.com/de-eu/products/slow-carb-heat",
+   "source_kind": "maker",
+   "checked": "2026-11-06",
+   "note": "Maker's page: lemon and mango, 40 g carbohydrate per 500 ml, glucose to fructose 1:1, 260 mg sodium. The carbohydrate is isomaltulose (Palatinose, 81.4%): a slow rise in blood sugar, made for low-intensity endurance. Nutrition table: per 100 g 369 kcal, 87.6 g carbohydrate (81.5 g sugars), 1.45 g salt; per serving (46 g, two MNSTRY spoons in 500 ml an hour) 170 kcal, 40.3 g carbohydrate, 0.67 g salt. Dosage, the maker's limit: at most 46 g of powder an hour and 92 g per session (slow absorption); from the third hour, switch to FAST CARB or POWER CARB. No caffeine. kcal and sodium_mg are per 46 g serving. Limits, from the same page: max_g_per_h 46 and max_g_per_session 92 (\"die maximale Dosis von 46 Gramm pro Stunde und 92 Gramm pro Einheit\"); easy_only because the maker makes it for low-intensity endurance (\"Ausdauereinheiten mit geringer Intensität\").",
+   "max_g_per_h": 46,
+   "max_g_per_session": 92,
+   "easy_only": true,
+   "display": {
+    "slot": "4",
+    "mono": "SC",
+    "shape": "bottle"
+   }
+  },
+  {
+   "id": "maurten-solid-160",
+   "brand": "Maurten",
+   "name": "Solid 160",
+   "form": "bar",
+   "serving_g": null,
+   "carbs_g": 40,
+   "kcal": null,
+   "glucose_fructose": null,
+   "sodium_mg": null,
+   "caffeine_mg": null,
+   "source": "https://www.maurten.com/es/products/es/solid-160",
+   "source_kind": "maker",
+   "checked": "2026-11-07",
+   "note": "Maker's page: 40 g carbohydrate a bar, scored to break into two 20 g halves. For long low-to-moderate sessions over 2 h, loading and recovery. Bar weight conflicts on the page (40 g sachet against a 1,920 g box of 12) and energy, sodium and caffeine are only on the nutrition image, so all four stay unrecorded until read off the pack.",
+   "display": {
+    "slot": "gel",
+    "mono": "BAR",
+    "shape": "gel"
+   }
+  }
+ ],
+ "products": [
+  "maurten-gel-160",
+  "mnstry-fast-carb-mango"
+ ],
+ "recipes": [
+  {
+   "id": "bottle",
+   "label": "Bottle",
+   "product": "mnstry-fast-carb-mango",
+   "powder_g": 43,
+   "water_ml": 500,
+   "g_each": 40
+  }
+ ],
+ "gut": {
+  "g_per_h": 60,
+  "since": "2026-10-22",
+  "how": "setup: what they take on a 2–3 h ride"
+ },
+ "caffeine": "races",
+ "notes": null,
+ "questions": [
+  {
+   "id": "products",
+   "text": "Which fuelling products do you use — gels, drink mixes, bars? Pick them from the catalog, or name one and the coach looks it up on the maker's page.",
+   "open": false,
+   "answered": "2026-10-22"
+  },
+  {
+   "id": "recipes",
+   "text": "How do you mix a bottle of each drink mix: grams of powder, and the bottle's size in ml?",
+   "open": false,
+   "answered": "2026-10-22"
+  },
+  {
+   "id": "gut",
+   "text": "What do you take today on a 2–3 hour ride, in grams of carbohydrate an hour — none, about 30, about 60 or about 90? Has anything upset your stomach?",
+   "open": false,
+   "answered": "2026-10-22"
+  },
+  {
+   "id": "caffeine",
+   "text": "Caffeine: never, in races only, or in training too?",
+   "open": false,
+   "answered": "2026-10-22"
+  }
+ ],
+ "caffeine_options": [
+  "never",
+  "races",
+  "training"
+ ],
+ "gut_start": 30,
+ "pantry": [
+  {
+   "kind": "recipe",
+   "id": "bottle",
+   "label": "Bottle · MNSTRY Fast Carb Mango",
+   "unit": "bottle",
+   "how": "43 g powder · 500 ml",
+   "g_each": 40,
+   "display": {
+    "slot": "1",
+    "mono": "FC",
+    "shape": "bottle"
+   },
+   "short": "Fast Carb Mango"
+  },
+  {
+   "kind": "product",
+   "id": "maurten-gel-160",
+   "label": "Maurten Gel 160",
+   "unit": "gel",
+   "how": "65 g gel",
+   "g_each": 40,
+   "display": {
+    "slot": "gel",
+    "mono": "GEL",
+    "shape": "gel"
+   },
+   "short": "Gel 160"
+  }
+ ],
+ "today_plans": [],
+ "upcoming": [
+  {
+   "date": "2026-11-22",
+   "title": "Long ride · Z2",
+   "sport": "road_biking",
+   "badge": {
+    "type": "road_biking",
+    "sport": "Road ride",
+    "icon": "bike",
+    "kind": "endurance"
+   },
+   "detail": "Zone 2 throughout, 60–75 % FTP.",
+   "why": "The week's long ride.",
+   "platform": null,
+   "workout": null,
+   "duration_min": 150,
+   "zwift_workout": null,
+   "intent": "endurance",
+   "fuel": {
+    "minutes": 150,
+    "intent": "endurance",
+    "sport": "bike",
+    "band": [
+     60,
+     90
+    ],
+    "cap_g_h": 60,
+    "slack_g_h": 5,
+    "target_g_h": 60,
+    "total_g": 150,
+    "gut_g_h": 60,
+    "rehearsal": false,
+    "items": [
+     {
+      "kind": "recipe",
+      "id": "bottle",
+      "label": "Bottle · MNSTRY Fast Carb Mango",
+      "n": 3,
+      "g_each": 40,
+      "g": 120,
+      "display": {
+       "slot": "1",
+       "mono": "FC",
+       "shape": "bottle"
+      },
+      "short": "Fast Carb Mango"
+     },
+     {
+      "kind": "product",
+      "id": "maurten-gel-160",
+      "label": "Maurten Gel 160",
+      "n": 1,
+      "g_each": 40,
+      "g": 40,
+      "display": {
+       "slot": "gel",
+       "mono": "GEL",
+       "shape": "gel"
+      },
+      "short": "Gel 160"
+     }
+    ],
+    "timeline": [
+     {
+      "at": 0,
+      "until": 50,
+      "kind": "recipe",
+      "id": "bottle"
+     },
+     {
+      "at": 50,
+      "until": 100,
+      "kind": "recipe",
+      "id": "bottle"
+     },
+     {
+      "at": 80,
+      "kind": "product",
+      "id": "maurten-gel-160"
+     },
+     {
+      "at": 100,
+      "until": 150,
+      "kind": "recipe",
+      "id": "bottle"
+     }
+    ],
+    "planned_g": 160,
+    "planned_g_h": 64,
+    "setup_needed": false,
+    "needed": true,
+    "notes": [],
+    "cues": [
+     {
+      "at": 0,
+      "until": 50,
+      "kind": "recipe",
+      "id": "bottle",
+      "label": "Fast Carb Mango",
+      "how": "sip it through to 0:50",
+      "display": {
+       "slot": "1",
+       "mono": "FC",
+       "shape": "bottle"
+      }
+     },
+     {
+      "at": 50,
+      "until": 100,
+      "kind": "recipe",
+      "id": "bottle",
+      "label": "2nd Fast Carb Mango",
+      "how": "sip it through to 1:40",
+      "display": {
+       "slot": "1",
+       "mono": "FC",
+       "shape": "bottle"
+      }
+     },
+     {
+      "at": 80,
+      "until": null,
+      "kind": "product",
+      "id": "maurten-gel-160",
+      "label": "Gel 160",
+      "how": "with a mouthful of water",
+      "display": {
+       "slot": "gel",
+       "mono": "GEL",
+       "shape": "gel"
+      }
+     },
+     {
+      "at": 100,
+      "until": 150,
+      "kind": "recipe",
+      "id": "bottle",
+      "label": "3rd Fast Carb Mango",
+      "how": "sip it to the end",
+      "display": {
+       "slot": "1",
+       "mono": "FC",
+       "shape": "bottle"
+      }
+     }
+    ],
+    "per_hour_grams": [
+     {
+      "from": 0,
+      "to": 60,
+      "g": 48
+     },
+     {
+      "from": 60,
+      "to": 120,
+      "g": 88
+     },
+     {
+      "from": 120,
+      "to": 150,
+      "g": 24
+     }
+    ],
+    "over_cap_g_h": 4,
+    "alternatives": []
+   },
+   "done": false
+  }
+ ],
+ "to_log": [],
+ "ramp": {
+  "current_g_h": 60,
+  "since": "2026-10-22",
+  "how": "setup: what they take on a 2–3 h ride",
+  "step_g_h": 10,
+  "rides_per_step": 1,
+  "min_minutes": 90,
+  "counted_at_current": 0,
+  "next_g_h": 70,
+  "race_band": [
+   60,
+   90
+  ],
+  "steps": [
+   60,
+   70,
+   80,
+   90
+  ],
+  "history": [
+   {
+    "activity_id": 21000000098,
+    "date": "2026-11-15",
+    "minutes": 90,
+    "g_h": 53,
+    "title": "Zone 2 ride",
+    "group": "bike",
+    "counted": false
+   }
+  ]
+ },
+ "a_race": {
+  "id": "coastline-703",
+  "name": "Coastline 70.3",
+  "date": "2027-02-28"
+ },
+ "defs": {
+  "fuel_band": {
+   "source": "computed",
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+  },
+  "fuel_target": {
+   "source": "computed",
+   "definition": "The rate planned: the top of a hard session's band, the middle of an easy one's, never above what your gut is trained to (60 g/h until you say otherwise), plus 10 g/h on a gut-training session."
+  },
+  "fuel_gut": {
+   "source": "you",
+   "definition": "The most carbohydrate an hour you have taken in training without trouble. Raised 10 g/h at a time, only after a logged session at the current rate."
+  },
+  "fuel_taken": {
+   "source": "you",
+   "definition": "What you logged taking, in grams, from each product's label and your bottle recipe as it was that day. Self-reported: Garmin does not record it."
+  }
+ }
+}

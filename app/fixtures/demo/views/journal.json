@@ -1,0 +1,25 @@
+{
+ "view": "journal",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:11",
+ "entries": [
+  {
+   "file": "2026-11-21.md",
+   "date": "2026-11-21",
+   "kind": "daily",
+   "title": "Daily · 2026-11-21"
+  },
+  {
+   "file": "2026-11-16-review.md",
+   "date": "2026-11-16",
+   "kind": "review",
+   "title": "Session review · D1 Push · 2026-11-16"
+  },
+  {
+   "file": "2026-11-15-21000000098-review.md",
+   "date": "2026-11-15",
+   "kind": "review",
+   "title": "Ride review · Zone 2 ride · 2026-11-15"
+  }
+ ]
+}

@@ -1,0 +1,2139 @@
+{
+ "view": "program",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:14",
+ "days": [
+  {
+   "key": "d1",
+   "name": "D1 · Push",
+   "exercises": [
+    {
+     "exid": "D1E1",
+     "routine": "Bench press",
+     "category": "BENCH_PRESS",
+     "name": "BARBELL_BENCH_PRESS",
+     "label": "Barbell Bench Press",
+     "sets": 4,
+     "value": 8,
+     "weight": 80.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "barbell",
+     "phase": "strength",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      6,
+      8
+     ],
+     "increment": 2.5,
+     "next_weight": 82.5,
+     "est_s": 396,
+     "trend": [
+      98.2,
+      101.3,
+      101.3
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d1",
+      "exid": "D1E1",
+      "category": "BENCH_PRESS",
+      "name": "BARBELL_BENCH_PRESS",
+      "sets": 4,
+      "value": 8,
+      "weight": 80.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 1,
+      "met": 1,
+      "status": "ok",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-21",
+      "skipped": 0,
+      "implied_e1rm": 101.3,
+      "best_e1rm": 101.3,
+      "verdict": "ok",
+      "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-11-21     1    1  ok"
+     }
+    },
+    {
+     "exid": "D1E2",
+     "routine": "Incline DB press",
+     "category": "BENCH_PRESS",
+     "name": "INCLINE_DUMBBELL_BENCH_PRESS",
+     "label": "Incline Dumbbell Bench Press",
+     "sets": 3,
+     "value": 10,
+     "weight": 26.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": true,
+     "machine": false,
+     "load": "dumbbell",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      8,
+      10
+     ],
+     "increment": 2.0,
+     "next_weight": 28.0,
+     "est_s": 300,
+     "trend": [
+      34.7,
+      34.7,
+      34.7
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d1",
+      "exid": "D1E2",
+      "category": "BENCH_PRESS",
+      "name": "INCLINE_DUMBBELL_BENCH_PRESS",
+      "sets": 3,
+      "value": 10,
+      "weight": 26.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 1,
+      "met": 1,
+      "status": "ok",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-21",
+      "skipped": 0,
+      "implied_e1rm": 34.7,
+      "best_e1rm": 34.7,
+      "verdict": "ok",
+      "line": "D1E2 INCLINE_DUMBBELL_BENCH_PRESS            3x10@26           2026-11-21     1    1  ok"
+     }
+    },
+    {
+     "exid": "D1E3",
+     "routine": "Seated DB press",
+     "category": "SHOULDER_PRESS",
+     "name": "SEATED_DUMBBELL_SHOULDER_PRESS",
+     "label": "Seated Dumbbell Shoulder Press",
+     "sets": 3,
+     "value": 10,
+     "weight": 20.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": true,
+     "machine": false,
+     "load": "dumbbell",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      8,
+      10
+     ],
+     "increment": 2.0,
+     "next_weight": 22.0,
+     "est_s": 300,
+     "trend": [
+      26.7,
+      26.7,
+      26.7
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d1",
+      "exid": "D1E3",
+      "category": "SHOULDER_PRESS",
+      "name": "SEATED_DUMBBELL_SHOULDER_PRESS",
+      "sets": 3,
+      "value": 10,
+      "weight": 20.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 1,
+      "met": 1,
+      "status": "ok",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-21",
+      "skipped": 0,
+      "implied_e1rm": 26.7,
+      "best_e1rm": 26.7,
+      "verdict": "ok",
+      "line": "D1E3 SEATED_DUMBBELL_SHOULDER_PRESS          3x10@20           2026-11-21     1    1  ok"
+     }
+    },
+    {
+     "exid": "D1E4",
+     "routine": "Lateral raise",
+     "category": "LATERAL_RAISE",
+     "name": "DUMBBELL_LATERAL_RAISE",
+     "label": "Dumbbell Lateral Raise",
+     "sets": 3,
+     "value": 15,
+     "weight": 10.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": true,
+     "machine": false,
+     "load": "dumbbell_light",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      13,
+      15
+     ],
+     "increment": 1.0,
+     "next_weight": 11.0,
+     "est_s": 345,
+     "trend": [
+      14.0,
+      14.0,
+      14.0
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d1",
+      "exid": "D1E4",
+      "category": "LATERAL_RAISE",
+      "name": "DUMBBELL_LATERAL_RAISE",
+      "sets": 3,
+      "value": 15,
+      "weight": 10.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 1,
+      "met": 1,
+      "status": "ok",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-21",
+      "skipped": 0,
+      "implied_e1rm": 14.0,
+      "best_e1rm": 14.0,
+      "verdict": "ok",
+      "line": "D1E4 DUMBBELL_LATERAL_RAISE                  3x15@10           2026-11-21     1    1  ok"
+     }
+    },
+    {
+     "exid": "D1E5",
+     "routine": "Cable crossover",
+     "category": "FLYE",
+     "name": "CABLE_CROSSOVER",
+     "label": "Cable Crossover",
+     "sets": 3,
+     "value": 12,
+     "weight": 15.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "cable",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      10,
+      12
+     ],
+     "increment": 2.5,
+     "next_weight": 17.5,
+     "est_s": 318,
+     "trend": [
+      21.0,
+      21.0,
+      21.0
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d1",
+      "exid": "D1E5",
+      "category": "FLYE",
+      "name": "CABLE_CROSSOVER",
+      "sets": 3,
+      "value": 12,
+      "weight": 15.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 1,
+      "met": 1,
+      "status": "ok",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-21",
+      "skipped": 0,
+      "implied_e1rm": 21.0,
+      "best_e1rm": 21.0,
+      "verdict": "ok",
+      "line": "D1E5 CABLE_CROSSOVER                         3x12@15           2026-11-21     1    1  ok"
+     }
+    },
+    {
+     "exid": "D1E6",
+     "routine": "Rope pressdown",
+     "category": "TRICEPS_EXTENSION",
+     "name": "ROPE_PRESSDOWN",
+     "label": "Rope Pressdown",
+     "sets": 3,
+     "value": 12,
+     "weight": 32.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "cable",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      10,
+      12
+     ],
+     "increment": 2.5,
+     "next_weight": 34.5,
+     "est_s": 318,
+     "trend": [
+      45.5,
+      45.5,
+      45.5
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d1",
+      "exid": "D1E6",
+      "category": "TRICEPS_EXTENSION",
+      "name": "ROPE_PRESSDOWN",
+      "sets": 3,
+      "value": 12,
+      "weight": 32.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 1,
+      "met": 1,
+      "status": "ok",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-21",
+      "skipped": 0,
+      "implied_e1rm": 44.8,
+      "best_e1rm": 45.5,
+      "verdict": "ok",
+      "line": "D1E6 ROPE_PRESSDOWN                          3x12@32           2026-11-21     1    1  ok"
+     }
+    }
+   ],
+   "watch": [
+    {
+     "kind": "repeat",
+     "times": 4,
+     "depth": 0,
+     "row": "D1E1"
+    },
+    {
+     "kind": "interval",
+     "headline": "Barbell Bench Press",
+     "sub": "Range 6-8 · all sets at 8 -> +weight",
+     "weight": 80.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "BENCH_PRESS/BARBELL_BENCH_PRESS",
+     "row": "D1E1"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D1E1"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D1E1"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D1E2"
+    },
+    {
+     "kind": "interval",
+     "headline": "Incline Dumbbell Bench Press",
+     "sub": "Range 8-10 · all sets at 10 -> +weight",
+     "weight": 26.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "BENCH_PRESS/INCLINE_DUMBBELL_BENCH_PRESS",
+     "row": "D1E2"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D1E2"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D1E2"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D1E3"
+    },
+    {
+     "kind": "interval",
+     "headline": "Seated Dumbbell Shoulder Press",
+     "sub": "Range 8-10 · all sets at 10 -> +weight",
+     "weight": 20.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "SHOULDER_PRESS/SEATED_DUMBBELL_SHOULDER_PRESS",
+     "row": "D1E3"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D1E3"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D1E3"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D1E4"
+    },
+    {
+     "kind": "interval",
+     "headline": "Dumbbell Lateral Raise",
+     "sub": "Range 13-15 · all sets at 15 -> +weight",
+     "weight": 10.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "LATERAL_RAISE/DUMBBELL_LATERAL_RAISE",
+     "row": "D1E4"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D1E4"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D1E4"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D1E5"
+    },
+    {
+     "kind": "interval",
+     "headline": "Cable Crossover",
+     "sub": "Range 10-12 · all sets at 12 -> +weight",
+     "weight": 15.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "FLYE/CABLE_CROSSOVER",
+     "row": "D1E5"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D1E5"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D1E5"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D1E6"
+    },
+    {
+     "kind": "interval",
+     "headline": "Rope Pressdown",
+     "sub": "Range 10-12 · all sets at 12 -> +weight",
+     "weight": 32.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "TRICEPS_EXTENSION/ROPE_PRESSDOWN",
+     "row": "D1E6"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D1E6"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D1E6"
+    }
+   ],
+   "label": "D1 · Push",
+   "lead": [],
+   "why": "Chest, shoulders, triceps",
+   "title": "Push",
+   "optional": false,
+   "est_min": 33,
+   "rotation": {
+    "day": "d1",
+    "label": "D1 · Push",
+    "last": "2026-11-21",
+    "age": 0,
+    "starved": false
+   },
+   "removed": []
+  },
+  {
+   "key": "d2",
+   "name": "D2 · Pull",
+   "exercises": [
+    {
+     "exid": "D2E1",
+     "routine": "Lat pulldown",
+     "category": "PULL_UP",
+     "name": "CLOSE_GRIP_LAT_PULLDOWN",
+     "label": "Close Grip Lat Pulldown",
+     "sets": 4,
+     "value": 10,
+     "weight": 65.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "cable",
+     "phase": "strength",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      8,
+      10
+     ],
+     "increment": 2.5,
+     "next_weight": 67.5,
+     "est_s": 420,
+     "trend": [
+      83.3,
+      86.7
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d2",
+      "exid": "D2E1",
+      "category": "PULL_UP",
+      "name": "CLOSE_GRIP_LAT_PULLDOWN",
+      "sets": 4,
+      "value": 10,
+      "weight": 65.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-19",
+      "skipped": 0,
+      "implied_e1rm": 86.7,
+      "best_e1rm": 86.7,
+      "verdict": "FRESH — not tried yet",
+      "line": "D2E1 CLOSE_GRIP_LAT_PULLDOWN                 4x10@65           2026-11-21     0    0  FRESH — not tried yet"
+     }
+    },
+    {
+     "exid": "D2E2",
+     "routine": "Barbell row",
+     "category": "ROW",
+     "name": "BARBELL_ROW",
+     "label": "Barbell Row",
+     "sets": 4,
+     "value": 8,
+     "weight": 70.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "barbell",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      6,
+      8
+     ],
+     "increment": 2.5,
+     "next_weight": 72.5,
+     "est_s": 396,
+     "trend": [
+      88.7,
+      88.7
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d2",
+      "exid": "D2E2",
+      "category": "ROW",
+      "name": "BARBELL_ROW",
+      "sets": 4,
+      "value": 8,
+      "weight": 70.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-19",
+      "skipped": 0,
+      "implied_e1rm": 88.7,
+      "best_e1rm": 88.7,
+      "verdict": "FRESH — not tried yet",
+      "line": "D2E2 BARBELL_ROW                             4x8@70            2026-11-21     0    0  FRESH — not tried yet"
+     }
+    },
+    {
+     "exid": "D2E3",
+     "routine": "One-arm DB row",
+     "category": "ROW",
+     "name": "DUMBBELL_ROW",
+     "label": "Dumbbell Row",
+     "sets": 3,
+     "value": 10,
+     "weight": 30.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "dumbbell",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      8,
+      10
+     ],
+     "increment": 2.0,
+     "next_weight": 32.0,
+     "est_s": 300,
+     "trend": [
+      40.0,
+      40.0
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d2",
+      "exid": "D2E3",
+      "category": "ROW",
+      "name": "DUMBBELL_ROW",
+      "sets": 3,
+      "value": 10,
+      "weight": 30.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-19",
+      "skipped": 0,
+      "implied_e1rm": 40.0,
+      "best_e1rm": 40.0,
+      "verdict": "FRESH — not tried yet",
+      "line": "D2E3 DUMBBELL_ROW                            3x10@30           2026-11-21     0    0  FRESH — not tried yet"
+     }
+    },
+    {
+     "exid": "D2E4",
+     "routine": "DB curl",
+     "category": "CURL",
+     "name": "DUMBBELL_BICEPS_CURL",
+     "label": "Dumbbell Biceps Curl",
+     "sets": 3,
+     "value": 12,
+     "weight": 14.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": true,
+     "machine": false,
+     "load": "dumbbell",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      10,
+      12
+     ],
+     "increment": 2.0,
+     "next_weight": 16.0,
+     "est_s": 318,
+     "trend": [
+      19.6,
+      19.6
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d2",
+      "exid": "D2E4",
+      "category": "CURL",
+      "name": "DUMBBELL_BICEPS_CURL",
+      "sets": 3,
+      "value": 12,
+      "weight": 14.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-19",
+      "skipped": 0,
+      "implied_e1rm": 19.6,
+      "best_e1rm": 19.6,
+      "verdict": "FRESH — not tried yet",
+      "line": "D2E4 DUMBBELL_BICEPS_CURL                    3x12@14           2026-11-21     0    0  FRESH — not tried yet"
+     }
+    }
+   ],
+   "watch": [
+    {
+     "kind": "repeat",
+     "times": 4,
+     "depth": 0,
+     "row": "D2E1"
+    },
+    {
+     "kind": "interval",
+     "headline": "Close Grip Lat Pulldown",
+     "sub": "Range 8-10 · all sets at 10 -> +weight",
+     "weight": 65.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "PULL_UP/CLOSE_GRIP_LAT_PULLDOWN",
+     "row": "D2E1"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D2E1"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D2E1"
+    },
+    {
+     "kind": "repeat",
+     "times": 4,
+     "depth": 0,
+     "row": "D2E2"
+    },
+    {
+     "kind": "interval",
+     "headline": "Barbell Row",
+     "sub": "Range 6-8 · all sets at 8 -> +weight",
+     "weight": 70.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "ROW/BARBELL_ROW",
+     "row": "D2E2"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D2E2"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D2E2"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D2E3"
+    },
+    {
+     "kind": "interval",
+     "headline": "Dumbbell Row",
+     "sub": "Range 8-10 · all sets at 10 -> +weight",
+     "weight": 30.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "ROW/DUMBBELL_ROW",
+     "row": "D2E3"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D2E3"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D2E3"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D2E4"
+    },
+    {
+     "kind": "interval",
+     "headline": "Dumbbell Biceps Curl",
+     "sub": "Range 10-12 · all sets at 12 -> +weight",
+     "weight": 14.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "CURL/DUMBBELL_BICEPS_CURL",
+     "row": "D2E4"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D2E4"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D2E4"
+    }
+   ],
+   "label": "D2 · Pull",
+   "lead": [],
+   "why": "Back, biceps",
+   "title": "Pull",
+   "optional": false,
+   "est_min": 24,
+   "rotation": {
+    "day": "d2",
+    "label": "D2 · Pull",
+    "last": "2026-11-19",
+    "age": 2,
+    "starved": false
+   },
+   "removed": []
+  },
+  {
+   "key": "d3",
+   "name": "D3 · Legs",
+   "exercises": [
+    {
+     "exid": "D3E1",
+     "routine": "Back squat",
+     "category": "SQUAT",
+     "name": "BARBELL_BACK_SQUAT",
+     "label": "Barbell Back Squat",
+     "sets": 4,
+     "value": 8,
+     "weight": 100.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "barbell",
+     "phase": "strength",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      6,
+      8
+     ],
+     "increment": 2.5,
+     "next_weight": 102.5,
+     "est_s": 396,
+     "trend": [
+      126.7
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d3",
+      "exid": "D3E1",
+      "category": "SQUAT",
+      "name": "BARBELL_BACK_SQUAT",
+      "sets": 4,
+      "value": 8,
+      "weight": 100.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-14",
+      "skipped": 0,
+      "implied_e1rm": 126.7,
+      "best_e1rm": 126.7,
+      "verdict": "FRESH — not tried yet",
+      "line": "D3E1 BARBELL_BACK_SQUAT                      4x8@100           2026-11-21     0    0  FRESH — not tried yet"
+     }
+    },
+    {
+     "exid": "D3E2",
+     "routine": "Romanian deadlift",
+     "category": "DEADLIFT",
+     "name": "ROMANIAN_DEADLIFT",
+     "label": "Romanian Deadlift",
+     "sets": 3,
+     "value": 10,
+     "weight": 90.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "barbell",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      8,
+      10
+     ],
+     "increment": 2.5,
+     "next_weight": 92.5,
+     "est_s": 300,
+     "trend": [
+      120.0
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d3",
+      "exid": "D3E2",
+      "category": "DEADLIFT",
+      "name": "ROMANIAN_DEADLIFT",
+      "sets": 3,
+      "value": 10,
+      "weight": 90.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-14",
+      "skipped": 0,
+      "implied_e1rm": 120.0,
+      "best_e1rm": 120.0,
+      "verdict": "FRESH — not tried yet",
+      "line": "D3E2 ROMANIAN_DEADLIFT                       3x10@90           2026-11-21     0    0  FRESH — not tried yet"
+     }
+    },
+    {
+     "exid": "D3E3",
+     "routine": "Leg press",
+     "category": "SQUAT",
+     "name": "LEG_PRESS",
+     "label": "Leg Press",
+     "sets": 3,
+     "value": 12,
+     "weight": 120.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": true,
+     "load": "plates",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      10,
+      12
+     ],
+     "increment": 5.0,
+     "next_weight": 125.0,
+     "est_s": 318,
+     "trend": [
+      120.0
+     ],
+     "trend_score": "disc load",
+     "audit": {
+      "day": "d3",
+      "exid": "D3E3",
+      "category": "SQUAT",
+      "name": "LEG_PRESS",
+      "sets": 3,
+      "value": 12,
+      "weight": 120.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-14",
+      "skipped": 0,
+      "implied_e1rm": 168.0,
+      "best_e1rm": 168.0,
+      "verdict": "FRESH — not tried yet",
+      "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-21     0    0  FRESH — not tried yet"
+     }
+    },
+    {
+     "exid": "D3E4",
+     "routine": "Leg curl",
+     "category": "LEG_CURL",
+     "name": "LEG_CURL",
+     "label": "Leg Curl",
+     "sets": 3,
+     "value": 12,
+     "weight": 45.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "machine",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      10,
+      12
+     ],
+     "increment": 5.0,
+     "next_weight": 50.0,
+     "est_s": 318,
+     "trend": [
+      63.0
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d3",
+      "exid": "D3E4",
+      "category": "LEG_CURL",
+      "name": "LEG_CURL",
+      "sets": 3,
+      "value": 12,
+      "weight": 45.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-14",
+      "skipped": 0,
+      "implied_e1rm": 63.0,
+      "best_e1rm": 63.0,
+      "verdict": "FRESH — not tried yet",
+      "line": "D3E4 LEG_CURL                                3x12@45           2026-11-21     0    0  FRESH — not tried yet"
+     }
+    },
+    {
+     "exid": "D3E5",
+     "routine": "Standing calf raise",
+     "category": "CALF_RAISE",
+     "name": "STANDING_CALF_RAISE",
+     "label": "Standing Calf Raise",
+     "sets": 4,
+     "value": 15,
+     "weight": 60.0,
+     "rest_s": 90,
+     "kind": "reps",
+     "base": "reps",
+     "per_side": false,
+     "per_hand": false,
+     "machine": false,
+     "load": "machine",
+     "phase": "hypertrophy",
+     "why": null,
+     "note": null,
+     "warmup": [],
+     "range": [
+      13,
+      15
+     ],
+     "increment": 5.0,
+     "next_weight": 65.0,
+     "est_s": 480,
+     "trend": [
+      84.0
+     ],
+     "trend_score": "e1rm",
+     "audit": {
+      "day": "d3",
+      "exid": "D3E5",
+      "category": "CALF_RAISE",
+      "name": "STANDING_CALF_RAISE",
+      "sets": 4,
+      "value": 15,
+      "weight": 60.0,
+      "kind": "reps",
+      "since": "2026-11-21",
+      "sessions": 0,
+      "met": 0,
+      "status": "fresh",
+      "abandoned": false,
+      "impossible": false,
+      "last": "2026-11-14",
+      "skipped": 0,
+      "implied_e1rm": 84.0,
+      "best_e1rm": 84.0,
+      "verdict": "FRESH — not tried yet",
+      "line": "D3E5 STANDING_CALF_RAISE                     4x15@60           2026-11-21     0    0  FRESH — not tried yet"
+     }
+    }
+   ],
+   "watch": [
+    {
+     "kind": "repeat",
+     "times": 4,
+     "depth": 0,
+     "row": "D3E1"
+    },
+    {
+     "kind": "interval",
+     "headline": "Barbell Back Squat",
+     "sub": "Range 6-8 · all sets at 8 -> +weight",
+     "weight": 100.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "SQUAT/BARBELL_BACK_SQUAT",
+     "row": "D3E1"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D3E1"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D3E1"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D3E2"
+    },
+    {
+     "kind": "interval",
+     "headline": "Romanian Deadlift",
+     "sub": "Range 8-10 · all sets at 10 -> +weight",
+     "weight": 90.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "DEADLIFT/ROMANIAN_DEADLIFT",
+     "row": "D3E2"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D3E2"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D3E2"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D3E3"
+    },
+    {
+     "kind": "interval",
+     "headline": "Leg Press",
+     "sub": "Range 10-12 · all sets at 12 -> +weight",
+     "weight": 120.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "SQUAT/LEG_PRESS",
+     "row": "D3E3"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D3E3"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D3E3"
+    },
+    {
+     "kind": "repeat",
+     "times": 3,
+     "depth": 0,
+     "row": "D3E4"
+    },
+    {
+     "kind": "interval",
+     "headline": "Leg Curl",
+     "sub": "Range 10-12 · all sets at 12 -> +weight",
+     "weight": 45.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "LEG_CURL/LEG_CURL",
+     "row": "D3E4"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D3E4"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D3E4"
+    },
+    {
+     "kind": "repeat",
+     "times": 4,
+     "depth": 0,
+     "row": "D3E5"
+    },
+    {
+     "kind": "interval",
+     "headline": "Standing Calf Raise",
+     "sub": "Range 13-15 · all sets at 15 -> +weight",
+     "weight": 60.0,
+     "depth": 1,
+     "end": "lap",
+     "exercise": "CALF_RAISE/STANDING_CALF_RAISE",
+     "row": "D3E5"
+    },
+    {
+     "kind": "rest",
+     "headline": "1:30",
+     "sub": null,
+     "weight": null,
+     "depth": 1,
+     "end": "timer",
+     "exercise": null,
+     "row": "D3E5"
+    },
+    {
+     "kind": "rest",
+     "headline": "Lap",
+     "sub": "Push for the next exercise",
+     "weight": null,
+     "depth": 0,
+     "end": "lap",
+     "exercise": null,
+     "row": "D3E5"
+    }
+   ],
+   "label": "D3 · Legs",
+   "lead": [],
+   "why": "Quads, hamstrings, calves",
+   "title": "Legs",
+   "optional": false,
+   "est_min": 30,
+   "rotation": {
+    "day": "d3",
+    "label": "D3 · Legs",
+    "last": "2026-11-14",
+    "age": 7,
+    "starved": false
+   },
+   "removed": []
+  }
+ ],
+ "other_workouts": [],
+ "rotation": {
+  "today": "2026-11-21",
+  "starved_after_days": 7,
+  "days": [
+   {
+    "day": "d1",
+    "label": "D1 · Push",
+    "last": "2026-11-21",
+    "age": 0,
+    "starved": false
+   },
+   {
+    "day": "d2",
+    "label": "D2 · Pull",
+    "last": "2026-11-19",
+    "age": 2,
+    "starved": false
+   },
+   {
+    "day": "d3",
+    "label": "D3 · Legs",
+    "last": "2026-11-14",
+    "age": 7,
+    "starved": false
+   }
+  ],
+  "unclassified": [],
+  "next": []
+ },
+ "audit": [
+  {
+   "day": "d1",
+   "exid": "D1E1",
+   "category": "BENCH_PRESS",
+   "name": "BARBELL_BENCH_PRESS",
+   "sets": 4,
+   "value": 8,
+   "weight": 80.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 1,
+   "met": 1,
+   "status": "ok",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-21",
+   "skipped": 0,
+   "implied_e1rm": 101.3,
+   "best_e1rm": 101.3,
+   "verdict": "ok",
+   "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-11-21     1    1  ok"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E2",
+   "category": "BENCH_PRESS",
+   "name": "INCLINE_DUMBBELL_BENCH_PRESS",
+   "sets": 3,
+   "value": 10,
+   "weight": 26.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 1,
+   "met": 1,
+   "status": "ok",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-21",
+   "skipped": 0,
+   "implied_e1rm": 34.7,
+   "best_e1rm": 34.7,
+   "verdict": "ok",
+   "line": "D1E2 INCLINE_DUMBBELL_BENCH_PRESS            3x10@26           2026-11-21     1    1  ok"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E3",
+   "category": "SHOULDER_PRESS",
+   "name": "SEATED_DUMBBELL_SHOULDER_PRESS",
+   "sets": 3,
+   "value": 10,
+   "weight": 20.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 1,
+   "met": 1,
+   "status": "ok",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-21",
+   "skipped": 0,
+   "implied_e1rm": 26.7,
+   "best_e1rm": 26.7,
+   "verdict": "ok",
+   "line": "D1E3 SEATED_DUMBBELL_SHOULDER_PRESS          3x10@20           2026-11-21     1    1  ok"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E4",
+   "category": "LATERAL_RAISE",
+   "name": "DUMBBELL_LATERAL_RAISE",
+   "sets": 3,
+   "value": 15,
+   "weight": 10.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 1,
+   "met": 1,
+   "status": "ok",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-21",
+   "skipped": 0,
+   "implied_e1rm": 14.0,
+   "best_e1rm": 14.0,
+   "verdict": "ok",
+   "line": "D1E4 DUMBBELL_LATERAL_RAISE                  3x15@10           2026-11-21     1    1  ok"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E5",
+   "category": "FLYE",
+   "name": "CABLE_CROSSOVER",
+   "sets": 3,
+   "value": 12,
+   "weight": 15.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 1,
+   "met": 1,
+   "status": "ok",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-21",
+   "skipped": 0,
+   "implied_e1rm": 21.0,
+   "best_e1rm": 21.0,
+   "verdict": "ok",
+   "line": "D1E5 CABLE_CROSSOVER                         3x12@15           2026-11-21     1    1  ok"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E6",
+   "category": "TRICEPS_EXTENSION",
+   "name": "ROPE_PRESSDOWN",
+   "sets": 3,
+   "value": 12,
+   "weight": 32.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 1,
+   "met": 1,
+   "status": "ok",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-21",
+   "skipped": 0,
+   "implied_e1rm": 44.8,
+   "best_e1rm": 45.5,
+   "verdict": "ok",
+   "line": "D1E6 ROPE_PRESSDOWN                          3x12@32           2026-11-21     1    1  ok"
+  },
+  {
+   "day": "d2",
+   "exid": "D2E1",
+   "category": "PULL_UP",
+   "name": "CLOSE_GRIP_LAT_PULLDOWN",
+   "sets": 4,
+   "value": 10,
+   "weight": 65.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-19",
+   "skipped": 0,
+   "implied_e1rm": 86.7,
+   "best_e1rm": 86.7,
+   "verdict": "FRESH — not tried yet",
+   "line": "D2E1 CLOSE_GRIP_LAT_PULLDOWN                 4x10@65           2026-11-21     0    0  FRESH — not tried yet"
+  },
+  {
+   "day": "d2",
+   "exid": "D2E2",
+   "category": "ROW",
+   "name": "BARBELL_ROW",
+   "sets": 4,
+   "value": 8,
+   "weight": 70.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-19",
+   "skipped": 0,
+   "implied_e1rm": 88.7,
+   "best_e1rm": 88.7,
+   "verdict": "FRESH — not tried yet",
+   "line": "D2E2 BARBELL_ROW                             4x8@70            2026-11-21     0    0  FRESH — not tried yet"
+  },
+  {
+   "day": "d2",
+   "exid": "D2E3",
+   "category": "ROW",
+   "name": "DUMBBELL_ROW",
+   "sets": 3,
+   "value": 10,
+   "weight": 30.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-19",
+   "skipped": 0,
+   "implied_e1rm": 40.0,
+   "best_e1rm": 40.0,
+   "verdict": "FRESH — not tried yet",
+   "line": "D2E3 DUMBBELL_ROW                            3x10@30           2026-11-21     0    0  FRESH — not tried yet"
+  },
+  {
+   "day": "d2",
+   "exid": "D2E4",
+   "category": "CURL",
+   "name": "DUMBBELL_BICEPS_CURL",
+   "sets": 3,
+   "value": 12,
+   "weight": 14.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-19",
+   "skipped": 0,
+   "implied_e1rm": 19.6,
+   "best_e1rm": 19.6,
+   "verdict": "FRESH — not tried yet",
+   "line": "D2E4 DUMBBELL_BICEPS_CURL                    3x12@14           2026-11-21     0    0  FRESH — not tried yet"
+  },
+  {
+   "day": "d3",
+   "exid": "D3E1",
+   "category": "SQUAT",
+   "name": "BARBELL_BACK_SQUAT",
+   "sets": 4,
+   "value": 8,
+   "weight": 100.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-14",
+   "skipped": 0,
+   "implied_e1rm": 126.7,
+   "best_e1rm": 126.7,
+   "verdict": "FRESH — not tried yet",
+   "line": "D3E1 BARBELL_BACK_SQUAT                      4x8@100           2026-11-21     0    0  FRESH — not tried yet"
+  },
+  {
+   "day": "d3",
+   "exid": "D3E2",
+   "category": "DEADLIFT",
+   "name": "ROMANIAN_DEADLIFT",
+   "sets": 3,
+   "value": 10,
+   "weight": 90.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-14",
+   "skipped": 0,
+   "implied_e1rm": 120.0,
+   "best_e1rm": 120.0,
+   "verdict": "FRESH — not tried yet",
+   "line": "D3E2 ROMANIAN_DEADLIFT                       3x10@90           2026-11-21     0    0  FRESH — not tried yet"
+  },
+  {
+   "day": "d3",
+   "exid": "D3E3",
+   "category": "SQUAT",
+   "name": "LEG_PRESS",
+   "sets": 3,
+   "value": 12,
+   "weight": 120.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-14",
+   "skipped": 0,
+   "implied_e1rm": 168.0,
+   "best_e1rm": 168.0,
+   "verdict": "FRESH — not tried yet",
+   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-21     0    0  FRESH — not tried yet"
+  },
+  {
+   "day": "d3",
+   "exid": "D3E4",
+   "category": "LEG_CURL",
+   "name": "LEG_CURL",
+   "sets": 3,
+   "value": 12,
+   "weight": 45.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-14",
+   "skipped": 0,
+   "implied_e1rm": 63.0,
+   "best_e1rm": 63.0,
+   "verdict": "FRESH — not tried yet",
+   "line": "D3E4 LEG_CURL                                3x12@45           2026-11-21     0    0  FRESH — not tried yet"
+  },
+  {
+   "day": "d3",
+   "exid": "D3E5",
+   "category": "CALF_RAISE",
+   "name": "STANDING_CALF_RAISE",
+   "sets": 4,
+   "value": 15,
+   "weight": 60.0,
+   "kind": "reps",
+   "since": "2026-11-21",
+   "sessions": 0,
+   "met": 0,
+   "status": "fresh",
+   "abandoned": false,
+   "impossible": false,
+   "last": "2026-11-14",
+   "skipped": 0,
+   "implied_e1rm": 84.0,
+   "best_e1rm": 84.0,
+   "verdict": "FRESH — not tried yet",
+   "line": "D3E5 STANDING_CALF_RAISE                     4x15@60           2026-11-21     0    0  FRESH — not tried yet"
+  }
+ ],
+ "changes": [],
+ "block": {
+  "name": "Hypertrophy",
+  "start": "2026-11-16",
+  "weeks": 16,
+  "week": 1,
+  "over": false
+ },
+ "constraints": [],
+ "sync": {
+  "workouts": [
+   {
+    "key": "d1",
+    "workout": "D1 · Push",
+    "id": 4101,
+    "state": "in_sync"
+   },
+   {
+    "key": "d2",
+    "workout": "D2 · Pull",
+    "id": 4102,
+    "state": "in_sync"
+   },
+   {
+    "key": "d3",
+    "workout": "D3 · Legs",
+    "id": 4103,
+    "state": "changed"
+   }
+  ],
+  "pending": 1,
+  "unknown": 0
+ },
+ "cap_min": null,
+ "rest": {
+  "series_s": 90,
+  "core_s": 45
+ },
+ "week": {
+  "source": "calendar",
+  "days": [
+   {
+    "dow": "mon",
+    "sessions": [
+     {
+      "sport": "strength_training",
+      "badge": {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength"
+      },
+      "title": "D1 · Push",
+      "detail": null,
+      "slot": null,
+      "day": "d1",
+      "workout": null,
+      "platform": null,
+      "duration": "33 min",
+      "sync": "in_sync"
+     }
+    ],
+    "date": "2026-11-16",
+    "today": false
+   },
+   {
+    "dow": "tue",
+    "sessions": [],
+    "date": "2026-11-17",
+    "today": false
+   },
+   {
+    "dow": "wed",
+    "sessions": [],
+    "date": "2026-11-18",
+    "today": false
+   },
+   {
+    "dow": "thu",
+    "sessions": [
+     {
+      "sport": "strength_training",
+      "badge": {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength"
+      },
+      "title": "D2 · Pull",
+      "detail": null,
+      "slot": null,
+      "day": "d2",
+      "workout": null,
+      "platform": null,
+      "duration": "24 min",
+      "sync": "in_sync"
+     }
+    ],
+    "date": "2026-11-19",
+    "today": false
+   },
+   {
+    "dow": "fri",
+    "sessions": [
+     {
+      "sport": "lap_swimming",
+      "badge": {
+       "type": "lap_swimming",
+       "sport": "Pool swim",
+       "icon": "swim",
+       "kind": "endurance"
+      },
+      "title": "Swim 1,800 m",
+      "detail": null,
+      "slot": null,
+      "day": null,
+      "workout": null,
+      "platform": null,
+      "duration": null,
+      "sync": "none"
+     }
+    ],
+    "date": "2026-11-20",
+    "today": false
+   },
+   {
+    "dow": "sat",
+    "sessions": [
+     {
+      "sport": "strength_training",
+      "badge": {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength"
+      },
+      "title": "D3 · Legs",
+      "detail": null,
+      "slot": null,
+      "day": "d3",
+      "workout": null,
+      "platform": null,
+      "duration": "30 min",
+      "sync": "changed"
+     }
+    ],
+    "date": "2026-11-21",
+    "today": true
+   },
+   {
+    "dow": "sun",
+    "sessions": [
+     {
+      "sport": "lap_swimming",
+      "badge": {
+       "type": "lap_swimming",
+       "sport": "Pool swim",
+       "icon": "swim",
+       "kind": "endurance"
+      },
+      "title": "Swim 1,800 m",
+      "detail": null,
+      "slot": null,
+      "day": null,
+      "workout": null,
+      "platform": null,
+      "duration": null,
+      "sync": "none"
+     }
+    ],
+    "date": "2026-11-22",
+    "today": false
+   }
+  ]
+ },
+ "floor": [],
+ "rules": [
+  {
+   "key": "1:30",
+   "label": "Rest between series",
+   "detail": "A countdown on the watch.",
+   "source": "engine"
+  },
+  {
+   "key": "Lap",
+   "label": "Between exercises",
+   "detail": "“Press for next” — you control the transitions.",
+   "source": "engine"
+  },
+  {
+   "key": "7 d",
+   "label": "A starved day outranks the template",
+   "detail": "Days since each gym day; starved after 7.",
+   "source": "engine"
+  }
+ ],
+ "cardio": null,
+ "benchmarks": [],
+ "balance": {
+  "muscles": [
+   {
+    "muscle": "Chest",
+    "sets": 10,
+    "lo": 10,
+    "hi": 20,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Back",
+    "sets": 11,
+    "lo": 10,
+    "hi": 20,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Delts",
+    "sets": 6,
+    "lo": 8,
+    "hi": 20,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Biceps",
+    "sets": 3,
+    "lo": 6,
+    "hi": 14,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Triceps",
+    "sets": 3,
+    "lo": 6,
+    "hi": 14,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Quads",
+    "sets": 7,
+    "lo": 10,
+    "hi": 18,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Hams/Glutes",
+    "sets": 6,
+    "lo": 10,
+    "hi": 18,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Calves",
+    "sets": 4,
+    "lo": 4,
+    "hi": 12,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Traps",
+    "sets": 0,
+    "lo": 4,
+    "hi": 10,
+    "on_purpose": null
+   },
+   {
+    "muscle": "Core",
+    "sets": 0,
+    "lo": 6,
+    "hi": 16,
+    "on_purpose": null
+   }
+  ],
+  "athletic": [],
+  "unattributed": 0,
+  "days": [
+   "d1",
+   "d2",
+   "d3"
+  ]
+ },
+ "removed": [],
+ "versions": [],
+ "phases": [
+  {
+   "key": "core",
+   "label": "Core block"
+  },
+  {
+   "key": "power",
+   "label": "Power"
+  },
+  {
+   "key": "strength",
+   "label": "Strength"
+  },
+  {
+   "key": "functional",
+   "label": "Functional / athletic"
+  },
+  {
+   "key": "hypertrophy",
+   "label": "Hypertrophy"
+  }
+ ],
+ "season": null,
+ "defs": {
+  "audit": {
+   "source": "computed",
+   "definition": "Prescription check: ok · watch (missed once) · stale (asked 2+ sessions, never met) · impossible (implies an e1RM more than 8 kg above your best) · abandoned (no session in 21+ days)."
+  },
+  "starved": {
+   "source": "computed",
+   "definition": "A program day not trained for more than 7 days."
+  },
+  "watch_sync": {
+   "source": "computed",
+   "definition": "Compared with what was last verified on your watch — no Garmin call."
+  },
+  "est_time": {
+   "source": "computed",
+   "definition": "Estimated: sets × work time (≈3 s a rep, the prescribed time for timed work, both sides for per-side work, 20 s a power set) + the watch's rest between series + 30 s a lap between exercises + 90 s a warm-up set."
+  },
+  "phase": {
+   "source": "computed",
+   "definition": "Phase in the day, in order: core block → power before the first main lift → the first loaded lift (strength) → timed and athletic work after it (functional) → the rest (hypertrophy). The program can name a phase itself."
+  },
+  "next_target": {
+   "source": "computed",
+   "definition": "Double progression: the top of the range on every set earns the next step — barbell 2.5 kg, dumbbell 2 kg, dumbbell light 1 kg, cable 2.5 kg, machine 5 kg, plates 5 kg, added 2.5 kg (dumbbells per hand; plates on a machine)."
+  },
+  "planned_volume": {
+   "source": "computed",
+   "definition": "Working sets per muscle in one week of the program — every gym day once, optional days left out, warm-ups excluded. Speed, jump, throw, sled and rope work counts in the Athletic bucket, never as muscle volume."
+  },
+  "e1rm": {
+   "source": "computed",
+   "definition": "Estimated 1-rep max (Epley): load × (1 + reps / 30), reps capped at 12. Per-hand lifts use the per-hand load; plate-loaded machines have none."
+  }
+ }
+}

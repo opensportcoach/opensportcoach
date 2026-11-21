@@ -1,0 +1,45 @@
+{
+ "kind": "recap",
+ "request_id": null,
+ "week": "2026-W46",
+ "findings": [],
+ "markdown": null,
+ "checks": [
+  {
+   "name": "Load in band",
+   "ok": true
+  },
+  {
+   "name": "ACWR 0.8–1.3",
+   "ok": true
+  },
+  {
+   "name": "HRV in band",
+   "ok": true
+  },
+  {
+   "name": "Rotation ≤ 7 d",
+   "ok": true
+  },
+  {
+   "name": "No stale lifts",
+   "ok": true
+  },
+  {
+   "name": "Sleep debt < 4 h",
+   "ok": true
+  },
+  {
+   "name": "Weight in range",
+   "ok": true
+  },
+  {
+   "name": "Watch in sync",
+   "ok": true
+  },
+  {
+   "name": "Constraints held",
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,944 @@
+{
+ "view": "workout",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:11",
+ "id": 21000000102,
+ "date": "2026-11-20",
+ "start": "2026-11-20 09:30:00",
+ "group": "swim",
+ "type": "lap_swimming",
+ "sport": "Pool swim",
+ "icon": "swim",
+ "kind": "endurance",
+ "title": "Pool swim",
+ "summary": {
+  "duration": 2520.0,
+  "movingDuration": 2290.0,
+  "distance": 1700.0,
+  "averageSpeed": 0.6944444444444444,
+  "averageHR": 132,
+  "maxHR": 158,
+  "calories": 340,
+  "activityTrainingLoad": 38,
+  "poolLength": 25.0,
+  "activeLengths": 68,
+  "averageSwolf": 41
+ },
+ "annotation": null,
+ "reviews": [],
+ "fuel": {
+  "taken": null,
+  "plan": null,
+  "planned_title": null,
+  "pantry": [
+   {
+    "kind": "recipe",
+    "id": "bottle",
+    "label": "Bottle · MNSTRY Fast Carb Mango",
+    "unit": "bottle",
+    "how": "43 g powder · 500 ml",
+    "g_each": 40,
+    "display": {
+     "slot": "1",
+     "mono": "FC",
+     "shape": "bottle"
+    },
+    "short": "Fast Carb Mango"
+   },
+   {
+    "kind": "product",
+    "id": "maurten-gel-160",
+    "label": "Maurten Gel 160",
+    "unit": "gel",
+    "how": "65 g gel",
+    "g_each": 40,
+    "display": {
+     "slot": "gel",
+     "mono": "GEL",
+     "shape": "gel"
+    },
+    "short": "Gel 160"
+   }
+  ],
+  "others": [
+   {
+    "kind": "product",
+    "id": "mnstry-slow-carb-heat",
+    "label": "MNSTRY Slow Carb Heat",
+    "short": "Slow Carb Heat",
+    "unit": "serving",
+    "g_each": 40,
+    "display": {
+     "slot": "4",
+     "mono": "SC",
+     "shape": "bottle"
+    }
+   },
+   {
+    "kind": "product",
+    "id": "maurten-solid-160",
+    "label": "Maurten Solid 160",
+    "short": "Solid 160",
+    "unit": "bar",
+    "g_each": 40,
+    "display": {
+     "slot": "gel",
+     "mono": "BAR",
+     "shape": "gel"
+    }
+   }
+  ],
+  "setup_open": [],
+  "due": false,
+  "minutes": 38,
+  "loggable": false
+ },
+ "score": {
+  "id": 21000000102,
+  "date": "2026-11-20",
+  "title": "Pool swim",
+  "type": "lap_swimming",
+  "group": "swim",
+  "total": 95,
+  "band": "as_planned",
+  "band_label": "As planned",
+  "parts": [
+   {
+    "key": "distance",
+    "label": "Distance",
+    "weight": 35,
+    "measure": "swum vs planned: ±10 % full, ±50 % nothing",
+    "planned_text": "1800.0 m",
+    "done_text": "1700 m",
+    "detail": {
+     "planned_m": 1800.0,
+     "swum_m": 1700
+    },
+    "score": 1.0,
+    "points": 35.0,
+    "dropped": null
+   },
+   {
+    "key": "swims",
+    "label": "Swims done",
+    "weight": 40,
+    "measure": "planned swims matched by a lap ÷ planned",
+    "planned_text": "11 swims",
+    "done_text": "10",
+    "detail": {
+     "planned": 11,
+     "done": 10
+    },
+    "score": 0.909,
+    "points": 36.4,
+    "dropped": null
+   },
+   {
+    "key": "swim_pacing",
+    "label": "Pacing",
+    "weight": 25,
+    "measure": "evenness of each repeated set: pace spread 3 % or under full",
+    "planned_text": "even sets · within 3 %",
+    "done_text": "spread 3.3 % at worst",
+    "detail": {
+     "sets": 1,
+     "worst_spread": 0.033
+    },
+    "score": 0.957,
+    "points": 23.9,
+    "dropped": null
+   }
+  ],
+  "coverage": 1.0,
+  "out_of": 100,
+  "earned": 95.3,
+  "excluded": null,
+  "against": "swim_aerobic_1800.json (current) · Swim · Aerobic 1800 (matched by the workout id the watch recorded)",
+  "summary": "1 of 11 planned swims not done. Everything else was on target.",
+  "headline": null,
+  "foot": "Score = 95.3 ÷ 100 points that could be scored.",
+  "capped": null,
+  "provisional": false,
+  "flags": [
+   {
+    "key": "missed",
+    "text": "1 planned swim has no matching lap."
+   }
+  ]
+ },
+ "laps": [
+  {
+   "distance": 300.0,
+   "duration": 405.0,
+   "movingDuration": 405.0,
+   "averageHR": 124,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 30.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 100.0,
+   "duration": 129.0,
+   "movingDuration": 129.0,
+   "averageHR": 132,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 32.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.2,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 20.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 100.0,
+   "duration": 127.0,
+   "movingDuration": 127.0,
+   "averageHR": 133,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 31.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 31.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 31.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 31.8,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 20.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 100.0,
+   "duration": 129.0,
+   "movingDuration": 129.0,
+   "averageHR": 134,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 32.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.2,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 20.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 100.0,
+   "duration": 128.0,
+   "movingDuration": 128.0,
+   "averageHR": 135,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 32.0,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.0,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.0,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 32.0,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 20.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 100.0,
+   "duration": 132.0,
+   "movingDuration": 132.0,
+   "averageHR": 136,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 33.0,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.0,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.0,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.0,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 20.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 100.0,
+   "duration": 135.0,
+   "movingDuration": 135.0,
+   "averageHR": 137,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.8,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 20.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 100.0,
+   "duration": 139.0,
+   "movingDuration": 139.0,
+   "averageHR": 138,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 34.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 34.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 34.8,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 34.8,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 20.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 0.0,
+   "duration": 40.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 400.0,
+   "duration": 532.0,
+   "movingDuration": 532.0,
+   "averageHR": 140,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 33.2,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  },
+  {
+   "distance": 0.0,
+   "duration": 45.0,
+   "movingDuration": 0.0
+  },
+  {
+   "distance": 300.0,
+   "duration": 450.0,
+   "movingDuration": 450.0,
+   "averageHR": 126,
+   "lengthDTOs": [
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    },
+    {
+     "distance": 25.0,
+     "duration": 37.5,
+     "totalNumberOfStrokes": 17
+    }
+   ]
+  }
+ ],
+ "review": {
+  "id": 21000000102,
+  "sport": "swim",
+  "type": "lap_swimming",
+  "metrics": {
+   "distance": {
+    "value": 1700,
+    "source": "garmin",
+    "unit": "m"
+   },
+   "moving_s": {
+    "value": 2290,
+    "source": "garmin",
+    "unit": "s"
+   },
+   "pace_100": {
+    "value": 135,
+    "source": "computed",
+    "unit": "s/100m"
+   },
+   "swolf": {
+    "value": 41,
+    "source": "garmin",
+    "unit": ""
+   },
+   "strokes_per_length": {
+    "value": 17.5,
+    "source": "garmin",
+    "unit": ""
+   },
+   "avg_hr": {
+    "value": 132,
+    "source": "garmin",
+    "unit": "bpm"
+   },
+   "pace_spread": {
+    "value": 3.3,
+    "source": "computed",
+    "unit": "%"
+   }
+  },
+  "intervals": [
+   {
+    "n": 1,
+    "metres": 300,
+    "secs": 405,
+    "pace_100": 135.0,
+    "swolf": 51,
+    "stroke": "FREESTYLE",
+    "hr": 124,
+    "planned": {
+     "n": 1,
+     "note": "Easy, long strokes",
+     "kind": "warmup"
+    }
+   },
+   {
+    "n": 2,
+    "metres": 100,
+    "secs": 129,
+    "pace_100": 129.0,
+    "swolf": 49,
+    "stroke": "FREESTYLE",
+    "hr": 132,
+    "planned": {
+     "n": 2,
+     "note": "Steady, same time each",
+     "kind": "main"
+    }
+   },
+   {
+    "n": 3,
+    "metres": 100,
+    "secs": 127,
+    "pace_100": 127.0,
+    "swolf": 49,
+    "stroke": "FREESTYLE",
+    "hr": 133,
+    "planned": {
+     "n": 3,
+     "note": "Steady, same time each",
+     "kind": "main"
+    }
+   },
+   {
+    "n": 4,
+    "metres": 100,
+    "secs": 129,
+    "pace_100": 129.0,
+    "swolf": 49,
+    "stroke": "FREESTYLE",
+    "hr": 134,
+    "planned": {
+     "n": 4,
+     "note": "Steady, same time each",
+     "kind": "main"
+    }
+   },
+   {
+    "n": 5,
+    "metres": 100,
+    "secs": 128,
+    "pace_100": 128.0,
+    "swolf": 49,
+    "stroke": "FREESTYLE",
+    "hr": 135,
+    "planned": {
+     "n": 5,
+     "note": "Steady, same time each",
+     "kind": "main"
+    }
+   },
+   {
+    "n": 6,
+    "metres": 100,
+    "secs": 132,
+    "pace_100": 132.0,
+    "swolf": 50,
+    "stroke": "FREESTYLE",
+    "hr": 136,
+    "planned": {
+     "n": 6,
+     "note": "Steady, same time each",
+     "kind": "main"
+    }
+   },
+   {
+    "n": 7,
+    "metres": 100,
+    "secs": 135,
+    "pace_100": 135.0,
+    "swolf": 51,
+    "stroke": "FREESTYLE",
+    "hr": 137,
+    "planned": {
+     "n": 7,
+     "note": "Steady, same time each",
+     "kind": "main"
+    }
+   },
+   {
+    "n": 8,
+    "metres": 100,
+    "secs": 139,
+    "pace_100": 139.0,
+    "swolf": 52,
+    "stroke": "FREESTYLE",
+    "hr": 138,
+    "planned": {
+     "n": 8,
+     "note": "Steady, same time each",
+     "kind": "main"
+    }
+   },
+   {
+    "n": 9,
+    "metres": 400,
+    "secs": 532,
+    "pace_100": 133.0,
+    "swolf": 50,
+    "stroke": "FREESTYLE",
+    "hr": 140,
+    "planned": {
+     "n": 10,
+     "note": "Steady, negative split",
+     "kind": "main"
+    }
+   },
+   {
+    "n": 10,
+    "metres": 300,
+    "secs": 450,
+    "pace_100": 150.0,
+    "swolf": 54,
+    "stroke": "FREESTYLE",
+    "hr": 126,
+    "planned": {
+     "n": 11,
+     "note": "Easy",
+     "kind": "cooldown"
+    }
+   }
+  ],
+  "planned": {
+   "key": "swim_aerobic_1800",
+   "name": "Swim · Aerobic 1800",
+   "matched_by": "the workout id the watch recorded",
+   "version": "swim_aerobic_1800.json (current)",
+   "metres": 1800.0,
+   "swims": 11,
+   "done": 10
+  },
+  "sets": [
+   {
+    "reps": 8,
+    "done": 7,
+    "metres": 100.0,
+    "note": "Steady, same time each",
+    "pace_spread": 0.033
+   }
+  ],
+  "flags": [
+   {
+    "key": "missed",
+    "text": "1 planned swim has no matching lap."
+   }
+  ],
+  "definitions": {
+   "pace_100": "Moving time per 100 m: the time spent swimming (rests excluded) ÷ the distance × 100.",
+   "swolf": "SWOLF: seconds plus strokes for one length. Lower is more efficient; compare only in the same pool.",
+   "strokes_per_length": "Average strokes per pool length.",
+   "css_100": "Critical swim speed per 100 m: (T400 − T200) ÷ 2, from this session's all-out 400 and 200.",
+   "pace_spread": "How much the pace of a set's reps varied: standard deviation ÷ mean. Under 3 % is even.",
+   "run_spread": "How much a circuit's run legs varied in time: standard deviation ÷ mean.",
+   "stray_laps": "Laps under 10 s on a lap-button session: a button pressed twice, which shifts every step after it."
+  }
+ },
+ "defs": {
+  "load": {
+   "source": "garmin",
+   "definition": "Garmin training load: EPOC, from heart rate. It barely registers lifting — read strength by tonnage and sets, never with cardio in one number."
+  },
+  "fuel_band": {
+   "source": "computed",
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+  },
+  "fuel_target": {
+   "source": "computed",
+   "definition": "The rate planned: the top of a hard session's band, the middle of an easy one's, never above what your gut is trained to (60 g/h until you say otherwise), plus 10 g/h on a gut-training session."
+  },
+  "fuel_gut": {
+   "source": "you",
+   "definition": "The most carbohydrate an hour you have taken in training without trouble. Raised 10 g/h at a time, only after a logged session at the current rate."
+  },
+  "fuel_taken": {
+   "source": "you",
+   "definition": "What you logged taking, in grams, from each product's label and your bottle recipe as it was that day. Self-reported: Garmin does not record it."
+  },
+  "score": {
+   "source": "computed",
+   "definition": "How the session went against what was planned for it that day, 0–100. Execution, not fitness: heat, decoupling and efficiency stay flags. Each part scores 0–1 and earns its weight; a part that cannot be scored drops out and the others rescale. Under 60 % of the session scored, no total. 85+ As planned · 70–84 Mostly · 50–69 Partly · under 50 Off plan · under 60 % scored: Unclear. A gym session with a planned exercise not started scores 84 at most."
+  },
+  "score_sets": {
+   "source": "computed",
+   "definition": "Working sets done ÷ planned, per exercise, capped at planned: extra sets add nothing."
+  },
+  "score_reps": {
+   "source": "computed",
+   "definition": "Per planned set, reps (or seconds) done ÷ target, capped at 1. A per-side set is scored per side."
+  },
+  "score_load": {
+   "source": "computed",
+   "definition": "Per planned set, the load in the program's terms (per hand, discs on a machine) ÷ the ask, capped at 1; on a weighted bodyweight lift, body plus plate. More than 15 % over is flagged, not rewarded; near double means suspect the implement. A lift done on a different machine is not comparable and drops out."
+  },
+  "score_rest": {
+   "source": "computed",
+   "definition": "Share of rests between sets within 0.75–1.5 × the prescribed rest. Weighted low: rest runs on the lap button."
+  },
+  "score_intent": {
+   "source": "computed",
+   "definition": "Easy and tempo rides: the share of time in the intent's band (power against your FTP, else the activity's own HR zones); 85 % scores full. On an easy ride, time under the band counts half. Interval rides: IF inside the intent's band."
+  },
+  "score_intervals": {
+   "source": "computed",
+   "definition": "Only when the plan sets work: time at the target's low end −5 % or better (3-second power), held 20 s or more, ÷ the work planned."
+  },
+  "score_duration": {
+   "source": "computed",
+   "definition": "Moving time against the plan, both ways: ±10 % scores full, ±50 % nothing."
+  },
+  "score_pacing": {
+   "source": "computed",
+   "definition": "Steady rides: variability index, 1.05 or under full, 1.20 nothing. Runs: second half's pace within 3 % of the first. Not scored on interval rides."
+  },
+  "score_fuel": {
+   "source": "computed",
+   "definition": "Only when a fuel plan existed: grams taken ÷ planned, capped at 1. A log with no grams drops out."
+  },
+  "score_distance": {
+   "source": "computed",
+   "definition": "Metres swum against the metres planned, both ways: within 10 % scores full, 50 % off nothing."
+  },
+  "score_swims": {
+   "source": "computed",
+   "definition": "Planned swims done, in order (the lap's distance matching the planned rep's) ÷ planned swims."
+  },
+  "score_swim_pacing": {
+   "source": "computed",
+   "definition": "Per set of repeated swims, the spread of pace across its reps: 3 % or under full, 10 % nothing."
+  },
+  "score_steps": {
+   "source": "computed",
+   "definition": "Working steps of the planned circuit done (a lap of its own, not a stray press) ÷ planned."
+  },
+  "score_structure": {
+   "source": "computed",
+   "definition": "Laps against the planned steps: the same number scores full; each lap more or fewer costs its share. A stray lap press shifts every step after it."
+  },
+  "score_circuit_pacing": {
+   "source": "computed",
+   "definition": "The spread of the run legs' times: 5 % or under full, 20 % nothing."
+  }
+ }
+}

@@ -1,0 +1,2090 @@
+{
+ "view": "calendar",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:11",
+ "scheduled": [
+  {
+   "date": "2026-11-16",
+   "title": "D1 · Push",
+   "workout_id": 4101,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": true
+  },
+  {
+   "date": "2026-11-19",
+   "title": "D2 · Pull",
+   "workout_id": 4102,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Swim 1,800 m",
+   "workout_id": 4201,
+   "sport": "lap_swimming",
+   "badge": {
+    "type": "lap_swimming",
+    "sport": "Pool swim",
+    "icon": "swim",
+    "kind": "endurance"
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-21",
+   "title": "D3 · Legs",
+   "workout_id": 4103,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-22",
+   "title": "Swim 1,800 m",
+   "workout_id": 4201,
+   "sport": "lap_swimming",
+   "badge": {
+    "type": "lap_swimming",
+    "sport": "Pool swim",
+    "icon": "swim",
+    "kind": "endurance"
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-23",
+   "title": "D1 · Push",
+   "workout_id": 4101,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": false
+  }
+ ],
+ "planned": [
+  {
+   "date": "2026-11-18",
+   "title": "Zwift · VO2 45 min",
+   "sport": "virtual_ride",
+   "badge": {
+    "type": "virtual_ride",
+    "sport": "Zwift",
+    "icon": "zwift",
+    "kind": "endurance"
+   },
+   "detail": "10 min warm-up · 5 × 3 min hard, 3 min easy · 5 min cool-down.",
+   "why": "The week's VO2 work, on the bike.",
+   "platform": "zwift",
+   "workout": null,
+   "duration_min": 45,
+   "zwift_workout": {
+    "name": "VO2 Max 3x3",
+    "url": "https://whatsonzwift.com/workouts/vo2-max/vo2-max-3x3",
+    "collection": "VO2 Max",
+    "duration_min": 38,
+    "stress_points": 47,
+    "adjust": "Add two more 3′ reps after the third, with 3′ easy between."
+   },
+   "intent": "vo2",
+   "fuel": {
+    "minutes": 45,
+    "intent": "vo2",
+    "sport": "bike",
+    "band": [
+     0,
+     0
+    ],
+    "cap_g_h": 60,
+    "slack_g_h": 5,
+    "target_g_h": 0,
+    "total_g": 0,
+    "gut_g_h": 60,
+    "rehearsal": false,
+    "items": [],
+    "timeline": [],
+    "planned_g": 0,
+    "planned_g_h": 0,
+    "setup_needed": false,
+    "needed": false,
+    "notes": []
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-22",
+   "title": "Long ride · Z2",
+   "sport": "road_biking",
+   "badge": {
+    "type": "road_biking",
+    "sport": "Road ride",
+    "icon": "bike",
+    "kind": "endurance"
+   },
+   "detail": "Zone 2 throughout, 60–75 % FTP.",
+   "why": "The week's long ride.",
+   "platform": null,
+   "workout": null,
+   "duration_min": 150,
+   "zwift_workout": null,
+   "intent": "endurance",
+   "fuel": {
+    "minutes": 150,
+    "intent": "endurance",
+    "sport": "bike",
+    "band": [
+     60,
+     90
+    ],
+    "cap_g_h": 60,
+    "slack_g_h": 5,
+    "target_g_h": 60,
+    "total_g": 150,
+    "gut_g_h": 60,
+    "rehearsal": false,
+    "items": [
+     {
+      "kind": "recipe",
+      "id": "bottle",
+      "label": "Bottle · MNSTRY Fast Carb Mango",
+      "n": 3,
+      "g_each": 40,
+      "g": 120,
+      "display": {
+       "slot": "1",
+       "mono": "FC",
+       "shape": "bottle"
+      },
+      "short": "Fast Carb Mango"
+     },
+     {
+      "kind": "product",
+      "id": "maurten-gel-160",
+      "label": "Maurten Gel 160",
+      "n": 1,
+      "g_each": 40,
+      "g": 40,
+      "display": {
+       "slot": "gel",
+       "mono": "GEL",
+       "shape": "gel"
+      },
+      "short": "Gel 160"
+     }
+    ],
+    "timeline": [
+     {
+      "at": 0,
+      "until": 50,
+      "kind": "recipe",
+      "id": "bottle"
+     },
+     {
+      "at": 50,
+      "until": 100,
+      "kind": "recipe",
+      "id": "bottle"
+     },
+     {
+      "at": 80,
+      "kind": "product",
+      "id": "maurten-gel-160"
+     },
+     {
+      "at": 100,
+      "until": 150,
+      "kind": "recipe",
+      "id": "bottle"
+     }
+    ],
+    "planned_g": 160,
+    "planned_g_h": 64,
+    "setup_needed": false,
+    "needed": true,
+    "notes": [],
+    "cues": [
+     {
+      "at": 0,
+      "until": 50,
+      "kind": "recipe",
+      "id": "bottle",
+      "label": "Fast Carb Mango",
+      "how": "sip it through to 0:50",
+      "display": {
+       "slot": "1",
+       "mono": "FC",
+       "shape": "bottle"
+      }
+     },
+     {
+      "at": 50,
+      "until": 100,
+      "kind": "recipe",
+      "id": "bottle",
+      "label": "2nd Fast Carb Mango",
+      "how": "sip it through to 1:40",
+      "display": {
+       "slot": "1",
+       "mono": "FC",
+       "shape": "bottle"
+      }
+     },
+     {
+      "at": 80,
+      "until": null,
+      "kind": "product",
+      "id": "maurten-gel-160",
+      "label": "Gel 160",
+      "how": "with a mouthful of water",
+      "display": {
+       "slot": "gel",
+       "mono": "GEL",
+       "shape": "gel"
+      }
+     },
+     {
+      "at": 100,
+      "until": 150,
+      "kind": "recipe",
+      "id": "bottle",
+      "label": "3rd Fast Carb Mango",
+      "how": "sip it to the end",
+      "display": {
+       "slot": "1",
+       "mono": "FC",
+       "shape": "bottle"
+      }
+     }
+    ],
+    "per_hour_grams": [
+     {
+      "from": 0,
+      "to": 60,
+      "g": 48
+     },
+     {
+      "from": 60,
+      "to": 120,
+      "g": 88
+     },
+     {
+      "from": 120,
+      "to": 150,
+      "g": 24
+     }
+    ],
+    "over_cap_g_h": 4,
+    "alternatives": []
+   },
+   "done": false
+  }
+ ],
+ "done": [
+  {
+   "date": "2026-11-20",
+   "id": 21000000104,
+   "title": "Tennis",
+   "group": "other",
+   "type": "tennis_v2",
+   "sport": "Tennis",
+   "icon": "racket",
+   "kind": "sport"
+  },
+  {
+   "date": "2026-11-20",
+   "id": 21000000102,
+   "title": "Pool swim",
+   "group": "swim",
+   "type": "lap_swimming",
+   "sport": "Pool swim",
+   "icon": "swim",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-19",
+   "id": 21000000101,
+   "title": "D2 · Pull",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-17",
+   "id": 21000000100,
+   "title": "Easy run",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-16",
+   "id": 21000000099,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-15",
+   "id": 21000000098,
+   "title": "Zone 2 ride",
+   "group": "bike",
+   "type": "road_biking",
+   "sport": "Road ride",
+   "icon": "bike",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-14",
+   "id": 21000000097,
+   "title": "D3 · Legs",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-13",
+   "id": 21000000096,
+   "title": "Pool swim",
+   "group": "swim",
+   "type": "lap_swimming",
+   "sport": "Pool swim",
+   "icon": "swim",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-12",
+   "id": 21000000095,
+   "title": "D2 · Pull",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-11",
+   "id": 21000000105,
+   "title": "Tennis",
+   "group": "other",
+   "type": "tennis_v2",
+   "sport": "Tennis",
+   "icon": "racket",
+   "kind": "sport"
+  },
+  {
+   "date": "2026-11-10",
+   "id": 21000000094,
+   "title": "Easy run",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-09",
+   "id": 21000000093,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-07",
+   "id": 21000000092,
+   "title": "D3 · Legs",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-06",
+   "id": 21000000091,
+   "title": "Pool swim",
+   "group": "swim",
+   "type": "lap_swimming",
+   "sport": "Pool swim",
+   "icon": "swim",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-05",
+   "id": 21000000090,
+   "title": "D2 · Pull",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-03",
+   "id": 21000000089,
+   "title": "Easy run",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-02",
+   "id": 21000000088,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-01",
+   "id": 21000000087,
+   "title": "Zone 2 ride",
+   "group": "bike",
+   "type": "road_biking",
+   "sport": "Road ride",
+   "icon": "bike",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-31",
+   "id": 21000000086,
+   "title": "D3 · Legs",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-30",
+   "id": 21000000085,
+   "title": "Pool swim",
+   "group": "swim",
+   "type": "lap_swimming",
+   "sport": "Pool swim",
+   "icon": "swim",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-29",
+   "id": 21000000084,
+   "title": "D2 · Pull",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-27",
+   "id": 21000000083,
+   "title": "Easy run",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-26",
+   "id": 21000000082,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-26",
+   "id": 21000000103,
+   "title": "Conditioning circuit",
+   "group": "other",
+   "type": "indoor_cardio",
+   "sport": "Indoor cardio",
+   "icon": "circuit",
+   "kind": "circuit"
+  },
+  {
+   "date": "2026-10-25",
+   "id": 21000009002,
+   "title": "Lakeshore 70.3",
+   "group": "race",
+   "type": "multi_sport",
+   "sport": "Multisport",
+   "icon": "race",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-24",
+   "id": 21000000081,
+   "title": "D3 · Legs",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-23",
+   "id": 21000000080,
+   "title": "Pool swim",
+   "group": "swim",
+   "type": "lap_swimming",
+   "sport": "Pool swim",
+   "icon": "swim",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-22",
+   "id": 21000000079,
+   "title": "D2 · Pull",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-20",
+   "id": 21000000078,
+   "title": "Easy run",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-19",
+   "id": 21000000077,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-18",
+   "id": 21000000076,
+   "title": "Zone 2 ride",
+   "group": "bike",
+   "type": "road_biking",
+   "sport": "Road ride",
+   "icon": "bike",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-17",
+   "id": 21000000075,
+   "title": "D3 · Legs",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-16",
+   "id": 21000000074,
+   "title": "Pool swim",
+   "group": "swim",
+   "type": "lap_swimming",
+   "sport": "Pool swim",
+   "icon": "swim",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-15",
+   "id": 21000000073,
+   "title": "D2 · Pull",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-13",
+   "id": 21000000072,
+   "title": "Easy run",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-12",
+   "id": 21000000071,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-10-11",
+   "id": 21000009001,
+   "title": "Riverside Half",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-10-10",
+   "id": 21000000070,
+   "title": "D3 · Legs",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  }
+ ],
+ "sync": {
+  "workouts": [
+   {
+    "key": "d1",
+    "workout": "D1 · Push",
+    "id": 4101,
+    "state": "in_sync"
+   },
+   {
+    "key": "d2",
+    "workout": "D2 · Pull",
+    "id": 4102,
+    "state": "in_sync"
+   },
+   {
+    "key": "d3",
+    "workout": "D3 · Legs",
+    "id": 4103,
+    "state": "changed"
+   }
+  ],
+  "pending": 1,
+  "unknown": 0
+ },
+ "race_days": [
+  {
+   "date": "2026-10-10",
+   "window": "easy",
+   "day": 3,
+   "of": 3,
+   "intensity": false,
+   "race": {
+    "id": "riverside-half",
+    "name": "Riverside Half",
+    "kind": "half_marathon",
+    "kind_label": "Half marathon",
+    "icon": "run",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "start": "09:00",
+    "days_to": -41,
+    "weeks_to": -5.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "1:50:00",
+     "seconds": 6600
+    }
+   }
+  },
+  {
+   "date": "2026-10-11",
+   "window": "race",
+   "day": 1,
+   "of": 1,
+   "intensity": null,
+   "race": {
+    "id": "riverside-half",
+    "name": "Riverside Half",
+    "kind": "half_marathon",
+    "kind_label": "Half marathon",
+    "icon": "run",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "start": "09:00",
+    "days_to": -41,
+    "weeks_to": -5.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "1:50:00",
+     "seconds": 6600
+    }
+   }
+  },
+  {
+   "date": "2026-10-12",
+   "window": "recovery",
+   "day": 1,
+   "of": 5,
+   "intensity": false,
+   "race": {
+    "id": "riverside-half",
+    "name": "Riverside Half",
+    "kind": "half_marathon",
+    "kind_label": "Half marathon",
+    "icon": "run",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "start": "09:00",
+    "days_to": -41,
+    "weeks_to": -5.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "1:50:00",
+     "seconds": 6600
+    }
+   }
+  },
+  {
+   "date": "2026-10-13",
+   "window": "recovery",
+   "day": 2,
+   "of": 5,
+   "intensity": false,
+   "race": {
+    "id": "riverside-half",
+    "name": "Riverside Half",
+    "kind": "half_marathon",
+    "kind_label": "Half marathon",
+    "icon": "run",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "start": "09:00",
+    "days_to": -41,
+    "weeks_to": -5.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "1:50:00",
+     "seconds": 6600
+    }
+   }
+  },
+  {
+   "date": "2026-10-14",
+   "window": "recovery",
+   "day": 3,
+   "of": 5,
+   "intensity": false,
+   "race": {
+    "id": "riverside-half",
+    "name": "Riverside Half",
+    "kind": "half_marathon",
+    "kind_label": "Half marathon",
+    "icon": "run",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "start": "09:00",
+    "days_to": -41,
+    "weeks_to": -5.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "1:50:00",
+     "seconds": 6600
+    }
+   }
+  },
+  {
+   "date": "2026-10-15",
+   "window": "recovery",
+   "day": 4,
+   "of": 5,
+   "intensity": false,
+   "race": {
+    "id": "riverside-half",
+    "name": "Riverside Half",
+    "kind": "half_marathon",
+    "kind_label": "Half marathon",
+    "icon": "run",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "start": "09:00",
+    "days_to": -41,
+    "weeks_to": -5.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "1:50:00",
+     "seconds": 6600
+    }
+   }
+  },
+  {
+   "date": "2026-10-16",
+   "window": "recovery",
+   "day": 5,
+   "of": 5,
+   "intensity": false,
+   "race": {
+    "id": "riverside-half",
+    "name": "Riverside Half",
+    "kind": "half_marathon",
+    "kind_label": "Half marathon",
+    "icon": "run",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "start": "09:00",
+    "days_to": -41,
+    "weeks_to": -5.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "1:50:00",
+     "seconds": 6600
+    }
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "window": "easy",
+   "day": 1,
+   "of": 3,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "window": "easy",
+   "day": 2,
+   "of": 3,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "window": "easy",
+   "day": 3,
+   "of": 3,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "window": "race",
+   "day": 1,
+   "of": 1,
+   "intensity": null,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-26",
+   "window": "recovery",
+   "day": 1,
+   "of": 7,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "window": "recovery",
+   "day": 2,
+   "of": 7,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "window": "recovery",
+   "day": 3,
+   "of": 7,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "window": "recovery",
+   "day": 4,
+   "of": 7,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-30",
+   "window": "recovery",
+   "day": 5,
+   "of": 7,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "window": "recovery",
+   "day": 6,
+   "of": 7,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-11-01",
+   "window": "recovery",
+   "day": 7,
+   "of": 7,
+   "intensity": false,
+   "race": {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   }
+  },
+  {
+   "date": "2026-12-18",
+   "window": "easy",
+   "day": 1,
+   "of": 2,
+   "intensity": false,
+   "race": {
+    "id": "hill-country-gravel",
+    "name": "Hill Country Gravel",
+    "kind": "gravel",
+    "kind_label": "Gravel race",
+    "icon": "bike",
+    "priority": "B",
+    "entry": "entered",
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "start": "08:00",
+    "days_to": 29,
+    "weeks_to": 4.1,
+    "past": false,
+    "countdown": true,
+    "target": {
+     "under": "4:45:00",
+     "seconds": 17100
+    }
+   }
+  },
+  {
+   "date": "2026-12-19",
+   "window": "easy",
+   "day": 2,
+   "of": 2,
+   "intensity": false,
+   "race": {
+    "id": "hill-country-gravel",
+    "name": "Hill Country Gravel",
+    "kind": "gravel",
+    "kind_label": "Gravel race",
+    "icon": "bike",
+    "priority": "B",
+    "entry": "entered",
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "start": "08:00",
+    "days_to": 29,
+    "weeks_to": 4.1,
+    "past": false,
+    "countdown": true,
+    "target": {
+     "under": "4:45:00",
+     "seconds": 17100
+    }
+   }
+  },
+  {
+   "date": "2026-12-20",
+   "window": "race",
+   "day": 1,
+   "of": 1,
+   "intensity": null,
+   "race": {
+    "id": "hill-country-gravel",
+    "name": "Hill Country Gravel",
+    "kind": "gravel",
+    "kind_label": "Gravel race",
+    "icon": "bike",
+    "priority": "B",
+    "entry": "entered",
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "start": "08:00",
+    "days_to": 29,
+    "weeks_to": 4.1,
+    "past": false,
+    "countdown": true,
+    "target": {
+     "under": "4:45:00",
+     "seconds": 17100
+    }
+   }
+  },
+  {
+   "date": "2026-12-21",
+   "window": "recovery",
+   "day": 1,
+   "of": 4,
+   "intensity": false,
+   "race": {
+    "id": "hill-country-gravel",
+    "name": "Hill Country Gravel",
+    "kind": "gravel",
+    "kind_label": "Gravel race",
+    "icon": "bike",
+    "priority": "B",
+    "entry": "entered",
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "start": "08:00",
+    "days_to": 29,
+    "weeks_to": 4.1,
+    "past": false,
+    "countdown": true,
+    "target": {
+     "under": "4:45:00",
+     "seconds": 17100
+    }
+   }
+  },
+  {
+   "date": "2026-12-22",
+   "window": "recovery",
+   "day": 2,
+   "of": 4,
+   "intensity": false,
+   "race": {
+    "id": "hill-country-gravel",
+    "name": "Hill Country Gravel",
+    "kind": "gravel",
+    "kind_label": "Gravel race",
+    "icon": "bike",
+    "priority": "B",
+    "entry": "entered",
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "start": "08:00",
+    "days_to": 29,
+    "weeks_to": 4.1,
+    "past": false,
+    "countdown": true,
+    "target": {
+     "under": "4:45:00",
+     "seconds": 17100
+    }
+   }
+  },
+  {
+   "date": "2026-12-23",
+   "window": "recovery",
+   "day": 3,
+   "of": 4,
+   "intensity": false,
+   "race": {
+    "id": "hill-country-gravel",
+    "name": "Hill Country Gravel",
+    "kind": "gravel",
+    "kind_label": "Gravel race",
+    "icon": "bike",
+    "priority": "B",
+    "entry": "entered",
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "start": "08:00",
+    "days_to": 29,
+    "weeks_to": 4.1,
+    "past": false,
+    "countdown": true,
+    "target": {
+     "under": "4:45:00",
+     "seconds": 17100
+    }
+   }
+  },
+  {
+   "date": "2026-12-24",
+   "window": "recovery",
+   "day": 4,
+   "of": 4,
+   "intensity": false,
+   "race": {
+    "id": "hill-country-gravel",
+    "name": "Hill Country Gravel",
+    "kind": "gravel",
+    "kind_label": "Gravel race",
+    "icon": "bike",
+    "priority": "B",
+    "entry": "entered",
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "start": "08:00",
+    "days_to": 29,
+    "weeks_to": 4.1,
+    "past": false,
+    "countdown": true,
+    "target": {
+     "under": "4:45:00",
+     "seconds": 17100
+    }
+   }
+  },
+  {
+   "date": "2027-02-14",
+   "window": "taper",
+   "day": 1,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-15",
+   "window": "taper",
+   "day": 2,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-16",
+   "window": "taper",
+   "day": 3,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-17",
+   "window": "taper",
+   "day": 4,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-18",
+   "window": "taper",
+   "day": 5,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-19",
+   "window": "taper",
+   "day": 6,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-20",
+   "window": "taper",
+   "day": 7,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-21",
+   "window": "taper",
+   "day": 8,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-22",
+   "window": "taper",
+   "day": 9,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-23",
+   "window": "taper",
+   "day": 10,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-24",
+   "window": "taper",
+   "day": 11,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-25",
+   "window": "taper",
+   "day": 12,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-26",
+   "window": "taper",
+   "day": 13,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-27",
+   "window": "taper",
+   "day": 14,
+   "of": 14,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-02-28",
+   "window": "race",
+   "day": 1,
+   "of": 1,
+   "intensity": null,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-01",
+   "window": "recovery",
+   "day": 1,
+   "of": 10,
+   "intensity": false,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-02",
+   "window": "recovery",
+   "day": 2,
+   "of": 10,
+   "intensity": false,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-03",
+   "window": "recovery",
+   "day": 3,
+   "of": 10,
+   "intensity": false,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-04",
+   "window": "recovery",
+   "day": 4,
+   "of": 10,
+   "intensity": false,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-05",
+   "window": "recovery",
+   "day": 5,
+   "of": 10,
+   "intensity": false,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-06",
+   "window": "recovery",
+   "day": 6,
+   "of": 10,
+   "intensity": false,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-07",
+   "window": "recovery",
+   "day": 7,
+   "of": 10,
+   "intensity": false,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-08",
+   "window": "recovery",
+   "day": 8,
+   "of": 10,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-09",
+   "window": "recovery",
+   "day": 9,
+   "of": 10,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  },
+  {
+   "date": "2027-03-10",
+   "window": "recovery",
+   "day": 10,
+   "of": 10,
+   "intensity": true,
+   "race": {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  }
+ ],
+ "defs": {
+  "watch_sync": {
+   "source": "computed",
+   "definition": "Compared with what was last verified on your watch — no Garmin call."
+  },
+  "race_easy": {
+   "source": "coach",
+   "definition": "An easy day before a race: no sprints, VO2 work, threshold work or tests, and no heavy legs. Easy aerobic work, mobility and a lighter upper-body gym day are fine."
+  },
+  "race_taper": {
+   "source": "coach",
+   "definition": "A taper day before an A race: the volume comes down by about half over the taper, and short race-pace efforts stay in."
+  },
+  "race_day": {
+   "source": "coach",
+   "definition": "Race day: the race, its warm-up and its fuelling, and nothing else."
+  },
+  "race_recovery": {
+   "source": "coach",
+   "definition": "A recovery day after a race: no intensity, and no long ride or long run. Easy aerobic work and mobility, and a light gym day from the second day. After an A race, short intensity may come back once its no-intensity days are over."
+  },
+  "fuel_band": {
+   "source": "computed",
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+  },
+  "fuel_target": {
+   "source": "computed",
+   "definition": "The rate planned: the top of a hard session's band, the middle of an easy one's, never above what your gut is trained to (60 g/h until you say otherwise), plus 10 g/h on a gut-training session."
+  }
+ }
+}

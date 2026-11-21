@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "osc/endurance_review",
+  "title": "endurance_review",
+  "description": "The coach's review of one ride or run (docs/DESIGN.md (rides and runs) §4). The numbers come from scripts/endurance_metrics.py; the model interprets them. Every number a finding rests on is evidence, checked against the engine.",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "const": "endurance_review"
+    },
+    "request_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^r\\d+$"
+    },
+    "activity_id": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "sport": {
+      "enum": [
+        "bike",
+        "run"
+      ]
+    },
+    "verdict": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "description": "One line: what the session was and whether it did its job."
+    },
+    "intent": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "enum": [
+            "recovery",
+            "endurance",
+            "tempo",
+            "threshold",
+            "vo2",
+            "race",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "source": {
+          "enum": [
+            "planned",
+            "inferred",
+            "athlete"
+          ],
+          "description": "planned: a scheduled workout said so; inferred: read from the data (say so); athlete: they told you."
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "value",
+        "source",
+        "why"
+      ],
+      "additionalProperties": false
+    },
+    "execution": {
+      "type": "object",
+      "properties": {
+        "rating": {
+          "enum": [
+            "on_target",
+            "partly",
+            "off_target",
+            "unclear"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        }
+      },
+      "required": [
+        "rating",
+        "summary"
+      ],
+      "additionalProperties": false
+    },
+    "findings": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "properties": {
+          "severity": {
+            "enum": [
+              "good",
+              "info",
+              "watch",
+              "act"
+            ]
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "metric": {
+                  "type": "string",
+                  "pattern": "^(metrics\\.[a-z_0-9]+|bests\\.[0-9]+[sk]|zones\\.(hr|power)\\.[1-7]|thresholds\\.(ftp|threshold_hr)|intervals\\.[0-9]+\\.(secs|pace_100|swolf|hr|metres))$",
+                  "description": "A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>."
+                },
+                "value": {
+                  "type": "number",
+                  "description": "Must equal the metrics engine's value at that path — app_contracts.py checks it."
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 60
+                }
+              },
+              "required": [
+                "metric",
+                "value"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "severity",
+          "claim",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "context": {
+      "type": "array",
+      "maxItems": 5,
+      "description": "What outside the session shaped it — sleep, HRV, load, heat — each in one line, with its source.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "text",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "next_time": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240,
+      "description": "One concrete change for the next session like this."
+    },
+    "questions": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160
+      }
+    },
+    "markdown_file": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The review as markdown in the athlete's logs/, for the journal."
+    },
+    "generated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "kind",
+    "activity_id",
+    "date",
+    "sport",
+    "verdict",
+    "intent",
+    "execution",
+    "findings",
+    "next_time",
+    "questions",
+    "generated_at"
+  ],
+  "additionalProperties": false
+}

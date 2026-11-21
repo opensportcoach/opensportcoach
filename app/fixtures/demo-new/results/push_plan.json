@@ -1,0 +1,37 @@
+{
+ "kind": "push_plan",
+ "request_id": "r3",
+ "athlete": "demo",
+ "display": "Sam",
+ "garmin_account": "Alex M.",
+ "protected": 3,
+ "script": "sync",
+ "actions": [
+  {
+   "verb": "replace",
+   "workout": "D1 · Push",
+   "key": "d1",
+   "old_id": 4101,
+   "dates": [
+    "2026-11-23"
+   ]
+  },
+  {
+   "verb": "replace",
+   "workout": "D3 · Legs",
+   "key": "d3",
+   "old_id": 4103,
+   "dates": [
+    "2026-11-28"
+   ]
+  },
+  {
+   "verb": "in_sync",
+   "workout": "D2 · Pull",
+   "key": "d2",
+   "old_id": 4102,
+   "dates": []
+  }
+ ],
+ "plan_hash": "3f9a1c0d7e52b6a4"
+}

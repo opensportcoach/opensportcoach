@@ -1,0 +1,31 @@
+name: tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Python environment
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install -r requirements.txt
+          .venv/bin/python scripts/build_exercise_catalog.py
+      - name: App dependencies
+        run: |
+          (cd app/web && npm ci)
+          (cd app/channel && npm ci)
+      - name: Leak scan (no personal data outside athletes/)
+        run: .venv/bin/python scripts/leak_scan.py
+      - name: Test suite (engine invariants against a fresh scaffold)
+        run: .venv/bin/python tests/run_tests.py

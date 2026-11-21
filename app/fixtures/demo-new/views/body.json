@@ -1,0 +1,18 @@
+{
+ "view": "body",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:14",
+ "series": [],
+ "target": [
+  76,
+  78
+ ],
+ "latest": null,
+ "days_since": null,
+ "defs": {
+  "weight": {
+   "source": "garmin",
+   "definition": "Body weight from your scale, via Garmin."
+  }
+ }
+}

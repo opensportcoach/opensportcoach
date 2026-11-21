@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "osc/answer",
+  "title": "answer",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "const": "answer"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^r\\d+$"
+    },
+    "markdown": {
+      "type": "string",
+      "minLength": 1
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "enum": [
+              "garmin",
+              "file",
+              "strava",
+              "computed",
+              "coach"
+            ]
+          }
+        },
+        "required": [
+          "label",
+          "value",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": [
+              "garmin",
+              "file",
+              "strava",
+              "computed",
+              "coach"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "kind",
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "kind",
+    "request_id",
+    "markdown",
+    "sources"
+  ],
+  "additionalProperties": false
+}

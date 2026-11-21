@@ -1,0 +1,396 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "osc/plan_proposal",
+  "title": "plan_proposal",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "const": "plan_proposal"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^r\\d+$"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "headline": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The week in one sentence — the review's title."
+    },
+    "version": {
+      "type": "object",
+      "properties": {
+        "n": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "of": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "What the earlier one did differently, for the hover."
+        }
+      },
+      "required": [
+        "n",
+        "of"
+      ],
+      "additionalProperties": false
+    },
+    "based_on_data_as_of": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+      "description": "today.freshness.data_as_of when it was written. Data from a later day makes it out of date: accepting waits for a re-check."
+    },
+    "days": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "type": {
+            "enum": [
+              "session",
+              "rest",
+              "cardio"
+            ]
+          },
+          "workout_key": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "changed": {
+            "type": "boolean",
+            "description": "Before 2026-10-16: true when the day changed. Superseded by `change`, which says how — kept so older proposals still read."
+          },
+          "sport": {
+            "enum": [
+              "strength",
+              "run",
+              "bike",
+              "zwift",
+              "swim",
+              "circuit",
+              "tennis",
+              "other",
+              null
+            ],
+            "description": "What it is, for its icon and colour. Absent or null: a session is strength, cardio is other, rest is rest."
+          },
+          "zwift_workout": {
+            "type": "object",
+            "description": "A Zwift day's workout from Zwift's library, as whatsonzwift.com documents it — required on every Zwift day that isn't removed (his rule, 2026-11-05). Read the fields off the page with scripts/zwift_workouts.py <url>; never invent one. Carried into plan.json on accept.",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The workout's name in Zwift, exactly as the site lists it."
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https://whatsonzwift\\.com/workouts/.+",
+                "description": "The workout's own page."
+              },
+              "collection": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Where it sits in Zwift's workout menu (Endurance, VO2 Max…)."
+              },
+              "duration_min": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "stress_points": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "adjust": {
+                "type": "string",
+                "minLength": 1,
+                "description": "How to ride it against the prescription when it isn't an exact match."
+              }
+            },
+            "required": [
+              "name",
+              "url",
+              "duration_min"
+            ],
+            "additionalProperties": false
+          },
+          "change": {
+            "enum": [
+              "changed",
+              "moved",
+              "added",
+              "removed",
+              "unchanged"
+            ],
+            "description": "Against the calendar as it is now. A removed session stays in `days`, on the date it leaves."
+          },
+          "from": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "The before value — the old prescription (changed), or the old day and slot (moved)."
+          },
+          "to": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "The after value, in the same words as `from`."
+          },
+          "from_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "Moved only: the date it leaves, so the calendar's entry there reads 'moves'."
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "description": "One sentence: why — 'Unchanged.' for a session that stays. Never a bare 'changed'."
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source": {
+                  "enum": [
+                    "garmin",
+                    "file",
+                    "strava",
+                    "computed",
+                    "coach",
+                    "you"
+                  ]
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "detail": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "The hover: what the number is and where it came from."
+                }
+              },
+              "required": [
+                "source",
+                "text"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "benchmark": {
+            "type": "boolean",
+            "description": "A benchmark test (program.py BENCHMARKS) — drawn with ★."
+          }
+        },
+        "required": [
+          "date",
+          "type",
+          "title",
+          "change",
+          "reason"
+        ],
+        "additionalProperties": false,
+        "$comment": "A Zwift day names its workout (his rule, 2026-11-05: the 11-05 VO2 ride named none, and he rode what Zwift offered).",
+        "if": {
+          "properties": {
+            "sport": {
+              "const": "zwift"
+            },
+            "change": {
+              "not": {
+                "const": "removed"
+              }
+            }
+          },
+          "required": [
+            "sport"
+          ]
+        },
+        "then": {
+          "required": [
+            "zwift_workout"
+          ]
+        }
+      }
+    },
+    "program_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "workout_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exercise": {
+            "type": "string",
+            "minLength": 1
+          },
+          "field": {
+            "enum": [
+              "weight",
+              "reps",
+              "sets",
+              "rest",
+              "order",
+              "exercise"
+            ]
+          },
+          "from": {},
+          "to": {},
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "workout_key",
+          "exercise",
+          "field",
+          "from",
+          "to",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "needs_push": {
+      "type": "boolean"
+    },
+    "impact": {
+      "type": "array",
+      "description": "The week now → proposed. Cardio load and strength sets are separate rows — never one number.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metric": {
+            "enum": [
+              "cardio_load",
+              "strength_sets",
+              "hours",
+              "hard_days",
+              "benchmarks"
+            ]
+          },
+          "now": {
+            "type": "number",
+            "minimum": 0
+          },
+          "proposed": {
+            "type": "number",
+            "minimum": 0
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "How it was counted, for the hover."
+          }
+        },
+        "required": [
+          "metric",
+          "now",
+          "proposed"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "checks": {
+      "type": "array",
+      "description": "Each standing rule and medical constraint the coach checked the proposed week against.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "enum": [
+              "holds",
+              "near_limit",
+              "broken"
+            ]
+          },
+          "rule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "to": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          }
+        },
+        "required": [
+          "status",
+          "rule",
+          "detail"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "kind",
+    "request_id",
+    "id",
+    "headline",
+    "based_on_data_as_of",
+    "days",
+    "program_changes",
+    "needs_push"
+  ],
+  "additionalProperties": false
+}

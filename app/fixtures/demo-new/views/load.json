@@ -1,0 +1,569 @@
+{
+ "view": "load",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:13",
+ "model": [
+  {
+   "date": "2026-11-09",
+   "fitness": 0.5,
+   "fatigue": 2.7,
+   "form": -2.3
+  },
+  {
+   "date": "2026-11-10",
+   "fitness": 2.0,
+   "fatigue": 11.5,
+   "form": -9.5
+  },
+  {
+   "date": "2026-11-11",
+   "fitness": 3.7,
+   "fatigue": 20.4,
+   "form": -16.7
+  },
+  {
+   "date": "2026-11-12",
+   "fitness": 4.1,
+   "fatigue": 20.8,
+   "form": -16.6
+  },
+  {
+   "date": "2026-11-13",
+   "fitness": 4.9,
+   "fatigue": 23.2,
+   "form": -18.3
+  },
+  {
+   "date": "2026-11-14",
+   "fitness": 5.4,
+   "fatigue": 23.5,
+   "form": -18.1
+  },
+  {
+   "date": "2026-11-15",
+   "fitness": 7.6,
+   "fatigue": 33.7,
+   "form": -26.1
+  },
+  {
+   "date": "2026-11-16",
+   "fitness": 7.8,
+   "fatigue": 31.3,
+   "form": -23.5
+  },
+  {
+   "date": "2026-11-17",
+   "fitness": 9.2,
+   "fatigue": 36.4,
+   "form": -27.2
+  },
+  {
+   "date": "2026-11-18",
+   "fitness": 9.0,
+   "fatigue": 31.2,
+   "form": -22.2
+  },
+  {
+   "date": "2026-11-19",
+   "fitness": 9.1,
+   "fatigue": 29.0,
+   "form": -19.9
+  },
+  {
+   "date": "2026-11-20",
+   "fitness": 9.8,
+   "fatigue": 30.3,
+   "form": -20.5
+  },
+  {
+   "date": "2026-11-21",
+   "fitness": 10.2,
+   "fatigue": 29.8,
+   "form": -19.6
+  }
+ ],
+ "weeks": [
+  {
+   "week": "2026-W36",
+   "monday": "2026-08-31",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W37",
+   "monday": "2026-09-07",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W38",
+   "monday": "2026-09-14",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W39",
+   "monday": "2026-09-21",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W40",
+   "monday": "2026-09-28",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W41",
+   "monday": "2026-10-05",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W42",
+   "monday": "2026-10-12",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W43",
+   "monday": "2026-10-19",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W44",
+   "monday": "2026-10-26",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W45",
+   "monday": "2026-11-02",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W46",
+   "monday": "2026-11-09",
+   "cardio": {
+    "bike": 95,
+    "swim": 38,
+    "circuit": 74,
+    "run": 64
+   },
+   "cardio_total": 271,
+   "strength_load": 67,
+   "tonnage": 28718,
+   "sets": 50,
+   "sessions": 7,
+   "km": 52.2,
+   "minutes": {
+    "endurance": 157,
+    "strength": 132,
+    "circuit": 47
+   },
+   "sports": {
+    "Strength": 132,
+    "Road ride": 90,
+    "Indoor cardio": 47,
+    "Pool swim": 36,
+    "Run": 31
+   },
+   "sport_kind": {
+    "Road ride": "endurance",
+    "Strength": "strength",
+    "Pool swim": "endurance",
+    "Indoor cardio": "circuit",
+    "Run": "endurance"
+   }
+  },
+  {
+   "week": "2026-W47",
+   "monday": "2026-11-16",
+   "cardio": {
+    "swim": 38,
+    "run": 67
+   },
+   "cardio_total": 105,
+   "strength_load": 60,
+   "tonnage": 22608,
+   "sets": 52,
+   "sessions": 5,
+   "km": 6.6,
+   "minutes": {
+    "strength": 131,
+    "endurance": 71
+   },
+   "sports": {
+    "Strength": 131,
+    "Pool swim": 42,
+    "Run": 29
+   },
+   "sport_kind": {
+    "Strength": "strength",
+    "Pool swim": "endurance",
+    "Run": "endurance"
+   }
+  }
+ ],
+ "days_so_far": 6,
+ "acwr": {
+  "cardio": null,
+  "strength": [
+   {
+    "week": "2026-W36",
+    "end": "2026-09-06",
+    "ratio": null
+   },
+   {
+    "week": "2026-W37",
+    "end": "2026-09-13",
+    "ratio": null
+   },
+   {
+    "week": "2026-W38",
+    "end": "2026-09-20",
+    "ratio": null
+   },
+   {
+    "week": "2026-W39",
+    "end": "2026-09-27",
+    "ratio": null
+   },
+   {
+    "week": "2026-W40",
+    "end": "2026-10-04",
+    "ratio": null
+   },
+   {
+    "week": "2026-W41",
+    "end": "2026-10-11",
+    "ratio": null
+   },
+   {
+    "week": "2026-W42",
+    "end": "2026-10-18",
+    "ratio": null
+   },
+   {
+    "week": "2026-W43",
+    "end": "2026-10-25",
+    "ratio": null
+   },
+   {
+    "week": "2026-W44",
+    "end": "2026-11-01",
+    "ratio": null
+   },
+   {
+    "week": "2026-W45",
+    "end": "2026-11-08",
+    "ratio": null
+   },
+   {
+    "week": "2026-W46",
+    "end": "2026-11-15",
+    "ratio": null
+   },
+   {
+    "week": "2026-W47",
+    "end": "2026-11-21",
+    "ratio": null
+   }
+  ],
+  "safe": [
+   0.8,
+   1.3
+  ]
+ },
+ "status": null,
+ "vo2": {
+  "run": null,
+  "bike": null
+ },
+ "week": {
+  "label": "Nov 16 – Nov 22",
+  "weekLoad": 165,
+  "activeDays": 5,
+  "cardioLoad": 105,
+  "strengthLoad": 60,
+  "days": [
+   {
+    "date": "2026-11-16",
+    "dow": "Mon",
+    "dom": 16,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 17,
+    "strain": 1.4,
+    "readiness": 54,
+    "items": [
+     {
+      "group": "strength",
+      "type": "strength_training",
+      "sport": "Strength",
+      "icon": "strength",
+      "kind": "strength",
+      "id": 21000000007,
+      "name": "D1 · Push",
+      "durationMin": 47,
+      "distanceKm": null,
+      "load": 17
+     }
+    ]
+   },
+   {
+    "date": "2026-11-17",
+    "dow": "Tue",
+    "dom": 17,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 67,
+    "strain": 5.6,
+    "readiness": 55,
+    "items": [
+     {
+      "group": "run",
+      "type": "running",
+      "sport": "Run",
+      "icon": "run",
+      "kind": "endurance",
+      "id": 21000000008,
+      "name": "Easy run",
+      "durationMin": 29,
+      "distanceKm": 4.9,
+      "load": 67
+     }
+    ]
+   },
+   {
+    "date": "2026-11-18",
+    "dow": "Wed",
+    "dom": 18,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 0,
+    "strain": 0.0,
+    "readiness": 62,
+    "items": []
+   },
+   {
+    "date": "2026-11-19",
+    "dow": "Thu",
+    "dom": 19,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 16,
+    "strain": 1.3,
+    "readiness": 72,
+    "items": [
+     {
+      "group": "strength",
+      "type": "strength_training",
+      "sport": "Strength",
+      "icon": "strength",
+      "kind": "strength",
+      "id": 21000000009,
+      "name": "D2 · Pull",
+      "durationMin": 36,
+      "distanceKm": null,
+      "load": 16
+     }
+    ]
+   },
+   {
+    "date": "2026-11-20",
+    "dow": "Fri",
+    "dom": 20,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 38,
+    "strain": 3.2,
+    "readiness": 67,
+    "items": [
+     {
+      "group": "swim",
+      "type": "lap_swimming",
+      "sport": "Pool swim",
+      "icon": "swim",
+      "kind": "endurance",
+      "id": 21000000010,
+      "name": "Pool swim",
+      "durationMin": 42,
+      "distanceKm": 1.7,
+      "load": 38
+     }
+    ]
+   },
+   {
+    "date": "2026-11-21",
+    "dow": "Sat",
+    "dom": 21,
+    "isToday": true,
+    "isFuture": false,
+    "totalLoad": 27,
+    "strain": 2.3,
+    "readiness": null,
+    "items": [
+     {
+      "group": "strength",
+      "type": "strength_training",
+      "sport": "Strength",
+      "icon": "strength",
+      "kind": "strength",
+      "id": 21000000011,
+      "name": "D1 · Push",
+      "durationMin": 48,
+      "distanceKm": null,
+      "load": 27
+     }
+    ]
+   },
+   {
+    "date": "2026-11-22",
+    "dow": "Sun",
+    "dom": 22,
+    "isToday": false,
+    "isFuture": true,
+    "totalLoad": 0,
+    "strain": 0.0,
+    "readiness": null,
+    "items": []
+   }
+  ]
+ },
+ "cardio": {
+  "sessions": {
+   "run": {
+    "done": 1,
+    "target": 2
+   },
+   "swim": {
+    "done": 1,
+    "target": 1
+   },
+   "bike": {
+    "done": 0,
+    "target": 1
+   }
+  },
+  "load": {
+   "done": 105,
+   "band": [
+    150,
+    250
+   ]
+  }
+ },
+ "defs": {
+  "load": {
+   "source": "garmin",
+   "definition": "Garmin training load: EPOC, from heart rate. It barely registers lifting — read strength by tonnage and sets, never with cardio in one number."
+  },
+  "fitness": {
+   "source": "computed",
+   "definition": "Fitness: Garmin load averaged with a 42-day exponential weight."
+  },
+  "fatigue": {
+   "source": "computed",
+   "definition": "Fatigue: Garmin load averaged with a 7-day exponential weight."
+  },
+  "form": {
+   "source": "computed",
+   "definition": "Form = fitness − fatigue."
+  },
+  "acwr_cardio": {
+   "source": "garmin",
+   "definition": "Garmin's acute:chronic workload ratio."
+  },
+  "acwr_strength": {
+   "source": "computed",
+   "definition": "Strength acute:chronic ratio: tonnage over 7 days ÷ (tonnage over 28 days ÷ 4)."
+  },
+  "tonnage": {
+   "source": "computed",
+   "definition": "Σ weight × reps over every logged set, warm-ups included — they were lifted."
+  }
+ }
+}

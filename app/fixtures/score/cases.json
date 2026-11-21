@@ -1,0 +1,431 @@
+{
+ "_why": "Synthetic sessions scored by scripts/session_score.py, for the web component tests. Regenerate with the engine; never edit by hand.",
+ "gym_mostly": {
+  "id": 1,
+  "date": "2026-10-15",
+  "title": "Synthetic gym day",
+  "type": null,
+  "group": "strength",
+  "total": 84,
+  "band": "mostly",
+  "band_label": "Mostly",
+  "parts": [
+   {
+    "key": "sets",
+    "label": "Sets done",
+    "weight": 35,
+    "measure": "done ÷ planned, capped at planned",
+    "planned_text": "12 sets",
+    "done_text": "9",
+    "detail": {
+     "planned": 12,
+     "done": 9,
+     "skipped": [
+      "Hammer curl"
+     ],
+     "unknown": 0
+    },
+    "score": 0.75,
+    "points": 26.2,
+    "dropped": null
+   },
+   {
+    "key": "reps",
+    "label": "Reps",
+    "weight": 25,
+    "measure": "hit ÷ target on each set, capped",
+    "planned_text": "111 reps",
+    "done_text": "109 reps",
+    "detail": {
+     "sets": 9,
+     "rep_target": 111,
+     "rep_done": 109,
+     "sec_target": 0,
+     "sec_done": 0
+    },
+    "score": 0.978,
+    "points": 24.4,
+    "dropped": null
+   },
+   {
+    "key": "load",
+    "label": "Load",
+    "weight": 25,
+    "measure": "lifted ÷ asked, capped at 100 % — over is flagged, not rewarded",
+    "planned_text": "as prescribed",
+    "done_text": "100 % of the ask · 1 flagged",
+    "detail": {
+     "sets": 9,
+     "flagged": 1
+    },
+    "score": 1.0,
+    "points": 25.0,
+    "dropped": null
+   },
+   {
+    "key": "rest",
+    "label": "Rest",
+    "weight": 10,
+    "measure": "rests inside 0.75–1.5 × the prescribed rest",
+    "planned_text": "6 rests in their window",
+    "done_text": "4",
+    "detail": {
+     "in_band": 4,
+     "rests": 6
+    },
+    "score": 0.667,
+    "points": 6.7,
+    "dropped": null
+   }
+  ],
+  "coverage": 1.0,
+  "out_of": 95,
+  "earned": 82.4,
+  "excluded": null,
+  "against": "Synthetic day · program.py (working copy)",
+  "summary": "Not started: Hammer curl, so the session stops at 84. 3 of 12 planned sets not done; 2 of 6 rests outside their window. Everything else was on target.",
+  "headline": "exercise not started",
+  "foot": "Score = 82.4 ÷ 95 points that could be scored. Capped at 84 from 87: a planned exercise not started stops a session under As planned.",
+  "capped": {
+   "from": 87,
+   "to": 84,
+   "why": "not started: Hammer curl"
+  },
+  "provisional": false,
+  "flags": [
+   {
+    "exid": "E2",
+    "text": "Cable row: 60 against 50, +20 %. Flagged, not rewarded."
+   }
+  ],
+  "day": "d1",
+  "rows": [
+   {
+    "exid": "E1",
+    "label": "Bench press",
+    "key": [
+     "BENCH_PRESS",
+     "BARBELL_BENCH_PRESS"
+    ],
+    "planned": "3 × 10 @ 80",
+    "sets": [
+     3,
+     3
+    ],
+    "done": "10 @ 80 · 10 @ 80 · 8 @ 80",
+    "reps": 0.933,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   },
+   {
+    "exid": "E2",
+    "label": "Cable row",
+    "key": [
+     "ROW",
+     "SEATED_CABLE_ROW"
+    ],
+    "planned": "3 × 12 @ 50",
+    "sets": [
+     3,
+     3
+    ],
+    "done": "12 @ 60 · 12 @ 60 · 12 @ 60",
+    "reps": 1.0,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   },
+   {
+    "exid": "E3",
+    "label": "Lateral raise",
+    "key": [
+     "LATERAL_RAISE",
+     "SEATED_LATERAL_RAISE"
+    ],
+    "planned": "3 × 15 @ 10",
+    "sets": [
+     3,
+     3
+    ],
+    "done": "15 @ 10 · 15 @ 10 · 15 @ 10",
+    "reps": 1.0,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   },
+   {
+    "exid": "E4",
+    "label": "Hammer curl",
+    "key": [
+     "CURL",
+     "DUMBBELL_HAMMER_CURL"
+    ],
+    "planned": "3 × 12 @ 14",
+    "sets": [
+     0,
+     3
+    ],
+    "done": "not done",
+    "reps": null,
+    "load": null,
+    "load_dropped": null,
+    "dropped": null
+   }
+  ],
+  "chips": [
+   {
+    "code": "E1",
+    "name": "Bench press",
+    "what": "10 @ 80 · 10 @ 80 · 8 @ 80 against 3 × 10 @ 80",
+    "chip": "reps 93 %",
+    "kind": "warn"
+   },
+   {
+    "code": "E2",
+    "name": "Cable row",
+    "what": "60 against 50, +20 %. Flagged, not rewarded.",
+    "chip": "Flagged",
+    "kind": "flag"
+   },
+   {
+    "code": "E4",
+    "name": "Hammer curl",
+    "what": "0 of 3 sets",
+    "chip": "Not started",
+    "kind": "miss"
+   }
+  ],
+  "unnamed_sets": 0
+ },
+ "ride_vo2": {
+  "id": 2,
+  "date": "2026-10-14",
+  "title": "Synthetic VO2 ride",
+  "type": null,
+  "group": "bike",
+  "total": 85,
+  "band": "as_planned",
+  "band_label": "As planned",
+  "parts": [
+   {
+    "key": "intent",
+    "label": "Intent",
+    "weight": 40,
+    "measure": "time in the intent's band (under counts half on an easy ride), or IF in its band",
+    "planned_text": "IF 0.80–0.95 (vo2)",
+    "done_text": "IF 0.86",
+    "detail": {
+     "basis": "if",
+     "band": [
+      0.8,
+      0.95
+     ],
+     "done": 0.86
+    },
+    "score": 1.0,
+    "points": 40.0,
+    "dropped": null
+   },
+   {
+    "key": "intervals",
+    "label": "Intervals",
+    "weight": 25,
+    "measure": "work at target ÷ work planned",
+    "planned_text": "5 × 3′ at 292–305 W",
+    "done_text": "8:54 of work at 277 W+",
+    "detail": {
+     "planned_s": 900,
+     "done_s": 534,
+     "threshold_w": 277
+    },
+    "score": 0.593,
+    "points": 14.8,
+    "dropped": null
+   },
+   {
+    "key": "duration",
+    "label": "Duration",
+    "weight": 20,
+    "measure": "done vs planned: ±10 % full, ±50 % nothing",
+    "planned_text": "0:45",
+    "done_text": "0:38",
+    "detail": {
+     "planned_min": 45,
+     "done_min": 38
+    },
+    "score": 0.861,
+    "points": 17.2,
+    "dropped": null
+   }
+  ],
+  "coverage": 1.0,
+  "out_of": 85,
+  "earned": 72.1,
+  "excluded": null,
+  "against": "plan.json · Synthetic VO2 ride",
+  "summary": "9 of 15 minutes of work at target; 0:38 against 0:45 planned. Everything else was on target.",
+  "headline": null,
+  "foot": "Score = 72.1 ÷ 85 points that could be scored.",
+  "capped": null,
+  "provisional": false,
+  "flags": [],
+  "intent": "vo2"
+ },
+ "ride_unclear": {
+  "id": 3,
+  "date": "2026-10-14",
+  "title": "Synthetic ride, no intent",
+  "type": null,
+  "group": "bike",
+  "total": null,
+  "band": "unclear",
+  "band_label": "Unclear",
+  "parts": [
+   {
+    "key": "intent",
+    "label": "Intent",
+    "weight": 40,
+    "measure": "time in the intent's band (under counts half on an easy ride), or IF in its band",
+    "planned_text": null,
+    "done_text": null,
+    "detail": {},
+    "score": null,
+    "points": null,
+    "dropped": "the plan names no intent"
+   },
+   {
+    "key": "duration",
+    "label": "Duration",
+    "weight": 20,
+    "measure": "done vs planned: ±10 % full, ±50 % nothing",
+    "planned_text": "1:00",
+    "done_text": "1:00",
+    "detail": {
+     "planned_min": 60,
+     "done_min": 60
+    },
+    "score": 1.0,
+    "points": 20.0,
+    "dropped": null
+   },
+   {
+    "key": "pacing",
+    "label": "Pacing",
+    "weight": 15,
+    "measure": "evenness: VI on a steady ride, halves on a run",
+    "planned_text": "steady · VI 1.05 or under",
+    "done_text": "VI 1.02",
+    "detail": {
+     "basis": "vi",
+     "done": 1.02
+    },
+    "score": 1.0,
+    "points": 15.0,
+    "dropped": null
+   }
+  ],
+  "coverage": 0.467,
+  "out_of": 35,
+  "earned": 35.0,
+  "excluded": null,
+  "against": "plan.json · Synthetic ride, no intent",
+  "summary": "Only 47 % of the session could be scored, so no number: it would claim more than it knows.",
+  "headline": "47 % scorable",
+  "foot": "Score = 35.0 ÷ 35 points that could be scored. Intent dropped out, each with its reason.",
+  "capped": null,
+  "provisional": false,
+  "flags": [],
+  "intent": null
+ },
+ "ride_provisional": {
+  "id": 4,
+  "date": "2026-10-14",
+  "title": "Synthetic long ride, fuel not logged",
+  "type": null,
+  "group": "bike",
+  "total": 100,
+  "band": "as_planned",
+  "band_label": "As planned",
+  "parts": [
+   {
+    "key": "intent",
+    "label": "Intent",
+    "weight": 40,
+    "measure": "time in the intent's band (under counts half on an easy ride), or IF in its band",
+    "planned_text": "Z2 · 140–188 W",
+    "done_text": "100 % in band",
+    "detail": {
+     "basis": "power",
+     "band": [
+      140,
+      188
+     ],
+     "in": 1.0,
+     "under": 0.0,
+     "over": 0.0
+    },
+    "score": 1.0,
+    "points": 40.0,
+    "dropped": null
+   },
+   {
+    "key": "duration",
+    "label": "Duration",
+    "weight": 20,
+    "measure": "done vs planned: ±10 % full, ±50 % nothing",
+    "planned_text": "2:00",
+    "done_text": "1:55",
+    "detail": {
+     "planned_min": 120,
+     "done_min": 115
+    },
+    "score": 1.0,
+    "points": 20.0,
+    "dropped": null
+   },
+   {
+    "key": "pacing",
+    "label": "Pacing",
+    "weight": 15,
+    "measure": "evenness: VI on a steady ride, halves on a run",
+    "planned_text": "steady · VI 1.05 or under",
+    "done_text": "VI 1.03",
+    "detail": {
+     "basis": "vi",
+     "done": 1.03
+    },
+    "score": 1.0,
+    "points": 15.0,
+    "dropped": null
+   },
+   {
+    "key": "fuel",
+    "label": "Fuel",
+    "weight": 10,
+    "measure": "taken ÷ planned · from your log",
+    "planned_text": "100 g",
+    "done_text": "not logged",
+    "detail": {
+     "planned_g": 100,
+     "taken_g": null
+    },
+    "score": null,
+    "points": null,
+    "dropped": "not logged"
+   }
+  ],
+  "coverage": 0.882,
+  "out_of": 75,
+  "earned": 75.0,
+  "excluded": null,
+  "against": "plan.json · Synthetic long ride, fuel not logged",
+  "summary": "Done as agreed. Fuel isn't logged yet, so it sits out for now: log it and the score updates.",
+  "headline": null,
+  "foot": "Score = 75.0 ÷ 75 points that could be scored. Fuel dropped out, each with its reason.",
+  "capped": null,
+  "provisional": true,
+  "flags": [],
+  "intent": "endurance"
+ }
+}

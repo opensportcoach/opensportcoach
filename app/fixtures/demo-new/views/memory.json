@@ -1,0 +1,16 @@
+{
+ "view": "memory",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:14",
+ "facts": [
+  {
+   "file": "athlete/goal.md",
+   "title": "Goal: hypertrophy on an endurance base",
+   "type": "athlete",
+   "status": "active",
+   "since": "2026-11-21",
+   "source": "intake (synthetic)",
+   "enforced_by": null
+  }
+ ]
+}

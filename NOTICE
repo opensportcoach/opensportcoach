@@ -1,0 +1,26 @@
+OpenSportCoach
+Copyright 2026 The OpenSportCoach Authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+It is provided "AS IS", without warranties or conditions of any kind, and is not
+medical advice (see DISCLAIMER.md).
+
+This repository does not include third-party code. It depends on, and installs
+separately, the following, each under its own license:
+
+  * garminconnect (MIT) — https://github.com/cyberjunky/python-garminconnect
+    An unofficial client for Garmin Connect.
+  * garmin-fit-sdk — Garmin International, Inc., under the Flexible and
+    Interoperable Data Transfer (FIT) Protocol License. Not redistributed here;
+    workouts/EXERCISE_CATALOG.json is generated from it on each user's machine
+    by scripts/build_exercise_catalog.py and is not committed.
+  * curl_cffi (MIT), jsonschema (MIT)
+  * The web app's npm dependencies (React, Vite, the @fontsource fonts under the
+    SIL Open Font License, the Model Context Protocol SDK, and others), as listed
+    in app/web/package.json and app/channel/package.json.
+
+Trademarks: Garmin, Strava, Zwift, HYROX, IRONMAN, Claude and all other names
+of products, companies and events mentioned are the trademarks of their
+respective owners. OpenSportCoach is not affiliated with or endorsed by any of
+them; the names are used only to identify compatibility. This repository ships
+no third-party logos.

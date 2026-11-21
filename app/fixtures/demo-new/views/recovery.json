@@ -1,0 +1,17496 @@
+{
+ "view": "recovery",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:13",
+ "series": [
+  {
+   "date": "2026-09-23",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-09-24",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-09-25",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-09-26",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-09-27",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-09-28",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-09-29",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-09-30",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-01",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-02",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-03",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-04",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-05",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-06",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-07",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-08",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-09",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-10",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-11",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-12",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-13",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-14",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-15",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-16",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-17",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-18",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-19",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-20",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-21",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-22",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-23",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-24",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-25",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-26",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-27",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-28",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-29",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-30",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-10-31",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-01",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-02",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-03",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-04",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-05",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-06",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-07",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-08",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": null,
+   "readiness": null,
+   "sleep_h": null,
+   "need_h": null,
+   "sleep_score": null,
+   "deep_min": 0,
+   "rem_min": 0,
+   "light_min": 0,
+   "awake_min": 0,
+   "resp": null,
+   "spo2": null,
+   "skin_dev": null,
+   "hr_low": null,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-09",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 49,
+   "readiness": 70,
+   "sleep_h": 7.89,
+   "need_h": 8.33,
+   "sleep_score": 75,
+   "deep_min": 119,
+   "rem_min": 120,
+   "light_min": 234,
+   "awake_min": 12,
+   "resp": 14.5,
+   "spo2": 96,
+   "skin_dev": -0.1,
+   "hr_low": 44,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": null,
+   "hr_low_base": null
+  },
+  {
+   "date": "2026-11-10",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 51,
+   "readiness": 70,
+   "sleep_h": 7.99,
+   "need_h": 8.33,
+   "sleep_score": 87,
+   "deep_min": 119,
+   "rem_min": 118,
+   "light_min": 243,
+   "awake_min": 10,
+   "resp": 14.9,
+   "spo2": 96,
+   "skin_dev": 0.1,
+   "hr_low": 44,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": 14.5,
+   "hr_low_base": 44.0
+  },
+  {
+   "date": "2026-11-11",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 52,
+   "readiness": 77,
+   "sleep_h": 7.29,
+   "need_h": 8.33,
+   "sleep_score": 73,
+   "deep_min": 123,
+   "rem_min": 101,
+   "light_min": 213,
+   "awake_min": 18,
+   "resp": 14.1,
+   "spo2": 96,
+   "skin_dev": 0.1,
+   "hr_low": 43,
+   "rhr_7d": null,
+   "resp_7d": null,
+   "hr_low_7d": null,
+   "spo2_7d": null,
+   "skin_dev_7d": null,
+   "resp_base": 14.7,
+   "hr_low_base": 44.0
+  },
+  {
+   "date": "2026-11-12",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 51,
+   "readiness": 67,
+   "sleep_h": 6.8,
+   "need_h": 8.33,
+   "sleep_score": 69,
+   "deep_min": 122,
+   "rem_min": 105,
+   "light_min": 181,
+   "awake_min": 13,
+   "resp": 14.5,
+   "spo2": 96,
+   "skin_dev": -0.1,
+   "hr_low": 44,
+   "rhr_7d": 50.8,
+   "resp_7d": 14.5,
+   "hr_low_7d": 43.8,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.0,
+   "resp_base": 14.5,
+   "hr_low_base": 43.7
+  },
+  {
+   "date": "2026-11-13",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 51,
+   "readiness": 76,
+   "sleep_h": 8.21,
+   "need_h": 8.33,
+   "sleep_score": 85,
+   "deep_min": 117,
+   "rem_min": 135,
+   "light_min": 241,
+   "awake_min": 17,
+   "resp": 13.9,
+   "spo2": 96,
+   "skin_dev": 0.3,
+   "hr_low": 44,
+   "rhr_7d": 50.8,
+   "resp_7d": 14.4,
+   "hr_low_7d": 43.8,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.1,
+   "resp_base": 14.5,
+   "hr_low_base": 43.8
+  },
+  {
+   "date": "2026-11-14",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 51,
+   "readiness": 98,
+   "sleep_h": 8.01,
+   "need_h": 8.33,
+   "sleep_score": 84,
+   "deep_min": 119,
+   "rem_min": 127,
+   "light_min": 234,
+   "awake_min": 19,
+   "resp": 14.1,
+   "spo2": 96,
+   "skin_dev": -0.1,
+   "hr_low": 43,
+   "rhr_7d": 50.8,
+   "resp_7d": 14.3,
+   "hr_low_7d": 43.7,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.0,
+   "resp_base": 14.4,
+   "hr_low_base": 43.8
+  },
+  {
+   "date": "2026-11-15",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 52,
+   "readiness": 53,
+   "sleep_h": 7.22,
+   "need_h": 8.33,
+   "sleep_score": 84,
+   "deep_min": 107,
+   "rem_min": 90,
+   "light_min": 236,
+   "awake_min": 13,
+   "resp": 13.8,
+   "spo2": 96,
+   "skin_dev": 0.2,
+   "hr_low": 43,
+   "rhr_7d": 51.0,
+   "resp_7d": 14.3,
+   "hr_low_7d": 43.6,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.1,
+   "resp_base": 14.3,
+   "hr_low_base": 43.7
+  },
+  {
+   "date": "2026-11-16",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 52,
+   "readiness": 54,
+   "sleep_h": 6.33,
+   "need_h": 8.33,
+   "sleep_score": 69,
+   "deep_min": 117,
+   "rem_min": 75,
+   "light_min": 188,
+   "awake_min": 8,
+   "resp": 15.1,
+   "spo2": 96,
+   "skin_dev": 0.1,
+   "hr_low": 44,
+   "rhr_7d": 51.4,
+   "resp_7d": 14.3,
+   "hr_low_7d": 43.6,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.1,
+   "resp_base": 14.3,
+   "hr_low_base": 43.6
+  },
+  {
+   "date": "2026-11-17",
+   "hrv": null,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": null,
+   "rhr": 52,
+   "readiness": 55,
+   "sleep_h": 7.67,
+   "need_h": 8.33,
+   "sleep_score": 79,
+   "deep_min": 127,
+   "rem_min": 102,
+   "light_min": 231,
+   "awake_min": 15,
+   "resp": 14.0,
+   "spo2": 96,
+   "skin_dev": -0.2,
+   "hr_low": 43,
+   "rhr_7d": 51.6,
+   "resp_7d": 14.2,
+   "hr_low_7d": 43.4,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.0,
+   "resp_base": 14.4,
+   "hr_low_base": 43.6
+  },
+  {
+   "date": "2026-11-18",
+   "hrv": 54,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": "NONE",
+   "rhr": 51,
+   "readiness": 62,
+   "sleep_h": 8.46,
+   "need_h": 8.33,
+   "sleep_score": 82,
+   "deep_min": 121,
+   "rem_min": 151,
+   "light_min": 235,
+   "awake_min": 15,
+   "resp": 14.3,
+   "spo2": 96,
+   "skin_dev": -0.1,
+   "hr_low": 45,
+   "rhr_7d": 51.4,
+   "resp_7d": 14.2,
+   "hr_low_7d": 43.7,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.0,
+   "resp_base": 14.3,
+   "hr_low_base": 43.6
+  },
+  {
+   "date": "2026-11-19",
+   "hrv": 65,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": "NONE",
+   "rhr": 51,
+   "readiness": 72,
+   "sleep_h": 7.06,
+   "need_h": 8.33,
+   "sleep_score": 73,
+   "deep_min": 110,
+   "rem_min": 102,
+   "light_min": 212,
+   "awake_min": 10,
+   "resp": 14.0,
+   "spo2": 96,
+   "skin_dev": 0.1,
+   "hr_low": 44,
+   "rhr_7d": 51.4,
+   "resp_7d": 14.2,
+   "hr_low_7d": 43.7,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.0,
+   "resp_base": 14.3,
+   "hr_low_base": 43.7
+  },
+  {
+   "date": "2026-11-20",
+   "hrv": 61,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": "NONE",
+   "rhr": 52,
+   "readiness": 67,
+   "sleep_h": 8.73,
+   "need_h": 8.33,
+   "sleep_score": 87,
+   "deep_min": 140,
+   "rem_min": 140,
+   "light_min": 244,
+   "awake_min": 11,
+   "resp": 14.7,
+   "spo2": 96,
+   "skin_dev": -0.1,
+   "hr_low": 44,
+   "rhr_7d": 51.6,
+   "resp_7d": 14.3,
+   "hr_low_7d": 43.7,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": -0.0,
+   "resp_base": 14.3,
+   "hr_low_base": 43.7
+  },
+  {
+   "date": "2026-11-21",
+   "hrv": 75,
+   "hrv_7d": null,
+   "hrv_low": null,
+   "hrv_high": null,
+   "hrv_status": "NONE",
+   "rhr": 53,
+   "readiness": null,
+   "sleep_h": 7.26,
+   "need_h": 8.33,
+   "sleep_score": 73,
+   "deep_min": 102,
+   "rem_min": 118,
+   "light_min": 216,
+   "awake_min": 6,
+   "resp": 14.8,
+   "spo2": 96,
+   "skin_dev": 0.3,
+   "hr_low": 44,
+   "rhr_7d": 51.9,
+   "resp_7d": 14.4,
+   "hr_low_7d": 43.9,
+   "spo2_7d": 96.0,
+   "skin_dev_7d": 0.0,
+   "resp_base": 14.3,
+   "hr_low_base": 43.8
+  }
+ ],
+ "calendar": [
+  {
+   "date": "2026-10-18",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-19",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-20",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-21",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-22",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-23",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-24",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-25",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-26",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-27",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-28",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-29",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-30",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-10-31",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-01",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-02",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-03",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-04",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-05",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-06",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-07",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-08",
+   "score": null,
+   "signals": 0,
+   "components": []
+  },
+  {
+   "date": "2026-11-09",
+   "score": 78,
+   "signals": 3,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 50,
+     "weight": 20,
+     "detail": "49 vs 49.0 bpm",
+     "value": 49,
+     "normal": 49.0,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 20.0,
+     "value_7d": null
+    },
+    {
+     "label": "Sleep perf",
+     "score": 95,
+     "weight": 25,
+     "detail": "7.9 of 8.3 h needed",
+     "value": 7.9,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "met",
+     "points": 47.5,
+     "value_7d": null
+    },
+    {
+     "label": "Skin temp",
+     "score": 100,
+     "weight": 5,
+     "detail": "-0.1°C dev",
+     "value": -0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 10.0,
+     "value_7d": null
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "score": 75,
+   "signals": 4,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 40,
+     "weight": 20,
+     "detail": "51 vs 50.0 bpm",
+     "value": 51,
+     "normal": 50.0,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 13.3,
+     "value_7d": null
+    },
+    {
+     "label": "Sleep perf",
+     "score": 96,
+     "weight": 25,
+     "detail": "8.0 of 8.3 h needed",
+     "value": 8.0,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "met",
+     "points": 40.0,
+     "value_7d": null
+    },
+    {
+     "label": "Respiration",
+     "score": 80,
+     "weight": 10,
+     "detail": "14.9 brpm (+0.4)",
+     "value": 14.9,
+     "normal": 14.5,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 13.3,
+     "value_7d": null
+    },
+    {
+     "label": "Skin temp",
+     "score": 95,
+     "weight": 5,
+     "detail": "+0.1°C dev",
+     "value": 0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 7.9,
+     "value_7d": null
+    }
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "score": 73,
+   "signals": 4,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 37,
+     "weight": 20,
+     "detail": "52 vs 50.7 bpm",
+     "value": 52,
+     "normal": 50.7,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 12.3,
+     "value_7d": null
+    },
+    {
+     "label": "Sleep perf",
+     "score": 87,
+     "weight": 25,
+     "detail": "7.3 of 8.3 h needed",
+     "value": 7.3,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "short",
+     "points": 36.2,
+     "value_7d": null
+    },
+    {
+     "label": "Respiration",
+     "score": 100,
+     "weight": 10,
+     "detail": "14.1 brpm (-0.6)",
+     "value": 14.1,
+     "normal": 14.7,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 16.7,
+     "value_7d": null
+    },
+    {
+     "label": "Skin temp",
+     "score": 95,
+     "weight": 5,
+     "detail": "+0.1°C dev",
+     "value": 0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 7.9,
+     "value_7d": null
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "score": 75,
+   "signals": 4,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 48,
+     "weight": 20,
+     "detail": "51 vs 50.8 bpm",
+     "value": 51,
+     "normal": 50.8,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 16.0,
+     "value_7d": 50.8
+    },
+    {
+     "label": "Sleep perf",
+     "score": 82,
+     "weight": 25,
+     "detail": "6.8 of 8.3 h needed",
+     "value": 6.8,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "short",
+     "points": 34.2,
+     "value_7d": 7.5
+    },
+    {
+     "label": "Respiration",
+     "score": 100,
+     "weight": 10,
+     "detail": "14.5 brpm (+0.0)",
+     "value": 14.5,
+     "normal": 14.5,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 16.7,
+     "value_7d": null
+    },
+    {
+     "label": "Skin temp",
+     "score": 100,
+     "weight": 5,
+     "detail": "-0.1°C dev",
+     "value": -0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 8.3,
+     "value_7d": 0.0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "score": 81,
+   "signals": 4,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 48,
+     "weight": 20,
+     "detail": "51 vs 50.8 bpm",
+     "value": 51,
+     "normal": 50.8,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 16.0,
+     "value_7d": 50.8
+    },
+    {
+     "label": "Sleep perf",
+     "score": 99,
+     "weight": 25,
+     "detail": "8.2 of 8.3 h needed",
+     "value": 8.2,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "met",
+     "points": 41.2,
+     "value_7d": 7.6
+    },
+    {
+     "label": "Respiration",
+     "score": 100,
+     "weight": 10,
+     "detail": "13.9 brpm (-0.6)",
+     "value": 13.9,
+     "normal": 14.5,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 16.7,
+     "value_7d": 14.3
+    },
+    {
+     "label": "Skin temp",
+     "score": 85,
+     "weight": 5,
+     "detail": "+0.3°C dev",
+     "value": 0.3,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 7.1,
+     "value_7d": 0.1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "score": 81,
+   "signals": 4,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 48,
+     "weight": 20,
+     "detail": "51 vs 50.8 bpm",
+     "value": 51,
+     "normal": 50.8,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 16.0,
+     "value_7d": 50.8
+    },
+    {
+     "label": "Sleep perf",
+     "score": 96,
+     "weight": 25,
+     "detail": "8.0 of 8.3 h needed",
+     "value": 8.0,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "met",
+     "points": 40.0,
+     "value_7d": 7.7
+    },
+    {
+     "label": "Respiration",
+     "score": 100,
+     "weight": 10,
+     "detail": "14.1 brpm (-0.3)",
+     "value": 14.1,
+     "normal": 14.4,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 16.7,
+     "value_7d": 14.3
+    },
+    {
+     "label": "Skin temp",
+     "score": 100,
+     "weight": 5,
+     "detail": "-0.1°C dev",
+     "value": -0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 8.3,
+     "value_7d": 0.0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "score": 74,
+   "signals": 4,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 40,
+     "weight": 20,
+     "detail": "52 vs 51.0 bpm",
+     "value": 52,
+     "normal": 51.0,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 13.3,
+     "value_7d": 51.0
+    },
+    {
+     "label": "Sleep perf",
+     "score": 87,
+     "weight": 25,
+     "detail": "7.2 of 8.3 h needed",
+     "value": 7.2,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "short",
+     "points": 36.2,
+     "value_7d": 7.6
+    },
+    {
+     "label": "Respiration",
+     "score": 100,
+     "weight": 10,
+     "detail": "13.8 brpm (-0.5)",
+     "value": 13.8,
+     "normal": 14.3,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 16.7,
+     "value_7d": 14.2
+    },
+    {
+     "label": "Skin temp",
+     "score": 90,
+     "weight": 5,
+     "detail": "+0.2°C dev",
+     "value": 0.2,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 7.5,
+     "value_7d": 0.1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "score": 63,
+   "signals": 4,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 41,
+     "weight": 20,
+     "detail": "52 vs 51.1 bpm",
+     "value": 52,
+     "normal": 51.1,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 13.7,
+     "value_7d": 51.4
+    },
+    {
+     "label": "Sleep perf",
+     "score": 76,
+     "weight": 25,
+     "detail": "6.3 of 8.3 h needed",
+     "value": 6.3,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "short",
+     "points": 31.7,
+     "value_7d": 7.4
+    },
+    {
+     "label": "Respiration",
+     "score": 60,
+     "weight": 10,
+     "detail": "15.1 brpm (+0.8)",
+     "value": 15.1,
+     "normal": 14.3,
+     "unit": "brpm",
+     "state": "raised",
+     "points": 10.0,
+     "value_7d": 14.3
+    },
+    {
+     "label": "Skin temp",
+     "score": 95,
+     "weight": 5,
+     "detail": "+0.1°C dev",
+     "value": 0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 7.9,
+     "value_7d": 0.1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "score": 77,
+   "signals": 4,
+   "components": [
+    {
+     "label": "RHR vs 30d",
+     "score": 42,
+     "weight": 20,
+     "detail": "52 vs 51.2 bpm",
+     "value": 52,
+     "normal": 51.2,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 14.0,
+     "value_7d": 51.6
+    },
+    {
+     "label": "Sleep perf",
+     "score": 92,
+     "weight": 25,
+     "detail": "7.7 of 8.3 h needed",
+     "value": 7.7,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "met",
+     "points": 38.3,
+     "value_7d": 7.4
+    },
+    {
+     "label": "Respiration",
+     "score": 100,
+     "weight": 10,
+     "detail": "14.0 brpm (-0.4)",
+     "value": 14.0,
+     "normal": 14.4,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 16.7,
+     "value_7d": 14.2
+    },
+    {
+     "label": "Skin temp",
+     "score": 100,
+     "weight": 5,
+     "detail": "-0.2°C dev",
+     "value": -0.2,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 8.3,
+     "value_7d": 0.0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "score": 70,
+   "signals": 5,
+   "components": [
+    {
+     "label": "HRV vs 30d",
+     "score": 50,
+     "weight": 40,
+     "detail": "54 vs 54.0 ms",
+     "value": 54,
+     "normal": 54.0,
+     "unit": "ms",
+     "state": "usual",
+     "points": 20.0,
+     "value_7d": null
+    },
+    {
+     "label": "RHR vs 30d",
+     "score": 52,
+     "weight": 20,
+     "detail": "51 vs 51.2 bpm",
+     "value": 51,
+     "normal": 51.2,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 10.4,
+     "value_7d": 51.4
+    },
+    {
+     "label": "Sleep perf",
+     "score": 100,
+     "weight": 25,
+     "detail": "8.5 of 8.3 h needed",
+     "value": 8.5,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "met",
+     "points": 25.0,
+     "value_7d": 7.5
+    },
+    {
+     "label": "Respiration",
+     "score": 100,
+     "weight": 10,
+     "detail": "14.3 brpm (+0.0)",
+     "value": 14.3,
+     "normal": 14.3,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 10.0,
+     "value_7d": 14.2
+    },
+    {
+     "label": "Skin temp",
+     "score": 100,
+     "weight": 5,
+     "detail": "-0.1°C dev",
+     "value": -0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 5.0,
+     "value_7d": 0.0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "score": 76,
+   "signals": 5,
+   "components": [
+    {
+     "label": "HRV vs 30d",
+     "score": 73,
+     "weight": 40,
+     "detail": "65 vs 59.5 ms",
+     "value": 65,
+     "normal": 59.5,
+     "unit": "ms",
+     "state": "better",
+     "points": 29.2,
+     "value_7d": null
+    },
+    {
+     "label": "RHR vs 30d",
+     "score": 52,
+     "weight": 20,
+     "detail": "51 vs 51.2 bpm",
+     "value": 51,
+     "normal": 51.2,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 10.4,
+     "value_7d": 51.4
+    },
+    {
+     "label": "Sleep perf",
+     "score": 85,
+     "weight": 25,
+     "detail": "7.1 of 8.3 h needed",
+     "value": 7.1,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "short",
+     "points": 21.2,
+     "value_7d": 7.6
+    },
+    {
+     "label": "Respiration",
+     "score": 100,
+     "weight": 10,
+     "detail": "14.0 brpm (-0.3)",
+     "value": 14.0,
+     "normal": 14.3,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 10.0,
+     "value_7d": 14.2
+    },
+    {
+     "label": "Skin temp",
+     "score": 95,
+     "weight": 5,
+     "detail": "+0.1°C dev",
+     "value": 0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 4.8,
+     "value_7d": 0.0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "score": 68,
+   "signals": 5,
+   "components": [
+    {
+     "label": "HRV vs 30d",
+     "score": 54,
+     "weight": 40,
+     "detail": "61 vs 60.0 ms",
+     "value": 61,
+     "normal": 60.0,
+     "unit": "ms",
+     "state": "usual",
+     "points": 21.6,
+     "value_7d": null
+    },
+    {
+     "label": "RHR vs 30d",
+     "score": 42,
+     "weight": 20,
+     "detail": "52 vs 51.2 bpm",
+     "value": 52,
+     "normal": 51.2,
+     "unit": "bpm",
+     "state": "usual",
+     "points": 8.4,
+     "value_7d": 51.6
+    },
+    {
+     "label": "Sleep perf",
+     "score": 100,
+     "weight": 25,
+     "detail": "8.7 of 8.3 h needed",
+     "value": 8.7,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "met",
+     "points": 25.0,
+     "value_7d": 7.6
+    },
+    {
+     "label": "Respiration",
+     "score": 80,
+     "weight": 10,
+     "detail": "14.7 brpm (+0.4)",
+     "value": 14.7,
+     "normal": 14.3,
+     "unit": "brpm",
+     "state": "usual",
+     "points": 8.0,
+     "value_7d": 14.3
+    },
+    {
+     "label": "Skin temp",
+     "score": 100,
+     "weight": 5,
+     "detail": "-0.1°C dev",
+     "value": -0.1,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 5.0,
+     "value_7d": -0.0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "score": 77,
+   "signals": 5,
+   "components": [
+    {
+     "label": "HRV vs 30d",
+     "score": 92,
+     "weight": 40,
+     "detail": "75 vs 63.8 ms",
+     "value": 75,
+     "normal": 63.8,
+     "unit": "ms",
+     "state": "better",
+     "points": 36.8,
+     "value_7d": 63.8
+    },
+    {
+     "label": "RHR vs 30d",
+     "score": 34,
+     "weight": 20,
+     "detail": "53 vs 51.4 bpm",
+     "value": 53,
+     "normal": 51.4,
+     "unit": "bpm",
+     "state": "below",
+     "points": 6.8,
+     "value_7d": 51.9
+    },
+    {
+     "label": "Sleep perf",
+     "score": 87,
+     "weight": 25,
+     "detail": "7.3 of 8.3 h needed",
+     "value": 7.3,
+     "normal": 8.3,
+     "unit": "h",
+     "state": "short",
+     "points": 21.8,
+     "value_7d": 7.5
+    },
+    {
+     "label": "Respiration",
+     "score": 75,
+     "weight": 10,
+     "detail": "14.8 brpm (+0.5)",
+     "value": 14.8,
+     "normal": 14.3,
+     "unit": "brpm",
+     "state": "raised",
+     "points": 7.5,
+     "value_7d": 14.4
+    },
+    {
+     "label": "Skin temp",
+     "score": 85,
+     "weight": 5,
+     "detail": "+0.3°C dev",
+     "value": 0.3,
+     "normal": 0,
+     "unit": "°C",
+     "state": "usual",
+     "points": 4.2,
+     "value_7d": 0.0
+    }
+   ]
+  }
+ ],
+ "night": {
+  "date": "2026-11-20",
+  "recoveryScore": 62,
+  "garminReadiness": 67,
+  "components": [
+   {
+    "label": "HRV vs 30d",
+    "score": 38,
+    "weight": 40,
+    "detail": "61 vs 63.8 ms",
+    "value": 61,
+    "normal": 63.8,
+    "unit": "ms",
+    "state": "usual",
+    "points": 15.2
+   },
+   {
+    "label": "RHR vs 30d",
+    "score": 44,
+    "weight": 20,
+    "detail": "52 vs 51.4 bpm",
+    "value": 52,
+    "normal": 51.4,
+    "unit": "bpm",
+    "state": "usual",
+    "points": 8.8
+   },
+   {
+    "label": "Sleep perf",
+    "score": 100,
+    "weight": 25,
+    "detail": "8.7 of 8.3 h needed",
+    "value": 8.7,
+    "normal": 8.3,
+    "unit": "h",
+    "state": "met",
+    "points": 25.0
+   },
+   {
+    "label": "Respiration",
+    "score": 80,
+    "weight": 10,
+    "detail": "14.7 brpm (+0.4)",
+    "value": 14.7,
+    "normal": 14.3,
+    "unit": "brpm",
+    "state": "usual",
+    "points": 8.0
+   },
+   {
+    "label": "Skin temp",
+    "score": 100,
+    "weight": 5,
+    "detail": "-0.1°C dev",
+    "value": -0.1,
+    "normal": 0,
+    "unit": "°C",
+    "state": "usual",
+    "points": 5.0
+   }
+  ],
+  "sleep": {
+   "performancePct": 100,
+   "needH": 8.33,
+   "actualH": 8.73,
+   "debt7dH": 6.1,
+   "consistencyPct": 80,
+   "restorativePct": 53,
+   "efficiencyPct": 98,
+   "deepMin": 140,
+   "remMin": 140,
+   "lightMin": 244,
+   "awakeMin": 11,
+   "bedtime": "23:18",
+   "waketime": "08:12"
+  },
+  "vitals": {
+   "respiration": {
+    "value": 14.7,
+    "baseline": 14.3,
+    "deviation": 0.4
+   },
+   "skinTempDevC": -0.1,
+   "spo2": 96
+  },
+  "flags": [
+   "Sleep debt 6.1 h over 7 nights — recovery ceiling is capped until you repay it."
+  ]
+ },
+ "nights": [
+  {
+   "date": "2026-11-09",
+   "start": "23:36",
+   "end": "07:41",
+   "asleep_min": 474,
+   "need_min": 500,
+   "performance_pct": 95,
+   "restorative_pct": 50,
+   "efficiency_pct": 98,
+   "in_bed_min": 486,
+   "score": 75,
+   "hr_low": 44,
+   "hr_avg": 52,
+   "respiration": 14.5,
+   "hrv_avg": 65,
+   "body_battery_change": 43,
+   "resting_hr": 44,
+   "segments": [
+    [
+     0.0,
+     14.0,
+     "light"
+    ],
+    [
+     14.0,
+     50.0,
+     "deep"
+    ],
+    [
+     50.0,
+     67.0,
+     "light"
+    ],
+    [
+     67.0,
+     76.0,
+     "rem"
+    ],
+    [
+     76.0,
+     98.0,
+     "light"
+    ],
+    [
+     98.0,
+     127.0,
+     "deep"
+    ],
+    [
+     127.0,
+     142.0,
+     "light"
+    ],
+    [
+     142.0,
+     156.0,
+     "rem"
+    ],
+    [
+     156.0,
+     158.0,
+     "awake"
+    ],
+    [
+     158.0,
+     172.0,
+     "light"
+    ],
+    [
+     172.0,
+     199.0,
+     "deep"
+    ],
+    [
+     199.0,
+     221.0,
+     "light"
+    ],
+    [
+     221.0,
+     238.0,
+     "rem"
+    ],
+    [
+     238.0,
+     244.0,
+     "awake"
+    ],
+    [
+     244.0,
+     264.0,
+     "light"
+    ],
+    [
+     264.0,
+     276.0,
+     "deep"
+    ],
+    [
+     276.0,
+     292.0,
+     "light"
+    ],
+    [
+     292.0,
+     313.0,
+     "rem"
+    ],
+    [
+     313.0,
+     315.0,
+     "awake"
+    ],
+    [
+     315.0,
+     333.0,
+     "light"
+    ],
+    [
+     333.0,
+     340.0,
+     "deep"
+    ],
+    [
+     340.0,
+     360.0,
+     "light"
+    ],
+    [
+     360.0,
+     389.0,
+     "rem"
+    ],
+    [
+     389.0,
+     391.0,
+     "awake"
+    ],
+    [
+     391.0,
+     409.0,
+     "light"
+    ],
+    [
+     409.0,
+     413.0,
+     "deep"
+    ],
+    [
+     413.0,
+     434.0,
+     "light"
+    ],
+    [
+     434.0,
+     464.0,
+     "rem"
+    ],
+    [
+     464.0,
+     477.0,
+     "light"
+    ],
+    [
+     477.0,
+     481.0,
+     "deep"
+    ],
+    [
+     481.0,
+     485.5,
+     "light"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     51
+    ],
+    [
+     2.0,
+     52
+    ],
+    [
+     4.0,
+     53
+    ],
+    [
+     6.0,
+     51
+    ],
+    [
+     8.0,
+     53
+    ],
+    [
+     10.0,
+     55
+    ],
+    [
+     12.0,
+     51
+    ],
+    [
+     14.0,
+     48
+    ],
+    [
+     16.0,
+     45
+    ],
+    [
+     18.0,
+     49
+    ],
+    [
+     20.0,
+     47
+    ],
+    [
+     22.0,
+     47
+    ],
+    [
+     24.0,
+     49
+    ],
+    [
+     26.0,
+     45
+    ],
+    [
+     28.0,
+     45
+    ],
+    [
+     30.0,
+     48
+    ],
+    [
+     32.0,
+     48
+    ],
+    [
+     34.0,
+     46
+    ],
+    [
+     36.0,
+     51
+    ],
+    [
+     38.0,
+     47
+    ],
+    [
+     40.0,
+     47
+    ],
+    [
+     42.0,
+     48
+    ],
+    [
+     44.0,
+     47
+    ],
+    [
+     46.0,
+     47
+    ],
+    [
+     48.0,
+     49
+    ],
+    [
+     50.0,
+     52
+    ],
+    [
+     52.0,
+     54
+    ],
+    [
+     54.0,
+     50
+    ],
+    [
+     56.0,
+     54
+    ],
+    [
+     58.0,
+     50
+    ],
+    [
+     60.0,
+     51
+    ],
+    [
+     62.0,
+     52
+    ],
+    [
+     64.0,
+     50
+    ],
+    [
+     66.0,
+     51
+    ],
+    [
+     67.0,
+     56
+    ],
+    [
+     69.0,
+     56
+    ],
+    [
+     71.0,
+     57
+    ],
+    [
+     73.0,
+     56
+    ],
+    [
+     75.0,
+     55
+    ],
+    [
+     76.0,
+     51
+    ],
+    [
+     78.0,
+     55
+    ],
+    [
+     80.0,
+     51
+    ],
+    [
+     82.0,
+     52
+    ],
+    [
+     84.0,
+     53
+    ],
+    [
+     86.0,
+     52
+    ],
+    [
+     88.0,
+     50
+    ],
+    [
+     90.0,
+     53
+    ],
+    [
+     92.0,
+     53
+    ],
+    [
+     94.0,
+     51
+    ],
+    [
+     96.0,
+     51
+    ],
+    [
+     98.0,
+     48
+    ],
+    [
+     100.0,
+     44
+    ],
+    [
+     102.0,
+     49
+    ],
+    [
+     104.0,
+     48
+    ],
+    [
+     106.0,
+     46
+    ],
+    [
+     108.0,
+     47
+    ],
+    [
+     110.0,
+     44
+    ],
+    [
+     112.0,
+     46
+    ],
+    [
+     114.0,
+     46
+    ],
+    [
+     116.0,
+     47
+    ],
+    [
+     118.0,
+     48
+    ],
+    [
+     120.0,
+     47
+    ],
+    [
+     122.0,
+     47
+    ],
+    [
+     124.0,
+     48
+    ],
+    [
+     126.0,
+     44
+    ],
+    [
+     127.0,
+     53
+    ],
+    [
+     129.0,
+     53
+    ],
+    [
+     131.0,
+     49
+    ],
+    [
+     133.0,
+     49
+    ],
+    [
+     135.0,
+     53
+    ],
+    [
+     137.0,
+     53
+    ],
+    [
+     139.0,
+     52
+    ],
+    [
+     141.0,
+     52
+    ],
+    [
+     142.0,
+     57
+    ],
+    [
+     144.0,
+     54
+    ],
+    [
+     146.0,
+     55
+    ],
+    [
+     148.0,
+     54
+    ],
+    [
+     150.0,
+     58
+    ],
+    [
+     152.0,
+     55
+    ],
+    [
+     154.0,
+     56
+    ],
+    [
+     156.0,
+     61
+    ],
+    [
+     158.0,
+     54
+    ],
+    [
+     160.0,
+     50
+    ],
+    [
+     162.0,
+     53
+    ],
+    [
+     164.0,
+     52
+    ],
+    [
+     166.0,
+     51
+    ],
+    [
+     168.0,
+     53
+    ],
+    [
+     170.0,
+     52
+    ],
+    [
+     172.0,
+     46
+    ],
+    [
+     174.0,
+     49
+    ],
+    [
+     176.0,
+     44
+    ],
+    [
+     178.0,
+     49
+    ],
+    [
+     180.0,
+     49
+    ],
+    [
+     182.0,
+     48
+    ],
+    [
+     184.0,
+     48
+    ],
+    [
+     186.0,
+     48
+    ],
+    [
+     188.0,
+     46
+    ],
+    [
+     190.0,
+     48
+    ],
+    [
+     192.0,
+     49
+    ],
+    [
+     194.0,
+     45
+    ],
+    [
+     196.0,
+     49
+    ],
+    [
+     198.0,
+     49
+    ],
+    [
+     199.0,
+     51
+    ],
+    [
+     201.0,
+     54
+    ],
+    [
+     203.0,
+     52
+    ],
+    [
+     205.0,
+     51
+    ],
+    [
+     207.0,
+     51
+    ],
+    [
+     209.0,
+     52
+    ],
+    [
+     211.0,
+     49
+    ],
+    [
+     213.0,
+     50
+    ],
+    [
+     215.0,
+     55
+    ],
+    [
+     217.0,
+     50
+    ],
+    [
+     219.0,
+     52
+    ],
+    [
+     221.0,
+     55
+    ],
+    [
+     223.0,
+     57
+    ],
+    [
+     225.0,
+     54
+    ],
+    [
+     227.0,
+     57
+    ],
+    [
+     229.0,
+     57
+    ],
+    [
+     231.0,
+     55
+    ],
+    [
+     233.0,
+     57
+    ],
+    [
+     235.0,
+     54
+    ],
+    [
+     237.0,
+     55
+    ],
+    [
+     238.0,
+     61
+    ],
+    [
+     240.0,
+     61
+    ],
+    [
+     242.0,
+     60
+    ],
+    [
+     244.0,
+     53
+    ],
+    [
+     246.0,
+     54
+    ],
+    [
+     248.0,
+     50
+    ],
+    [
+     250.0,
+     50
+    ],
+    [
+     252.0,
+     53
+    ],
+    [
+     254.0,
+     49
+    ],
+    [
+     256.0,
+     51
+    ],
+    [
+     258.0,
+     56
+    ],
+    [
+     260.0,
+     51
+    ],
+    [
+     262.0,
+     52
+    ],
+    [
+     264.0,
+     46
+    ],
+    [
+     266.0,
+     45
+    ],
+    [
+     268.0,
+     46
+    ],
+    [
+     270.0,
+     49
+    ],
+    [
+     272.0,
+     46
+    ],
+    [
+     274.0,
+     45
+    ],
+    [
+     276.0,
+     53
+    ],
+    [
+     278.0,
+     52
+    ],
+    [
+     280.0,
+     52
+    ],
+    [
+     282.0,
+     52
+    ],
+    [
+     284.0,
+     52
+    ],
+    [
+     286.0,
+     51
+    ],
+    [
+     288.0,
+     53
+    ],
+    [
+     290.0,
+     52
+    ],
+    [
+     292.0,
+     57
+    ],
+    [
+     294.0,
+     54
+    ],
+    [
+     296.0,
+     55
+    ],
+    [
+     298.0,
+     53
+    ],
+    [
+     300.0,
+     56
+    ],
+    [
+     302.0,
+     54
+    ],
+    [
+     304.0,
+     58
+    ],
+    [
+     306.0,
+     54
+    ],
+    [
+     308.0,
+     56
+    ],
+    [
+     310.0,
+     57
+    ],
+    [
+     312.0,
+     52
+    ],
+    [
+     313.0,
+     62
+    ],
+    [
+     315.0,
+     53
+    ],
+    [
+     317.0,
+     50
+    ],
+    [
+     319.0,
+     49
+    ],
+    [
+     321.0,
+     51
+    ],
+    [
+     323.0,
+     50
+    ],
+    [
+     325.0,
+     50
+    ],
+    [
+     327.0,
+     51
+    ],
+    [
+     329.0,
+     54
+    ],
+    [
+     331.0,
+     52
+    ],
+    [
+     333.0,
+     47
+    ],
+    [
+     335.0,
+     49
+    ],
+    [
+     337.0,
+     49
+    ],
+    [
+     339.0,
+     48
+    ],
+    [
+     340.0,
+     51
+    ],
+    [
+     342.0,
+     52
+    ],
+    [
+     344.0,
+     53
+    ],
+    [
+     346.0,
+     51
+    ],
+    [
+     348.0,
+     55
+    ],
+    [
+     350.0,
+     53
+    ],
+    [
+     352.0,
+     52
+    ],
+    [
+     354.0,
+     53
+    ],
+    [
+     356.0,
+     55
+    ],
+    [
+     358.0,
+     51
+    ],
+    [
+     360.0,
+     56
+    ],
+    [
+     362.0,
+     57
+    ],
+    [
+     364.0,
+     56
+    ],
+    [
+     366.0,
+     56
+    ],
+    [
+     368.0,
+     56
+    ],
+    [
+     370.0,
+     56
+    ],
+    [
+     372.0,
+     55
+    ],
+    [
+     374.0,
+     56
+    ],
+    [
+     376.0,
+     54
+    ],
+    [
+     378.0,
+     56
+    ],
+    [
+     380.0,
+     56
+    ],
+    [
+     382.0,
+     56
+    ],
+    [
+     384.0,
+     57
+    ],
+    [
+     386.0,
+     55
+    ],
+    [
+     388.0,
+     55
+    ],
+    [
+     389.0,
+     63
+    ],
+    [
+     391.0,
+     54
+    ],
+    [
+     393.0,
+     52
+    ],
+    [
+     395.0,
+     52
+    ],
+    [
+     397.0,
+     52
+    ],
+    [
+     399.0,
+     51
+    ],
+    [
+     401.0,
+     52
+    ],
+    [
+     403.0,
+     52
+    ],
+    [
+     405.0,
+     54
+    ],
+    [
+     407.0,
+     53
+    ],
+    [
+     409.0,
+     46
+    ],
+    [
+     411.0,
+     47
+    ],
+    [
+     413.0,
+     53
+    ],
+    [
+     415.0,
+     53
+    ],
+    [
+     417.0,
+     54
+    ],
+    [
+     419.0,
+     53
+    ],
+    [
+     421.0,
+     52
+    ],
+    [
+     423.0,
+     52
+    ],
+    [
+     425.0,
+     52
+    ],
+    [
+     427.0,
+     52
+    ],
+    [
+     429.0,
+     53
+    ],
+    [
+     431.0,
+     53
+    ],
+    [
+     433.0,
+     50
+    ],
+    [
+     434.0,
+     54
+    ],
+    [
+     436.0,
+     54
+    ],
+    [
+     438.0,
+     54
+    ],
+    [
+     440.0,
+     55
+    ],
+    [
+     442.0,
+     56
+    ],
+    [
+     444.0,
+     57
+    ],
+    [
+     446.0,
+     58
+    ],
+    [
+     448.0,
+     59
+    ],
+    [
+     450.0,
+     57
+    ],
+    [
+     452.0,
+     56
+    ],
+    [
+     454.0,
+     52
+    ],
+    [
+     456.0,
+     55
+    ],
+    [
+     458.0,
+     56
+    ],
+    [
+     460.0,
+     56
+    ],
+    [
+     462.0,
+     57
+    ],
+    [
+     464.0,
+     51
+    ],
+    [
+     466.0,
+     54
+    ],
+    [
+     468.0,
+     54
+    ],
+    [
+     470.0,
+     53
+    ],
+    [
+     472.0,
+     54
+    ],
+    [
+     474.0,
+     51
+    ],
+    [
+     476.0,
+     51
+    ],
+    [
+     477.0,
+     48
+    ],
+    [
+     479.0,
+     44
+    ],
+    [
+     481.0,
+     52
+    ],
+    [
+     483.0,
+     51
+    ],
+    [
+     485.0,
+     52
+    ]
+   ],
+   "totals_min": {
+    "deep": 119,
+    "light": 234,
+    "rem": 120,
+    "awake": 12
+   },
+   "awakenings": 4,
+   "mismatch_min": 0.0,
+   "length_min": 485.5
+  },
+  {
+   "date": "2026-11-10",
+   "start": "22:59",
+   "end": "07:08",
+   "asleep_min": 480,
+   "need_min": 500,
+   "performance_pct": 96,
+   "restorative_pct": 49,
+   "efficiency_pct": 98,
+   "in_bed_min": 490,
+   "score": 87,
+   "hr_low": 44,
+   "hr_avg": 52,
+   "respiration": 14.9,
+   "hrv_avg": 60,
+   "body_battery_change": 52,
+   "resting_hr": 44,
+   "segments": [
+    [
+     0.0,
+     18.0,
+     "light"
+    ],
+    [
+     18.0,
+     59.0,
+     "deep"
+    ],
+    [
+     59.0,
+     79.0,
+     "light"
+    ],
+    [
+     79.0,
+     90.0,
+     "rem"
+    ],
+    [
+     90.0,
+     96.0,
+     "awake"
+    ],
+    [
+     96.0,
+     113.0,
+     "light"
+    ],
+    [
+     113.0,
+     144.0,
+     "deep"
+    ],
+    [
+     144.0,
+     169.0,
+     "light"
+    ],
+    [
+     169.0,
+     184.0,
+     "rem"
+    ],
+    [
+     184.0,
+     202.0,
+     "light"
+    ],
+    [
+     202.0,
+     221.0,
+     "deep"
+    ],
+    [
+     221.0,
+     242.0,
+     "light"
+    ],
+    [
+     242.0,
+     259.0,
+     "rem"
+    ],
+    [
+     259.0,
+     261.0,
+     "awake"
+    ],
+    [
+     261.0,
+     282.0,
+     "light"
+    ],
+    [
+     282.0,
+     298.0,
+     "deep"
+    ],
+    [
+     298.0,
+     322.0,
+     "light"
+    ],
+    [
+     322.0,
+     343.0,
+     "rem"
+    ],
+    [
+     343.0,
+     365.0,
+     "light"
+    ],
+    [
+     365.0,
+     373.0,
+     "deep"
+    ],
+    [
+     373.0,
+     392.0,
+     "light"
+    ],
+    [
+     392.0,
+     423.0,
+     "rem"
+    ],
+    [
+     423.0,
+     425.0,
+     "awake"
+    ],
+    [
+     425.0,
+     442.0,
+     "light"
+    ],
+    [
+     442.0,
+     446.0,
+     "deep"
+    ],
+    [
+     446.0,
+     467.0,
+     "light"
+    ],
+    [
+     467.0,
+     489.5,
+     "rem"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     53
+    ],
+    [
+     2.0,
+     54
+    ],
+    [
+     4.0,
+     54
+    ],
+    [
+     6.0,
+     52
+    ],
+    [
+     8.0,
+     49
+    ],
+    [
+     10.0,
+     56
+    ],
+    [
+     12.0,
+     54
+    ],
+    [
+     14.0,
+     51
+    ],
+    [
+     16.0,
+     54
+    ],
+    [
+     18.0,
+     44
+    ],
+    [
+     20.0,
+     47
+    ],
+    [
+     22.0,
+     47
+    ],
+    [
+     24.0,
+     49
+    ],
+    [
+     26.0,
+     47
+    ],
+    [
+     28.0,
+     47
+    ],
+    [
+     30.0,
+     48
+    ],
+    [
+     32.0,
+     45
+    ],
+    [
+     34.0,
+     47
+    ],
+    [
+     36.0,
+     49
+    ],
+    [
+     38.0,
+     47
+    ],
+    [
+     40.0,
+     47
+    ],
+    [
+     42.0,
+     45
+    ],
+    [
+     44.0,
+     46
+    ],
+    [
+     46.0,
+     46
+    ],
+    [
+     48.0,
+     45
+    ],
+    [
+     50.0,
+     45
+    ],
+    [
+     52.0,
+     50
+    ],
+    [
+     54.0,
+     48
+    ],
+    [
+     56.0,
+     46
+    ],
+    [
+     58.0,
+     47
+    ],
+    [
+     59.0,
+     52
+    ],
+    [
+     61.0,
+     49
+    ],
+    [
+     63.0,
+     52
+    ],
+    [
+     65.0,
+     52
+    ],
+    [
+     67.0,
+     50
+    ],
+    [
+     69.0,
+     54
+    ],
+    [
+     71.0,
+     54
+    ],
+    [
+     73.0,
+     51
+    ],
+    [
+     75.0,
+     53
+    ],
+    [
+     77.0,
+     52
+    ],
+    [
+     79.0,
+     54
+    ],
+    [
+     81.0,
+     52
+    ],
+    [
+     83.0,
+     54
+    ],
+    [
+     85.0,
+     53
+    ],
+    [
+     87.0,
+     56
+    ],
+    [
+     89.0,
+     54
+    ],
+    [
+     90.0,
+     59
+    ],
+    [
+     92.0,
+     63
+    ],
+    [
+     94.0,
+     62
+    ],
+    [
+     96.0,
+     54
+    ],
+    [
+     98.0,
+     48
+    ],
+    [
+     100.0,
+     52
+    ],
+    [
+     102.0,
+     52
+    ],
+    [
+     104.0,
+     50
+    ],
+    [
+     106.0,
+     52
+    ],
+    [
+     108.0,
+     52
+    ],
+    [
+     110.0,
+     52
+    ],
+    [
+     112.0,
+     54
+    ],
+    [
+     113.0,
+     48
+    ],
+    [
+     115.0,
+     47
+    ],
+    [
+     117.0,
+     51
+    ],
+    [
+     119.0,
+     49
+    ],
+    [
+     121.0,
+     46
+    ],
+    [
+     123.0,
+     47
+    ],
+    [
+     125.0,
+     45
+    ],
+    [
+     127.0,
+     46
+    ],
+    [
+     129.0,
+     45
+    ],
+    [
+     131.0,
+     45
+    ],
+    [
+     133.0,
+     46
+    ],
+    [
+     135.0,
+     44
+    ],
+    [
+     137.0,
+     45
+    ],
+    [
+     139.0,
+     48
+    ],
+    [
+     141.0,
+     49
+    ],
+    [
+     143.0,
+     49
+    ],
+    [
+     144.0,
+     52
+    ],
+    [
+     146.0,
+     48
+    ],
+    [
+     148.0,
+     50
+    ],
+    [
+     150.0,
+     51
+    ],
+    [
+     152.0,
+     49
+    ],
+    [
+     154.0,
+     51
+    ],
+    [
+     156.0,
+     53
+    ],
+    [
+     158.0,
+     51
+    ],
+    [
+     160.0,
+     51
+    ],
+    [
+     162.0,
+     50
+    ],
+    [
+     164.0,
+     49
+    ],
+    [
+     166.0,
+     53
+    ],
+    [
+     168.0,
+     54
+    ],
+    [
+     169.0,
+     56
+    ],
+    [
+     171.0,
+     55
+    ],
+    [
+     173.0,
+     55
+    ],
+    [
+     175.0,
+     56
+    ],
+    [
+     177.0,
+     55
+    ],
+    [
+     179.0,
+     56
+    ],
+    [
+     181.0,
+     55
+    ],
+    [
+     183.0,
+     57
+    ],
+    [
+     184.0,
+     49
+    ],
+    [
+     186.0,
+     50
+    ],
+    [
+     188.0,
+     52
+    ],
+    [
+     190.0,
+     51
+    ],
+    [
+     192.0,
+     49
+    ],
+    [
+     194.0,
+     53
+    ],
+    [
+     196.0,
+     54
+    ],
+    [
+     198.0,
+     51
+    ],
+    [
+     200.0,
+     48
+    ],
+    [
+     202.0,
+     44
+    ],
+    [
+     204.0,
+     47
+    ],
+    [
+     206.0,
+     48
+    ],
+    [
+     208.0,
+     48
+    ],
+    [
+     210.0,
+     46
+    ],
+    [
+     212.0,
+     47
+    ],
+    [
+     214.0,
+     48
+    ],
+    [
+     216.0,
+     47
+    ],
+    [
+     218.0,
+     46
+    ],
+    [
+     220.0,
+     48
+    ],
+    [
+     221.0,
+     51
+    ],
+    [
+     223.0,
+     53
+    ],
+    [
+     225.0,
+     53
+    ],
+    [
+     227.0,
+     51
+    ],
+    [
+     229.0,
+     52
+    ],
+    [
+     231.0,
+     51
+    ],
+    [
+     233.0,
+     52
+    ],
+    [
+     235.0,
+     53
+    ],
+    [
+     237.0,
+     52
+    ],
+    [
+     239.0,
+     50
+    ],
+    [
+     241.0,
+     52
+    ],
+    [
+     242.0,
+     56
+    ],
+    [
+     244.0,
+     57
+    ],
+    [
+     246.0,
+     54
+    ],
+    [
+     248.0,
+     54
+    ],
+    [
+     250.0,
+     55
+    ],
+    [
+     252.0,
+     54
+    ],
+    [
+     254.0,
+     58
+    ],
+    [
+     256.0,
+     56
+    ],
+    [
+     258.0,
+     53
+    ],
+    [
+     259.0,
+     62
+    ],
+    [
+     261.0,
+     54
+    ],
+    [
+     263.0,
+     51
+    ],
+    [
+     265.0,
+     53
+    ],
+    [
+     267.0,
+     50
+    ],
+    [
+     269.0,
+     53
+    ],
+    [
+     271.0,
+     51
+    ],
+    [
+     273.0,
+     53
+    ],
+    [
+     275.0,
+     51
+    ],
+    [
+     277.0,
+     51
+    ],
+    [
+     279.0,
+     52
+    ],
+    [
+     281.0,
+     53
+    ],
+    [
+     282.0,
+     49
+    ],
+    [
+     284.0,
+     46
+    ],
+    [
+     286.0,
+     48
+    ],
+    [
+     288.0,
+     48
+    ],
+    [
+     290.0,
+     47
+    ],
+    [
+     292.0,
+     46
+    ],
+    [
+     294.0,
+     47
+    ],
+    [
+     296.0,
+     48
+    ],
+    [
+     298.0,
+     55
+    ],
+    [
+     300.0,
+     51
+    ],
+    [
+     302.0,
+     51
+    ],
+    [
+     304.0,
+     52
+    ],
+    [
+     306.0,
+     51
+    ],
+    [
+     308.0,
+     52
+    ],
+    [
+     310.0,
+     50
+    ],
+    [
+     312.0,
+     51
+    ],
+    [
+     314.0,
+     51
+    ],
+    [
+     316.0,
+     51
+    ],
+    [
+     318.0,
+     50
+    ],
+    [
+     320.0,
+     53
+    ],
+    [
+     322.0,
+     56
+    ],
+    [
+     324.0,
+     56
+    ],
+    [
+     326.0,
+     56
+    ],
+    [
+     328.0,
+     55
+    ],
+    [
+     330.0,
+     56
+    ],
+    [
+     332.0,
+     58
+    ],
+    [
+     334.0,
+     56
+    ],
+    [
+     336.0,
+     56
+    ],
+    [
+     338.0,
+     58
+    ],
+    [
+     340.0,
+     57
+    ],
+    [
+     342.0,
+     56
+    ],
+    [
+     343.0,
+     53
+    ],
+    [
+     345.0,
+     51
+    ],
+    [
+     347.0,
+     53
+    ],
+    [
+     349.0,
+     52
+    ],
+    [
+     351.0,
+     49
+    ],
+    [
+     353.0,
+     51
+    ],
+    [
+     355.0,
+     49
+    ],
+    [
+     357.0,
+     51
+    ],
+    [
+     359.0,
+     53
+    ],
+    [
+     361.0,
+     54
+    ],
+    [
+     363.0,
+     53
+    ],
+    [
+     365.0,
+     46
+    ],
+    [
+     367.0,
+     45
+    ],
+    [
+     369.0,
+     48
+    ],
+    [
+     371.0,
+     45
+    ],
+    [
+     373.0,
+     51
+    ],
+    [
+     375.0,
+     52
+    ],
+    [
+     377.0,
+     52
+    ],
+    [
+     379.0,
+     53
+    ],
+    [
+     381.0,
+     50
+    ],
+    [
+     383.0,
+     49
+    ],
+    [
+     385.0,
+     52
+    ],
+    [
+     387.0,
+     53
+    ],
+    [
+     389.0,
+     53
+    ],
+    [
+     391.0,
+     49
+    ],
+    [
+     392.0,
+     56
+    ],
+    [
+     394.0,
+     53
+    ],
+    [
+     396.0,
+     56
+    ],
+    [
+     398.0,
+     56
+    ],
+    [
+     400.0,
+     61
+    ],
+    [
+     402.0,
+     55
+    ],
+    [
+     404.0,
+     53
+    ],
+    [
+     406.0,
+     56
+    ],
+    [
+     408.0,
+     55
+    ],
+    [
+     410.0,
+     58
+    ],
+    [
+     412.0,
+     51
+    ],
+    [
+     414.0,
+     55
+    ],
+    [
+     416.0,
+     57
+    ],
+    [
+     418.0,
+     56
+    ],
+    [
+     420.0,
+     58
+    ],
+    [
+     422.0,
+     56
+    ],
+    [
+     423.0,
+     61
+    ],
+    [
+     425.0,
+     50
+    ],
+    [
+     427.0,
+     54
+    ],
+    [
+     429.0,
+     52
+    ],
+    [
+     431.0,
+     54
+    ],
+    [
+     433.0,
+     54
+    ],
+    [
+     435.0,
+     50
+    ],
+    [
+     437.0,
+     51
+    ],
+    [
+     439.0,
+     52
+    ],
+    [
+     441.0,
+     56
+    ],
+    [
+     442.0,
+     49
+    ],
+    [
+     444.0,
+     49
+    ],
+    [
+     446.0,
+     51
+    ],
+    [
+     448.0,
+     55
+    ],
+    [
+     450.0,
+     51
+    ],
+    [
+     452.0,
+     53
+    ],
+    [
+     454.0,
+     53
+    ],
+    [
+     456.0,
+     52
+    ],
+    [
+     458.0,
+     52
+    ],
+    [
+     460.0,
+     53
+    ],
+    [
+     462.0,
+     53
+    ],
+    [
+     464.0,
+     51
+    ],
+    [
+     466.0,
+     51
+    ],
+    [
+     467.0,
+     57
+    ],
+    [
+     469.0,
+     55
+    ],
+    [
+     471.0,
+     55
+    ],
+    [
+     473.0,
+     52
+    ],
+    [
+     475.0,
+     56
+    ],
+    [
+     477.0,
+     58
+    ],
+    [
+     479.0,
+     55
+    ],
+    [
+     481.0,
+     59
+    ],
+    [
+     483.0,
+     57
+    ],
+    [
+     485.0,
+     56
+    ],
+    [
+     487.0,
+     56
+    ],
+    [
+     489.0,
+     56
+    ]
+   ],
+   "totals_min": {
+    "deep": 119,
+    "light": 243,
+    "rem": 118,
+    "awake": 10
+   },
+   "awakenings": 3,
+   "mismatch_min": 0.0,
+   "length_min": 489.5
+  },
+  {
+   "date": "2026-11-11",
+   "start": "23:56",
+   "end": "07:31",
+   "asleep_min": 437,
+   "need_min": 500,
+   "performance_pct": 87,
+   "restorative_pct": 51,
+   "efficiency_pct": 96,
+   "in_bed_min": 455,
+   "score": 73,
+   "hr_low": 43,
+   "hr_avg": 52,
+   "respiration": 14.1,
+   "hrv_avg": 64,
+   "body_battery_change": 52,
+   "resting_hr": 43,
+   "segments": [
+    [
+     0.0,
+     13.0,
+     "light"
+    ],
+    [
+     13.0,
+     58.0,
+     "deep"
+    ],
+    [
+     58.0,
+     74.0,
+     "light"
+    ],
+    [
+     74.0,
+     84.0,
+     "rem"
+    ],
+    [
+     84.0,
+     86.0,
+     "awake"
+    ],
+    [
+     86.0,
+     99.0,
+     "light"
+    ],
+    [
+     99.0,
+     128.0,
+     "deep"
+    ],
+    [
+     128.0,
+     143.0,
+     "light"
+    ],
+    [
+     143.0,
+     156.0,
+     "rem"
+    ],
+    [
+     156.0,
+     162.0,
+     "awake"
+    ],
+    [
+     162.0,
+     177.0,
+     "light"
+    ],
+    [
+     177.0,
+     199.0,
+     "deep"
+    ],
+    [
+     199.0,
+     214.0,
+     "light"
+    ],
+    [
+     214.0,
+     235.0,
+     "rem"
+    ],
+    [
+     235.0,
+     238.0,
+     "awake"
+    ],
+    [
+     238.0,
+     257.0,
+     "light"
+    ],
+    [
+     257.0,
+     273.0,
+     "deep"
+    ],
+    [
+     273.0,
+     292.0,
+     "light"
+    ],
+    [
+     292.0,
+     316.0,
+     "rem"
+    ],
+    [
+     316.0,
+     320.0,
+     "awake"
+    ],
+    [
+     320.0,
+     341.0,
+     "light"
+    ],
+    [
+     341.0,
+     348.0,
+     "deep"
+    ],
+    [
+     348.0,
+     371.0,
+     "light"
+    ],
+    [
+     371.0,
+     397.0,
+     "rem"
+    ],
+    [
+     397.0,
+     400.0,
+     "awake"
+    ],
+    [
+     400.0,
+     419.0,
+     "light"
+    ],
+    [
+     419.0,
+     423.0,
+     "deep"
+    ],
+    [
+     423.0,
+     448.0,
+     "light"
+    ],
+    [
+     448.0,
+     455.5,
+     "rem"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     52
+    ],
+    [
+     2.0,
+     49
+    ],
+    [
+     4.0,
+     53
+    ],
+    [
+     6.0,
+     52
+    ],
+    [
+     8.0,
+     51
+    ],
+    [
+     10.0,
+     51
+    ],
+    [
+     12.0,
+     52
+    ],
+    [
+     13.0,
+     48
+    ],
+    [
+     15.0,
+     46
+    ],
+    [
+     17.0,
+     48
+    ],
+    [
+     19.0,
+     47
+    ],
+    [
+     21.0,
+     47
+    ],
+    [
+     23.0,
+     49
+    ],
+    [
+     25.0,
+     47
+    ],
+    [
+     27.0,
+     49
+    ],
+    [
+     29.0,
+     45
+    ],
+    [
+     31.0,
+     48
+    ],
+    [
+     33.0,
+     46
+    ],
+    [
+     35.0,
+     47
+    ],
+    [
+     37.0,
+     46
+    ],
+    [
+     39.0,
+     48
+    ],
+    [
+     41.0,
+     45
+    ],
+    [
+     43.0,
+     45
+    ],
+    [
+     45.0,
+     48
+    ],
+    [
+     47.0,
+     45
+    ],
+    [
+     49.0,
+     46
+    ],
+    [
+     51.0,
+     46
+    ],
+    [
+     53.0,
+     47
+    ],
+    [
+     55.0,
+     47
+    ],
+    [
+     57.0,
+     47
+    ],
+    [
+     58.0,
+     52
+    ],
+    [
+     60.0,
+     52
+    ],
+    [
+     62.0,
+     51
+    ],
+    [
+     64.0,
+     50
+    ],
+    [
+     66.0,
+     51
+    ],
+    [
+     68.0,
+     53
+    ],
+    [
+     70.0,
+     52
+    ],
+    [
+     72.0,
+     53
+    ],
+    [
+     74.0,
+     53
+    ],
+    [
+     76.0,
+     57
+    ],
+    [
+     78.0,
+     57
+    ],
+    [
+     80.0,
+     56
+    ],
+    [
+     82.0,
+     57
+    ],
+    [
+     84.0,
+     59
+    ],
+    [
+     86.0,
+     53
+    ],
+    [
+     88.0,
+     55
+    ],
+    [
+     90.0,
+     50
+    ],
+    [
+     92.0,
+     54
+    ],
+    [
+     94.0,
+     52
+    ],
+    [
+     96.0,
+     53
+    ],
+    [
+     98.0,
+     53
+    ],
+    [
+     99.0,
+     48
+    ],
+    [
+     101.0,
+     47
+    ],
+    [
+     103.0,
+     45
+    ],
+    [
+     105.0,
+     46
+    ],
+    [
+     107.0,
+     47
+    ],
+    [
+     109.0,
+     47
+    ],
+    [
+     111.0,
+     43
+    ],
+    [
+     113.0,
+     48
+    ],
+    [
+     115.0,
+     48
+    ],
+    [
+     117.0,
+     46
+    ],
+    [
+     119.0,
+     46
+    ],
+    [
+     121.0,
+     48
+    ],
+    [
+     123.0,
+     47
+    ],
+    [
+     125.0,
+     46
+    ],
+    [
+     127.0,
+     46
+    ],
+    [
+     128.0,
+     54
+    ],
+    [
+     130.0,
+     51
+    ],
+    [
+     132.0,
+     52
+    ],
+    [
+     134.0,
+     54
+    ],
+    [
+     136.0,
+     54
+    ],
+    [
+     138.0,
+     54
+    ],
+    [
+     140.0,
+     49
+    ],
+    [
+     142.0,
+     55
+    ],
+    [
+     143.0,
+     54
+    ],
+    [
+     145.0,
+     59
+    ],
+    [
+     147.0,
+     59
+    ],
+    [
+     149.0,
+     58
+    ],
+    [
+     151.0,
+     56
+    ],
+    [
+     153.0,
+     55
+    ],
+    [
+     155.0,
+     59
+    ],
+    [
+     156.0,
+     61
+    ],
+    [
+     158.0,
+     61
+    ],
+    [
+     160.0,
+     61
+    ],
+    [
+     162.0,
+     51
+    ],
+    [
+     164.0,
+     53
+    ],
+    [
+     166.0,
+     51
+    ],
+    [
+     168.0,
+     50
+    ],
+    [
+     170.0,
+     52
+    ],
+    [
+     172.0,
+     53
+    ],
+    [
+     174.0,
+     55
+    ],
+    [
+     176.0,
+     51
+    ],
+    [
+     177.0,
+     51
+    ],
+    [
+     179.0,
+     49
+    ],
+    [
+     181.0,
+     48
+    ],
+    [
+     183.0,
+     46
+    ],
+    [
+     185.0,
+     48
+    ],
+    [
+     187.0,
+     47
+    ],
+    [
+     189.0,
+     48
+    ],
+    [
+     191.0,
+     46
+    ],
+    [
+     193.0,
+     47
+    ],
+    [
+     195.0,
+     47
+    ],
+    [
+     197.0,
+     48
+    ],
+    [
+     199.0,
+     54
+    ],
+    [
+     201.0,
+     51
+    ],
+    [
+     203.0,
+     55
+    ],
+    [
+     205.0,
+     53
+    ],
+    [
+     207.0,
+     52
+    ],
+    [
+     209.0,
+     51
+    ],
+    [
+     211.0,
+     51
+    ],
+    [
+     213.0,
+     54
+    ],
+    [
+     214.0,
+     56
+    ],
+    [
+     216.0,
+     58
+    ],
+    [
+     218.0,
+     56
+    ],
+    [
+     220.0,
+     56
+    ],
+    [
+     222.0,
+     54
+    ],
+    [
+     224.0,
+     54
+    ],
+    [
+     226.0,
+     54
+    ],
+    [
+     228.0,
+     58
+    ],
+    [
+     230.0,
+     55
+    ],
+    [
+     232.0,
+     55
+    ],
+    [
+     234.0,
+     56
+    ],
+    [
+     235.0,
+     60
+    ],
+    [
+     237.0,
+     61
+    ],
+    [
+     238.0,
+     50
+    ],
+    [
+     240.0,
+     55
+    ],
+    [
+     242.0,
+     53
+    ],
+    [
+     244.0,
+     54
+    ],
+    [
+     246.0,
+     50
+    ],
+    [
+     248.0,
+     51
+    ],
+    [
+     250.0,
+     55
+    ],
+    [
+     252.0,
+     51
+    ],
+    [
+     254.0,
+     55
+    ],
+    [
+     256.0,
+     48
+    ],
+    [
+     257.0,
+     47
+    ],
+    [
+     259.0,
+     44
+    ],
+    [
+     261.0,
+     47
+    ],
+    [
+     263.0,
+     49
+    ],
+    [
+     265.0,
+     48
+    ],
+    [
+     267.0,
+     47
+    ],
+    [
+     269.0,
+     47
+    ],
+    [
+     271.0,
+     45
+    ],
+    [
+     273.0,
+     53
+    ],
+    [
+     275.0,
+     50
+    ],
+    [
+     277.0,
+     51
+    ],
+    [
+     279.0,
+     51
+    ],
+    [
+     281.0,
+     54
+    ],
+    [
+     283.0,
+     52
+    ],
+    [
+     285.0,
+     50
+    ],
+    [
+     287.0,
+     52
+    ],
+    [
+     289.0,
+     56
+    ],
+    [
+     291.0,
+     55
+    ],
+    [
+     292.0,
+     58
+    ],
+    [
+     294.0,
+     56
+    ],
+    [
+     296.0,
+     56
+    ],
+    [
+     298.0,
+     58
+    ],
+    [
+     300.0,
+     58
+    ],
+    [
+     302.0,
+     55
+    ],
+    [
+     304.0,
+     55
+    ],
+    [
+     306.0,
+     54
+    ],
+    [
+     308.0,
+     56
+    ],
+    [
+     310.0,
+     56
+    ],
+    [
+     312.0,
+     56
+    ],
+    [
+     314.0,
+     56
+    ],
+    [
+     316.0,
+     61
+    ],
+    [
+     318.0,
+     60
+    ],
+    [
+     320.0,
+     54
+    ],
+    [
+     322.0,
+     51
+    ],
+    [
+     324.0,
+     52
+    ],
+    [
+     326.0,
+     51
+    ],
+    [
+     328.0,
+     52
+    ],
+    [
+     330.0,
+     50
+    ],
+    [
+     332.0,
+     50
+    ],
+    [
+     334.0,
+     53
+    ],
+    [
+     336.0,
+     48
+    ],
+    [
+     338.0,
+     51
+    ],
+    [
+     340.0,
+     51
+    ],
+    [
+     341.0,
+     47
+    ],
+    [
+     343.0,
+     44
+    ],
+    [
+     345.0,
+     48
+    ],
+    [
+     347.0,
+     48
+    ],
+    [
+     348.0,
+     51
+    ],
+    [
+     350.0,
+     51
+    ],
+    [
+     352.0,
+     54
+    ],
+    [
+     354.0,
+     50
+    ],
+    [
+     356.0,
+     52
+    ],
+    [
+     358.0,
+     53
+    ],
+    [
+     360.0,
+     51
+    ],
+    [
+     362.0,
+     52
+    ],
+    [
+     364.0,
+     53
+    ],
+    [
+     366.0,
+     52
+    ],
+    [
+     368.0,
+     53
+    ],
+    [
+     370.0,
+     51
+    ],
+    [
+     371.0,
+     55
+    ],
+    [
+     373.0,
+     54
+    ],
+    [
+     375.0,
+     55
+    ],
+    [
+     377.0,
+     55
+    ],
+    [
+     379.0,
+     55
+    ],
+    [
+     381.0,
+     57
+    ],
+    [
+     383.0,
+     56
+    ],
+    [
+     385.0,
+     55
+    ],
+    [
+     387.0,
+     58
+    ],
+    [
+     389.0,
+     54
+    ],
+    [
+     391.0,
+     57
+    ],
+    [
+     393.0,
+     56
+    ],
+    [
+     395.0,
+     56
+    ],
+    [
+     397.0,
+     63
+    ],
+    [
+     399.0,
+     60
+    ],
+    [
+     400.0,
+     55
+    ],
+    [
+     402.0,
+     53
+    ],
+    [
+     404.0,
+     51
+    ],
+    [
+     406.0,
+     51
+    ],
+    [
+     408.0,
+     52
+    ],
+    [
+     410.0,
+     53
+    ],
+    [
+     412.0,
+     53
+    ],
+    [
+     414.0,
+     55
+    ],
+    [
+     416.0,
+     54
+    ],
+    [
+     418.0,
+     52
+    ],
+    [
+     419.0,
+     45
+    ],
+    [
+     421.0,
+     46
+    ],
+    [
+     423.0,
+     52
+    ],
+    [
+     425.0,
+     53
+    ],
+    [
+     427.0,
+     50
+    ],
+    [
+     429.0,
+     51
+    ],
+    [
+     431.0,
+     50
+    ],
+    [
+     433.0,
+     53
+    ],
+    [
+     435.0,
+     49
+    ],
+    [
+     437.0,
+     53
+    ],
+    [
+     439.0,
+     51
+    ],
+    [
+     441.0,
+     51
+    ],
+    [
+     443.0,
+     51
+    ],
+    [
+     445.0,
+     52
+    ],
+    [
+     447.0,
+     52
+    ],
+    [
+     448.0,
+     57
+    ],
+    [
+     450.0,
+     56
+    ],
+    [
+     452.0,
+     57
+    ],
+    [
+     454.0,
+     54
+    ]
+   ],
+   "totals_min": {
+    "deep": 123,
+    "light": 213,
+    "rem": 101,
+    "awake": 18
+   },
+   "awakenings": 5,
+   "mismatch_min": 0.0,
+   "length_min": 455.5
+  },
+  {
+   "date": "2026-11-12",
+   "start": "23:16",
+   "end": "06:17",
+   "asleep_min": 408,
+   "need_min": 500,
+   "performance_pct": 82,
+   "restorative_pct": 56,
+   "efficiency_pct": 97,
+   "in_bed_min": 421,
+   "score": 69,
+   "hr_low": 44,
+   "hr_avg": 52,
+   "respiration": 14.5,
+   "hrv_avg": 65,
+   "body_battery_change": 56,
+   "resting_hr": 44,
+   "segments": [
+    [
+     0.0,
+     17.0,
+     "light"
+    ],
+    [
+     17.0,
+     60.0,
+     "deep"
+    ],
+    [
+     60.0,
+     78.0,
+     "light"
+    ],
+    [
+     78.0,
+     90.0,
+     "rem"
+    ],
+    [
+     90.0,
+     94.0,
+     "awake"
+    ],
+    [
+     94.0,
+     110.0,
+     "light"
+    ],
+    [
+     110.0,
+     136.0,
+     "deep"
+    ],
+    [
+     136.0,
+     158.0,
+     "light"
+    ],
+    [
+     158.0,
+     175.0,
+     "rem"
+    ],
+    [
+     175.0,
+     179.0,
+     "awake"
+    ],
+    [
+     179.0,
+     191.0,
+     "light"
+    ],
+    [
+     191.0,
+     218.0,
+     "deep"
+    ],
+    [
+     218.0,
+     239.0,
+     "light"
+    ],
+    [
+     239.0,
+     261.0,
+     "rem"
+    ],
+    [
+     261.0,
+     264.0,
+     "awake"
+    ],
+    [
+     264.0,
+     277.0,
+     "light"
+    ],
+    [
+     277.0,
+     295.0,
+     "deep"
+    ],
+    [
+     295.0,
+     319.0,
+     "light"
+    ],
+    [
+     319.0,
+     345.0,
+     "rem"
+    ],
+    [
+     345.0,
+     347.0,
+     "awake"
+    ],
+    [
+     347.0,
+     362.0,
+     "light"
+    ],
+    [
+     362.0,
+     370.0,
+     "deep"
+    ],
+    [
+     370.0,
+     393.0,
+     "light"
+    ],
+    [
+     393.0,
+     421.2,
+     "rem"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     53
+    ],
+    [
+     2.0,
+     53
+    ],
+    [
+     4.0,
+     53
+    ],
+    [
+     6.0,
+     54
+    ],
+    [
+     8.0,
+     52
+    ],
+    [
+     10.0,
+     51
+    ],
+    [
+     12.0,
+     53
+    ],
+    [
+     14.0,
+     53
+    ],
+    [
+     16.0,
+     53
+    ],
+    [
+     17.0,
+     47
+    ],
+    [
+     19.0,
+     47
+    ],
+    [
+     21.0,
+     46
+    ],
+    [
+     23.0,
+     49
+    ],
+    [
+     25.0,
+     48
+    ],
+    [
+     27.0,
+     49
+    ],
+    [
+     29.0,
+     47
+    ],
+    [
+     31.0,
+     46
+    ],
+    [
+     33.0,
+     50
+    ],
+    [
+     35.0,
+     50
+    ],
+    [
+     37.0,
+     49
+    ],
+    [
+     39.0,
+     47
+    ],
+    [
+     41.0,
+     47
+    ],
+    [
+     43.0,
+     47
+    ],
+    [
+     45.0,
+     47
+    ],
+    [
+     47.0,
+     48
+    ],
+    [
+     49.0,
+     47
+    ],
+    [
+     51.0,
+     46
+    ],
+    [
+     53.0,
+     47
+    ],
+    [
+     55.0,
+     45
+    ],
+    [
+     57.0,
+     49
+    ],
+    [
+     59.0,
+     47
+    ],
+    [
+     60.0,
+     50
+    ],
+    [
+     62.0,
+     53
+    ],
+    [
+     64.0,
+     51
+    ],
+    [
+     66.0,
+     54
+    ],
+    [
+     68.0,
+     51
+    ],
+    [
+     70.0,
+     52
+    ],
+    [
+     72.0,
+     53
+    ],
+    [
+     74.0,
+     53
+    ],
+    [
+     76.0,
+     53
+    ],
+    [
+     78.0,
+     58
+    ],
+    [
+     80.0,
+     57
+    ],
+    [
+     82.0,
+     55
+    ],
+    [
+     84.0,
+     57
+    ],
+    [
+     86.0,
+     57
+    ],
+    [
+     88.0,
+     58
+    ],
+    [
+     90.0,
+     60
+    ],
+    [
+     92.0,
+     61
+    ],
+    [
+     94.0,
+     51
+    ],
+    [
+     96.0,
+     52
+    ],
+    [
+     98.0,
+     52
+    ],
+    [
+     100.0,
+     50
+    ],
+    [
+     102.0,
+     55
+    ],
+    [
+     104.0,
+     52
+    ],
+    [
+     106.0,
+     52
+    ],
+    [
+     108.0,
+     53
+    ],
+    [
+     110.0,
+     49
+    ],
+    [
+     112.0,
+     49
+    ],
+    [
+     114.0,
+     45
+    ],
+    [
+     116.0,
+     46
+    ],
+    [
+     118.0,
+     45
+    ],
+    [
+     120.0,
+     50
+    ],
+    [
+     122.0,
+     48
+    ],
+    [
+     124.0,
+     46
+    ],
+    [
+     126.0,
+     47
+    ],
+    [
+     128.0,
+     47
+    ],
+    [
+     130.0,
+     46
+    ],
+    [
+     132.0,
+     49
+    ],
+    [
+     134.0,
+     47
+    ],
+    [
+     136.0,
+     51
+    ],
+    [
+     138.0,
+     51
+    ],
+    [
+     140.0,
+     50
+    ],
+    [
+     142.0,
+     55
+    ],
+    [
+     144.0,
+     52
+    ],
+    [
+     146.0,
+     52
+    ],
+    [
+     148.0,
+     54
+    ],
+    [
+     150.0,
+     52
+    ],
+    [
+     152.0,
+     51
+    ],
+    [
+     154.0,
+     51
+    ],
+    [
+     156.0,
+     55
+    ],
+    [
+     158.0,
+     56
+    ],
+    [
+     160.0,
+     58
+    ],
+    [
+     162.0,
+     57
+    ],
+    [
+     164.0,
+     56
+    ],
+    [
+     166.0,
+     58
+    ],
+    [
+     168.0,
+     58
+    ],
+    [
+     170.0,
+     58
+    ],
+    [
+     172.0,
+     55
+    ],
+    [
+     174.0,
+     58
+    ],
+    [
+     175.0,
+     61
+    ],
+    [
+     177.0,
+     58
+    ],
+    [
+     179.0,
+     51
+    ],
+    [
+     181.0,
+     52
+    ],
+    [
+     183.0,
+     49
+    ],
+    [
+     185.0,
+     53
+    ],
+    [
+     187.0,
+     52
+    ],
+    [
+     189.0,
+     52
+    ],
+    [
+     191.0,
+     46
+    ],
+    [
+     193.0,
+     47
+    ],
+    [
+     195.0,
+     48
+    ],
+    [
+     197.0,
+     45
+    ],
+    [
+     199.0,
+     48
+    ],
+    [
+     201.0,
+     47
+    ],
+    [
+     203.0,
+     47
+    ],
+    [
+     205.0,
+     46
+    ],
+    [
+     207.0,
+     46
+    ],
+    [
+     209.0,
+     48
+    ],
+    [
+     211.0,
+     46
+    ],
+    [
+     213.0,
+     50
+    ],
+    [
+     215.0,
+     48
+    ],
+    [
+     217.0,
+     44
+    ],
+    [
+     218.0,
+     55
+    ],
+    [
+     220.0,
+     52
+    ],
+    [
+     222.0,
+     54
+    ],
+    [
+     224.0,
+     53
+    ],
+    [
+     226.0,
+     51
+    ],
+    [
+     228.0,
+     53
+    ],
+    [
+     230.0,
+     54
+    ],
+    [
+     232.0,
+     52
+    ],
+    [
+     234.0,
+     53
+    ],
+    [
+     236.0,
+     53
+    ],
+    [
+     238.0,
+     51
+    ],
+    [
+     239.0,
+     57
+    ],
+    [
+     241.0,
+     57
+    ],
+    [
+     243.0,
+     56
+    ],
+    [
+     245.0,
+     54
+    ],
+    [
+     247.0,
+     56
+    ],
+    [
+     249.0,
+     59
+    ],
+    [
+     251.0,
+     56
+    ],
+    [
+     253.0,
+     57
+    ],
+    [
+     255.0,
+     55
+    ],
+    [
+     257.0,
+     56
+    ],
+    [
+     259.0,
+     58
+    ],
+    [
+     261.0,
+     63
+    ],
+    [
+     263.0,
+     60
+    ],
+    [
+     264.0,
+     52
+    ],
+    [
+     266.0,
+     52
+    ],
+    [
+     268.0,
+     49
+    ],
+    [
+     270.0,
+     51
+    ],
+    [
+     272.0,
+     54
+    ],
+    [
+     274.0,
+     54
+    ],
+    [
+     276.0,
+     50
+    ],
+    [
+     277.0,
+     48
+    ],
+    [
+     279.0,
+     47
+    ],
+    [
+     281.0,
+     49
+    ],
+    [
+     283.0,
+     44
+    ],
+    [
+     285.0,
+     45
+    ],
+    [
+     287.0,
+     47
+    ],
+    [
+     289.0,
+     45
+    ],
+    [
+     291.0,
+     49
+    ],
+    [
+     293.0,
+     46
+    ],
+    [
+     295.0,
+     50
+    ],
+    [
+     297.0,
+     51
+    ],
+    [
+     299.0,
+     50
+    ],
+    [
+     301.0,
+     52
+    ],
+    [
+     303.0,
+     51
+    ],
+    [
+     305.0,
+     51
+    ],
+    [
+     307.0,
+     52
+    ],
+    [
+     309.0,
+     53
+    ],
+    [
+     311.0,
+     55
+    ],
+    [
+     313.0,
+     50
+    ],
+    [
+     315.0,
+     51
+    ],
+    [
+     317.0,
+     52
+    ],
+    [
+     319.0,
+     53
+    ],
+    [
+     321.0,
+     57
+    ],
+    [
+     323.0,
+     56
+    ],
+    [
+     325.0,
+     55
+    ],
+    [
+     327.0,
+     57
+    ],
+    [
+     329.0,
+     57
+    ],
+    [
+     331.0,
+     55
+    ],
+    [
+     333.0,
+     58
+    ],
+    [
+     335.0,
+     56
+    ],
+    [
+     337.0,
+     55
+    ],
+    [
+     339.0,
+     57
+    ],
+    [
+     341.0,
+     56
+    ],
+    [
+     343.0,
+     54
+    ],
+    [
+     345.0,
+     62
+    ],
+    [
+     347.0,
+     51
+    ],
+    [
+     349.0,
+     52
+    ],
+    [
+     351.0,
+     53
+    ],
+    [
+     353.0,
+     52
+    ],
+    [
+     355.0,
+     53
+    ],
+    [
+     357.0,
+     52
+    ],
+    [
+     359.0,
+     53
+    ],
+    [
+     361.0,
+     51
+    ],
+    [
+     362.0,
+     47
+    ],
+    [
+     364.0,
+     46
+    ],
+    [
+     366.0,
+     45
+    ],
+    [
+     368.0,
+     48
+    ],
+    [
+     370.0,
+     51
+    ],
+    [
+     372.0,
+     51
+    ],
+    [
+     374.0,
+     52
+    ],
+    [
+     376.0,
+     51
+    ],
+    [
+     378.0,
+     51
+    ],
+    [
+     380.0,
+     52
+    ],
+    [
+     382.0,
+     51
+    ],
+    [
+     384.0,
+     50
+    ],
+    [
+     386.0,
+     52
+    ],
+    [
+     388.0,
+     53
+    ],
+    [
+     390.0,
+     53
+    ],
+    [
+     392.0,
+     55
+    ],
+    [
+     393.0,
+     59
+    ],
+    [
+     395.0,
+     60
+    ],
+    [
+     397.0,
+     55
+    ],
+    [
+     399.0,
+     52
+    ],
+    [
+     401.0,
+     58
+    ],
+    [
+     403.0,
+     56
+    ],
+    [
+     405.0,
+     54
+    ],
+    [
+     407.0,
+     56
+    ],
+    [
+     409.0,
+     57
+    ],
+    [
+     411.0,
+     56
+    ],
+    [
+     413.0,
+     55
+    ],
+    [
+     415.0,
+     56
+    ],
+    [
+     417.0,
+     56
+    ],
+    [
+     419.0,
+     58
+    ],
+    [
+     421.0,
+     55
+    ]
+   ],
+   "totals_min": {
+    "deep": 122,
+    "light": 181,
+    "rem": 105,
+    "awake": 13
+   },
+   "awakenings": 4,
+   "mismatch_min": 0.0,
+   "length_min": 421.2
+  },
+  {
+   "date": "2026-11-13",
+   "start": "23:20",
+   "end": "07:49",
+   "asleep_min": 493,
+   "need_min": 500,
+   "performance_pct": 99,
+   "restorative_pct": 51,
+   "efficiency_pct": 97,
+   "in_bed_min": 510,
+   "score": 85,
+   "hr_low": 44,
+   "hr_avg": 52,
+   "respiration": 13.9,
+   "hrv_avg": 62,
+   "body_battery_change": 55,
+   "resting_hr": 44,
+   "segments": [
+    [
+     0.0,
+     16.0,
+     "light"
+    ],
+    [
+     16.0,
+     46.0,
+     "deep"
+    ],
+    [
+     46.0,
+     68.0,
+     "light"
+    ],
+    [
+     68.0,
+     78.0,
+     "rem"
+    ],
+    [
+     78.0,
+     96.0,
+     "light"
+    ],
+    [
+     96.0,
+     127.0,
+     "deep"
+    ],
+    [
+     127.0,
+     147.0,
+     "light"
+    ],
+    [
+     147.0,
+     161.0,
+     "rem"
+    ],
+    [
+     161.0,
+     167.0,
+     "awake"
+    ],
+    [
+     167.0,
+     180.0,
+     "light"
+    ],
+    [
+     180.0,
+     204.0,
+     "deep"
+    ],
+    [
+     204.0,
+     225.0,
+     "light"
+    ],
+    [
+     225.0,
+     248.0,
+     "rem"
+    ],
+    [
+     248.0,
+     250.0,
+     "awake"
+    ],
+    [
+     250.0,
+     264.0,
+     "light"
+    ],
+    [
+     264.0,
+     282.0,
+     "deep"
+    ],
+    [
+     282.0,
+     300.0,
+     "light"
+    ],
+    [
+     300.0,
+     327.0,
+     "rem"
+    ],
+    [
+     327.0,
+     331.0,
+     "awake"
+    ],
+    [
+     331.0,
+     344.0,
+     "light"
+    ],
+    [
+     344.0,
+     350.0,
+     "deep"
+    ],
+    [
+     350.0,
+     374.0,
+     "light"
+    ],
+    [
+     374.0,
+     400.0,
+     "rem"
+    ],
+    [
+     400.0,
+     405.0,
+     "awake"
+    ],
+    [
+     405.0,
+     427.0,
+     "light"
+    ],
+    [
+     427.0,
+     431.0,
+     "deep"
+    ],
+    [
+     431.0,
+     448.0,
+     "light"
+    ],
+    [
+     448.0,
+     483.0,
+     "rem"
+    ],
+    [
+     483.0,
+     499.0,
+     "light"
+    ],
+    [
+     499.0,
+     503.0,
+     "deep"
+    ],
+    [
+     503.0,
+     509.9,
+     "light"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     52
+    ],
+    [
+     2.0,
+     52
+    ],
+    [
+     4.0,
+     49
+    ],
+    [
+     6.0,
+     51
+    ],
+    [
+     8.0,
+     54
+    ],
+    [
+     10.0,
+     53
+    ],
+    [
+     12.0,
+     52
+    ],
+    [
+     14.0,
+     54
+    ],
+    [
+     16.0,
+     44
+    ],
+    [
+     18.0,
+     48
+    ],
+    [
+     20.0,
+     48
+    ],
+    [
+     22.0,
+     47
+    ],
+    [
+     24.0,
+     49
+    ],
+    [
+     26.0,
+     45
+    ],
+    [
+     28.0,
+     47
+    ],
+    [
+     30.0,
+     47
+    ],
+    [
+     32.0,
+     46
+    ],
+    [
+     34.0,
+     48
+    ],
+    [
+     36.0,
+     45
+    ],
+    [
+     38.0,
+     44
+    ],
+    [
+     40.0,
+     48
+    ],
+    [
+     42.0,
+     49
+    ],
+    [
+     44.0,
+     48
+    ],
+    [
+     46.0,
+     53
+    ],
+    [
+     48.0,
+     54
+    ],
+    [
+     50.0,
+     54
+    ],
+    [
+     52.0,
+     52
+    ],
+    [
+     54.0,
+     50
+    ],
+    [
+     56.0,
+     55
+    ],
+    [
+     58.0,
+     51
+    ],
+    [
+     60.0,
+     54
+    ],
+    [
+     62.0,
+     51
+    ],
+    [
+     64.0,
+     52
+    ],
+    [
+     66.0,
+     52
+    ],
+    [
+     68.0,
+     56
+    ],
+    [
+     70.0,
+     56
+    ],
+    [
+     72.0,
+     59
+    ],
+    [
+     74.0,
+     57
+    ],
+    [
+     76.0,
+     55
+    ],
+    [
+     78.0,
+     54
+    ],
+    [
+     80.0,
+     51
+    ],
+    [
+     82.0,
+     51
+    ],
+    [
+     84.0,
+     50
+    ],
+    [
+     86.0,
+     51
+    ],
+    [
+     88.0,
+     53
+    ],
+    [
+     90.0,
+     54
+    ],
+    [
+     92.0,
+     55
+    ],
+    [
+     94.0,
+     54
+    ],
+    [
+     96.0,
+     46
+    ],
+    [
+     98.0,
+     47
+    ],
+    [
+     100.0,
+     49
+    ],
+    [
+     102.0,
+     48
+    ],
+    [
+     104.0,
+     45
+    ],
+    [
+     106.0,
+     47
+    ],
+    [
+     108.0,
+     50
+    ],
+    [
+     110.0,
+     45
+    ],
+    [
+     112.0,
+     44
+    ],
+    [
+     114.0,
+     46
+    ],
+    [
+     116.0,
+     46
+    ],
+    [
+     118.0,
+     52
+    ],
+    [
+     120.0,
+     50
+    ],
+    [
+     122.0,
+     48
+    ],
+    [
+     124.0,
+     48
+    ],
+    [
+     126.0,
+     46
+    ],
+    [
+     127.0,
+     51
+    ],
+    [
+     129.0,
+     52
+    ],
+    [
+     131.0,
+     52
+    ],
+    [
+     133.0,
+     49
+    ],
+    [
+     135.0,
+     55
+    ],
+    [
+     137.0,
+     52
+    ],
+    [
+     139.0,
+     54
+    ],
+    [
+     141.0,
+     51
+    ],
+    [
+     143.0,
+     50
+    ],
+    [
+     145.0,
+     51
+    ],
+    [
+     147.0,
+     55
+    ],
+    [
+     149.0,
+     56
+    ],
+    [
+     151.0,
+     58
+    ],
+    [
+     153.0,
+     55
+    ],
+    [
+     155.0,
+     54
+    ],
+    [
+     157.0,
+     54
+    ],
+    [
+     159.0,
+     57
+    ],
+    [
+     161.0,
+     64
+    ],
+    [
+     163.0,
+     60
+    ],
+    [
+     165.0,
+     63
+    ],
+    [
+     167.0,
+     54
+    ],
+    [
+     169.0,
+     53
+    ],
+    [
+     171.0,
+     53
+    ],
+    [
+     173.0,
+     51
+    ],
+    [
+     175.0,
+     52
+    ],
+    [
+     177.0,
+     50
+    ],
+    [
+     179.0,
+     54
+    ],
+    [
+     180.0,
+     47
+    ],
+    [
+     182.0,
+     47
+    ],
+    [
+     184.0,
+     47
+    ],
+    [
+     186.0,
+     47
+    ],
+    [
+     188.0,
+     50
+    ],
+    [
+     190.0,
+     48
+    ],
+    [
+     192.0,
+     46
+    ],
+    [
+     194.0,
+     46
+    ],
+    [
+     196.0,
+     47
+    ],
+    [
+     198.0,
+     46
+    ],
+    [
+     200.0,
+     47
+    ],
+    [
+     202.0,
+     46
+    ],
+    [
+     204.0,
+     52
+    ],
+    [
+     206.0,
+     52
+    ],
+    [
+     208.0,
+     54
+    ],
+    [
+     210.0,
+     53
+    ],
+    [
+     212.0,
+     53
+    ],
+    [
+     214.0,
+     51
+    ],
+    [
+     216.0,
+     53
+    ],
+    [
+     218.0,
+     50
+    ],
+    [
+     220.0,
+     52
+    ],
+    [
+     222.0,
+     51
+    ],
+    [
+     224.0,
+     54
+    ],
+    [
+     225.0,
+     56
+    ],
+    [
+     227.0,
+     56
+    ],
+    [
+     229.0,
+     56
+    ],
+    [
+     231.0,
+     54
+    ],
+    [
+     233.0,
+     57
+    ],
+    [
+     235.0,
+     57
+    ],
+    [
+     237.0,
+     55
+    ],
+    [
+     239.0,
+     56
+    ],
+    [
+     241.0,
+     56
+    ],
+    [
+     243.0,
+     56
+    ],
+    [
+     245.0,
+     56
+    ],
+    [
+     247.0,
+     56
+    ],
+    [
+     248.0,
+     62
+    ],
+    [
+     250.0,
+     50
+    ],
+    [
+     252.0,
+     50
+    ],
+    [
+     254.0,
+     52
+    ],
+    [
+     256.0,
+     50
+    ],
+    [
+     258.0,
+     48
+    ],
+    [
+     260.0,
+     51
+    ],
+    [
+     262.0,
+     51
+    ],
+    [
+     264.0,
+     44
+    ],
+    [
+     266.0,
+     46
+    ],
+    [
+     268.0,
+     45
+    ],
+    [
+     270.0,
+     45
+    ],
+    [
+     272.0,
+     47
+    ],
+    [
+     274.0,
+     45
+    ],
+    [
+     276.0,
+     48
+    ],
+    [
+     278.0,
+     48
+    ],
+    [
+     280.0,
+     46
+    ],
+    [
+     282.0,
+     51
+    ],
+    [
+     284.0,
+     54
+    ],
+    [
+     286.0,
+     51
+    ],
+    [
+     288.0,
+     53
+    ],
+    [
+     290.0,
+     52
+    ],
+    [
+     292.0,
+     52
+    ],
+    [
+     294.0,
+     52
+    ],
+    [
+     296.0,
+     53
+    ],
+    [
+     298.0,
+     52
+    ],
+    [
+     300.0,
+     56
+    ],
+    [
+     302.0,
+     58
+    ],
+    [
+     304.0,
+     57
+    ],
+    [
+     306.0,
+     56
+    ],
+    [
+     308.0,
+     57
+    ],
+    [
+     310.0,
+     56
+    ],
+    [
+     312.0,
+     57
+    ],
+    [
+     314.0,
+     55
+    ],
+    [
+     316.0,
+     55
+    ],
+    [
+     318.0,
+     55
+    ],
+    [
+     320.0,
+     59
+    ],
+    [
+     322.0,
+     54
+    ],
+    [
+     324.0,
+     55
+    ],
+    [
+     326.0,
+     56
+    ],
+    [
+     327.0,
+     59
+    ],
+    [
+     329.0,
+     62
+    ],
+    [
+     331.0,
+     54
+    ],
+    [
+     333.0,
+     53
+    ],
+    [
+     335.0,
+     51
+    ],
+    [
+     337.0,
+     52
+    ],
+    [
+     339.0,
+     50
+    ],
+    [
+     341.0,
+     54
+    ],
+    [
+     343.0,
+     52
+    ],
+    [
+     344.0,
+     46
+    ],
+    [
+     346.0,
+     47
+    ],
+    [
+     348.0,
+     49
+    ],
+    [
+     350.0,
+     52
+    ],
+    [
+     352.0,
+     56
+    ],
+    [
+     354.0,
+     53
+    ],
+    [
+     356.0,
+     53
+    ],
+    [
+     358.0,
+     51
+    ],
+    [
+     360.0,
+     51
+    ],
+    [
+     362.0,
+     51
+    ],
+    [
+     364.0,
+     50
+    ],
+    [
+     366.0,
+     54
+    ],
+    [
+     368.0,
+     53
+    ],
+    [
+     370.0,
+     53
+    ],
+    [
+     372.0,
+     53
+    ],
+    [
+     374.0,
+     56
+    ],
+    [
+     376.0,
+     56
+    ],
+    [
+     378.0,
+     59
+    ],
+    [
+     380.0,
+     55
+    ],
+    [
+     382.0,
+     59
+    ],
+    [
+     384.0,
+     56
+    ],
+    [
+     386.0,
+     54
+    ],
+    [
+     388.0,
+     56
+    ],
+    [
+     390.0,
+     54
+    ],
+    [
+     392.0,
+     54
+    ],
+    [
+     394.0,
+     56
+    ],
+    [
+     396.0,
+     55
+    ],
+    [
+     398.0,
+     57
+    ],
+    [
+     400.0,
+     59
+    ],
+    [
+     402.0,
+     61
+    ],
+    [
+     404.0,
+     61
+    ],
+    [
+     405.0,
+     51
+    ],
+    [
+     407.0,
+     52
+    ],
+    [
+     409.0,
+     51
+    ],
+    [
+     411.0,
+     51
+    ],
+    [
+     413.0,
+     52
+    ],
+    [
+     415.0,
+     51
+    ],
+    [
+     417.0,
+     52
+    ],
+    [
+     419.0,
+     52
+    ],
+    [
+     421.0,
+     52
+    ],
+    [
+     423.0,
+     52
+    ],
+    [
+     425.0,
+     52
+    ],
+    [
+     427.0,
+     48
+    ],
+    [
+     429.0,
+     46
+    ],
+    [
+     431.0,
+     53
+    ],
+    [
+     433.0,
+     52
+    ],
+    [
+     435.0,
+     51
+    ],
+    [
+     437.0,
+     50
+    ],
+    [
+     439.0,
+     52
+    ],
+    [
+     441.0,
+     51
+    ],
+    [
+     443.0,
+     52
+    ],
+    [
+     445.0,
+     48
+    ],
+    [
+     447.0,
+     54
+    ],
+    [
+     448.0,
+     58
+    ],
+    [
+     450.0,
+     55
+    ],
+    [
+     452.0,
+     56
+    ],
+    [
+     454.0,
+     57
+    ],
+    [
+     456.0,
+     58
+    ],
+    [
+     458.0,
+     53
+    ],
+    [
+     460.0,
+     57
+    ],
+    [
+     462.0,
+     57
+    ],
+    [
+     464.0,
+     56
+    ],
+    [
+     466.0,
+     58
+    ],
+    [
+     468.0,
+     57
+    ],
+    [
+     470.0,
+     53
+    ],
+    [
+     472.0,
+     56
+    ],
+    [
+     474.0,
+     56
+    ],
+    [
+     476.0,
+     58
+    ],
+    [
+     478.0,
+     59
+    ],
+    [
+     480.0,
+     55
+    ],
+    [
+     482.0,
+     56
+    ],
+    [
+     483.0,
+     52
+    ],
+    [
+     485.0,
+     52
+    ],
+    [
+     487.0,
+     51
+    ],
+    [
+     489.0,
+     50
+    ],
+    [
+     491.0,
+     53
+    ],
+    [
+     493.0,
+     52
+    ],
+    [
+     495.0,
+     51
+    ],
+    [
+     497.0,
+     52
+    ],
+    [
+     499.0,
+     50
+    ],
+    [
+     501.0,
+     48
+    ],
+    [
+     503.0,
+     51
+    ],
+    [
+     505.0,
+     51
+    ],
+    [
+     507.0,
+     49
+    ],
+    [
+     509.0,
+     51
+    ]
+   ],
+   "totals_min": {
+    "deep": 117,
+    "light": 241,
+    "rem": 135,
+    "awake": 17
+   },
+   "awakenings": 4,
+   "mismatch_min": 0.0,
+   "length_min": 509.9
+  },
+  {
+   "date": "2026-11-14",
+   "start": "23:38",
+   "end": "07:57",
+   "asleep_min": 480,
+   "need_min": 500,
+   "performance_pct": 96,
+   "restorative_pct": 51,
+   "efficiency_pct": 96,
+   "in_bed_min": 499,
+   "score": 84,
+   "hr_low": 43,
+   "hr_avg": 52,
+   "respiration": 14.1,
+   "hrv_avg": 69,
+   "body_battery_change": 40,
+   "resting_hr": 43,
+   "segments": [
+    [
+     0.0,
+     17.0,
+     "light"
+    ],
+    [
+     17.0,
+     62.0,
+     "deep"
+    ],
+    [
+     62.0,
+     85.0,
+     "light"
+    ],
+    [
+     85.0,
+     95.0,
+     "rem"
+    ],
+    [
+     95.0,
+     97.0,
+     "awake"
+    ],
+    [
+     97.0,
+     117.0,
+     "light"
+    ],
+    [
+     117.0,
+     147.0,
+     "deep"
+    ],
+    [
+     147.0,
+     168.0,
+     "light"
+    ],
+    [
+     168.0,
+     186.0,
+     "rem"
+    ],
+    [
+     186.0,
+     190.0,
+     "awake"
+    ],
+    [
+     190.0,
+     202.0,
+     "light"
+    ],
+    [
+     202.0,
+     222.0,
+     "deep"
+    ],
+    [
+     222.0,
+     239.0,
+     "light"
+    ],
+    [
+     239.0,
+     256.0,
+     "rem"
+    ],
+    [
+     256.0,
+     276.0,
+     "light"
+    ],
+    [
+     276.0,
+     288.0,
+     "deep"
+    ],
+    [
+     288.0,
+     306.0,
+     "light"
+    ],
+    [
+     306.0,
+     331.0,
+     "rem"
+    ],
+    [
+     331.0,
+     336.0,
+     "awake"
+    ],
+    [
+     336.0,
+     357.0,
+     "light"
+    ],
+    [
+     357.0,
+     365.0,
+     "deep"
+    ],
+    [
+     365.0,
+     383.0,
+     "light"
+    ],
+    [
+     383.0,
+     410.0,
+     "rem"
+    ],
+    [
+     410.0,
+     415.0,
+     "awake"
+    ],
+    [
+     415.0,
+     430.0,
+     "light"
+    ],
+    [
+     430.0,
+     434.0,
+     "deep"
+    ],
+    [
+     434.0,
+     453.0,
+     "light"
+    ],
+    [
+     453.0,
+     483.0,
+     "rem"
+    ],
+    [
+     483.0,
+     486.0,
+     "awake"
+    ],
+    [
+     486.0,
+     499.3,
+     "light"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     53
+    ],
+    [
+     2.0,
+     54
+    ],
+    [
+     4.0,
+     54
+    ],
+    [
+     6.0,
+     51
+    ],
+    [
+     8.0,
+     52
+    ],
+    [
+     10.0,
+     51
+    ],
+    [
+     12.0,
+     52
+    ],
+    [
+     14.0,
+     52
+    ],
+    [
+     16.0,
+     53
+    ],
+    [
+     17.0,
+     47
+    ],
+    [
+     19.0,
+     46
+    ],
+    [
+     21.0,
+     49
+    ],
+    [
+     23.0,
+     48
+    ],
+    [
+     25.0,
+     48
+    ],
+    [
+     27.0,
+     47
+    ],
+    [
+     29.0,
+     46
+    ],
+    [
+     31.0,
+     47
+    ],
+    [
+     33.0,
+     46
+    ],
+    [
+     35.0,
+     48
+    ],
+    [
+     37.0,
+     48
+    ],
+    [
+     39.0,
+     44
+    ],
+    [
+     41.0,
+     48
+    ],
+    [
+     43.0,
+     46
+    ],
+    [
+     45.0,
+     45
+    ],
+    [
+     47.0,
+     46
+    ],
+    [
+     49.0,
+     48
+    ],
+    [
+     51.0,
+     48
+    ],
+    [
+     53.0,
+     47
+    ],
+    [
+     55.0,
+     46
+    ],
+    [
+     57.0,
+     46
+    ],
+    [
+     59.0,
+     46
+    ],
+    [
+     61.0,
+     46
+    ],
+    [
+     62.0,
+     53
+    ],
+    [
+     64.0,
+     53
+    ],
+    [
+     66.0,
+     53
+    ],
+    [
+     68.0,
+     50
+    ],
+    [
+     70.0,
+     52
+    ],
+    [
+     72.0,
+     51
+    ],
+    [
+     74.0,
+     54
+    ],
+    [
+     76.0,
+     51
+    ],
+    [
+     78.0,
+     52
+    ],
+    [
+     80.0,
+     52
+    ],
+    [
+     82.0,
+     54
+    ],
+    [
+     84.0,
+     50
+    ],
+    [
+     85.0,
+     58
+    ],
+    [
+     87.0,
+     59
+    ],
+    [
+     89.0,
+     54
+    ],
+    [
+     91.0,
+     56
+    ],
+    [
+     93.0,
+     53
+    ],
+    [
+     95.0,
+     57
+    ],
+    [
+     97.0,
+     53
+    ],
+    [
+     99.0,
+     55
+    ],
+    [
+     101.0,
+     52
+    ],
+    [
+     103.0,
+     54
+    ],
+    [
+     105.0,
+     50
+    ],
+    [
+     107.0,
+     54
+    ],
+    [
+     109.0,
+     53
+    ],
+    [
+     111.0,
+     52
+    ],
+    [
+     113.0,
+     54
+    ],
+    [
+     115.0,
+     52
+    ],
+    [
+     117.0,
+     49
+    ],
+    [
+     119.0,
+     49
+    ],
+    [
+     121.0,
+     47
+    ],
+    [
+     123.0,
+     46
+    ],
+    [
+     125.0,
+     47
+    ],
+    [
+     127.0,
+     45
+    ],
+    [
+     129.0,
+     49
+    ],
+    [
+     131.0,
+     48
+    ],
+    [
+     133.0,
+     46
+    ],
+    [
+     135.0,
+     46
+    ],
+    [
+     137.0,
+     48
+    ],
+    [
+     139.0,
+     49
+    ],
+    [
+     141.0,
+     48
+    ],
+    [
+     143.0,
+     50
+    ],
+    [
+     145.0,
+     46
+    ],
+    [
+     147.0,
+     52
+    ],
+    [
+     149.0,
+     53
+    ],
+    [
+     151.0,
+     52
+    ],
+    [
+     153.0,
+     51
+    ],
+    [
+     155.0,
+     50
+    ],
+    [
+     157.0,
+     51
+    ],
+    [
+     159.0,
+     49
+    ],
+    [
+     161.0,
+     51
+    ],
+    [
+     163.0,
+     51
+    ],
+    [
+     165.0,
+     53
+    ],
+    [
+     167.0,
+     50
+    ],
+    [
+     168.0,
+     55
+    ],
+    [
+     170.0,
+     53
+    ],
+    [
+     172.0,
+     58
+    ],
+    [
+     174.0,
+     56
+    ],
+    [
+     176.0,
+     57
+    ],
+    [
+     178.0,
+     59
+    ],
+    [
+     180.0,
+     57
+    ],
+    [
+     182.0,
+     54
+    ],
+    [
+     184.0,
+     55
+    ],
+    [
+     186.0,
+     61
+    ],
+    [
+     188.0,
+     62
+    ],
+    [
+     190.0,
+     50
+    ],
+    [
+     192.0,
+     51
+    ],
+    [
+     194.0,
+     52
+    ],
+    [
+     196.0,
+     53
+    ],
+    [
+     198.0,
+     51
+    ],
+    [
+     200.0,
+     52
+    ],
+    [
+     202.0,
+     49
+    ],
+    [
+     204.0,
+     45
+    ],
+    [
+     206.0,
+     46
+    ],
+    [
+     208.0,
+     47
+    ],
+    [
+     210.0,
+     48
+    ],
+    [
+     212.0,
+     45
+    ],
+    [
+     214.0,
+     48
+    ],
+    [
+     216.0,
+     49
+    ],
+    [
+     218.0,
+     47
+    ],
+    [
+     220.0,
+     46
+    ],
+    [
+     222.0,
+     51
+    ],
+    [
+     224.0,
+     53
+    ],
+    [
+     226.0,
+     52
+    ],
+    [
+     228.0,
+     51
+    ],
+    [
+     230.0,
+     51
+    ],
+    [
+     232.0,
+     53
+    ],
+    [
+     234.0,
+     52
+    ],
+    [
+     236.0,
+     53
+    ],
+    [
+     238.0,
+     54
+    ],
+    [
+     239.0,
+     55
+    ],
+    [
+     241.0,
+     55
+    ],
+    [
+     243.0,
+     57
+    ],
+    [
+     245.0,
+     58
+    ],
+    [
+     247.0,
+     55
+    ],
+    [
+     249.0,
+     57
+    ],
+    [
+     251.0,
+     58
+    ],
+    [
+     253.0,
+     58
+    ],
+    [
+     255.0,
+     57
+    ],
+    [
+     256.0,
+     53
+    ],
+    [
+     258.0,
+     51
+    ],
+    [
+     260.0,
+     53
+    ],
+    [
+     262.0,
+     53
+    ],
+    [
+     264.0,
+     53
+    ],
+    [
+     266.0,
+     52
+    ],
+    [
+     268.0,
+     51
+    ],
+    [
+     270.0,
+     51
+    ],
+    [
+     272.0,
+     52
+    ],
+    [
+     274.0,
+     53
+    ],
+    [
+     276.0,
+     47
+    ],
+    [
+     278.0,
+     48
+    ],
+    [
+     280.0,
+     48
+    ],
+    [
+     282.0,
+     47
+    ],
+    [
+     284.0,
+     43
+    ],
+    [
+     286.0,
+     47
+    ],
+    [
+     288.0,
+     51
+    ],
+    [
+     290.0,
+     51
+    ],
+    [
+     292.0,
+     49
+    ],
+    [
+     294.0,
+     50
+    ],
+    [
+     296.0,
+     54
+    ],
+    [
+     298.0,
+     51
+    ],
+    [
+     300.0,
+     53
+    ],
+    [
+     302.0,
+     53
+    ],
+    [
+     304.0,
+     53
+    ],
+    [
+     306.0,
+     54
+    ],
+    [
+     308.0,
+     58
+    ],
+    [
+     310.0,
+     58
+    ],
+    [
+     312.0,
+     56
+    ],
+    [
+     314.0,
+     55
+    ],
+    [
+     316.0,
+     56
+    ],
+    [
+     318.0,
+     56
+    ],
+    [
+     320.0,
+     57
+    ],
+    [
+     322.0,
+     56
+    ],
+    [
+     324.0,
+     60
+    ],
+    [
+     326.0,
+     56
+    ],
+    [
+     328.0,
+     55
+    ],
+    [
+     330.0,
+     57
+    ],
+    [
+     331.0,
+     64
+    ],
+    [
+     333.0,
+     60
+    ],
+    [
+     335.0,
+     61
+    ],
+    [
+     336.0,
+     51
+    ],
+    [
+     338.0,
+     51
+    ],
+    [
+     340.0,
+     52
+    ],
+    [
+     342.0,
+     51
+    ],
+    [
+     344.0,
+     53
+    ],
+    [
+     346.0,
+     49
+    ],
+    [
+     348.0,
+     51
+    ],
+    [
+     350.0,
+     51
+    ],
+    [
+     352.0,
+     51
+    ],
+    [
+     354.0,
+     53
+    ],
+    [
+     356.0,
+     52
+    ],
+    [
+     357.0,
+     47
+    ],
+    [
+     359.0,
+     47
+    ],
+    [
+     361.0,
+     46
+    ],
+    [
+     363.0,
+     45
+    ],
+    [
+     365.0,
+     53
+    ],
+    [
+     367.0,
+     51
+    ],
+    [
+     369.0,
+     50
+    ],
+    [
+     371.0,
+     51
+    ],
+    [
+     373.0,
+     54
+    ],
+    [
+     375.0,
+     54
+    ],
+    [
+     377.0,
+     52
+    ],
+    [
+     379.0,
+     52
+    ],
+    [
+     381.0,
+     49
+    ],
+    [
+     383.0,
+     56
+    ],
+    [
+     385.0,
+     58
+    ],
+    [
+     387.0,
+     57
+    ],
+    [
+     389.0,
+     57
+    ],
+    [
+     391.0,
+     55
+    ],
+    [
+     393.0,
+     54
+    ],
+    [
+     395.0,
+     57
+    ],
+    [
+     397.0,
+     57
+    ],
+    [
+     399.0,
+     57
+    ],
+    [
+     401.0,
+     57
+    ],
+    [
+     403.0,
+     54
+    ],
+    [
+     405.0,
+     56
+    ],
+    [
+     407.0,
+     59
+    ],
+    [
+     409.0,
+     59
+    ],
+    [
+     410.0,
+     60
+    ],
+    [
+     412.0,
+     60
+    ],
+    [
+     414.0,
+     62
+    ],
+    [
+     415.0,
+     52
+    ],
+    [
+     417.0,
+     52
+    ],
+    [
+     419.0,
+     53
+    ],
+    [
+     421.0,
+     51
+    ],
+    [
+     423.0,
+     51
+    ],
+    [
+     425.0,
+     52
+    ],
+    [
+     427.0,
+     50
+    ],
+    [
+     429.0,
+     54
+    ],
+    [
+     430.0,
+     46
+    ],
+    [
+     432.0,
+     44
+    ],
+    [
+     434.0,
+     51
+    ],
+    [
+     436.0,
+     53
+    ],
+    [
+     438.0,
+     56
+    ],
+    [
+     440.0,
+     51
+    ],
+    [
+     442.0,
+     50
+    ],
+    [
+     444.0,
+     52
+    ],
+    [
+     446.0,
+     51
+    ],
+    [
+     448.0,
+     50
+    ],
+    [
+     450.0,
+     50
+    ],
+    [
+     452.0,
+     52
+    ],
+    [
+     453.0,
+     56
+    ],
+    [
+     455.0,
+     57
+    ],
+    [
+     457.0,
+     57
+    ],
+    [
+     459.0,
+     56
+    ],
+    [
+     461.0,
+     54
+    ],
+    [
+     463.0,
+     52
+    ],
+    [
+     465.0,
+     56
+    ],
+    [
+     467.0,
+     59
+    ],
+    [
+     469.0,
+     54
+    ],
+    [
+     471.0,
+     56
+    ],
+    [
+     473.0,
+     58
+    ],
+    [
+     475.0,
+     57
+    ],
+    [
+     477.0,
+     57
+    ],
+    [
+     479.0,
+     55
+    ],
+    [
+     481.0,
+     58
+    ],
+    [
+     483.0,
+     61
+    ],
+    [
+     485.0,
+     60
+    ],
+    [
+     486.0,
+     51
+    ],
+    [
+     488.0,
+     50
+    ],
+    [
+     490.0,
+     53
+    ],
+    [
+     492.0,
+     47
+    ],
+    [
+     494.0,
+     53
+    ],
+    [
+     496.0,
+     53
+    ],
+    [
+     498.0,
+     49
+    ]
+   ],
+   "totals_min": {
+    "deep": 119,
+    "light": 234,
+    "rem": 127,
+    "awake": 19
+   },
+   "awakenings": 5,
+   "mismatch_min": 0.0,
+   "length_min": 499.3
+  },
+  {
+   "date": "2026-11-15",
+   "start": "23:37",
+   "end": "07:03",
+   "asleep_min": 433,
+   "need_min": 500,
+   "performance_pct": 87,
+   "restorative_pct": 46,
+   "efficiency_pct": 97,
+   "in_bed_min": 446,
+   "score": 84,
+   "hr_low": 43,
+   "hr_avg": 52,
+   "respiration": 13.8,
+   "hrv_avg": 55,
+   "body_battery_change": 67,
+   "resting_hr": 43,
+   "segments": [
+    [
+     0.0,
+     17.0,
+     "light"
+    ],
+    [
+     17.0,
+     48.0,
+     "deep"
+    ],
+    [
+     48.0,
+     73.0,
+     "light"
+    ],
+    [
+     73.0,
+     82.0,
+     "rem"
+    ],
+    [
+     82.0,
+     87.0,
+     "awake"
+    ],
+    [
+     87.0,
+     108.0,
+     "light"
+    ],
+    [
+     108.0,
+     132.0,
+     "deep"
+    ],
+    [
+     132.0,
+     152.0,
+     "light"
+    ],
+    [
+     152.0,
+     164.0,
+     "rem"
+    ],
+    [
+     164.0,
+     178.0,
+     "light"
+    ],
+    [
+     178.0,
+     200.0,
+     "deep"
+    ],
+    [
+     200.0,
+     222.0,
+     "light"
+    ],
+    [
+     222.0,
+     240.0,
+     "rem"
+    ],
+    [
+     240.0,
+     245.0,
+     "awake"
+    ],
+    [
+     245.0,
+     260.0,
+     "light"
+    ],
+    [
+     260.0,
+     278.0,
+     "deep"
+    ],
+    [
+     278.0,
+     299.0,
+     "light"
+    ],
+    [
+     299.0,
+     322.0,
+     "rem"
+    ],
+    [
+     322.0,
+     325.0,
+     "awake"
+    ],
+    [
+     325.0,
+     341.0,
+     "light"
+    ],
+    [
+     341.0,
+     349.0,
+     "deep"
+    ],
+    [
+     349.0,
+     371.0,
+     "light"
+    ],
+    [
+     371.0,
+     397.0,
+     "rem"
+    ],
+    [
+     397.0,
+     417.0,
+     "light"
+    ],
+    [
+     417.0,
+     421.0,
+     "deep"
+    ],
+    [
+     421.0,
+     444.0,
+     "light"
+    ],
+    [
+     444.0,
+     446.5,
+     "rem"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     53
+    ],
+    [
+     2.0,
+     53
+    ],
+    [
+     4.0,
+     54
+    ],
+    [
+     6.0,
+     52
+    ],
+    [
+     8.0,
+     52
+    ],
+    [
+     10.0,
+     53
+    ],
+    [
+     12.0,
+     53
+    ],
+    [
+     14.0,
+     52
+    ],
+    [
+     16.0,
+     51
+    ],
+    [
+     17.0,
+     48
+    ],
+    [
+     19.0,
+     46
+    ],
+    [
+     21.0,
+     44
+    ],
+    [
+     23.0,
+     47
+    ],
+    [
+     25.0,
+     47
+    ],
+    [
+     27.0,
+     46
+    ],
+    [
+     29.0,
+     49
+    ],
+    [
+     31.0,
+     48
+    ],
+    [
+     33.0,
+     46
+    ],
+    [
+     35.0,
+     47
+    ],
+    [
+     37.0,
+     48
+    ],
+    [
+     39.0,
+     46
+    ],
+    [
+     41.0,
+     47
+    ],
+    [
+     43.0,
+     47
+    ],
+    [
+     45.0,
+     45
+    ],
+    [
+     47.0,
+     48
+    ],
+    [
+     48.0,
+     53
+    ],
+    [
+     50.0,
+     52
+    ],
+    [
+     52.0,
+     52
+    ],
+    [
+     54.0,
+     52
+    ],
+    [
+     56.0,
+     52
+    ],
+    [
+     58.0,
+     49
+    ],
+    [
+     60.0,
+     51
+    ],
+    [
+     62.0,
+     52
+    ],
+    [
+     64.0,
+     52
+    ],
+    [
+     66.0,
+     52
+    ],
+    [
+     68.0,
+     50
+    ],
+    [
+     70.0,
+     51
+    ],
+    [
+     72.0,
+     52
+    ],
+    [
+     73.0,
+     54
+    ],
+    [
+     75.0,
+     54
+    ],
+    [
+     77.0,
+     57
+    ],
+    [
+     79.0,
+     56
+    ],
+    [
+     81.0,
+     57
+    ],
+    [
+     82.0,
+     61
+    ],
+    [
+     84.0,
+     64
+    ],
+    [
+     86.0,
+     60
+    ],
+    [
+     87.0,
+     52
+    ],
+    [
+     89.0,
+     52
+    ],
+    [
+     91.0,
+     53
+    ],
+    [
+     93.0,
+     51
+    ],
+    [
+     95.0,
+     52
+    ],
+    [
+     97.0,
+     53
+    ],
+    [
+     99.0,
+     52
+    ],
+    [
+     101.0,
+     53
+    ],
+    [
+     103.0,
+     53
+    ],
+    [
+     105.0,
+     54
+    ],
+    [
+     107.0,
+     54
+    ],
+    [
+     108.0,
+     49
+    ],
+    [
+     110.0,
+     47
+    ],
+    [
+     112.0,
+     48
+    ],
+    [
+     114.0,
+     47
+    ],
+    [
+     116.0,
+     46
+    ],
+    [
+     118.0,
+     46
+    ],
+    [
+     120.0,
+     49
+    ],
+    [
+     122.0,
+     49
+    ],
+    [
+     124.0,
+     47
+    ],
+    [
+     126.0,
+     47
+    ],
+    [
+     128.0,
+     47
+    ],
+    [
+     130.0,
+     43
+    ],
+    [
+     132.0,
+     51
+    ],
+    [
+     134.0,
+     53
+    ],
+    [
+     136.0,
+     52
+    ],
+    [
+     138.0,
+     51
+    ],
+    [
+     140.0,
+     51
+    ],
+    [
+     142.0,
+     53
+    ],
+    [
+     144.0,
+     52
+    ],
+    [
+     146.0,
+     54
+    ],
+    [
+     148.0,
+     52
+    ],
+    [
+     150.0,
+     52
+    ],
+    [
+     152.0,
+     56
+    ],
+    [
+     154.0,
+     56
+    ],
+    [
+     156.0,
+     52
+    ],
+    [
+     158.0,
+     56
+    ],
+    [
+     160.0,
+     58
+    ],
+    [
+     162.0,
+     54
+    ],
+    [
+     164.0,
+     51
+    ],
+    [
+     166.0,
+     50
+    ],
+    [
+     168.0,
+     52
+    ],
+    [
+     170.0,
+     53
+    ],
+    [
+     172.0,
+     49
+    ],
+    [
+     174.0,
+     54
+    ],
+    [
+     176.0,
+     53
+    ],
+    [
+     178.0,
+     46
+    ],
+    [
+     180.0,
+     46
+    ],
+    [
+     182.0,
+     46
+    ],
+    [
+     184.0,
+     50
+    ],
+    [
+     186.0,
+     46
+    ],
+    [
+     188.0,
+     47
+    ],
+    [
+     190.0,
+     46
+    ],
+    [
+     192.0,
+     45
+    ],
+    [
+     194.0,
+     47
+    ],
+    [
+     196.0,
+     46
+    ],
+    [
+     198.0,
+     47
+    ],
+    [
+     200.0,
+     50
+    ],
+    [
+     202.0,
+     51
+    ],
+    [
+     204.0,
+     54
+    ],
+    [
+     206.0,
+     51
+    ],
+    [
+     208.0,
+     54
+    ],
+    [
+     210.0,
+     52
+    ],
+    [
+     212.0,
+     51
+    ],
+    [
+     214.0,
+     52
+    ],
+    [
+     216.0,
+     54
+    ],
+    [
+     218.0,
+     51
+    ],
+    [
+     220.0,
+     53
+    ],
+    [
+     222.0,
+     55
+    ],
+    [
+     224.0,
+     56
+    ],
+    [
+     226.0,
+     56
+    ],
+    [
+     228.0,
+     58
+    ],
+    [
+     230.0,
+     57
+    ],
+    [
+     232.0,
+     56
+    ],
+    [
+     234.0,
+     53
+    ],
+    [
+     236.0,
+     56
+    ],
+    [
+     238.0,
+     56
+    ],
+    [
+     240.0,
+     58
+    ],
+    [
+     242.0,
+     62
+    ],
+    [
+     244.0,
+     66
+    ],
+    [
+     245.0,
+     52
+    ],
+    [
+     247.0,
+     52
+    ],
+    [
+     249.0,
+     52
+    ],
+    [
+     251.0,
+     51
+    ],
+    [
+     253.0,
+     51
+    ],
+    [
+     255.0,
+     52
+    ],
+    [
+     257.0,
+     50
+    ],
+    [
+     259.0,
+     50
+    ],
+    [
+     260.0,
+     47
+    ],
+    [
+     262.0,
+     45
+    ],
+    [
+     264.0,
+     46
+    ],
+    [
+     266.0,
+     46
+    ],
+    [
+     268.0,
+     46
+    ],
+    [
+     270.0,
+     46
+    ],
+    [
+     272.0,
+     51
+    ],
+    [
+     274.0,
+     46
+    ],
+    [
+     276.0,
+     47
+    ],
+    [
+     278.0,
+     50
+    ],
+    [
+     280.0,
+     50
+    ],
+    [
+     282.0,
+     51
+    ],
+    [
+     284.0,
+     51
+    ],
+    [
+     286.0,
+     53
+    ],
+    [
+     288.0,
+     51
+    ],
+    [
+     290.0,
+     51
+    ],
+    [
+     292.0,
+     52
+    ],
+    [
+     294.0,
+     54
+    ],
+    [
+     296.0,
+     52
+    ],
+    [
+     298.0,
+     53
+    ],
+    [
+     299.0,
+     55
+    ],
+    [
+     301.0,
+     56
+    ],
+    [
+     303.0,
+     56
+    ],
+    [
+     305.0,
+     55
+    ],
+    [
+     307.0,
+     56
+    ],
+    [
+     309.0,
+     54
+    ],
+    [
+     311.0,
+     56
+    ],
+    [
+     313.0,
+     56
+    ],
+    [
+     315.0,
+     57
+    ],
+    [
+     317.0,
+     56
+    ],
+    [
+     319.0,
+     56
+    ],
+    [
+     321.0,
+     57
+    ],
+    [
+     322.0,
+     62
+    ],
+    [
+     324.0,
+     62
+    ],
+    [
+     325.0,
+     53
+    ],
+    [
+     327.0,
+     51
+    ],
+    [
+     329.0,
+     51
+    ],
+    [
+     331.0,
+     52
+    ],
+    [
+     333.0,
+     53
+    ],
+    [
+     335.0,
+     51
+    ],
+    [
+     337.0,
+     54
+    ],
+    [
+     339.0,
+     53
+    ],
+    [
+     341.0,
+     48
+    ],
+    [
+     343.0,
+     46
+    ],
+    [
+     345.0,
+     47
+    ],
+    [
+     347.0,
+     49
+    ],
+    [
+     349.0,
+     51
+    ],
+    [
+     351.0,
+     52
+    ],
+    [
+     353.0,
+     52
+    ],
+    [
+     355.0,
+     53
+    ],
+    [
+     357.0,
+     51
+    ],
+    [
+     359.0,
+     52
+    ],
+    [
+     361.0,
+     52
+    ],
+    [
+     363.0,
+     53
+    ],
+    [
+     365.0,
+     50
+    ],
+    [
+     367.0,
+     50
+    ],
+    [
+     369.0,
+     52
+    ],
+    [
+     371.0,
+     55
+    ],
+    [
+     373.0,
+     56
+    ],
+    [
+     375.0,
+     56
+    ],
+    [
+     377.0,
+     55
+    ],
+    [
+     379.0,
+     52
+    ],
+    [
+     381.0,
+     59
+    ],
+    [
+     383.0,
+     59
+    ],
+    [
+     385.0,
+     53
+    ],
+    [
+     387.0,
+     57
+    ],
+    [
+     389.0,
+     56
+    ],
+    [
+     391.0,
+     58
+    ],
+    [
+     393.0,
+     58
+    ],
+    [
+     395.0,
+     56
+    ],
+    [
+     397.0,
+     50
+    ],
+    [
+     399.0,
+     54
+    ],
+    [
+     401.0,
+     51
+    ],
+    [
+     403.0,
+     52
+    ],
+    [
+     405.0,
+     52
+    ],
+    [
+     407.0,
+     52
+    ],
+    [
+     409.0,
+     53
+    ],
+    [
+     411.0,
+     51
+    ],
+    [
+     413.0,
+     53
+    ],
+    [
+     415.0,
+     53
+    ],
+    [
+     417.0,
+     47
+    ],
+    [
+     419.0,
+     47
+    ],
+    [
+     421.0,
+     53
+    ],
+    [
+     423.0,
+     54
+    ],
+    [
+     425.0,
+     53
+    ],
+    [
+     427.0,
+     52
+    ],
+    [
+     429.0,
+     52
+    ],
+    [
+     431.0,
+     51
+    ],
+    [
+     433.0,
+     53
+    ],
+    [
+     435.0,
+     51
+    ],
+    [
+     437.0,
+     54
+    ],
+    [
+     439.0,
+     52
+    ],
+    [
+     441.0,
+     50
+    ],
+    [
+     443.0,
+     52
+    ],
+    [
+     444.0,
+     57
+    ],
+    [
+     446.0,
+     57
+    ]
+   ],
+   "totals_min": {
+    "deep": 107,
+    "light": 236,
+    "rem": 90,
+    "awake": 13
+   },
+   "awakenings": 3,
+   "mismatch_min": 0.0,
+   "length_min": 446.5
+  },
+  {
+   "date": "2026-11-16",
+   "start": "23:40",
+   "end": "06:07",
+   "asleep_min": 380,
+   "need_min": 500,
+   "performance_pct": 76,
+   "restorative_pct": 51,
+   "efficiency_pct": 98,
+   "in_bed_min": 388,
+   "score": 69,
+   "hr_low": 44,
+   "hr_avg": 51,
+   "respiration": 15.1,
+   "hrv_avg": 58,
+   "body_battery_change": 46,
+   "resting_hr": 44,
+   "segments": [
+    [
+     0.0,
+     21.0,
+     "light"
+    ],
+    [
+     21.0,
+     64.0,
+     "deep"
+    ],
+    [
+     64.0,
+     88.0,
+     "light"
+    ],
+    [
+     88.0,
+     100.0,
+     "rem"
+    ],
+    [
+     100.0,
+     122.0,
+     "light"
+    ],
+    [
+     122.0,
+     149.0,
+     "deep"
+    ],
+    [
+     149.0,
+     174.0,
+     "light"
+    ],
+    [
+     174.0,
+     189.0,
+     "rem"
+    ],
+    [
+     189.0,
+     193.0,
+     "awake"
+    ],
+    [
+     193.0,
+     208.0,
+     "light"
+    ],
+    [
+     208.0,
+     230.0,
+     "deep"
+    ],
+    [
+     230.0,
+     245.0,
+     "light"
+    ],
+    [
+     245.0,
+     268.0,
+     "rem"
+    ],
+    [
+     268.0,
+     272.0,
+     "awake"
+    ],
+    [
+     272.0,
+     288.0,
+     "light"
+    ],
+    [
+     288.0,
+     304.0,
+     "deep"
+    ],
+    [
+     304.0,
+     322.0,
+     "light"
+    ],
+    [
+     322.0,
+     347.0,
+     "rem"
+    ],
+    [
+     347.0,
+     367.0,
+     "light"
+    ],
+    [
+     367.0,
+     376.0,
+     "deep"
+    ],
+    [
+     376.0,
+     387.9,
+     "light"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     51
+    ],
+    [
+     2.0,
+     52
+    ],
+    [
+     4.0,
+     50
+    ],
+    [
+     6.0,
+     55
+    ],
+    [
+     8.0,
+     50
+    ],
+    [
+     10.0,
+     52
+    ],
+    [
+     12.0,
+     53
+    ],
+    [
+     14.0,
+     51
+    ],
+    [
+     16.0,
+     51
+    ],
+    [
+     18.0,
+     52
+    ],
+    [
+     20.0,
+     53
+    ],
+    [
+     21.0,
+     47
+    ],
+    [
+     23.0,
+     46
+    ],
+    [
+     25.0,
+     45
+    ],
+    [
+     27.0,
+     46
+    ],
+    [
+     29.0,
+     48
+    ],
+    [
+     31.0,
+     46
+    ],
+    [
+     33.0,
+     46
+    ],
+    [
+     35.0,
+     45
+    ],
+    [
+     37.0,
+     46
+    ],
+    [
+     39.0,
+     46
+    ],
+    [
+     41.0,
+     48
+    ],
+    [
+     43.0,
+     47
+    ],
+    [
+     45.0,
+     48
+    ],
+    [
+     47.0,
+     46
+    ],
+    [
+     49.0,
+     49
+    ],
+    [
+     51.0,
+     47
+    ],
+    [
+     53.0,
+     47
+    ],
+    [
+     55.0,
+     48
+    ],
+    [
+     57.0,
+     48
+    ],
+    [
+     59.0,
+     49
+    ],
+    [
+     61.0,
+     47
+    ],
+    [
+     63.0,
+     46
+    ],
+    [
+     64.0,
+     50
+    ],
+    [
+     66.0,
+     52
+    ],
+    [
+     68.0,
+     52
+    ],
+    [
+     70.0,
+     52
+    ],
+    [
+     72.0,
+     53
+    ],
+    [
+     74.0,
+     52
+    ],
+    [
+     76.0,
+     53
+    ],
+    [
+     78.0,
+     50
+    ],
+    [
+     80.0,
+     53
+    ],
+    [
+     82.0,
+     50
+    ],
+    [
+     84.0,
+     52
+    ],
+    [
+     86.0,
+     53
+    ],
+    [
+     88.0,
+     56
+    ],
+    [
+     90.0,
+     58
+    ],
+    [
+     92.0,
+     55
+    ],
+    [
+     94.0,
+     54
+    ],
+    [
+     96.0,
+     56
+    ],
+    [
+     98.0,
+     57
+    ],
+    [
+     100.0,
+     53
+    ],
+    [
+     102.0,
+     54
+    ],
+    [
+     104.0,
+     51
+    ],
+    [
+     106.0,
+     52
+    ],
+    [
+     108.0,
+     53
+    ],
+    [
+     110.0,
+     50
+    ],
+    [
+     112.0,
+     51
+    ],
+    [
+     114.0,
+     53
+    ],
+    [
+     116.0,
+     53
+    ],
+    [
+     118.0,
+     53
+    ],
+    [
+     120.0,
+     52
+    ],
+    [
+     122.0,
+     46
+    ],
+    [
+     124.0,
+     44
+    ],
+    [
+     126.0,
+     47
+    ],
+    [
+     128.0,
+     45
+    ],
+    [
+     130.0,
+     47
+    ],
+    [
+     132.0,
+     47
+    ],
+    [
+     134.0,
+     47
+    ],
+    [
+     136.0,
+     46
+    ],
+    [
+     138.0,
+     47
+    ],
+    [
+     140.0,
+     45
+    ],
+    [
+     142.0,
+     47
+    ],
+    [
+     144.0,
+     48
+    ],
+    [
+     146.0,
+     45
+    ],
+    [
+     148.0,
+     49
+    ],
+    [
+     149.0,
+     52
+    ],
+    [
+     151.0,
+     52
+    ],
+    [
+     153.0,
+     51
+    ],
+    [
+     155.0,
+     54
+    ],
+    [
+     157.0,
+     53
+    ],
+    [
+     159.0,
+     48
+    ],
+    [
+     161.0,
+     50
+    ],
+    [
+     163.0,
+     53
+    ],
+    [
+     165.0,
+     52
+    ],
+    [
+     167.0,
+     51
+    ],
+    [
+     169.0,
+     52
+    ],
+    [
+     171.0,
+     52
+    ],
+    [
+     173.0,
+     51
+    ],
+    [
+     174.0,
+     54
+    ],
+    [
+     176.0,
+     58
+    ],
+    [
+     178.0,
+     56
+    ],
+    [
+     180.0,
+     59
+    ],
+    [
+     182.0,
+     57
+    ],
+    [
+     184.0,
+     54
+    ],
+    [
+     186.0,
+     56
+    ],
+    [
+     188.0,
+     58
+    ],
+    [
+     189.0,
+     62
+    ],
+    [
+     191.0,
+     60
+    ],
+    [
+     193.0,
+     53
+    ],
+    [
+     195.0,
+     50
+    ],
+    [
+     197.0,
+     52
+    ],
+    [
+     199.0,
+     50
+    ],
+    [
+     201.0,
+     50
+    ],
+    [
+     203.0,
+     50
+    ],
+    [
+     205.0,
+     52
+    ],
+    [
+     207.0,
+     50
+    ],
+    [
+     208.0,
+     46
+    ],
+    [
+     210.0,
+     46
+    ],
+    [
+     212.0,
+     47
+    ],
+    [
+     214.0,
+     45
+    ],
+    [
+     216.0,
+     48
+    ],
+    [
+     218.0,
+     48
+    ],
+    [
+     220.0,
+     47
+    ],
+    [
+     222.0,
+     48
+    ],
+    [
+     224.0,
+     46
+    ],
+    [
+     226.0,
+     46
+    ],
+    [
+     228.0,
+     47
+    ],
+    [
+     230.0,
+     51
+    ],
+    [
+     232.0,
+     51
+    ],
+    [
+     234.0,
+     52
+    ],
+    [
+     236.0,
+     50
+    ],
+    [
+     238.0,
+     54
+    ],
+    [
+     240.0,
+     51
+    ],
+    [
+     242.0,
+     50
+    ],
+    [
+     244.0,
+     51
+    ],
+    [
+     245.0,
+     54
+    ],
+    [
+     247.0,
+     58
+    ],
+    [
+     249.0,
+     53
+    ],
+    [
+     251.0,
+     56
+    ],
+    [
+     253.0,
+     55
+    ],
+    [
+     255.0,
+     55
+    ],
+    [
+     257.0,
+     57
+    ],
+    [
+     259.0,
+     55
+    ],
+    [
+     261.0,
+     57
+    ],
+    [
+     263.0,
+     56
+    ],
+    [
+     265.0,
+     56
+    ],
+    [
+     267.0,
+     55
+    ],
+    [
+     268.0,
+     61
+    ],
+    [
+     270.0,
+     62
+    ],
+    [
+     272.0,
+     52
+    ],
+    [
+     274.0,
+     50
+    ],
+    [
+     276.0,
+     53
+    ],
+    [
+     278.0,
+     53
+    ],
+    [
+     280.0,
+     51
+    ],
+    [
+     282.0,
+     49
+    ],
+    [
+     284.0,
+     54
+    ],
+    [
+     286.0,
+     52
+    ],
+    [
+     288.0,
+     47
+    ],
+    [
+     290.0,
+     46
+    ],
+    [
+     292.0,
+     45
+    ],
+    [
+     294.0,
+     48
+    ],
+    [
+     296.0,
+     48
+    ],
+    [
+     298.0,
+     45
+    ],
+    [
+     300.0,
+     45
+    ],
+    [
+     302.0,
+     47
+    ],
+    [
+     304.0,
+     53
+    ],
+    [
+     306.0,
+     53
+    ],
+    [
+     308.0,
+     51
+    ],
+    [
+     310.0,
+     52
+    ],
+    [
+     312.0,
+     52
+    ],
+    [
+     314.0,
+     52
+    ],
+    [
+     316.0,
+     52
+    ],
+    [
+     318.0,
+     51
+    ],
+    [
+     320.0,
+     52
+    ],
+    [
+     322.0,
+     56
+    ],
+    [
+     324.0,
+     57
+    ],
+    [
+     326.0,
+     56
+    ],
+    [
+     328.0,
+     56
+    ],
+    [
+     330.0,
+     55
+    ],
+    [
+     332.0,
+     58
+    ],
+    [
+     334.0,
+     57
+    ],
+    [
+     336.0,
+     57
+    ],
+    [
+     338.0,
+     55
+    ],
+    [
+     340.0,
+     55
+    ],
+    [
+     342.0,
+     54
+    ],
+    [
+     344.0,
+     54
+    ],
+    [
+     346.0,
+     57
+    ],
+    [
+     347.0,
+     55
+    ],
+    [
+     349.0,
+     56
+    ],
+    [
+     351.0,
+     51
+    ],
+    [
+     353.0,
+     53
+    ],
+    [
+     355.0,
+     55
+    ],
+    [
+     357.0,
+     52
+    ],
+    [
+     359.0,
+     52
+    ],
+    [
+     361.0,
+     53
+    ],
+    [
+     363.0,
+     50
+    ],
+    [
+     365.0,
+     51
+    ],
+    [
+     367.0,
+     48
+    ],
+    [
+     369.0,
+     50
+    ],
+    [
+     371.0,
+     45
+    ],
+    [
+     373.0,
+     46
+    ],
+    [
+     375.0,
+     48
+    ],
+    [
+     376.0,
+     51
+    ],
+    [
+     378.0,
+     52
+    ],
+    [
+     380.0,
+     51
+    ],
+    [
+     382.0,
+     50
+    ],
+    [
+     384.0,
+     54
+    ],
+    [
+     386.0,
+     51
+    ]
+   ],
+   "totals_min": {
+    "deep": 117,
+    "light": 188,
+    "rem": 75,
+    "awake": 8
+   },
+   "awakenings": 2,
+   "mismatch_min": 0.0,
+   "length_min": 387.9
+  },
+  {
+   "date": "2026-11-17",
+   "start": "00:00",
+   "end": "07:55",
+   "asleep_min": 460,
+   "need_min": 500,
+   "performance_pct": 92,
+   "restorative_pct": 50,
+   "efficiency_pct": 97,
+   "in_bed_min": 475,
+   "score": 79,
+   "hr_low": 43,
+   "hr_avg": 52,
+   "respiration": 14.0,
+   "hrv_avg": 55,
+   "body_battery_change": 48,
+   "resting_hr": 43,
+   "segments": [
+    [
+     0.0,
+     18.0,
+     "light"
+    ],
+    [
+     18.0,
+     63.0,
+     "deep"
+    ],
+    [
+     63.0,
+     81.0,
+     "light"
+    ],
+    [
+     81.0,
+     91.0,
+     "rem"
+    ],
+    [
+     91.0,
+     96.0,
+     "awake"
+    ],
+    [
+     96.0,
+     118.0,
+     "light"
+    ],
+    [
+     118.0,
+     151.0,
+     "deep"
+    ],
+    [
+     151.0,
+     173.0,
+     "light"
+    ],
+    [
+     173.0,
+     189.0,
+     "rem"
+    ],
+    [
+     189.0,
+     210.0,
+     "light"
+    ],
+    [
+     210.0,
+     229.0,
+     "deep"
+    ],
+    [
+     229.0,
+     251.0,
+     "light"
+    ],
+    [
+     251.0,
+     274.0,
+     "rem"
+    ],
+    [
+     274.0,
+     278.0,
+     "awake"
+    ],
+    [
+     278.0,
+     292.0,
+     "light"
+    ],
+    [
+     292.0,
+     310.0,
+     "deep"
+    ],
+    [
+     310.0,
+     334.0,
+     "light"
+    ],
+    [
+     334.0,
+     357.0,
+     "rem"
+    ],
+    [
+     357.0,
+     371.0,
+     "light"
+    ],
+    [
+     371.0,
+     379.0,
+     "deep"
+    ],
+    [
+     379.0,
+     397.0,
+     "light"
+    ],
+    [
+     397.0,
+     427.0,
+     "rem"
+    ],
+    [
+     427.0,
+     433.0,
+     "awake"
+    ],
+    [
+     433.0,
+     453.0,
+     "light"
+    ],
+    [
+     453.0,
+     457.0,
+     "deep"
+    ],
+    [
+     457.0,
+     475.4,
+     "light"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     55
+    ],
+    [
+     2.0,
+     51
+    ],
+    [
+     4.0,
+     51
+    ],
+    [
+     6.0,
+     53
+    ],
+    [
+     8.0,
+     52
+    ],
+    [
+     10.0,
+     53
+    ],
+    [
+     12.0,
+     53
+    ],
+    [
+     14.0,
+     51
+    ],
+    [
+     16.0,
+     51
+    ],
+    [
+     18.0,
+     46
+    ],
+    [
+     20.0,
+     49
+    ],
+    [
+     22.0,
+     43
+    ],
+    [
+     24.0,
+     47
+    ],
+    [
+     26.0,
+     50
+    ],
+    [
+     28.0,
+     47
+    ],
+    [
+     30.0,
+     49
+    ],
+    [
+     32.0,
+     48
+    ],
+    [
+     34.0,
+     46
+    ],
+    [
+     36.0,
+     46
+    ],
+    [
+     38.0,
+     47
+    ],
+    [
+     40.0,
+     44
+    ],
+    [
+     42.0,
+     49
+    ],
+    [
+     44.0,
+     48
+    ],
+    [
+     46.0,
+     48
+    ],
+    [
+     48.0,
+     49
+    ],
+    [
+     50.0,
+     45
+    ],
+    [
+     52.0,
+     48
+    ],
+    [
+     54.0,
+     48
+    ],
+    [
+     56.0,
+     47
+    ],
+    [
+     58.0,
+     48
+    ],
+    [
+     60.0,
+     45
+    ],
+    [
+     62.0,
+     45
+    ],
+    [
+     63.0,
+     50
+    ],
+    [
+     65.0,
+     51
+    ],
+    [
+     67.0,
+     50
+    ],
+    [
+     69.0,
+     51
+    ],
+    [
+     71.0,
+     49
+    ],
+    [
+     73.0,
+     52
+    ],
+    [
+     75.0,
+     52
+    ],
+    [
+     77.0,
+     57
+    ],
+    [
+     79.0,
+     55
+    ],
+    [
+     81.0,
+     54
+    ],
+    [
+     83.0,
+     54
+    ],
+    [
+     85.0,
+     54
+    ],
+    [
+     87.0,
+     55
+    ],
+    [
+     89.0,
+     58
+    ],
+    [
+     91.0,
+     62
+    ],
+    [
+     93.0,
+     62
+    ],
+    [
+     95.0,
+     62
+    ],
+    [
+     96.0,
+     52
+    ],
+    [
+     98.0,
+     53
+    ],
+    [
+     100.0,
+     51
+    ],
+    [
+     102.0,
+     53
+    ],
+    [
+     104.0,
+     51
+    ],
+    [
+     106.0,
+     51
+    ],
+    [
+     108.0,
+     54
+    ],
+    [
+     110.0,
+     54
+    ],
+    [
+     112.0,
+     54
+    ],
+    [
+     114.0,
+     51
+    ],
+    [
+     116.0,
+     54
+    ],
+    [
+     118.0,
+     48
+    ],
+    [
+     120.0,
+     46
+    ],
+    [
+     122.0,
+     49
+    ],
+    [
+     124.0,
+     47
+    ],
+    [
+     126.0,
+     47
+    ],
+    [
+     128.0,
+     49
+    ],
+    [
+     130.0,
+     49
+    ],
+    [
+     132.0,
+     49
+    ],
+    [
+     134.0,
+     47
+    ],
+    [
+     136.0,
+     49
+    ],
+    [
+     138.0,
+     48
+    ],
+    [
+     140.0,
+     48
+    ],
+    [
+     142.0,
+     47
+    ],
+    [
+     144.0,
+     50
+    ],
+    [
+     146.0,
+     44
+    ],
+    [
+     148.0,
+     47
+    ],
+    [
+     150.0,
+     45
+    ],
+    [
+     151.0,
+     51
+    ],
+    [
+     153.0,
+     53
+    ],
+    [
+     155.0,
+     51
+    ],
+    [
+     157.0,
+     50
+    ],
+    [
+     159.0,
+     53
+    ],
+    [
+     161.0,
+     52
+    ],
+    [
+     163.0,
+     50
+    ],
+    [
+     165.0,
+     52
+    ],
+    [
+     167.0,
+     52
+    ],
+    [
+     169.0,
+     49
+    ],
+    [
+     171.0,
+     54
+    ],
+    [
+     173.0,
+     58
+    ],
+    [
+     175.0,
+     57
+    ],
+    [
+     177.0,
+     59
+    ],
+    [
+     179.0,
+     57
+    ],
+    [
+     181.0,
+     53
+    ],
+    [
+     183.0,
+     55
+    ],
+    [
+     185.0,
+     57
+    ],
+    [
+     187.0,
+     56
+    ],
+    [
+     189.0,
+     51
+    ],
+    [
+     191.0,
+     53
+    ],
+    [
+     193.0,
+     53
+    ],
+    [
+     195.0,
+     51
+    ],
+    [
+     197.0,
+     55
+    ],
+    [
+     199.0,
+     53
+    ],
+    [
+     201.0,
+     51
+    ],
+    [
+     203.0,
+     53
+    ],
+    [
+     205.0,
+     51
+    ],
+    [
+     207.0,
+     54
+    ],
+    [
+     209.0,
+     51
+    ],
+    [
+     210.0,
+     48
+    ],
+    [
+     212.0,
+     47
+    ],
+    [
+     214.0,
+     46
+    ],
+    [
+     216.0,
+     45
+    ],
+    [
+     218.0,
+     48
+    ],
+    [
+     220.0,
+     46
+    ],
+    [
+     222.0,
+     46
+    ],
+    [
+     224.0,
+     50
+    ],
+    [
+     226.0,
+     46
+    ],
+    [
+     228.0,
+     48
+    ],
+    [
+     229.0,
+     53
+    ],
+    [
+     231.0,
+     53
+    ],
+    [
+     233.0,
+     52
+    ],
+    [
+     235.0,
+     50
+    ],
+    [
+     237.0,
+     54
+    ],
+    [
+     239.0,
+     51
+    ],
+    [
+     241.0,
+     51
+    ],
+    [
+     243.0,
+     50
+    ],
+    [
+     245.0,
+     54
+    ],
+    [
+     247.0,
+     53
+    ],
+    [
+     249.0,
+     52
+    ],
+    [
+     251.0,
+     53
+    ],
+    [
+     253.0,
+     55
+    ],
+    [
+     255.0,
+     57
+    ],
+    [
+     257.0,
+     55
+    ],
+    [
+     259.0,
+     56
+    ],
+    [
+     261.0,
+     57
+    ],
+    [
+     263.0,
+     53
+    ],
+    [
+     265.0,
+     55
+    ],
+    [
+     267.0,
+     56
+    ],
+    [
+     269.0,
+     57
+    ],
+    [
+     271.0,
+     55
+    ],
+    [
+     273.0,
+     56
+    ],
+    [
+     274.0,
+     59
+    ],
+    [
+     276.0,
+     59
+    ],
+    [
+     278.0,
+     52
+    ],
+    [
+     280.0,
+     50
+    ],
+    [
+     282.0,
+     51
+    ],
+    [
+     284.0,
+     50
+    ],
+    [
+     286.0,
+     55
+    ],
+    [
+     288.0,
+     53
+    ],
+    [
+     290.0,
+     56
+    ],
+    [
+     292.0,
+     48
+    ],
+    [
+     294.0,
+     47
+    ],
+    [
+     296.0,
+     47
+    ],
+    [
+     298.0,
+     43
+    ],
+    [
+     300.0,
+     48
+    ],
+    [
+     302.0,
+     47
+    ],
+    [
+     304.0,
+     46
+    ],
+    [
+     306.0,
+     48
+    ],
+    [
+     308.0,
+     48
+    ],
+    [
+     310.0,
+     51
+    ],
+    [
+     312.0,
+     53
+    ],
+    [
+     314.0,
+     50
+    ],
+    [
+     316.0,
+     53
+    ],
+    [
+     318.0,
+     51
+    ],
+    [
+     320.0,
+     52
+    ],
+    [
+     322.0,
+     51
+    ],
+    [
+     324.0,
+     54
+    ],
+    [
+     326.0,
+     52
+    ],
+    [
+     328.0,
+     53
+    ],
+    [
+     330.0,
+     53
+    ],
+    [
+     332.0,
+     52
+    ],
+    [
+     334.0,
+     58
+    ],
+    [
+     336.0,
+     56
+    ],
+    [
+     338.0,
+     55
+    ],
+    [
+     340.0,
+     58
+    ],
+    [
+     342.0,
+     55
+    ],
+    [
+     344.0,
+     57
+    ],
+    [
+     346.0,
+     53
+    ],
+    [
+     348.0,
+     56
+    ],
+    [
+     350.0,
+     55
+    ],
+    [
+     352.0,
+     55
+    ],
+    [
+     354.0,
+     56
+    ],
+    [
+     356.0,
+     55
+    ],
+    [
+     357.0,
+     52
+    ],
+    [
+     359.0,
+     53
+    ],
+    [
+     361.0,
+     53
+    ],
+    [
+     363.0,
+     54
+    ],
+    [
+     365.0,
+     52
+    ],
+    [
+     367.0,
+     53
+    ],
+    [
+     369.0,
+     50
+    ],
+    [
+     371.0,
+     47
+    ],
+    [
+     373.0,
+     47
+    ],
+    [
+     375.0,
+     46
+    ],
+    [
+     377.0,
+     45
+    ],
+    [
+     379.0,
+     53
+    ],
+    [
+     381.0,
+     49
+    ],
+    [
+     383.0,
+     51
+    ],
+    [
+     385.0,
+     53
+    ],
+    [
+     387.0,
+     52
+    ],
+    [
+     389.0,
+     50
+    ],
+    [
+     391.0,
+     54
+    ],
+    [
+     393.0,
+     50
+    ],
+    [
+     395.0,
+     53
+    ],
+    [
+     397.0,
+     58
+    ],
+    [
+     399.0,
+     57
+    ],
+    [
+     401.0,
+     56
+    ],
+    [
+     403.0,
+     56
+    ],
+    [
+     405.0,
+     57
+    ],
+    [
+     407.0,
+     59
+    ],
+    [
+     409.0,
+     57
+    ],
+    [
+     411.0,
+     57
+    ],
+    [
+     413.0,
+     55
+    ],
+    [
+     415.0,
+     53
+    ],
+    [
+     417.0,
+     56
+    ],
+    [
+     419.0,
+     57
+    ],
+    [
+     421.0,
+     56
+    ],
+    [
+     423.0,
+     61
+    ],
+    [
+     425.0,
+     56
+    ],
+    [
+     427.0,
+     60
+    ],
+    [
+     429.0,
+     63
+    ],
+    [
+     431.0,
+     61
+    ],
+    [
+     433.0,
+     49
+    ],
+    [
+     435.0,
+     51
+    ],
+    [
+     437.0,
+     50
+    ],
+    [
+     439.0,
+     53
+    ],
+    [
+     441.0,
+     54
+    ],
+    [
+     443.0,
+     53
+    ],
+    [
+     445.0,
+     50
+    ],
+    [
+     447.0,
+     52
+    ],
+    [
+     449.0,
+     52
+    ],
+    [
+     451.0,
+     51
+    ],
+    [
+     453.0,
+     46
+    ],
+    [
+     455.0,
+     47
+    ],
+    [
+     457.0,
+     52
+    ],
+    [
+     459.0,
+     55
+    ],
+    [
+     461.0,
+     54
+    ],
+    [
+     463.0,
+     49
+    ],
+    [
+     465.0,
+     50
+    ],
+    [
+     467.0,
+     54
+    ],
+    [
+     469.0,
+     51
+    ],
+    [
+     471.0,
+     50
+    ],
+    [
+     473.0,
+     52
+    ],
+    [
+     475.0,
+     48
+    ]
+   ],
+   "totals_min": {
+    "deep": 127,
+    "light": 231,
+    "rem": 102,
+    "awake": 15
+   },
+   "awakenings": 3,
+   "mismatch_min": 0.0,
+   "length_min": 475.4
+  },
+  {
+   "date": "2026-11-18",
+   "start": "23:11",
+   "end": "07:53",
+   "asleep_min": 507,
+   "need_min": 500,
+   "performance_pct": 100,
+   "restorative_pct": 54,
+   "efficiency_pct": 97,
+   "in_bed_min": 522,
+   "score": 82,
+   "hr_low": 45,
+   "hr_avg": 52,
+   "respiration": 14.3,
+   "hrv_avg": 54,
+   "body_battery_change": 57,
+   "resting_hr": 45,
+   "segments": [
+    [
+     0.0,
+     12.0,
+     "light"
+    ],
+    [
+     12.0,
+     46.0,
+     "deep"
+    ],
+    [
+     46.0,
+     65.0,
+     "light"
+    ],
+    [
+     65.0,
+     77.0,
+     "rem"
+    ],
+    [
+     77.0,
+     91.0,
+     "light"
+    ],
+    [
+     91.0,
+     119.0,
+     "deep"
+    ],
+    [
+     119.0,
+     142.0,
+     "light"
+    ],
+    [
+     142.0,
+     156.0,
+     "rem"
+    ],
+    [
+     156.0,
+     162.0,
+     "awake"
+    ],
+    [
+     162.0,
+     181.0,
+     "light"
+    ],
+    [
+     181.0,
+     207.0,
+     "deep"
+    ],
+    [
+     207.0,
+     226.0,
+     "light"
+    ],
+    [
+     226.0,
+     243.0,
+     "rem"
+    ],
+    [
+     243.0,
+     249.0,
+     "awake"
+    ],
+    [
+     249.0,
+     266.0,
+     "light"
+    ],
+    [
+     266.0,
+     284.0,
+     "deep"
+    ],
+    [
+     284.0,
+     299.0,
+     "light"
+    ],
+    [
+     299.0,
+     325.0,
+     "rem"
+    ],
+    [
+     325.0,
+     337.0,
+     "light"
+    ],
+    [
+     337.0,
+     344.0,
+     "deep"
+    ],
+    [
+     344.0,
+     359.0,
+     "light"
+    ],
+    [
+     359.0,
+     391.0,
+     "rem"
+    ],
+    [
+     391.0,
+     394.0,
+     "awake"
+    ],
+    [
+     394.0,
+     416.0,
+     "light"
+    ],
+    [
+     416.0,
+     420.0,
+     "deep"
+    ],
+    [
+     420.0,
+     438.0,
+     "light"
+    ],
+    [
+     438.0,
+     470.0,
+     "rem"
+    ],
+    [
+     470.0,
+     484.0,
+     "light"
+    ],
+    [
+     484.0,
+     488.0,
+     "deep"
+    ],
+    [
+     488.0,
+     504.0,
+     "light"
+    ],
+    [
+     504.0,
+     522.5,
+     "rem"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     52
+    ],
+    [
+     2.0,
+     51
+    ],
+    [
+     4.0,
+     53
+    ],
+    [
+     6.0,
+     52
+    ],
+    [
+     8.0,
+     52
+    ],
+    [
+     10.0,
+     53
+    ],
+    [
+     12.0,
+     48
+    ],
+    [
+     14.0,
+     46
+    ],
+    [
+     16.0,
+     47
+    ],
+    [
+     18.0,
+     45
+    ],
+    [
+     20.0,
+     47
+    ],
+    [
+     22.0,
+     45
+    ],
+    [
+     24.0,
+     46
+    ],
+    [
+     26.0,
+     48
+    ],
+    [
+     28.0,
+     48
+    ],
+    [
+     30.0,
+     49
+    ],
+    [
+     32.0,
+     48
+    ],
+    [
+     34.0,
+     48
+    ],
+    [
+     36.0,
+     46
+    ],
+    [
+     38.0,
+     45
+    ],
+    [
+     40.0,
+     46
+    ],
+    [
+     42.0,
+     47
+    ],
+    [
+     44.0,
+     46
+    ],
+    [
+     46.0,
+     49
+    ],
+    [
+     48.0,
+     53
+    ],
+    [
+     50.0,
+     53
+    ],
+    [
+     52.0,
+     53
+    ],
+    [
+     54.0,
+     52
+    ],
+    [
+     56.0,
+     52
+    ],
+    [
+     58.0,
+     50
+    ],
+    [
+     60.0,
+     54
+    ],
+    [
+     62.0,
+     54
+    ],
+    [
+     64.0,
+     51
+    ],
+    [
+     65.0,
+     57
+    ],
+    [
+     67.0,
+     58
+    ],
+    [
+     69.0,
+     56
+    ],
+    [
+     71.0,
+     55
+    ],
+    [
+     73.0,
+     56
+    ],
+    [
+     75.0,
+     57
+    ],
+    [
+     77.0,
+     51
+    ],
+    [
+     79.0,
+     51
+    ],
+    [
+     81.0,
+     52
+    ],
+    [
+     83.0,
+     54
+    ],
+    [
+     85.0,
+     51
+    ],
+    [
+     87.0,
+     51
+    ],
+    [
+     89.0,
+     50
+    ],
+    [
+     91.0,
+     47
+    ],
+    [
+     93.0,
+     46
+    ],
+    [
+     95.0,
+     48
+    ],
+    [
+     97.0,
+     48
+    ],
+    [
+     99.0,
+     48
+    ],
+    [
+     101.0,
+     45
+    ],
+    [
+     103.0,
+     46
+    ],
+    [
+     105.0,
+     47
+    ],
+    [
+     107.0,
+     46
+    ],
+    [
+     109.0,
+     47
+    ],
+    [
+     111.0,
+     48
+    ],
+    [
+     113.0,
+     46
+    ],
+    [
+     115.0,
+     47
+    ],
+    [
+     117.0,
+     46
+    ],
+    [
+     119.0,
+     52
+    ],
+    [
+     121.0,
+     53
+    ],
+    [
+     123.0,
+     52
+    ],
+    [
+     125.0,
+     53
+    ],
+    [
+     127.0,
+     51
+    ],
+    [
+     129.0,
+     49
+    ],
+    [
+     131.0,
+     51
+    ],
+    [
+     133.0,
+     53
+    ],
+    [
+     135.0,
+     51
+    ],
+    [
+     137.0,
+     52
+    ],
+    [
+     139.0,
+     53
+    ],
+    [
+     141.0,
+     53
+    ],
+    [
+     142.0,
+     56
+    ],
+    [
+     144.0,
+     58
+    ],
+    [
+     146.0,
+     57
+    ],
+    [
+     148.0,
+     57
+    ],
+    [
+     150.0,
+     55
+    ],
+    [
+     152.0,
+     55
+    ],
+    [
+     154.0,
+     56
+    ],
+    [
+     156.0,
+     65
+    ],
+    [
+     158.0,
+     62
+    ],
+    [
+     160.0,
+     62
+    ],
+    [
+     162.0,
+     52
+    ],
+    [
+     164.0,
+     53
+    ],
+    [
+     166.0,
+     51
+    ],
+    [
+     168.0,
+     53
+    ],
+    [
+     170.0,
+     53
+    ],
+    [
+     172.0,
+     54
+    ],
+    [
+     174.0,
+     51
+    ],
+    [
+     176.0,
+     51
+    ],
+    [
+     178.0,
+     51
+    ],
+    [
+     180.0,
+     52
+    ],
+    [
+     181.0,
+     47
+    ],
+    [
+     183.0,
+     46
+    ],
+    [
+     185.0,
+     45
+    ],
+    [
+     187.0,
+     50
+    ],
+    [
+     189.0,
+     46
+    ],
+    [
+     191.0,
+     47
+    ],
+    [
+     193.0,
+     46
+    ],
+    [
+     195.0,
+     47
+    ],
+    [
+     197.0,
+     49
+    ],
+    [
+     199.0,
+     49
+    ],
+    [
+     201.0,
+     47
+    ],
+    [
+     203.0,
+     49
+    ],
+    [
+     205.0,
+     48
+    ],
+    [
+     207.0,
+     54
+    ],
+    [
+     209.0,
+     51
+    ],
+    [
+     211.0,
+     54
+    ],
+    [
+     213.0,
+     52
+    ],
+    [
+     215.0,
+     52
+    ],
+    [
+     217.0,
+     52
+    ],
+    [
+     219.0,
+     54
+    ],
+    [
+     221.0,
+     53
+    ],
+    [
+     223.0,
+     51
+    ],
+    [
+     225.0,
+     51
+    ],
+    [
+     226.0,
+     55
+    ],
+    [
+     228.0,
+     56
+    ],
+    [
+     230.0,
+     56
+    ],
+    [
+     232.0,
+     58
+    ],
+    [
+     234.0,
+     56
+    ],
+    [
+     236.0,
+     55
+    ],
+    [
+     238.0,
+     57
+    ],
+    [
+     240.0,
+     60
+    ],
+    [
+     242.0,
+     55
+    ],
+    [
+     243.0,
+     62
+    ],
+    [
+     245.0,
+     62
+    ],
+    [
+     247.0,
+     62
+    ],
+    [
+     249.0,
+     54
+    ],
+    [
+     251.0,
+     50
+    ],
+    [
+     253.0,
+     52
+    ],
+    [
+     255.0,
+     53
+    ],
+    [
+     257.0,
+     52
+    ],
+    [
+     259.0,
+     52
+    ],
+    [
+     261.0,
+     51
+    ],
+    [
+     263.0,
+     52
+    ],
+    [
+     265.0,
+     50
+    ],
+    [
+     266.0,
+     46
+    ],
+    [
+     268.0,
+     48
+    ],
+    [
+     270.0,
+     48
+    ],
+    [
+     272.0,
+     45
+    ],
+    [
+     274.0,
+     46
+    ],
+    [
+     276.0,
+     46
+    ],
+    [
+     278.0,
+     45
+    ],
+    [
+     280.0,
+     45
+    ],
+    [
+     282.0,
+     47
+    ],
+    [
+     284.0,
+     54
+    ],
+    [
+     286.0,
+     53
+    ],
+    [
+     288.0,
+     51
+    ],
+    [
+     290.0,
+     52
+    ],
+    [
+     292.0,
+     52
+    ],
+    [
+     294.0,
+     51
+    ],
+    [
+     296.0,
+     50
+    ],
+    [
+     298.0,
+     51
+    ],
+    [
+     299.0,
+     55
+    ],
+    [
+     301.0,
+     56
+    ],
+    [
+     303.0,
+     56
+    ],
+    [
+     305.0,
+     57
+    ],
+    [
+     307.0,
+     57
+    ],
+    [
+     309.0,
+     56
+    ],
+    [
+     311.0,
+     57
+    ],
+    [
+     313.0,
+     58
+    ],
+    [
+     315.0,
+     55
+    ],
+    [
+     317.0,
+     57
+    ],
+    [
+     319.0,
+     56
+    ],
+    [
+     321.0,
+     55
+    ],
+    [
+     323.0,
+     61
+    ],
+    [
+     325.0,
+     53
+    ],
+    [
+     327.0,
+     52
+    ],
+    [
+     329.0,
+     54
+    ],
+    [
+     331.0,
+     52
+    ],
+    [
+     333.0,
+     52
+    ],
+    [
+     335.0,
+     54
+    ],
+    [
+     337.0,
+     45
+    ],
+    [
+     339.0,
+     50
+    ],
+    [
+     341.0,
+     47
+    ],
+    [
+     343.0,
+     45
+    ],
+    [
+     344.0,
+     52
+    ],
+    [
+     346.0,
+     54
+    ],
+    [
+     348.0,
+     54
+    ],
+    [
+     350.0,
+     51
+    ],
+    [
+     352.0,
+     53
+    ],
+    [
+     354.0,
+     51
+    ],
+    [
+     356.0,
+     51
+    ],
+    [
+     358.0,
+     52
+    ],
+    [
+     359.0,
+     56
+    ],
+    [
+     361.0,
+     57
+    ],
+    [
+     363.0,
+     57
+    ],
+    [
+     365.0,
+     57
+    ],
+    [
+     367.0,
+     55
+    ],
+    [
+     369.0,
+     56
+    ],
+    [
+     371.0,
+     56
+    ],
+    [
+     373.0,
+     56
+    ],
+    [
+     375.0,
+     58
+    ],
+    [
+     377.0,
+     55
+    ],
+    [
+     379.0,
+     56
+    ],
+    [
+     381.0,
+     55
+    ],
+    [
+     383.0,
+     55
+    ],
+    [
+     385.0,
+     54
+    ],
+    [
+     387.0,
+     57
+    ],
+    [
+     389.0,
+     54
+    ],
+    [
+     391.0,
+     61
+    ],
+    [
+     393.0,
+     60
+    ],
+    [
+     394.0,
+     53
+    ],
+    [
+     396.0,
+     51
+    ],
+    [
+     398.0,
+     53
+    ],
+    [
+     400.0,
+     51
+    ],
+    [
+     402.0,
+     54
+    ],
+    [
+     404.0,
+     54
+    ],
+    [
+     406.0,
+     53
+    ],
+    [
+     408.0,
+     51
+    ],
+    [
+     410.0,
+     51
+    ],
+    [
+     412.0,
+     50
+    ],
+    [
+     414.0,
+     55
+    ],
+    [
+     416.0,
+     50
+    ],
+    [
+     418.0,
+     46
+    ],
+    [
+     420.0,
+     52
+    ],
+    [
+     422.0,
+     49
+    ],
+    [
+     424.0,
+     51
+    ],
+    [
+     426.0,
+     53
+    ],
+    [
+     428.0,
+     53
+    ],
+    [
+     430.0,
+     50
+    ],
+    [
+     432.0,
+     52
+    ],
+    [
+     434.0,
+     50
+    ],
+    [
+     436.0,
+     52
+    ],
+    [
+     438.0,
+     55
+    ],
+    [
+     440.0,
+     57
+    ],
+    [
+     442.0,
+     55
+    ],
+    [
+     444.0,
+     58
+    ],
+    [
+     446.0,
+     60
+    ],
+    [
+     448.0,
+     55
+    ],
+    [
+     450.0,
+     56
+    ],
+    [
+     452.0,
+     57
+    ],
+    [
+     454.0,
+     55
+    ],
+    [
+     456.0,
+     57
+    ],
+    [
+     458.0,
+     57
+    ],
+    [
+     460.0,
+     57
+    ],
+    [
+     462.0,
+     57
+    ],
+    [
+     464.0,
+     57
+    ],
+    [
+     466.0,
+     59
+    ],
+    [
+     468.0,
+     55
+    ],
+    [
+     470.0,
+     53
+    ],
+    [
+     472.0,
+     51
+    ],
+    [
+     474.0,
+     53
+    ],
+    [
+     476.0,
+     52
+    ],
+    [
+     478.0,
+     53
+    ],
+    [
+     480.0,
+     55
+    ],
+    [
+     482.0,
+     53
+    ],
+    [
+     484.0,
+     49
+    ],
+    [
+     486.0,
+     48
+    ],
+    [
+     488.0,
+     52
+    ],
+    [
+     490.0,
+     53
+    ],
+    [
+     492.0,
+     51
+    ],
+    [
+     494.0,
+     52
+    ],
+    [
+     496.0,
+     51
+    ],
+    [
+     498.0,
+     54
+    ],
+    [
+     500.0,
+     52
+    ],
+    [
+     502.0,
+     55
+    ],
+    [
+     504.0,
+     54
+    ],
+    [
+     506.0,
+     55
+    ],
+    [
+     508.0,
+     53
+    ],
+    [
+     510.0,
+     55
+    ],
+    [
+     512.0,
+     55
+    ],
+    [
+     514.0,
+     57
+    ],
+    [
+     516.0,
+     57
+    ],
+    [
+     518.0,
+     54
+    ],
+    [
+     520.0,
+     56
+    ],
+    [
+     522.0,
+     55
+    ]
+   ],
+   "totals_min": {
+    "deep": 121,
+    "light": 235,
+    "rem": 151,
+    "awake": 15
+   },
+   "awakenings": 3,
+   "mismatch_min": 0.0,
+   "length_min": 522.5
+  },
+  {
+   "date": "2026-11-19",
+   "start": "23:09",
+   "end": "06:22",
+   "asleep_min": 424,
+   "need_min": 500,
+   "performance_pct": 85,
+   "restorative_pct": 50,
+   "efficiency_pct": 98,
+   "in_bed_min": 434,
+   "score": 73,
+   "hr_low": 44,
+   "hr_avg": 52,
+   "respiration": 14.0,
+   "hrv_avg": 65,
+   "body_battery_change": 69,
+   "resting_hr": 44,
+   "segments": [
+    [
+     0.0,
+     22.0,
+     "light"
+    ],
+    [
+     22.0,
+     57.0,
+     "deep"
+    ],
+    [
+     57.0,
+     75.0,
+     "light"
+    ],
+    [
+     75.0,
+     88.0,
+     "rem"
+    ],
+    [
+     88.0,
+     91.0,
+     "awake"
+    ],
+    [
+     91.0,
+     103.0,
+     "light"
+    ],
+    [
+     103.0,
+     127.0,
+     "deep"
+    ],
+    [
+     127.0,
+     146.0,
+     "light"
+    ],
+    [
+     146.0,
+     160.0,
+     "rem"
+    ],
+    [
+     160.0,
+     180.0,
+     "light"
+    ],
+    [
+     180.0,
+     204.0,
+     "deep"
+    ],
+    [
+     204.0,
+     221.0,
+     "light"
+    ],
+    [
+     221.0,
+     244.0,
+     "rem"
+    ],
+    [
+     244.0,
+     249.0,
+     "awake"
+    ],
+    [
+     249.0,
+     266.0,
+     "light"
+    ],
+    [
+     266.0,
+     281.0,
+     "deep"
+    ],
+    [
+     281.0,
+     302.0,
+     "light"
+    ],
+    [
+     302.0,
+     325.0,
+     "rem"
+    ],
+    [
+     325.0,
+     343.0,
+     "light"
+    ],
+    [
+     343.0,
+     351.0,
+     "deep"
+    ],
+    [
+     351.0,
+     366.0,
+     "light"
+    ],
+    [
+     366.0,
+     395.0,
+     "rem"
+    ],
+    [
+     395.0,
+     397.0,
+     "awake"
+    ],
+    [
+     397.0,
+     419.0,
+     "light"
+    ],
+    [
+     419.0,
+     423.0,
+     "deep"
+    ],
+    [
+     423.0,
+     433.7,
+     "light"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     53
+    ],
+    [
+     2.0,
+     55
+    ],
+    [
+     4.0,
+     52
+    ],
+    [
+     6.0,
+     50
+    ],
+    [
+     8.0,
+     52
+    ],
+    [
+     10.0,
+     52
+    ],
+    [
+     12.0,
+     52
+    ],
+    [
+     14.0,
+     51
+    ],
+    [
+     16.0,
+     51
+    ],
+    [
+     18.0,
+     54
+    ],
+    [
+     20.0,
+     50
+    ],
+    [
+     22.0,
+     44
+    ],
+    [
+     24.0,
+     49
+    ],
+    [
+     26.0,
+     48
+    ],
+    [
+     28.0,
+     46
+    ],
+    [
+     30.0,
+     47
+    ],
+    [
+     32.0,
+     46
+    ],
+    [
+     34.0,
+     45
+    ],
+    [
+     36.0,
+     48
+    ],
+    [
+     38.0,
+     48
+    ],
+    [
+     40.0,
+     48
+    ],
+    [
+     42.0,
+     49
+    ],
+    [
+     44.0,
+     46
+    ],
+    [
+     46.0,
+     48
+    ],
+    [
+     48.0,
+     48
+    ],
+    [
+     50.0,
+     49
+    ],
+    [
+     52.0,
+     49
+    ],
+    [
+     54.0,
+     46
+    ],
+    [
+     56.0,
+     44
+    ],
+    [
+     57.0,
+     55
+    ],
+    [
+     59.0,
+     54
+    ],
+    [
+     61.0,
+     54
+    ],
+    [
+     63.0,
+     53
+    ],
+    [
+     65.0,
+     51
+    ],
+    [
+     67.0,
+     52
+    ],
+    [
+     69.0,
+     56
+    ],
+    [
+     71.0,
+     53
+    ],
+    [
+     73.0,
+     53
+    ],
+    [
+     75.0,
+     57
+    ],
+    [
+     77.0,
+     55
+    ],
+    [
+     79.0,
+     58
+    ],
+    [
+     81.0,
+     57
+    ],
+    [
+     83.0,
+     55
+    ],
+    [
+     85.0,
+     56
+    ],
+    [
+     87.0,
+     59
+    ],
+    [
+     88.0,
+     62
+    ],
+    [
+     90.0,
+     59
+    ],
+    [
+     91.0,
+     53
+    ],
+    [
+     93.0,
+     50
+    ],
+    [
+     95.0,
+     53
+    ],
+    [
+     97.0,
+     52
+    ],
+    [
+     99.0,
+     50
+    ],
+    [
+     101.0,
+     49
+    ],
+    [
+     103.0,
+     49
+    ],
+    [
+     105.0,
+     46
+    ],
+    [
+     107.0,
+     49
+    ],
+    [
+     109.0,
+     48
+    ],
+    [
+     111.0,
+     48
+    ],
+    [
+     113.0,
+     48
+    ],
+    [
+     115.0,
+     47
+    ],
+    [
+     117.0,
+     47
+    ],
+    [
+     119.0,
+     48
+    ],
+    [
+     121.0,
+     46
+    ],
+    [
+     123.0,
+     47
+    ],
+    [
+     125.0,
+     48
+    ],
+    [
+     127.0,
+     51
+    ],
+    [
+     129.0,
+     51
+    ],
+    [
+     131.0,
+     53
+    ],
+    [
+     133.0,
+     49
+    ],
+    [
+     135.0,
+     52
+    ],
+    [
+     137.0,
+     50
+    ],
+    [
+     139.0,
+     53
+    ],
+    [
+     141.0,
+     54
+    ],
+    [
+     143.0,
+     49
+    ],
+    [
+     145.0,
+     52
+    ],
+    [
+     146.0,
+     54
+    ],
+    [
+     148.0,
+     56
+    ],
+    [
+     150.0,
+     57
+    ],
+    [
+     152.0,
+     53
+    ],
+    [
+     154.0,
+     56
+    ],
+    [
+     156.0,
+     54
+    ],
+    [
+     158.0,
+     54
+    ],
+    [
+     160.0,
+     53
+    ],
+    [
+     162.0,
+     53
+    ],
+    [
+     164.0,
+     51
+    ],
+    [
+     166.0,
+     51
+    ],
+    [
+     168.0,
+     50
+    ],
+    [
+     170.0,
+     51
+    ],
+    [
+     172.0,
+     53
+    ],
+    [
+     174.0,
+     52
+    ],
+    [
+     176.0,
+     54
+    ],
+    [
+     178.0,
+     52
+    ],
+    [
+     180.0,
+     48
+    ],
+    [
+     182.0,
+     48
+    ],
+    [
+     184.0,
+     47
+    ],
+    [
+     186.0,
+     48
+    ],
+    [
+     188.0,
+     45
+    ],
+    [
+     190.0,
+     47
+    ],
+    [
+     192.0,
+     49
+    ],
+    [
+     194.0,
+     49
+    ],
+    [
+     196.0,
+     47
+    ],
+    [
+     198.0,
+     44
+    ],
+    [
+     200.0,
+     45
+    ],
+    [
+     202.0,
+     47
+    ],
+    [
+     204.0,
+     51
+    ],
+    [
+     206.0,
+     51
+    ],
+    [
+     208.0,
+     52
+    ],
+    [
+     210.0,
+     52
+    ],
+    [
+     212.0,
+     50
+    ],
+    [
+     214.0,
+     53
+    ],
+    [
+     216.0,
+     52
+    ],
+    [
+     218.0,
+     54
+    ],
+    [
+     220.0,
+     49
+    ],
+    [
+     221.0,
+     58
+    ],
+    [
+     223.0,
+     55
+    ],
+    [
+     225.0,
+     57
+    ],
+    [
+     227.0,
+     51
+    ],
+    [
+     229.0,
+     56
+    ],
+    [
+     231.0,
+     57
+    ],
+    [
+     233.0,
+     55
+    ],
+    [
+     235.0,
+     54
+    ],
+    [
+     237.0,
+     55
+    ],
+    [
+     239.0,
+     54
+    ],
+    [
+     241.0,
+     57
+    ],
+    [
+     243.0,
+     56
+    ],
+    [
+     244.0,
+     60
+    ],
+    [
+     246.0,
+     60
+    ],
+    [
+     248.0,
+     62
+    ],
+    [
+     249.0,
+     52
+    ],
+    [
+     251.0,
+     52
+    ],
+    [
+     253.0,
+     49
+    ],
+    [
+     255.0,
+     53
+    ],
+    [
+     257.0,
+     52
+    ],
+    [
+     259.0,
+     54
+    ],
+    [
+     261.0,
+     52
+    ],
+    [
+     263.0,
+     53
+    ],
+    [
+     265.0,
+     53
+    ],
+    [
+     266.0,
+     46
+    ],
+    [
+     268.0,
+     47
+    ],
+    [
+     270.0,
+     49
+    ],
+    [
+     272.0,
+     47
+    ],
+    [
+     274.0,
+     50
+    ],
+    [
+     276.0,
+     46
+    ],
+    [
+     278.0,
+     46
+    ],
+    [
+     280.0,
+     46
+    ],
+    [
+     281.0,
+     52
+    ],
+    [
+     283.0,
+     53
+    ],
+    [
+     285.0,
+     51
+    ],
+    [
+     287.0,
+     52
+    ],
+    [
+     289.0,
+     52
+    ],
+    [
+     291.0,
+     53
+    ],
+    [
+     293.0,
+     52
+    ],
+    [
+     295.0,
+     52
+    ],
+    [
+     297.0,
+     52
+    ],
+    [
+     299.0,
+     50
+    ],
+    [
+     301.0,
+     51
+    ],
+    [
+     302.0,
+     55
+    ],
+    [
+     304.0,
+     56
+    ],
+    [
+     306.0,
+     55
+    ],
+    [
+     308.0,
+     53
+    ],
+    [
+     310.0,
+     55
+    ],
+    [
+     312.0,
+     61
+    ],
+    [
+     314.0,
+     58
+    ],
+    [
+     316.0,
+     53
+    ],
+    [
+     318.0,
+     56
+    ],
+    [
+     320.0,
+     57
+    ],
+    [
+     322.0,
+     56
+    ],
+    [
+     324.0,
+     54
+    ],
+    [
+     325.0,
+     53
+    ],
+    [
+     327.0,
+     51
+    ],
+    [
+     329.0,
+     52
+    ],
+    [
+     331.0,
+     51
+    ],
+    [
+     333.0,
+     52
+    ],
+    [
+     335.0,
+     52
+    ],
+    [
+     337.0,
+     54
+    ],
+    [
+     339.0,
+     53
+    ],
+    [
+     341.0,
+     54
+    ],
+    [
+     343.0,
+     46
+    ],
+    [
+     345.0,
+     47
+    ],
+    [
+     347.0,
+     47
+    ],
+    [
+     349.0,
+     48
+    ],
+    [
+     351.0,
+     51
+    ],
+    [
+     353.0,
+     54
+    ],
+    [
+     355.0,
+     52
+    ],
+    [
+     357.0,
+     53
+    ],
+    [
+     359.0,
+     52
+    ],
+    [
+     361.0,
+     52
+    ],
+    [
+     363.0,
+     50
+    ],
+    [
+     365.0,
+     49
+    ],
+    [
+     366.0,
+     57
+    ],
+    [
+     368.0,
+     58
+    ],
+    [
+     370.0,
+     55
+    ],
+    [
+     372.0,
+     54
+    ],
+    [
+     374.0,
+     55
+    ],
+    [
+     376.0,
+     56
+    ],
+    [
+     378.0,
+     57
+    ],
+    [
+     380.0,
+     60
+    ],
+    [
+     382.0,
+     55
+    ],
+    [
+     384.0,
+     57
+    ],
+    [
+     386.0,
+     58
+    ],
+    [
+     388.0,
+     54
+    ],
+    [
+     390.0,
+     56
+    ],
+    [
+     392.0,
+     56
+    ],
+    [
+     394.0,
+     55
+    ],
+    [
+     395.0,
+     61
+    ],
+    [
+     397.0,
+     49
+    ],
+    [
+     399.0,
+     51
+    ],
+    [
+     401.0,
+     53
+    ],
+    [
+     403.0,
+     53
+    ],
+    [
+     405.0,
+     51
+    ],
+    [
+     407.0,
+     52
+    ],
+    [
+     409.0,
+     50
+    ],
+    [
+     411.0,
+     54
+    ],
+    [
+     413.0,
+     51
+    ],
+    [
+     415.0,
+     52
+    ],
+    [
+     417.0,
+     52
+    ],
+    [
+     419.0,
+     45
+    ],
+    [
+     421.0,
+     47
+    ],
+    [
+     423.0,
+     52
+    ],
+    [
+     425.0,
+     53
+    ],
+    [
+     427.0,
+     52
+    ],
+    [
+     429.0,
+     52
+    ],
+    [
+     431.0,
+     52
+    ],
+    [
+     433.0,
+     52
+    ]
+   ],
+   "totals_min": {
+    "deep": 110,
+    "light": 212,
+    "rem": 102,
+    "awake": 10
+   },
+   "awakenings": 3,
+   "mismatch_min": 0.0,
+   "length_min": 433.7
+  },
+  {
+   "date": "2026-11-20",
+   "start": "23:18",
+   "end": "08:12",
+   "asleep_min": 524,
+   "need_min": 500,
+   "performance_pct": 100,
+   "restorative_pct": 53,
+   "efficiency_pct": 98,
+   "in_bed_min": 535,
+   "score": 87,
+   "hr_low": 44,
+   "hr_avg": 52,
+   "respiration": 14.7,
+   "hrv_avg": 61,
+   "body_battery_change": 65,
+   "resting_hr": 44,
+   "segments": [
+    [
+     0.0,
+     14.0,
+     "light"
+    ],
+    [
+     14.0,
+     58.0,
+     "deep"
+    ],
+    [
+     58.0,
+     82.0,
+     "light"
+    ],
+    [
+     82.0,
+     96.0,
+     "rem"
+    ],
+    [
+     96.0,
+     113.0,
+     "light"
+    ],
+    [
+     113.0,
+     147.0,
+     "deep"
+    ],
+    [
+     147.0,
+     162.0,
+     "light"
+    ],
+    [
+     162.0,
+     179.0,
+     "rem"
+    ],
+    [
+     179.0,
+     193.0,
+     "light"
+    ],
+    [
+     193.0,
+     220.0,
+     "deep"
+    ],
+    [
+     220.0,
+     238.0,
+     "light"
+    ],
+    [
+     238.0,
+     260.0,
+     "rem"
+    ],
+    [
+     260.0,
+     281.0,
+     "light"
+    ],
+    [
+     281.0,
+     299.0,
+     "deep"
+    ],
+    [
+     299.0,
+     318.0,
+     "light"
+    ],
+    [
+     318.0,
+     342.0,
+     "rem"
+    ],
+    [
+     342.0,
+     347.0,
+     "awake"
+    ],
+    [
+     347.0,
+     364.0,
+     "light"
+    ],
+    [
+     364.0,
+     373.0,
+     "deep"
+    ],
+    [
+     373.0,
+     388.0,
+     "light"
+    ],
+    [
+     388.0,
+     415.0,
+     "rem"
+    ],
+    [
+     415.0,
+     421.0,
+     "awake"
+    ],
+    [
+     421.0,
+     435.0,
+     "light"
+    ],
+    [
+     435.0,
+     439.0,
+     "deep"
+    ],
+    [
+     439.0,
+     456.0,
+     "light"
+    ],
+    [
+     456.0,
+     492.0,
+     "rem"
+    ],
+    [
+     492.0,
+     509.0,
+     "light"
+    ],
+    [
+     509.0,
+     513.0,
+     "deep"
+    ],
+    [
+     513.0,
+     534.5,
+     "light"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     52
+    ],
+    [
+     2.0,
+     52
+    ],
+    [
+     4.0,
+     50
+    ],
+    [
+     6.0,
+     53
+    ],
+    [
+     8.0,
+     53
+    ],
+    [
+     10.0,
+     51
+    ],
+    [
+     12.0,
+     50
+    ],
+    [
+     14.0,
+     47
+    ],
+    [
+     16.0,
+     49
+    ],
+    [
+     18.0,
+     45
+    ],
+    [
+     20.0,
+     47
+    ],
+    [
+     22.0,
+     45
+    ],
+    [
+     24.0,
+     47
+    ],
+    [
+     26.0,
+     45
+    ],
+    [
+     28.0,
+     48
+    ],
+    [
+     30.0,
+     49
+    ],
+    [
+     32.0,
+     49
+    ],
+    [
+     34.0,
+     46
+    ],
+    [
+     36.0,
+     49
+    ],
+    [
+     38.0,
+     48
+    ],
+    [
+     40.0,
+     47
+    ],
+    [
+     42.0,
+     47
+    ],
+    [
+     44.0,
+     44
+    ],
+    [
+     46.0,
+     44
+    ],
+    [
+     48.0,
+     46
+    ],
+    [
+     50.0,
+     49
+    ],
+    [
+     52.0,
+     50
+    ],
+    [
+     54.0,
+     50
+    ],
+    [
+     56.0,
+     48
+    ],
+    [
+     58.0,
+     50
+    ],
+    [
+     60.0,
+     53
+    ],
+    [
+     62.0,
+     50
+    ],
+    [
+     64.0,
+     54
+    ],
+    [
+     66.0,
+     55
+    ],
+    [
+     68.0,
+     50
+    ],
+    [
+     70.0,
+     53
+    ],
+    [
+     72.0,
+     52
+    ],
+    [
+     74.0,
+     52
+    ],
+    [
+     76.0,
+     52
+    ],
+    [
+     78.0,
+     53
+    ],
+    [
+     80.0,
+     52
+    ],
+    [
+     82.0,
+     57
+    ],
+    [
+     84.0,
+     53
+    ],
+    [
+     86.0,
+     55
+    ],
+    [
+     88.0,
+     54
+    ],
+    [
+     90.0,
+     55
+    ],
+    [
+     92.0,
+     56
+    ],
+    [
+     94.0,
+     56
+    ],
+    [
+     96.0,
+     52
+    ],
+    [
+     98.0,
+     51
+    ],
+    [
+     100.0,
+     52
+    ],
+    [
+     102.0,
+     53
+    ],
+    [
+     104.0,
+     49
+    ],
+    [
+     106.0,
+     51
+    ],
+    [
+     108.0,
+     52
+    ],
+    [
+     110.0,
+     51
+    ],
+    [
+     112.0,
+     51
+    ],
+    [
+     113.0,
+     48
+    ],
+    [
+     115.0,
+     45
+    ],
+    [
+     117.0,
+     48
+    ],
+    [
+     119.0,
+     48
+    ],
+    [
+     121.0,
+     47
+    ],
+    [
+     123.0,
+     49
+    ],
+    [
+     125.0,
+     48
+    ],
+    [
+     127.0,
+     48
+    ],
+    [
+     129.0,
+     49
+    ],
+    [
+     131.0,
+     48
+    ],
+    [
+     133.0,
+     45
+    ],
+    [
+     135.0,
+     48
+    ],
+    [
+     137.0,
+     48
+    ],
+    [
+     139.0,
+     45
+    ],
+    [
+     141.0,
+     49
+    ],
+    [
+     143.0,
+     47
+    ],
+    [
+     145.0,
+     45
+    ],
+    [
+     147.0,
+     49
+    ],
+    [
+     149.0,
+     56
+    ],
+    [
+     151.0,
+     52
+    ],
+    [
+     153.0,
+     50
+    ],
+    [
+     155.0,
+     53
+    ],
+    [
+     157.0,
+     52
+    ],
+    [
+     159.0,
+     53
+    ],
+    [
+     161.0,
+     53
+    ],
+    [
+     162.0,
+     53
+    ],
+    [
+     164.0,
+     56
+    ],
+    [
+     166.0,
+     55
+    ],
+    [
+     168.0,
+     53
+    ],
+    [
+     170.0,
+     56
+    ],
+    [
+     172.0,
+     55
+    ],
+    [
+     174.0,
+     57
+    ],
+    [
+     176.0,
+     55
+    ],
+    [
+     178.0,
+     61
+    ],
+    [
+     179.0,
+     52
+    ],
+    [
+     181.0,
+     51
+    ],
+    [
+     183.0,
+     50
+    ],
+    [
+     185.0,
+     52
+    ],
+    [
+     187.0,
+     53
+    ],
+    [
+     189.0,
+     52
+    ],
+    [
+     191.0,
+     52
+    ],
+    [
+     193.0,
+     47
+    ],
+    [
+     195.0,
+     45
+    ],
+    [
+     197.0,
+     48
+    ],
+    [
+     199.0,
+     47
+    ],
+    [
+     201.0,
+     44
+    ],
+    [
+     203.0,
+     47
+    ],
+    [
+     205.0,
+     48
+    ],
+    [
+     207.0,
+     47
+    ],
+    [
+     209.0,
+     47
+    ],
+    [
+     211.0,
+     46
+    ],
+    [
+     213.0,
+     47
+    ],
+    [
+     215.0,
+     44
+    ],
+    [
+     217.0,
+     47
+    ],
+    [
+     219.0,
+     44
+    ],
+    [
+     220.0,
+     51
+    ],
+    [
+     222.0,
+     54
+    ],
+    [
+     224.0,
+     50
+    ],
+    [
+     226.0,
+     51
+    ],
+    [
+     228.0,
+     52
+    ],
+    [
+     230.0,
+     51
+    ],
+    [
+     232.0,
+     51
+    ],
+    [
+     234.0,
+     51
+    ],
+    [
+     236.0,
+     54
+    ],
+    [
+     238.0,
+     56
+    ],
+    [
+     240.0,
+     56
+    ],
+    [
+     242.0,
+     57
+    ],
+    [
+     244.0,
+     56
+    ],
+    [
+     246.0,
+     57
+    ],
+    [
+     248.0,
+     58
+    ],
+    [
+     250.0,
+     55
+    ],
+    [
+     252.0,
+     56
+    ],
+    [
+     254.0,
+     56
+    ],
+    [
+     256.0,
+     58
+    ],
+    [
+     258.0,
+     56
+    ],
+    [
+     260.0,
+     51
+    ],
+    [
+     262.0,
+     51
+    ],
+    [
+     264.0,
+     53
+    ],
+    [
+     266.0,
+     49
+    ],
+    [
+     268.0,
+     50
+    ],
+    [
+     270.0,
+     51
+    ],
+    [
+     272.0,
+     53
+    ],
+    [
+     274.0,
+     53
+    ],
+    [
+     276.0,
+     50
+    ],
+    [
+     278.0,
+     53
+    ],
+    [
+     280.0,
+     50
+    ],
+    [
+     281.0,
+     48
+    ],
+    [
+     283.0,
+     46
+    ],
+    [
+     285.0,
+     48
+    ],
+    [
+     287.0,
+     50
+    ],
+    [
+     289.0,
+     47
+    ],
+    [
+     291.0,
+     48
+    ],
+    [
+     293.0,
+     48
+    ],
+    [
+     295.0,
+     47
+    ],
+    [
+     297.0,
+     48
+    ],
+    [
+     299.0,
+     56
+    ],
+    [
+     301.0,
+     51
+    ],
+    [
+     303.0,
+     52
+    ],
+    [
+     305.0,
+     53
+    ],
+    [
+     307.0,
+     50
+    ],
+    [
+     309.0,
+     50
+    ],
+    [
+     311.0,
+     52
+    ],
+    [
+     313.0,
+     52
+    ],
+    [
+     315.0,
+     52
+    ],
+    [
+     317.0,
+     53
+    ],
+    [
+     318.0,
+     56
+    ],
+    [
+     320.0,
+     56
+    ],
+    [
+     322.0,
+     56
+    ],
+    [
+     324.0,
+     54
+    ],
+    [
+     326.0,
+     56
+    ],
+    [
+     328.0,
+     58
+    ],
+    [
+     330.0,
+     54
+    ],
+    [
+     332.0,
+     57
+    ],
+    [
+     334.0,
+     56
+    ],
+    [
+     336.0,
+     55
+    ],
+    [
+     338.0,
+     57
+    ],
+    [
+     340.0,
+     57
+    ],
+    [
+     342.0,
+     58
+    ],
+    [
+     344.0,
+     61
+    ],
+    [
+     346.0,
+     61
+    ],
+    [
+     347.0,
+     56
+    ],
+    [
+     349.0,
+     50
+    ],
+    [
+     351.0,
+     52
+    ],
+    [
+     353.0,
+     51
+    ],
+    [
+     355.0,
+     51
+    ],
+    [
+     357.0,
+     52
+    ],
+    [
+     359.0,
+     50
+    ],
+    [
+     361.0,
+     52
+    ],
+    [
+     363.0,
+     51
+    ],
+    [
+     364.0,
+     44
+    ],
+    [
+     366.0,
+     48
+    ],
+    [
+     368.0,
+     47
+    ],
+    [
+     370.0,
+     48
+    ],
+    [
+     372.0,
+     49
+    ],
+    [
+     373.0,
+     52
+    ],
+    [
+     375.0,
+     52
+    ],
+    [
+     377.0,
+     54
+    ],
+    [
+     379.0,
+     51
+    ],
+    [
+     381.0,
+     51
+    ],
+    [
+     383.0,
+     48
+    ],
+    [
+     385.0,
+     55
+    ],
+    [
+     387.0,
+     52
+    ],
+    [
+     388.0,
+     56
+    ],
+    [
+     390.0,
+     56
+    ],
+    [
+     392.0,
+     53
+    ],
+    [
+     394.0,
+     55
+    ],
+    [
+     396.0,
+     58
+    ],
+    [
+     398.0,
+     58
+    ],
+    [
+     400.0,
+     55
+    ],
+    [
+     402.0,
+     56
+    ],
+    [
+     404.0,
+     53
+    ],
+    [
+     406.0,
+     55
+    ],
+    [
+     408.0,
+     54
+    ],
+    [
+     410.0,
+     56
+    ],
+    [
+     412.0,
+     56
+    ],
+    [
+     414.0,
+     58
+    ],
+    [
+     415.0,
+     61
+    ],
+    [
+     417.0,
+     62
+    ],
+    [
+     419.0,
+     62
+    ],
+    [
+     421.0,
+     53
+    ],
+    [
+     423.0,
+     50
+    ],
+    [
+     425.0,
+     52
+    ],
+    [
+     427.0,
+     53
+    ],
+    [
+     429.0,
+     53
+    ],
+    [
+     431.0,
+     52
+    ],
+    [
+     433.0,
+     53
+    ],
+    [
+     435.0,
+     47
+    ],
+    [
+     437.0,
+     44
+    ],
+    [
+     439.0,
+     51
+    ],
+    [
+     441.0,
+     51
+    ],
+    [
+     443.0,
+     53
+    ],
+    [
+     445.0,
+     53
+    ],
+    [
+     447.0,
+     51
+    ],
+    [
+     449.0,
+     51
+    ],
+    [
+     451.0,
+     55
+    ],
+    [
+     453.0,
+     49
+    ],
+    [
+     455.0,
+     52
+    ],
+    [
+     456.0,
+     54
+    ],
+    [
+     458.0,
+     55
+    ],
+    [
+     460.0,
+     54
+    ],
+    [
+     462.0,
+     56
+    ],
+    [
+     464.0,
+     54
+    ],
+    [
+     466.0,
+     59
+    ],
+    [
+     468.0,
+     57
+    ],
+    [
+     470.0,
+     55
+    ],
+    [
+     472.0,
+     56
+    ],
+    [
+     474.0,
+     55
+    ],
+    [
+     476.0,
+     55
+    ],
+    [
+     478.0,
+     58
+    ],
+    [
+     480.0,
+     56
+    ],
+    [
+     482.0,
+     53
+    ],
+    [
+     484.0,
+     58
+    ],
+    [
+     486.0,
+     57
+    ],
+    [
+     488.0,
+     57
+    ],
+    [
+     490.0,
+     56
+    ],
+    [
+     492.0,
+     52
+    ],
+    [
+     494.0,
+     54
+    ],
+    [
+     496.0,
+     50
+    ],
+    [
+     498.0,
+     51
+    ],
+    [
+     500.0,
+     49
+    ],
+    [
+     502.0,
+     51
+    ],
+    [
+     504.0,
+     53
+    ],
+    [
+     506.0,
+     51
+    ],
+    [
+     508.0,
+     49
+    ],
+    [
+     509.0,
+     49
+    ],
+    [
+     511.0,
+     47
+    ],
+    [
+     513.0,
+     51
+    ],
+    [
+     515.0,
+     50
+    ],
+    [
+     517.0,
+     52
+    ],
+    [
+     519.0,
+     51
+    ],
+    [
+     521.0,
+     51
+    ],
+    [
+     523.0,
+     53
+    ],
+    [
+     525.0,
+     51
+    ],
+    [
+     527.0,
+     51
+    ],
+    [
+     529.0,
+     51
+    ],
+    [
+     531.0,
+     53
+    ],
+    [
+     533.0,
+     51
+    ]
+   ],
+   "totals_min": {
+    "deep": 140,
+    "light": 244,
+    "rem": 140,
+    "awake": 11
+   },
+   "awakenings": 2,
+   "mismatch_min": 0.0,
+   "length_min": 534.5
+  },
+  {
+   "date": "2026-11-21",
+   "start": "23:41",
+   "end": "07:02",
+   "asleep_min": 436,
+   "need_min": 500,
+   "performance_pct": 87,
+   "restorative_pct": 50,
+   "efficiency_pct": 99,
+   "in_bed_min": 442,
+   "score": 73,
+   "hr_low": 44,
+   "hr_avg": 52,
+   "respiration": 14.8,
+   "hrv_avg": 75,
+   "body_battery_change": 70,
+   "resting_hr": 44,
+   "segments": [
+    [
+     0.0,
+     13.0,
+     "light"
+    ],
+    [
+     13.0,
+     45.0,
+     "deep"
+    ],
+    [
+     45.0,
+     63.0,
+     "light"
+    ],
+    [
+     63.0,
+     75.0,
+     "rem"
+    ],
+    [
+     75.0,
+     77.0,
+     "awake"
+    ],
+    [
+     77.0,
+     95.0,
+     "light"
+    ],
+    [
+     95.0,
+     121.0,
+     "deep"
+    ],
+    [
+     121.0,
+     145.0,
+     "light"
+    ],
+    [
+     145.0,
+     159.0,
+     "rem"
+    ],
+    [
+     159.0,
+     181.0,
+     "light"
+    ],
+    [
+     181.0,
+     201.0,
+     "deep"
+    ],
+    [
+     201.0,
+     216.0,
+     "light"
+    ],
+    [
+     216.0,
+     233.0,
+     "rem"
+    ],
+    [
+     233.0,
+     235.0,
+     "awake"
+    ],
+    [
+     235.0,
+     249.0,
+     "light"
+    ],
+    [
+     249.0,
+     262.0,
+     "deep"
+    ],
+    [
+     262.0,
+     287.0,
+     "light"
+    ],
+    [
+     287.0,
+     308.0,
+     "rem"
+    ],
+    [
+     308.0,
+     321.0,
+     "light"
+    ],
+    [
+     321.0,
+     328.0,
+     "deep"
+    ],
+    [
+     328.0,
+     351.0,
+     "light"
+    ],
+    [
+     351.0,
+     379.0,
+     "rem"
+    ],
+    [
+     379.0,
+     381.0,
+     "awake"
+    ],
+    [
+     381.0,
+     394.0,
+     "light"
+    ],
+    [
+     394.0,
+     398.0,
+     "deep"
+    ],
+    [
+     398.0,
+     416.0,
+     "light"
+    ],
+    [
+     416.0,
+     441.6,
+     "rem"
+    ]
+   ],
+   "hr": [
+    [
+     0.0,
+     51
+    ],
+    [
+     2.0,
+     52
+    ],
+    [
+     4.0,
+     53
+    ],
+    [
+     6.0,
+     48
+    ],
+    [
+     8.0,
+     53
+    ],
+    [
+     10.0,
+     51
+    ],
+    [
+     12.0,
+     51
+    ],
+    [
+     13.0,
+     45
+    ],
+    [
+     15.0,
+     46
+    ],
+    [
+     17.0,
+     48
+    ],
+    [
+     19.0,
+     45
+    ],
+    [
+     21.0,
+     49
+    ],
+    [
+     23.0,
+     45
+    ],
+    [
+     25.0,
+     47
+    ],
+    [
+     27.0,
+     49
+    ],
+    [
+     29.0,
+     52
+    ],
+    [
+     31.0,
+     45
+    ],
+    [
+     33.0,
+     45
+    ],
+    [
+     35.0,
+     46
+    ],
+    [
+     37.0,
+     46
+    ],
+    [
+     39.0,
+     47
+    ],
+    [
+     41.0,
+     47
+    ],
+    [
+     43.0,
+     46
+    ],
+    [
+     45.0,
+     52
+    ],
+    [
+     47.0,
+     50
+    ],
+    [
+     49.0,
+     52
+    ],
+    [
+     51.0,
+     53
+    ],
+    [
+     53.0,
+     51
+    ],
+    [
+     55.0,
+     52
+    ],
+    [
+     57.0,
+     53
+    ],
+    [
+     59.0,
+     50
+    ],
+    [
+     61.0,
+     51
+    ],
+    [
+     63.0,
+     55
+    ],
+    [
+     65.0,
+     55
+    ],
+    [
+     67.0,
+     55
+    ],
+    [
+     69.0,
+     56
+    ],
+    [
+     71.0,
+     57
+    ],
+    [
+     73.0,
+     54
+    ],
+    [
+     75.0,
+     59
+    ],
+    [
+     77.0,
+     53
+    ],
+    [
+     79.0,
+     53
+    ],
+    [
+     81.0,
+     53
+    ],
+    [
+     83.0,
+     54
+    ],
+    [
+     85.0,
+     52
+    ],
+    [
+     87.0,
+     53
+    ],
+    [
+     89.0,
+     52
+    ],
+    [
+     91.0,
+     50
+    ],
+    [
+     93.0,
+     50
+    ],
+    [
+     95.0,
+     49
+    ],
+    [
+     97.0,
+     46
+    ],
+    [
+     99.0,
+     46
+    ],
+    [
+     101.0,
+     50
+    ],
+    [
+     103.0,
+     46
+    ],
+    [
+     105.0,
+     47
+    ],
+    [
+     107.0,
+     47
+    ],
+    [
+     109.0,
+     45
+    ],
+    [
+     111.0,
+     46
+    ],
+    [
+     113.0,
+     47
+    ],
+    [
+     115.0,
+     46
+    ],
+    [
+     117.0,
+     46
+    ],
+    [
+     119.0,
+     47
+    ],
+    [
+     121.0,
+     52
+    ],
+    [
+     123.0,
+     49
+    ],
+    [
+     125.0,
+     53
+    ],
+    [
+     127.0,
+     52
+    ],
+    [
+     129.0,
+     52
+    ],
+    [
+     131.0,
+     52
+    ],
+    [
+     133.0,
+     52
+    ],
+    [
+     135.0,
+     55
+    ],
+    [
+     137.0,
+     51
+    ],
+    [
+     139.0,
+     53
+    ],
+    [
+     141.0,
+     47
+    ],
+    [
+     143.0,
+     53
+    ],
+    [
+     145.0,
+     57
+    ],
+    [
+     147.0,
+     57
+    ],
+    [
+     149.0,
+     56
+    ],
+    [
+     151.0,
+     57
+    ],
+    [
+     153.0,
+     57
+    ],
+    [
+     155.0,
+     57
+    ],
+    [
+     157.0,
+     58
+    ],
+    [
+     159.0,
+     51
+    ],
+    [
+     161.0,
+     53
+    ],
+    [
+     163.0,
+     52
+    ],
+    [
+     165.0,
+     47
+    ],
+    [
+     167.0,
+     53
+    ],
+    [
+     169.0,
+     52
+    ],
+    [
+     171.0,
+     52
+    ],
+    [
+     173.0,
+     49
+    ],
+    [
+     175.0,
+     55
+    ],
+    [
+     177.0,
+     51
+    ],
+    [
+     179.0,
+     50
+    ],
+    [
+     181.0,
+     49
+    ],
+    [
+     183.0,
+     48
+    ],
+    [
+     185.0,
+     48
+    ],
+    [
+     187.0,
+     45
+    ],
+    [
+     189.0,
+     47
+    ],
+    [
+     191.0,
+     44
+    ],
+    [
+     193.0,
+     47
+    ],
+    [
+     195.0,
+     46
+    ],
+    [
+     197.0,
+     46
+    ],
+    [
+     199.0,
+     46
+    ],
+    [
+     201.0,
+     52
+    ],
+    [
+     203.0,
+     52
+    ],
+    [
+     205.0,
+     51
+    ],
+    [
+     207.0,
+     53
+    ],
+    [
+     209.0,
+     54
+    ],
+    [
+     211.0,
+     53
+    ],
+    [
+     213.0,
+     55
+    ],
+    [
+     215.0,
+     50
+    ],
+    [
+     216.0,
+     55
+    ],
+    [
+     218.0,
+     60
+    ],
+    [
+     220.0,
+     56
+    ],
+    [
+     222.0,
+     56
+    ],
+    [
+     224.0,
+     55
+    ],
+    [
+     226.0,
+     55
+    ],
+    [
+     228.0,
+     56
+    ],
+    [
+     230.0,
+     56
+    ],
+    [
+     232.0,
+     54
+    ],
+    [
+     233.0,
+     62
+    ],
+    [
+     235.0,
+     52
+    ],
+    [
+     237.0,
+     54
+    ],
+    [
+     239.0,
+     52
+    ],
+    [
+     241.0,
+     54
+    ],
+    [
+     243.0,
+     50
+    ],
+    [
+     245.0,
+     51
+    ],
+    [
+     247.0,
+     53
+    ],
+    [
+     249.0,
+     46
+    ],
+    [
+     251.0,
+     47
+    ],
+    [
+     253.0,
+     47
+    ],
+    [
+     255.0,
+     47
+    ],
+    [
+     257.0,
+     45
+    ],
+    [
+     259.0,
+     48
+    ],
+    [
+     261.0,
+     47
+    ],
+    [
+     262.0,
+     53
+    ],
+    [
+     264.0,
+     53
+    ],
+    [
+     266.0,
+     52
+    ],
+    [
+     268.0,
+     50
+    ],
+    [
+     270.0,
+     50
+    ],
+    [
+     272.0,
+     50
+    ],
+    [
+     274.0,
+     51
+    ],
+    [
+     276.0,
+     53
+    ],
+    [
+     278.0,
+     50
+    ],
+    [
+     280.0,
+     53
+    ],
+    [
+     282.0,
+     50
+    ],
+    [
+     284.0,
+     50
+    ],
+    [
+     286.0,
+     52
+    ],
+    [
+     287.0,
+     55
+    ],
+    [
+     289.0,
+     58
+    ],
+    [
+     291.0,
+     60
+    ],
+    [
+     293.0,
+     59
+    ],
+    [
+     295.0,
+     55
+    ],
+    [
+     297.0,
+     59
+    ],
+    [
+     299.0,
+     55
+    ],
+    [
+     301.0,
+     58
+    ],
+    [
+     303.0,
+     56
+    ],
+    [
+     305.0,
+     57
+    ],
+    [
+     307.0,
+     57
+    ],
+    [
+     308.0,
+     50
+    ],
+    [
+     310.0,
+     51
+    ],
+    [
+     312.0,
+     50
+    ],
+    [
+     314.0,
+     50
+    ],
+    [
+     316.0,
+     52
+    ],
+    [
+     318.0,
+     53
+    ],
+    [
+     320.0,
+     52
+    ],
+    [
+     321.0,
+     46
+    ],
+    [
+     323.0,
+     50
+    ],
+    [
+     325.0,
+     49
+    ],
+    [
+     327.0,
+     46
+    ],
+    [
+     328.0,
+     52
+    ],
+    [
+     330.0,
+     53
+    ],
+    [
+     332.0,
+     51
+    ],
+    [
+     334.0,
+     51
+    ],
+    [
+     336.0,
+     52
+    ],
+    [
+     338.0,
+     51
+    ],
+    [
+     340.0,
+     53
+    ],
+    [
+     342.0,
+     52
+    ],
+    [
+     344.0,
+     53
+    ],
+    [
+     346.0,
+     52
+    ],
+    [
+     348.0,
+     53
+    ],
+    [
+     350.0,
+     56
+    ],
+    [
+     351.0,
+     58
+    ],
+    [
+     353.0,
+     55
+    ],
+    [
+     355.0,
+     57
+    ],
+    [
+     357.0,
+     58
+    ],
+    [
+     359.0,
+     56
+    ],
+    [
+     361.0,
+     58
+    ],
+    [
+     363.0,
+     56
+    ],
+    [
+     365.0,
+     57
+    ],
+    [
+     367.0,
+     55
+    ],
+    [
+     369.0,
+     56
+    ],
+    [
+     371.0,
+     56
+    ],
+    [
+     373.0,
+     53
+    ],
+    [
+     375.0,
+     55
+    ],
+    [
+     377.0,
+     53
+    ],
+    [
+     379.0,
+     62
+    ],
+    [
+     381.0,
+     50
+    ],
+    [
+     383.0,
+     51
+    ],
+    [
+     385.0,
+     51
+    ],
+    [
+     387.0,
+     54
+    ],
+    [
+     389.0,
+     50
+    ],
+    [
+     391.0,
+     52
+    ],
+    [
+     393.0,
+     53
+    ],
+    [
+     394.0,
+     46
+    ],
+    [
+     396.0,
+     46
+    ],
+    [
+     398.0,
+     52
+    ],
+    [
+     400.0,
+     51
+    ],
+    [
+     402.0,
+     51
+    ],
+    [
+     404.0,
+     55
+    ],
+    [
+     406.0,
+     54
+    ],
+    [
+     408.0,
+     53
+    ],
+    [
+     410.0,
+     53
+    ],
+    [
+     412.0,
+     51
+    ],
+    [
+     414.0,
+     53
+    ],
+    [
+     416.0,
+     59
+    ],
+    [
+     418.0,
+     56
+    ],
+    [
+     420.0,
+     57
+    ],
+    [
+     422.0,
+     58
+    ],
+    [
+     424.0,
+     57
+    ],
+    [
+     426.0,
+     58
+    ],
+    [
+     428.0,
+     55
+    ],
+    [
+     430.0,
+     56
+    ],
+    [
+     432.0,
+     56
+    ],
+    [
+     434.0,
+     54
+    ],
+    [
+     436.0,
+     56
+    ],
+    [
+     438.0,
+     56
+    ],
+    [
+     440.0,
+     54
+    ]
+   ],
+   "totals_min": {
+    "deep": 102,
+    "light": 216,
+    "rem": 118,
+    "awake": 6
+   },
+   "awakenings": 3,
+   "mismatch_min": 0.0,
+   "length_min": 441.6
+  }
+ ],
+ "baselines": {
+  "hrv": {
+   "value": 61,
+   "weekly": null,
+   "status": "NONE",
+   "baseline": 63.8,
+   "bandLow": null,
+   "bandHigh": null
+  },
+  "rhr": {
+   "value": 52,
+   "baseline": 51.4
+  }
+ },
+ "calibrating": {
+  "nights_with_hrv": 4,
+  "needed": 7,
+  "ready": false
+ },
+ "weights": [
+  {
+   "label": "HRV vs 30d",
+   "weight": 40
+  },
+  {
+   "label": "RHR vs 30d",
+   "weight": 20
+  },
+  {
+   "label": "Sleep perf",
+   "weight": 25
+  },
+  {
+   "label": "Respiration",
+   "weight": 10
+  },
+  {
+   "label": "Skin temp",
+   "weight": 5
+  }
+ ],
+ "defs": {
+  "recovery": {
+   "source": "computed",
+   "definition": "OpenSportCoach's recovery score, 0–100: five signals against your own 30-day usual, weighted HRV 40 %, resting HR 20 %, sleep vs need 25 %, respiration 10 %, skin temperature 5 %. At your usual, HRV and resting HR earn half their points, so a good ordinary morning scores about 65–75; 67 and up reads as recovered. A signal the watch didn't record hands its weight to the others."
+  },
+  "hrv": {
+   "source": "garmin",
+   "definition": "Average HRV across the night, from your watch."
+  },
+  "hrv_band": {
+   "source": "garmin",
+   "definition": "Garmin's own balanced range for your HRV (its baseline), from the night's HRV summary."
+  },
+  "hrv_weekly": {
+   "source": "garmin",
+   "definition": "Garmin's 7-night HRV average — what its HRV status compares with the balanced band."
+  },
+  "rhr": {
+   "source": "garmin",
+   "definition": "Resting heart rate for the day, from your watch."
+  },
+  "rhr_baseline": {
+   "source": "computed",
+   "definition": "Mean of the last 30 days' resting heart rate."
+  },
+  "rhr_7d": {
+   "source": "computed",
+   "definition": "7-day average: the mean of each day and the 6 before it, over the days with a reading (at least 4) — the trend the nightly numbers wobble around."
+  },
+  "trend_7d": {
+   "source": "computed",
+   "definition": "7-day average: the mean of each day and the 6 before it, over the days with a reading (at least 4) — the trend the nightly numbers wobble around."
+  },
+  "readiness": {
+   "source": "garmin",
+   "definition": "Garmin training readiness, from the wake-up reading."
+  },
+  "sleep_performance": {
+   "source": "computed",
+   "definition": "Sleep time as a share of Garmin's sleep need for the night."
+  },
+  "sleep_score": {
+   "source": "garmin",
+   "definition": "Garmin's overall sleep score."
+  },
+  "sleep_restorative": {
+   "source": "computed",
+   "definition": "Restorative sleep: deep + REM as a share of time asleep."
+  },
+  "sleep_efficiency": {
+   "source": "computed",
+   "definition": "Sleep efficiency: time asleep ÷ time from falling asleep to waking."
+  },
+  "awakenings": {
+   "source": "garmin",
+   "definition": "Times the watch staged you awake during the night, not counting the final waking."
+  }
+ }
+}

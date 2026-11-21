@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "osc/push_result",
+  "title": "push_result",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "const": "push_result"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^r\\d+$"
+    },
+    "plan_hash": {
+      "type": "string"
+    },
+    "ok": {
+      "type": "boolean"
+    },
+    "in_sync": {
+      "type": "boolean"
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "verb": {
+            "type": "string",
+            "minLength": 1
+          },
+          "workout": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "verified",
+              "failed"
+            ]
+          },
+          "error": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "verb",
+          "workout",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "kind",
+    "request_id",
+    "plan_hash",
+    "ok",
+    "in_sync",
+    "actions",
+    "message"
+  ],
+  "additionalProperties": false
+}

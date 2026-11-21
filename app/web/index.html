@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenSportCoach</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307090B'/%3E%3Cpath d='M7 26 L16 7 L25 26' fill='none' stroke='%23F1F3F4' stroke-width='2.8'/%3E%3Cpath d='M11.5 19.5 H20.5' stroke='%23D4B27A' stroke-width='2.8'/%3E%3Ccircle cx='16' cy='7' r='2.4' fill='%23D4B27A'/%3E%3C/svg%3E" />
+    <!-- The stored theme, before the bundle loads: a light page never paints dark first (docs/DESIGN.md (app audit) U26). -->
+    <script>try { if (localStorage.getItem('adn-theme') === 'light') document.documentElement.dataset.theme = 'light'; } catch (e) { /* private window */ }</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

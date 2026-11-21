@@ -1,0 +1,83 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "osc-app-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "app/web"
+      ],
+      "port": 5173
+    },
+    {
+      "name": "osc-app-fixtures",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "app/channel/server.ts",
+        "--fixtures",
+        "--no-token",
+        "--port",
+        "5281"
+      ],
+      "port": 5281
+    },
+    {
+      "name": "osc-app-offline",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "app/channel/server.ts",
+        "--fixtures",
+        "--no-token",
+        "--offline",
+        "--port",
+        "5282"
+      ],
+      "port": 5282
+    },
+    {
+      "name": "osc-app-new-athlete",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "app/channel/server.ts",
+        "--fixtures",
+        "--set",
+        "demo-new",
+        "--no-token",
+        "--port",
+        "5283"
+      ],
+      "port": 5283
+    },
+    {
+      "name": "osc-app-startup",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "app/channel/server.ts",
+        "--fixtures",
+        "--set",
+        "demo-new",
+        "--startup-daily",
+        "--speed",
+        "0.4",
+        "--no-token",
+        "--port",
+        "5284"
+      ],
+      "port": 5284
+    },
+    {
+      "name": "osc-app-token",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "app/channel/server.ts",
+        "--fixtures",
+        "--port",
+        "5285"
+      ],
+      "port": 5285
+    }
+  ]
+}

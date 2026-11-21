@@ -1,0 +1,85 @@
+{
+ "view": "races",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:14",
+ "races": [],
+ "next": null,
+ "today": {
+  "window": null,
+  "race": null,
+  "days_to": null,
+  "day": null,
+  "of": null,
+  "from": null,
+  "to": null,
+  "intensity": true,
+  "rule": "No race window: the block's own training.",
+  "also": []
+ },
+ "season": null,
+ "due": [],
+ "kinds": {
+  "hyrox": {
+   "label": "HYROX",
+   "icon": "circuit"
+  },
+  "half_marathon": {
+   "label": "Half marathon",
+   "icon": "run"
+  },
+  "gravel": {
+   "label": "Gravel race",
+   "icon": "bike"
+  },
+  "triathlon_70_3": {
+   "label": "Triathlon 70.3",
+   "icon": "race"
+  }
+ },
+ "defs": {
+  "race_windows": {
+   "source": "coach",
+   "definition": "Race windows are counted in calendar days next to race day, from defaults per kind and priority that the athlete approved; a race may override them."
+  },
+  "race_easy": {
+   "source": "coach",
+   "definition": "An easy day before a race: no sprints, VO2 work, threshold work or tests, and no heavy legs. Easy aerobic work, mobility and a lighter upper-body gym day are fine."
+  },
+  "race_taper": {
+   "source": "coach",
+   "definition": "A taper day before an A race: the volume comes down by about half over the taper, and short race-pace efforts stay in."
+  },
+  "race_day": {
+   "source": "coach",
+   "definition": "Race day: the race, its warm-up and its fuelling, and nothing else."
+  },
+  "race_recovery": {
+   "source": "coach",
+   "definition": "A recovery day after a race: no intensity, and no long ride or long run. Easy aerobic work and mobility, and a light gym day from the second day. After an A race, short intensity may come back once its no-intensity days are over."
+  },
+  "race_priority": {
+   "source": "coach",
+   "definition": "An A race: a full taper, and the season peaks for it. A B race: a hard day with a few easy days around it — no taper, and no block built to peak for it. Not unprepared: the block before still trains what the race needs."
+  },
+  "race_countdown": {
+   "source": "computed",
+   "definition": "Days to race day; the countdown shows from 8 weeks out."
+  },
+  "race_check": {
+   "source": "computed",
+   "definition": "A race's date is due an online check when it was never checked, when the last check is more than 30 days old, when the race is within 21 days and the last check more than 7 days old, and once within 4 days of it, when start times appear. A past race is due its result until one is recorded."
+  },
+  "race_target": {
+   "source": "coach",
+   "definition": "Your own target for the race; the result is read against it."
+  },
+  "race_prediction": {
+   "source": "computed",
+   "definition": "Predicted only from data: Garmin's own race predictor for run distances (5 km to the marathon), the latest day it has, with its best of the past year and a weekly trend. Garmin predicts a fresh race, not one run off the bike. With no predictor and no benchmark-based estimate, it reads \"not tested yet\"."
+  },
+  "race_splits": {
+   "source": "computed",
+   "definition": "A race's splits are read from its Garmin activity, never typed in: a triathlon's from the legs of its multisport activity (swim, T1, bike, T2, run), a HYROX's from the legs, the laps or the exercise sets that split it into its runs, its stations and the roxzone between them. Each is that part's elapsed time — the race clock — so they add up to the race's elapsed time. A recording that doesn't fit the race's format gives none — never a guess."
+  }
+ }
+}

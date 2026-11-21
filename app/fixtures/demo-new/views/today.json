@@ -1,0 +1,2808 @@
+{
+ "view": "today",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:13",
+ "today": {
+  "date": "2026-11-20",
+  "readiness": {
+   "score": 67,
+   "level": "MODERATE",
+   "feedback": "RECOVERING"
+  },
+  "hrv": {
+   "value": 61,
+   "weekly": null,
+   "status": "NONE",
+   "baseline": 63.8,
+   "bandLow": null,
+   "bandHigh": null
+  },
+  "rhr": {
+   "value": 52,
+   "baseline": 51.4
+  },
+  "sleep": {
+   "score": 87,
+   "hours": 8.73
+  },
+  "bodyBattery": {
+   "charged": 66,
+   "drained": 42
+  },
+  "strain": {
+   "value": 3.2,
+   "load": 38
+  },
+  "fitness": 10.2,
+  "fatigue": 29.8,
+  "form": -19.6,
+  "acwr": null,
+  "loadStatus": null,
+  "vo2": {
+   "run": null,
+   "bike": null
+  },
+  "plan": {
+   "name": "Swim 1,800 m",
+   "scheduled": true,
+   "done": false
+  }
+ },
+ "scheduled": [
+  {
+   "date": "2026-11-16",
+   "title": "D1 · Push",
+   "workout_id": 4101,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": true,
+   "day": "d1"
+  },
+  {
+   "date": "2026-11-19",
+   "title": "D2 · Pull",
+   "workout_id": 4102,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": false,
+   "day": "d2"
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Swim 1,800 m",
+   "workout_id": 4201,
+   "sport": "lap_swimming",
+   "badge": {
+    "type": "lap_swimming",
+    "sport": "Pool swim",
+    "icon": "swim",
+    "kind": "endurance"
+   },
+   "done": false,
+   "day": null
+  },
+  {
+   "date": "2026-11-21",
+   "title": "D3 · Legs",
+   "workout_id": 4103,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": false,
+   "day": "d3"
+  },
+  {
+   "date": "2026-11-22",
+   "title": "Swim 1,800 m",
+   "workout_id": 4201,
+   "sport": "lap_swimming",
+   "badge": {
+    "type": "lap_swimming",
+    "sport": "Pool swim",
+    "icon": "swim",
+    "kind": "endurance"
+   },
+   "done": false,
+   "day": null
+  }
+ ],
+ "planned": [],
+ "week_strength": {
+  "sessions": 3,
+  "tonnage": 22608,
+  "sets": 52,
+  "reps": 556
+ },
+ "trends": {
+  "sleep": [
+   {
+    "date": "11-08",
+    "score": null,
+    "hours": null
+   },
+   {
+    "date": "11-09",
+    "score": 75,
+    "hours": 7.89
+   },
+   {
+    "date": "11-10",
+    "score": 87,
+    "hours": 7.99
+   },
+   {
+    "date": "11-11",
+    "score": 73,
+    "hours": 7.29
+   },
+   {
+    "date": "11-12",
+    "score": 69,
+    "hours": 6.8
+   },
+   {
+    "date": "11-13",
+    "score": 85,
+    "hours": 8.21
+   },
+   {
+    "date": "11-14",
+    "score": 84,
+    "hours": 8.01
+   },
+   {
+    "date": "11-15",
+    "score": 84,
+    "hours": 7.22
+   },
+   {
+    "date": "11-16",
+    "score": 69,
+    "hours": 6.33
+   },
+   {
+    "date": "11-17",
+    "score": 79,
+    "hours": 7.67
+   },
+   {
+    "date": "11-18",
+    "score": 82,
+    "hours": 8.46
+   },
+   {
+    "date": "11-19",
+    "score": 73,
+    "hours": 7.06
+   },
+   {
+    "date": "11-20",
+    "score": 87,
+    "hours": 8.73
+   },
+   {
+    "date": "11-21",
+    "score": 73,
+    "hours": 7.26
+   }
+  ],
+  "recovery": [
+   {
+    "date": "10-23",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "10-24",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "10-25",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "10-26",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "10-27",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "10-28",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "10-29",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "10-30",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "10-31",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-01",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-02",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-03",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-04",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-05",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-06",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-07",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-08",
+    "hrv": null,
+    "rhr": null,
+    "readiness": null
+   },
+   {
+    "date": "11-09",
+    "hrv": null,
+    "rhr": 49,
+    "readiness": 70
+   },
+   {
+    "date": "11-10",
+    "hrv": null,
+    "rhr": 51,
+    "readiness": 70
+   },
+   {
+    "date": "11-11",
+    "hrv": null,
+    "rhr": 52,
+    "readiness": 77
+   },
+   {
+    "date": "11-12",
+    "hrv": null,
+    "rhr": 51,
+    "readiness": 67
+   },
+   {
+    "date": "11-13",
+    "hrv": null,
+    "rhr": 51,
+    "readiness": 76
+   },
+   {
+    "date": "11-14",
+    "hrv": null,
+    "rhr": 51,
+    "readiness": 98
+   },
+   {
+    "date": "11-15",
+    "hrv": null,
+    "rhr": 52,
+    "readiness": 53
+   },
+   {
+    "date": "11-16",
+    "hrv": null,
+    "rhr": 52,
+    "readiness": 54
+   },
+   {
+    "date": "11-17",
+    "hrv": null,
+    "rhr": 52,
+    "readiness": 55
+   },
+   {
+    "date": "11-18",
+    "hrv": 54,
+    "rhr": 51,
+    "readiness": 62
+   },
+   {
+    "date": "11-19",
+    "hrv": 65,
+    "rhr": 51,
+    "readiness": 72
+   },
+   {
+    "date": "11-20",
+    "hrv": 61,
+    "rhr": 52,
+    "readiness": 67
+   },
+   {
+    "date": "11-21",
+    "hrv": 75,
+    "rhr": 53,
+    "readiness": null
+   }
+  ]
+ },
+ "night": {
+  "date": "2026-11-20",
+  "recoveryScore": 62,
+  "garminReadiness": 67,
+  "components": [
+   {
+    "label": "HRV vs 30d",
+    "score": 38,
+    "weight": 40,
+    "detail": "61 vs 63.8 ms",
+    "value": 61,
+    "normal": 63.8,
+    "unit": "ms",
+    "state": "usual",
+    "points": 15.2
+   },
+   {
+    "label": "RHR vs 30d",
+    "score": 44,
+    "weight": 20,
+    "detail": "52 vs 51.4 bpm",
+    "value": 52,
+    "normal": 51.4,
+    "unit": "bpm",
+    "state": "usual",
+    "points": 8.8
+   },
+   {
+    "label": "Sleep perf",
+    "score": 100,
+    "weight": 25,
+    "detail": "8.7 of 8.3 h needed",
+    "value": 8.7,
+    "normal": 8.3,
+    "unit": "h",
+    "state": "met",
+    "points": 25.0
+   },
+   {
+    "label": "Respiration",
+    "score": 80,
+    "weight": 10,
+    "detail": "14.7 brpm (+0.4)",
+    "value": 14.7,
+    "normal": 14.3,
+    "unit": "brpm",
+    "state": "usual",
+    "points": 8.0
+   },
+   {
+    "label": "Skin temp",
+    "score": 100,
+    "weight": 5,
+    "detail": "-0.1°C dev",
+    "value": -0.1,
+    "normal": 0,
+    "unit": "°C",
+    "state": "usual",
+    "points": 5.0
+   }
+  ],
+  "sleep": {
+   "performancePct": 100,
+   "needH": 8.33,
+   "actualH": 8.73,
+   "debt7dH": 6.1,
+   "consistencyPct": 80,
+   "restorativePct": 53,
+   "efficiencyPct": 98,
+   "deepMin": 140,
+   "remMin": 140,
+   "lightMin": 244,
+   "awakeMin": 11,
+   "bedtime": "23:18",
+   "waketime": "08:12"
+  },
+  "vitals": {
+   "respiration": {
+    "value": 14.7,
+    "baseline": 14.3,
+    "deviation": 0.4
+   },
+   "skinTempDevC": -0.1,
+   "spo2": 96
+  },
+  "flags": [
+   "Sleep debt 6.1 h over 7 nights — recovery ceiling is capped until you repay it."
+  ]
+ },
+ "body": null,
+ "spark": {
+  "fitness": [
+   0.5,
+   2.0,
+   3.7,
+   4.1,
+   4.9,
+   5.4,
+   7.6,
+   7.8,
+   9.2,
+   9.0,
+   9.1,
+   9.8,
+   10.2
+  ],
+  "fatigue": [
+   2.7,
+   11.5,
+   20.4,
+   20.8,
+   23.2,
+   23.5,
+   33.7,
+   31.3,
+   36.4,
+   31.2,
+   29.0,
+   30.3,
+   29.8
+  ],
+  "form": [
+   -2.3,
+   -9.5,
+   -16.7,
+   -16.6,
+   -18.3,
+   -18.1,
+   -26.1,
+   -23.5,
+   -27.2,
+   -22.2,
+   -19.9,
+   -20.5,
+   -19.6
+  ],
+  "hrv": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   54,
+   65,
+   61,
+   75
+  ],
+  "rhr": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   49,
+   51,
+   52,
+   51,
+   51,
+   51,
+   52,
+   52,
+   52,
+   51,
+   51,
+   52,
+   53
+  ]
+ },
+ "week": {
+  "label": "Nov 16 – Nov 22",
+  "weekLoad": 165,
+  "activeDays": 5,
+  "cardioLoad": 105,
+  "strengthLoad": 60,
+  "days": [
+   {
+    "date": "2026-11-16",
+    "dow": "Mon",
+    "dom": 16,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 17,
+    "strain": 1.4,
+    "readiness": 54,
+    "items": [
+     {
+      "group": "strength",
+      "type": "strength_training",
+      "sport": "Strength",
+      "icon": "strength",
+      "kind": "strength",
+      "id": 21000000007,
+      "name": "D1 · Push",
+      "durationMin": 47,
+      "distanceKm": null,
+      "load": 17
+     }
+    ]
+   },
+   {
+    "date": "2026-11-17",
+    "dow": "Tue",
+    "dom": 17,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 67,
+    "strain": 5.6,
+    "readiness": 55,
+    "items": [
+     {
+      "group": "run",
+      "type": "running",
+      "sport": "Run",
+      "icon": "run",
+      "kind": "endurance",
+      "id": 21000000008,
+      "name": "Easy run",
+      "durationMin": 29,
+      "distanceKm": 4.9,
+      "load": 67
+     }
+    ]
+   },
+   {
+    "date": "2026-11-18",
+    "dow": "Wed",
+    "dom": 18,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 0,
+    "strain": 0.0,
+    "readiness": 62,
+    "items": []
+   },
+   {
+    "date": "2026-11-19",
+    "dow": "Thu",
+    "dom": 19,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 16,
+    "strain": 1.3,
+    "readiness": 72,
+    "items": [
+     {
+      "group": "strength",
+      "type": "strength_training",
+      "sport": "Strength",
+      "icon": "strength",
+      "kind": "strength",
+      "id": 21000000009,
+      "name": "D2 · Pull",
+      "durationMin": 36,
+      "distanceKm": null,
+      "load": 16
+     }
+    ]
+   },
+   {
+    "date": "2026-11-20",
+    "dow": "Fri",
+    "dom": 20,
+    "isToday": false,
+    "isFuture": false,
+    "totalLoad": 38,
+    "strain": 3.2,
+    "readiness": 67,
+    "items": [
+     {
+      "group": "swim",
+      "type": "lap_swimming",
+      "sport": "Pool swim",
+      "icon": "swim",
+      "kind": "endurance",
+      "id": 21000000010,
+      "name": "Pool swim",
+      "durationMin": 42,
+      "distanceKm": 1.7,
+      "load": 38
+     }
+    ]
+   },
+   {
+    "date": "2026-11-21",
+    "dow": "Sat",
+    "dom": 21,
+    "isToday": true,
+    "isFuture": false,
+    "totalLoad": 27,
+    "strain": 2.3,
+    "readiness": null,
+    "items": [
+     {
+      "group": "strength",
+      "type": "strength_training",
+      "sport": "Strength",
+      "icon": "strength",
+      "kind": "strength",
+      "id": 21000000011,
+      "name": "D1 · Push",
+      "durationMin": 48,
+      "distanceKm": null,
+      "load": 27
+     }
+    ]
+   },
+   {
+    "date": "2026-11-22",
+    "dow": "Sun",
+    "dom": 22,
+    "isToday": false,
+    "isFuture": true,
+    "totalLoad": 0,
+    "strain": 0.0,
+    "readiness": null,
+    "items": []
+   }
+  ]
+ },
+ "plan_today": {
+  "name": "Swim 1,800 m",
+  "scheduled": true,
+  "done": false,
+  "day": null,
+  "program": null
+ },
+ "last_day": {
+  "date": "2026-11-21",
+  "sessions": [
+   {
+    "id": 21000000011,
+    "title": "D1 · Push",
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength",
+    "group": "strength",
+    "start": "18:04",
+    "end": "18:51",
+    "durationMin": 48,
+    "has_sets": true
+   }
+  ]
+ },
+ "trained_today": [
+  {
+   "id": 21000000011,
+   "title": "D1 · Push",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength",
+   "group": "strength",
+   "start": "18:04",
+   "durationMin": 48,
+   "sets": 19,
+   "tonnage": 7930,
+   "distanceKm": null
+  }
+ ],
+ "vitals": [
+  {
+   "date": "2026-10-23",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-10-24",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-10-25",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-10-26",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-10-27",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-10-28",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-10-29",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-10-30",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-10-31",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-01",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-02",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-03",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-04",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-05",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-06",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-07",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-08",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": null,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-09",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 49,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-10",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 51,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-11",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 52,
+   "rhr_7d": null
+  },
+  {
+   "date": "2026-11-12",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 51,
+   "rhr_7d": 50.8
+  },
+  {
+   "date": "2026-11-13",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 51,
+   "rhr_7d": 50.8
+  },
+  {
+   "date": "2026-11-14",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 51,
+   "rhr_7d": 50.8
+  },
+  {
+   "date": "2026-11-15",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 52,
+   "rhr_7d": 51.0
+  },
+  {
+   "date": "2026-11-16",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 52,
+   "rhr_7d": 51.4
+  },
+  {
+   "date": "2026-11-17",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 52,
+   "rhr_7d": 51.6
+  },
+  {
+   "date": "2026-11-18",
+   "hrv": 54,
+   "hrv_7d": null,
+   "rhr": 51,
+   "rhr_7d": 51.4
+  },
+  {
+   "date": "2026-11-19",
+   "hrv": 65,
+   "hrv_7d": null,
+   "rhr": 51,
+   "rhr_7d": 51.4
+  },
+  {
+   "date": "2026-11-20",
+   "hrv": 61,
+   "hrv_7d": null,
+   "rhr": 52,
+   "rhr_7d": 51.6
+  },
+  {
+   "date": "2026-11-21",
+   "hrv": 75,
+   "hrv_7d": null,
+   "rhr": 53,
+   "rhr_7d": 51.9
+  }
+ ],
+ "last_night": {
+  "date": "2026-11-21",
+  "start": "23:41",
+  "end": "07:02",
+  "asleep_min": 436,
+  "need_min": 500,
+  "performance_pct": 87,
+  "restorative_pct": 50,
+  "efficiency_pct": 99,
+  "in_bed_min": 442,
+  "score": 73,
+  "hr_low": 44,
+  "hr_avg": 52,
+  "respiration": 14.8,
+  "hrv_avg": 75,
+  "body_battery_change": 70,
+  "resting_hr": 44,
+  "segments": [
+   [
+    0.0,
+    13.0,
+    "light"
+   ],
+   [
+    13.0,
+    45.0,
+    "deep"
+   ],
+   [
+    45.0,
+    63.0,
+    "light"
+   ],
+   [
+    63.0,
+    75.0,
+    "rem"
+   ],
+   [
+    75.0,
+    77.0,
+    "awake"
+   ],
+   [
+    77.0,
+    95.0,
+    "light"
+   ],
+   [
+    95.0,
+    121.0,
+    "deep"
+   ],
+   [
+    121.0,
+    145.0,
+    "light"
+   ],
+   [
+    145.0,
+    159.0,
+    "rem"
+   ],
+   [
+    159.0,
+    181.0,
+    "light"
+   ],
+   [
+    181.0,
+    201.0,
+    "deep"
+   ],
+   [
+    201.0,
+    216.0,
+    "light"
+   ],
+   [
+    216.0,
+    233.0,
+    "rem"
+   ],
+   [
+    233.0,
+    235.0,
+    "awake"
+   ],
+   [
+    235.0,
+    249.0,
+    "light"
+   ],
+   [
+    249.0,
+    262.0,
+    "deep"
+   ],
+   [
+    262.0,
+    287.0,
+    "light"
+   ],
+   [
+    287.0,
+    308.0,
+    "rem"
+   ],
+   [
+    308.0,
+    321.0,
+    "light"
+   ],
+   [
+    321.0,
+    328.0,
+    "deep"
+   ],
+   [
+    328.0,
+    351.0,
+    "light"
+   ],
+   [
+    351.0,
+    379.0,
+    "rem"
+   ],
+   [
+    379.0,
+    381.0,
+    "awake"
+   ],
+   [
+    381.0,
+    394.0,
+    "light"
+   ],
+   [
+    394.0,
+    398.0,
+    "deep"
+   ],
+   [
+    398.0,
+    416.0,
+    "light"
+   ],
+   [
+    416.0,
+    441.6,
+    "rem"
+   ]
+  ],
+  "hr": [
+   [
+    0.0,
+    51
+   ],
+   [
+    2.0,
+    52
+   ],
+   [
+    4.0,
+    53
+   ],
+   [
+    6.0,
+    48
+   ],
+   [
+    8.0,
+    53
+   ],
+   [
+    10.0,
+    51
+   ],
+   [
+    12.0,
+    51
+   ],
+   [
+    13.0,
+    45
+   ],
+   [
+    15.0,
+    46
+   ],
+   [
+    17.0,
+    48
+   ],
+   [
+    19.0,
+    45
+   ],
+   [
+    21.0,
+    49
+   ],
+   [
+    23.0,
+    45
+   ],
+   [
+    25.0,
+    47
+   ],
+   [
+    27.0,
+    49
+   ],
+   [
+    29.0,
+    52
+   ],
+   [
+    31.0,
+    45
+   ],
+   [
+    33.0,
+    45
+   ],
+   [
+    35.0,
+    46
+   ],
+   [
+    37.0,
+    46
+   ],
+   [
+    39.0,
+    47
+   ],
+   [
+    41.0,
+    47
+   ],
+   [
+    43.0,
+    46
+   ],
+   [
+    45.0,
+    52
+   ],
+   [
+    47.0,
+    50
+   ],
+   [
+    49.0,
+    52
+   ],
+   [
+    51.0,
+    53
+   ],
+   [
+    53.0,
+    51
+   ],
+   [
+    55.0,
+    52
+   ],
+   [
+    57.0,
+    53
+   ],
+   [
+    59.0,
+    50
+   ],
+   [
+    61.0,
+    51
+   ],
+   [
+    63.0,
+    55
+   ],
+   [
+    65.0,
+    55
+   ],
+   [
+    67.0,
+    55
+   ],
+   [
+    69.0,
+    56
+   ],
+   [
+    71.0,
+    57
+   ],
+   [
+    73.0,
+    54
+   ],
+   [
+    75.0,
+    59
+   ],
+   [
+    77.0,
+    53
+   ],
+   [
+    79.0,
+    53
+   ],
+   [
+    81.0,
+    53
+   ],
+   [
+    83.0,
+    54
+   ],
+   [
+    85.0,
+    52
+   ],
+   [
+    87.0,
+    53
+   ],
+   [
+    89.0,
+    52
+   ],
+   [
+    91.0,
+    50
+   ],
+   [
+    93.0,
+    50
+   ],
+   [
+    95.0,
+    49
+   ],
+   [
+    97.0,
+    46
+   ],
+   [
+    99.0,
+    46
+   ],
+   [
+    101.0,
+    50
+   ],
+   [
+    103.0,
+    46
+   ],
+   [
+    105.0,
+    47
+   ],
+   [
+    107.0,
+    47
+   ],
+   [
+    109.0,
+    45
+   ],
+   [
+    111.0,
+    46
+   ],
+   [
+    113.0,
+    47
+   ],
+   [
+    115.0,
+    46
+   ],
+   [
+    117.0,
+    46
+   ],
+   [
+    119.0,
+    47
+   ],
+   [
+    121.0,
+    52
+   ],
+   [
+    123.0,
+    49
+   ],
+   [
+    125.0,
+    53
+   ],
+   [
+    127.0,
+    52
+   ],
+   [
+    129.0,
+    52
+   ],
+   [
+    131.0,
+    52
+   ],
+   [
+    133.0,
+    52
+   ],
+   [
+    135.0,
+    55
+   ],
+   [
+    137.0,
+    51
+   ],
+   [
+    139.0,
+    53
+   ],
+   [
+    141.0,
+    47
+   ],
+   [
+    143.0,
+    53
+   ],
+   [
+    145.0,
+    57
+   ],
+   [
+    147.0,
+    57
+   ],
+   [
+    149.0,
+    56
+   ],
+   [
+    151.0,
+    57
+   ],
+   [
+    153.0,
+    57
+   ],
+   [
+    155.0,
+    57
+   ],
+   [
+    157.0,
+    58
+   ],
+   [
+    159.0,
+    51
+   ],
+   [
+    161.0,
+    53
+   ],
+   [
+    163.0,
+    52
+   ],
+   [
+    165.0,
+    47
+   ],
+   [
+    167.0,
+    53
+   ],
+   [
+    169.0,
+    52
+   ],
+   [
+    171.0,
+    52
+   ],
+   [
+    173.0,
+    49
+   ],
+   [
+    175.0,
+    55
+   ],
+   [
+    177.0,
+    51
+   ],
+   [
+    179.0,
+    50
+   ],
+   [
+    181.0,
+    49
+   ],
+   [
+    183.0,
+    48
+   ],
+   [
+    185.0,
+    48
+   ],
+   [
+    187.0,
+    45
+   ],
+   [
+    189.0,
+    47
+   ],
+   [
+    191.0,
+    44
+   ],
+   [
+    193.0,
+    47
+   ],
+   [
+    195.0,
+    46
+   ],
+   [
+    197.0,
+    46
+   ],
+   [
+    199.0,
+    46
+   ],
+   [
+    201.0,
+    52
+   ],
+   [
+    203.0,
+    52
+   ],
+   [
+    205.0,
+    51
+   ],
+   [
+    207.0,
+    53
+   ],
+   [
+    209.0,
+    54
+   ],
+   [
+    211.0,
+    53
+   ],
+   [
+    213.0,
+    55
+   ],
+   [
+    215.0,
+    50
+   ],
+   [
+    216.0,
+    55
+   ],
+   [
+    218.0,
+    60
+   ],
+   [
+    220.0,
+    56
+   ],
+   [
+    222.0,
+    56
+   ],
+   [
+    224.0,
+    55
+   ],
+   [
+    226.0,
+    55
+   ],
+   [
+    228.0,
+    56
+   ],
+   [
+    230.0,
+    56
+   ],
+   [
+    232.0,
+    54
+   ],
+   [
+    233.0,
+    62
+   ],
+   [
+    235.0,
+    52
+   ],
+   [
+    237.0,
+    54
+   ],
+   [
+    239.0,
+    52
+   ],
+   [
+    241.0,
+    54
+   ],
+   [
+    243.0,
+    50
+   ],
+   [
+    245.0,
+    51
+   ],
+   [
+    247.0,
+    53
+   ],
+   [
+    249.0,
+    46
+   ],
+   [
+    251.0,
+    47
+   ],
+   [
+    253.0,
+    47
+   ],
+   [
+    255.0,
+    47
+   ],
+   [
+    257.0,
+    45
+   ],
+   [
+    259.0,
+    48
+   ],
+   [
+    261.0,
+    47
+   ],
+   [
+    262.0,
+    53
+   ],
+   [
+    264.0,
+    53
+   ],
+   [
+    266.0,
+    52
+   ],
+   [
+    268.0,
+    50
+   ],
+   [
+    270.0,
+    50
+   ],
+   [
+    272.0,
+    50
+   ],
+   [
+    274.0,
+    51
+   ],
+   [
+    276.0,
+    53
+   ],
+   [
+    278.0,
+    50
+   ],
+   [
+    280.0,
+    53
+   ],
+   [
+    282.0,
+    50
+   ],
+   [
+    284.0,
+    50
+   ],
+   [
+    286.0,
+    52
+   ],
+   [
+    287.0,
+    55
+   ],
+   [
+    289.0,
+    58
+   ],
+   [
+    291.0,
+    60
+   ],
+   [
+    293.0,
+    59
+   ],
+   [
+    295.0,
+    55
+   ],
+   [
+    297.0,
+    59
+   ],
+   [
+    299.0,
+    55
+   ],
+   [
+    301.0,
+    58
+   ],
+   [
+    303.0,
+    56
+   ],
+   [
+    305.0,
+    57
+   ],
+   [
+    307.0,
+    57
+   ],
+   [
+    308.0,
+    50
+   ],
+   [
+    310.0,
+    51
+   ],
+   [
+    312.0,
+    50
+   ],
+   [
+    314.0,
+    50
+   ],
+   [
+    316.0,
+    52
+   ],
+   [
+    318.0,
+    53
+   ],
+   [
+    320.0,
+    52
+   ],
+   [
+    321.0,
+    46
+   ],
+   [
+    323.0,
+    50
+   ],
+   [
+    325.0,
+    49
+   ],
+   [
+    327.0,
+    46
+   ],
+   [
+    328.0,
+    52
+   ],
+   [
+    330.0,
+    53
+   ],
+   [
+    332.0,
+    51
+   ],
+   [
+    334.0,
+    51
+   ],
+   [
+    336.0,
+    52
+   ],
+   [
+    338.0,
+    51
+   ],
+   [
+    340.0,
+    53
+   ],
+   [
+    342.0,
+    52
+   ],
+   [
+    344.0,
+    53
+   ],
+   [
+    346.0,
+    52
+   ],
+   [
+    348.0,
+    53
+   ],
+   [
+    350.0,
+    56
+   ],
+   [
+    351.0,
+    58
+   ],
+   [
+    353.0,
+    55
+   ],
+   [
+    355.0,
+    57
+   ],
+   [
+    357.0,
+    58
+   ],
+   [
+    359.0,
+    56
+   ],
+   [
+    361.0,
+    58
+   ],
+   [
+    363.0,
+    56
+   ],
+   [
+    365.0,
+    57
+   ],
+   [
+    367.0,
+    55
+   ],
+   [
+    369.0,
+    56
+   ],
+   [
+    371.0,
+    56
+   ],
+   [
+    373.0,
+    53
+   ],
+   [
+    375.0,
+    55
+   ],
+   [
+    377.0,
+    53
+   ],
+   [
+    379.0,
+    62
+   ],
+   [
+    381.0,
+    50
+   ],
+   [
+    383.0,
+    51
+   ],
+   [
+    385.0,
+    51
+   ],
+   [
+    387.0,
+    54
+   ],
+   [
+    389.0,
+    50
+   ],
+   [
+    391.0,
+    52
+   ],
+   [
+    393.0,
+    53
+   ],
+   [
+    394.0,
+    46
+   ],
+   [
+    396.0,
+    46
+   ],
+   [
+    398.0,
+    52
+   ],
+   [
+    400.0,
+    51
+   ],
+   [
+    402.0,
+    51
+   ],
+   [
+    404.0,
+    55
+   ],
+   [
+    406.0,
+    54
+   ],
+   [
+    408.0,
+    53
+   ],
+   [
+    410.0,
+    53
+   ],
+   [
+    412.0,
+    51
+   ],
+   [
+    414.0,
+    53
+   ],
+   [
+    416.0,
+    59
+   ],
+   [
+    418.0,
+    56
+   ],
+   [
+    420.0,
+    57
+   ],
+   [
+    422.0,
+    58
+   ],
+   [
+    424.0,
+    57
+   ],
+   [
+    426.0,
+    58
+   ],
+   [
+    428.0,
+    55
+   ],
+   [
+    430.0,
+    56
+   ],
+   [
+    432.0,
+    56
+   ],
+   [
+    434.0,
+    54
+   ],
+   [
+    436.0,
+    56
+   ],
+   [
+    438.0,
+    56
+   ],
+   [
+    440.0,
+    54
+   ]
+  ],
+  "totals_min": {
+   "deep": 102,
+   "light": 216,
+   "rem": 118,
+   "awake": 6
+  },
+  "awakenings": 3,
+  "mismatch_min": 0.0,
+  "length_min": 441.6
+ },
+ "week_compare": {
+  "today_index": 5,
+  "cut": 5,
+  "this": {
+   "days": [
+    {
+     "date": "2026-11-16",
+     "dow": "Mon",
+     "minutes": {
+      "strength": 47
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D1 · Push",
+       "min": 47,
+       "group": "strength",
+       "km": null,
+       "load": 17,
+       "tonnage": 7930,
+       "sets": 19
+      }
+     ],
+     "sleep_h": 6.33,
+     "sleep_need_h": 8.33,
+     "recovery": 63,
+     "planned": []
+    },
+    {
+     "date": "2026-11-17",
+     "dow": "Tue",
+     "minutes": {
+      "endurance": 29
+     },
+     "sports": [
+      {
+       "type": "running",
+       "sport": "Run",
+       "icon": "run",
+       "kind": "endurance",
+       "title": "Easy run",
+       "min": 29,
+       "group": "run",
+       "km": 4.9,
+       "load": 67
+      }
+     ],
+     "sleep_h": 7.67,
+     "sleep_need_h": 8.33,
+     "recovery": 77,
+     "planned": []
+    },
+    {
+     "date": "2026-11-18",
+     "dow": "Wed",
+     "minutes": {},
+     "sports": [],
+     "sleep_h": 8.46,
+     "sleep_need_h": 8.33,
+     "recovery": 70,
+     "planned": []
+    },
+    {
+     "date": "2026-11-19",
+     "dow": "Thu",
+     "minutes": {
+      "strength": 36
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D2 · Pull",
+       "min": 36,
+       "group": "strength",
+       "km": null,
+       "load": 16,
+       "tonnage": 6748,
+       "sets": 14
+      }
+     ],
+     "sleep_h": 7.06,
+     "sleep_need_h": 8.33,
+     "recovery": 76,
+     "planned": []
+    },
+    {
+     "date": "2026-11-20",
+     "dow": "Fri",
+     "minutes": {
+      "endurance": 42
+     },
+     "sports": [
+      {
+       "type": "lap_swimming",
+       "sport": "Pool swim",
+       "icon": "swim",
+       "kind": "endurance",
+       "title": "Pool swim",
+       "min": 42,
+       "group": "swim",
+       "km": 1.7,
+       "load": 38
+      }
+     ],
+     "sleep_h": 8.73,
+     "sleep_need_h": 8.33,
+     "recovery": 68,
+     "planned": []
+    },
+    {
+     "date": "2026-11-21",
+     "dow": "Sat",
+     "minutes": {
+      "strength": 48
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D1 · Push",
+       "min": 48,
+       "group": "strength",
+       "km": null,
+       "load": 27,
+       "tonnage": 7930,
+       "sets": 19
+      }
+     ],
+     "sleep_h": 7.26,
+     "sleep_need_h": 8.33,
+     "recovery": 77,
+     "planned": []
+    },
+    {
+     "date": "2026-11-22",
+     "dow": "Sun",
+     "minutes": {},
+     "sports": [],
+     "sleep_h": null,
+     "sleep_need_h": null,
+     "recovery": null,
+     "planned": [
+      {
+       "date": "2026-11-22",
+       "title": "Swim 1,800 m",
+       "type": "lap_swimming",
+       "sport": "Pool swim",
+       "icon": "swim",
+       "kind": "endurance",
+       "group": "swim",
+       "done": false,
+       "min": 42,
+       "min_source": "typical"
+      }
+     ]
+    }
+   ],
+   "to_date": {
+    "minutes": 202,
+    "sessions": 5,
+    "tonnage": 22608,
+    "sets": 52,
+    "cardio_load": 105,
+    "km": 6.6,
+    "km_by": {
+     "run": 4.9,
+     "swim": 1.7
+    },
+    "sleep_h": 7.58,
+    "recovery": 71.83
+   },
+   "since": null,
+   "planned": {
+    "sessions": 1,
+    "minutes": 42,
+    "sets": 0,
+    "tonnage": 0,
+    "untimed": 0,
+    "today_only": false
+   }
+  },
+  "last": {
+   "days": [
+    {
+     "date": "2026-11-09",
+     "dow": "Mon",
+     "minutes": {
+      "strength": 48
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D1 · Push",
+       "min": 48,
+       "group": "strength",
+       "km": null,
+       "load": 19,
+       "tonnage": 7500,
+       "sets": 19
+      }
+     ],
+     "sleep_h": 7.89,
+     "sleep_need_h": 8.33,
+     "recovery": 78,
+     "planned": []
+    },
+    {
+     "date": "2026-11-10",
+     "dow": "Tue",
+     "minutes": {
+      "endurance": 31
+     },
+     "sports": [
+      {
+       "type": "running",
+       "sport": "Run",
+       "icon": "run",
+       "kind": "endurance",
+       "title": "Easy run",
+       "min": 31,
+       "group": "run",
+       "km": 5.7,
+       "load": 64
+      }
+     ],
+     "sleep_h": 7.99,
+     "sleep_need_h": 8.33,
+     "recovery": 75,
+     "planned": []
+    },
+    {
+     "date": "2026-11-11",
+     "dow": "Wed",
+     "minutes": {
+      "circuit": 47
+     },
+     "sports": [
+      {
+       "type": "indoor_cardio",
+       "sport": "Indoor cardio",
+       "icon": "circuit",
+       "kind": "circuit",
+       "title": "Conditioning circuit",
+       "min": 47,
+       "group": "other",
+       "km": null,
+       "load": 74
+      }
+     ],
+     "sleep_h": 7.29,
+     "sleep_need_h": 8.33,
+     "recovery": 73,
+     "planned": []
+    },
+    {
+     "date": "2026-11-12",
+     "dow": "Thu",
+     "minutes": {
+      "strength": 37
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D2 · Pull",
+       "min": 37,
+       "group": "strength",
+       "km": null,
+       "load": 23,
+       "tonnage": 6388,
+       "sets": 14
+      }
+     ],
+     "sleep_h": 6.8,
+     "sleep_need_h": 8.33,
+     "recovery": 75,
+     "planned": []
+    },
+    {
+     "date": "2026-11-13",
+     "dow": "Fri",
+     "minutes": {
+      "endurance": 36
+     },
+     "sports": [
+      {
+       "type": "lap_swimming",
+       "sport": "Pool swim",
+       "icon": "swim",
+       "kind": "endurance",
+       "title": "Pool swim",
+       "min": 36,
+       "group": "swim",
+       "km": 1.5,
+       "load": 38
+      }
+     ],
+     "sleep_h": 8.21,
+     "sleep_need_h": 8.33,
+     "recovery": 81,
+     "planned": []
+    },
+    {
+     "date": "2026-11-14",
+     "dow": "Sat",
+     "minutes": {
+      "strength": 48
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D3 · Legs",
+       "min": 48,
+       "group": "strength",
+       "km": null,
+       "load": 25,
+       "tonnage": 14830,
+       "sets": 17
+      }
+     ],
+     "sleep_h": 8.01,
+     "sleep_need_h": 8.33,
+     "recovery": 81,
+     "planned": []
+    },
+    {
+     "date": "2026-11-15",
+     "dow": "Sun",
+     "minutes": {
+      "endurance": 90
+     },
+     "sports": [
+      {
+       "type": "road_biking",
+       "sport": "Road ride",
+       "icon": "bike",
+       "kind": "endurance",
+       "title": "Zone 2 ride",
+       "min": 90,
+       "group": "bike",
+       "km": 45.0,
+       "load": 95
+      }
+     ],
+     "sleep_h": 7.22,
+     "sleep_need_h": 8.33,
+     "recovery": 74,
+     "planned": []
+    }
+   ],
+   "to_date": {
+    "minutes": 247,
+    "sessions": 6,
+    "tonnage": 28718,
+    "sets": 50,
+    "cardio_load": 176,
+    "km": 7.2,
+    "km_by": {
+     "run": 5.7,
+     "swim": 1.5
+    },
+    "sleep_h": 7.7,
+    "recovery": 77.17
+   },
+   "full": {
+    "minutes": 337,
+    "sessions": 7,
+    "tonnage": 28718,
+    "sets": 50,
+    "cardio_load": 271,
+    "km": 52.2,
+    "km_by": {
+     "run": 5.7,
+     "swim": 1.5,
+     "bike": 45.0
+    },
+    "sleep_h": 7.63,
+    "recovery": 76.71
+   }
+  },
+  "targets": {
+   "minutes": null,
+   "sets": null,
+   "cardio_load": [
+    150,
+    250
+   ],
+   "sleep_need_h": 8.33
+  }
+ },
+ "daily": null,
+ "call_program": null,
+ "rotation": {
+  "today": "2026-11-21",
+  "starved_after_days": 7,
+  "days": [
+   {
+    "day": "d1",
+    "label": "D1 · Push",
+    "last": "2026-11-21",
+    "age": 0,
+    "starved": false
+   },
+   {
+    "day": "d2",
+    "label": "D2 · Pull",
+    "last": "2026-11-19",
+    "age": 2,
+    "starved": false
+   },
+   {
+    "day": "d3",
+    "label": "D3 · Legs",
+    "last": "2026-11-14",
+    "age": 7,
+    "starved": false
+   }
+  ],
+  "unclassified": [],
+  "next": []
+ },
+ "bumps": [
+  {
+   "day": "d1",
+   "exid": "D1E1",
+   "category": "BENCH_PRESS",
+   "name": "BARBELL_BENCH_PRESS",
+   "date": "2026-11-21",
+   "sets_done": 4,
+   "reps_target": 8,
+   "weight": 80.0,
+   "label": "80kg",
+   "increment": "+weight (reset reps to range bottom)",
+   "kind": "reps",
+   "block": "main",
+   "sessions_clean": 1,
+   "earned_on": "2026-11-21"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E2",
+   "category": "BENCH_PRESS",
+   "name": "INCLINE_DUMBBELL_BENCH_PRESS",
+   "date": "2026-11-21",
+   "sets_done": 3,
+   "reps_target": 10,
+   "weight": 26.0,
+   "label": "26kg",
+   "increment": "+weight (reset reps to range bottom)",
+   "kind": "reps",
+   "block": "main",
+   "sessions_clean": 1,
+   "earned_on": "2026-11-21"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E3",
+   "category": "SHOULDER_PRESS",
+   "name": "SEATED_DUMBBELL_SHOULDER_PRESS",
+   "date": "2026-11-21",
+   "sets_done": 3,
+   "reps_target": 10,
+   "weight": 20.0,
+   "label": "20kg",
+   "increment": "+weight (reset reps to range bottom)",
+   "kind": "reps",
+   "block": "main",
+   "sessions_clean": 1,
+   "earned_on": "2026-11-21"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E4",
+   "category": "LATERAL_RAISE",
+   "name": "DUMBBELL_LATERAL_RAISE",
+   "date": "2026-11-21",
+   "sets_done": 3,
+   "reps_target": 15,
+   "weight": 10.0,
+   "label": "10kg",
+   "increment": "+weight (reset reps to range bottom)",
+   "kind": "reps",
+   "block": "main",
+   "sessions_clean": 1,
+   "earned_on": "2026-11-21"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E5",
+   "category": "FLYE",
+   "name": "CABLE_CROSSOVER",
+   "date": "2026-11-21",
+   "sets_done": 3,
+   "reps_target": 12,
+   "weight": 15.0,
+   "label": "15kg",
+   "increment": "+weight (reset reps to range bottom)",
+   "kind": "reps",
+   "block": "main",
+   "sessions_clean": 1,
+   "earned_on": "2026-11-21"
+  },
+  {
+   "day": "d1",
+   "exid": "D1E6",
+   "category": "TRICEPS_EXTENSION",
+   "name": "ROPE_PRESSDOWN",
+   "date": "2026-11-21",
+   "sets_done": 3,
+   "reps_target": 12,
+   "weight": 32.5,
+   "label": "32.5kg",
+   "increment": "+weight (reset reps to range bottom)",
+   "kind": "reps",
+   "block": "main",
+   "sessions_clean": 1,
+   "earned_on": "2026-11-21"
+  }
+ ],
+ "sync": {
+  "workouts": [
+   {
+    "key": "d1",
+    "workout": "D1 · Push",
+    "id": 4101,
+    "state": "in_sync"
+   },
+   {
+    "key": "d2",
+    "workout": "D2 · Pull",
+    "id": 4102,
+    "state": "in_sync"
+   },
+   {
+    "key": "d3",
+    "workout": "D3 · Legs",
+    "id": 4103,
+    "state": "changed"
+   }
+  ],
+  "pending": 1,
+  "unknown": 0
+ },
+ "cardio": {
+  "sessions": {
+   "run": {
+    "done": 1,
+    "target": 2
+   },
+   "swim": {
+    "done": 1,
+    "target": 1
+   },
+   "bike": {
+    "done": 0,
+    "target": 1
+   }
+  },
+  "load": {
+   "done": 105,
+   "band": [
+    150,
+    250
+   ]
+  }
+ },
+ "block": {
+  "name": "Hypertrophy",
+  "start": "2026-11-16",
+  "weeks": 16,
+  "week": 1,
+  "over": false
+ },
+ "race": null,
+ "fuel": {
+  "setup_open": [
+   {
+    "id": "products",
+    "text": "Which fuelling products do you use — gels, drink mixes, bars? Pick them from the catalog, or name one and the coach looks it up on the maker's page."
+   },
+   {
+    "id": "recipes",
+    "text": "How do you mix a bottle of each drink mix: grams of powder, and the bottle's size in ml?"
+   },
+   {
+    "id": "gut",
+    "text": "What do you take today on a 2–3 hour ride, in grams of carbohydrate an hour — none, about 30, about 60 or about 90? Has anything upset your stomach?"
+   },
+   {
+    "id": "caffeine",
+    "text": "Caffeine: never, in races only, or in training too?"
+   }
+  ],
+  "due": []
+ },
+ "freshness": {
+  "data_as_of": "2026-11-21T14:16:13",
+  "cache": "cache as of 2026-11-21 14:16",
+  "warnings": [],
+  "coach_ran": null
+ },
+ "defs": {
+  "recovery": {
+   "source": "computed",
+   "definition": "OpenSportCoach's recovery score, 0–100: five signals against your own 30-day usual, weighted HRV 40 %, resting HR 20 %, sleep vs need 25 %, respiration 10 %, skin temperature 5 %. At your usual, HRV and resting HR earn half their points, so a good ordinary morning scores about 65–75; 67 and up reads as recovered. A signal the watch didn't record hands its weight to the others."
+  },
+  "strain": {
+   "source": "computed",
+   "definition": "The day's Garmin training load mapped onto 0–21 (21 × load / 250, capped)."
+  },
+  "sleep_performance": {
+   "source": "computed",
+   "definition": "Sleep time as a share of Garmin's sleep need for the night."
+  },
+  "hrv": {
+   "source": "garmin",
+   "definition": "Average HRV across the night, from your watch."
+  },
+  "hrv_band": {
+   "source": "garmin",
+   "definition": "Garmin's own balanced range for your HRV (its baseline), from the night's HRV summary."
+  },
+  "hrv_weekly": {
+   "source": "garmin",
+   "definition": "Garmin's 7-night HRV average — what its HRV status compares with the balanced band."
+  },
+  "rhr": {
+   "source": "garmin",
+   "definition": "Resting heart rate for the day, from your watch."
+  },
+  "rhr_baseline": {
+   "source": "computed",
+   "definition": "Mean of the last 30 days' resting heart rate."
+  },
+  "rhr_7d": {
+   "source": "computed",
+   "definition": "7-day average: the mean of each day and the 6 before it, over the days with a reading (at least 4) — the trend the nightly numbers wobble around."
+  },
+  "readiness": {
+   "source": "garmin",
+   "definition": "Garmin training readiness, from the wake-up reading."
+  },
+  "fitness": {
+   "source": "computed",
+   "definition": "Fitness: Garmin load averaged with a 42-day exponential weight."
+  },
+  "fatigue": {
+   "source": "computed",
+   "definition": "Fatigue: Garmin load averaged with a 7-day exponential weight."
+  },
+  "form": {
+   "source": "computed",
+   "definition": "Form = fitness − fatigue."
+  },
+  "load": {
+   "source": "garmin",
+   "definition": "Garmin training load: EPOC, from heart rate. It barely registers lifting — read strength by tonnage and sets, never with cardio in one number."
+  },
+  "tonnage": {
+   "source": "computed",
+   "definition": "Σ weight × reps over every logged set, warm-ups included — they were lifted."
+  },
+  "weight": {
+   "source": "garmin",
+   "definition": "Body weight from your scale, via Garmin."
+  },
+  "bump": {
+   "source": "computed",
+   "definition": "Your latest session at the programmed load hit the target reps on every planned set."
+  },
+  "starved": {
+   "source": "computed",
+   "definition": "A program day not trained for more than 7 days."
+  },
+  "watch_sync": {
+   "source": "computed",
+   "definition": "Compared with what was last verified on your watch — no Garmin call."
+  },
+  "week_like_for_like": {
+   "source": "computed",
+   "definition": "This week up to its last finished day against last week up to the same day — never a part week against a whole one. Today counts once it logged a session and nothing planned for it is left."
+  },
+  "week_planned": {
+   "source": "coach",
+   "definition": "Still to come this week: Garmin's calendar and the coach's off-watch plan. Minutes: a gym day's estimate from the program, a watch workout's own estimate, else your median time for that sport over its last five sessions (≈)."
+  },
+  "week_target": {
+   "source": "coach",
+   "definition": "The coach's weekly band for this number (program WEEK_TARGETS; cardio load from your profile). Without one the row only says how it moved."
+  },
+  "sleep_need": {
+   "source": "garmin",
+   "definition": "Garmin's sleep need for each night, averaged over the nights so far."
+  },
+  "race_countdown": {
+   "source": "computed",
+   "definition": "Days to race day; the countdown shows from 8 weeks out."
+  },
+  "race_easy": {
+   "source": "coach",
+   "definition": "An easy day before a race: no sprints, VO2 work, threshold work or tests, and no heavy legs. Easy aerobic work, mobility and a lighter upper-body gym day are fine."
+  },
+  "race_taper": {
+   "source": "coach",
+   "definition": "A taper day before an A race: the volume comes down by about half over the taper, and short race-pace efforts stay in."
+  },
+  "race_day": {
+   "source": "coach",
+   "definition": "Race day: the race, its warm-up and its fuelling, and nothing else."
+  },
+  "race_recovery": {
+   "source": "coach",
+   "definition": "A recovery day after a race: no intensity, and no long ride or long run. Easy aerobic work and mobility, and a light gym day from the second day. After an A race, short intensity may come back once its no-intensity days are over."
+  },
+  "fuel_band": {
+   "source": "computed",
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+  },
+  "fuel_target": {
+   "source": "computed",
+   "definition": "The rate planned: the top of a hard session's band, the middle of an easy one's, never above what your gut is trained to (60 g/h until you say otherwise), plus 10 g/h on a gut-training session."
+  },
+  "fuel_gut": {
+   "source": "you",
+   "definition": "The most carbohydrate an hour you have taken in training without trouble. Raised 10 g/h at a time, only after a logged session at the current rate."
+  },
+  "fuel_taken": {
+   "source": "you",
+   "definition": "What you logged taking, in grams, from each product's label and your bottle recipe as it was that day. Self-reported: Garmin does not record it."
+  }
+ }
+}

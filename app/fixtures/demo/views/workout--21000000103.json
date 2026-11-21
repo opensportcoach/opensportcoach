@@ -1,0 +1,450 @@
+{
+ "view": "workout",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:11",
+ "id": 21000000103,
+ "date": "2026-10-26",
+ "start": "2026-10-26 09:00:00",
+ "group": "other",
+ "type": "indoor_cardio",
+ "sport": "Indoor cardio",
+ "icon": "circuit",
+ "kind": "circuit",
+ "title": "Conditioning circuit",
+ "summary": {
+  "duration": 2820.0,
+  "averageHR": 141,
+  "maxHR": 164,
+  "calories": 610,
+  "activityTrainingLoad": 74
+ },
+ "annotation": null,
+ "reviews": [],
+ "fuel": {
+  "taken": null,
+  "plan": null,
+  "planned_title": null,
+  "pantry": [
+   {
+    "kind": "recipe",
+    "id": "bottle",
+    "label": "Bottle · MNSTRY Fast Carb Mango",
+    "unit": "bottle",
+    "how": "43 g powder · 500 ml",
+    "g_each": 40,
+    "display": {
+     "slot": "1",
+     "mono": "FC",
+     "shape": "bottle"
+    },
+    "short": "Fast Carb Mango"
+   },
+   {
+    "kind": "product",
+    "id": "maurten-gel-160",
+    "label": "Maurten Gel 160",
+    "unit": "gel",
+    "how": "65 g gel",
+    "g_each": 40,
+    "display": {
+     "slot": "gel",
+     "mono": "GEL",
+     "shape": "gel"
+    },
+    "short": "Gel 160"
+   }
+  ],
+  "others": [
+   {
+    "kind": "product",
+    "id": "mnstry-slow-carb-heat",
+    "label": "MNSTRY Slow Carb Heat",
+    "short": "Slow Carb Heat",
+    "unit": "serving",
+    "g_each": 40,
+    "display": {
+     "slot": "4",
+     "mono": "SC",
+     "shape": "bottle"
+    }
+   },
+   {
+    "kind": "product",
+    "id": "maurten-solid-160",
+    "label": "Maurten Solid 160",
+    "short": "Solid 160",
+    "unit": "bar",
+    "g_each": 40,
+    "display": {
+     "slot": "gel",
+     "mono": "BAR",
+     "shape": "gel"
+    }
+   }
+  ],
+  "setup_open": [],
+  "due": false,
+  "minutes": 47,
+  "loggable": true
+ },
+ "score": {
+  "id": 21000000103,
+  "date": "2026-10-26",
+  "title": "Conditioning circuit",
+  "type": "indoor_cardio",
+  "group": "other",
+  "total": 97,
+  "band": "as_planned",
+  "band_label": "As planned",
+  "parts": [
+   {
+    "key": "steps",
+    "label": "Steps done",
+    "weight": 50,
+    "measure": "working steps done ÷ planned",
+    "planned_text": "6 working steps",
+    "done_text": "6",
+    "detail": {
+     "planned": 6,
+     "done": 6
+    },
+    "score": 1.0,
+    "points": 50.0,
+    "dropped": null
+   },
+   {
+    "key": "structure",
+    "label": "Structure",
+    "weight": 20,
+    "measure": "steps recorded vs planned; a stray lap press costs its share",
+    "planned_text": "6 steps, one lap each",
+    "done_text": "6 recorded · 1 stray",
+    "detail": {
+     "planned_steps": 6,
+     "recorded": 6,
+     "stray": 1
+    },
+    "score": 0.833,
+    "points": 16.7,
+    "dropped": null
+   },
+   {
+    "key": "circuit_pacing",
+    "label": "Pacing",
+    "weight": 30,
+    "measure": "evenness of the run legs: spread 5 % or under full",
+    "planned_text": "even run legs · within 5 %",
+    "done_text": "spread 0.0 %",
+    "detail": {
+     "run_spread_pct": 0.0
+    },
+    "score": 1.0,
+    "points": 30.0,
+    "dropped": null
+   }
+  ],
+  "coverage": 1.0,
+  "out_of": 100,
+  "earned": 96.7,
+  "excluded": null,
+  "against": "circuit_conditioning.json (current) · Circuit · Conditioning (matched by the workout id the watch recorded)",
+  "summary": "1 step out of place. Everything else was on target.",
+  "headline": null,
+  "foot": "Score = 96.7 ÷ 100 points that could be scored.",
+  "capped": null,
+  "provisional": false,
+  "flags": [
+   {
+    "key": "stray_laps",
+    "text": "1 step under 10 s — a button pressed twice. Set aside; check the steps around it."
+   }
+  ]
+ },
+ "review": {
+  "id": 21000000103,
+  "sport": "circuit",
+  "type": "indoor_cardio",
+  "metrics": {
+   "moving_s": {
+    "value": 2820,
+    "source": "garmin",
+    "unit": "s"
+   },
+   "avg_hr": {
+    "value": 141,
+    "source": "garmin",
+    "unit": "bpm"
+   },
+   "steps_recorded": {
+    "value": 7,
+    "source": "garmin",
+    "unit": ""
+   },
+   "stray_laps": {
+    "value": 1,
+    "source": "computed",
+    "unit": ""
+   },
+   "run_s": {
+    "value": 900,
+    "source": "computed",
+    "unit": "s"
+   },
+   "station_s": {
+    "value": 540,
+    "source": "computed",
+    "unit": "s"
+   },
+   "run_spread": {
+    "value": 0.0,
+    "source": "computed",
+    "unit": "%"
+   }
+  },
+  "intervals": [
+   {
+    "n": 1,
+    "secs": 300,
+    "hr": null,
+    "step": 1,
+    "planned": {
+     "note": "Run 1 km",
+     "role": "run",
+     "exercise": "RUN/RUN_OR_WALK"
+    }
+   },
+   {
+    "n": 2,
+    "secs": 150,
+    "hr": null,
+    "step": 2,
+    "planned": {
+     "note": "Sled push 50 m",
+     "role": "station",
+     "exercise": "SLED/PUSH"
+    }
+   },
+   {
+    "n": 3,
+    "secs": 300,
+    "hr": null,
+    "step": 3,
+    "planned": {
+     "note": "Run 1 km",
+     "role": "run",
+     "exercise": "RUN/RUN_OR_WALK"
+    }
+   },
+   {
+    "n": 4,
+    "secs": 270,
+    "hr": null,
+    "step": 4,
+    "planned": {
+     "note": "Row 1000 m",
+     "role": "station",
+     "exercise": "ROW/INDOOR_ROW"
+    }
+   },
+   {
+    "n": 5,
+    "secs": 120,
+    "hr": null,
+    "step": 5,
+    "planned": {
+     "note": "Farmers carry 200 m",
+     "role": "station",
+     "exercise": "CARRY/FARMERS_CARRY"
+    }
+   },
+   {
+    "n": 6,
+    "secs": 300,
+    "hr": null,
+    "step": 6,
+    "planned": {
+     "note": "Run 1 km",
+     "role": "run",
+     "exercise": "RUN/RUN_OR_WALK"
+    }
+   }
+  ],
+  "planned": {
+   "key": "circuit_conditioning",
+   "name": "Circuit · Conditioning",
+   "matched_by": "the workout id the watch recorded",
+   "version": "circuit_conditioning.json (current)",
+   "steps": 6,
+   "working": 6,
+   "done_working": 6,
+   "steps_seen": 6,
+   "basis": "sets"
+  },
+  "flags": [
+   {
+    "key": "stray_laps",
+    "text": "1 step under 10 s — a button pressed twice. Set aside; check the steps around it."
+   }
+  ],
+  "definitions": {
+   "pace_100": "Moving time per 100 m: the time spent swimming (rests excluded) ÷ the distance × 100.",
+   "swolf": "SWOLF: seconds plus strokes for one length. Lower is more efficient; compare only in the same pool.",
+   "strokes_per_length": "Average strokes per pool length.",
+   "css_100": "Critical swim speed per 100 m: (T400 − T200) ÷ 2, from this session's all-out 400 and 200.",
+   "pace_spread": "How much the pace of a set's reps varied: standard deviation ÷ mean. Under 3 % is even.",
+   "run_spread": "How much a circuit's run legs varied in time: standard deviation ÷ mean.",
+   "stray_laps": "Laps under 10 s on a lap-button session: a button pressed twice, which shifts every step after it."
+  }
+ },
+ "stations": [
+  {
+   "label": "Run Or Walk",
+   "category": "RUN",
+   "name": "RUN_OR_WALK",
+   "duration_s": 300,
+   "reps": null,
+   "weight": null,
+   "auto_detected": false
+  },
+  {
+   "label": "Sled Push",
+   "category": "SLED",
+   "name": "PUSH",
+   "duration_s": 150,
+   "reps": null,
+   "weight": 102.0,
+   "auto_detected": false
+  },
+  {
+   "label": "Run Or Walk",
+   "category": "RUN",
+   "name": "RUN_OR_WALK",
+   "duration_s": 300,
+   "reps": null,
+   "weight": null,
+   "auto_detected": false
+  },
+  {
+   "label": "Indoor Row",
+   "category": "ROW",
+   "name": "INDOOR_ROW",
+   "duration_s": 4,
+   "reps": null,
+   "weight": null,
+   "auto_detected": false
+  },
+  {
+   "label": "Indoor Row",
+   "category": "ROW",
+   "name": "INDOOR_ROW",
+   "duration_s": 270,
+   "reps": null,
+   "weight": null,
+   "auto_detected": false
+  },
+  {
+   "label": "Farmers Carry",
+   "category": "CARRY",
+   "name": "FARMERS_CARRY",
+   "duration_s": 120,
+   "reps": null,
+   "weight": 48.0,
+   "auto_detected": true
+  },
+  {
+   "label": "Run Or Walk",
+   "category": "RUN",
+   "name": "RUN_OR_WALK",
+   "duration_s": 300,
+   "reps": null,
+   "weight": null,
+   "auto_detected": false
+  }
+ ],
+ "defs": {
+  "load": {
+   "source": "garmin",
+   "definition": "Garmin training load: EPOC, from heart rate. It barely registers lifting — read strength by tonnage and sets, never with cardio in one number."
+  },
+  "fuel_band": {
+   "source": "computed",
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+  },
+  "fuel_target": {
+   "source": "computed",
+   "definition": "The rate planned: the top of a hard session's band, the middle of an easy one's, never above what your gut is trained to (60 g/h until you say otherwise), plus 10 g/h on a gut-training session."
+  },
+  "fuel_gut": {
+   "source": "you",
+   "definition": "The most carbohydrate an hour you have taken in training without trouble. Raised 10 g/h at a time, only after a logged session at the current rate."
+  },
+  "fuel_taken": {
+   "source": "you",
+   "definition": "What you logged taking, in grams, from each product's label and your bottle recipe as it was that day. Self-reported: Garmin does not record it."
+  },
+  "score": {
+   "source": "computed",
+   "definition": "How the session went against what was planned for it that day, 0–100. Execution, not fitness: heat, decoupling and efficiency stay flags. Each part scores 0–1 and earns its weight; a part that cannot be scored drops out and the others rescale. Under 60 % of the session scored, no total. 85+ As planned · 70–84 Mostly · 50–69 Partly · under 50 Off plan · under 60 % scored: Unclear. A gym session with a planned exercise not started scores 84 at most."
+  },
+  "score_sets": {
+   "source": "computed",
+   "definition": "Working sets done ÷ planned, per exercise, capped at planned: extra sets add nothing."
+  },
+  "score_reps": {
+   "source": "computed",
+   "definition": "Per planned set, reps (or seconds) done ÷ target, capped at 1. A per-side set is scored per side."
+  },
+  "score_load": {
+   "source": "computed",
+   "definition": "Per planned set, the load in the program's terms (per hand, discs on a machine) ÷ the ask, capped at 1; on a weighted bodyweight lift, body plus plate. More than 15 % over is flagged, not rewarded; near double means suspect the implement. A lift done on a different machine is not comparable and drops out."
+  },
+  "score_rest": {
+   "source": "computed",
+   "definition": "Share of rests between sets within 0.75–1.5 × the prescribed rest. Weighted low: rest runs on the lap button."
+  },
+  "score_intent": {
+   "source": "computed",
+   "definition": "Easy and tempo rides: the share of time in the intent's band (power against your FTP, else the activity's own HR zones); 85 % scores full. On an easy ride, time under the band counts half. Interval rides: IF inside the intent's band."
+  },
+  "score_intervals": {
+   "source": "computed",
+   "definition": "Only when the plan sets work: time at the target's low end −5 % or better (3-second power), held 20 s or more, ÷ the work planned."
+  },
+  "score_duration": {
+   "source": "computed",
+   "definition": "Moving time against the plan, both ways: ±10 % scores full, ±50 % nothing."
+  },
+  "score_pacing": {
+   "source": "computed",
+   "definition": "Steady rides: variability index, 1.05 or under full, 1.20 nothing. Runs: second half's pace within 3 % of the first. Not scored on interval rides."
+  },
+  "score_fuel": {
+   "source": "computed",
+   "definition": "Only when a fuel plan existed: grams taken ÷ planned, capped at 1. A log with no grams drops out."
+  },
+  "score_distance": {
+   "source": "computed",
+   "definition": "Metres swum against the metres planned, both ways: within 10 % scores full, 50 % off nothing."
+  },
+  "score_swims": {
+   "source": "computed",
+   "definition": "Planned swims done, in order (the lap's distance matching the planned rep's) ÷ planned swims."
+  },
+  "score_swim_pacing": {
+   "source": "computed",
+   "definition": "Per set of repeated swims, the spread of pace across its reps: 3 % or under full, 10 % nothing."
+  },
+  "score_steps": {
+   "source": "computed",
+   "definition": "Working steps of the planned circuit done (a lap of its own, not a stray press) ÷ planned."
+  },
+  "score_structure": {
+   "source": "computed",
+   "definition": "Laps against the planned steps: the same number scores full; each lap more or fewer costs its share. A stray lap press shifts every step after it."
+  },
+  "score_circuit_pacing": {
+   "source": "computed",
+   "definition": "The spread of the run legs' times: 5 % or under full, 20 % nothing."
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "kind": "review",
+ "request_id": "r5",
+ "date": "2026-11-16",
+ "subject": "session",
+ "activity_id": null,
+ "markdown": "D1 Push — solid. Bench is ready to move.",
+ "findings": [
+  {
+   "kind": "up",
+   "text": "Bench 80 → 82.5"
+  },
+  {
+   "kind": "warn",
+   "text": "Lateral raise stalled"
+  },
+  {
+   "kind": "question",
+   "text": "Triceps set 3 was named by the watch — rope or overhead?"
+  }
+ ]
+}

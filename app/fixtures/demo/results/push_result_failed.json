@@ -1,0 +1,23 @@
+{
+ "kind": "push_result",
+ "request_id": "r4",
+ "plan_hash": "3f9a1c0d7e52b6a4",
+ "ok": false,
+ "in_sync": false,
+ "message": "1 change not verified. Nothing was deleted; retrying sends only it.",
+ "actions": [
+  {
+   "verb": "replace",
+   "workout": "D1 · Push",
+   "date": "2026-11-23",
+   "status": "verified"
+  },
+  {
+   "verb": "replace",
+   "workout": "D3 · Legs",
+   "date": null,
+   "status": "failed",
+   "error": "ConnectionResetError on the upload response"
+  }
+ ]
+}

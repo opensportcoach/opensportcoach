@@ -1,0 +1,159 @@
+{
+ "athlete": "demo",
+ "display": "Alex",
+ "generated_on": "2026-11-21",
+ "views": {
+  "today": [
+   {
+    "arg": null,
+    "file": "views/today.json"
+   }
+  ],
+  "recovery": [
+   {
+    "arg": null,
+    "file": "views/recovery.json"
+   }
+  ],
+  "load": [
+   {
+    "arg": null,
+    "file": "views/load.json"
+   }
+  ],
+  "strength": [
+   {
+    "arg": null,
+    "file": "views/strength.json"
+   }
+  ],
+  "sessions": [
+   {
+    "arg": null,
+    "file": "views/sessions.json"
+   }
+  ],
+  "program": [
+   {
+    "arg": null,
+    "file": "views/program.json"
+   }
+  ],
+  "calendar": [
+   {
+    "arg": null,
+    "file": "views/calendar.json"
+   }
+  ],
+  "races": [
+   {
+    "arg": null,
+    "file": "views/races.json"
+   }
+  ],
+  "body": [
+   {
+    "arg": null,
+    "file": "views/body.json"
+   }
+  ],
+  "journal": [
+   {
+    "arg": null,
+    "file": "views/journal.json"
+   }
+  ],
+  "memory": [
+   {
+    "arg": null,
+    "file": "views/memory.json"
+   }
+  ],
+  "system": [
+   {
+    "arg": null,
+    "file": "views/system.json"
+   }
+  ],
+  "fuel": [
+   {
+    "arg": null,
+    "file": "views/fuel.json"
+   }
+  ],
+  "workout": [
+   {
+    "arg": "21000000101",
+    "file": "views/workout--21000000101.json"
+   },
+   {
+    "arg": "21000000100",
+    "file": "views/workout--21000000100.json"
+   },
+   {
+    "arg": "21000000102",
+    "file": "views/workout--21000000102.json"
+   },
+   {
+    "arg": "21000000098",
+    "file": "views/workout--21000000098.json"
+   },
+   {
+    "arg": "21000000103",
+    "file": "views/workout--21000000103.json"
+   },
+   {
+    "arg": "21000000104",
+    "file": "views/workout--21000000104.json"
+   },
+   {
+    "arg": "21000009001",
+    "file": "views/workout--21000009001.json"
+   },
+   {
+    "arg": "21000009002",
+    "file": "views/workout--21000009002.json"
+   }
+  ],
+  "exercise": [
+   {
+    "arg": "BENCH_PRESS/BARBELL_BENCH_PRESS",
+    "file": "views/exercise--BENCH_PRESS--BARBELL_BENCH_PRESS.json"
+   },
+   {
+    "arg": "BENCH_PRESS/INCLINE_DUMBBELL_BENCH_PRESS",
+    "file": "views/exercise--BENCH_PRESS--INCLINE_DUMBBELL_BENCH_PRESS.json"
+   },
+   {
+    "arg": "SQUAT/LEG_PRESS",
+    "file": "views/exercise--SQUAT--LEG_PRESS.json"
+   }
+  ],
+  "journal-entry": [
+   {
+    "arg": "2026-11-21.md",
+    "file": "views/journal-entry--2026-11-21.md.json"
+   },
+   {
+    "arg": "2026-11-16-review.md",
+    "file": "views/journal-entry--2026-11-16-review.md.json"
+   },
+   {
+    "arg": "2026-11-15-21000000098-review.md",
+    "file": "views/journal-entry--2026-11-15-21000000098-review.md.json"
+   }
+  ]
+ },
+ "results": [
+  "answer",
+  "daily",
+  "endurance_review",
+  "plan_proposal",
+  "push_plan",
+  "push_result",
+  "push_result_failed",
+  "race_check",
+  "recap",
+  "review"
+ ]
+}

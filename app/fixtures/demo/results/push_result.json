@@ -1,0 +1,22 @@
+{
+ "kind": "push_result",
+ "request_id": "r3",
+ "plan_hash": "3f9a1c0d7e52b6a4",
+ "ok": true,
+ "in_sync": true,
+ "message": "2 of 2 changes verified on Alex M.",
+ "actions": [
+  {
+   "verb": "replace",
+   "workout": "D1 · Push",
+   "date": "2026-11-23",
+   "status": "verified"
+  },
+  {
+   "verb": "replace",
+   "workout": "D3 · Legs",
+   "date": "2026-11-28",
+   "status": "verified"
+  }
+ ]
+}

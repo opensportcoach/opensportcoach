@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "osc/review",
+  "title": "review",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "const": "review"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^r\\d+$"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "subject": {
+      "enum": [
+        "session",
+        "week",
+        "month"
+      ]
+    },
+    "activity_id": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": [
+              "up",
+              "warn",
+              "question"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "kind",
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "markdown": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "kind",
+    "request_id",
+    "date",
+    "subject",
+    "findings",
+    "markdown"
+  ],
+  "additionalProperties": false
+}

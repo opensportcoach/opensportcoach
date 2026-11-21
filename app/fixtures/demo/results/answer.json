@@ -1,0 +1,27 @@
+{
+ "kind": "answer",
+ "request_id": "r1",
+ "markdown": "It didn't stall — reps came back once sleep did. No change to the program.",
+ "facts": [
+  {
+   "label": "Reps @ 80 kg, 3 weeks ago",
+   "value": "28 / 32",
+   "source": "garmin"
+  },
+  {
+   "label": "Sleep, the week before",
+   "value": "6 h 41",
+   "source": "garmin"
+  }
+ ],
+ "sources": [
+  {
+   "kind": "garmin",
+   "text": "bench sets, 5 sessions"
+  },
+  {
+   "kind": "computed",
+   "text": "e1RM per session"
+  }
+ ]
+}

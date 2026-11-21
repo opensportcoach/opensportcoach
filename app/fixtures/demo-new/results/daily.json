@@ -1,0 +1,91 @@
+{
+ "kind": "daily",
+ "date": "2026-11-21",
+ "generated_at": "2026-11-21T14:16:15",
+ "data_as_of": "2026-11-21T14:14:15",
+ "recommendation": {
+  "verb": "TRAIN",
+  "workout_key": "d2",
+  "title": "D2 · Pull",
+  "why": "Recovered, and Pull is 8 days old.",
+  "reasoning": "Recovery 72 % and HRV inside its band; resting HR at baseline. D2 Pull was last done 8 days ago — the oldest day in the rotation — and grip faded on the final rows set in the last two pulls, hence the cut.",
+  "cut": "the last set of rows if grip fades",
+  "signals": [
+   {
+    "label": "Recovery",
+    "value": "72 %",
+    "tone": "good"
+   },
+   {
+    "label": "Pull",
+    "value": "8 days",
+    "tone": "warn"
+   },
+   {
+    "label": "Sleep",
+    "value": "7 h 12",
+    "tone": "neutral"
+   }
+  ]
+ },
+ "feel": {
+  "asked": true,
+  "answer": 4,
+  "note": null
+ },
+ "review": {
+  "session_date": "2026-11-16",
+  "day_key": "d1",
+  "lines": [
+   {
+    "exercise": "Bench press",
+    "planned": "4×8 @ 80",
+    "executed": "4×8 @ 80",
+    "verdict": "bump"
+   },
+   {
+    "exercise": "Incline DB press",
+    "planned": "3×10 @ 26/hand",
+    "executed": "10, 10, 9 @ 26",
+    "verdict": "hold"
+   }
+  ],
+  "bumps": [
+   "Bench press 80 → 82.5 kg"
+  ],
+  "misses": []
+ },
+ "pending": [
+  {
+   "id": "p1",
+   "kind": "bump",
+   "text": "Bench press 80 → 82.5 kg — 4×8 at 80 on Monday",
+   "bump": {
+    "exercise": "Bench press",
+    "from": 80,
+    "to": 82.5,
+    "evidence_dates": [
+     "2026-11-16"
+    ]
+   }
+  },
+  {
+   "id": "p2",
+   "kind": "question",
+   "text": "Tuesday's run drifted +9 bpm in the last km at the same pace. Hot, or were you pushing?",
+   "options": [
+    "It was hot",
+    "I pushed",
+    "Neither"
+   ]
+  },
+  {
+   "id": "p3",
+   "kind": "unsynced",
+   "text": "D3 · Legs changed and is not on the watch yet."
+  }
+ ],
+ "notes": [
+  "Laterals have sat at 10 kg for three sessions — watch them."
+ ]
+}

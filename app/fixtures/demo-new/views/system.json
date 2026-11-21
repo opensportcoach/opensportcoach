@@ -1,0 +1,28 @@
+{
+ "view": "system",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:14",
+ "display": "Sam",
+ "garmin_account": "Sam M.",
+ "accent": "#9DC4EE",
+ "refresh": null,
+ "data_as_of": "2026-11-21T14:16:13",
+ "cache": "cache as of 2026-11-21 14:16",
+ "warnings": [],
+ "block": {
+  "name": "Hypertrophy",
+  "start": "2026-11-16",
+  "weeks": 16,
+  "week": 1,
+  "over": false
+ },
+ "cardio_targets": {
+  "runs": 2,
+  "swims": 1,
+  "rides": 1,
+  "cardio_load": [
+   150,
+   250
+  ]
+ }
+}

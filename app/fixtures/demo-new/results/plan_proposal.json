@@ -1,0 +1,247 @@
+{
+ "kind": "plan_proposal",
+ "request_id": "r2",
+ "id": "plan-next-week",
+ "title": "Next week 23 Nov",
+ "headline": "Bench and quads up, a CSS test, and a long ride.",
+ "version": {
+  "n": 2,
+  "of": 2,
+  "note": "Proposal 1 kept the circuit on Sunday."
+ },
+ "based_on_data_as_of": "2026-11-21T07:40:00",
+ "days": [
+  {
+   "date": "2026-11-23",
+   "type": "session",
+   "workout_key": "d1",
+   "sport": "strength",
+   "title": "D1 · Push",
+   "notes": null,
+   "change": "changed",
+   "from": null,
+   "to": null,
+   "from_date": null,
+   "reason": "Bench goes up a step — Monday met the prescription.",
+   "evidence": [
+    {
+     "source": "computed",
+     "text": "4 × 8 met at 80 kg",
+     "detail": "Prescription check: every planned set met at this load. Computed from Garmin sets."
+    }
+   ],
+   "benchmark": false
+  },
+  {
+   "date": "2026-11-24",
+   "type": "cardio",
+   "workout_key": null,
+   "sport": "run",
+   "title": "Easy run 5 km",
+   "notes": null,
+   "change": "changed",
+   "from": "4 km",
+   "to": "5 km",
+   "from_date": null,
+   "reason": "Week 2 of the run arc: +1 km.",
+   "evidence": [
+    {
+     "source": "coach",
+     "text": "run arc · wk 2",
+     "detail": "4 → 6 km over four weeks. Source: coach."
+    }
+   ],
+   "benchmark": false
+  },
+  {
+   "date": "2026-11-25",
+   "type": "rest",
+   "workout_key": null,
+   "sport": null,
+   "title": "Rest",
+   "notes": null,
+   "change": "unchanged",
+   "from": null,
+   "to": null,
+   "from_date": null,
+   "reason": "Unchanged.",
+   "evidence": [],
+   "benchmark": false
+  },
+  {
+   "date": "2026-11-26",
+   "type": "session",
+   "workout_key": "d2",
+   "sport": "strength",
+   "title": "D2 · Pull",
+   "notes": null,
+   "change": "moved",
+   "from": "Fri",
+   "to": "Thu",
+   "from_date": "2026-11-27",
+   "reason": "Moves up a day so the CSS test gets Friday after a rest day.",
+   "evidence": [],
+   "benchmark": false
+  },
+  {
+   "date": "2026-11-27",
+   "type": "cardio",
+   "workout_key": null,
+   "sport": "swim",
+   "title": "Swim · CSS test 1,800 m",
+   "notes": null,
+   "change": "changed",
+   "from": "Swim 1,800 m easy",
+   "to": "CSS test",
+   "from_date": null,
+   "reason": "The block’s first benchmark: pool zones from a real CSS, not a six-week-old one.",
+   "evidence": [
+    {
+     "source": "garmin",
+     "text": "last CSS · 6 weeks ago",
+     "detail": "The last CSS swim on file. Source: Garmin."
+    }
+   ],
+   "benchmark": true
+  },
+  {
+   "date": "2026-11-28",
+   "type": "session",
+   "workout_key": "d3",
+   "sport": "strength",
+   "title": "D3 · Legs",
+   "notes": null,
+   "change": "changed",
+   "from": null,
+   "to": null,
+   "from_date": null,
+   "reason": "Quads get a fourth set of leg press.",
+   "evidence": [
+    {
+     "source": "computed",
+     "text": "quads 8 of 10–14 sets",
+     "detail": "Planned working sets for quads against their weekly band. Computed."
+    }
+   ],
+   "benchmark": false
+  },
+  {
+   "date": "2026-11-29",
+   "type": "cardio",
+   "workout_key": null,
+   "sport": "zwift",
+   "title": "Zwift · Long ride",
+   "notes": null,
+   "change": "added",
+   "from": null,
+   "to": "1:50 · Z2",
+   "from_date": null,
+   "reason": "Sunday was free: the aerobic base the 70.3 needs.",
+   "evidence": [
+    {
+     "source": "you",
+     "text": "“a long ride on Sundays”",
+     "detail": "Your request, this morning."
+    }
+   ],
+   "benchmark": false,
+   "zwift_workout": {
+    "name": "Cadence Kicks XL",
+    "url": "https://whatsonzwift.com/workouts/endurance/cadence-kicks-xl",
+    "collection": "Endurance",
+    "duration_min": 110,
+    "stress_points": 73
+   }
+  },
+  {
+   "date": "2026-11-29",
+   "type": "session",
+   "workout_key": null,
+   "sport": "circuit",
+   "title": "Circuit · 5 rounds",
+   "notes": null,
+   "change": "removed",
+   "from": null,
+   "to": null,
+   "from_date": null,
+   "reason": "Two hard days back to back with Saturday’s legs — the long ride takes its place.",
+   "evidence": [],
+   "benchmark": false
+  }
+ ],
+ "program_changes": [
+  {
+   "workout_key": "d1",
+   "exercise": "Bench press",
+   "field": "weight",
+   "from": 80,
+   "to": 82.5,
+   "reason": "4×8 at 80 on Monday — the bump rule fired."
+  },
+  {
+   "workout_key": "d3",
+   "exercise": "Leg press",
+   "field": "sets",
+   "from": 3,
+   "to": 4,
+   "reason": "Quads are below their weekly band."
+  }
+ ],
+ "impact": [
+  {
+   "metric": "cardio_load",
+   "now": 310,
+   "proposed": 355,
+   "note": "Planned Garmin load for the cardio sessions — an estimate. Source: coach."
+  },
+  {
+   "metric": "strength_sets",
+   "now": 64,
+   "proposed": 66,
+   "note": null
+  },
+  {
+   "metric": "hours",
+   "now": 6.5,
+   "proposed": 8.25,
+   "note": null
+  },
+  {
+   "metric": "hard_days",
+   "now": 2,
+   "proposed": 2,
+   "note": null
+  },
+  {
+   "metric": "benchmarks",
+   "now": 0,
+   "proposed": 1,
+   "note": "The CSS test on Friday. Source: coach."
+  }
+ ],
+ "checks": [
+  {
+   "status": "holds",
+   "rule": "Three gym days.",
+   "detail": "Push Mon, Pull Thu, Legs Sat."
+  },
+  {
+   "status": "holds",
+   "rule": "No test inside a race window.",
+   "detail": "The next race’s easy days start later."
+  },
+  {
+   "status": "holds",
+   "rule": "Weekly floor.",
+   "detail": "3 gym days, 1 swim, 1 run, a long ride."
+  },
+  {
+   "status": "near_limit",
+   "rule": "Two hard days back to back.",
+   "detail": "CSS test Fri, Legs Sat — different systems, allowed.",
+   "from": "2026-11-27",
+   "to": "2026-11-28"
+  }
+ ],
+ "needs_push": true
+}

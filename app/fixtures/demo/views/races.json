@@ -1,0 +1,821 @@
+{
+ "view": "races",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:11",
+ "races": [
+  {
+   "id": "riverside-half",
+   "name": "Riverside Half",
+   "kind": "half_marathon",
+   "kind_label": "Half marathon",
+   "icon": "run",
+   "priority": "B",
+   "entry": "done",
+   "date": "2026-10-11",
+   "dow": "Sun",
+   "start": "09:00",
+   "days_to": -41,
+   "weeks_to": -5.9,
+   "past": true,
+   "countdown": false,
+   "target": {
+    "under": "1:50:00",
+    "seconds": 6600
+   },
+   "official_name": "Riverside Half Marathon",
+   "series": null,
+   "start_note": null,
+   "where": {
+    "city": "Riverside",
+    "venue": "Old Bridge"
+   },
+   "format": {
+    "distance_km": 21.097
+   },
+   "split": null,
+   "type_keys": [
+    "running"
+   ],
+   "windows": {
+    "before": {
+     "window": "easy",
+     "from": "2026-10-08",
+     "to": "2026-10-10",
+     "days": 3
+    },
+    "race": "2026-10-11",
+    "recovery": {
+     "from": "2026-10-12",
+     "to": "2026-10-16",
+     "days": 5,
+     "no_intensity_to": "2026-10-16"
+    },
+    "counts": {
+     "easy_before": 3,
+     "recovery_after": 5
+    },
+    "text": "3 easy days before · 5 recovery days after"
+   },
+   "verified": {
+    "status": "confirmed",
+    "checked": "2026-10-06",
+    "source_kind": "official",
+    "source": "https://example.com/riverside-half",
+    "found": {
+     "date": "2026-10-11",
+     "start": "09:00"
+    },
+    "history": [],
+    "days_since": 46
+   },
+   "check_due": null,
+   "prediction": null,
+   "benchmarks": [],
+   "reference": null,
+   "stations": [],
+   "result": {
+    "time": "1:49:32",
+    "activity_id": 21000009001,
+    "note": "Even splits; the last 3 km were the fastest.",
+    "seconds": 6572,
+    "vs_target_s": -28,
+    "splits": null,
+    "splits_from": null,
+    "vs_reference": null
+   },
+   "mark": null,
+   "fallback": {
+    "icon": "run",
+    "monogram": "RH",
+    "label": null
+   }
+  },
+  {
+   "id": "lakeshore-703",
+   "name": "Lakeshore 70.3",
+   "kind": "triathlon_70_3",
+   "kind_label": "Triathlon 70.3",
+   "icon": "race",
+   "priority": "B",
+   "entry": "done",
+   "date": "2026-10-25",
+   "dow": "Sun",
+   "start": "07:30",
+   "days_to": -27,
+   "weeks_to": -3.9,
+   "past": true,
+   "countdown": false,
+   "target": {
+    "under": "5:20:00",
+    "seconds": 19200
+   },
+   "official_name": "Lakeshore 70.3",
+   "series": null,
+   "start_note": null,
+   "where": {
+    "city": "Lakeshore",
+    "venue": "North beach"
+   },
+   "format": {
+    "swim_km": 1.9,
+    "bike_km": 90,
+    "run_km": 21.1
+   },
+   "split": null,
+   "type_keys": [
+    "multi_sport"
+   ],
+   "windows": {
+    "before": {
+     "window": "easy",
+     "from": "2026-10-22",
+     "to": "2026-10-24",
+     "days": 3
+    },
+    "race": "2026-10-25",
+    "recovery": {
+     "from": "2026-10-26",
+     "to": "2026-11-01",
+     "days": 7,
+     "no_intensity_to": "2026-11-01"
+    },
+    "counts": {
+     "easy_before": 3,
+     "recovery_after": 7
+    },
+    "text": "3 easy days before · 7 recovery days after"
+   },
+   "verified": {
+    "status": "confirmed",
+    "checked": "2026-10-19",
+    "source_kind": "official",
+    "source": "https://example.com/lakeshore-703",
+    "found": {
+     "date": "2026-10-25",
+     "start": "07:30"
+    },
+    "history": [],
+    "days_since": 33
+   },
+   "check_due": null,
+   "prediction": null,
+   "benchmarks": [],
+   "reference": {
+    "name": "Lakeshore 70.3 2025",
+    "date": "2025-10-26",
+    "time": "5:27:30",
+    "splits": [
+     {
+      "name": "Swim",
+      "time": "35:40",
+      "seconds": 2140,
+      "discipline": "swim"
+     },
+     {
+      "name": "T1",
+      "time": "4:20",
+      "seconds": 260,
+      "discipline": "t1"
+     },
+     {
+      "name": "Bike",
+      "time": "2:38:10",
+      "seconds": 9490,
+      "discipline": "bike"
+     },
+     {
+      "name": "T2",
+      "time": "2:50",
+      "seconds": 170,
+      "discipline": "t2"
+     },
+     {
+      "name": "Run",
+      "time": "2:06:30",
+      "seconds": 7590,
+      "discipline": "run"
+     }
+    ],
+    "note": "Last year's edition, from the results page.",
+    "seconds": 19650,
+    "target_gap_s": 450,
+    "splits_from": null
+   },
+   "stations": [],
+   "result": {
+    "time": "5:18:20",
+    "activity_id": 21000009002,
+    "note": "A cool morning; the run held together.",
+    "seconds": 19100,
+    "vs_target_s": -100,
+    "splits": [
+     {
+      "discipline": "swim",
+      "label": "Swim",
+      "seconds": 2085,
+      "n": 1
+     },
+     {
+      "discipline": "t1",
+      "label": "T1",
+      "seconds": 239,
+      "n": 1
+     },
+     {
+      "discipline": "bike",
+      "label": "Bike",
+      "seconds": 9310,
+      "n": 1
+     },
+     {
+      "discipline": "t2",
+      "label": "T2",
+      "seconds": 161,
+      "n": 1
+     },
+     {
+      "discipline": "run",
+      "label": "Run",
+      "seconds": 7305,
+      "n": 1
+     }
+    ],
+    "splits_from": "legs",
+    "vs_reference": [
+     {
+      "key": "swim",
+      "label": "Swim",
+      "seconds": 2085,
+      "reference_s": 2140,
+      "delta_s": -55
+     },
+     {
+      "key": "bike",
+      "label": "Bike",
+      "seconds": 9310,
+      "reference_s": 9490,
+      "delta_s": -180
+     },
+     {
+      "key": "run",
+      "label": "Run",
+      "seconds": 7305,
+      "reference_s": 7590,
+      "delta_s": -285
+     },
+     {
+      "key": "transitions",
+      "label": "T1 + T2",
+      "seconds": 400,
+      "reference_s": 430,
+      "delta_s": -30
+     }
+    ]
+   },
+   "mark": null,
+   "fallback": {
+    "icon": "race",
+    "monogram": "LA",
+    "label": null
+   }
+  },
+  {
+   "id": "hill-country-gravel",
+   "name": "Hill Country Gravel",
+   "kind": "gravel",
+   "kind_label": "Gravel race",
+   "icon": "bike",
+   "priority": "B",
+   "entry": "entered",
+   "date": "2026-12-20",
+   "dow": "Sun",
+   "start": "08:00",
+   "days_to": 29,
+   "weeks_to": 4.1,
+   "past": false,
+   "countdown": true,
+   "target": {
+    "under": "4:45:00",
+    "seconds": 17100
+   },
+   "official_name": "Hill Country Gravel 100",
+   "series": null,
+   "start_note": null,
+   "where": {
+    "city": "Hill Country",
+    "venue": "Market square"
+   },
+   "format": {
+    "distance_km": 100,
+    "elevation_gain_m": 1600
+   },
+   "split": null,
+   "type_keys": [
+    "gravel_cycling",
+    "cycling",
+    "road_biking",
+    "mountain_biking"
+   ],
+   "windows": {
+    "before": {
+     "window": "easy",
+     "from": "2026-12-18",
+     "to": "2026-12-19",
+     "days": 2
+    },
+    "race": "2026-12-20",
+    "recovery": {
+     "from": "2026-12-21",
+     "to": "2026-12-24",
+     "days": 4,
+     "no_intensity_to": "2026-12-24"
+    },
+    "counts": {
+     "easy_before": 2,
+     "recovery_after": 4
+    },
+    "text": "2 easy days before · 4 recovery days after"
+   },
+   "verified": {
+    "status": "differs",
+    "checked": "2026-11-19",
+    "source_kind": "official",
+    "source": "https://example.com/hill-country-gravel",
+    "found": {
+     "date": "2026-12-19",
+     "start": "08:00"
+    },
+    "note": "The organiser's page lists the Saturday; the entry says Sunday.",
+    "history": [],
+    "days_since": 2
+   },
+   "check_due": null,
+   "prediction": null,
+   "benchmarks": [],
+   "reference": null,
+   "stations": [],
+   "result": null,
+   "mark": null,
+   "fallback": {
+    "icon": "bike",
+    "monogram": "HC",
+    "label": null
+   }
+  },
+  {
+   "id": "coastline-703",
+   "name": "Coastline 70.3",
+   "kind": "triathlon_70_3",
+   "kind_label": "Triathlon 70.3",
+   "icon": "race",
+   "priority": "A",
+   "entry": "entered",
+   "date": "2027-02-28",
+   "dow": "Sun",
+   "start": "07:00",
+   "days_to": 99,
+   "weeks_to": 14.1,
+   "past": false,
+   "countdown": false,
+   "target": {
+    "under": "5:15:00",
+    "seconds": 18900
+   },
+   "official_name": "Coastline 70.3",
+   "series": null,
+   "start_note": null,
+   "where": {
+    "city": "Coastline",
+    "venue": "Harbour"
+   },
+   "format": {
+    "swim_km": 1.9,
+    "bike_km": 90,
+    "run_km": 21.1
+   },
+   "split": null,
+   "type_keys": [
+    "multi_sport"
+   ],
+   "windows": {
+    "before": {
+     "window": "taper",
+     "from": "2027-02-14",
+     "to": "2027-02-27",
+     "days": 14
+    },
+    "race": "2027-02-28",
+    "recovery": {
+     "from": "2027-03-01",
+     "to": "2027-03-10",
+     "days": 10,
+     "no_intensity_to": "2027-03-07"
+    },
+    "counts": {
+     "taper": 14,
+     "recovery_after": 10,
+     "no_intensity_after": 7
+    },
+    "text": "a 14-day taper · 10 recovery days after, the first 7 without intensity"
+   },
+   "verified": {
+    "status": "confirmed",
+    "checked": "2026-11-12",
+    "source_kind": "entry",
+    "source": "the entry confirmation",
+    "found": {
+     "date": "2027-02-28",
+     "start": "07:00"
+    },
+    "history": [],
+    "days_since": 9
+   },
+   "check_due": null,
+   "prediction": null,
+   "benchmarks": [],
+   "reference": null,
+   "stations": [],
+   "result": null,
+   "mark": null,
+   "fallback": {
+    "icon": "race",
+    "monogram": "CO",
+    "label": null
+   }
+  }
+ ],
+ "next": {
+  "id": "hill-country-gravel",
+  "name": "Hill Country Gravel",
+  "kind": "gravel",
+  "kind_label": "Gravel race",
+  "icon": "bike",
+  "priority": "B",
+  "entry": "entered",
+  "date": "2026-12-20",
+  "dow": "Sun",
+  "start": "08:00",
+  "days_to": 29,
+  "weeks_to": 4.1,
+  "past": false,
+  "countdown": true,
+  "target": {
+   "under": "4:45:00",
+   "seconds": 17100
+  },
+  "official_name": "Hill Country Gravel 100",
+  "series": null,
+  "start_note": null,
+  "where": {
+   "city": "Hill Country",
+   "venue": "Market square"
+  },
+  "format": {
+   "distance_km": 100,
+   "elevation_gain_m": 1600
+  },
+  "split": null,
+  "type_keys": [
+   "gravel_cycling",
+   "cycling",
+   "road_biking",
+   "mountain_biking"
+  ],
+  "windows": {
+   "before": {
+    "window": "easy",
+    "from": "2026-12-18",
+    "to": "2026-12-19",
+    "days": 2
+   },
+   "race": "2026-12-20",
+   "recovery": {
+    "from": "2026-12-21",
+    "to": "2026-12-24",
+    "days": 4,
+    "no_intensity_to": "2026-12-24"
+   },
+   "counts": {
+    "easy_before": 2,
+    "recovery_after": 4
+   },
+   "text": "2 easy days before · 4 recovery days after"
+  },
+  "verified": {
+   "status": "differs",
+   "checked": "2026-11-19",
+   "source_kind": "official",
+   "source": "https://example.com/hill-country-gravel",
+   "found": {
+    "date": "2026-12-19",
+    "start": "08:00"
+   },
+   "note": "The organiser's page lists the Saturday; the entry says Sunday.",
+   "history": [],
+   "days_since": 2
+  },
+  "check_due": null,
+  "prediction": null,
+  "benchmarks": [],
+  "reference": null,
+  "stations": [],
+  "result": null,
+  "mark": null,
+  "fallback": {
+   "icon": "bike",
+   "monogram": "HC",
+   "label": null
+  }
+ },
+ "today": {
+  "window": "build",
+  "race": {
+   "id": "hill-country-gravel",
+   "name": "Hill Country Gravel",
+   "kind": "gravel",
+   "kind_label": "Gravel race",
+   "icon": "bike",
+   "priority": "B",
+   "entry": "entered",
+   "date": "2026-12-20",
+   "dow": "Sun",
+   "start": "08:00",
+   "days_to": 29,
+   "weeks_to": 4.1,
+   "past": false,
+   "countdown": true,
+   "target": {
+    "under": "4:45:00",
+    "seconds": 17100
+   }
+  },
+  "days_to": 29,
+  "day": null,
+  "of": null,
+  "from": null,
+  "to": null,
+  "intensity": true,
+  "rule": "No race window: the block's own training.",
+  "also": []
+ },
+ "season": {
+  "race": {
+   "id": "coastline-703",
+   "name": "Coastline 70.3",
+   "kind": "triathlon_70_3",
+   "kind_label": "Triathlon 70.3",
+   "icon": "race",
+   "priority": "A",
+   "entry": "entered",
+   "date": "2027-02-28",
+   "dow": "Sun",
+   "start": "07:00",
+   "days_to": 99,
+   "weeks_to": 14.1,
+   "past": false,
+   "countdown": false,
+   "target": {
+    "under": "5:15:00",
+    "seconds": 18900
+   }
+  },
+  "blocks": [
+   {
+    "name": "Hypertrophy",
+    "start": "2026-08-17",
+    "end": "2026-12-06",
+    "weeks": 16,
+    "emphasis": "Upper-body size on an endurance base",
+    "current": true,
+    "week": 14,
+    "races": [
+     {
+      "id": "riverside-half",
+      "at": "in"
+     },
+     {
+      "id": "lakeshore-703",
+      "at": "in"
+     }
+    ]
+   },
+   {
+    "name": "Endurance base",
+    "start": "2026-12-07",
+    "end": "2027-01-17",
+    "weeks": 6,
+    "emphasis": "Aerobic volume; the gravel race in week 2",
+    "current": false,
+    "week": null,
+    "races": [
+     {
+      "id": "hill-country-gravel",
+      "at": "in"
+     }
+    ]
+   },
+   {
+    "name": "Race build",
+    "start": "2027-01-18",
+    "end": "2027-02-28",
+    "weeks": 6,
+    "emphasis": "Bricks, open water, then the taper",
+    "current": false,
+    "week": null,
+    "races": [
+     {
+      "id": "coastline-703",
+      "at": "in"
+     }
+    ]
+   }
+  ],
+  "planned": true,
+  "current": {
+   "name": "Hypertrophy",
+   "start": "2026-08-17",
+   "end": "2026-12-06",
+   "weeks": 16,
+   "emphasis": "Upper-body size on an endurance base",
+   "current": true,
+   "week": 14,
+   "races": [
+    {
+     "id": "riverside-half",
+     "at": "in"
+    },
+    {
+     "id": "lakeshore-703",
+     "at": "in"
+    }
+   ]
+  },
+  "races": [
+   {
+    "id": "riverside-half",
+    "name": "Riverside Half",
+    "kind": "half_marathon",
+    "kind_label": "Half marathon",
+    "icon": "run",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-11",
+    "dow": "Sun",
+    "start": "09:00",
+    "days_to": -41,
+    "weeks_to": -5.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "1:50:00",
+     "seconds": 6600
+    }
+   },
+   {
+    "id": "lakeshore-703",
+    "name": "Lakeshore 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "B",
+    "entry": "done",
+    "date": "2026-10-25",
+    "dow": "Sun",
+    "start": "07:30",
+    "days_to": -27,
+    "weeks_to": -3.9,
+    "past": true,
+    "countdown": false,
+    "target": {
+     "under": "5:20:00",
+     "seconds": 19200
+    }
+   },
+   {
+    "id": "hill-country-gravel",
+    "name": "Hill Country Gravel",
+    "kind": "gravel",
+    "kind_label": "Gravel race",
+    "icon": "bike",
+    "priority": "B",
+    "entry": "entered",
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "start": "08:00",
+    "days_to": 29,
+    "weeks_to": 4.1,
+    "past": false,
+    "countdown": true,
+    "target": {
+     "under": "4:45:00",
+     "seconds": 17100
+    }
+   },
+   {
+    "id": "coastline-703",
+    "name": "Coastline 70.3",
+    "kind": "triathlon_70_3",
+    "kind_label": "Triathlon 70.3",
+    "icon": "race",
+    "priority": "A",
+    "entry": "entered",
+    "date": "2027-02-28",
+    "dow": "Sun",
+    "start": "07:00",
+    "days_to": 99,
+    "weeks_to": 14.1,
+    "past": false,
+    "countdown": false,
+    "target": {
+     "under": "5:15:00",
+     "seconds": 18900
+    }
+   }
+  ],
+  "next": {
+   "id": "hill-country-gravel",
+   "name": "Hill Country Gravel",
+   "kind": "gravel",
+   "kind_label": "Gravel race",
+   "icon": "bike",
+   "priority": "B",
+   "entry": "entered",
+   "date": "2026-12-20",
+   "dow": "Sun",
+   "start": "08:00",
+   "days_to": 29,
+   "weeks_to": 4.1,
+   "past": false,
+   "countdown": true,
+   "target": {
+    "under": "4:45:00",
+    "seconds": 17100
+   }
+  }
+ },
+ "due": [],
+ "kinds": {
+  "hyrox": {
+   "label": "HYROX",
+   "icon": "circuit"
+  },
+  "half_marathon": {
+   "label": "Half marathon",
+   "icon": "run"
+  },
+  "gravel": {
+   "label": "Gravel race",
+   "icon": "bike"
+  },
+  "triathlon_70_3": {
+   "label": "Triathlon 70.3",
+   "icon": "race"
+  }
+ },
+ "defs": {
+  "race_windows": {
+   "source": "coach",
+   "definition": "Race windows are counted in calendar days next to race day, from defaults per kind and priority that the athlete approved; a race may override them."
+  },
+  "race_easy": {
+   "source": "coach",
+   "definition": "An easy day before a race: no sprints, VO2 work, threshold work or tests, and no heavy legs. Easy aerobic work, mobility and a lighter upper-body gym day are fine."
+  },
+  "race_taper": {
+   "source": "coach",
+   "definition": "A taper day before an A race: the volume comes down by about half over the taper, and short race-pace efforts stay in."
+  },
+  "race_day": {
+   "source": "coach",
+   "definition": "Race day: the race, its warm-up and its fuelling, and nothing else."
+  },
+  "race_recovery": {
+   "source": "coach",
+   "definition": "A recovery day after a race: no intensity, and no long ride or long run. Easy aerobic work and mobility, and a light gym day from the second day. After an A race, short intensity may come back once its no-intensity days are over."
+  },
+  "race_priority": {
+   "source": "coach",
+   "definition": "An A race: a full taper, and the season peaks for it. A B race: a hard day with a few easy days around it — no taper, and no block built to peak for it. Not unprepared: the block before still trains what the race needs."
+  },
+  "race_countdown": {
+   "source": "computed",
+   "definition": "Days to race day; the countdown shows from 8 weeks out."
+  },
+  "race_check": {
+   "source": "computed",
+   "definition": "A race's date is due an online check when it was never checked, when the last check is more than 30 days old, when the race is within 21 days and the last check more than 7 days old, and once within 4 days of it, when start times appear. A past race is due its result until one is recorded."
+  },
+  "race_target": {
+   "source": "coach",
+   "definition": "Your own target for the race; the result is read against it."
+  },
+  "race_prediction": {
+   "source": "computed",
+   "definition": "Predicted only from data: Garmin's own race predictor for run distances (5 km to the marathon), the latest day it has, with its best of the past year and a weekly trend. Garmin predicts a fresh race, not one run off the bike. With no predictor and no benchmark-based estimate, it reads \"not tested yet\"."
+  },
+  "race_splits": {
+   "source": "computed",
+   "definition": "A race's splits are read from its Garmin activity, never typed in: a triathlon's from the legs of its multisport activity (swim, T1, bike, T2, run), a HYROX's from the legs, the laps or the exercise sets that split it into its runs, its stations and the roxzone between them. Each is that part's elapsed time — the race clock — so they add up to the race's elapsed time. A recording that doesn't fit the race's format gives none — never a guess."
+  }
+ }
+}

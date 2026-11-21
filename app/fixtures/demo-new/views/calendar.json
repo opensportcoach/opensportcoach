@@ -1,0 +1,263 @@
+{
+ "view": "calendar",
+ "athlete": "demo",
+ "generated_at": "2026-11-21T14:16:14",
+ "scheduled": [
+  {
+   "date": "2026-11-16",
+   "title": "D1 · Push",
+   "workout_id": 4101,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": true
+  },
+  {
+   "date": "2026-11-19",
+   "title": "D2 · Pull",
+   "workout_id": 4102,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-20",
+   "title": "Swim 1,800 m",
+   "workout_id": 4201,
+   "sport": "lap_swimming",
+   "badge": {
+    "type": "lap_swimming",
+    "sport": "Pool swim",
+    "icon": "swim",
+    "kind": "endurance"
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-21",
+   "title": "D3 · Legs",
+   "workout_id": 4103,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-22",
+   "title": "Swim 1,800 m",
+   "workout_id": 4201,
+   "sport": "lap_swimming",
+   "badge": {
+    "type": "lap_swimming",
+    "sport": "Pool swim",
+    "icon": "swim",
+    "kind": "endurance"
+   },
+   "done": false
+  },
+  {
+   "date": "2026-11-23",
+   "title": "D1 · Push",
+   "workout_id": 4101,
+   "sport": "strength_training",
+   "badge": {
+    "type": "strength_training",
+    "sport": "Strength",
+    "icon": "strength",
+    "kind": "strength"
+   },
+   "done": false
+  }
+ ],
+ "planned": [],
+ "done": [
+  {
+   "date": "2026-11-21",
+   "id": 21000000011,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-20",
+   "id": 21000000010,
+   "title": "Pool swim",
+   "group": "swim",
+   "type": "lap_swimming",
+   "sport": "Pool swim",
+   "icon": "swim",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-19",
+   "id": 21000000009,
+   "title": "D2 · Pull",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-17",
+   "id": 21000000008,
+   "title": "Easy run",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-16",
+   "id": 21000000007,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-15",
+   "id": 21000000006,
+   "title": "Zone 2 ride",
+   "group": "bike",
+   "type": "road_biking",
+   "sport": "Road ride",
+   "icon": "bike",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-14",
+   "id": 21000000005,
+   "title": "D3 · Legs",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-13",
+   "id": 21000000004,
+   "title": "Pool swim",
+   "group": "swim",
+   "type": "lap_swimming",
+   "sport": "Pool swim",
+   "icon": "swim",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-12",
+   "id": 21000000003,
+   "title": "D2 · Pull",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  },
+  {
+   "date": "2026-11-11",
+   "id": 21000000012,
+   "title": "Conditioning circuit",
+   "group": "other",
+   "type": "indoor_cardio",
+   "sport": "Indoor cardio",
+   "icon": "circuit",
+   "kind": "circuit"
+  },
+  {
+   "date": "2026-11-10",
+   "id": 21000000002,
+   "title": "Easy run",
+   "group": "run",
+   "type": "running",
+   "sport": "Run",
+   "icon": "run",
+   "kind": "endurance"
+  },
+  {
+   "date": "2026-11-09",
+   "id": 21000000001,
+   "title": "D1 · Push",
+   "group": "strength",
+   "type": "strength_training",
+   "sport": "Strength",
+   "icon": "strength",
+   "kind": "strength"
+  }
+ ],
+ "sync": {
+  "workouts": [
+   {
+    "key": "d1",
+    "workout": "D1 · Push",
+    "id": 4101,
+    "state": "in_sync"
+   },
+   {
+    "key": "d2",
+    "workout": "D2 · Pull",
+    "id": 4102,
+    "state": "in_sync"
+   },
+   {
+    "key": "d3",
+    "workout": "D3 · Legs",
+    "id": 4103,
+    "state": "changed"
+   }
+  ],
+  "pending": 1,
+  "unknown": 0
+ },
+ "race_days": [],
+ "defs": {
+  "watch_sync": {
+   "source": "computed",
+   "definition": "Compared with what was last verified on your watch — no Garmin call."
+  },
+  "race_easy": {
+   "source": "coach",
+   "definition": "An easy day before a race: no sprints, VO2 work, threshold work or tests, and no heavy legs. Easy aerobic work, mobility and a lighter upper-body gym day are fine."
+  },
+  "race_taper": {
+   "source": "coach",
+   "definition": "A taper day before an A race: the volume comes down by about half over the taper, and short race-pace efforts stay in."
+  },
+  "race_day": {
+   "source": "coach",
+   "definition": "Race day: the race, its warm-up and its fuelling, and nothing else."
+  },
+  "race_recovery": {
+   "source": "coach",
+   "definition": "A recovery day after a race: no intensity, and no long ride or long run. Easy aerobic work and mobility, and a light gym day from the second day. After an A race, short intensity may come back once its no-intensity days are over."
+  },
+  "fuel_band": {
+   "source": "computed",
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+  },
+  "fuel_target": {
+   "source": "computed",
+   "definition": "The rate planned: the top of a hard session's band, the middle of an easy one's, never above what your gut is trained to (60 g/h until you say otherwise), plus 10 g/h on a gut-training session."
+  }
+ }
+}

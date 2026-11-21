@@ -1,0 +1,4 @@
+garminconnect[workout]
+curl_cffi
+garmin-fit-sdk
+jsonschema==4.23.0

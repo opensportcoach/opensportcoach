@@ -1,0 +1,43 @@
+# raw Garmin pulls — re-pullable cache, contains personal health data
+data/
+
+# python
+.venv
+__pycache__/
+*.pyc
+
+# secrets — credentials must NEVER land in this repo (tokens live in ~/.garminconnect)
+.env
+*.token
+
+# node — the app's server and SPA (app/)
+app/**/node_modules
+app/**/dist
+
+# macOS
+.DS_Store
+
+# claude code local settings (personal, not shared)
+.claude/settings.local.json
+.refresh-state
+
+# macOS / iCloud sync-conflict copies ("load 2.json") — never source
+* [0-9].*
+
+.venv
+# --- public repository: never commit a person's data ----------------------------------------------
+# Everything about an athlete is private. Keep athletes/ as your own PRIVATE repository if you want
+# history for it (cd athletes && git init); it is never part of this one.
+athletes/*
+!athletes/README.md
+data/
+# Event logos are their owners' trademarks: local only (scripts/races.py → MARKS).
+app/web/public/marks/
+# Generated on each machine from Garmin's FIT SDK (scripts/build_exercise_catalog.py).
+workouts/EXERCISE_CATALOG.json
+# Recorded activity files are personal data, except synthetic test fixtures.
+*.fit
+*.fit.gz
+*.gpx
+*.tcx
+!tests/fixtures/**
