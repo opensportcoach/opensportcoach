@@ -2309,6 +2309,15 @@ def test_get_client_refuses_the_wrong_account():
         garmin_client.Garmin = FakeGarmin
         garmin_client.athlete.current = lambda: fake
         try:
+            # An empty token store — never logged in, or the library's logout() deleted the file — says so
+            # plainly, with the command, before any login is tried.
+            try:
+                garmin_client.get_client()
+            except SystemExit as e:
+                assert "No saved Garmin login for X" in str(e.code) and "login.py --athlete x" in str(e.code), e.code
+            else:
+                raise AssertionError("get_client tried to log in with no saved login")
+            (Path(tmp) / garmin_client.TOKEN_FILE).write_text("{}")   # a placeholder: FakeGarmin never reads it
             try:
                 garmin_client.get_client()
             except SystemExit as e:

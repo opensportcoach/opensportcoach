@@ -26,6 +26,9 @@ from garminconnect import Garmin
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import athlete  # noqa: E402
 
+# Where garminconnect (>= 0.3) keeps the saved login inside the athlete's token store.
+TOKEN_FILE = "garmin_tokens.json"
+
 # Unofficial API — keep a polite gap between calls in any loop.
 THROTTLE_SECONDS = 0.4
 
@@ -54,6 +57,12 @@ def get_client() -> Garmin:
     if not a.token_dir.is_dir():
         sys.exit(f"No Garmin token store for {a.display} at {a.token_dir}.\n"
                  f"Run the one-time interactive login, in their own terminal:\n{how}")
+    # The saved login is one file in that folder (garminconnect >= 0.3). It is gone when it was never
+    # written, or when the library's logout() ran: logout deletes it. Say that plainly — a vague
+    # "expired or poisoned" sent a session debugging the library for what one login fixes.
+    if not (a.token_dir / TOKEN_FILE).is_file():
+        sys.exit(f"No saved Garmin login for {a.display}: {a.token_dir} has no {TOKEN_FILE} (never created, "
+                 f"or removed by a logout). Nothing was read or written. Log in again, in their own terminal:\n{how}")
     try:
         client = Garmin()
         client.login(str(a.token_dir))
