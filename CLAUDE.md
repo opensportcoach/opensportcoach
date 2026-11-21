@@ -100,6 +100,9 @@ invocation and most days there is nothing to find.
   with `--expect-plan <hash>`; `scripts/hooks/confirm_gate.py` refuses it without a recorded click,
   and the script refuses a plan that changed since. Never record a click yourself (`app_confirm.py`).
 - **Reinstating a removed lift is a medical decision, not a programming one.**
+- **Where commits go.** Engine changes are committed in this repository. Athlete files never are (it
+  ignores `athletes/`): when `athletes/` is its own private repository, they are committed there —
+  `git -C athletes add <name>/… && git -C athletes commit` — and nowhere else.
 - **One athlete per commit.** The pre-commit hook refuses a commit that spans two athletes, or one
   that touches another athlete's folder from a bound session.
 
