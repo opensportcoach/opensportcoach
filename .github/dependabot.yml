@@ -11,6 +11,13 @@ updates:
     directory: /app/web
     schedule: {interval: weekly}
     groups: {web: {patterns: ["*"]}}
+    # Major versions (React, React Router, Vite…) change APIs: upgraded on purpose, in a PR of their own.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: npm
     directory: /app/channel
     schedule: {interval: weekly}
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
