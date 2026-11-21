@@ -157,7 +157,21 @@ sources hold the same session, the duplicate is detected and the weaker copy dro
 **You need:** macOS or Linux · Python 3.12+ · Node.js 24+ · [Claude Code](https://claude.com/claude-code)
 with a Claude plan that includes it · about 15 minutes.
 
-**1 · Install**
+**1 · Install** — two ways.
+
+**The easy way: let Claude do it.** Open Claude Code in the folder where you keep your projects and
+paste:
+
+```text
+Clone https://github.com/opensportcoach/opensportcoach, install it exactly as its README's
+"Set it up" section says, run its tests, and tell me when it's ready.
+```
+
+Claude clones the repository, creates the Python environment, builds the exercise catalog, installs the
+app and runs the test suite — showing you each command first, as your permission settings ask. If
+something is missing (Python, Node.js), it tells you what to install.
+
+**Or by hand:**
 
 ```bash
 git clone https://github.com/opensportcoach/opensportcoach.git && cd opensportcoach
@@ -168,10 +182,11 @@ git config core.hooksPath .githooks                    # privacy and safety chec
 .venv/bin/python tests/run_tests.py                    # should end with "... passed"
 ```
 
-**2 · Meet your coach**
+**2 · Meet your coach** — start Claude Code **inside** the new folder, so it loads the coach's
+instructions and workflows:
 
 ```bash
-claude
+cd opensportcoach && claude
 ```
 
 Say **"Hi, I'm Rocky — set me up."** (with your own name). The coach runs one setup conversation:
