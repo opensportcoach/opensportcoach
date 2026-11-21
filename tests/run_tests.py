@@ -4078,6 +4078,9 @@ def test_the_leak_scan_finds_a_named_athlete_outside_their_folder():
     assert leak_scan.scan_text("README.md", "mail me: someone@" + "gmail.com", pat, terms)
     assert not leak_scan.scan_text("x.md", "Co-Authored-By: Claude <noreply@anthropic.com>", pat, terms)
     assert leak_scan.scan_text("tests/x.py", "activity " + "2495" + "5768053", pat, terms), "a real-looking Garmin id"
+    assert leak_scan.scan_text("x.md", "activity_" + "2495" + "5768053" + "_sets.json", pat, terms), "an id in a file name"
+    assert not leak_scan.scan_text(".github/workflows/t.yml", "uses: actions/x@6d4fd22b20465ccc0f"
+                                   + "73544" + "76588" + "e8df7c9ca0e0", pat, terms), "digits inside a commit hash"
     assert not leak_scan.scan_text("tests/x.py", "activity 21000000093 · 2147483647", pat, terms)
     assert leak_scan.scan_path_name("athletes/jordan/athlete.json") and not leak_scan.scan_path_name("athletes/README.md")
     assert leak_scan.scan_path_name("app/web/public/marks/x.png"), "an event's logo"

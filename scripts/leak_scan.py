@@ -42,7 +42,10 @@ PUBLIC_ATHLETES = {"demo", "example"}
 PUBLIC_PATHS = ("athletes/README.md", "data/README.md")
 ALLOWED_EMAILS = re.compile(r"(noreply@anthropic\.com|@example\.(com|org)|users\.noreply\.github\.com)$", re.I)
 EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}")
-ACTIVITY_ID = re.compile(r"(?<![\d.])(\d{10,11})(?![\d.])")
+# Bounded by anything but a hex digit or a dot: inside a commit hash (6d4fd22b…7354476588e8df…) a run
+# of digits is part of the hash, not an id (2026-11-21, a Dependabot action bump). An id in a file
+# name (activity_<id>_sets.json) or after a word is still caught.
+ACTIVITY_ID = re.compile(r"(?<![0-9a-fA-F.])(\d{10,11})(?![0-9a-fA-F.])")
 SYNTHETIC_ID = re.compile(r"^2100000\d{4}$")
 NOT_IDS = {"2147483647", "4294967295"}  # int32 / uint32 max, not anyone's activity
 RECORDED = (".fit", ".fit.gz", ".gpx", ".gpx.gz", ".tcx", ".tcx.gz")
