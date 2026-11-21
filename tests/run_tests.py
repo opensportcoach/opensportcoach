@@ -3784,7 +3784,8 @@ def test_an_athlete_without_garmin_imports_their_files_and_every_view_builds():
         t = Path(tmp)
         (t / "athletes").mkdir()
         base = _env(OSC_ATHLETES_ROOT=str(t / "athletes"), OSC_DATA_ROOT=str(t / "data"))
-        assert _py(["scripts/new_athlete.py", "sam", "--display", "Sam", "--sources", "files,strava"], base).returncode == 0
+        r = _py(["scripts/new_athlete.py", "sam", "--display", "Sam", "--sources", "files,strava"], base)
+        assert r.returncode == 0, r.stdout + r.stderr
         cfg = json.loads((t / "athletes" / "sam" / "athlete.json").read_text())
         assert cfg["sources"] == ["files", "strava"], cfg.get("sources")
         inbox = t / "in"
@@ -3809,11 +3810,12 @@ def test_an_athlete_without_garmin_imports_their_files_and_every_view_builds():
         assert "imported 0 session(s); 4 already imported" in r.stdout, "a second import must be a no-op"
         cache = t / "data" / "sam"
         acts = json.loads((cache / "activities_files.json").read_text())
-        assert {a["activityType"]["typeKey"] for a in acts} == {"virtual_ride", "strength_training", "running"}
-        assert all(a["source"] == "files" and a["activityId"] > sources_base() for a in acts)
+        assert {a["activityType"]["typeKey"] for a in acts} == {"virtual_ride", "strength_training", "running"}, acts
+        assert all(a["source"] == "files" and a["activityId"] > sources_base() for a in acts), acts
         lift = next(a for a in acts if a["activityType"]["typeKey"] == "strength_training")
         sets = json.loads((cache / f"activity_{lift['activityId']}_sets.json").read_text())["exerciseSets"]
-        assert sets[0]["exercises"][0] == {"category": "BENCH_PRESS", "name": "BARBELL_BENCH_PRESS"} and sets[0]["weight"] == 60000
+        assert sets[0]["exercises"][0] == {"category": "BENCH_PRESS", "name": "BARBELL_BENCH_PRESS"} and sets[0]["weight"] == 60000, \
+            f"a FIT set's exercise, named from the FIT profile: {sets[0]}"
         r = _py(["scripts/pull_activities.py", "--days", "2"], env)
         assert r.returncode != 0 and "does not use Garmin" in (r.stdout + r.stderr), "Garmin must refuse them"
         views = _py(["-c", "import sys; sys.path.insert(0, 'scripts'); import json, app_data\n"
@@ -3833,7 +3835,7 @@ def test_an_athlete_without_garmin_imports_their_files_and_every_view_builds():
         kept = (cache / "activities_strava.json").read_text()
         assert "latlng" not in kept and "polyline" not in kept and "41.39" not in kept, "Strava's GPS is never kept"
         row = json.loads(kept)[0]
-        assert row["activityType"]["typeKey"] == "indoor_cycling" and row["retainUntil"]
+        assert row["activityType"]["typeKey"] == "indoor_cycling" and row["retainUntil"], row
         cfg["sources"] = ["garmin"]
         (t / "athletes" / "sam" / "athlete.json").write_text(json.dumps(cfg))
         r = _py(["scripts/import_strava.py", "--json", str(mcp)], env)

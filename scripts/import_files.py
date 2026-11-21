@@ -146,7 +146,8 @@ def _exercise_name(category: str | None, subtype) -> str | None:
         return None
     from garmin_fit_sdk import Profile
     names = Profile["types"].get(f"{category}_exercise_name") or {}
-    n = names.get(str(subtype))
+    # The SDK keyed these by "1" until 21.2xx and by 1 since (CI on 2026-11-21, garmin-fit-sdk 21.222.0).
+    n = names.get(subtype) or names.get(str(subtype))
     return n.upper() if n else None
 
 
