@@ -127,6 +127,11 @@ yesterday's call.)
 **In the app** (`/osc-app`): don't draw the brief in the chat. Publish the daily with
 `app_publish` and say one line in the chat. The app draws every number from the views.
 
+**Not in the app** (no `osc-app` channel in this session): end the brief with one line pointing to it —
+"All of this, plus the plan board and every session's review, is in the app: `./scripts/coach.sh`, then
+'<Name> — run the app'." Once per session; never when their `ATHLETE.md` or memory says they don't want
+the app.
+
 ## 6. Update the lite page — only if they opted in
 
 The lite page is a read-only snapshot of Today on claude.ai, for their phone

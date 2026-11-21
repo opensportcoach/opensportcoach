@@ -15,6 +15,7 @@
 <p align="center">
   <a href="#what-it-does">Features</a> ·
   <a href="#set-it-up">Set it up</a> ·
+  <a href="#the-app">The app</a> ·
   <a href="#how-it-works">How it works</a> ·
   <a href="CONTRIBUTING.md">Contribute</a>
 </p>
@@ -189,7 +190,9 @@ instructions and workflows:
 cd opensportcoach && claude
 ```
 
-Say **"Hi, I'm Rocky — set me up."** (with your own name). The coach runs one setup conversation:
+Say **"Hi, I'm Rocky — set me up."** (with your own name). On a fresh install the coach sees that nobody
+is set up yet and starts its setup workflow, `/osc-setup`, by itself (you can also type `/osc-setup`).
+One conversation:
 
 1. **Safety** — you're an adult, you accept the [disclaimer](DISCLAIMER.md), a six-question health screen.
 2. **Your data** — Garmin, your own files, or Strava (step 3).
@@ -208,12 +211,39 @@ Say **"Hi, I'm Rocky — set me up."** (with your own name). The coach runs one 
 
 **4 · Every day**
 
-- In a terminal: `claude`, then **"Rocky — run the daily."**
-- With the app: `./scripts/coach.sh`, then **"Rocky — run the app."** It opens in your browser with the
-  coach behind every button. *(The app uses Claude Code's channels, a research preview: Claude Code asks
-  you to accept a warning when it starts.)*
+- **With the app (recommended):** `./scripts/coach.sh`, then **"Rocky — run the app."** — see
+  [The app](#the-app).
+- **In the terminal:** `claude`, then **"Rocky — run the daily."** The coach answers in the chat, and
+  reminds you once that the same day is waiting in the app.
 
 More in [`GUIDE.md`](GUIDE.md): what you can say, the weekly rhythm, what to do when a number looks wrong.
+
+## The app
+
+The app is where the coaching comes together: today's call, the plan board, the season, every session's
+review and score, fuel, recovery — with the coach behind every button.
+
+```bash
+./scripts/coach.sh
+```
+
+Then say **"Rocky — run the app."** (with your name). What happens:
+
+1. `coach.sh` starts Claude Code with the app's channel. The first time, it installs and builds the app
+   by itself (a minute or so; needs Node.js 24+).
+2. Claude Code shows a warning about **development channels** and asks you to accept it — expected: the
+   app uses channels, a Claude Code research preview.
+3. The coach binds the session to you, attaches the app and **opens it in your browser**
+   (`http://127.0.0.1:…` — it only listens on your own computer, behind a one-time token).
+4. It runs the daily meanwhile; today's call appears on the page when it's ready.
+
+From then on everything you click — *Ask the coach*, *Plan my week*, *Review this session*, *Accept
+plan*, *Send to watch* — goes to the coach in that session. **Send to watch** is the only button that can
+write to your Garmin, and only for the exact plan it shows you.
+
+Leave the terminal open while you use the app; closing it ends the session. Without Claude Code (just
+browsing your numbers), the app also runs read-only:
+`node app/channel/server.ts --standalone --athlete rocky`.
 
 ## How it works
 
@@ -238,6 +268,32 @@ flowchart LR
   is checked number by number against what the engine computed before it reaches you.
 - **Your folder is the coach's memory**: plain Markdown and JSON you can read and edit — your goals, your
   injuries, your equipment, every session's log.
+
+### Skills and agents
+
+The coach's workflows are [Claude Code skills](.claude/skills) — you trigger them by saying what you
+want, or by typing their name:
+
+| Skill | What it does | Say |
+|---|---|---|
+| `/osc-setup` | Sets up a new athlete: safety, data source, goals, races, injuries, schedule, first plan | "I'm new — set me up" |
+| `/osc-daily` | The morning loop: fresh data, review what's new, today's call, nothing pushed without you | "run the daily" · "what should I do today?" |
+| `/osc-week` | Plans the next days around your rotation, races and recovery; the weekly recap | "plan my week" |
+| `/osc-review` | A deep review of one session — a lift's trend, a ride against its intent, a swim rep by rep | "review Tuesday's run" |
+| `/osc-race` | Adds a race, checks its date online, tracks you toward it, records the result | "I entered the city half" |
+| `/osc-push` | The only way to write to your watch: validation, tests, your confirm, then a verified sync | "send it to my watch" |
+| `/osc-app` | Runs the app in this session and answers everything you do in it | "run the app" |
+| `/osc-brief` | An unattended morning brief, written to your logs — never pushes anything | (for scheduled runs) |
+| `/osc-audit` | A monthly audit of the whole system: data, docs, tests, your Garmin account | "run an audit" |
+
+Three read-only [agents](.claude/agents) do the heavy reading when a skill asks for it — they never
+change anything:
+
+| Agent | What it does |
+|---|---|
+| `execution-reviewer` | Reviews your strength sessions across weeks: per-lift trends, planned vs done, odd drops |
+| `insight-agent` | Looks at the week for patterns worth acting on — and says "nothing" when there's nothing |
+| `integrity-auditor` | Audits the engine, your data, your program and your Garmin account, with evidence |
 
 Design notes: [`docs/DESIGN.md`](docs/DESIGN.md) · the daily loop and its gates:
 [`WORKFLOW.md`](WORKFLOW.md) · Garmin workout formats: [`workouts/FORMAT.md`](workouts/FORMAT.md).
