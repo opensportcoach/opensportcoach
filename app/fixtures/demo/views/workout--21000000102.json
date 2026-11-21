@@ -1,7 +1,7 @@
 {
  "view": "workout",
  "athlete": "demo",
- "generated_at": "2026-11-21T14:16:11",
+ "generated_at": "2026-11-21T15:15:14",
  "id": 21000000102,
  "date": "2026-11-20",
  "start": "2026-11-20 09:30:00",
@@ -108,10 +108,10 @@
     "label": "Distance",
     "weight": 35,
     "measure": "swum vs planned: ±10 % full, ±50 % nothing",
-    "planned_text": "1800.0 m",
-    "done_text": "1700 m",
+    "planned_text": "1,800 m",
+    "done_text": "1,700 m",
     "detail": {
-     "planned_m": 1800.0,
+     "planned_m": 1800,
      "swum_m": 1700
     },
     "score": 1.0,
@@ -153,7 +153,7 @@
   "out_of": 100,
   "earned": 95.3,
   "excluded": null,
-  "against": "swim_aerobic_1800.json (current) · Swim · Aerobic 1800 (matched by the workout id the watch recorded)",
+  "against": "Swim · Aerobic 1800 · the workout the watch ran",
   "summary": "1 of 11 planned swims not done. Everything else was on target.",
   "headline": null,
   "foot": "Score = 95.3 ÷ 100 points that could be scored.",

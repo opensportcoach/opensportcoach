@@ -1,7 +1,7 @@
 {
  "view": "exercise",
  "athlete": "demo",
- "generated_at": "2026-11-21T14:16:12",
+ "generated_at": "2026-11-21T15:15:15",
  "category": "BENCH_PRESS",
  "name": "INCLINE_DUMBBELL_BENCH_PRESS",
  "label": "Incline Dumbbell Bench Press",
@@ -35,7 +35,7 @@
    "weight": 26.0,
    "reps": 10,
    "since": "2026-11-21",
-   "since_ts": "2026-11-21 14:16:07",
+   "since_ts": "2026-11-21 15:15:10",
    "changes": []
   }
  ],

@@ -1,7 +1,7 @@
 {
  "view": "today",
  "athlete": "demo",
- "generated_at": "2026-11-21T14:16:09",
+ "generated_at": "2026-11-21T15:15:12",
  "today": {
   "date": "2026-11-21",
   "readiness": {
@@ -2886,8 +2886,8 @@
   "file": "2026-11-21.json",
   "kind": "daily",
   "date": "2026-11-21",
-  "generated_at": "2026-11-21T14:16:07",
-  "data_as_of": "2026-11-21T14:14:07",
+  "generated_at": "2026-11-21T15:15:10",
+  "data_as_of": "2026-11-21T15:13:10",
   "recommendation": {
    "verb": "TRAIN",
    "workout_key": "d2",
@@ -3209,10 +3209,10 @@
   "due": []
  },
  "freshness": {
-  "data_as_of": "2026-11-21T14:16:08",
-  "cache": "cache as of 2026-11-21 14:16",
+  "data_as_of": "2026-11-21T15:15:10",
+  "cache": "cache as of 2026-11-21 15:15",
   "warnings": [],
-  "coach_ran": "2026-11-21T14:16:07"
+  "coach_ran": "2026-11-21T15:15:10"
  },
  "defs": {
   "recovery": {

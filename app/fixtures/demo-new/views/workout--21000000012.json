@@ -1,7 +1,7 @@
 {
  "view": "workout",
  "athlete": "demo",
- "generated_at": "2026-11-21T14:16:15",
+ "generated_at": "2026-11-21T15:15:18",
  "id": 21000000012,
  "date": "2026-11-11",
  "start": "2026-11-11 09:00:00",
@@ -149,7 +149,7 @@
   "out_of": 100,
   "earned": 96.7,
   "excluded": null,
-  "against": "circuit_conditioning.json (current) · Circuit · Conditioning (matched by the workout id the watch recorded)",
+  "against": "Circuit · Conditioning · the workout the watch ran",
   "summary": "1 step out of place. Everything else was on target.",
   "headline": null,
   "foot": "Score = 96.7 ÷ 100 points that could be scored.",

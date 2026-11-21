@@ -1,5 +1,5 @@
 /** Swim and circuit reviews on the workout page (scripts/session_review.py → the view's `review`), on the
- * committed demo fixtures: Alex's latest swim followed "Swim · Aerobic 1800" and skipped one 100; the
+ * committed demo fixtures: Rocky's latest swim followed "Swim · Aerobic 1800" and skipped one 100; the
  * conditioning circuit followed its workout with one stray lap press. */
 import { cleanup, screen, within } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';

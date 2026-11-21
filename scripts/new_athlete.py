@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Scaffold a new athlete: athletes/<name>/ with everything the engine needs, and nothing else.
 
-    .venv/bin/python scripts/new_athlete.py alex --display Alex
+    .venv/bin/python scripts/new_athlete.py rocky --display Rocky
 
 Creates an EMPTY athlete — no program, no Garmin binding, no facts — that already passes every
 engine invariant. What comes next is theirs, not a template's:
@@ -216,8 +216,8 @@ def fuel_scaffold() -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("name", help="lowercase folder name, e.g. alex")
-    ap.add_argument("--display", help="how the athlete is addressed, e.g. Alex")
+    ap.add_argument("name", help="lowercase folder name, e.g. rocky")
+    ap.add_argument("--display", help="how the athlete is addressed, e.g. Rocky")
     ap.add_argument("--sources", default="garmin",
                     help="comma-separated: garmin, files, strava (default garmin). garmin and strava never together")
     args = ap.parse_args()

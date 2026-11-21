@@ -12,7 +12,7 @@ everyone; what differs is whose program, data and watch a session works on.
 
 Open a new session in the OpenSportCoach folder and **start your first message with your name**:
 
-> Alex — run the daily
+> Rocky — run the daily
 > Sam — plan my gym week
 
 The session locks to you for its whole life, and the banner confirms it:

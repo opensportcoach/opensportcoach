@@ -356,13 +356,16 @@ def score(a: dict) -> dict:
     if an["planned"] is None:
         return ss.excluded(an.get("planned_note") or "Nothing was planned.")
     p, scores, detail, dropped = an["planned"], {}, {}, {}
-    against = f"{p.get('version') or p['key']} · {p['name']} (matched by {p['matched_by']})"
+    # What the athlete reads: the workout's own name and how it was found — no file names (the score's rule).
+    how = {"the workout id the watch recorded": "the workout the watch ran"}.get(p["matched_by"], p["matched_by"])
+    against = f"{p['name']} · {how}" + (", as it was that day" if "@" in (p.get("version") or "") else "")
     if k == "swim":
         swum = (an["metrics"].get("distance") or {}).get("value") or 0
         off = abs(swum - p["metres"]) / p["metres"] if p["metres"] else None
         scores["distance"] = f.band_score(off, *f.SWIM_DISTANCE_BAND) if off is not None else 0.0
-        detail["distance"] = {"planned_m": p["metres"], "swum_m": swum, "planned_text": f"{p['metres']} m",
-                              "done_text": f"{swum} m", "miss": f"{swum} m of {p['metres']} m planned",
+        pm = round(p["metres"])
+        detail["distance"] = {"planned_m": pm, "swum_m": swum, "planned_text": f"{pm:,} m",
+                              "done_text": f"{swum:,} m", "miss": f"{swum:,} m of {pm:,} m planned",
                               "short": "short" if swum < p["metres"] else "long"}
         scores["swims"] = p["done"] / p["swims"] if p["swims"] else 0.0
         miss = p["swims"] - p["done"]
