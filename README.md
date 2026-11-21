@@ -6,7 +6,7 @@
   <a href="https://github.com/opensportcoach/opensportcoach/actions/workflows/tests.yml"><img src="https://github.com/opensportcoach/opensportcoach/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-3DDC84" alt="Apache-2.0"></a>
   <img src="https://img.shields.io/badge/runs%20on-Claude%20Code-A99BFF" alt="runs on Claude Code">
-  <img src="https://img.shields.io/badge/your%20data-stays%20on%20your%20computer-4AA3FF" alt="your data stays on your computer">
+  <img src="https://img.shields.io/badge/no%20server-no%20account-4AA3FF" alt="no server, no account">
   <a href="DISCLAIMER.md"><img src="https://img.shields.io/badge/not-medical%20advice-FF9F4A" alt="not medical advice"></a>
 </p>
 
@@ -34,8 +34,10 @@ It is not a training-plan template and not another dashboard. It is a coach you 
 > last hour (decoupling 7.4 %) — that's fuel, not fitness: 64 g/h on the next long ride. Bench press
 > earned its bump to 82.5 kg. Want D2 on your watch?
 
-Everything runs **on your own computer**. Your training and health data never comes to us — there is no
-"us": no server, no account, no subscription. It's free and open source (Apache-2.0).
+Everything is stored **on your own computer**. Your training and health data never comes to us — there
+is no "us": no server, no account, no subscription. It's free and open source (Apache-2.0). The coach
+itself is Claude, an AI model that runs in the cloud, so what it reads is sent to Anthropic —
+[read what that means](#your-data-and-the-ai) before you start.
 
 ## What it does
 
@@ -298,7 +300,21 @@ change anything:
 Design notes: [`docs/DESIGN.md`](docs/DESIGN.md) · the daily loop and its gates:
 [`WORKFLOW.md`](WORKFLOW.md) · Garmin workout formats: [`workouts/FORMAT.md`](workouts/FORMAT.md).
 
-## Your data stays yours
+## Your data and the AI
+
+> [!IMPORTANT]
+> **Using OpenSportCoach means sharing your data with an AI provider.** The coach is Claude, and Claude
+> runs on Anthropic's servers, not on your computer. Whenever the coach reads something to answer you —
+> your activities, heart rate, sleep and HRV, weight, races, the injuries and health answers you give
+> during setup, and everything you type — that content is **sent to Anthropic to be processed**. If you
+> run Claude Code through another provider (Amazon Bedrock, Google Vertex AI), it goes to them instead.
+>
+> How long it is kept, and whether it may be used to improve their models, is decided by **your**
+> agreement with that provider and your account's privacy settings — not by OpenSportCoach, which has
+> no say in it and receives nothing. Read [Anthropic's privacy policy](https://www.anthropic.com/legal/privacy),
+> check your privacy settings, and share only what you are comfortable sending.
+
+What OpenSportCoach itself does with your data:
 
 - Everything about you lives in `athletes/<you>/` and `data/<you>/` on your computer. **This repository
   ignores both** — they are never committed here. Want version history? Make `athletes/` your own
@@ -307,8 +323,9 @@ Design notes: [`docs/DESIGN.md`](docs/DESIGN.md) · the daily loop and its gates
   races outside their own folder.
 - Several people can share one installation. Each session is locked to one athlete; no script can read
   or write another athlete's files or accounts.
-- What the coach reads is sent to your AI provider under **your** agreement with them — read their
-  privacy terms.
+- Nothing leaves your computer except what the coach reads (above), what you sync with your own
+  Garmin or Strava account, and — only if you turn it on — the app's phone page, a private page on
+  claude.ai.
 
 ## Contributing
 

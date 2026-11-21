@@ -54,9 +54,12 @@ Liability), which apply in full.
 
 - Your training and health data stay **on your own computer**, in folders this project never
   commits (`athletes/`, `data/`). Nobody behind OpenSportCoach receives it.
-- When you use OpenSportCoach, the parts of your data the coach reads are **sent to your AI provider**
-  (for example Anthropic, through Claude Code) under **your** agreement with them. Read their privacy
-  terms.
+- The coach is an AI model that runs on your AI provider's servers (for example Anthropic, through
+  Claude Code). Whenever you use OpenSportCoach, the data the coach reads — including health
+  information and what you type — is **sent to that provider** and handled under **your** agreement
+  with them and your account's privacy settings, including how long it is kept and whether it may be
+  used to train models. OpenSportCoach does not control this. Read their privacy terms, and share only
+  what you are comfortable sending.
 - Health data is sensitive. Protect your computer, and do not commit your `athletes/` or `data/`
   folders to any public repository.
 
