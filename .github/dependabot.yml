@@ -1,0 +1,16 @@
+# Keeps dependencies patched: a pull request per update, tested by CI before anyone merges it.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: {interval: weekly}
+  - package-ecosystem: pip
+    directory: /
+    schedule: {interval: weekly}
+  - package-ecosystem: npm
+    directory: /app/web
+    schedule: {interval: weekly}
+    groups: {web: {patterns: ["*"]}}
+  - package-ecosystem: npm
+    directory: /app/channel
+    schedule: {interval: weekly}
