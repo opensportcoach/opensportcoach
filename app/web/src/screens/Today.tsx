@@ -1,7 +1,7 @@
 /** Today — the landing page (board Main, variants Today-NewAthlete / Today-Light / Today-Narrow / Today-Rest). */
 import { useEffect, useState, type CSSProperties, type ReactNode } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useStore, useView, type AppRequest, type Defs } from '../lib/api';
+import { useStore, useView, type AppRequest, type AppState, type Defs } from '../lib/api';
 import { clock, day, hm, isoDate, isoWeek, kg, nf, tip, todayIso, zone } from '../lib/fmt';
 import { ErrorBox, IC, Icon, Ring, Skeleton, Spark } from '../components/ui';
 import { FORM_ZONES, formZone } from '../lib/form';
@@ -38,7 +38,7 @@ export default function Today() {
       <Hero t={t} />
       <RaceLine t={t} />
       {/* The check-in outranks the metrics, so it sits above them — it was ten cards down (UX review 2026-11-10). */}
-      {state?.status?.ask !== 'feel' && <CheckIn t={t} />}
+      {!heroFeel(t, state) && <CheckIn t={t} />}
       <Overnight t={t} />
       <Rings t={t} />
       <Kpis t={t} />
@@ -205,8 +205,8 @@ function Hero({ t }: { t: any }) {
   const calendarDay = t.plan_today?.day && t.plan_today?.name;
   const differs = rec && t.call_program && t.plan_today?.day && t.plan_today.day !== t.call_program.key;
   const running = !offline && state?.status;   // the coach is running today's analysis right now
-  // A check-in sent since the coach asked — on its way or already taken — answers the question.
-  const feelSent = (state?.requests ?? []).some((r) => r.kind === 'checkin' && r.state !== 'FAILED' && (!state?.status || r.createdAt >= state.status.since));
+  const feelAsk = heroFeel(t, state);
+  const waited = running && running.ask === 'feel' && feelAsk === 'ask';   // the coach has stopped for the answer
   if (running && !rec) {
     return (<>
       <section className="card rise" aria-live="polite" style={{ padding: '28px 32px', borderColor: 'var(--b)' }}>
@@ -220,14 +220,17 @@ function Hero({ t }: { t: any }) {
           screen updates by itself when new data lands, and today’s call appears here when it’s ready. Numbers below are from
           the data alone.
         </span>
-        {running.ask === 'feel' && !feelSent && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10, paddingTop: 6, borderTop: '1px solid var(--ln)' }}>
+        {feelAsk === 'ask' && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10, paddingTop: 12, borderTop: '1px solid var(--ln)' }}>
             <span style={{ fontSize: 20, fontWeight: 600 }}>How do you feel?</span>
-            <FeelPicker after="Got it — the coach is writing today’s call." />
+            {waited
+              ? <span role="status" style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14, fontWeight: 600, color: 'var(--y)' }}><Icon d={IC.warn} size={14} sw={2.4} />The coach is waiting for your answer — here, or in the terminal.</span>
+              : <span style={{ fontSize: 14, color: 'var(--tx2)' }}>Today’s call needs it, and it outranks the numbers. Answer now and the coach won’t have to stop to ask.</span>}
+            <FeelPicker after="Got it — the coach has it for today’s call." />
           </div>
         )}
-        {feelSent && <span role="status" style={{ fontSize: 14, color: 'var(--g)' }}>Got it — the coach is writing today’s call.</span>}
-        <StatusAge since={running.updated ?? running.since} waiting={running.ask === 'feel' && !feelSent} />
+        {feelAsk === 'sent' && <span role="status" style={{ fontSize: 14, color: 'var(--g)' }}>Got it — the coach has it for today’s call.</span>}
+        <StatusAge since={running.updated ?? running.since} waiting={!!waited} />
       </section>
       <Waiting t={t} card />
     </>);
@@ -674,6 +677,19 @@ function todaysFeel(t: any, requests: AppRequest[]): { feel: number; note?: stri
   }
   if (daily) return { feel: daily.feel.answer, note: daily.feel.note, at: clock(daily.generated_at), pending: false };
   return null;
+}
+
+/** How do you feel, while the coach runs today's analysis: the hero asks it whenever today has no
+ * answer yet — not only once the coach says it waits (`ask: "feel"`). A coach that asked in the
+ * terminal alone left the page spinning, the picker ten cards down (2026-11-22). 'ask': the hero
+ * shows the picker · 'sent': a check-in went since the analysis started, or the coach asked and moved
+ * on (answered in the terminal) · null: the Check-in card. */
+function heroFeel(t: any, state: AppState | null | undefined): 'ask' | 'sent' | null {
+  const status = state?.coach === 'online' ? state.status : null;
+  if (!status || (t.daily?.date === todayIso() && t.daily?.recommendation)) return null;
+  const requests = state?.requests ?? [];
+  if (status.answered || requests.some((r) => r.kind === 'checkin' && r.state !== 'FAILED' && r.createdAt >= status.since)) return 'sent';
+  return status.ask === 'feel' || !todaysFeel(t, requests) ? 'ask' : null;
 }
 
 /** Asked once a day (R3 round 3, 2026-10-11): once answered — on this page, in the terminal, or in

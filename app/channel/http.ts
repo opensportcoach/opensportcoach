@@ -28,8 +28,9 @@ export interface Who {
   accent?: string | null;
 }
 
-/** What the coach is doing outside a request; `ask` names what it waits on ("feel": the page shows the 1–5 picker). */
-export interface CoachStatus { text: string; since: number; updated?: number; ask?: 'feel' }
+/** What the coach is doing outside a request; `ask` names what it waits on ("feel": the page shows the 1–5 picker);
+ * `answered`: it asked, and has moved on — the answer came (on the page or in the terminal). */
+export interface CoachStatus { text: string; since: number; updated?: number; ask?: 'feel'; answered?: true }
 
 /** The data refresh, as every open tab sees it (docs/DESIGN.md (app audit) H1): who started it, how it went. */
 export interface RefreshState {
