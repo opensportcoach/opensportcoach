@@ -213,7 +213,11 @@ describe('Today — asked once a day (round 3)', () => {
     serveViews({ today: { ...t, daily, call_program: null } });
     const q = daily.pending.find((p: { kind: string }) => p.kind === 'question');
     show(<Today />, store({}, { requests: [{ id: 'r5', kind: 'question', text: `${q.text} — Neither`, params: { pending_id: q.id }, state: 'QUEUED', createdAt: Date.now(), progress: [] }] }));
-    expect(await screen.findByText(/Answered: Neither · sent to the coach/)).toBeTruthy();
+    await screen.findByText('Waiting for you');
+    // Today's check-in is open too, and open items come first: the answered one may sit past the first three.
+    const more = screen.queryByRole('button', { name: /^\+ \d+ more$/ });
+    if (more) fireEvent.click(more);
+    expect(screen.getByText(/Answered: Neither · sent to the coach/)).toBeTruthy();
   });
 });
 
