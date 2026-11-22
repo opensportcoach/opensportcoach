@@ -268,8 +268,11 @@ SPRITE = ('<svg width="0" height="0" style="position:absolute" aria-hidden="true
           + "".join(f'<symbol id="i-s-{k}" viewBox="0 0 24 24"><path d="{d}"/></symbol>' for k, d in SPORT.items())
           + f'<symbol id="i-s-zwift" viewBox="0 -68 2015 2015"><path d="{ZWIFT_Z}" transform="matrix(1 0 0 -1 0 1879)" fill="#F2541B" stroke="none"/></symbol>'
           + "</svg>")
-LOGO = ('<svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 27 L16 5 L27 27" style="stroke:var(--tx)" '
-        'stroke-width="2.8"/><path d="M10.5 19.5 H21.5" style="stroke:var(--id)" stroke-width="2.8"/><circle cx="16" cy="5" r="2.4" style="fill:var(--id)"/></svg>')
+# The mark (app/web/src/components/Logo.tsx): brackets around an --id dot, beside OSC outlined from Barlow Condensed.
+LOGO = ('<svg height="22" viewBox="0 0 64.6 26" fill="none" role="img" aria-label="OpenSportCoach" style="display:block">'
+        '<g transform="scale(1.625)"><path d="M6 3H3V13H6M10 3H13V13H10" style="stroke:var(--tx)" stroke-width="2"/>'
+        '<rect x="7" y="7" width="2" height="2" style="fill:var(--id)"/></g>'
+        '<path style="fill:var(--tx)" d="M36.08 16.39V9.61Q36.08 7.7 37.25 6.56Q38.41 5.42 40.36 5.42Q42.31 5.42 43.48 6.56Q44.66 7.7 44.66 9.61V16.39Q44.66 18.3 43.48 19.44Q42.31 20.58 40.36 20.58Q38.41 20.58 37.25 19.44Q36.08 18.3 36.08 16.39ZM41.67 16.52V9.48Q41.67 8.81 41.31 8.39Q40.95 7.98 40.36 7.98Q39.77 7.98 39.42 8.39Q39.07 8.81 39.07 9.48V16.52Q39.07 17.19 39.42 17.61Q39.77 18.02 40.36 18.02Q40.95 18.02 41.31 17.61Q41.67 17.19 41.67 16.52Z M46.02 16.71V16.09Q46.02 15.99 46.09 15.91Q46.17 15.84 46.27 15.84H48.71Q48.81 15.84 48.89 15.91Q48.96 15.99 48.96 16.09V16.56Q48.96 17.22 49.3 17.62Q49.64 18.02 50.15 18.02Q50.66 18.02 51 17.64Q51.33 17.26 51.33 16.64Q51.33 16.01 50.91 15.55Q50.49 15.1 49.26 14.21Q48.2 13.44 47.54 12.85Q46.89 12.26 46.42 11.39Q45.95 10.52 45.95 9.38Q45.95 7.58 47.08 6.5Q48.2 5.42 50.04 5.42Q51.91 5.42 53.04 6.54Q54.17 7.66 54.17 9.48V9.99Q54.17 10.1 54.1 10.17Q54.03 10.25 53.92 10.25H51.48Q51.38 10.25 51.3 10.17Q51.23 10.1 51.23 9.99V9.42Q51.23 8.76 50.9 8.37Q50.57 7.98 50.04 7.98Q49.53 7.98 49.22 8.35Q48.9 8.72 48.9 9.38Q48.9 10.01 49.3 10.5Q49.7 10.99 50.89 11.86Q52.2 12.83 52.87 13.43Q53.54 14.04 53.91 14.77Q54.28 15.5 54.28 16.52Q54.28 18.38 53.14 19.48Q51.99 20.58 50.13 20.58Q48.9 20.58 47.97 20.1Q47.03 19.61 46.53 18.73Q46.02 17.85 46.02 16.71Z M55.51 16.41V9.55Q55.51 7.66 56.66 6.54Q57.82 5.42 59.72 5.42Q61.65 5.42 62.81 6.54Q63.96 7.66 63.96 9.55V9.78Q63.96 9.89 63.89 9.96Q63.81 10.03 63.71 10.03L61.23 10.14Q60.97 10.14 60.97 9.91V9.36Q60.97 8.74 60.64 8.36Q60.3 7.98 59.72 7.98Q59.17 7.98 58.83 8.36Q58.5 8.74 58.5 9.36V16.67Q58.5 17.28 58.83 17.65Q59.17 18.02 59.72 18.02Q60.3 18.02 60.64 17.65Q60.97 17.28 60.97 16.67V16.09Q60.97 15.99 61.05 15.91Q61.12 15.84 61.23 15.84L63.71 15.94Q63.81 15.94 63.89 16.02Q63.96 16.09 63.96 16.2V16.41Q63.96 18.32 62.8 19.45Q61.63 20.58 59.72 20.58Q57.82 20.58 56.66 19.45Q55.51 18.32 55.51 16.41Z"/></svg>')
 
 
 def icon(name: str, size: int = 14, sw: float = 2.4, color: str | None = None) -> str:
@@ -510,7 +513,7 @@ def topbar(L: dict, display: str, body: str) -> str:
     # Only the sections this page has: a new athlete has no race season, and a link must land somewhere.
     nav = "".join(f'<a href="#{k}">{t}</a>' for k, t in (("today", "Today"), ("week", "Week"), ("body", "Recovery"), ("gym", "Gym"), ("races", "Races"))
                   if f'id="{k}"' in body)
-    return (f'<header class="top"><div class="bar"><span class="brand">{LOGO}<b class="n">OSC</b></span>'
+    return (f'<header class="top"><div class="bar"><span class="brand">{LOGO}</span>'
             f'<span class="who"><span class="av n" aria-hidden="true">{e(display[:1])}</span>{e(display)}</span><span class="sp"></span>{fresh}</div>'
             f'<nav class="nav" aria-label="Sections">{nav}</nav></header>')
 
@@ -1026,7 +1029,7 @@ a {{ color:inherit; }}
   backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:2px solid var(--id);border-bottom:1px solid var(--ln); }}
 .bar, .nav {{ max-width:880px;margin:0 auto;box-sizing:border-box;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px)); }}
 .bar {{ display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding-block:9px 6px; }}
-.brand {{ display:flex;align-items:center;gap:8px; }} .brand .n {{ font-size:18px;font-weight:700;letter-spacing:.26em; }}
+.brand {{ display:flex;align-items:center;gap:8px; }}
 .who {{ display:flex;align-items:center;gap:7px;font-size:14px;font-weight:700;padding:2px 10px 2px 2px;border-radius:999px;background:var(--idt);border:1px solid var(--id); }}
 .av {{ width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--id);color:var(--on);font-size:13px;font-weight:700; }}
 .sp {{ flex:1; }}

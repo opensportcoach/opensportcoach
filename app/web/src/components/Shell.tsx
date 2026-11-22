@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { coachOf, openRequests, useStore, useView, type AppRequest } from '../lib/api';
 import { clock, day, todayIso } from '../lib/fmt';
 import { IC, Icon } from './ui';
+import { Logo } from './Logo';
 import { useWatchSend } from './WatchSend';
 
 export function Header() {
@@ -18,8 +19,7 @@ export function Header() {
   return (
     <header className="hd" style={{ boxSizing: 'border-box', width: '100%', minHeight: 72, display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '12px 24px', padding: '12px 24px', background: 'var(--bg)', borderTop: '2px solid var(--id)', borderBottom: '1px solid var(--ln)' }}>
       <NavLink to="/" aria-label="OpenSportCoach — Today" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 27 L16 5 L27 27" style={{ stroke: 'var(--tx)' }} strokeWidth="2.6" strokeLinejoin="miter" /><path d="M10.5 19.5 H21.5" style={{ stroke: 'var(--id)' }} strokeWidth="2.6" /><circle cx="16" cy="5" r="2.2" style={{ fill: 'var(--id)' }} /></svg>
-        <span className="n" style={{ fontSize: 22, fontWeight: 700, letterSpacing: '.28em' }}>OSC</span>
+        <Logo />
       </NavLink>
       <div className="hd-x" style={{ width: 1, height: 32, background: 'var(--ln)' }} />
       <div data-tip={`This app belongs to ${name}.\nGarmin account: ${state?.garmin_account ?? 'not bound'}\nTo switch athlete, quit and start a new coach session.`} tabIndex={0}
