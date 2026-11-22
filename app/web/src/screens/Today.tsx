@@ -38,7 +38,7 @@ export default function Today() {
       <Hero t={t} />
       <RaceLine t={t} />
       {/* The check-in outranks the metrics, so it sits above them — it was ten cards down (UX review 2026-11-10). */}
-      {!heroFeel(t, state) && <CheckIn t={t} />}
+      {!heroFeel(t, state) && !feelInRail(t, state) && <CheckIn t={t} />}
       <Overnight t={t} />
       <Rings t={t} />
       <Kpis t={t} />
@@ -626,7 +626,7 @@ function Week({ t }: { t: any }) {
 }
 
 /** How do you feel, 1–5, and a note: sent as a check-in. The coach weighs it above the metrics. */
-function FeelPicker({ initial, after }: { initial?: number | null; after: string }) {
+function FeelPicker({ initial, after, compact }: { initial?: number | null; after: string; compact?: boolean }) {
   const { state, ask } = useStore();
   const offline = state?.coach !== 'online';
   const [feel, setFeel] = useState<number | null>(initial ?? null);
@@ -640,25 +640,27 @@ function FeelPicker({ initial, after }: { initial?: number | null; after: string
       .then(() => setSent(after)).catch((e) => setErr(String(e.message ?? e)));
   };
   if (sent) return <span role="status" style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14, color: 'var(--g)' }}><Icon d={IC.check} size={14} sw={3} />{sent}</span>;
+  // Compact: the rail's width (Waiting for you) — smaller tiles, the same five and the same note.
+  const h = compact ? 44 : 64;
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-      <div role="radiogroup" aria-label="How do you feel, 1 to 5" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, minmax(0, 1fr))', gap: 6 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: compact ? 8 : 10, ...(compact ? { flex: '1 1 100%', minWidth: 0 } : {}) }}>
+      <div role="radiogroup" aria-label="How do you feel, 1 to 5" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, minmax(0, 1fr))', gap: compact ? 4 : 6 }}>
         {FEEL.map((label, i) => {
           const on = feel === i + 1;
           return (
             <button key={label} type="button" role="radio" aria-checked={on} disabled={offline} onClick={() => setFeel(i + 1)}
-              style={{ minHeight: 64, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 2, borderRadius: 12, border: `1px solid ${on ? 'var(--tx)' : 'var(--ln2)'}`, background: on ? 'var(--tx)' : 'transparent', color: on ? 'var(--on)' : 'var(--tx)' }}>
-              <span className="n" style={{ fontSize: 26, lineHeight: 1, fontWeight: 700 }}>{i + 1}</span>
-              <span style={{ fontSize: 11, fontWeight: 600 }}>{label}</span>
+              style={{ minHeight: h, minWidth: 0, padding: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 2, borderRadius: compact ? 9 : 12, border: `1px solid ${on ? 'var(--tx)' : 'var(--ln2)'}`, background: on ? 'var(--tx)' : 'transparent', color: on ? 'var(--on)' : 'var(--tx)' }}>
+              <span className="n" style={{ fontSize: compact ? 18 : 26, lineHeight: 1, fontWeight: 700 }}>{i + 1}</span>
+              <span style={{ fontSize: compact ? 9 : 11, fontWeight: 600 }}>{label}</span>
             </button>
           );
         })}
       </div>
-      <div style={{ display: 'flex', gap: 8 }}>
+      <div style={{ display: 'flex', gap: compact ? 6 : 8 }}>
         <input aria-label="Note for the coach (optional)" type="text" disabled={offline} value={note} onChange={(e) => setNote(e.target.value)}
-          onKeyDown={(e) => { if (e.key === 'Enter') send(); }} placeholder="Anything the numbers can’t see — sleep, soreness, stress (optional)"
-          style={{ flex: 1, minWidth: 0, minHeight: 44, boxSizing: 'border-box', padding: '0 12px', borderRadius: 10, border: '1px solid var(--ln2)', background: 'var(--bg)', color: 'var(--tx)', fontSize: 14 }} />
-        <button type="button" className="btn" disabled={offline || !feel} onClick={send} style={{ minHeight: 44 }}>Send</button>
+          onKeyDown={(e) => { if (e.key === 'Enter') send(); }} placeholder={compact ? 'Add a note (optional)' : 'Anything the numbers can’t see — sleep, soreness, stress (optional)'}
+          style={{ flex: 1, minWidth: 0, minHeight: compact ? 34 : 44, boxSizing: 'border-box', padding: '0 12px', borderRadius: compact ? 9 : 10, border: '1px solid var(--ln2)', background: 'var(--bg)', color: 'var(--tx)', fontSize: compact ? 12 : 14 }} />
+        <button type="button" className="btn" disabled={offline || !feel} onClick={send} style={compact ? { ...act(true), minHeight: 34 } : { minHeight: 44 }}>Send</button>
       </div>
       {err && <span role="alert" style={{ fontSize: 12, color: 'var(--r)' }}>{err}</span>}
     </div>
@@ -690,6 +692,12 @@ function heroFeel(t: any, state: AppState | null | undefined): 'ask' | 'sent' | 
   const requests = state?.requests ?? [];
   if (status.answered || requests.some((r) => r.kind === 'checkin' && r.state !== 'FAILED' && r.createdAt >= status.since)) return 'sent';
   return status.ask === 'feel' || !todaysFeel(t, requests) ? 'ask' : null;
+}
+
+/** Not answered today, and the hero isn't asking: "Waiting for you" asks it, and the Check-in card
+ * steps aside. Offline nothing can be sent, so the card stays, read-only. */
+function feelInRail(t: any, state: AppState | null | undefined): boolean {
+  return state?.coach === 'online' && !heroFeel(t, state) && !todaysFeel(t, state?.requests ?? []);
 }
 
 /** Asked once a day (R3 round 3, 2026-10-11): once answered — on this page, in the terminal, or in
@@ -840,6 +848,20 @@ function Waiting({ t, card }: { t: any; card?: boolean }) {
         {waiting && <button type="button" className="hv" disabled={offline} style={act()} onClick={() => decide('proposal', 'accept', `Accept plan ${prop.id}`, { proposal: prop.id })}>Accept as is</button>}
       </> });
   }
+  // How do you feel, unanswered today: a decision like the rest, so the rail never says "Nothing to
+  // decide" while the check-in waits below the fold (2026-11-22). First — it outranks the numbers.
+  // Answered from here, it stays answered, as every item does; the Check-in card below shows it too.
+  const feelCheckin = [...requests].reverse().find((r) => r.kind === 'checkin' && r.state !== 'FAILED' && isoDate(new Date(r.createdAt)) === todayIso()
+    && (!Number.isFinite(since) || r.createdAt >= since));
+  if (feelInRail(t, state)) {
+    items.push({ id: 'feel', order: -2, kind: 'Check-in', c: 'var(--b)', bg: 'var(--bt)', i: IC.heart, open: true, t: 'How do you feel?',
+      sub: daily?.date === todayIso() && daily.recommendation ? 'Today’s call was made without it — your answer re-weighs it.' : 'The coach reads this before the numbers.',
+      acts: <FeelPicker compact after="Sent — the coach re-weighs today’s call." /> });
+  } else if (feelCheckin && !heroFeel(t, state)) {
+    const n = Number(feelCheckin.params?.feel);
+    items.push({ id: 'feel', order: -2, kind: 'Check-in', c: 'var(--b)', bg: 'var(--bt)', i: IC.heart, open: false, t: 'How do you feel?',
+      status: <Done msg={`You told the coach ${n}/5 · ${FEEL[n - 1] ?? '—'}${feelCheckin.state !== 'DONE' ? ' · it’s re-weighing today’s call' : ''}`} pending={feelCheckin.state !== 'DONE'} /> });
+  }
   // Fuel (docs/DESIGN.md (fuelling and score) §6.2): the setup still open — asked the first time a session was bound,
   // answerable here — and the rides and runs of the last week that ask what was taken. Written by the
   // server's fuel action (scripts/fuel.py, no model), so they work with the coach offline too.
@@ -869,7 +891,7 @@ function Waiting({ t, card }: { t: any; card?: boolean }) {
         }}>I took nothing</button>
       </> });
   }
-  // Most urgent first: open before answered, then the fuel setup · bump · proposal · question · fuel log · watch.
+  // Most urgent first: open before answered, then the check-in · fuel setup · bump · proposal · question · fuel log · watch.
   items.sort((x, y) => Number(y.open) - Number(x.open) || x.order - y.order);
   const open = items.filter((x) => x.open).length;
   const shown = all ? items : items.slice(0, 3);

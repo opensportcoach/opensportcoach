@@ -48,6 +48,53 @@ describe('Today’s hero', () => {
     expect(within(hero()).getByText(/No plan waiting, watch in sync\./)).toBeTruthy();
   });
 
+  it('asks how you feel in the rail when today has no answer — never "Nothing to decide" with the check-in open (2026-11-22)', async () => {
+    atFixtureDay(demo.index.generated_on);
+    const t = demo.view('today');
+    t.daily.pending = [];
+    t.daily.feel = { ...t.daily.feel, answer: null, note: null };
+    t.sync = { ...t.sync, pending: 0, workouts: t.sync.workouts.map((w: any) => ({ ...w, state: 'in_sync' })) };
+    serveViews({ today: t });
+    const s = store();
+    show(<Today />, s);
+    await screen.findByRole('heading', { level: 1 });
+    const rail = within(hero());
+    expect(rail.queryByText('Nothing to decide.')).toBeNull();
+    expect(rail.getByLabelText('1 decision waiting')).toBeTruthy();
+    expect(rail.getByText('Check-in')).toBeTruthy();
+    expect(rail.getByText(/made without it/)).toBeTruthy();
+    expect(screen.getAllByRole('radiogroup', { name: /How do you feel/ })).toHaveLength(1);   // the card below steps aside
+    expect(screen.queryByRole('heading', { name: 'Check-in' })).toBeNull();
+    fireEvent.click(rail.getByRole('radio', { name: /3\s*OK/ }));
+    fireEvent.click(rail.getByRole('button', { name: 'Send' }));
+    expect(asked(s).calls[0]).toEqual(['checkin', 'Feeling 3/5 — OK', { feel: 3 }]);
+  });
+
+  it('a check-in sent today stays answered in the rail, and the card shows it', async () => {
+    atFixtureDay(demo.index.generated_on);
+    const t = demo.view('today');
+    t.daily.feel = { ...t.daily.feel, answer: null, note: null };
+    t.daily.pending = [];   // answered items sort after open ones: keep it in the first three
+    serveViews({ today: t });
+    const sent: AppRequest = { id: 'r8', kind: 'checkin', text: 'Feeling 2/5 — Tired', params: { feel: 2 }, state: 'WORKING', createdAt: Date.parse(t.daily.generated_at) + 60_000, progress: [] };
+    show(<Today />, store({}, { requests: [sent] }));
+    await screen.findByRole('heading', { level: 1 });
+    expect(within(hero()).getByText(/You told the coach 2\/5 · Tired · it’s re-weighing/)).toBeTruthy();
+    expect(screen.queryByRole('radiogroup')).toBeNull();
+    expect(screen.getByText('Today you told the coach')).toBeTruthy();
+  });
+
+  it('offline, the rail does not ask — the check-in card stays, read-only', async () => {
+    atFixtureDay(demo.index.generated_on);
+    const t = demo.view('today');
+    t.daily.feel = { ...t.daily.feel, answer: null, note: null };
+    serveViews({ today: t });
+    show(<Today />, store({}, { coach: 'offline' }));
+    await screen.findByRole('heading', { level: 1 });
+    expect(within(hero()).queryByText('Check-in')).toBeNull();
+    expect(screen.getByText(/Coach offline — check-in is read-only/)).toBeTruthy();
+  });
+
   it('opens the full reasoning on demand, and points to the next session', async () => {
     atFixtureDay(demo.index.generated_on);
     const t = demo.view('today');
