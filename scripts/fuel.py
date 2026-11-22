@@ -774,6 +774,20 @@ def _print_plan(p: dict) -> None:
         print(f"  note: {n}")
 
 
+def sport_group(arg: str) -> str:
+    """The rule's sport for a command-line argument: a group as it stands, a Garmin typeKey through the
+    sport map. Anything else is refused. Until 2026-11-22 the argument went to the rule raw, so
+    `plan 150 endurance cycling` was read as on foot: half the band, and gels in place of his bottles
+    (a typeKey the rule cannot tell from a run — CLAUDE.md's defect #1)."""
+    import sports
+    if arg in f.SPORT_GROUPS:
+        return arg
+    if arg in sports.SPORT_GROUP:
+        return sports.SPORT_GROUP[arg]
+    raise argparse.ArgumentTypeError(f"unknown sport {arg!r}: a group ({', '.join(sorted(f.SPORT_GROUPS))}) "
+                                     "or a Garmin typeKey from scripts/sports.py")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -782,7 +796,8 @@ def main() -> None:
         s = sub.add_parser(name)
         s.add_argument("minutes", type=float)
         s.add_argument("intent", choices=sorted(f.INTENTS))
-        s.add_argument("sport", help="bike · run · swim · anything else on foot")
+        s.add_argument("sport", type=sport_group,
+                       help="a group (bike · run · swim · strength · race · other) or a Garmin typeKey (cycling, virtual_ride, running…)")
         s.add_argument("--rehearsal", action="store_true", help="a gut-training session: +10 g/h")
         s.add_argument("--json", action="store_true")
     s = sub.add_parser("log")
