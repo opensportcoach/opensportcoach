@@ -127,8 +127,12 @@ ENDURANCE_DEFINITIONS = {
 EASY_INTENTS = frozenset({"recovery", "endurance"})
 HARD_INTENTS = frozenset({"tempo", "threshold", "vo2", "race", "mixed"})
 INTENTS = EASY_INTENTS | HARD_INTENTS
+# The sports the rule reads: scripts/sports.py's groups, plus "other" for anything it does not map. A
+# Garmin typeKey ("cycling") is refused, never read as on foot (fuel.py → sport_group maps one).
+SPORT_GROUPS = frozenset({"bike", "run", "swim", "strength", "race", "other"})
 
-# (under this many minutes, easy band, hard band), each band (low, high) in g/h; the last row is open.
+# (under this many minutes, easy band, hard band), each band (low, high) in g/h; the last row is open,
+# so exactly 150 min (2.5 h) is in it.
 CARB_BANDS: tuple = (
     (60, (0, 0), (0, 0)),
     (90, (0, 0), (30, 30)),
@@ -153,6 +157,8 @@ def carb_band(minutes: float, intent: str, sport: str) -> tuple[int, int]:
     half of the band, since the gut tolerates less while running."""
     if intent not in INTENTS:
         raise ValueError(f"unknown intent {intent!r}: one of {sorted(INTENTS)}")
+    if sport not in SPORT_GROUPS:
+        raise ValueError(f"unknown sport {sport!r}: one of {sorted(SPORT_GROUPS)} (a typeKey goes through sports.group)")
     if sport == "swim":
         return 0, 0
     hard = intent in HARD_INTENTS
@@ -198,8 +204,8 @@ def pre_race_meal(weight_kg: float) -> dict:
 
 FUEL_DEFINITIONS = {
     "carb_band": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. "
-                 "60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. "
-                 "Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. "
+                 "60–90 min: none if easy, about 30 g/h if hard. 90 min to under 2.5 h: 30–60 g/h easy, about 60 hard. "
+                 "2.5 h or more: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. "
                  "Sources: ACSM 2016; Jeukendrup 2014.",
     "carb_target": "The rate planned: the top of a hard session's band, the middle of an easy one's, never above "
                    "what your gut is trained to (60 g/h until you say otherwise), plus 10 g/h on a gut-training session.",

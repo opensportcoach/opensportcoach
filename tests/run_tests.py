@@ -3185,6 +3185,26 @@ def test_the_carb_rule_is_keyed_on_duration_intensity_and_sport():
         raise AssertionError("an unknown intent must be refused, not guessed")
     except ValueError:
         pass
+    # 2026-11-22: `fuel.py plan 150 endurance cycling` read "cycling" as on foot (half the band, gels for
+    # his bottles), and "lap_swimming" planned a gel in the pool. The rule takes groups only; the command
+    # line maps a typeKey through the sport map.
+    for key in ("cycling", "virtual_ride", "lap_swimming", "running", "bik"):
+        try:
+            band(120, "endurance", key)
+            raise AssertionError(f"{key!r} is not a group: refused, never read as on foot")
+        except ValueError:
+            pass
+    import sports, fuel
+    assert f.SPORT_GROUPS == set(sports.SPORT_GROUP.values()) | {"other"}, "the rule's groups are the sport map's"
+    assert [fuel.sport_group(k) for k in ("cycling", "virtual_ride", "gravel_cycling", "lap_swimming", "running", "run", "other")] \
+        == ["bike", "bike", "bike", "swim", "run", "run", "other"]
+    import argparse
+    try:
+        fuel.sport_group("bik")
+        raise AssertionError("a typo must be refused, not read as on foot")
+    except argparse.ArgumentTypeError:
+        pass
+    assert "2.5 h or more" in f.FUEL_DEFINITIONS["carb_band"], "the sentence puts 2.5 h where the rule does"
     assert f.carb_target(30, 60, "endurance") == 45, "an easy session plans the middle of its band"
     assert f.carb_target(60, 90, "race") == 60, "an untrained gut caps at 60 g/h"
     assert f.carb_target(60, 90, "race", gut_g_h=90) == 90
@@ -3290,14 +3310,14 @@ def test_a_fuel_plan_drinks_each_recipe_within_its_makers_limits():
 def test_on_foot_the_fuel_plan_is_gels_not_bottles():
     """A run plan put bottles on the run (2026-11-06: the 70.3 run came out as 2 bottles + 1 gel). On
     foot the plan is gels; only someone with no gel gets a bottle — a flask — and the plan says so."""
-    import fuel
+    import fuel, sports
     cat = {"gel-40": _GEL, "mix-95": _MIX, "slow-80": _SLOW}
     p = fuel.plan(120, "endurance", "run", _two_mix_cfg(), cat)     # 40 g/h × 2 h = 80 g → 2 gels
     assert [(i["kind"], i["id"], i["n"]) for i in p["items"]] == [("product", "gel-40", 2)], p
     assert p["notes"] == ["on foot: gels, not bottles"], p["notes"]
     p = fuel.plan(115, "race", "run", _fuel_cfg(products=["mix-95"]), cat)
     assert [i["kind"] for i in p["items"]] == ["recipe"] and any("flask" in n for n in p["notes"]), p
-    p = fuel.plan(75, "race", "hyrox", _two_mix_cfg(), cat)          # anything else on foot is on foot too
+    p = fuel.plan(75, "race", sports.group("cardio_training"), _two_mix_cfg(), cat)   # a HYROX circuit is "other": on foot too
     assert {i["kind"] for i in p["items"]} == {"product"}, p
 
 
