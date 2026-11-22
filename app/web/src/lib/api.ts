@@ -46,7 +46,7 @@ export interface AppState {
   coach: 'online' | 'offline';
   requests: AppRequest[];
   /** What the coach is doing outside any request — the daily it runs at start — or null. */
-  status?: { text: string; since: number; updated?: number; ask?: 'feel' } | null;
+  status?: { text: string; since: number; updated?: number; ask?: 'feel'; answered?: true } | null;
   /** The data refresh as every tab sees it: started by this page or by the coach. */
   refresh?: RefreshState;
   /** The server's code changed after this coach session started: restart it to use the new version. */

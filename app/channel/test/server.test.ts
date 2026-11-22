@@ -161,6 +161,17 @@ test('attach, the token swap, a request round trip, and a recorded click', async
     st = await (await fetch(`${BASE}/api/state`, { headers: page(cookie) })).json();
     assert.equal(st.status.text, 'Analysing');
     assert.equal(st.status.since, since, 'one run keeps its start time');
+    assert.equal(st.status.answered, undefined);
+    assert.match(changedData.content[0].text, /ask: "feel"/, 'the coach is reminded to ask on the page');
+    // How they feel: asked on the page, then answered (a terminal reply leaves no check-in) — the page stops asking.
+    const asked = await s.call('app_status', { text: 'How do you feel?', ask: 'feel' });
+    assert.doesNotMatch(asked.content[0].text, /ask: "feel"/);
+    await until('"ask":"feel"');
+    await s.call('app_status', { text: 'Writing today’s call' });
+    await until('"answered":true');
+    st = await (await fetch(`${BASE}/api/state`, { headers: page(cookie) })).json();
+    assert.equal(st.status.ask, undefined);
+    assert.equal(st.status.answered, true);
     await s.call('app_status', { text: 'stopped', done: true });
     await until('event: status\ndata: null');
     st = await (await fetch(`${BASE}/api/state`, { headers: page(cookie) })).json();

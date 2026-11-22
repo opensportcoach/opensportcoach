@@ -95,7 +95,10 @@ next number to beat, and the block review (`osc-week`) reads it.
   it ends. Inside a window, nothing below overrides it.
 - `rotation_status.py` first — **a split day untrained >7 days outranks next-in-rotation.**
 - Then readiness. **Ask how they feel; their answer outranks the numbers.** Recovery review covers
-  every day, rest days included.
+  every day, rest days included. **In the app, ask on the page, never only in the terminal:**
+  `app_status("How do you feel? Answer on Today — or here in the terminal.", ask="feel")`, then the
+  one line here, then end your turn (`/osc-app`, "Ask how they feel in the app"). A `checkin` event
+  that already arrived is the answer — Today asks for it while you work — so don't ask at all.
 - Check the executed volume per muscle over 7 days, not the plan.
 - Respect what they have already said they intend to do. Their stated plans outrank the template.
 - A call or a rewritten day that moves, adds or drops an **off-watch** session (Zwift, the long ride,

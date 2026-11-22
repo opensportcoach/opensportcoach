@@ -28,10 +28,14 @@ and you answer them through the `osc-app` channel tools. It only exists in a ses
    - **Ask how they feel in the app** (decided 2026-10-10: the page is where they are), before step 4
      of the daily: `app_status("How do you feel? Answer on Today — or here in the terminal.",
      ask="feel")` puts the 1–5 picker on Today. Say the same in one line in the terminal and **end
-     your turn**. The answer comes as a `checkin` event (`feel` 1–5, `note`) or as a reply in the
+     your turn**. **Never ask in the terminal without `ask="feel"`**: the page then only spins "The
+     coach is on it" while you wait (2026-11-22). Today also offers the picker on its own while you
+     work and today has no answer, so a `checkin` may arrive **before** you ask — it is the answer;
+     don't ask. The answer comes as a `checkin` event (`feel` 1–5, `note`) or as a reply in the
      terminal — take whichever comes first, `app_ack` the check-in, and continue the daily with it.
      If the answer came in the **terminal**, take the question off the page at once:
-     `app_status("Writing today's call")` (no `ask`) — otherwise Today keeps asking. Ask once a day:
+     `app_status("Writing today's call")` (no `ask`) — the page then says it has the answer;
+     otherwise Today keeps asking. Ask once a day:
      when today's daily already has `feel.answer`, or a `checkin` arrived today, don't ask again.
    - When the answer came from the app, finish that request with the daily:
      `app_publish(<checkin request_id>, "daily", <file>)`; from the terminal, `app_publish(null, …)`.

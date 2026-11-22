@@ -74,6 +74,48 @@ describe('Today — how do you feel', () => {
     fireEvent.click(screen.getByRole('radio', { name: /4\s*Good/ }));
     fireEvent.click(screen.getByRole('button', { name: 'Send' }));
     expect(s.ask).toHaveBeenCalledWith('checkin', 'Feeling 4/5 — Good', { feel: 4 });
+    expect(screen.getByText(/The coach is waiting for your answer/)).toBeTruthy();
+  });
+
+  it('asks it in the hero while the coach works, even before the coach says it waits (2026-11-22)', async () => {
+    atFixtureDay(demo.index.generated_on);
+    const t = demo.view('today');
+    const now = Date.now();
+    serveViews({ today: { ...t, daily: null, call_program: null } });
+    const s = store({}, { status: { text: 'Data refreshed — analysing your last session', since: now, updated: now } });
+    show(<Today />, s);
+    expect(await screen.findByText('The coach is on it')).toBeTruthy();
+    expect(screen.getAllByRole('radiogroup')).toHaveLength(1);   // in the hero, not twice
+    expect(screen.getByText(/the coach won’t have to stop to ask/)).toBeTruthy();
+    expect(screen.queryByText(/The coach is waiting for your answer/)).toBeNull();
+    fireEvent.click(screen.getByRole('radio', { name: /2\s*Tired/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Send' }));
+    expect(s.ask).toHaveBeenCalledWith('checkin', 'Feeling 2/5 — Tired', { feel: 2 });
+  });
+
+  it("doesn't ask in the hero when today already has an answer — the card shows it", async () => {
+    atFixtureDay(demo.index.generated_on);
+    const t = demo.view('today');
+    const now = Date.now();
+    serveViews({ today: { ...t, daily: null, call_program: null } });
+    show(<Today />, store({}, {
+      status: { text: 'Re-weighing today’s call', since: now - 60_000, updated: now },
+      requests: [{ id: 'r3', kind: 'checkin', text: 'Feeling 4/5 — Good', params: { feel: 4 }, state: 'DONE', createdAt: now - 3_600_000, progress: [] }],
+    }));
+    expect(await screen.findByText('The coach is on it')).toBeTruthy();
+    expect(screen.getByText('Today you told the coach')).toBeTruthy();
+    expect(screen.queryByRole('radiogroup')).toBeNull();
+  });
+
+  it('stops asking once the coach moves on — the answer came in the terminal', async () => {
+    atFixtureDay(demo.index.generated_on);
+    const t = demo.view('today');
+    const now = Date.now();
+    serveViews({ today: { ...t, daily: null, call_program: null } });
+    show(<Today />, store({}, { status: { text: 'Writing today’s call', since: now - 60_000, updated: now, answered: true } }));
+    expect(await screen.findByText('The coach is on it')).toBeTruthy();
+    expect(screen.queryByRole('radiogroup')).toBeNull();
+    expect(screen.getByText(/Got it — the coach has it/)).toBeTruthy();
   });
 });
 

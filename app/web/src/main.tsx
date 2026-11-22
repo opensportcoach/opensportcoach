@@ -65,7 +65,10 @@ function Layout() {
     try { localStorage.setItem('adn-theme', theme); } catch { /* a private window: the theme just doesn't persist */ }
     document.documentElement.dataset.theme = theme;   // the page behind the app, and the browser's controls (styles.css)
   }, [theme]);
-  useEffect(() => { document.title = state ? `OpenSportCoach · ${state.display}` : 'OpenSportCoach'; }, [state]);
+  // The coach stopped for how they feel: the tab says so, for a page left in the background.
+  useEffect(() => {
+    document.title = !state ? 'OpenSportCoach' : `${state.status?.ask === 'feel' && state.coach === 'online' ? 'How do you feel? · ' : ''}OpenSportCoach · ${state.display}`;
+  }, [state]);
   // The coach panel (narrow windows) closes when you go somewhere, or on Escape.
   useEffect(() => { setDockOpen(false); }, [loc.pathname, loc.hash, setDockOpen]);
   useEffect(() => {

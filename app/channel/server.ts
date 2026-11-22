@@ -345,9 +345,13 @@ kind="confirm" means the athlete pressed Send to watch for the plan_hash it carr
             cache.clear();
             handler.coachRefreshed('The coach pulled new data');   // every tab reloads its views on this
           }
+          // A status without ask after one with it: the coach has its answer (a terminal reply leaves no check-in).
+          const answered = a.ask !== 'feel' && (status?.ask === 'feel' || status?.answered);
           setStatus(a.done ? null : { text: String(a.text ?? '').slice(0, 200), since: status?.since ?? Date.now(), updated: Date.now(),
-            ...(a.ask === 'feel' ? { ask: 'feel' as const } : {}) });
-          return text(a.done ? 'cleared' : a.data_changed ? 'shown; the page reloads its data' : 'shown');
+            ...(a.ask === 'feel' ? { ask: 'feel' as const } : {}), ...(answered ? { answered: true as const } : {}) });
+          // The coach once asked how they feel in the terminal only, and the page kept spinning (2026-11-22).
+          const feelHint = a.done || a.ask === 'feel' ? '' : ' — when you stop for how they feel, call app_status again with ask: "feel" first; a checkin event that already arrived is the answer';
+          return text((a.done ? 'cleared' : a.data_changed ? 'shown; the page reloads its data' : 'shown') + feelHint);
         }
         case 'app_reply': emitRequest(book.finish(String(a.request_id), String(a.markdown ?? ''))); return text('sent');
         case 'app_publish': return text(await publish(a.request_id ?? null, String(a.kind), String(a.file)));
