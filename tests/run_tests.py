@@ -453,6 +453,11 @@ def test_endurance_metrics_build_for_the_latest_ride_and_run():
             assert "if" not in out["metrics"] and "tss" not in out["metrics"], out["metrics"]
         if "decoupling" in out["metrics"]:
             assert out["metrics"]["decoupling"]["basis"] in ("power", "speed")
+        # A lap is cited as intervals.<n>.<field>, the key app_contracts.resolve matches on. Until
+        # 2026-11-25 these rows carried only `lap`, so a run review could not cite one of its laps.
+        for x in out["intervals"]:
+            assert x["n"] == x["lap"] and {"secs", "metres", "hr"} <= set(x), x
+            assert ("pace" in x) == (grp == "run" and x["metres"] > 0 and x["secs"] > 0), x
         if out["weather"]:   # Celsius, plausible (docs/DESIGN.md (app audit) M5), and no station coordinates
             assert {"temp_c", "humidity_pct", "source"} <= set(out["weather"]) and "latitude" not in out["weather"], out["weather"]
             assert -40 <= out["weather"]["temp_c"] <= 50, out["weather"]
@@ -506,6 +511,18 @@ def test_an_endurance_review_cannot_cite_a_number_the_engine_did_not_compute():
     assert app_contracts.check_evidence(review(("metrics.tss", 92)), analysis), "a number the engine never computed"
     assert app_contracts.check_evidence(review(("metrics.decoupling", 4.0)), analysis)
     assert app_contracts.check_evidence({"activity_id": 8, "findings": []}, analysis), "another activity's review"
+    # A ride or run's lap (endurance_metrics.py) is cited like a swim's rep: by `n`, checked by value.
+    analysis["intervals"] = [{"n": 9, "lap": 9, "secs": 20, "metres": 71, "hr": 141.0, "pace": 282}]
+    assert app_contracts.check_evidence(review(("intervals.9.hr", 141), ("intervals.9.pace", 282)), analysis) == []
+    assert app_contracts.check_evidence(review(("intervals.9.pace", 250)), analysis), "a lap pace the engine did not compute"
+    assert app_contracts.check_evidence(review(("intervals.10.hr", 141)), analysis), "a lap that does not exist"
+    assert app_contracts.validate("endurance_review", {}) and not any(
+        "intervals.9.pace" in p for p in app_contracts.validate("endurance_review", {
+            "kind": "endurance_review", "activity_id": 7, "date": "2026-11-25", "sport": "run", "verdict": "v",
+            "intent": {"value": "endurance", "source": "planned", "why": "w"},
+            "execution": {"rating": "partly", "summary": "s"},
+            "findings": [{"severity": "info", "claim": "c", "evidence": [{"metric": "intervals.9.pace", "value": 282}]}]})
+    ), "the contract admits a run lap's pace as an evidence path"
 
 
 def test_refresh_reruns_after_a_complete_run_resumes_a_stopped_one_and_locks():

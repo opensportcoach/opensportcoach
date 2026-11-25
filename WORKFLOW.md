@@ -101,7 +101,7 @@ Send to watch: dry run (--plan-json) ─▶ card ─▶ CLICK ─▶ confirm_gat
 
 The same gates, one more hard line: in a session serving the app a Garmin write needs the athlete's
 click on that exact plan — the hook holds it in any permission mode. A ride or run's analysis is
-`/osc-review`'s endurance branch, and its every number is checked against `endurance_metrics.py`
+`/osc-review` with the rubric for its sport (one file per sport in the skill), and its every number is checked against `endurance_metrics.py`
 before the page shows it. Refreshes are one per athlete at a time, and every open window sees them. Screens never wait on the model;
 every number on them comes from a view, every result from the coach passes its contract
 (`app/contracts/`). Details: docs/DESIGN.md (the app).
