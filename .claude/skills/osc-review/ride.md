@@ -9,9 +9,11 @@ shared steps there. This file is what a ride adds.
 `computed`), HR and power zones with this session's bounds, power bests (`bests.<secs>s`),
 thresholds, weather (outdoors), flags, and **`intervals`**, the laps.
 
-- **Laps are cited as `intervals.<n>.<secs | metres | hr | power>`**, where `n` is the lap number.
-  The engine lists laps only when the ride had structure (more than one lap type). Otherwise, cite
-  whole-ride metrics.
+- **Laps are cited as `intervals.<n>.<secs | metres | hr | power | cadence>`**, where `n` is the
+  lap number and `cadence` its rpm. The engine lists every lap once there are two or more: a Zwift
+  workout's blocks (Zwift marks them all ACTIVE), a watch workout's steps, and auto-laps. A one-lap
+  ride has none: cite whole-ride metrics. NP and max HR per lap are Garmin's (`lapDTOs`): label them
+  so in the markdown.
 - **No FTP → no IF or TSS claim.** Tell them how to set `ftp_w` in `athlete.json` → `profile`.
 
 ## Judge it against its intent
@@ -31,9 +33,13 @@ thresholds, weather (outdoors), flags, and **`intervals`**, the laps.
   bests. An endurance ride with big 5 s and 60 s bests was a different ride, whatever its average.
 - **Indoors (Zwift, a trainer):**
   - **In ERG, the trainer sets the power.** Hitting the target isn't execution. Judge the HR and the
-    cadence, and the HR drift across the steady block.
-  - **A planned Zwift ride names its workout** (`plan.json` → `zwift_workout`). Judge the laps
-    against that workout's blocks.
+    cadence (`intervals.<n>.cadence` against the workout's rpm), and the HR drift across the steady
+    block.
+  - **A planned Zwift ride names its workout** (`plan.json` → `zwift_workout`). Its laps are the
+    workout's blocks, in order: judge each against its block, and say when one was cut short (a
+    ramp-down of seconds is the usual one).
+  - **Whole-ride decoupling** includes the warm-up ramp. A ramp in the first half makes it read
+    negative: that's no drift, not a gain. The steady block's HR says more.
   - **No weather.** If the HR drifts indoors, ask about the fan and the room before calling it
     fatigue.
 - **Structured rides:** judge each work interval by `intervals.<n>.power` against its target, and

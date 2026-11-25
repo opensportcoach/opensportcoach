@@ -9,12 +9,13 @@ shared steps there. This file is what a run adds.
 `computed`), HR zones with this session's bounds, run bests (`bests.1k`, `bests.5k`), weather, flags,
 and **`intervals`**, the laps.
 
-- **Laps are cited as `intervals.<n>.<secs | metres | hr | pace | power>`**, where `pace` is the
-  lap's s/km and `n` its lap number. The engine lists laps only when the run had structure (more than
-  one lap type: warm-up, active, recovery, cooldown).
-- **A plain run** (one type of auto-lap, every km): there are no intervals. Cite whole-run metrics.
-  If you need the km splits, put them in the markdown as a table labelled "Garmin laps", from
-  `activity_<id>_splits.json` → `lapDTOs`.
+- **Laps are cited as `intervals.<n>.<secs | metres | hr | pace | cadence | power>`**, where `pace`
+  is the lap's s/km, `cadence` its spm and `n` its lap number. The engine lists every lap once there
+  are two or more: a watch workout's steps (`type` says warm-up, active, recovery or cooldown) and a
+  plain run's km auto-laps alike. A one-lap run has none: cite whole-run metrics.
+- **Build the lap table in the markdown from the intervals**, so its numbers are the ones the
+  evidence is checked against. Max HR per lap is Garmin's (`activity_<id>_splits.json` → `lapDTOs`):
+  label it so.
 - **A run has no FTP**: never an IF or TSS claim. Wrist running power is not a ride's power; don't
   compare the two, and don't judge a run by power.
 
