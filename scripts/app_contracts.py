@@ -65,7 +65,7 @@ def resolve(analysis: dict, path: str):
         return z and z.get("pct")
     if head == "thresholds":
         return (analysis.get("thresholds", {}).get(rest) or {}).get("value")
-    if head == "intervals":   # a swim's rep or a circuit's step (session_review.py): intervals.<n>.<field>
+    if head == "intervals":   # a ride or run's lap (endurance_metrics.py), a swim's rep or a circuit's step (session_review.py)
         n, _, fld = rest.partition(".")
         row = next((x for x in analysis.get("intervals", []) if str(x.get("n")) == n), None)
         return row and row.get(fld)

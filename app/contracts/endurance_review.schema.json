@@ -119,8 +119,8 @@
               "properties": {
                 "metric": {
                   "type": "string",
-                  "pattern": "^(metrics\\.[a-z_0-9]+|bests\\.[0-9]+[sk]|zones\\.(hr|power)\\.[1-7]|thresholds\\.(ftp|threshold_hr)|intervals\\.[0-9]+\\.(secs|pace_100|swolf|hr|metres))$",
-                  "description": "A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>."
+                  "pattern": "^(metrics\\.[a-z_0-9]+|bests\\.[0-9]+[sk]|zones\\.(hr|power)\\.[1-7]|thresholds\\.(ftp|threshold_hr)|intervals\\.[0-9]+\\.(secs|pace_100|pace|swolf|hr|metres|power))$",
+                  "description": "A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap: secs, metres, hr, power, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf)."
                 },
                 "value": {
                   "type": "number",

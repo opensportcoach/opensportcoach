@@ -256,9 +256,17 @@ def analyse(aid: int) -> dict:
         flags.append({"key": "decoupling", "text": f"Decoupling {dc} % — output per heartbeat fell in the second half."})
 
     laps = (ed.load(f"activity_{aid}_splits.json") or {}).get("lapDTOs") or []
-    intervals = [{"lap": i + 1, "type": lap.get("intensityType"), "secs": round(lap.get("duration") or 0),
-                  "power": lap.get("averagePower"), "hr": lap.get("averageHR")}
-                 for i, lap in enumerate(laps) if lap.get("intensityType")]
+    # `n` is the key a review cites (intervals.<n>.<field>, app_contracts.resolve), the same as a swim's
+    # rep or a circuit's step; `lap` stays for readers of the old name. Until 2026-11-25 a ride or run's
+    # laps carried only `lap`, so no review could cite one and the lap table lived outside the check.
+    def interval(i: int, lap: dict) -> dict:
+        secs, metres = lap.get("duration") or 0, lap.get("distance") or 0
+        row = {"n": i + 1, "lap": i + 1, "type": lap.get("intensityType"), "secs": round(secs),
+               "metres": round(metres), "power": lap.get("averagePower"), "hr": lap.get("averageHR")}
+        if grp == "run" and metres > 0 and secs > 0:
+            row["pace"] = round(secs / metres * 1000)   # s/km, the lap's own (Garmin's duration ÷ distance)
+        return row
+    intervals = [interval(i, lap) for i, lap in enumerate(laps) if lap.get("intensityType")]
 
     return {
         "id": aid, "sport": grp, "type": tk, "virtual": tk in sports.VIRTUAL, "outdoors": sports.outdoors(tk),

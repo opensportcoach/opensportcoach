@@ -82,8 +82,10 @@ catch the natural phrasing. Use the slash command when you want to be certain wh
 trained, it reviews the session and checks for bump signals. If you didn't, it says so in two lines
 and stops. Ends with a visual brief and a recommendation. **Never pushes.**
 
-**`/osc-review <date>`** — spawns `execution-reviewer` for a deep multi-session pass. Use it when
-something is odd, not routinely — the daily loop already does the mechanical comparison.
+**`/osc-review <date>`** — a deep review of one session, judged by the rubric for its sport: a gym
+session spawns `execution-reviewer` for a multi-session pass; a run, ride, swim or circuit is read
+in the session against its intent, every number checked against the engine. Use it when something
+is odd or you want a proper read, not routinely — the daily loop already does the mechanical comparison.
 
 **`/osc-week`** — the three-day rolling schedule, or the Sunday recap plus the insight pass.
 
