@@ -259,10 +259,16 @@ def analyse(aid: int) -> dict:
     # `n` is the key a review cites (intervals.<n>.<field>, app_contracts.resolve), the same as a swim's
     # rep or a circuit's step; `lap` stays for readers of the old name. Until 2026-11-25 a ride or run's
     # laps carried only `lap`, so no review could cite one and the lap table lived outside the check.
+    # EVERY lap is listed once there are two or more. Until 2026-11-25 they were listed only when their
+    # intensity types differed, which hid the three cases a review needs most: a Zwift workout's blocks
+    # (Zwift marks every one ACTIVE), a watch workout run entirely in ACTIVE steps, and a plain run's km
+    # splits. `type` still tells a warm-up from a rep from a recovery where the workout said so.
     def interval(i: int, lap: dict) -> dict:
         secs, metres = lap.get("duration") or 0, lap.get("distance") or 0
+        cad = lap.get("averageBikeCadence" if grp == "bike" else "averageRunCadence")
         row = {"n": i + 1, "lap": i + 1, "type": lap.get("intensityType"), "secs": round(secs),
-               "metres": round(metres), "power": lap.get("averagePower"), "hr": lap.get("averageHR")}
+               "metres": round(metres), "power": lap.get("averagePower"), "hr": lap.get("averageHR"),
+               "cadence": round(cad) if cad else None}   # rpm on a bike, spm on a run (Garmin's lap average)
         if grp == "run" and metres > 0 and secs > 0:
             row["pace"] = round(secs / metres * 1000)   # s/km, the lap's own (Garmin's duration ÷ distance)
         return row
@@ -279,7 +285,7 @@ def analyse(aid: int) -> dict:
             zones(ed.load(f"activity_{aid}_hrzones.json"), "bpm", a.get("duration"))),
         "bests": ({f"{d}s": round(v) for d in BEST_POWER_S if (v := f.best_mean(p1, d))} if p1 else {}) | (
             run_bests(s) if grp == "run" else {}),
-        "intervals": intervals if len({x["type"] for x in intervals}) > 1 else [],
+        "intervals": intervals if len(intervals) > 1 else [],   # one lap is the whole session: metrics say it
         "streams": _downsample(s | smoothed(s, p1), STREAM_POINTS, sports.outdoors(tk)) if s else {},
         "route": route(details, s, tk),
         "weather": weather(ed.load(f"activity_{aid}_weather.json")),

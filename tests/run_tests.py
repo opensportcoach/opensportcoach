@@ -456,8 +456,13 @@ def test_endurance_metrics_build_for_the_latest_ride_and_run():
         # A lap is cited as intervals.<n>.<field>, the key app_contracts.resolve matches on. Until
         # 2026-11-25 these rows carried only `lap`, so a run review could not cite one of its laps.
         for x in out["intervals"]:
-            assert x["n"] == x["lap"] and {"secs", "metres", "hr"} <= set(x), x
+            assert x["n"] == x["lap"] and {"secs", "metres", "hr", "cadence"} <= set(x), x
             assert ("pace" in x) == (grp == "run" and x["metres"] > 0 and x["secs"] > 0), x
+        # Every lap once there are two: a Zwift workout marks all its blocks ACTIVE, and the old rule
+        # (listed only when the types differed) hid them, a watch workout of ACTIVE steps and km splits.
+        laps = [x for x in (em.ed.load(f"activity_{a['activityId']}_splits.json") or {}).get("lapDTOs") or []
+                if x.get("intensityType")]
+        assert len(out["intervals"]) == (len(laps) if len(laps) > 1 else 0), (len(laps), len(out["intervals"]))
         if out["weather"]:   # Celsius, plausible (docs/DESIGN.md (app audit) M5), and no station coordinates
             assert {"temp_c", "humidity_pct", "source"} <= set(out["weather"]) and "latitude" not in out["weather"], out["weather"]
             assert -40 <= out["weather"]["temp_c"] <= 50, out["weather"]
@@ -516,6 +521,11 @@ def test_an_endurance_review_cannot_cite_a_number_the_engine_did_not_compute():
     assert app_contracts.check_evidence(review(("intervals.9.hr", 141), ("intervals.9.pace", 282)), analysis) == []
     assert app_contracts.check_evidence(review(("intervals.9.pace", 250)), analysis), "a lap pace the engine did not compute"
     assert app_contracts.check_evidence(review(("intervals.10.hr", 141)), analysis), "a lap that does not exist"
+    # A Zwift block (every lap ACTIVE): cited by `n`, its cadence too.
+    analysis["intervals"] = [{"n": 2, "lap": 2, "type": "ACTIVE", "secs": 1800, "metres": 15244, "power": 165.0,
+                              "hr": 133.0, "cadence": 85}]
+    assert app_contracts.check_evidence(review(("intervals.2.power", 165), ("intervals.2.cadence", 85)), analysis) == []
+    assert app_contracts.check_evidence(review(("intervals.2.cadence", 90)), analysis), "the workout's target, not what was done"
     assert app_contracts.validate("endurance_review", {}) and not any(
         "intervals.9.pace" in p for p in app_contracts.validate("endurance_review", {
             "kind": "endurance_review", "activity_id": 7, "date": "2026-11-25", "sport": "run", "verdict": "v",
