@@ -103,24 +103,3 @@ export function PageTitle({ eyebrow, title, right }: { eyebrow?: string; title: 
     </div>
   );
 }
-
-/** A tiny markdown renderer for coach text: paragraphs, bullets, bold, inline code. Text only — no HTML. */
-export function Markdown({ text }: { text: string }) {
-  const inline = (s: string, k: number) => {
-    const parts = s.split(/(\*\*[^*]+\*\*|`[^`]+`)/g);
-    return <span key={k}>{parts.map((p, i) => p.startsWith('**') ? <b key={i}>{p.slice(2, -2)}</b> : p.startsWith('`') ? <code key={i}>{p.slice(1, -1)}</code> : p)}</span>;
-  };
-  const blocks: ReactNode[] = [];
-  let list: string[] = [];
-  const flush = () => { if (list.length) { blocks.push(<ul key={blocks.length}>{list.map((l, i) => <li key={i}>{inline(l, i)}</li>)}</ul>); list = []; } };
-  for (const raw of text.split('\n')) {
-    const l = raw.trimEnd();
-    if (/^\s*[-*] /.test(l)) { list.push(l.replace(/^\s*[-*] /, '')); continue; }
-    flush();
-    if (!l.trim()) continue;
-    const h = l.match(/^(#{1,3}) (.*)$/);
-    blocks.push(h ? <h3 key={blocks.length}>{inline(h[2], 0)}</h3> : <p key={blocks.length}>{inline(l, 0)}</p>);
-  }
-  flush();
-  return <div className="md" style={{ fontSize: 14, lineHeight: 1.5 }}>{blocks}</div>;
-}

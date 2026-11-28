@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { useStore, type AppRequest } from '../lib/api';
 import { day, mmss, pl } from '../lib/fmt';
 import { days as changes } from '../lib/proposal';
-import { Empty, IC, Icon, Markdown, PageTitle } from '../components/ui';
+import { Empty, IC, Icon, PageTitle } from '../components/ui';
+import { Markdown } from '../components/Markdown';
 
 const KIND: Record<string, string> = { question: 'Question', workflow: 'Run', plan: 'Plan request', accept: 'Accept', push: 'Watch update', confirm: 'Send to watch', checkin: 'Check-in' };
 const FIND: Record<string, [string, string]> = { up: ['↑', 'var(--g)'], warn: ['!', 'var(--y)'], question: ['?', 'var(--v)'] };

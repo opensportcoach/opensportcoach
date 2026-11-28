@@ -131,7 +131,7 @@ text at most — only what the visual cannot say.
 contract `app/contracts/daily.schema.json`:
 the call (verb, session, why in one line, the full reasoning in a few sentences in `reasoning`, what to cut, three signals), how they feel, the session review if there
 was one, **one line per new ride or run** in `endurance` (its intent, whether it was met, the decoupling —
-from `endurance_metrics.py`; `flag` true when the engine flagged it; the deep review stays on demand), pending decisions (bumps with the date that earned them, questions with answer options,
+from `endurance_metrics.py`; `flag` true when the engine flagged it; the deep review is the app's: it queues one for every new ride and run, `osc-app`), pending decisions (bumps with the date that earned them, questions with answer options,
 workouts not on the watch) and at most five notes. Validate it with
 `scripts/app_contracts.py validate daily <file>`. It is today's call for the app's Today screen and
 for the lite page (step 6). (Decided 2026-10-26: a daily run in the terminal used to leave both on

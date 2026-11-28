@@ -4,12 +4,13 @@
  * numbers. Every metric shows its source: Garmin's value, or computed by OpenSportCoach.
  */
 import { useMemo, useRef, useState, type KeyboardEvent as RKeyboardEvent, type PointerEvent as RPointerEvent } from 'react';
-import { useStore } from '../lib/api';
+import { useStore, type AppRequest } from '../lib/api';
 import type { EnduranceReview } from '../contracts';
 import { day, elapsed, mmss, nf } from '../lib/fmt';
 import { rich } from '../lib/tip';
 import { axisFor, yFrac, type Axis } from '../components/Chart';
 import { IC, Icon } from '../components/ui';
+import { CoachReview, INTENT, RATING, SEVERITY } from '../components/CoachReview';
 
 const ZONE_COL = ['var(--tx3)', 'var(--b)', 'var(--g)', 'var(--o)', 'var(--r)', 'var(--v)', 'var(--v)'];
 const SRC = (s: string) => (s === 'garmin' ? 'Garmin' : s === 'file' ? 'your exported file' : s === 'strava' ? 'Strava' : s === 'athlete.json' ? 'your setting' : 'computed by OpenSportCoach');
@@ -27,7 +28,6 @@ export function EndurancePanel({ w }: { w: any }) {
           <Icon d={IC.warn} size={16} sw={2.4} /><span><b>Worth a look.</b> {e.flags.map((f: any) => f.text).join(' ')}</span>
         </div>
       )}
-      <Review w={w} />
       <Performance w={w} />
       {hasStreams && <Linked w={w} hover={hover} setHover={setHover} sel={sel} setSel={setSel} />}
       <div className="grid2">
@@ -39,19 +39,12 @@ export function EndurancePanel({ w }: { w: any }) {
   );
 }
 
-// --- the coach's review (Phase 4) -----------------------------------------------------------------
-const RATING: Record<string, [string, string]> = {
-  on_target: ['On target', 'var(--g)'], partly: ['Partly', 'var(--y)'], off_target: ['Off target', 'var(--r)'], unclear: ['Unclear', 'var(--tx2)'],
-};
-const SEVERITY: Record<string, [string, string, string]> = {
-  good: ['✓', 'var(--g)', 'var(--gt)'], info: ['i', 'var(--b)', 'var(--bt)'], watch: ['!', 'var(--y)', 'var(--yt)'], act: ['!', 'var(--r)', 'var(--rt)'],
-};
-const INTENT: Record<string, string> = {
-  recovery: 'Recovery', endurance: 'Endurance', tempo: 'Tempo', threshold: 'Threshold', vo2: 'VO₂max', race: 'Race', mixed: 'Mixed', unknown: 'Unknown',
-};
-
-/** "Analyse this ride": a review request for THIS activity, and its result once the coach publishes it. */
-function Review({ w }: { w: any }) {
+// --- the coach's analysis (Phase 4) ----------------------------------------------------------------
+/** The coach's analysis of this ride or run, at the top of the workout page. It runs by itself on every new
+ * ride and run (his call, 2026-11-28: the server queues it after a data refresh — app/channel/lib.ts
+ * dueAnalyses); the button stays for an older session and for "Analyse again". The review the coach writes
+ * beside it (logs/<date>-<id>-review.md) folds in under the card, so the page never shows the same review twice. */
+export function Analysis({ w }: { w: any }) {
   const { state, ask } = useStore();
   const offline = state?.coach !== 'online';
   const mine = (state?.requests ?? []).filter((r) => r.kind === 'workflow' && String(r.params?.activity_id ?? '') === String(w.id));
@@ -60,25 +53,33 @@ function Review({ w }: { w: any }) {
   const failed = !done && !running ? [...mine].reverse().find((r) => r.state === 'FAILED') : null;
   const noun = w.group === 'bike' ? 'ride' : 'run';
   const go = () => ask('workflow', `Analyse this ${noun} · ${w.title} · ${day(w.date)}`, { name: 'review', activity_id: String(w.id), date: w.date });
-  if (done?.result?.kind === 'endurance_review') return <ReviewCard p={done.result.payload} again={running ? null : go} offline={offline} />;
+  // The request's result while the app still lists it; the copy kept on disk after (app_data._analysis_for).
+  const p = (done?.result?.kind === 'endurance_review' ? done.result.payload : w.analysis) as EnduranceReview | null;
+  const files: string[] = w.reviews ?? [];
+  if (p) return <ReviewCard p={p} again={go} running={running ?? null} offline={offline} files={files} />;
+  const auto = !!running?.params?.auto;
   return (
-    <section className="card" style={{ borderRadius: 16, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: '10px 16px', padding: '16px 20px' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 4, flex: '1 1 260px' }}>
-        <span className="l" style={{ color: 'var(--tx)' }}>Coach’s analysis</span>
-        <span style={{ fontSize: 14, color: 'var(--tx2)' }}>
-          {running ? (running.progress.at(-1) ?? (running.state === 'QUEUED' ? 'Queued — the coach takes one request at a time.' : 'Reading the session…'))
-            : failed ? `Not done: ${failed.error ?? 'the coach could not finish'}`
-              : `What this ${noun} was for, whether it did its job, and one thing to change — every number from the metrics below.`}
-        </span>
-      </div>
-      <button type="button" className="btn" disabled={offline || !!running} onClick={go} style={{ minHeight: 44 }}>
-        {running ? <><Icon className="spin" d={IC.spinner} size={16} />Analysing…</> : <><Icon d={IC.chat} size={16} sw={2} />Analyse this {noun}</>}
-      </button>
-    </section>
+    <>
+      <section aria-label="Coach’s analysis" className="card" style={{ borderRadius: 16, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: '10px 16px', padding: '16px 20px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 4, flex: '1 1 260px' }}>
+          <span className="l" style={{ color: 'var(--tx)' }}>Coach’s analysis</span>
+          <span role={running ? 'status' : undefined} style={{ fontSize: 14, color: 'var(--tx2)' }}>
+            {running ? (running.progress.at(-1) ?? (running.state === 'QUEUED'
+              ? (auto ? `Queued by itself when this ${noun} came in — the coach takes one request at a time.` : 'Queued — the coach takes one request at a time.')
+              : 'Reading the session…'))
+              : failed ? `Not done: ${failed.error ?? 'the coach could not finish'}`
+                : `What this ${noun} was for, whether it did its job, and one thing to change — every number from the metrics below.`}
+          </span>
+        </div>
+        {running ? <span className="chip" style={{ background: 'var(--s2)', color: 'var(--tx2)', minHeight: 32 }}><Icon className="spin" d={IC.spinner} size={14} />Analysing…</span>
+          : <button type="button" className="btn" disabled={offline} onClick={go} style={{ minHeight: 44 }}><Icon d={IC.chat} size={16} sw={2} />{failed ? 'Try again' : `Analyse this ${noun}`}</button>}
+      </section>
+      {files.map((f) => <CoachReview key={f} file={f} />)}
+    </>
   );
 }
 
-function ReviewCard({ p, again, offline }: { p: EnduranceReview; again: (() => void) | null; offline: boolean }) {
+function ReviewCard({ p, again, running, offline, files }: { p: EnduranceReview; again: () => void; running: AppRequest | null; offline: boolean; files: string[] }) {
   const [label, col] = RATING[p.execution.rating] ?? RATING.unclear;
   return (
     <section aria-labelledby="review" className="card" style={{ borderRadius: 16, gap: 14, borderColor: col }}>
@@ -90,7 +91,8 @@ ${p.intent.source === 'planned' ? 'From the scheduled workout.' : p.intent.sourc
           {INTENT[p.intent.value] ?? p.intent.value}{p.intent.source === 'inferred' ? ' · inferred' : ''}
         </span>
         <span className="chip" style={{ background: 'var(--s2)', color: col }}>{label}</span>
-        {again && <button type="button" className="btn2" disabled={offline} onClick={again} style={{ marginLeft: 'auto', minHeight: 32 }}>Analyse again</button>}
+        {running ? <span role="status" className="chip" style={{ marginLeft: 'auto', background: 'var(--s2)', color: 'var(--tx2)' }}><Icon className="spin" d={IC.spinner} size={13} />{running.progress.at(-1) ?? 'Analysing again…'}</span>
+          : <button type="button" className="btn2" disabled={offline} onClick={again} style={{ marginLeft: 'auto', minHeight: 32 }}>Analyse again</button>}
       </div>
       <p style={{ margin: 0, fontSize: 20, fontWeight: 600, lineHeight: 1.3 }}>{p.verdict}</p>
       <p style={{ margin: 0, fontSize: 14, color: 'var(--tx2)' }}>{p.execution.summary}</p>
@@ -126,6 +128,14 @@ ${p.intent.source === 'planned' ? 'From the scheduled workout.' : p.intent.sourc
         <span className="l" style={{ color: 'var(--id)' }}>Next time</span><span style={{ fontSize: 15 }}>{p.next_time}</span>
       </div>
       {p.questions?.length > 0 && <span style={{ fontSize: 13, color: 'var(--tx2)' }}>The coach asks: {p.questions.join(' · ')} <span style={{ color: 'var(--tx3)' }}>— answer in the dock.</span></span>}
+      {files.length > 0 && (
+        <details className="fold" style={{ borderTop: '1px solid var(--ln)', paddingTop: 12 }}>
+          <summary style={{ cursor: 'pointer', fontSize: 13, fontWeight: 600, color: 'var(--tx2)' }}>The full review — every number, the context and the coach’s questions</summary>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 18, paddingTop: 14 }}>
+            {files.map((f) => <CoachReview key={f} file={f} bare title="The full review" />)}
+          </div>
+        </details>
+      )}
       <span className="m" style={{ color: 'var(--tx3)' }}>Coach · {p.generated_at?.slice(0, 16).replace('T', ' ')} · every number checked against the metrics engine</span>
     </section>
   );

@@ -69,6 +69,8 @@ export interface Deps {
   status?: () => CoachStatus | null;
   staticDir?: string;
   onChange?: () => void;                                         // persist the book
+  /** New data is in (a refresh the page or the coach ran): queue what follows it — every new ride's analysis. */
+  afterRefresh?: () => void;
   /** True when this server's own code changed after it started: the page says to restart the coach. */
   outdated?: () => boolean;
 }
@@ -251,6 +253,7 @@ export function createHandler(d: Deps, events: Events) {
         const out = await d.refresh().catch((e: Error) => ({ error: e.message, summary: undefined }));
         setRefresh({ state: out.error ? 'failed' : 'done', by: 'page', startedAt, finishedAt: Date.now(),
           summary: out.summary, error: out.error ?? undefined });
+        if (!out.error) d.afterRefresh?.();
         return send(res, out.error ? 500 : 200, refresh);
       }
       if (url.pathname === '/api/actions/fuel' || url.pathname === '/api/actions/fuel-setup') {
@@ -287,6 +290,9 @@ export function createHandler(d: Deps, events: Events) {
     return send(res, 404, { error: 'not found' });
   };
   /** The coach session refreshed the data itself (app_status data_changed): tell every tab. */
-  const coachRefreshed = (summary: string) => setRefresh({ state: 'done', by: 'coach', finishedAt: Date.now(), summary });
+  const coachRefreshed = (summary: string) => {
+    setRefresh({ state: 'done', by: 'coach', finishedAt: Date.now(), summary });
+    d.afterRefresh?.();
+  };
   return Object.assign(handle, { coachRefreshed });
 }

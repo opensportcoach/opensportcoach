@@ -87,6 +87,36 @@ export interface AppRequest {
   error?: string;
 }
 
+// --- every new ride and run is analysed without a click (his call, 2026-11-28) ---------------------
+// "Analyse this ride" was a button; its result was good enough that it should always be there. After each
+// data refresh the server queues one `workflow review` request per ride or run of the last days that no
+// review names (the sessions view's `reviewed`) and no request has asked for yet. Older sessions keep the
+// button: a refresh never sends the coach the whole history.
+export const ANALYSIS_DAYS = 7;
+/** The session row the sessions view gives (scripts/app_data.py v_sessions), the fields this reads. */
+export interface SessionRow { id: number | string; date: string; group: string; title?: string; reviewed?: boolean }
+const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+/** "Sat 28 Nov", as the page names a day (app/web/src/lib/fmt.ts day). */
+export const dayLabel = (iso: string) => { const d = new Date(`${iso}T12:00:00`); return `${DOW[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()]}`; };
+/** The session ended before the coach answered: that request never ran, so it doesn't count as asked. */
+export const SESSION_ENDED = 'the coach session ended first';
+
+/** The rides and runs to analyse now, oldest first, each as the request the page's button would send. */
+export function dueAnalyses(sessions: SessionRow[], requests: AppRequest[], today: string, days = ANALYSIS_DAYS):
+  { text: string; params: { name: 'review'; activity_id: string; date: string; auto: true } }[] {
+  const from = new Date(`${today}T12:00:00`);
+  from.setDate(from.getDate() - (days - 1));
+  const since = `${from.getFullYear()}-${String(from.getMonth() + 1).padStart(2, '0')}-${String(from.getDate()).padStart(2, '0')}`;
+  const asked = new Set(requests.filter((r) => r.kind === 'workflow' && r.params?.activity_id != null && r.error !== SESSION_ENDED)
+    .map((r) => String(r.params?.activity_id)));
+  return sessions
+    .filter((s) => (s.group === 'bike' || s.group === 'run') && s.reviewed === false && s.date >= since && s.date <= today && !asked.has(String(s.id)))
+    .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0))
+    .map((s) => ({ text: `Analyse this ${s.group === 'bike' ? 'ride' : 'run'} · ${s.title ?? (s.group === 'bike' ? 'Ride' : 'Run')} · ${dayLabel(s.date)}`,
+      params: { name: 'review' as const, activity_id: String(s.id), date: s.date, auto: true as const } }));
+}
+
 /** The requests of one athlete's app, in order. States only move forward. */
 export class RequestBook {
   #seq = 0;
@@ -98,7 +128,7 @@ export class RequestBook {
   load(items: AppRequest[]): void {
     for (const r of items) {
       const done = r.state === 'DONE' || r.state === 'FAILED';
-      this.#items.set(r.id, done ? r : { ...r, state: 'FAILED', error: r.error ?? 'the coach session ended first' });
+      this.#items.set(r.id, done ? r : { ...r, state: 'FAILED', error: r.error ?? SESSION_ENDED });
       this.#seq = Math.max(this.#seq, Number(r.id.slice(1)) || 0);
     }
   }

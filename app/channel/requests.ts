@@ -17,8 +17,9 @@ export const REQUEST_KINDS = ['question', 'workflow', 'plan', 'accept', 'push', 
  * push" — and the skill documented one. Now each intent has its kind and its parameters, the server
  * refuses anything else, and .claude/skills/osc-app/SKILL.md has a row for each.
  *   question  ask anything             about? flag? pending_id? (the answer to the daily's pending question)
- *   workflow  run a skill              name: daily|week|review|audit|races, activity_id? date?
- *             (races = "Check dates": the coach looks the races up online → a race_check result)
+ *   workflow  run a skill              name: daily|week|review|audit|races, activity_id? date? auto?
+ *             (races = "Check dates": the coach looks the races up online → a race_check result;
+ *             auto = an analysis the server queued itself for a new ride or run, lib.ts dueAnalyses)
  *   plan      propose, no edits        move? to? proposal? (the proposal this asks to change — a new version of it)
  *   accept    apply what was proposed  proposal | pending_id   (exactly one)
  *   push      dry-run what isn't on the watch yet → a push_plan   retry? (the failed plan's hash)
@@ -28,7 +29,7 @@ export const REQUEST_KINDS = ['question', 'workflow', 'plan', 'accept', 'push', 
 type ParamType = 'string' | 'number' | 'boolean';
 export const REQUEST_PARAMS: Record<string, Record<string, ParamType>> = {
   question: { flag: 'boolean', pending_id: 'string' },
-  workflow: { name: 'string', activity_id: 'string', date: 'string' },
+  workflow: { name: 'string', activity_id: 'string', date: 'string', auto: 'boolean' },
   plan: { move: 'string', to: 'string', proposal: 'string' },
   accept: { proposal: 'string', pending_id: 'string' },
   push: { retry: 'string' },

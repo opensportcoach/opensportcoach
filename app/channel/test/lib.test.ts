@@ -111,3 +111,33 @@ test('a trip write has the shape trips.py takes: every place answered, dates in 
   assert.match(checkTrip({ action: 'remove', id: '../x' }) ?? '', /id/);
   assert.match(checkTrip({ action: 'wipe' }) ?? '', /save, remove or answer/);
 });
+
+test('dueAnalyses: every new ride and run is queued once, oldest first, never the whole history', async () => {
+  const { dueAnalyses, SESSION_ENDED } = await import('../lib.ts');
+  const today = '2026-11-28';
+  const rows = [
+    { id: 5, date: '2026-11-28', group: 'bike', title: 'Zwift - Bonette', reviewed: false },
+    { id: 4, date: '2026-11-27', group: 'run', title: 'Easy run', reviewed: false },
+    { id: 3, date: '2026-11-26', group: 'bike', title: 'Hogsback', reviewed: true },          // a review names it
+    { id: 2, date: '2026-11-26', group: 'strength', title: 'Gym · Pull', reviewed: false },  // not a ride or run
+    { id: 1, date: '2026-11-21', group: 'run', title: 'Old run', reviewed: false },          // 8 days back: the button
+    { id: 6, date: '2026-11-25', group: 'swim', title: 'Pool' },                             // no `reviewed`: never queued
+  ];
+  const due = dueAnalyses(rows, [], today);
+  assert.deepEqual(due.map((d) => d.params.activity_id), ['4', '5']);
+  assert.equal(due[1].text, 'Analyse this ride · Zwift - Bonette · Sat 28 Nov', 'the button’s own words');
+  assert.deepEqual(due[0].params, { name: 'review', activity_id: '4', date: '2026-11-27', auto: true });
+  assert.equal(checkRequest('workflow', due[0].params), null, 'the server accepts what it queues');
+
+  const book = new RequestBook();
+  book.add('workflow', 'x', { name: 'review', activity_id: '5', date: '2026-11-28' });
+  const failed = book.add('workflow', 'y', { name: 'review', activity_id: '4', date: '2026-11-27', auto: true });
+  book.fail(failed.id, 'the coach could not finish');
+  assert.deepEqual(dueAnalyses(rows, book.all(), today), [], 'asked once — a failure is not retried on every refresh');
+
+  const ended = new RequestBook();
+  ended.load([{ ...failed, state: 'WORKING', error: undefined }]);
+  assert.equal(ended.all()[0].error, SESSION_ENDED);
+  assert.deepEqual(dueAnalyses(rows, ended.all(), today).map((d) => d.params.activity_id), ['4', '5'],
+    'a request the last session never answered is asked again');
+});

@@ -5,8 +5,9 @@ import { useStore, useView, type Defs } from '../lib/api';
 import { day, dshort, elapsed, kg, mmss, nf, tip } from '../lib/fmt';
 import { rich } from '../lib/tip';
 import { Legend, XYChart, axisFor } from '../components/Chart';
-import { EndurancePanel } from './endurance';
-import { Empty, ErrorBox, IC, Icon, Markdown, Skeleton } from '../components/ui';
+import { Analysis, EndurancePanel } from './endurance';
+import { CoachReview } from '../components/CoachReview';
+import { Empty, ErrorBox, IC, Icon, Skeleton } from '../components/ui';
 import { SportTag } from '../components/SportIcon';
 import { FuelCard, FuelChip } from '../components/Fuel';
 import { ScoreBadge, ScoreCard } from '../components/Score';
@@ -32,7 +33,9 @@ export default function Workout() {
       </nav>
       <Head w={w} onFlag={setFlag} />
       {flag != null && <FlagDialog ctx={flag} close={closeFlag} />}
-      <Reviews files={w.reviews} />
+      {/* A ride or run opens on the coach's analysis — it runs by itself on every new one — with the written
+          review folded into it; any other session shows its review as written (components/CoachReview.tsx). */}
+      {w.endurance ? <Analysis w={w} /> : <Reviews files={w.reviews} />}
       {/* The execution score (docs/DESIGN.md (fuelling and score) §6.1, board Score-Card): under the reviews, every session it has a word for. */}
       {w.score && <ScoreCard s={w.score} defs={w.defs} ctx={`${day(w.date)} · ${w.title}`} />}
       {/* Fuel (docs/DESIGN.md (fuelling and score) §6.1): every ride and run; a gym session only when fuel was planned or logged. */}
@@ -169,18 +172,7 @@ function FlagDialog({ ctx, close }: { ctx: string; close: () => void }) {
 
 function Reviews({ files }: { files: string[] }) {
   if (!files?.length) return null;
-  return <>{files.map((f) => <Review key={f} file={f} />)}</>;
-}
-
-function Review({ file }: { file: string }) {
-  const { data } = useView('journal-entry', file);
-  if (!data) return null;
-  return (
-    <section className="card" style={{ borderRadius: 16 }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}><h2 className="l" style={{ color: 'var(--v)' }}>Coach review</h2><span className="m" style={{ color: 'var(--tx3)' }}>{file}</span></div>
-      <Markdown text={data.markdown.replace(/^# .*\n/, '')} />
-    </section>
-  );
+  return <>{files.map((f) => <CoachReview key={f} file={f} />)}</>;
 }
 
 function HrChart({ w }: { w: any }) {

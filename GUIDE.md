@@ -143,8 +143,13 @@ note; the terminal works too), and today's call follows your answer.
   as you like. Every open window shows it running, then what it pulled ("Updated 18:42 · 9
   activities") or why it failed. If the coach is already refreshing, yours waits for it.
 - **Rides and runs** — power, cadence, pace, zones, best efforts, the route as a line, charts you can
-  hover or drag across (or use the arrow keys), and **Analyse this ride**: the coach's reading of what
-  the session was for and whether it did its job. Every number it cites is checked against the metrics.
+  hover or drag across (or use the arrow keys), and the **coach's analysis** at the top: what the
+  session was for and whether it did its job. Every number it cites is checked against the metrics. It
+  runs by itself for every new ride and run once the data is refreshed (with the coach online); an older
+  session keeps the **Analyse this ride** button. The written review folds in under it.
+- **A planned ride or run on the watch** draws as Zwift draws a workout: one block per step, as long as
+  the step and as tall as its target, coloured by zone (power against your FTP on a ride, heart rate
+  against your zones on a run).
 - **Hyrox and HIIT** show their stations as the watch logged them; names the watch guessed are marked.
 - **Close the session and the app goes quiet** — it only answers while your coach session runs. A
   window left from an earlier session says so; use the one the newest session opened.

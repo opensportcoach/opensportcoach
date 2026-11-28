@@ -105,6 +105,13 @@ html[data-theme='light'], html[data-theme='light'] body, html[data-theme='light'
 @keyframes aSkel { to { background-position: -200% 0; } }
 .adn .md p { margin: 0 0 8px; } .adn .md ul { margin: 0 0 8px; padding-left: 18px; } .adn .md h1, .adn .md h2, .adn .md h3 { font-size: 15px; margin: 10px 0 6px; }
 .adn .md code { font-family: "JetBrains Mono", monospace; font-size: 12px; }
+/* Tables, quotes, numbered lists, rules and code in coach text (components/Markdown.tsx, 2026-11-28). */
+.adn .md ol { margin: 0 0 8px; padding-left: 20px; } .adn .md li + li { margin-top: 2px; }
+.adn .md .table { margin: 0 0 8px; } .adn .md div:has(> .table) { margin: 0 0 8px; } .adn .md div > .table { margin: 0; }
+.adn .md blockquote { margin: 0 0 8px; padding: 6px 12px; border-left: 3px solid var(--ln2); color: var(--tx2); }
+.adn .md blockquote p { margin: 0; }
+.adn .md hr { border: 0; border-top: 1px solid var(--ln); margin: 10px 0; }
+.adn .md pre { margin: 0 0 8px; padding: 10px 12px; border-radius: 8px; background: var(--s2); overflow-x: auto; }
 
 /* Layout: header · sidebar · main · dock (docs/DESIGN.md (app audit) U1, U18). The shell fills the window. Wide: three
    columns, the dock sticky beside the page, so its question box never scrolls away. Below 1180 px the

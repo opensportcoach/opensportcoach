@@ -59,7 +59,9 @@ The rubric says what to measure and how to judge it. Everything else is the same
    - **From the app** (a `workflow` review request carrying `activity_id`): write the JSON to
      `data/<name>/app/results/<request_id>.json`, then `app_publish(request_id, "endurance_review", file)`.
    - **Always:** also write it as markdown to `athletes/<name>/logs/YYYY-MM-DD-<activity_id>-review.md`,
-     named with the session so the app shows it on that session's page. The journal lists it.
+     named with the session so the app shows it on that session's page. The journal lists it. Then copy
+     the validated JSON beside it as `…-review.json`: the page keeps showing the analysis card from it
+     once the app's request list has moved on (`app_data._analysis_for`).
    - **When the day's daily exists**, give the session its one line in `endurance` (strength: the
      review in `review`) and validate the daily again.
 
