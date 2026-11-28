@@ -11,6 +11,7 @@
  *   POST /api/actions/refresh   pull Garmin + rebuild the export (no model), one at a time
  *   POST /api/actions/fuel      what was taken during a session → scripts/fuel.py log (no model)
  *   POST /api/actions/fuel-setup the fuel setup answers → scripts/fuel.py setup (no model)
+ *   POST /api/actions/trips     save, remove or settle a maybe on a trip → scripts/trips.py (no model)
  *
  * Checked before routing: Host, Sec-Fetch-Site, Origin (lib.gate), then the cookie.
  */
@@ -18,7 +19,7 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { extname, join, normalize } from 'node:path';
 import type { Coach } from './coach.ts';
-import { COOKIE, MAX_BODY_BYTES, type AppRequest, type RequestBook, checkFuelLog, checkFuelSetup, checkRequest, checkView, cookieToken, gate, sameToken } from './lib.ts';
+import { COOKIE, MAX_BODY_BYTES, type AppRequest, type RequestBook, checkFuelLog, checkFuelSetup, checkRequest, checkTrip, checkView, cookieToken, gate, sameToken } from './lib.ts';
 import { PAGE } from './page.ts';
 
 export interface Who {
@@ -62,6 +63,8 @@ export interface Deps {
   refresh: (() => Promise<RefreshOutcome>) | null;
   /** Writes the athlete's fuel through scripts/fuel.py — no model, as a refresh. Null where nothing may be written. */
   fuel?: ((action: FuelAction, body: Record<string, unknown>) => Promise<FuelOutcome>) | null;
+  /** Writes the athlete's trips through scripts/trips.py — no model. Null where nothing may be written. */
+  trips?: ((body: Record<string, unknown>) => Promise<FuelOutcome>) | null;
   /** What the coach is doing outside any request (the startup daily), or null. */
   status?: () => CoachStatus | null;
   staticDir?: string;
@@ -259,6 +262,16 @@ export function createHandler(d: Deps, events: Events) {
         if (out.error) return send(res, 422, { error: out.error });
         // Every open window re-reads its views: the Fuel card, Today's items, the Workouts list.
         events.emit('data', { what: `fuel-${action}`, at: Date.now() });
+        return send(res, 200, { ok: true, summary: out.summary ?? null });
+      }
+      if (url.pathname === '/api/actions/trips') {
+        if (!d.trips) return send(res, 409, { error: 'Trips can’t be saved in this mode.' });
+        const bad = checkTrip(body);
+        if (bad) return send(res, 400, { error: bad });
+        const out = await d.trips(body as Record<string, unknown>).catch((e: Error) => ({ error: e.message, summary: undefined }));
+        if (out.error) return send(res, 422, { error: out.error });
+        // Every open window re-reads its views: the Trips card, Plan's days and clashes, Today's line.
+        events.emit('data', { what: 'trips', at: Date.now() });
         return send(res, 200, { ok: true, summary: out.summary ?? null });
       }
       return send(res, 404, { error: 'not found' });

@@ -68,6 +68,7 @@ your password.
 | Anything needs to reach the watch | `/osc-push` | "push" · "schedule it" |
 | You entered a race, or want its date checked | `/osc-race` | "I entered the city half marathon" · "check my race dates" |
 | The day after a race | `/osc-race` | "I raced yesterday" |
+| You'll be away from your usual setup | `/osc-week` | "I'm in Lisbon 3–6 May, no gym, I can run" · or **Season · Trips** in the app |
 | Monthly, or something feels off system-wide | `/osc-audit` | "audit the project" |
 | Unattended / scheduled run | `/osc-brief` | — |
 
@@ -98,6 +99,14 @@ syncs, then round-trip verifies. **Refuses to run if the tests are red.**
 on the organiser's site, records the check, and the windows around it start binding every daily and
 weekly plan. It never changes a date you gave without asking. In the app: **Season · races** in the
 sidebar, and **Check dates** there. **Never pushes.**
+
+**Trips** — days away from your usual setup. For each place (gym, pool, bike, indoor trainer, running,
+courts) you say yes, maybe or no, and whether time is limited. Every daily and weekly plan works with
+what that place has: gym days move before or after the trip or become a bodyweight session, rides that
+need a bike you won't have become runs, and the first and last days are kept light. **A maybe is planned
+as a no** until you confirm it — the coach asks about ten days before. In the app: **Season → Trips** to
+add one (saved directly), and **Replan around it** to get a proposal. Anything already on the watch that
+no longer fits shows on Plan; moving it is a Send to watch.
 
 **`/osc-audit`** — cheap deterministic checks first, then `integrity-auditor` fans out across data
 correctness, doc drift, stale prescriptions, dead code, catalog coverage and account hygiene.
@@ -165,6 +174,7 @@ These change the outcome, so say them:
 | "I used the other leg press today" | same lift, different machine, incompatible numbers (e.g. a plate-loaded vs a selectorized leg press) |
 | "I'm tired" / "I feel great" | **outranks every metric on the watch** |
 | "I'm swimming tomorrow" | your stated plans outrank the template |
+| "I'm away 4–7 Dec, no gym, maybe the bike" | the days you're away are planned with what that place has |
 | "that weight is discs, not total" | changes how the load is scored |
 
 ---

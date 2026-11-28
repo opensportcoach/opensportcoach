@@ -1,7 +1,7 @@
 {
  "view": "exercise",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:15",
+ "generated_at": "2026-11-28T14:12:57",
  "category": "SQUAT",
  "name": "LEG_PRESS",
  "label": "Leg Press",
@@ -34,8 +34,8 @@
    "sets": 3,
    "weight": 120.0,
    "reps": 12,
-   "since": "2026-11-21",
-   "since_ts": "2026-11-21 15:15:10",
+   "since": "2026-11-28",
+   "since_ts": "2026-11-28 14:12:53",
    "changes": []
   }
  ],
@@ -49,18 +49,18 @@
    "value": 12,
    "weight": 120.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-14",
+   "last": "2026-11-21",
    "skipped": 0,
    "implied_e1rm": 168.0,
    "best_e1rm": 168.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-28     0    0  FRESH — not tried yet"
   }
  ],
  "trend": [
@@ -73,16 +73,9 @@
    "score": "disc load",
    "points": [
     {
-     "date": "2026-07-18",
+     "date": "2026-07-25",
      "score": 105.0,
      "weight": 105.0,
-     "reps": 12,
-     "annotated": false
-    },
-    {
-     "date": "2026-07-25",
-     "score": 107.5,
-     "weight": 107.5,
      "reps": 12,
      "annotated": false
     },
@@ -102,8 +95,8 @@
     },
     {
      "date": "2026-08-15",
-     "score": 110.0,
-     "weight": 110.0,
+     "score": 107.5,
+     "weight": 107.5,
      "reps": 12,
      "annotated": false
     },
@@ -123,8 +116,8 @@
     },
     {
      "date": "2026-09-05",
-     "score": 112.5,
-     "weight": 112.5,
+     "score": 110.0,
+     "weight": 110.0,
      "reps": 12,
      "annotated": false
     },
@@ -144,8 +137,8 @@
     },
     {
      "date": "2026-09-26",
-     "score": 115.0,
-     "weight": 115.0,
+     "score": 112.5,
+     "weight": 112.5,
      "reps": 12,
      "annotated": false
     },
@@ -165,17 +158,17 @@
     },
     {
      "date": "2026-10-17",
+     "score": 115.0,
+     "weight": 115.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-10-24",
      "score": 100.0,
      "weight": 100.0,
      "reps": 12,
      "annotated": true
-    },
-    {
-     "date": "2026-10-24",
-     "score": 117.5,
-     "weight": 117.5,
-     "reps": 12,
-     "annotated": false
     },
     {
      "date": "2026-10-31",
@@ -186,13 +179,20 @@
     },
     {
      "date": "2026-11-07",
+     "score": 117.5,
+     "weight": 117.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-14",
      "score": 120.0,
      "weight": 120.0,
      "reps": 12,
      "annotated": false
     },
     {
-     "date": "2026-11-14",
+     "date": "2026-11-21",
      "score": 120.0,
      "weight": 120.0,
      "reps": 12,
@@ -203,7 +203,7 @@
  ],
  "sessions": [
   {
-   "date": "2026-07-18",
+   "date": "2026-07-25",
    "day": "d3",
    "activity_id": 21000000004,
    "sets": [
@@ -241,47 +241,9 @@
    "annotated": false
   },
   {
-   "date": "2026-07-25",
-   "day": "d3",
-   "activity_id": 21000000009,
-   "sets": [
-    {
-     "weight": 107.5,
-     "reps": 12,
-     "weight_logged": 107.5,
-     "reps_logged": 12,
-     "e1rm": null
-    },
-    {
-     "weight": 107.5,
-     "reps": 12,
-     "weight_logged": 107.5,
-     "reps_logged": 12,
-     "e1rm": null
-    },
-    {
-     "weight": 107.5,
-     "reps": 11,
-     "weight_logged": 107.5,
-     "reps_logged": 11,
-     "e1rm": null
-    }
-   ],
-   "top": {
-    "weight": 107.5,
-    "reps": 12,
-    "weight_logged": 107.5,
-    "reps_logged": 12,
-    "e1rm": null
-   },
-   "volume": 3762,
-   "best_e1rm": null,
-   "annotated": false
-  },
-  {
    "date": "2026-08-01",
    "day": "d3",
-   "activity_id": 21000000015,
+   "activity_id": 21000000010,
    "sets": [
     {
      "weight": 107.5,
@@ -319,7 +281,45 @@
   {
    "date": "2026-08-08",
    "day": "d3",
-   "activity_id": 21000000020,
+   "activity_id": 21000000015,
+   "sets": [
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 107.5,
+     "reps": 12,
+     "weight_logged": 107.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 107.5,
+     "reps": 10,
+     "weight_logged": 107.5,
+     "reps_logged": 10,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 107.5,
+    "reps": 12,
+    "weight_logged": 107.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3655,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-08-15",
+   "day": "d3",
+   "activity_id": 21000000021,
    "sets": [
     {
      "weight": 107.5,
@@ -355,7 +355,7 @@
    "annotated": false
   },
   {
-   "date": "2026-08-15",
+   "date": "2026-08-22",
    "day": "d3",
    "activity_id": 21000000026,
    "sets": [
@@ -393,9 +393,9 @@
    "annotated": false
   },
   {
-   "date": "2026-08-22",
+   "date": "2026-08-29",
    "day": "d3",
-   "activity_id": 21000000031,
+   "activity_id": 21000000032,
    "sets": [
     {
      "weight": 110.0,
@@ -413,9 +413,9 @@
     },
     {
      "weight": 110.0,
-     "reps": 10,
+     "reps": 11,
      "weight_logged": 110.0,
-     "reps_logged": 10,
+     "reps_logged": 11,
      "e1rm": null
     }
    ],
@@ -426,12 +426,12 @@
     "reps_logged": 12,
     "e1rm": null
    },
-   "volume": 3740,
+   "volume": 3850,
    "best_e1rm": null,
    "annotated": false
   },
   {
-   "date": "2026-08-29",
+   "date": "2026-09-05",
    "day": "d3",
    "activity_id": 21000000037,
    "sets": [
@@ -469,47 +469,9 @@
    "annotated": false
   },
   {
-   "date": "2026-09-05",
-   "day": "d3",
-   "activity_id": 21000000042,
-   "sets": [
-    {
-     "weight": 112.5,
-     "reps": 12,
-     "weight_logged": 112.5,
-     "reps_logged": 12,
-     "e1rm": null
-    },
-    {
-     "weight": 112.5,
-     "reps": 12,
-     "weight_logged": 112.5,
-     "reps_logged": 12,
-     "e1rm": null
-    },
-    {
-     "weight": 112.5,
-     "reps": 10,
-     "weight_logged": 112.5,
-     "reps_logged": 10,
-     "e1rm": null
-    }
-   ],
-   "top": {
-    "weight": 112.5,
-    "reps": 12,
-    "weight_logged": 112.5,
-    "reps_logged": 12,
-    "e1rm": null
-   },
-   "volume": 3825,
-   "best_e1rm": null,
-   "annotated": false
-  },
-  {
    "date": "2026-09-12",
    "day": "d3",
-   "activity_id": 21000000048,
+   "activity_id": 21000000043,
    "sets": [
     {
      "weight": 112.5,
@@ -547,7 +509,45 @@
   {
    "date": "2026-09-19",
    "day": "d3",
-   "activity_id": 21000000053,
+   "activity_id": 21000000048,
+   "sets": [
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 112.5,
+     "reps": 12,
+     "weight_logged": 112.5,
+     "reps_logged": 12,
+     "e1rm": null
+    },
+    {
+     "weight": 112.5,
+     "reps": 11,
+     "weight_logged": 112.5,
+     "reps_logged": 11,
+     "e1rm": null
+    }
+   ],
+   "top": {
+    "weight": 112.5,
+    "reps": 12,
+    "weight_logged": 112.5,
+    "reps_logged": 12,
+    "e1rm": null
+   },
+   "volume": 3938,
+   "best_e1rm": null,
+   "annotated": false
+  },
+  {
+   "date": "2026-09-26",
+   "day": "d3",
+   "activity_id": 21000000054,
    "sets": [
     {
      "weight": 112.5,
@@ -583,7 +583,7 @@
    "annotated": false
   },
   {
-   "date": "2026-09-26",
+   "date": "2026-10-03",
    "day": "d3",
    "activity_id": 21000000059,
    "sets": [
@@ -603,9 +603,9 @@
     },
     {
      "weight": 115.0,
-     "reps": 11,
+     "reps": 10,
      "weight_logged": 115.0,
-     "reps_logged": 11,
+     "reps_logged": 10,
      "e1rm": null
     }
    ],
@@ -616,14 +616,14 @@
     "reps_logged": 12,
     "e1rm": null
    },
-   "volume": 4025,
+   "volume": 3910,
    "best_e1rm": null,
    "annotated": false
   },
   {
-   "date": "2026-10-03",
+   "date": "2026-10-10",
    "day": "d3",
-   "activity_id": 21000000064,
+   "activity_id": 21000000065,
    "sets": [
     {
      "weight": 115.0,
@@ -641,9 +641,9 @@
     },
     {
      "weight": 115.0,
-     "reps": 11,
+     "reps": 10,
      "weight_logged": 115.0,
-     "reps_logged": 11,
+     "reps_logged": 10,
      "e1rm": null
     }
    ],
@@ -654,12 +654,12 @@
     "reps_logged": 12,
     "e1rm": null
    },
-   "volume": 4025,
+   "volume": 3910,
    "best_e1rm": null,
    "annotated": false
   },
   {
-   "date": "2026-10-10",
+   "date": "2026-10-17",
    "day": "d3",
    "activity_id": 21000000070,
    "sets": [
@@ -697,9 +697,9 @@
    "annotated": false
   },
   {
-   "date": "2026-10-17",
+   "date": "2026-10-24",
    "day": "d3",
-   "activity_id": 21000000075,
+   "activity_id": 21000000076,
    "sets": [
     {
      "weight": 100.0,
@@ -735,7 +735,7 @@
    "annotated": true
   },
   {
-   "date": "2026-10-24",
+   "date": "2026-10-31",
    "day": "d3",
    "activity_id": 21000000081,
    "sets": [
@@ -755,9 +755,9 @@
     },
     {
      "weight": 117.5,
-     "reps": 11,
+     "reps": 10,
      "weight_logged": 117.5,
-     "reps_logged": 11,
+     "reps_logged": 10,
      "e1rm": null
     }
    ],
@@ -768,14 +768,14 @@
     "reps_logged": 12,
     "e1rm": null
    },
-   "volume": 4112,
+   "volume": 3995,
    "best_e1rm": null,
    "annotated": false
   },
   {
-   "date": "2026-10-31",
+   "date": "2026-11-07",
    "day": "d3",
-   "activity_id": 21000000086,
+   "activity_id": 21000000087,
    "sets": [
     {
      "weight": 117.5,
@@ -811,7 +811,7 @@
    "annotated": false
   },
   {
-   "date": "2026-11-07",
+   "date": "2026-11-14",
    "day": "d3",
    "activity_id": 21000000092,
    "sets": [
@@ -831,9 +831,9 @@
     },
     {
      "weight": 120.0,
-     "reps": 11,
+     "reps": 10,
      "weight_logged": 120.0,
-     "reps_logged": 11,
+     "reps_logged": 10,
      "e1rm": null
     }
    ],
@@ -844,14 +844,14 @@
     "reps_logged": 12,
     "e1rm": null
    },
-   "volume": 4200,
+   "volume": 4080,
    "best_e1rm": null,
    "annotated": false
   },
   {
-   "date": "2026-11-14",
+   "date": "2026-11-21",
    "day": "d3",
-   "activity_id": 21000000097,
+   "activity_id": 21000000098,
    "sets": [
     {
      "weight": 120.0,

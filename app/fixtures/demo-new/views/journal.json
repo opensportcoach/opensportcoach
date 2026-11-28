@@ -1,13 +1,6 @@
 {
  "view": "journal",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:17",
- "entries": [
-  {
-   "file": "2026-11-15-21000000006-review.md",
-   "date": "2026-11-15",
-   "kind": "review",
-   "title": "Ride review · Zone 2 ride · 2026-11-15"
-  }
- ]
+ "generated_at": "2026-11-28T14:13:07",
+ "entries": []
 }

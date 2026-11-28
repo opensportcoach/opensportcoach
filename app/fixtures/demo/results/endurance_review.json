@@ -1,7 +1,7 @@
 {
  "kind": "endurance_review",
  "request_id": "r9",
- "activity_id": 21000000098,
+ "activity_id": 21000000093,
  "date": "2026-11-15",
  "sport": "bike",
  "verdict": "A solid zone-2 ride with one honest climb — the fade at the end is worth fixing with food, not fitness.",
@@ -37,7 +37,7 @@
    "evidence": [
     {
      "metric": "metrics.decoupling",
-     "value": 7.4,
+     "value": 8.4,
      "label": "Decoupling, %"
     },
     {
@@ -53,7 +53,7 @@
    "evidence": [
     {
      "metric": "bests.1200s",
-     "value": 216,
+     "value": 215,
      "label": "Best 20 min, W"
     },
     {
@@ -75,5 +75,5 @@
   "Did you eat during the ride?"
  ],
  "markdown_file": null,
- "generated_at": "2026-11-21T15:15:11"
+ "generated_at": "2026-11-28T14:12:53"
 }

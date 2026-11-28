@@ -88,6 +88,24 @@ race week, recovery) by kind and priority, when a date is due a re-check, and ho
 read from the activity. Event logos are their owners' trademarks and are never committed; an athlete
 may keep them locally (`app/web/public/marks/`, ignored).
 
+## Trips
+
+`athletes/<name>/trips.json` holds the days away from the usual setup: where, the first and last day, and
+for every place — gym, pool, bike, indoor trainer, running, courts — yes, maybe or no; limited time; when
+they leave and are back. `scripts/trips.py` holds the rules once. What a session needs is keyed on its
+sport *and* how it is done: a Zwift ride needs the trainer and an outdoor ride the bike, though both are
+"bike" to `sports.py`; the watch's copy of a Zwift ride is a `cycling` workout, so a managed workout
+declares its own needs (`athlete.json → workout_needs`), as a plan session or a proposed day may. A sport
+with no default must say what it needs on a trip day — never a guess. Decided with the owner on
+2026-11-28: **a maybe is a no** until it is answered, and the daily asks from ten days before the trip;
+**travel days** (the first and last) are light — no intensity, no test — with one home session when they
+leave after the morning or are back before the evening; **away from the gym**, a gym day becomes a
+bodyweight session (which passes the athlete's own tests) or moves before or after the trip. `plan.json`
+and the benchmarks are held to the trips by the test suite, and a `plan_proposal` or a `daily` by the
+contract validator. The Garmin calendar is not a test — a clash there is fixed by a push, which the
+suite gates — so the daily reads it from `trips.py check`, and the app shows it on Plan. The app writes
+trips through its own action (`trips.py save` / `answer` / `remove`), with no model in the loop.
+
 ## The app
 
 A local web app on top of a live coach session. `app/channel/` is an MCP channel server into the

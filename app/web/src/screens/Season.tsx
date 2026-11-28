@@ -1,12 +1,13 @@
 /** Season (board Season, variants Season-Light / Season-Narrow / Season-Empty): the next race and what
  * today owes it, and the season: blocks, the days around each race, the races as pins, the tests — and
- * every race as a card under its pin. */
+ * every race as a card under its pin. Then the trips: the days away from the usual setup. */
 import { useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useStore, useView, type Defs } from '../lib/api';
 import { tip, todayIso } from '../lib/fmt';
 import { CallStrip, RaceCardView, WinLegend } from '../components/Races';
 import { SportIcon } from '../components/SportIcon';
+import { TripsSection } from '../components/Trips';
 import { ErrorBox, IC, Icon, Skeleton } from '../components/ui';
 import { KIND_COL, MONTHS, WIN, checkingNow, daysWord, longDay, shortDay, type RaceCard, type Season as SeasonData } from '../lib/races';
 
@@ -70,6 +71,8 @@ export default function Season() {
           <Timeline v={v} zoom={zoom} setZoom={setZoom} />
         </>
       ) : <EmptySeason offline={offline} onAdd={() => askAbout('Add a race: ')} />}
+      {/* Trips (docs/DESIGN.md (trips)): the days away from the usual setup, which every plan works around. */}
+      <TripsSection />
     </>
   );
 }

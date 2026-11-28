@@ -1,7 +1,7 @@
 {
  "view": "races",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:13",
+ "generated_at": "2026-11-28T14:12:55",
  "races": [
   {
    "id": "riverside-half",
@@ -14,8 +14,8 @@
    "date": "2026-10-11",
    "dow": "Sun",
    "start": "09:00",
-   "days_to": -41,
-   "weeks_to": -5.9,
+   "days_to": -48,
+   "weeks_to": -6.9,
    "past": true,
    "countdown": false,
    "target": {
@@ -66,7 +66,7 @@
      "start": "09:00"
     },
     "history": [],
-    "days_since": 46
+    "days_since": 53
    },
    "check_due": null,
    "prediction": null,
@@ -98,11 +98,11 @@
    "icon": "race",
    "priority": "B",
    "entry": "done",
-   "date": "2026-10-25",
+   "date": "2026-11-08",
    "dow": "Sun",
    "start": "07:30",
-   "days_to": -27,
-   "weeks_to": -3.9,
+   "days_to": -20,
+   "weeks_to": -2.9,
    "past": true,
    "countdown": false,
    "target": {
@@ -128,16 +128,16 @@
    "windows": {
     "before": {
      "window": "easy",
-     "from": "2026-10-22",
-     "to": "2026-10-24",
+     "from": "2026-11-05",
+     "to": "2026-11-07",
      "days": 3
     },
-    "race": "2026-10-25",
+    "race": "2026-11-08",
     "recovery": {
-     "from": "2026-10-26",
-     "to": "2026-11-01",
+     "from": "2026-11-09",
+     "to": "2026-11-15",
      "days": 7,
-     "no_intensity_to": "2026-11-01"
+     "no_intensity_to": "2026-11-15"
     },
     "counts": {
      "easy_before": 3,
@@ -147,22 +147,22 @@
    },
    "verified": {
     "status": "confirmed",
-    "checked": "2026-10-19",
+    "checked": "2026-11-02",
     "source_kind": "official",
     "source": "https://example.com/lakeshore-703",
     "found": {
-     "date": "2026-10-25",
+     "date": "2026-11-08",
      "start": "07:30"
     },
     "history": [],
-    "days_since": 33
+    "days_since": 26
    },
    "check_due": null,
    "prediction": null,
    "benchmarks": [],
    "reference": {
     "name": "Lakeshore 70.3 2025",
-    "date": "2025-10-26",
+    "date": "2025-11-09",
     "time": "5:27:30",
     "splits": [
      {
@@ -287,7 +287,7 @@
    "icon": "bike",
    "priority": "B",
    "entry": "entered",
-   "date": "2026-12-20",
+   "date": "2026-12-27",
    "dow": "Sun",
    "start": "08:00",
    "days_to": 29,
@@ -319,16 +319,16 @@
    "windows": {
     "before": {
      "window": "easy",
-     "from": "2026-12-18",
-     "to": "2026-12-19",
+     "from": "2026-12-25",
+     "to": "2026-12-26",
      "days": 2
     },
-    "race": "2026-12-20",
+    "race": "2026-12-27",
     "recovery": {
-     "from": "2026-12-21",
-     "to": "2026-12-24",
+     "from": "2026-12-28",
+     "to": "2026-12-31",
      "days": 4,
-     "no_intensity_to": "2026-12-24"
+     "no_intensity_to": "2026-12-31"
     },
     "counts": {
      "easy_before": 2,
@@ -338,11 +338,11 @@
    },
    "verified": {
     "status": "differs",
-    "checked": "2026-11-19",
+    "checked": "2026-11-26",
     "source_kind": "official",
     "source": "https://example.com/hill-country-gravel",
     "found": {
-     "date": "2026-12-19",
+     "date": "2026-12-26",
      "start": "08:00"
     },
     "note": "The organiser's page lists the Saturday; the entry says Sunday.",
@@ -370,7 +370,7 @@
    "icon": "race",
    "priority": "A",
    "entry": "entered",
-   "date": "2027-02-28",
+   "date": "2027-03-07",
    "dow": "Sun",
    "start": "07:00",
    "days_to": 99,
@@ -400,16 +400,16 @@
    "windows": {
     "before": {
      "window": "taper",
-     "from": "2027-02-14",
-     "to": "2027-02-27",
+     "from": "2027-02-21",
+     "to": "2027-03-06",
      "days": 14
     },
-    "race": "2027-02-28",
+    "race": "2027-03-07",
     "recovery": {
-     "from": "2027-03-01",
-     "to": "2027-03-10",
+     "from": "2027-03-08",
+     "to": "2027-03-17",
      "days": 10,
-     "no_intensity_to": "2027-03-07"
+     "no_intensity_to": "2027-03-14"
     },
     "counts": {
      "taper": 14,
@@ -420,11 +420,11 @@
    },
    "verified": {
     "status": "confirmed",
-    "checked": "2026-11-12",
+    "checked": "2026-11-19",
     "source_kind": "entry",
     "source": "the entry confirmation",
     "found": {
-     "date": "2027-02-28",
+     "date": "2027-03-07",
      "start": "07:00"
     },
     "history": [],
@@ -452,7 +452,7 @@
   "icon": "bike",
   "priority": "B",
   "entry": "entered",
-  "date": "2026-12-20",
+  "date": "2026-12-27",
   "dow": "Sun",
   "start": "08:00",
   "days_to": 29,
@@ -484,16 +484,16 @@
   "windows": {
    "before": {
     "window": "easy",
-    "from": "2026-12-18",
-    "to": "2026-12-19",
+    "from": "2026-12-25",
+    "to": "2026-12-26",
     "days": 2
    },
-   "race": "2026-12-20",
+   "race": "2026-12-27",
    "recovery": {
-    "from": "2026-12-21",
-    "to": "2026-12-24",
+    "from": "2026-12-28",
+    "to": "2026-12-31",
     "days": 4,
-    "no_intensity_to": "2026-12-24"
+    "no_intensity_to": "2026-12-31"
    },
    "counts": {
     "easy_before": 2,
@@ -503,11 +503,11 @@
   },
   "verified": {
    "status": "differs",
-   "checked": "2026-11-19",
+   "checked": "2026-11-26",
    "source_kind": "official",
    "source": "https://example.com/hill-country-gravel",
    "found": {
-    "date": "2026-12-19",
+    "date": "2026-12-26",
     "start": "08:00"
    },
    "note": "The organiser's page lists the Saturday; the entry says Sunday.",
@@ -537,7 +537,7 @@
    "icon": "bike",
    "priority": "B",
    "entry": "entered",
-   "date": "2026-12-20",
+   "date": "2026-12-27",
    "dow": "Sun",
    "start": "08:00",
    "days_to": 29,
@@ -567,7 +567,7 @@
    "icon": "race",
    "priority": "A",
    "entry": "entered",
-   "date": "2027-02-28",
+   "date": "2027-03-07",
    "dow": "Sun",
    "start": "07:00",
    "days_to": 99,
@@ -582,8 +582,8 @@
   "blocks": [
    {
     "name": "Hypertrophy",
-    "start": "2026-08-17",
-    "end": "2026-12-06",
+    "start": "2026-08-24",
+    "end": "2026-12-13",
     "weeks": 16,
     "emphasis": "Upper-body size on an endurance base",
     "current": true,
@@ -601,8 +601,8 @@
    },
    {
     "name": "Endurance base",
-    "start": "2026-12-07",
-    "end": "2027-01-17",
+    "start": "2026-12-14",
+    "end": "2027-01-24",
     "weeks": 6,
     "emphasis": "Aerobic volume; the gravel race in week 2",
     "current": false,
@@ -616,8 +616,8 @@
    },
    {
     "name": "Race build",
-    "start": "2027-01-18",
-    "end": "2027-02-28",
+    "start": "2027-01-25",
+    "end": "2027-03-07",
     "weeks": 6,
     "emphasis": "Bricks, open water, then the taper",
     "current": false,
@@ -633,8 +633,8 @@
   "planned": true,
   "current": {
    "name": "Hypertrophy",
-   "start": "2026-08-17",
-   "end": "2026-12-06",
+   "start": "2026-08-24",
+   "end": "2026-12-13",
    "weeks": 16,
    "emphasis": "Upper-body size on an endurance base",
    "current": true,
@@ -662,8 +662,8 @@
     "date": "2026-10-11",
     "dow": "Sun",
     "start": "09:00",
-    "days_to": -41,
-    "weeks_to": -5.9,
+    "days_to": -48,
+    "weeks_to": -6.9,
     "past": true,
     "countdown": false,
     "target": {
@@ -679,11 +679,11 @@
     "icon": "race",
     "priority": "B",
     "entry": "done",
-    "date": "2026-10-25",
+    "date": "2026-11-08",
     "dow": "Sun",
     "start": "07:30",
-    "days_to": -27,
-    "weeks_to": -3.9,
+    "days_to": -20,
+    "weeks_to": -2.9,
     "past": true,
     "countdown": false,
     "target": {
@@ -699,7 +699,7 @@
     "icon": "bike",
     "priority": "B",
     "entry": "entered",
-    "date": "2026-12-20",
+    "date": "2026-12-27",
     "dow": "Sun",
     "start": "08:00",
     "days_to": 29,
@@ -719,7 +719,7 @@
     "icon": "race",
     "priority": "A",
     "entry": "entered",
-    "date": "2027-02-28",
+    "date": "2027-03-07",
     "dow": "Sun",
     "start": "07:00",
     "days_to": 99,
@@ -740,7 +740,7 @@
    "icon": "bike",
    "priority": "B",
    "entry": "entered",
-   "date": "2026-12-20",
+   "date": "2026-12-27",
    "dow": "Sun",
    "start": "08:00",
    "days_to": 29,

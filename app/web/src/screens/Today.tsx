@@ -3,6 +3,7 @@ import { useEffect, useState, type CSSProperties, type ReactNode } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useStore, useView, type AppRequest, type AppState, type Defs } from '../lib/api';
 import { clock, day, hm, isoDate, isoWeek, kg, nf, tip, todayIso, zone } from '../lib/fmt';
+import { TripLine } from '../components/Trips';
 import { ErrorBox, IC, Icon, Ring, Skeleton, Spark } from '../components/ui';
 import { FORM_ZONES, formZone } from '../lib/form';
 import { rich } from '../lib/tip';
@@ -37,6 +38,7 @@ export default function Today() {
     <>
       <Hero t={t} />
       <RaceLine t={t} />
+      <TripLine t={t} />
       {/* The check-in outranks the metrics, so it sits above them — it was ten cards down (UX review 2026-11-10). */}
       {!heroFeel(t, state) && !feelInRail(t, state) && <CheckIn t={t} />}
       <Overnight t={t} />

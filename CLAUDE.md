@@ -49,6 +49,7 @@ planning anything (`scripts/setup_status.py` lists them; `/osc-daily` step 0 say
 | `athletes/<name>/tests.py` | their own invariants — **their medical constraints are enforced here** |
 | `athletes/<name>/plan.json` | sessions planned **off the watch** (Zwift, long ride, tennis), dated — what the app shows beside the Garmin calendar. **Every Zwift ride names its Zwift workout** (`zwift_workout`, from whatsonzwift.com) |
 | `athletes/<name>/races.json` | their **race season**: each race's date, format, target, priority, every online check of its date, the result. The windows around a race are `scripts/races.py`'s |
+| `athletes/<name>/trips.json` | their **trips**: the days away from their usual setup, and for every place (gym, pool, bike, trainer, running, courts) yes · maybe · no. What a trip day allows, and what each session needs, is `scripts/trips.py`'s — **a maybe is planned as a no** |
 | `athletes/<name>/fuel.json` | their **fuelling setup**: the products they own, how they mix a bottle, the rate their gut is trained to, caffeine — asked the first time a session is bound (`scripts/setup_status.py`) |
 | `athletes/<name>/logs/fuel.json` | what they took during each session, one record per activity — **self-reported**, never Garmin's |
 | `athletes/<name>/workouts/` | generated JSON · `WORKOUT_IDS` · `PRESCRIPTION_HISTORY` · `LOGGING_RULES` · `SESSION_ANNOTATIONS` |
@@ -207,6 +208,7 @@ OpenSportCoach/
 │   ├── session_review.py   ← one pool swim or circuit, against the workout it followed (as it was that day): measured and scored
 │   ├── sports.py           ← THE sport map (typeKey → group), set-bearing and circuit types, virtual/indoor
 │   ├── races.py            ← a race season's rules, once: kinds, windows (kind × priority), date checks due, marks
+│   ├── trips.py            ← trips' rules, once: what a place has, what a session needs (sport × how it is done), clashes, maybes
 │   ├── zwift_workouts.py   ← every planned Zwift ride names a library workout: the rule, and the check of a block read off whatsonzwift.com
 │   ├── fuel.py             ← a session's carbs in the athlete's own products (the rule is formulas.py's); logs what they took
 │   ├── setup_status.py     ← what an athlete's setup still lacks — the banner and the daily ask for it

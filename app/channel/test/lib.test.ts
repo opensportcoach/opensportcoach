@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { RequestBook, checkRequest, checkView, cookieToken, gate, sameToken } from '../lib.ts';
+import { RequestBook, checkRequest, checkTrip, checkView, cookieToken, gate, sameToken } from '../lib.ts';
 
 const PORT = 5280;
 
@@ -93,4 +93,21 @@ test('every request the page sends has one meaning, and nothing else gets throug
     ['question', { about: 'x'.repeat(301) }],
   ];
   for (const [kind, params] of refused) assert.ok(checkRequest(kind, params), `${kind} ${JSON.stringify(params)} must be refused`);
+});
+
+test('a trip write has the shape trips.py takes: every place answered, dates in order, nothing else', () => {
+  const access = { gym: 'no', pool: 'no', bike: 'maybe', trainer: 'no', run: 'yes', courts: 'no' };
+  const trip = { where: 'Lake', from: '2026-12-04', to: '2026-12-07', access };
+  assert.equal(checkTrip({ action: 'save', trip }), null);
+  assert.equal(checkTrip({ action: 'save', trip: { ...trip, id: 'lake-2026-12', time: 'limited', leave: 'evening', back: null, note: 'x' } }), null);
+  assert.match(checkTrip({ action: 'save', trip: { ...trip, access: { ...access, courts: undefined } } }) ?? '', /courts/);
+  assert.match(checkTrip({ action: 'save', trip: { ...trip, access: { ...access, sauna: 'yes' } } }) ?? '', /sauna/);
+  assert.match(checkTrip({ action: 'save', trip: { ...trip, to: '2026-12-01' } }) ?? '', /ends before/);
+  assert.match(checkTrip({ action: 'save', trip: { ...trip, answered: {} } }) ?? '', /answered/, 'settled maybes are the engine\'s to record');
+  assert.match(checkTrip({ action: 'save', trip: { ...trip, leave: 'noon' } }) ?? '', /leave/);
+  assert.equal(checkTrip({ action: 'answer', id: 'lake-2026-12', access: 'bike', state: 'yes' }), null);
+  assert.match(checkTrip({ action: 'answer', id: 'lake-2026-12', access: 'bike', state: 'maybe' }) ?? '', /yes or no/);
+  assert.equal(checkTrip({ action: 'remove', id: 'lake-2026-12' }), null);
+  assert.match(checkTrip({ action: 'remove', id: '../x' }) ?? '', /id/);
+  assert.match(checkTrip({ action: 'wipe' }) ?? '', /save, remove or answer/);
 });

@@ -1,7 +1,7 @@
 {
  "view": "fuel",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:14",
+ "generated_at": "2026-11-28T14:12:56",
  "catalog": [
   {
    "id": "maurten-gel-160",
@@ -107,7 +107,7 @@
  ],
  "gut": {
   "g_per_h": 60,
-  "since": "2026-10-22",
+  "since": "2026-10-29",
   "how": "setup: what they take on a 2–3 h ride"
  },
  "caffeine": "races",
@@ -117,25 +117,25 @@
    "id": "products",
    "text": "Which fuelling products do you use — gels, drink mixes, bars? Pick them from the catalog, or name one and the coach looks it up on the maker's page.",
    "open": false,
-   "answered": "2026-10-22"
+   "answered": "2026-10-29"
   },
   {
    "id": "recipes",
    "text": "How do you mix a bottle of each drink mix: grams of powder, and the bottle's size in ml?",
    "open": false,
-   "answered": "2026-10-22"
+   "answered": "2026-10-29"
   },
   {
    "id": "gut",
    "text": "What do you take today on a 2–3 hour ride, in grams of carbohydrate an hour — none, about 30, about 60 or about 90? Has anything upset your stomach?",
    "open": false,
-   "answered": "2026-10-22"
+   "answered": "2026-10-29"
   },
   {
    "id": "caffeine",
    "text": "Caffeine: never, in races only, or in training too?",
    "open": false,
-   "answered": "2026-10-22"
+   "answered": "2026-10-29"
   }
  ],
  "caffeine_options": [
@@ -177,7 +177,7 @@
  "today_plans": [],
  "upcoming": [
   {
-   "date": "2026-11-22",
+   "date": "2026-11-29",
    "title": "Long ride · Z2",
    "sport": "road_biking",
    "badge": {
@@ -341,13 +341,14 @@
     "over_cap_g_h": 4,
     "alternatives": []
    },
+   "on_watch": false,
    "done": false
   }
  ],
  "to_log": [],
  "ramp": {
   "current_g_h": 60,
-  "since": "2026-10-22",
+  "since": "2026-10-29",
   "how": "setup: what they take on a 2–3 h ride",
   "step_g_h": 10,
   "rides_per_step": 1,
@@ -366,7 +367,7 @@
   ],
   "history": [
    {
-    "activity_id": 21000000098,
+    "activity_id": 21000000093,
     "date": "2026-11-15",
     "minutes": 90,
     "g_h": 53,
@@ -379,12 +380,12 @@
  "a_race": {
   "id": "coastline-703",
   "name": "Coastline 70.3",
-  "date": "2027-02-28"
+  "date": "2027-03-07"
  },
  "defs": {
   "fuel_band": {
    "source": "computed",
-   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to under 2.5 h: 30–60 g/h easy, about 60 hard. 2.5 h or more: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
   },
   "fuel_target": {
    "source": "computed",

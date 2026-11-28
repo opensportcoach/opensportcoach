@@ -22,6 +22,11 @@ A race_check is checked twice too (docs/DESIGN.md (races) §3, 2026-10-15): its 
 race it names must be in the athlete's races.json with exactly that check recorded (date checked,
 status, source, what was found). The coach records a check before it publishes one, and the page draws
 from the races view, so a result that disagrees with the file would show one thing and say another.
+
+A plan_proposal and a daily are checked against the athlete's TRIPS too (docs/DESIGN.md (trips), 2026-11-28):
+a day proposed on a trip, or today's call made on one, may not need what that place doesn't have — the
+gym day in a city with no gym, the Zwift ride with the trainer at home, the ride on a bike that is still
+a maybe. scripts/trips.py says what each needs and what each day allows; this only asks it.
 """
 from __future__ import annotations
 
@@ -110,6 +115,32 @@ def check_races(payload: dict, races: list[dict]) -> list[str]:
     return out
 
 
+def check_trips(kind: str, payload: dict, A, trips: list[dict]) -> list[str]:
+    """Every proposed day (plan_proposal) or today's call (daily) that a trip day can't hold: it needs
+    what that place doesn't have, or it is unknown what it needs. Empty = every day fits its place."""
+    import trips as tr
+    out = []
+    if kind == "plan_proposal":
+        for i, d in enumerate(payload.get("days") or []):
+            if d.get("change") == "removed":
+                continue
+            p = tr.on(d["date"], trips)
+            res = tr.day_allows(tr.proposal_needs(d, A), p)
+            if not res["ok"]:
+                out.append(f"days/{i}: {d['date']} {d.get('title')!r} — {tr._why(p['trip']['where'], res, False)}")
+    elif kind == "daily":
+        rec = payload.get("recommendation") or {}
+        key = rec.get("workout_key")
+        if key and payload.get("date"):
+            f = A.workouts_dir / f"{key}.json"
+            sport = ((json.loads(f.read_text()).get("sportType") or {}).get("sportTypeKey") if f.exists() else None)
+            p = tr.on(payload["date"], trips)
+            res = tr.day_allows(tr.workout_needs(key, sport, A), p)
+            if not res["ok"]:
+                out.append(f"recommendation: {key} on {payload['date']} — {tr._why(p['trip']['where'], res, False)}")
+    return out
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -130,6 +161,12 @@ def main() -> None:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         import races   # the bound athlete's races.json — the file the races view reads
         problems = check_races(payload, races.load())
+    if not problems and args.kind in ("plan_proposal", "daily"):
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import athlete
+        import trips   # the bound athlete's trips.json — the file the trips view and the planner read
+        A = athlete.current()
+        problems = check_trips(args.kind, payload, A, trips.trips_of(A))
     if problems:
         print(f"{args.file} is not a valid {args.kind}:", file=sys.stderr)
         for line in problems:

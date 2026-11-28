@@ -195,6 +195,14 @@ ANNOTATIONS = {
 }
 
 
+TRIPS = {
+    "_why": "Trips (docs/DESIGN.md (trips)): the days away from the usual setup — where, when, and for every place "
+            "(gym, pool, bike, trainer, running, courts) yes, maybe or no. Empty until they say they'll be away; "
+            "scripts/trips.py holds the rules, and the app's Season page adds them.",
+    "home": None,
+    "trips": [],
+}
+
 RACES = {
     "_why": "The race season (docs/DESIGN.md (races)): each race's date, format, target and priority, every online "
             "check of its date, and the result. Empty until they enter one; scripts/races.py holds the rules "
@@ -253,6 +261,7 @@ def main() -> None:
     (root / "workouts" / "LOGGING_RULES.json").write_text(json.dumps(LOGGING_RULES, indent=1) + "\n")
     (root / "workouts" / "SESSION_ANNOTATIONS.json").write_text(json.dumps(ANNOTATIONS, indent=1) + "\n")
     (root / "races.json").write_text(json.dumps(RACES, indent=1) + "\n")
+    (root / "trips.json").write_text(json.dumps(TRIPS, indent=1) + "\n")
     (root / "fuel.json").write_text(json.dumps(fuel_scaffold(), indent=1, ensure_ascii=False) + "\n")
 
     # Generated artefacts, built by the real generators so they are never hand-made. The build

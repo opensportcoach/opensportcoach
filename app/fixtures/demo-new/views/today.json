@@ -1,11 +1,11 @@
 {
  "view": "today",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:16",
+ "generated_at": "2026-11-28T14:13:06",
  "today": {
-  "date": "2026-11-20",
+  "date": "2026-11-27",
   "readiness": {
-   "score": 67,
+   "score": 72,
    "level": "MODERATE",
    "feedback": "RECOVERING"
   },
@@ -13,29 +13,29 @@
    "value": 61,
    "weekly": null,
    "status": "NONE",
-   "baseline": 63.8,
+   "baseline": 65.8,
    "bandLow": null,
    "bandHigh": null
   },
   "rhr": {
-   "value": 52,
-   "baseline": 51.4
+   "value": 53,
+   "baseline": 52.7
   },
   "sleep": {
-   "score": 87,
-   "hours": 8.73
+   "score": 85,
+   "hours": 8.0
   },
   "bodyBattery": {
    "charged": 66,
-   "drained": 42
+   "drained": 39
   },
   "strain": {
    "value": 3.2,
    "load": 38
   },
-  "fitness": 10.2,
-  "fatigue": 29.8,
-  "form": -19.6,
+  "fitness": 7.6,
+  "fatigue": 22.1,
+  "form": -14.5,
   "acwr": null,
   "loadStatus": null,
   "vo2": {
@@ -50,7 +50,7 @@
  },
  "scheduled": [
   {
-   "date": "2026-11-16",
+   "date": "2026-11-23",
    "title": "D1 · Push",
    "workout_id": 4101,
    "sport": "strength_training",
@@ -64,7 +64,7 @@
    "day": "d1"
   },
   {
-   "date": "2026-11-19",
+   "date": "2026-11-26",
    "title": "D2 · Pull",
    "workout_id": 4102,
    "sport": "strength_training",
@@ -78,7 +78,7 @@
    "day": "d2"
   },
   {
-   "date": "2026-11-20",
+   "date": "2026-11-27",
    "title": "Swim 1,800 m",
    "workout_id": 4201,
    "sport": "lap_swimming",
@@ -92,7 +92,7 @@
    "day": null
   },
   {
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "title": "D3 · Legs",
    "workout_id": 4103,
    "sport": "strength_training",
@@ -106,7 +106,7 @@
    "day": "d3"
   },
   {
-   "date": "2026-11-22",
+   "date": "2026-11-29",
    "title": "Swim 1,800 m",
    "workout_id": 4201,
    "sport": "lap_swimming",
@@ -130,119 +130,77 @@
  "trends": {
   "sleep": [
    {
-    "date": "11-08",
+    "date": "11-15",
     "score": null,
     "hours": null
    },
    {
-    "date": "11-09",
-    "score": 75,
-    "hours": 7.89
-   },
-   {
-    "date": "11-10",
-    "score": 87,
-    "hours": 7.99
-   },
-   {
-    "date": "11-11",
-    "score": 73,
-    "hours": 7.29
-   },
-   {
-    "date": "11-12",
-    "score": 69,
-    "hours": 6.8
-   },
-   {
-    "date": "11-13",
-    "score": 85,
-    "hours": 8.21
-   },
-   {
-    "date": "11-14",
-    "score": 84,
-    "hours": 8.01
-   },
-   {
-    "date": "11-15",
-    "score": 84,
-    "hours": 7.22
-   },
-   {
     "date": "11-16",
-    "score": 69,
-    "hours": 6.33
+    "score": 76,
+    "hours": 7.81
    },
    {
     "date": "11-17",
-    "score": 79,
-    "hours": 7.67
+    "score": 85,
+    "hours": 8.04
    },
    {
     "date": "11-18",
-    "score": 82,
-    "hours": 8.46
+    "score": 83,
+    "hours": 7.79
    },
    {
     "date": "11-19",
-    "score": 73,
-    "hours": 7.06
+    "score": 83,
+    "hours": 8.05
    },
    {
     "date": "11-20",
-    "score": 87,
-    "hours": 8.73
+    "score": 78,
+    "hours": 7.16
    },
    {
     "date": "11-21",
-    "score": 73,
-    "hours": 7.26
+    "score": 82,
+    "hours": 7.56
+   },
+   {
+    "date": "11-22",
+    "score": 78,
+    "hours": 7.18
+   },
+   {
+    "date": "11-23",
+    "score": 75,
+    "hours": 7.0
+   },
+   {
+    "date": "11-24",
+    "score": 82,
+    "hours": 7.88
+   },
+   {
+    "date": "11-25",
+    "score": 77,
+    "hours": 7.33
+   },
+   {
+    "date": "11-26",
+    "score": 81,
+    "hours": 7.84
+   },
+   {
+    "date": "11-27",
+    "score": 85,
+    "hours": 8.0
+   },
+   {
+    "date": "11-28",
+    "score": 78,
+    "hours": 7.56
    }
   ],
   "recovery": [
-   {
-    "date": "10-23",
-    "hrv": null,
-    "rhr": null,
-    "readiness": null
-   },
-   {
-    "date": "10-24",
-    "hrv": null,
-    "rhr": null,
-    "readiness": null
-   },
-   {
-    "date": "10-25",
-    "hrv": null,
-    "rhr": null,
-    "readiness": null
-   },
-   {
-    "date": "10-26",
-    "hrv": null,
-    "rhr": null,
-    "readiness": null
-   },
-   {
-    "date": "10-27",
-    "hrv": null,
-    "rhr": null,
-    "readiness": null
-   },
-   {
-    "date": "10-28",
-    "hrv": null,
-    "rhr": null,
-    "readiness": null
-   },
-   {
-    "date": "10-29",
-    "hrv": null,
-    "rhr": null,
-    "readiness": null
-   },
    {
     "date": "10-30",
     "hrv": null,
@@ -306,170 +264,212 @@
    {
     "date": "11-09",
     "hrv": null,
-    "rhr": 49,
-    "readiness": 70
+    "rhr": null,
+    "readiness": null
    },
    {
     "date": "11-10",
     "hrv": null,
-    "rhr": 51,
-    "readiness": 70
+    "rhr": null,
+    "readiness": null
    },
    {
     "date": "11-11",
     "hrv": null,
-    "rhr": 52,
-    "readiness": 77
+    "rhr": null,
+    "readiness": null
    },
    {
     "date": "11-12",
     "hrv": null,
-    "rhr": 51,
-    "readiness": 67
+    "rhr": null,
+    "readiness": null
    },
    {
     "date": "11-13",
     "hrv": null,
-    "rhr": 51,
-    "readiness": 76
+    "rhr": null,
+    "readiness": null
    },
    {
     "date": "11-14",
     "hrv": null,
-    "rhr": 51,
-    "readiness": 98
+    "rhr": null,
+    "readiness": null
    },
    {
     "date": "11-15",
     "hrv": null,
-    "rhr": 52,
-    "readiness": 53
+    "rhr": null,
+    "readiness": null
    },
    {
     "date": "11-16",
     "hrv": null,
     "rhr": 52,
-    "readiness": 54
+    "readiness": 82
    },
    {
     "date": "11-17",
     "hrv": null,
-    "rhr": 52,
-    "readiness": 55
+    "rhr": 53,
+    "readiness": 89
    },
    {
     "date": "11-18",
-    "hrv": 54,
-    "rhr": 51,
-    "readiness": 62
+    "hrv": null,
+    "rhr": 54,
+    "readiness": 83
    },
    {
     "date": "11-19",
-    "hrv": 65,
-    "rhr": 51,
-    "readiness": 72
+    "hrv": null,
+    "rhr": 54,
+    "readiness": 41
    },
    {
     "date": "11-20",
-    "hrv": 61,
-    "rhr": 52,
-    "readiness": 67
+    "hrv": null,
+    "rhr": 53,
+    "readiness": 71
    },
    {
     "date": "11-21",
-    "hrv": 75,
+    "hrv": null,
+    "rhr": 54,
+    "readiness": 93
+   },
+   {
+    "date": "11-22",
+    "hrv": null,
+    "rhr": 54,
+    "readiness": 52
+   },
+   {
+    "date": "11-23",
+    "hrv": null,
+    "rhr": 52,
+    "readiness": 75
+   },
+   {
+    "date": "11-24",
+    "hrv": null,
+    "rhr": 50,
+    "readiness": 72
+   },
+   {
+    "date": "11-25",
+    "hrv": 68,
+    "rhr": 51,
+    "readiness": 89
+   },
+   {
+    "date": "11-26",
+    "hrv": 65,
     "rhr": 53,
+    "readiness": 68
+   },
+   {
+    "date": "11-27",
+    "hrv": 61,
+    "rhr": 53,
+    "readiness": 72
+   },
+   {
+    "date": "11-28",
+    "hrv": 69,
+    "rhr": 52,
     "readiness": null
    }
   ]
  },
  "night": {
-  "date": "2026-11-20",
-  "recoveryScore": 62,
-  "garminReadiness": 67,
+  "date": "2026-11-27",
+  "recoveryScore": 59,
+  "garminReadiness": 72,
   "components": [
    {
     "label": "HRV vs 30d",
-    "score": 38,
+    "score": 30,
     "weight": 40,
-    "detail": "61 vs 63.8 ms",
+    "detail": "61 vs 65.8 ms",
     "value": 61,
-    "normal": 63.8,
+    "normal": 65.8,
     "unit": "ms",
-    "state": "usual",
-    "points": 15.2
+    "state": "below",
+    "points": 12.0
    },
    {
     "label": "RHR vs 30d",
-    "score": 44,
+    "score": 47,
     "weight": 20,
-    "detail": "52 vs 51.4 bpm",
-    "value": 52,
-    "normal": 51.4,
+    "detail": "53 vs 52.7 bpm",
+    "value": 53,
+    "normal": 52.7,
     "unit": "bpm",
     "state": "usual",
-    "points": 8.8
+    "points": 9.4
    },
    {
     "label": "Sleep perf",
-    "score": 100,
+    "score": 96,
     "weight": 25,
-    "detail": "8.7 of 8.3 h needed",
-    "value": 8.7,
+    "detail": "8.0 of 8.3 h needed",
+    "value": 8.0,
     "normal": 8.3,
     "unit": "h",
     "state": "met",
-    "points": 25.0
+    "points": 24.0
    },
    {
     "label": "Respiration",
-    "score": 80,
+    "score": 90,
     "weight": 10,
-    "detail": "14.7 brpm (+0.4)",
+    "detail": "14.7 brpm (+0.2)",
     "value": 14.7,
-    "normal": 14.3,
+    "normal": 14.5,
     "unit": "brpm",
     "state": "usual",
-    "points": 8.0
+    "points": 9.0
    },
    {
     "label": "Skin temp",
-    "score": 100,
+    "score": 95,
     "weight": 5,
-    "detail": "-0.1°C dev",
-    "value": -0.1,
+    "detail": "+0.1°C dev",
+    "value": 0.1,
     "normal": 0,
     "unit": "°C",
     "state": "usual",
-    "points": 5.0
+    "points": 4.8
    }
   ],
   "sleep": {
-   "performancePct": 100,
+   "performancePct": 96,
    "needH": 8.33,
-   "actualH": 8.73,
-   "debt7dH": 6.1,
+   "actualH": 8.0,
+   "debt7dH": 5.6,
    "consistencyPct": 80,
-   "restorativePct": 53,
-   "efficiencyPct": 98,
-   "deepMin": 140,
-   "remMin": 140,
-   "lightMin": 244,
-   "awakeMin": 11,
-   "bedtime": "23:18",
-   "waketime": "08:12"
+   "restorativePct": 51,
+   "efficiencyPct": 96,
+   "deepMin": 110,
+   "remMin": 133,
+   "lightMin": 237,
+   "awakeMin": 20,
+   "bedtime": "00:00",
+   "waketime": "08:20"
   },
   "vitals": {
    "respiration": {
     "value": 14.7,
-    "baseline": 14.3,
-    "deviation": 0.4
+    "baseline": 14.5,
+    "deviation": 0.2
    },
-   "skinTempDevC": -0.1,
+   "skinTempDevC": 0.1,
    "spo2": 96
   },
   "flags": [
-   "Sleep debt 6.1 h over 7 nights — recovery ceiling is capped until you repay it."
+   "Sleep debt 5.6 h over 7 nights — recovery ceiling is capped until you repay it."
   ]
  },
  "body": null,
@@ -478,46 +478,46 @@
    0.5,
    2.0,
    3.7,
-   4.1,
-   4.9,
-   5.4,
-   7.6,
-   7.8,
-   9.2,
-   9.0,
-   9.1,
-   9.8,
-   10.2
+   4.0,
+   4.8,
+   5.1,
+   5.0,
+   5.3,
+   6.5,
+   6.3,
+   6.6,
+   7.4,
+   7.6
   ],
   "fatigue": [
-   2.7,
+   3.3,
    11.5,
-   20.4,
-   20.8,
-   23.2,
-   23.5,
-   33.7,
-   31.3,
-   36.4,
-   31.2,
-   29.0,
-   30.3,
-   29.8
+   20.5,
+   19.8,
+   22.4,
+   21.8,
+   18.7,
+   18.3,
+   23.7,
+   20.3,
+   20.1,
+   22.7,
+   22.1
   ],
   "form": [
-   -2.3,
+   -2.7,
    -9.5,
+   -16.8,
+   -15.8,
+   -17.6,
    -16.7,
-   -16.6,
-   -18.3,
-   -18.1,
-   -26.1,
-   -23.5,
-   -27.2,
-   -22.2,
-   -19.9,
-   -20.5,
-   -19.6
+   -13.7,
+   -13.0,
+   -17.2,
+   -14.0,
+   -13.5,
+   -15.3,
+   -14.5
   ],
   "hrv": [
    null,
@@ -546,10 +546,10 @@
    null,
    null,
    null,
-   54,
+   68,
    65,
    61,
-   75
+   69
   ],
   "rhr": [
    null,
@@ -569,37 +569,37 @@
    null,
    null,
    null,
-   49,
-   51,
    52,
-   51,
-   51,
-   51,
+   53,
+   54,
+   54,
+   53,
+   54,
+   54,
    52,
-   52,
-   52,
+   50,
    51,
-   51,
-   52,
-   53
+   53,
+   53,
+   52
   ]
  },
  "week": {
-  "label": "Nov 16 – Nov 22",
-  "weekLoad": 165,
+  "label": "Nov 23 – Nov 29",
+  "weekLoad": 148,
   "activeDays": 5,
-  "cardioLoad": 105,
-  "strengthLoad": 60,
+  "cardioLoad": 94,
+  "strengthLoad": 54,
   "days": [
    {
-    "date": "2026-11-16",
+    "date": "2026-11-23",
     "dow": "Mon",
-    "dom": 16,
+    "dom": 23,
     "isToday": false,
     "isFuture": false,
-    "totalLoad": 17,
-    "strain": 1.4,
-    "readiness": 54,
+    "totalLoad": 16,
+    "strain": 1.3,
+    "readiness": 75,
     "items": [
      {
       "group": "strength",
@@ -607,23 +607,23 @@
       "sport": "Strength",
       "icon": "strength",
       "kind": "strength",
-      "id": 21000000007,
+      "id": 21000000006,
       "name": "D1 · Push",
-      "durationMin": 47,
+      "durationMin": 49,
       "distanceKm": null,
-      "load": 17
+      "load": 16
      }
     ]
    },
    {
-    "date": "2026-11-17",
+    "date": "2026-11-24",
     "dow": "Tue",
-    "dom": 17,
+    "dom": 24,
     "isToday": false,
     "isFuture": false,
-    "totalLoad": 67,
-    "strain": 5.6,
-    "readiness": 55,
+    "totalLoad": 56,
+    "strain": 4.7,
+    "readiness": 72,
     "items": [
      {
       "group": "run",
@@ -631,34 +631,34 @@
       "sport": "Run",
       "icon": "run",
       "kind": "endurance",
-      "id": 21000000008,
+      "id": 21000000007,
       "name": "Easy run",
-      "durationMin": 29,
-      "distanceKm": 4.9,
-      "load": 67
+      "durationMin": 32,
+      "distanceKm": 5.5,
+      "load": 56
      }
     ]
    },
    {
-    "date": "2026-11-18",
+    "date": "2026-11-25",
     "dow": "Wed",
-    "dom": 18,
+    "dom": 25,
     "isToday": false,
     "isFuture": false,
     "totalLoad": 0,
     "strain": 0.0,
-    "readiness": 62,
+    "readiness": 89,
     "items": []
    },
    {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "dow": "Thu",
-    "dom": 19,
+    "dom": 26,
     "isToday": false,
     "isFuture": false,
-    "totalLoad": 16,
-    "strain": 1.3,
-    "readiness": 72,
+    "totalLoad": 19,
+    "strain": 1.6,
+    "readiness": 68,
     "items": [
      {
       "group": "strength",
@@ -666,23 +666,23 @@
       "sport": "Strength",
       "icon": "strength",
       "kind": "strength",
-      "id": 21000000009,
+      "id": 21000000008,
       "name": "D2 · Pull",
       "durationMin": 36,
       "distanceKm": null,
-      "load": 16
+      "load": 19
      }
     ]
    },
    {
-    "date": "2026-11-20",
+    "date": "2026-11-27",
     "dow": "Fri",
-    "dom": 20,
+    "dom": 27,
     "isToday": false,
     "isFuture": false,
     "totalLoad": 38,
     "strain": 3.2,
-    "readiness": 67,
+    "readiness": 72,
     "items": [
      {
       "group": "swim",
@@ -690,7 +690,7 @@
       "sport": "Pool swim",
       "icon": "swim",
       "kind": "endurance",
-      "id": 21000000010,
+      "id": 21000000009,
       "name": "Pool swim",
       "durationMin": 42,
       "distanceKm": 1.7,
@@ -699,13 +699,13 @@
     ]
    },
    {
-    "date": "2026-11-21",
+    "date": "2026-11-28",
     "dow": "Sat",
-    "dom": 21,
+    "dom": 28,
     "isToday": true,
     "isFuture": false,
-    "totalLoad": 27,
-    "strain": 2.3,
+    "totalLoad": 19,
+    "strain": 1.6,
     "readiness": null,
     "items": [
      {
@@ -714,18 +714,18 @@
       "sport": "Strength",
       "icon": "strength",
       "kind": "strength",
-      "id": 21000000011,
+      "id": 21000000010,
       "name": "D1 · Push",
-      "durationMin": 48,
+      "durationMin": 50,
       "distanceKm": null,
-      "load": 27
+      "load": 19
      }
     ]
    },
    {
-    "date": "2026-11-22",
+    "date": "2026-11-29",
     "dow": "Sun",
-    "dom": 22,
+    "dom": 29,
     "isToday": false,
     "isFuture": true,
     "totalLoad": 0,
@@ -743,10 +743,10 @@
   "program": null
  },
  "last_day": {
-  "date": "2026-11-21",
+  "date": "2026-11-28",
   "sessions": [
    {
-    "id": 21000000011,
+    "id": 21000000010,
     "title": "D1 · Push",
     "type": "strength_training",
     "sport": "Strength",
@@ -754,15 +754,15 @@
     "kind": "strength",
     "group": "strength",
     "start": "18:04",
-    "end": "18:51",
-    "durationMin": 48,
+    "end": "18:54",
+    "durationMin": 50,
     "has_sets": true
    }
   ]
  },
  "trained_today": [
   {
-   "id": 21000000011,
+   "id": 21000000010,
    "title": "D1 · Push",
    "type": "strength_training",
    "sport": "Strength",
@@ -770,62 +770,13 @@
    "kind": "strength",
    "group": "strength",
    "start": "18:04",
-   "durationMin": 48,
+   "durationMin": 50,
    "sets": 19,
    "tonnage": 7930,
    "distanceKm": null
   }
  ],
  "vitals": [
-  {
-   "date": "2026-10-23",
-   "hrv": null,
-   "hrv_7d": null,
-   "rhr": null,
-   "rhr_7d": null
-  },
-  {
-   "date": "2026-10-24",
-   "hrv": null,
-   "hrv_7d": null,
-   "rhr": null,
-   "rhr_7d": null
-  },
-  {
-   "date": "2026-10-25",
-   "hrv": null,
-   "hrv_7d": null,
-   "rhr": null,
-   "rhr_7d": null
-  },
-  {
-   "date": "2026-10-26",
-   "hrv": null,
-   "hrv_7d": null,
-   "rhr": null,
-   "rhr_7d": null
-  },
-  {
-   "date": "2026-10-27",
-   "hrv": null,
-   "hrv_7d": null,
-   "rhr": null,
-   "rhr_7d": null
-  },
-  {
-   "date": "2026-10-28",
-   "hrv": null,
-   "hrv_7d": null,
-   "rhr": null,
-   "rhr_7d": null
-  },
-  {
-   "date": "2026-10-29",
-   "hrv": null,
-   "hrv_7d": null,
-   "rhr": null,
-   "rhr_7d": null
-  },
   {
    "date": "2026-10-30",
    "hrv": null,
@@ -900,256 +851,295 @@
    "date": "2026-11-09",
    "hrv": null,
    "hrv_7d": null,
-   "rhr": 49,
+   "rhr": null,
    "rhr_7d": null
   },
   {
    "date": "2026-11-10",
    "hrv": null,
    "hrv_7d": null,
-   "rhr": 51,
+   "rhr": null,
    "rhr_7d": null
   },
   {
    "date": "2026-11-11",
    "hrv": null,
    "hrv_7d": null,
-   "rhr": 52,
+   "rhr": null,
    "rhr_7d": null
   },
   {
    "date": "2026-11-12",
    "hrv": null,
    "hrv_7d": null,
-   "rhr": 51,
-   "rhr_7d": 50.8
+   "rhr": null,
+   "rhr_7d": null
   },
   {
    "date": "2026-11-13",
    "hrv": null,
    "hrv_7d": null,
-   "rhr": 51,
-   "rhr_7d": 50.8
+   "rhr": null,
+   "rhr_7d": null
   },
   {
    "date": "2026-11-14",
    "hrv": null,
    "hrv_7d": null,
-   "rhr": 51,
-   "rhr_7d": 50.8
+   "rhr": null,
+   "rhr_7d": null
   },
   {
    "date": "2026-11-15",
    "hrv": null,
    "hrv_7d": null,
-   "rhr": 52,
-   "rhr_7d": 51.0
+   "rhr": null,
+   "rhr_7d": null
   },
   {
    "date": "2026-11-16",
    "hrv": null,
    "hrv_7d": null,
    "rhr": 52,
-   "rhr_7d": 51.4
+   "rhr_7d": null
   },
   {
    "date": "2026-11-17",
    "hrv": null,
    "hrv_7d": null,
-   "rhr": 52,
-   "rhr_7d": 51.6
+   "rhr": 53,
+   "rhr_7d": null
   },
   {
    "date": "2026-11-18",
-   "hrv": 54,
+   "hrv": null,
    "hrv_7d": null,
-   "rhr": 51,
-   "rhr_7d": 51.4
+   "rhr": 54,
+   "rhr_7d": null
   },
   {
    "date": "2026-11-19",
-   "hrv": 65,
+   "hrv": null,
    "hrv_7d": null,
-   "rhr": 51,
-   "rhr_7d": 51.4
+   "rhr": 54,
+   "rhr_7d": 53.2
   },
   {
    "date": "2026-11-20",
-   "hrv": 61,
+   "hrv": null,
    "hrv_7d": null,
-   "rhr": 52,
-   "rhr_7d": 51.6
+   "rhr": 53,
+   "rhr_7d": 53.2
   },
   {
    "date": "2026-11-21",
-   "hrv": 75,
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 54,
+   "rhr_7d": 53.3
+  },
+  {
+   "date": "2026-11-22",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 54,
+   "rhr_7d": 53.4
+  },
+  {
+   "date": "2026-11-23",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 52,
+   "rhr_7d": 53.4
+  },
+  {
+   "date": "2026-11-24",
+   "hrv": null,
+   "hrv_7d": null,
+   "rhr": 50,
+   "rhr_7d": 53.0
+  },
+  {
+   "date": "2026-11-25",
+   "hrv": 68,
+   "hrv_7d": null,
+   "rhr": 51,
+   "rhr_7d": 52.6
+  },
+  {
+   "date": "2026-11-26",
+   "hrv": 65,
    "hrv_7d": null,
    "rhr": 53,
-   "rhr_7d": 51.9
+   "rhr_7d": 52.4
+  },
+  {
+   "date": "2026-11-27",
+   "hrv": 61,
+   "hrv_7d": null,
+   "rhr": 53,
+   "rhr_7d": 52.4
+  },
+  {
+   "date": "2026-11-28",
+   "hrv": 69,
+   "hrv_7d": null,
+   "rhr": 52,
+   "rhr_7d": 52.1
   }
  ],
  "last_night": {
-  "date": "2026-11-21",
-  "start": "23:41",
-  "end": "07:02",
-  "asleep_min": 436,
+  "date": "2026-11-28",
+  "start": "23:22",
+  "end": "06:59",
+  "asleep_min": 454,
   "need_min": 500,
-  "performance_pct": 87,
-  "restorative_pct": 50,
+  "performance_pct": 91,
+  "restorative_pct": 53,
   "efficiency_pct": 99,
-  "in_bed_min": 442,
-  "score": 73,
-  "hr_low": 44,
+  "in_bed_min": 458,
+  "score": 78,
+  "hr_low": 43,
   "hr_avg": 52,
-  "respiration": 14.8,
-  "hrv_avg": 75,
-  "body_battery_change": 70,
-  "resting_hr": 44,
+  "respiration": 14.6,
+  "hrv_avg": 69,
+  "body_battery_change": 55,
+  "resting_hr": 43,
   "segments": [
    [
     0.0,
-    13.0,
+    14.0,
     "light"
    ],
    [
-    13.0,
-    45.0,
+    14.0,
+    54.0,
     "deep"
    ],
    [
-    45.0,
-    63.0,
+    54.0,
+    70.0,
     "light"
    ],
    [
-    63.0,
-    75.0,
+    70.0,
+    81.0,
     "rem"
    ],
    [
-    75.0,
-    77.0,
+    81.0,
+    101.0,
+    "light"
+   ],
+   [
+    101.0,
+    137.0,
+    "deep"
+   ],
+   [
+    137.0,
+    153.0,
+    "light"
+   ],
+   [
+    153.0,
+    170.0,
+    "rem"
+   ],
+   [
+    170.0,
+    188.0,
+    "light"
+   ],
+   [
+    188.0,
+    207.0,
+    "deep"
+   ],
+   [
+    207.0,
+    226.0,
+    "light"
+   ],
+   [
+    226.0,
+    243.0,
+    "rem"
+   ],
+   [
+    243.0,
+    259.0,
+    "light"
+   ],
+   [
+    259.0,
+    275.0,
+    "deep"
+   ],
+   [
+    275.0,
+    294.0,
+    "light"
+   ],
+   [
+    294.0,
+    317.0,
+    "rem"
+   ],
+   [
+    317.0,
+    336.0,
+    "light"
+   ],
+   [
+    336.0,
+    344.0,
+    "deep"
+   ],
+   [
+    344.0,
+    360.0,
+    "light"
+   ],
+   [
+    360.0,
+    386.0,
+    "rem"
+   ],
+   [
+    386.0,
+    390.0,
     "awake"
    ],
    [
-    77.0,
-    95.0,
+    390.0,
+    408.0,
     "light"
    ],
    [
-    95.0,
-    121.0,
+    408.0,
+    412.0,
     "deep"
    ],
    [
-    121.0,
-    145.0,
+    412.0,
+    435.0,
     "light"
    ],
    [
-    145.0,
-    159.0,
-    "rem"
-   ],
-   [
-    159.0,
-    181.0,
-    "light"
-   ],
-   [
-    181.0,
-    201.0,
-    "deep"
-   ],
-   [
-    201.0,
-    216.0,
-    "light"
-   ],
-   [
-    216.0,
-    233.0,
-    "rem"
-   ],
-   [
-    233.0,
-    235.0,
-    "awake"
-   ],
-   [
-    235.0,
-    249.0,
-    "light"
-   ],
-   [
-    249.0,
-    262.0,
-    "deep"
-   ],
-   [
-    262.0,
-    287.0,
-    "light"
-   ],
-   [
-    287.0,
-    308.0,
-    "rem"
-   ],
-   [
-    308.0,
-    321.0,
-    "light"
-   ],
-   [
-    321.0,
-    328.0,
-    "deep"
-   ],
-   [
-    328.0,
-    351.0,
-    "light"
-   ],
-   [
-    351.0,
-    379.0,
-    "rem"
-   ],
-   [
-    379.0,
-    381.0,
-    "awake"
-   ],
-   [
-    381.0,
-    394.0,
-    "light"
-   ],
-   [
-    394.0,
-    398.0,
-    "deep"
-   ],
-   [
-    398.0,
-    416.0,
-    "light"
-   ],
-   [
-    416.0,
-    441.6,
+    435.0,
+    457.6,
     "rem"
    ]
   ],
   "hr": [
    [
     0.0,
-    51
+    53
    ],
    [
     2.0,
-    52
+    51
    ],
    [
     4.0,
@@ -1157,807 +1147,803 @@
    ],
    [
     6.0,
-    48
+    52
    ],
    [
     8.0,
-    53
+    51
    ],
    [
     10.0,
-    51
+    52
    ],
    [
     12.0,
-    51
+    55
    ],
    [
-    13.0,
-    45
-   ],
-   [
-    15.0,
+    14.0,
     46
    ],
    [
-    17.0,
+    16.0,
+    45
+   ],
+   [
+    18.0,
+    44
+   ],
+   [
+    20.0,
+    47
+   ],
+   [
+    22.0,
+    44
+   ],
+   [
+    24.0,
+    50
+   ],
+   [
+    26.0,
+    46
+   ],
+   [
+    28.0,
+    47
+   ],
+   [
+    30.0,
+    50
+   ],
+   [
+    32.0,
+    46
+   ],
+   [
+    34.0,
+    43
+   ],
+   [
+    36.0,
     48
    ],
    [
-    19.0,
+    38.0,
+    48
+   ],
+   [
+    40.0,
+    48
+   ],
+   [
+    42.0,
+    47
+   ],
+   [
+    44.0,
+    46
+   ],
+   [
+    46.0,
+    47
+   ],
+   [
+    48.0,
     45
    ],
    [
-    21.0,
+    50.0,
+    46
+   ],
+   [
+    52.0,
     49
    ],
    [
-    23.0,
-    45
-   ],
-   [
-    25.0,
-    47
-   ],
-   [
-    27.0,
-    49
-   ],
-   [
-    29.0,
+    54.0,
     52
    ],
    [
-    31.0,
-    45
-   ],
-   [
-    33.0,
-    45
-   ],
-   [
-    35.0,
-    46
-   ],
-   [
-    37.0,
-    46
-   ],
-   [
-    39.0,
-    47
-   ],
-   [
-    41.0,
-    47
-   ],
-   [
-    43.0,
-    46
-   ],
-   [
-    45.0,
-    52
-   ],
-   [
-    47.0,
-    50
-   ],
-   [
-    49.0,
-    52
-   ],
-   [
-    51.0,
+    56.0,
     53
    ],
    [
-    53.0,
-    51
-   ],
-   [
-    55.0,
+    58.0,
     52
    ],
    [
-    57.0,
+    60.0,
     53
    ],
    [
-    59.0,
-    50
-   ],
-   [
-    61.0,
+    62.0,
     51
    ],
    [
-    63.0,
-    55
+    64.0,
+    51
    ],
    [
-    65.0,
-    55
-   ],
-   [
-    67.0,
-    55
-   ],
-   [
-    69.0,
-    56
-   ],
-   [
-    71.0,
-    57
-   ],
-   [
-    73.0,
+    66.0,
     54
    ],
    [
-    75.0,
+    68.0,
+    50
+   ],
+   [
+    70.0,
+    54
+   ],
+   [
+    72.0,
+    56
+   ],
+   [
+    74.0,
     59
    ],
    [
-    77.0,
-    53
+    76.0,
+    55
    ],
    [
-    79.0,
+    78.0,
+    55
+   ],
+   [
+    80.0,
     53
    ],
    [
     81.0,
-    53
+    50
    ],
    [
     83.0,
-    54
+    53
    ],
    [
     85.0,
-    52
+    53
    ],
    [
     87.0,
-    53
+    51
    ],
    [
     89.0,
-    52
+    50
    ],
    [
     91.0,
-    50
+    52
    ],
    [
     93.0,
-    50
+    49
    ],
    [
     95.0,
-    49
+    53
    ],
    [
     97.0,
-    46
+    50
    ],
    [
     99.0,
-    46
+    52
    ],
    [
     101.0,
-    50
+    47
    ],
    [
     103.0,
-    46
+    45
    ],
    [
     105.0,
-    47
+    50
    ],
    [
     107.0,
-    47
+    49
    ],
    [
     109.0,
-    45
+    48
    ],
    [
     111.0,
-    46
+    50
    ],
    [
     113.0,
-    47
+    48
    ],
    [
     115.0,
-    46
+    48
    ],
    [
     117.0,
-    46
+    49
    ],
    [
     119.0,
-    47
+    46
    ],
    [
     121.0,
-    52
+    47
    ],
    [
     123.0,
-    49
+    47
    ],
    [
     125.0,
-    53
+    48
    ],
    [
     127.0,
-    52
+    47
    ],
    [
     129.0,
-    52
+    49
    ],
    [
     131.0,
-    52
+    49
    ],
    [
     133.0,
-    52
+    50
    ],
    [
     135.0,
-    55
+    51
    ],
    [
     137.0,
-    51
+    52
    ],
    [
     139.0,
-    53
+    50
    ],
    [
     141.0,
-    47
+    52
    ],
    [
     143.0,
-    53
+    55
    ],
    [
     145.0,
-    57
+    52
    ],
    [
     147.0,
-    57
+    51
    ],
    [
     149.0,
-    56
+    53
    ],
    [
     151.0,
-    57
+    53
    ],
    [
     153.0,
-    57
+    56
    ],
    [
     155.0,
-    57
+    58
    ],
    [
     157.0,
-    58
+    55
    ],
    [
     159.0,
-    51
+    56
    ],
    [
     161.0,
-    53
+    55
    ],
    [
     163.0,
-    52
+    59
    ],
    [
     165.0,
-    47
+    56
    ],
    [
     167.0,
-    53
+    55
    ],
    [
     169.0,
+    57
+   ],
+   [
+    170.0,
     52
    ],
    [
-    171.0,
-    52
-   ],
-   [
-    173.0,
-    49
-   ],
-   [
-    175.0,
-    55
-   ],
-   [
-    177.0,
+    172.0,
     51
    ],
    [
-    179.0,
-    50
+    174.0,
+    51
    ],
    [
-    181.0,
+    176.0,
+    52
+   ],
+   [
+    178.0,
+    53
+   ],
+   [
+    180.0,
+    52
+   ],
+   [
+    182.0,
     49
    ],
    [
-    183.0,
+    184.0,
+    52
+   ],
+   [
+    186.0,
+    54
+   ],
+   [
+    188.0,
+    49
+   ],
+   [
+    190.0,
     48
    ],
    [
-    185.0,
-    48
-   ],
-   [
-    187.0,
+    192.0,
     45
    ],
    [
-    189.0,
+    194.0,
+    48
+   ],
+   [
+    196.0,
+    48
+   ],
+   [
+    198.0,
+    48
+   ],
+   [
+    200.0,
     47
    ],
    [
-    191.0,
-    44
-   ],
-   [
-    193.0,
+    202.0,
     47
    ],
    [
-    195.0,
-    46
+    204.0,
+    47
    ],
    [
-    197.0,
-    46
-   ],
-   [
-    199.0,
-    46
-   ],
-   [
-    201.0,
-    52
-   ],
-   [
-    203.0,
-    52
-   ],
-   [
-    205.0,
-    51
+    206.0,
+    47
    ],
    [
     207.0,
-    53
+    52
    ],
    [
     209.0,
-    54
+    51
    ],
    [
     211.0,
-    53
+    51
    ],
    [
     213.0,
-    55
+    53
    ],
    [
     215.0,
+    52
+   ],
+   [
+    217.0,
+    53
+   ],
+   [
+    219.0,
     50
    ],
    [
-    216.0,
-    55
+    221.0,
+    53
    ],
    [
-    218.0,
-    60
+    223.0,
+    52
    ],
    [
-    220.0,
-    56
-   ],
-   [
-    222.0,
-    56
-   ],
-   [
-    224.0,
-    55
+    225.0,
+    50
    ],
    [
     226.0,
-    55
+    54
    ],
    [
     228.0,
-    56
+    57
    ],
    [
     230.0,
-    56
+    57
    ],
    [
     232.0,
-    54
+    57
    ],
    [
-    233.0,
-    62
+    234.0,
+    55
    ],
    [
-    235.0,
-    52
+    236.0,
+    55
    ],
    [
-    237.0,
-    54
+    238.0,
+    58
    ],
    [
-    239.0,
-    52
+    240.0,
+    58
    ],
    [
-    241.0,
-    54
+    242.0,
+    58
    ],
    [
     243.0,
-    50
-   ],
-   [
-    245.0,
-    51
-   ],
-   [
-    247.0,
-    53
-   ],
-   [
-    249.0,
-    46
-   ],
-   [
-    251.0,
-    47
-   ],
-   [
-    253.0,
-    47
-   ],
-   [
-    255.0,
-    47
-   ],
-   [
-    257.0,
-    45
-   ],
-   [
-    259.0,
-    48
-   ],
-   [
-    261.0,
-    47
-   ],
-   [
-    262.0,
-    53
-   ],
-   [
-    264.0,
-    53
-   ],
-   [
-    266.0,
-    52
-   ],
-   [
-    268.0,
-    50
-   ],
-   [
-    270.0,
-    50
-   ],
-   [
-    272.0,
-    50
-   ],
-   [
-    274.0,
-    51
-   ],
-   [
-    276.0,
-    53
-   ],
-   [
-    278.0,
-    50
-   ],
-   [
-    280.0,
-    53
-   ],
-   [
-    282.0,
-    50
-   ],
-   [
-    284.0,
-    50
-   ],
-   [
-    286.0,
-    52
-   ],
-   [
-    287.0,
-    55
-   ],
-   [
-    289.0,
-    58
-   ],
-   [
-    291.0,
-    60
-   ],
-   [
-    293.0,
-    59
-   ],
-   [
-    295.0,
-    55
-   ],
-   [
-    297.0,
-    59
-   ],
-   [
-    299.0,
-    55
-   ],
-   [
-    301.0,
-    58
-   ],
-   [
-    303.0,
-    56
-   ],
-   [
-    305.0,
-    57
-   ],
-   [
-    307.0,
-    57
-   ],
-   [
-    308.0,
-    50
-   ],
-   [
-    310.0,
-    51
-   ],
-   [
-    312.0,
-    50
-   ],
-   [
-    314.0,
-    50
-   ],
-   [
-    316.0,
-    52
-   ],
-   [
-    318.0,
-    53
-   ],
-   [
-    320.0,
-    52
-   ],
-   [
-    321.0,
-    46
-   ],
-   [
-    323.0,
-    50
-   ],
-   [
-    325.0,
-    49
-   ],
-   [
-    327.0,
-    46
-   ],
-   [
-    328.0,
-    52
-   ],
-   [
-    330.0,
-    53
-   ],
-   [
-    332.0,
-    51
-   ],
-   [
-    334.0,
-    51
-   ],
-   [
-    336.0,
-    52
-   ],
-   [
-    338.0,
-    51
-   ],
-   [
-    340.0,
-    53
-   ],
-   [
-    342.0,
-    52
-   ],
-   [
-    344.0,
-    53
-   ],
-   [
-    346.0,
-    52
-   ],
-   [
-    348.0,
-    53
-   ],
-   [
-    350.0,
-    56
-   ],
-   [
-    351.0,
-    58
-   ],
-   [
-    353.0,
-    55
-   ],
-   [
-    355.0,
-    57
-   ],
-   [
-    357.0,
-    58
-   ],
-   [
-    359.0,
-    56
-   ],
-   [
-    361.0,
-    58
-   ],
-   [
-    363.0,
-    56
-   ],
-   [
-    365.0,
-    57
-   ],
-   [
-    367.0,
-    55
-   ],
-   [
-    369.0,
-    56
-   ],
-   [
-    371.0,
-    56
-   ],
-   [
-    373.0,
-    53
-   ],
-   [
-    375.0,
-    55
-   ],
-   [
-    377.0,
-    53
-   ],
-   [
-    379.0,
-    62
-   ],
-   [
-    381.0,
-    50
-   ],
-   [
-    383.0,
-    51
-   ],
-   [
-    385.0,
-    51
-   ],
-   [
-    387.0,
     54
    ],
    [
-    389.0,
+    245.0,
     50
    ],
    [
-    391.0,
+    247.0,
+    51
+   ],
+   [
+    249.0,
+    49
+   ],
+   [
+    251.0,
+    51
+   ],
+   [
+    253.0,
+    51
+   ],
+   [
+    255.0,
     52
    ],
    [
-    393.0,
+    257.0,
+    51
+   ],
+   [
+    259.0,
+    47
+   ],
+   [
+    261.0,
+    49
+   ],
+   [
+    263.0,
+    45
+   ],
+   [
+    265.0,
+    48
+   ],
+   [
+    267.0,
+    48
+   ],
+   [
+    269.0,
+    47
+   ],
+   [
+    271.0,
+    47
+   ],
+   [
+    273.0,
+    49
+   ],
+   [
+    275.0,
+    52
+   ],
+   [
+    277.0,
     53
    ],
    [
+    279.0,
+    52
+   ],
+   [
+    281.0,
+    49
+   ],
+   [
+    283.0,
+    51
+   ],
+   [
+    285.0,
+    51
+   ],
+   [
+    287.0,
+    51
+   ],
+   [
+    289.0,
+    51
+   ],
+   [
+    291.0,
+    52
+   ],
+   [
+    293.0,
+    51
+   ],
+   [
+    294.0,
+    57
+   ],
+   [
+    296.0,
+    56
+   ],
+   [
+    298.0,
+    55
+   ],
+   [
+    300.0,
+    55
+   ],
+   [
+    302.0,
+    55
+   ],
+   [
+    304.0,
+    55
+   ],
+   [
+    306.0,
+    56
+   ],
+   [
+    308.0,
+    57
+   ],
+   [
+    310.0,
+    55
+   ],
+   [
+    312.0,
+    54
+   ],
+   [
+    314.0,
+    57
+   ],
+   [
+    316.0,
+    57
+   ],
+   [
+    317.0,
+    52
+   ],
+   [
+    319.0,
+    51
+   ],
+   [
+    321.0,
+    55
+   ],
+   [
+    323.0,
+    51
+   ],
+   [
+    325.0,
+    52
+   ],
+   [
+    327.0,
+    52
+   ],
+   [
+    329.0,
+    49
+   ],
+   [
+    331.0,
+    51
+   ],
+   [
+    333.0,
+    51
+   ],
+   [
+    335.0,
+    55
+   ],
+   [
+    336.0,
+    47
+   ],
+   [
+    338.0,
+    45
+   ],
+   [
+    340.0,
+    47
+   ],
+   [
+    342.0,
+    50
+   ],
+   [
+    344.0,
+    51
+   ],
+   [
+    346.0,
+    51
+   ],
+   [
+    348.0,
+    52
+   ],
+   [
+    350.0,
+    50
+   ],
+   [
+    352.0,
+    50
+   ],
+   [
+    354.0,
+    53
+   ],
+   [
+    356.0,
+    53
+   ],
+   [
+    358.0,
+    53
+   ],
+   [
+    360.0,
+    57
+   ],
+   [
+    362.0,
+    57
+   ],
+   [
+    364.0,
+    57
+   ],
+   [
+    366.0,
+    55
+   ],
+   [
+    368.0,
+    56
+   ],
+   [
+    370.0,
+    57
+   ],
+   [
+    372.0,
+    57
+   ],
+   [
+    374.0,
+    59
+   ],
+   [
+    376.0,
+    56
+   ],
+   [
+    378.0,
+    56
+   ],
+   [
+    380.0,
+    55
+   ],
+   [
+    382.0,
+    54
+   ],
+   [
+    384.0,
+    56
+   ],
+   [
+    386.0,
+    61
+   ],
+   [
+    388.0,
+    60
+   ],
+   [
+    390.0,
+    52
+   ],
+   [
+    392.0,
+    52
+   ],
+   [
     394.0,
-    46
+    53
    ],
    [
     396.0,
-    46
+    50
    ],
    [
     398.0,
@@ -1969,94 +1955,130 @@
    ],
    [
     402.0,
-    51
+    53
    ],
    [
     404.0,
-    55
+    53
    ],
    [
     406.0,
-    54
-   ],
-   [
-    408.0,
-    53
-   ],
-   [
-    410.0,
-    53
-   ],
-   [
-    412.0,
     51
    ],
    [
-    414.0,
+    408.0,
+    47
+   ],
+   [
+    410.0,
+    45
+   ],
+   [
+    412.0,
     53
    ],
    [
+    414.0,
+    51
+   ],
+   [
     416.0,
-    59
+    52
    ],
    [
     418.0,
-    56
+    49
    ],
    [
     420.0,
-    57
+    52
    ],
    [
     422.0,
-    58
+    53
    ],
    [
     424.0,
-    57
+    54
    ],
    [
     426.0,
-    58
+    52
    ],
    [
     428.0,
-    55
+    54
    ],
    [
     430.0,
-    56
+    52
    ],
    [
     432.0,
-    56
+    52
    ],
    [
     434.0,
+    48
+   ],
+   [
+    435.0,
     54
    ],
    [
-    436.0,
-    56
+    437.0,
+    57
    ],
    [
-    438.0,
-    56
-   ],
-   [
-    440.0,
+    439.0,
     54
+   ],
+   [
+    441.0,
+    56
+   ],
+   [
+    443.0,
+    55
+   ],
+   [
+    445.0,
+    54
+   ],
+   [
+    447.0,
+    57
+   ],
+   [
+    449.0,
+    56
+   ],
+   [
+    451.0,
+    55
+   ],
+   [
+    453.0,
+    55
+   ],
+   [
+    455.0,
+    56
+   ],
+   [
+    457.0,
+    57
    ]
   ],
   "totals_min": {
-   "deep": 102,
-   "light": 216,
-   "rem": 118,
-   "awake": 6
+   "deep": 123,
+   "light": 214,
+   "rem": 117,
+   "awake": 4
   },
-  "awakenings": 3,
+  "awakenings": 1,
   "mismatch_min": 0.0,
-  "length_min": 441.6
+  "length_min": 457.6
  },
  "week_compare": {
   "today_index": 5,
@@ -2064,10 +2086,10 @@
   "this": {
    "days": [
     {
-     "date": "2026-11-16",
+     "date": "2026-11-23",
      "dow": "Mon",
      "minutes": {
-      "strength": 47
+      "strength": 49
      },
      "sports": [
       {
@@ -2076,24 +2098,24 @@
        "icon": "strength",
        "kind": "strength",
        "title": "D1 · Push",
-       "min": 47,
+       "min": 49,
        "group": "strength",
        "km": null,
-       "load": 17,
+       "load": 16,
        "tonnage": 7930,
        "sets": 19
       }
      ],
-     "sleep_h": 6.33,
+     "sleep_h": 7.0,
      "sleep_need_h": 8.33,
-     "recovery": 63,
+     "recovery": 74,
      "planned": []
     },
     {
-     "date": "2026-11-17",
+     "date": "2026-11-24",
      "dow": "Tue",
      "minutes": {
-      "endurance": 29
+      "endurance": 32
      },
      "sports": [
       {
@@ -2102,25 +2124,225 @@
        "icon": "run",
        "kind": "endurance",
        "title": "Easy run",
-       "min": 29,
+       "min": 32,
        "group": "run",
-       "km": 4.9,
-       "load": 67
+       "km": 5.5,
+       "load": 56
       }
      ],
-     "sleep_h": 7.67,
+     "sleep_h": 7.88,
      "sleep_need_h": 8.33,
-     "recovery": 77,
+     "recovery": 86,
+     "planned": []
+    },
+    {
+     "date": "2026-11-25",
+     "dow": "Wed",
+     "minutes": {},
+     "sports": [],
+     "sleep_h": 7.33,
+     "sleep_need_h": 8.33,
+     "recovery": 70,
+     "planned": []
+    },
+    {
+     "date": "2026-11-26",
+     "dow": "Thu",
+     "minutes": {
+      "strength": 36
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D2 · Pull",
+       "min": 36,
+       "group": "strength",
+       "km": null,
+       "load": 19,
+       "tonnage": 6748,
+       "sets": 14
+      }
+     ],
+     "sleep_h": 7.84,
+     "sleep_need_h": 8.33,
+     "recovery": 63,
+     "planned": []
+    },
+    {
+     "date": "2026-11-27",
+     "dow": "Fri",
+     "minutes": {
+      "endurance": 42
+     },
+     "sports": [
+      {
+       "type": "lap_swimming",
+       "sport": "Pool swim",
+       "icon": "swim",
+       "kind": "endurance",
+       "title": "Pool swim",
+       "min": 42,
+       "group": "swim",
+       "km": 1.7,
+       "load": 38
+      }
+     ],
+     "sleep_h": 8.0,
+     "sleep_need_h": 8.33,
+     "recovery": 61,
+     "planned": []
+    },
+    {
+     "date": "2026-11-28",
+     "dow": "Sat",
+     "minutes": {
+      "strength": 50
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D1 · Push",
+       "min": 50,
+       "group": "strength",
+       "km": null,
+       "load": 19,
+       "tonnage": 7930,
+       "sets": 19
+      }
+     ],
+     "sleep_h": 7.56,
+     "sleep_need_h": 8.33,
+     "recovery": 73,
+     "planned": []
+    },
+    {
+     "date": "2026-11-29",
+     "dow": "Sun",
+     "minutes": {},
+     "sports": [],
+     "sleep_h": null,
+     "sleep_need_h": null,
+     "recovery": null,
+     "planned": [
+      {
+       "date": "2026-11-29",
+       "title": "Swim 1,800 m",
+       "type": "lap_swimming",
+       "sport": "Pool swim",
+       "icon": "swim",
+       "kind": "endurance",
+       "group": "swim",
+       "done": false,
+       "min": 42,
+       "min_source": "typical"
+      }
+     ]
+    }
+   ],
+   "to_date": {
+    "minutes": 209,
+    "sessions": 5,
+    "tonnage": 22608,
+    "sets": 52,
+    "cardio_load": 94,
+    "km": 7.2,
+    "km_by": {
+     "run": 5.5,
+     "swim": 1.7
+    },
+    "sleep_h": 7.6,
+    "recovery": 71.17
+   },
+   "since": null,
+   "planned": {
+    "sessions": 1,
+    "minutes": 42,
+    "sets": 0,
+    "tonnage": 0,
+    "untimed": 0,
+    "today_only": false
+   }
+  },
+  "last": {
+   "days": [
+    {
+     "date": "2026-11-16",
+     "dow": "Mon",
+     "minutes": {
+      "strength": 48
+     },
+     "sports": [
+      {
+       "type": "strength_training",
+       "sport": "Strength",
+       "icon": "strength",
+       "kind": "strength",
+       "title": "D1 · Push",
+       "min": 48,
+       "group": "strength",
+       "km": null,
+       "load": 23,
+       "tonnage": 7558,
+       "sets": 19
+      }
+     ],
+     "sleep_h": 7.81,
+     "sleep_need_h": 8.33,
+     "recovery": 76,
+     "planned": []
+    },
+    {
+     "date": "2026-11-17",
+     "dow": "Tue",
+     "minutes": {
+      "endurance": 33
+     },
+     "sports": [
+      {
+       "type": "running",
+       "sport": "Run",
+       "icon": "run",
+       "kind": "endurance",
+       "title": "Easy run",
+       "min": 33,
+       "group": "run",
+       "km": 6.0,
+       "load": 61
+      }
+     ],
+     "sleep_h": 8.04,
+     "sleep_need_h": 8.33,
+     "recovery": 80,
      "planned": []
     },
     {
      "date": "2026-11-18",
      "dow": "Wed",
-     "minutes": {},
-     "sports": [],
-     "sleep_h": 8.46,
+     "minutes": {
+      "circuit": 47
+     },
+     "sports": [
+      {
+       "type": "indoor_cardio",
+       "sport": "Indoor cardio",
+       "icon": "circuit",
+       "kind": "circuit",
+       "title": "Conditioning circuit",
+       "min": 47,
+       "group": "other",
+       "km": null,
+       "load": 74
+      }
+     ],
+     "sleep_h": 7.79,
      "sleep_need_h": 8.33,
-     "recovery": 70,
+     "recovery": 77,
      "planned": []
     },
     {
@@ -2140,217 +2362,17 @@
        "group": "strength",
        "km": null,
        "load": 16,
-       "tonnage": 6748,
+       "tonnage": 6267,
        "sets": 14
       }
      ],
-     "sleep_h": 7.06,
-     "sleep_need_h": 8.33,
-     "recovery": 76,
-     "planned": []
-    },
-    {
-     "date": "2026-11-20",
-     "dow": "Fri",
-     "minutes": {
-      "endurance": 42
-     },
-     "sports": [
-      {
-       "type": "lap_swimming",
-       "sport": "Pool swim",
-       "icon": "swim",
-       "kind": "endurance",
-       "title": "Pool swim",
-       "min": 42,
-       "group": "swim",
-       "km": 1.7,
-       "load": 38
-      }
-     ],
-     "sleep_h": 8.73,
-     "sleep_need_h": 8.33,
-     "recovery": 68,
-     "planned": []
-    },
-    {
-     "date": "2026-11-21",
-     "dow": "Sat",
-     "minutes": {
-      "strength": 48
-     },
-     "sports": [
-      {
-       "type": "strength_training",
-       "sport": "Strength",
-       "icon": "strength",
-       "kind": "strength",
-       "title": "D1 · Push",
-       "min": 48,
-       "group": "strength",
-       "km": null,
-       "load": 27,
-       "tonnage": 7930,
-       "sets": 19
-      }
-     ],
-     "sleep_h": 7.26,
-     "sleep_need_h": 8.33,
-     "recovery": 77,
-     "planned": []
-    },
-    {
-     "date": "2026-11-22",
-     "dow": "Sun",
-     "minutes": {},
-     "sports": [],
-     "sleep_h": null,
-     "sleep_need_h": null,
-     "recovery": null,
-     "planned": [
-      {
-       "date": "2026-11-22",
-       "title": "Swim 1,800 m",
-       "type": "lap_swimming",
-       "sport": "Pool swim",
-       "icon": "swim",
-       "kind": "endurance",
-       "group": "swim",
-       "done": false,
-       "min": 42,
-       "min_source": "typical"
-      }
-     ]
-    }
-   ],
-   "to_date": {
-    "minutes": 202,
-    "sessions": 5,
-    "tonnage": 22608,
-    "sets": 52,
-    "cardio_load": 105,
-    "km": 6.6,
-    "km_by": {
-     "run": 4.9,
-     "swim": 1.7
-    },
-    "sleep_h": 7.58,
-    "recovery": 71.83
-   },
-   "since": null,
-   "planned": {
-    "sessions": 1,
-    "minutes": 42,
-    "sets": 0,
-    "tonnage": 0,
-    "untimed": 0,
-    "today_only": false
-   }
-  },
-  "last": {
-   "days": [
-    {
-     "date": "2026-11-09",
-     "dow": "Mon",
-     "minutes": {
-      "strength": 48
-     },
-     "sports": [
-      {
-       "type": "strength_training",
-       "sport": "Strength",
-       "icon": "strength",
-       "kind": "strength",
-       "title": "D1 · Push",
-       "min": 48,
-       "group": "strength",
-       "km": null,
-       "load": 19,
-       "tonnage": 7500,
-       "sets": 19
-      }
-     ],
-     "sleep_h": 7.89,
+     "sleep_h": 8.05,
      "sleep_need_h": 8.33,
      "recovery": 78,
      "planned": []
     },
     {
-     "date": "2026-11-10",
-     "dow": "Tue",
-     "minutes": {
-      "endurance": 31
-     },
-     "sports": [
-      {
-       "type": "running",
-       "sport": "Run",
-       "icon": "run",
-       "kind": "endurance",
-       "title": "Easy run",
-       "min": 31,
-       "group": "run",
-       "km": 5.7,
-       "load": 64
-      }
-     ],
-     "sleep_h": 7.99,
-     "sleep_need_h": 8.33,
-     "recovery": 75,
-     "planned": []
-    },
-    {
-     "date": "2026-11-11",
-     "dow": "Wed",
-     "minutes": {
-      "circuit": 47
-     },
-     "sports": [
-      {
-       "type": "indoor_cardio",
-       "sport": "Indoor cardio",
-       "icon": "circuit",
-       "kind": "circuit",
-       "title": "Conditioning circuit",
-       "min": 47,
-       "group": "other",
-       "km": null,
-       "load": 74
-      }
-     ],
-     "sleep_h": 7.29,
-     "sleep_need_h": 8.33,
-     "recovery": 73,
-     "planned": []
-    },
-    {
-     "date": "2026-11-12",
-     "dow": "Thu",
-     "minutes": {
-      "strength": 37
-     },
-     "sports": [
-      {
-       "type": "strength_training",
-       "sport": "Strength",
-       "icon": "strength",
-       "kind": "strength",
-       "title": "D2 · Pull",
-       "min": 37,
-       "group": "strength",
-       "km": null,
-       "load": 23,
-       "tonnage": 6388,
-       "sets": 14
-      }
-     ],
-     "sleep_h": 6.8,
-     "sleep_need_h": 8.33,
-     "recovery": 75,
-     "planned": []
-    },
-    {
-     "date": "2026-11-13",
+     "date": "2026-11-20",
      "dow": "Fri",
      "minutes": {
       "endurance": 36
@@ -2368,16 +2390,16 @@
        "load": 38
       }
      ],
-     "sleep_h": 8.21,
+     "sleep_h": 7.16,
      "sleep_need_h": 8.33,
-     "recovery": 81,
+     "recovery": 75,
      "planned": []
     },
     {
-     "date": "2026-11-14",
+     "date": "2026-11-21",
      "dow": "Sat",
      "minutes": {
-      "strength": 48
+      "strength": 46
      },
      "sports": [
       {
@@ -2386,72 +2408,57 @@
        "icon": "strength",
        "kind": "strength",
        "title": "D3 · Legs",
-       "min": 48,
+       "min": 46,
        "group": "strength",
        "km": null,
-       "load": 25,
-       "tonnage": 14830,
+       "load": 18,
+       "tonnage": 14845,
        "sets": 17
       }
      ],
-     "sleep_h": 8.01,
+     "sleep_h": 7.56,
      "sleep_need_h": 8.33,
-     "recovery": 81,
+     "recovery": 77,
      "planned": []
     },
     {
-     "date": "2026-11-15",
+     "date": "2026-11-22",
      "dow": "Sun",
-     "minutes": {
-      "endurance": 90
-     },
-     "sports": [
-      {
-       "type": "road_biking",
-       "sport": "Road ride",
-       "icon": "bike",
-       "kind": "endurance",
-       "title": "Zone 2 ride",
-       "min": 90,
-       "group": "bike",
-       "km": 45.0,
-       "load": 95
-      }
-     ],
-     "sleep_h": 7.22,
+     "minutes": {},
+     "sports": [],
+     "sleep_h": 7.18,
      "sleep_need_h": 8.33,
-     "recovery": 74,
+     "recovery": 75,
      "planned": []
     }
    ],
    "to_date": {
-    "minutes": 247,
+    "minutes": 246,
     "sessions": 6,
-    "tonnage": 28718,
+    "tonnage": 28670,
     "sets": 50,
-    "cardio_load": 176,
-    "km": 7.2,
+    "cardio_load": 173,
+    "km": 7.5,
     "km_by": {
-     "run": 5.7,
+     "run": 6.0,
      "swim": 1.5
     },
-    "sleep_h": 7.7,
+    "sleep_h": 7.73,
     "recovery": 77.17
    },
    "full": {
-    "minutes": 337,
-    "sessions": 7,
-    "tonnage": 28718,
+    "minutes": 246,
+    "sessions": 6,
+    "tonnage": 28670,
     "sets": 50,
-    "cardio_load": 271,
-    "km": 52.2,
+    "cardio_load": 173,
+    "km": 7.5,
     "km_by": {
-     "run": 5.7,
-     "swim": 1.5,
-     "bike": 45.0
+     "run": 6.0,
+     "swim": 1.5
     },
-    "sleep_h": 7.63,
-    "recovery": 76.71
+    "sleep_h": 7.66,
+    "recovery": 76.86
    }
   },
   "targets": {
@@ -2467,27 +2474,27 @@
  "daily": null,
  "call_program": null,
  "rotation": {
-  "today": "2026-11-21",
+  "today": "2026-11-28",
   "starved_after_days": 7,
   "days": [
    {
     "day": "d1",
     "label": "D1 · Push",
-    "last": "2026-11-21",
+    "last": "2026-11-28",
     "age": 0,
     "starved": false
    },
    {
     "day": "d2",
     "label": "D2 · Pull",
-    "last": "2026-11-19",
+    "last": "2026-11-26",
     "age": 2,
     "starved": false
    },
    {
     "day": "d3",
     "label": "D3 · Legs",
-    "last": "2026-11-14",
+    "last": "2026-11-21",
     "age": 7,
     "starved": false
    }
@@ -2501,7 +2508,7 @@
    "exid": "D1E1",
    "category": "BENCH_PRESS",
    "name": "BARBELL_BENCH_PRESS",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 4,
    "reps_target": 8,
    "weight": 80.0,
@@ -2510,14 +2517,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E2",
    "category": "BENCH_PRESS",
    "name": "INCLINE_DUMBBELL_BENCH_PRESS",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 10,
    "weight": 26.0,
@@ -2526,14 +2533,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E3",
    "category": "SHOULDER_PRESS",
    "name": "SEATED_DUMBBELL_SHOULDER_PRESS",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 10,
    "weight": 20.0,
@@ -2542,14 +2549,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E4",
    "category": "LATERAL_RAISE",
    "name": "DUMBBELL_LATERAL_RAISE",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 15,
    "weight": 10.0,
@@ -2558,14 +2565,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E5",
    "category": "FLYE",
    "name": "CABLE_CROSSOVER",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 12,
    "weight": 15.0,
@@ -2574,14 +2581,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E6",
    "category": "TRICEPS_EXTENSION",
    "name": "ROPE_PRESSDOWN",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 12,
    "weight": 32.5,
@@ -2590,7 +2597,7 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   }
  ],
  "sync": {
@@ -2633,7 +2640,7 @@
    }
   },
   "load": {
-   "done": 105,
+   "done": 94,
    "band": [
     150,
     250
@@ -2642,12 +2649,13 @@
  },
  "block": {
   "name": "Hypertrophy",
-  "start": "2026-11-16",
+  "start": "2026-11-23",
   "weeks": 16,
   "week": 1,
   "over": false
  },
  "race": null,
+ "trip": null,
  "fuel": {
   "setup_open": [
    {
@@ -2670,8 +2678,8 @@
   "due": []
  },
  "freshness": {
-  "data_as_of": "2026-11-21T15:15:15",
-  "cache": "cache as of 2026-11-21 15:15",
+  "data_as_of": "2026-11-28T14:13:06",
+  "cache": "cache as of 2026-11-28 14:13",
   "warnings": [],
   "coach_ran": null
  },
@@ -2790,7 +2798,7 @@
   },
   "fuel_band": {
    "source": "computed",
-   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to under 2.5 h: 30–60 g/h easy, about 60 hard. 2.5 h or more: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
   },
   "fuel_target": {
    "source": "computed",
@@ -2803,6 +2811,26 @@
   "fuel_taken": {
    "source": "you",
    "definition": "What you logged taking, in grams, from each product's label and your bottle recipe as it was that day. Self-reported: Garmin does not record it."
+  },
+  "trip": {
+   "source": "you",
+   "definition": "A trip is the days you are away from your usual setup, the first and last included. For each place — gym, pool, bike, indoor trainer, running, courts — it says yes, maybe or no."
+  },
+  "trip_maybe": {
+   "source": "coach",
+   "definition": "Not sure yet: planned as not there until you confirm it."
+  },
+  "trip_travel": {
+   "source": "coach",
+   "definition": "A travel day: kept light — no intensity and no test — with only what the trip has, unless you leave after the morning or are back before the evening: then one session at home fits."
+  },
+  "trip_limited": {
+   "source": "coach",
+   "definition": "Limited time: short sessions, and every one optional — skipping one is not a miss."
+  },
+  "trip_clash": {
+   "source": "computed",
+   "definition": "A session planned on a trip day that needs something the trip doesn't have, or a hard session or a test on a travel day. Read from your plan and the watch's calendar, with no Garmin call."
   }
  }
 }

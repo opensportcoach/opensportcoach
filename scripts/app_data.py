@@ -5,7 +5,7 @@
     .venv/bin/python scripts/app_data.py <view> [arg]           (as the bound athlete, or --athlete)
 
     views: today · recovery · load · strength · sessions · workout <activity id> ·
-           exercise <CATEGORY/EXERCISE_NAME> · program · calendar · races · body · journal ·
+           exercise <CATEGORY/EXERCISE_NAME> · program · calendar · races · trips · body · journal ·
            journal-entry <file> · memory · system
 
 WHY (2026-10-08, docs/DESIGN.md (the app)). The app's server is TypeScript, and it must never build an athlete
@@ -97,6 +97,7 @@ def defs(*keys: str) -> dict:
     import progression_report as pr
     import races as rc
     import rotation_status as rs
+    import trips as tp
     names = {"HRV vs 30d": "HRV", "RHR vs 30d": "resting HR", "Sleep perf": "sleep vs need", "Respiration": "respiration",
              "Skin temp": "skin temperature"}
     weights = ", ".join(f"{names.get(label, label)} {w} %" for label, w in ed.RECOVERY_WEIGHTS)
@@ -163,6 +164,13 @@ def defs(*keys: str) -> dict:
         **{f"score_{k}": ("computed", formulas.SCORE_DEFINITIONS[k]) for k in formulas.SCORE_WEIGHTS["endurance"]},
         **{f"score_{k}": ("computed", formulas.SCORE_DEFINITIONS[k]) for kind in ("swim", "circuit")
            for k in formulas.SCORE_WEIGHTS[kind]},
+        # Trips (docs/DESIGN.md (trips)): what a place has is the athlete's own word; the rules are trips.py's.
+        "trip": ("you", tp.DEFINITIONS["trip"]),
+        "trip_maybe": ("coach", tp.DEFINITIONS["maybe"]),
+        "trip_travel": ("coach", tp.DEFINITIONS["travel"]),
+        "trip_limited": ("coach", tp.DEFINITIONS["limited"]),
+        "trip_clash": ("computed", tp.DEFINITIONS["clash"]),
+        "trip_no_gym": ("coach", tp.DEFINITIONS["no_gym"]),
         "race_recovery": ("coach", rc.WINDOW["recovery"]),
         "race_priority": ("coach", " ".join(rc.PRIORITIES.values())),
         "race_countdown": ("computed", rc.COUNTDOWN_DEFINITION),
@@ -580,6 +588,8 @@ def v_today(A) -> dict:
         "cardio": cardio_targets(A, dash),
         "block": block(A),
         "race": _race_today(A),
+        # Trips (docs/DESIGN.md (trips)): the trip under way or within three weeks, its clashes, the maybes due.
+        "trip": _trip_today(A),
         # docs/DESIGN.md (fuelling and score) §6.2: the setup still open, and the rides and runs that ask to be logged.
         "fuel": _today_fuel(A),
         "freshness": {"data_as_of": dash.get("generatedAt"), "cache": as_of, "warnings": warnings,
@@ -588,7 +598,8 @@ def v_today(A) -> dict:
                      "rhr_7d", "readiness", "fitness", "fatigue", "form", "load", "tonnage", "weight", "bump",
                      "starved", "watch_sync", "week_like_for_like", "week_planned", "week_target", "sleep_need",
                      "race_countdown", "race_easy", "race_taper", "race_day", "race_recovery",
-                     "fuel_band", "fuel_target", "fuel_gut", "fuel_taken"),
+                     "fuel_band", "fuel_target", "fuel_gut", "fuel_taken",
+                     "trip", "trip_maybe", "trip_travel", "trip_limited", "trip_clash"),
     }
 
 
@@ -1925,6 +1936,82 @@ def v_races(A) -> dict:
                          "race_countdown", "race_check", "race_target", "race_prediction", "race_splits")}
 
 
+# --- trips (docs/DESIGN.md (trips), 2026-11-28) -------------------------------------------------------------
+# The days away from the usual setup, from athletes/<name>/trips.json through scripts/trips.py: what each
+# place has, what each day allows, the clashes and the open maybes are that file's, never decided here.
+# Without trips.json every piece is empty or None.
+def _trip_card(t: dict, today: dt.date, clashes: list | None = None, questions: list | None = None) -> dict:
+    """One trip as the app draws it: where and when, how far off, what each place has (yes · maybe · no,
+    and when a maybe was settled), the time and the travel parts, its days, its clashes and questions."""
+    import trips as tp
+    a, b = dt.date.fromisoformat(t["from"]), dt.date.fromisoformat(t["to"])
+    answered = t.get("answered") or {}
+    return {"id": t["id"], "where": t["where"], "from": t["from"], "to": t["to"], "days": (b - a).days + 1,
+            "days_to": (a - today).days, "current": a <= today <= b, "past": b < today,
+            "access": [{"key": k, "label": label, "state": t["access"].get(k), "answered": answered.get(k)}
+                       for k, (label, _) in tp.ACCESS.items()],
+            "there": tp.what_is_there(t), "time": t.get("time"), "leave": t.get("leave"), "back": t.get("back"),
+            "note": t.get("note"), "day_list": tp.days_of(t),
+            "clashes": [c for c in clashes or [] if c["trip"] == t["id"]],
+            "questions": [q for q in questions or [] if q["trip"] == t["id"]]}
+
+
+def _trip_phase(p: dict, today: dt.date) -> dict:
+    """trips.on() with each trip as its id and where — what the page needs to name it."""
+    brief = lambda t: t and {"id": t["id"], "where": t["where"], "from": t["from"], "to": t["to"]}  # noqa: E731
+    return {**p, "trip": brief(p["trip"]), "next": brief(p["next"])}
+
+
+def _trip_today(A) -> dict | None:
+    """Today's trip line: the trip under way, or the next one from TODAY_DAYS out, with its clashes and the
+    maybes due an answer. None with no trip that near and no question due."""
+    import trips as tp
+    today = TODAY()
+    ts = tp.trips_of(A)
+    if not ts:
+        return None
+    p = tp.on(today, ts)
+    qs = tp.questions(ts, today)
+    due = [q for q in qs if q["due"]]
+    nxt = p["next"]
+    near = nxt and (p["away"] or p["days_to"] <= tp.TODAY_DAYS)
+    if not near and not due:
+        return None
+    cs = tp.clashes(A, today, trips=ts)
+    return {"today": _trip_phase(p, today), "trip": near and _trip_card(nxt, today, cs, qs) or None,
+            "questions": due, "clashes": len(cs)}
+
+
+def _trip_days(A, start: str) -> list:
+    """Every trip day from `start` on, for the Plan screen's grids: {date, day, of, travel, home, trip}."""
+    import trips as tp
+    out = []
+    for t in tp.trips_of(A):
+        if t["to"] < start:
+            continue
+        brief = {"id": t["id"], "where": t["where"], "there": tp.what_is_there(t), "time": t.get("time")}
+        out += [{**x, "trip": brief} for x in tp.days_of(t) if x["date"] >= start]
+    return out
+
+
+@view("trips")
+def v_trips(A) -> dict:
+    """The trips (docs/DESIGN.md (trips)): every trip with what its place has, its days, the sessions that clash
+    with it and the maybes to settle; today's place; and the vocabulary the form offers — from trips.py."""
+    import trips as tp
+    today = TODAY()
+    data = tp.load(A)
+    ts = data["trips"]
+    cs, qs = tp.clashes(A, today, trips=ts), tp.questions(ts, today)
+    cards = [_trip_card(t, today, cs, qs) for t in ts]
+    nxt = tp.next_trip(ts, today)
+    return {"home": data["home"], "trips": cards, "today": _trip_phase(tp.on(today, ts), today),
+            "next": next((c for c in cards if nxt and c["id"] == nxt["id"]), None), "clashes": cs, "questions": qs,
+            "access": [{"key": k, "label": label, "covers": covers} for k, (label, covers) in tp.ACCESS.items()],
+            "states": tp.STATES, "time": tp.TIME, "parts": list(tp.PARTS), "ask_days": tp.ASK_DAYS,
+            "defs": defs("trip", "trip_maybe", "trip_travel", "trip_limited", "trip_clash", "trip_no_gym")}
+
+
 @view("calendar")
 def v_calendar(A) -> dict:
     ed = _ed()
@@ -1939,7 +2026,15 @@ def v_calendar(A) -> dict:
                            "done": bool(i.get("associatedActivityId"))} for i in sched],
             "planned": _planned(A, start), "done": done, "sync": sync_status(A),
             "race_days": _race_days(A, start),
-            "defs": defs("watch_sync", "race_easy", "race_taper", "race_day", "race_recovery", "fuel_band", "fuel_target")}
+            # Trips (docs/DESIGN.md (trips)): the days away, and what is planned on them that the place can't hold.
+            "trip_days": _trip_days(A, start), "trip_clashes": _trip_clashes(A),
+            "defs": defs("watch_sync", "race_easy", "race_taper", "race_day", "race_recovery", "fuel_band", "fuel_target",
+                         "trip", "trip_maybe", "trip_travel", "trip_limited", "trip_clash")}
+
+
+def _trip_clashes(A) -> list:
+    import trips as tp
+    return tp.clashes(A, TODAY())
 
 
 @view("body")

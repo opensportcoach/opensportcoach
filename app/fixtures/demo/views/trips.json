@@ -1,0 +1,516 @@
+{
+ "view": "trips",
+ "athlete": "demo",
+ "generated_at": "2026-11-28T14:12:55",
+ "home": {
+  "where": "Rivertown"
+ },
+ "trips": [
+  {
+   "id": "lakeside",
+   "where": "Lakeside",
+   "from": "2026-11-30",
+   "to": "2026-12-03",
+   "days": 4,
+   "days_to": 2,
+   "current": false,
+   "past": false,
+   "access": [
+    {
+     "key": "gym",
+     "label": "Gym",
+     "state": "no",
+     "answered": null
+    },
+    {
+     "key": "pool",
+     "label": "Pool",
+     "state": "no",
+     "answered": null
+    },
+    {
+     "key": "bike",
+     "label": "Bike",
+     "state": "maybe",
+     "answered": null
+    },
+    {
+     "key": "trainer",
+     "label": "Indoor trainer",
+     "state": "no",
+     "answered": null
+    },
+    {
+     "key": "run",
+     "label": "Running",
+     "state": "yes",
+     "answered": null
+    },
+    {
+     "key": "courts",
+     "label": "Courts",
+     "state": "no",
+     "answered": null
+    }
+   ],
+   "there": {
+    "yes": [
+     "run"
+    ],
+    "maybe": [
+     "bike"
+    ],
+    "no": [
+     "gym",
+     "pool",
+     "trainer",
+     "courts"
+    ]
+   },
+   "time": "limited",
+   "leave": null,
+   "back": null,
+   "note": "Runs if time allows.",
+   "day_list": [
+    {
+     "date": "2026-11-30",
+     "day": 1,
+     "of": 4,
+     "travel": "leave",
+     "home": null
+    },
+    {
+     "date": "2026-12-01",
+     "day": 2,
+     "of": 4,
+     "travel": null,
+     "home": null
+    },
+    {
+     "date": "2026-12-02",
+     "day": 3,
+     "of": 4,
+     "travel": null,
+     "home": null
+    },
+    {
+     "date": "2026-12-03",
+     "day": 4,
+     "of": 4,
+     "travel": "back",
+     "home": null
+    }
+   ],
+   "clashes": [
+    {
+     "date": "2026-11-30",
+     "source": "watch",
+     "title": "D1 · Push",
+     "sport": "strength_training",
+     "needs": [
+      "gym"
+     ],
+     "missing": [
+      "gym"
+     ],
+     "unsure": [],
+     "unknown": false,
+     "hard": false,
+     "why": "no gym in Lakeside",
+     "trip": "lakeside",
+     "where": "Lakeside",
+     "travel": "leave",
+     "on_watch": true
+    }
+   ],
+   "questions": [
+    {
+     "trip": "lakeside",
+     "where": "Lakeside",
+     "from": "2026-11-30",
+     "to": "2026-12-03",
+     "access": "bike",
+     "label": "Bike",
+     "question": "Is your bike coming to Lakeside?",
+     "ask_from": "2026-11-20",
+     "due": true
+    }
+   ]
+  },
+  {
+   "id": "hill-town",
+   "where": "Hill Town",
+   "from": "2026-12-14",
+   "to": "2026-12-20",
+   "days": 7,
+   "days_to": 16,
+   "current": false,
+   "past": false,
+   "access": [
+    {
+     "key": "gym",
+     "label": "Gym",
+     "state": "no",
+     "answered": null
+    },
+    {
+     "key": "pool",
+     "label": "Pool",
+     "state": "yes",
+     "answered": null
+    },
+    {
+     "key": "bike",
+     "label": "Bike",
+     "state": "yes",
+     "answered": null
+    },
+    {
+     "key": "trainer",
+     "label": "Indoor trainer",
+     "state": "no",
+     "answered": null
+    },
+    {
+     "key": "run",
+     "label": "Running",
+     "state": "yes",
+     "answered": null
+    },
+    {
+     "key": "courts",
+     "label": "Courts",
+     "state": "yes",
+     "answered": null
+    }
+   ],
+   "there": {
+    "yes": [
+     "pool",
+     "bike",
+     "run",
+     "courts"
+    ],
+    "maybe": [],
+    "no": [
+     "gym",
+     "trainer"
+    ]
+   },
+   "time": null,
+   "leave": "evening",
+   "back": "morning",
+   "note": null,
+   "day_list": [
+    {
+     "date": "2026-12-14",
+     "day": 1,
+     "of": 7,
+     "travel": "leave",
+     "home": "before you leave"
+    },
+    {
+     "date": "2026-12-15",
+     "day": 2,
+     "of": 7,
+     "travel": null,
+     "home": null
+    },
+    {
+     "date": "2026-12-16",
+     "day": 3,
+     "of": 7,
+     "travel": null,
+     "home": null
+    },
+    {
+     "date": "2026-12-17",
+     "day": 4,
+     "of": 7,
+     "travel": null,
+     "home": null
+    },
+    {
+     "date": "2026-12-18",
+     "day": 5,
+     "of": 7,
+     "travel": null,
+     "home": null
+    },
+    {
+     "date": "2026-12-19",
+     "day": 6,
+     "of": 7,
+     "travel": null,
+     "home": null
+    },
+    {
+     "date": "2026-12-20",
+     "day": 7,
+     "of": 7,
+     "travel": "back",
+     "home": "after you are back"
+    }
+   ],
+   "clashes": [],
+   "questions": []
+  }
+ ],
+ "today": {
+  "away": false,
+  "trip": null,
+  "day": null,
+  "of": null,
+  "travel": null,
+  "home": null,
+  "access": null,
+  "time": null,
+  "rule": "At home: your usual setup.",
+  "next": {
+   "id": "lakeside",
+   "where": "Lakeside",
+   "from": "2026-11-30",
+   "to": "2026-12-03"
+  },
+  "days_to": 2
+ },
+ "next": {
+  "id": "lakeside",
+  "where": "Lakeside",
+  "from": "2026-11-30",
+  "to": "2026-12-03",
+  "days": 4,
+  "days_to": 2,
+  "current": false,
+  "past": false,
+  "access": [
+   {
+    "key": "gym",
+    "label": "Gym",
+    "state": "no",
+    "answered": null
+   },
+   {
+    "key": "pool",
+    "label": "Pool",
+    "state": "no",
+    "answered": null
+   },
+   {
+    "key": "bike",
+    "label": "Bike",
+    "state": "maybe",
+    "answered": null
+   },
+   {
+    "key": "trainer",
+    "label": "Indoor trainer",
+    "state": "no",
+    "answered": null
+   },
+   {
+    "key": "run",
+    "label": "Running",
+    "state": "yes",
+    "answered": null
+   },
+   {
+    "key": "courts",
+    "label": "Courts",
+    "state": "no",
+    "answered": null
+   }
+  ],
+  "there": {
+   "yes": [
+    "run"
+   ],
+   "maybe": [
+    "bike"
+   ],
+   "no": [
+    "gym",
+    "pool",
+    "trainer",
+    "courts"
+   ]
+  },
+  "time": "limited",
+  "leave": null,
+  "back": null,
+  "note": "Runs if time allows.",
+  "day_list": [
+   {
+    "date": "2026-11-30",
+    "day": 1,
+    "of": 4,
+    "travel": "leave",
+    "home": null
+   },
+   {
+    "date": "2026-12-01",
+    "day": 2,
+    "of": 4,
+    "travel": null,
+    "home": null
+   },
+   {
+    "date": "2026-12-02",
+    "day": 3,
+    "of": 4,
+    "travel": null,
+    "home": null
+   },
+   {
+    "date": "2026-12-03",
+    "day": 4,
+    "of": 4,
+    "travel": "back",
+    "home": null
+   }
+  ],
+  "clashes": [
+   {
+    "date": "2026-11-30",
+    "source": "watch",
+    "title": "D1 · Push",
+    "sport": "strength_training",
+    "needs": [
+     "gym"
+    ],
+    "missing": [
+     "gym"
+    ],
+    "unsure": [],
+    "unknown": false,
+    "hard": false,
+    "why": "no gym in Lakeside",
+    "trip": "lakeside",
+    "where": "Lakeside",
+    "travel": "leave",
+    "on_watch": true
+   }
+  ],
+  "questions": [
+   {
+    "trip": "lakeside",
+    "where": "Lakeside",
+    "from": "2026-11-30",
+    "to": "2026-12-03",
+    "access": "bike",
+    "label": "Bike",
+    "question": "Is your bike coming to Lakeside?",
+    "ask_from": "2026-11-20",
+    "due": true
+   }
+  ]
+ },
+ "clashes": [
+  {
+   "date": "2026-11-30",
+   "source": "watch",
+   "title": "D1 · Push",
+   "sport": "strength_training",
+   "needs": [
+    "gym"
+   ],
+   "missing": [
+    "gym"
+   ],
+   "unsure": [],
+   "unknown": false,
+   "hard": false,
+   "why": "no gym in Lakeside",
+   "trip": "lakeside",
+   "where": "Lakeside",
+   "travel": "leave",
+   "on_watch": true
+  }
+ ],
+ "questions": [
+  {
+   "trip": "lakeside",
+   "where": "Lakeside",
+   "from": "2026-11-30",
+   "to": "2026-12-03",
+   "access": "bike",
+   "label": "Bike",
+   "question": "Is your bike coming to Lakeside?",
+   "ask_from": "2026-11-20",
+   "due": true
+  }
+ ],
+ "access": [
+  {
+   "key": "gym",
+   "label": "Gym",
+   "covers": "Your gym: the program's gym days, circuits on its machines, the treadmill."
+  },
+  {
+   "key": "pool",
+   "label": "Pool",
+   "covers": "A pool to swim lengths in."
+  },
+  {
+   "key": "bike",
+   "label": "Bike",
+   "covers": "Your own bike, to ride outdoors."
+  },
+  {
+   "key": "trainer",
+   "label": "Indoor trainer",
+   "covers": "Your indoor trainer: Zwift and indoor rides."
+  },
+  {
+   "key": "run",
+   "label": "Running",
+   "covers": "Somewhere to run."
+  },
+  {
+   "key": "courts",
+   "label": "Courts",
+   "covers": "A court and someone to play with: tennis, padel."
+  }
+ ],
+ "states": {
+  "yes": "It is there.",
+  "maybe": "Not sure yet: planned as not there until you confirm it.",
+  "no": "It is not there."
+ },
+ "time": {
+  "normal": "Time to train as at home.",
+  "limited": "Limited time: short sessions, and every one optional — skipping one is not a miss."
+ },
+ "parts": [
+  "morning",
+  "afternoon",
+  "evening"
+ ],
+ "ask_days": 10,
+ "defs": {
+  "trip": {
+   "source": "you",
+   "definition": "A trip is the days you are away from your usual setup, the first and last included. For each place — gym, pool, bike, indoor trainer, running, courts — it says yes, maybe or no."
+  },
+  "trip_maybe": {
+   "source": "coach",
+   "definition": "Not sure yet: planned as not there until you confirm it."
+  },
+  "trip_travel": {
+   "source": "coach",
+   "definition": "A travel day: kept light — no intensity and no test — with only what the trip has, unless you leave after the morning or are back before the evening: then one session at home fits."
+  },
+  "trip_limited": {
+   "source": "coach",
+   "definition": "Limited time: short sessions, and every one optional — skipping one is not a miss."
+  },
+  "trip_clash": {
+   "source": "computed",
+   "definition": "A session planned on a trip day that needs something the trip doesn't have, or a hard session or a test on a travel day. Read from your plan and the watch's calendar, with no Garmin call."
+  },
+  "trip_no_gym": {
+   "source": "coach",
+   "definition": "Away from the gym, a gym day becomes a session that needs nothing — a bodyweight session — or moves to before or after the trip."
+  }
+ }
+}

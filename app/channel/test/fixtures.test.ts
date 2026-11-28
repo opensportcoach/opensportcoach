@@ -33,6 +33,15 @@ test('fixtures mode serves the Demo views and a mock coach end to end', async ()
     assert.equal((await fetch(`${BASE}/api/views/nope`)).status, 400);
 
     const json = { 'content-type': 'application/json' };
+    // Trips (docs/DESIGN.md (trips)): the demo's view, and its write — checked, then nothing written in fixtures mode.
+    const trips = await (await fetch(`${BASE}/api/views/trips`)).json();
+    assert.deepEqual(trips.trips.map((t: any) => t.id), ['lakeside', 'hill-town']);
+    const trip = { where: 'Seaport', from: '2027-03-01', to: '2027-03-03', access: { gym: 'no', pool: 'no', bike: 'no', trainer: 'no', run: 'yes', courts: 'no' } };
+    const saved = await fetch(`${BASE}/api/actions/trips`, { method: 'POST', headers: json, body: JSON.stringify({ action: 'save', trip }) });
+    assert.equal(saved.status, 200);
+    assert.match((await saved.json()).summary, /demo data, so nothing was written/);
+    const half = await fetch(`${BASE}/api/actions/trips`, { method: 'POST', headers: json, body: JSON.stringify({ action: 'save', trip: { ...trip, access: { run: 'yes' } } }) });
+    assert.equal(half.status, 400, 'a trip that leaves a place unanswered never reaches trips.py');
     const q = await (await fetch(`${BASE}/api/requests`, { method: 'POST', headers: json, body: JSON.stringify({ text: 'Why did my bench stall?' }) })).json();
     const answered = await until(async () => {
       const s = await (await fetch(`${BASE}/api/state`)).json();

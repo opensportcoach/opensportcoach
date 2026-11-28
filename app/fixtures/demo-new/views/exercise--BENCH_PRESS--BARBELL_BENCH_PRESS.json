@@ -1,7 +1,7 @@
 {
  "view": "exercise",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:18",
+ "generated_at": "2026-11-28T14:13:08",
  "category": "BENCH_PRESS",
  "name": "BARBELL_BENCH_PRESS",
  "label": "Barbell Bench Press",
@@ -34,8 +34,8 @@
    "sets": 4,
    "weight": 80.0,
    "reps": 8,
-   "since": "2026-11-21",
-   "since_ts": "2026-11-21 15:15:15",
+   "since": "2026-11-28",
+   "since_ts": "2026-11-28 14:13:06",
    "changes": []
   }
  ],
@@ -49,18 +49,18 @@
    "value": 8,
    "weight": 80.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 1,
    "met": 1,
    "status": "ok",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-21",
+   "last": "2026-11-28",
    "skipped": 0,
    "implied_e1rm": 101.3,
    "best_e1rm": 101.3,
    "verdict": "ok",
-   "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-11-21     1    1  ok"
+   "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-11-28     1    1  ok"
   }
  ],
  "trend": [
@@ -73,21 +73,21 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-09",
+     "date": "2026-11-16",
      "score": 98.2,
      "weight": 77.5,
      "reps": 8,
      "annotated": false
     },
     {
-     "date": "2026-11-16",
+     "date": "2026-11-23",
      "score": 101.3,
      "weight": 80.0,
      "reps": 8,
      "annotated": false
     },
     {
-     "date": "2026-11-21",
+     "date": "2026-11-28",
      "score": 101.3,
      "weight": 80.0,
      "reps": 8,
@@ -98,7 +98,7 @@
  ],
  "sessions": [
   {
-   "date": "2026-11-09",
+   "date": "2026-11-16",
    "day": "d1",
    "activity_id": 21000000001,
    "sets": [
@@ -125,10 +125,10 @@
     },
     {
      "weight": 77.5,
-     "reps": 6,
+     "reps": 7,
      "weight_logged": 77.5,
-     "reps_logged": 6,
-     "e1rm": 93.0
+     "reps_logged": 7,
+     "e1rm": 95.6
     }
    ],
    "top": {
@@ -138,14 +138,14 @@
     "reps_logged": 8,
     "e1rm": 98.2
    },
-   "volume": 2325,
+   "volume": 2402,
    "best_e1rm": 98.2,
    "annotated": false
   },
   {
-   "date": "2026-11-16",
+   "date": "2026-11-23",
    "day": "d1",
-   "activity_id": 21000000007,
+   "activity_id": 21000000006,
    "sets": [
     {
      "weight": 80.0,
@@ -188,9 +188,9 @@
    "annotated": false
   },
   {
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "day": "d1",
-   "activity_id": 21000000011,
+   "activity_id": 21000000010,
    "sets": [
     {
      "weight": 80.0,

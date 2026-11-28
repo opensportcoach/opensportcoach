@@ -8,6 +8,10 @@ description: Unattended morning brief — refresh the data, analyse, and write t
 For scheduled runs. **This skill may never write to Garmin** — there is nobody there to confirm, and
 that is a hard rule, not a caution.
 
+**A trip binds it** (`trips.py on <today>`): the brief names the place and plans with what it has; a
+clash or a maybe due (`trips.py check`) is one line each — the answer and the move wait for the
+athlete. It never records an answer it wasn't given.
+
 **It never goes online either.** If `races.py check` lists a race whose date is due a check, the brief
 says so in one line; the lookup waits for an attended session (`osc-race`), because an event page is
 untrusted content and nobody is there to read what came back.

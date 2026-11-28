@@ -1,17 +1,17 @@
 {
  "view": "system",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:14",
+ "generated_at": "2026-11-28T14:12:56",
  "display": "Rocky",
  "garmin_account": "Rocky B.",
  "accent": "#9DC4EE",
  "refresh": null,
- "data_as_of": "2026-11-21T15:15:10",
- "cache": "cache as of 2026-11-21 15:15",
+ "data_as_of": "2026-11-28T14:12:53",
+ "cache": "cache as of 2026-11-28 14:12",
  "warnings": [],
  "block": {
   "name": "Hypertrophy",
-  "start": "2026-08-17",
+  "start": "2026-08-24",
   "weeks": 16,
   "week": 14,
   "over": false

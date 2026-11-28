@@ -1,7 +1,7 @@
 {
  "view": "exercise",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:18",
+ "generated_at": "2026-11-28T14:13:08",
  "category": "SQUAT",
  "name": "LEG_PRESS",
  "label": "Leg Press",
@@ -34,8 +34,8 @@
    "sets": 3,
    "weight": 120.0,
    "reps": 12,
-   "since": "2026-11-21",
-   "since_ts": "2026-11-21 15:15:15",
+   "since": "2026-11-28",
+   "since_ts": "2026-11-28 14:13:06",
    "changes": []
   }
  ],
@@ -49,18 +49,18 @@
    "value": 12,
    "weight": 120.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-14",
+   "last": "2026-11-21",
    "skipped": 0,
    "implied_e1rm": 168.0,
    "best_e1rm": 168.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-28     0    0  FRESH — not tried yet"
   }
  ],
  "trend": [
@@ -73,7 +73,7 @@
    "score": "disc load",
    "points": [
     {
-     "date": "2026-11-14",
+     "date": "2026-11-21",
      "score": 120.0,
      "weight": 120.0,
      "reps": 12,
@@ -84,7 +84,7 @@
  ],
  "sessions": [
   {
-   "date": "2026-11-14",
+   "date": "2026-11-21",
    "day": "d3",
    "activity_id": 21000000005,
    "sets": [
@@ -104,9 +104,9 @@
     },
     {
      "weight": 120.0,
-     "reps": 11,
+     "reps": 10,
      "weight_logged": 120.0,
-     "reps_logged": 11,
+     "reps_logged": 10,
      "e1rm": null
     }
    ],
@@ -117,7 +117,7 @@
     "reps_logged": 12,
     "e1rm": null
    },
-   "volume": 4200,
+   "volume": 4080,
    "best_e1rm": null,
    "annotated": false
   }

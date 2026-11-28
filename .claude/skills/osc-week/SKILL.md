@@ -30,6 +30,24 @@ says otherwise). The plan stays mutable — the daily loop can and should rewrit
    hard session inside an easy, taper or recovery window, and **race week** is written around the race —
    its start time, the travel, the easy days before it. A benchmark the tests flag inside a window moves.
 
+7. **Trips bind the days you plan** (`trips.py on <date>`, for each one; `scripts/trips.py` holds the
+   rules, docs/DESIGN.md (trips)). A trip day holds only what its place has, and **a maybe is a no** until
+   they confirm it — ask for it from `ASK_DAYS` before the trip (`trips.py check` lists it). Around a trip:
+   - **Before it**, bring forward what the trip can't hold — the gym days it would miss (most-starved
+     first), the long ride if the bike stays home — without stacking two hard days or breaking a race
+     window. **On it**, a gym day becomes a **bodyweight session** (equipment-free; it passes their
+     `tests.py` like any other, so their medical constraints hold) or a run; a Zwift day becomes a run
+     or rest. **After it**, the most-starved split first.
+   - **Travel days** (the first and last) are light: no intensity, no test, nothing long. A home session
+     fits only when they leave after the morning or are back before the evening (`leave`, `back`).
+   - **Limited time** (`time: limited`): short sessions, every one optional, none a miss when skipped.
+   - A session's place is read from its sport and how it is done (`trips.needs_of`): a Zwift ride needs
+     the trainer, an outdoor ride the bike. A session that needs nothing despite its sport (the
+     bodyweight session, a hotel-room circuit) says so — `"needs": []` on the plan.json entry or the
+     proposed day, `athlete.json → workout_needs` for a watch workout.
+   - `plan.json` and the `plan_proposal` contract are checked against the trips (tests/run_tests.py, the
+     validator): a gym day in a place with no gym is refused before anyone sees it.
+
 Scheduling is a Garmin write → `osc-push`, with their confirm.
 
 **Sessions that never go to the watch** — Zwift (Zwift runs it), the long ride, tennis — go in

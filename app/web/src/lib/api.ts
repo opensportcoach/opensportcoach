@@ -6,7 +6,7 @@
 import { createContext, createElement, useCallback, useContext, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 
 import type { Answer, Daily, EnduranceReview, PlanProposal, PushPlan, PushResult, Recap, Review } from '../contracts';
-import type { FuelLogBody, FuelSetupBody } from '../../../channel/requests';
+import type { FuelLogBody, FuelSetupBody, TripAction } from '../../../channel/requests';
 
 export type RequestState = 'QUEUED' | 'WORKING' | 'DONE' | 'FAILED';
 
@@ -157,6 +157,9 @@ export interface Store {
   /** Writes the athlete's fuel — a session's log or the setup answers — through the server's own action
    * (scripts/fuel.py, no model). Resolves to the script's one-line summary; throws its refusal. */
   fuel: (action: 'log' | 'setup', body: FuelLogBody | FuelSetupBody) => Promise<string | null>;
+  /** Writes the athlete's trips — save one, remove one, settle a maybe — through the server's own action
+   * (scripts/trips.py, no model). Resolves to the script's one-line summary; throws its refusal. */
+  trips: (body: TripAction) => Promise<string | null>;
   /** Context for the next question ("Ask about this"), shown in the dock. */
   about: string | null;
   setAbout: (about: string | null) => void;
@@ -254,6 +257,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setDataVersion((v) => v + 1);
     return r.summary;
   }, []);
+  const trips = useCallback(async (body: TripAction) => {
+    const r = await api.post<{ ok: boolean; summary: string | null }>('/api/actions/trips', body);
+    setDataVersion((v) => v + 1);
+    return r.summary;
+  }, []);
   const refreshing = state?.refresh?.state === 'running';
   const openSendToWatch = useCallback((request: AppRequest | null) => {
     setStw(request && request.result?.kind === 'push_plan' ? { plan: request.result.payload, request } : null);
@@ -265,9 +273,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const value = useMemo<Store>(() => ({
-    state, error, dataVersion, refreshing, views, ask, confirm, refresh, fuel, about, setAbout, askAbout, askFocus, dockOpen, setDockOpen,
+    state, error, dataVersion, refreshing, views, ask, confirm, refresh, fuel, trips, about, setAbout, askAbout, askFocus, dockOpen, setDockOpen,
     sendToWatch: stw, openSendToWatch,
-  }), [state, error, dataVersion, refreshing, views, ask, confirm, refresh, fuel, about, askAbout, askFocus, dockOpen, stw, openSendToWatch]);
+  }), [state, error, dataVersion, refreshing, views, ask, confirm, refresh, fuel, trips, about, askAbout, askFocus, dockOpen, stw, openSendToWatch]);
   return createElement(StoreCtx.Provider, { value }, children);
 }
 

@@ -113,7 +113,14 @@ doubt, ask them to check with that professional.
 
 Which days, how long each session can be, mornings or evenings, travel. Where they train and with what:
 gym or home, the heaviest dumbbell (`profile.dumbbell_cap_kg`), machines, bike trainer or power meter,
-pool length. Equipment facts go to `athletes/<name>/memory/equipment/`.
+pool length. Equipment facts go to `athletes/<name>/memory/equipment/`. Where home is:
+`scripts/trips.py home "<city>"`.
+
+**Any trips coming up** — days away from that setup? Each goes in with `scripts/trips.py save --json
+'<trip>'`: where, the first and last day, and **yes, maybe or no for every place** (gym, pool, bike,
+indoor trainer, running, courts — ask for any they don't say; nothing is assumed to be there), limited
+time if they say so, and when they leave and are back if they know. None is fine — they can add one any
+time on the app's Season page.
 
 For lifters on Garmin: **how they log dumbbell weight** (per dumbbell, or both summed) →
 `workouts/LOGGING_RULES.json`. And the language for the step names on the watch.
