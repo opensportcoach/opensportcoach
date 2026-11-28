@@ -606,9 +606,9 @@ function Week({ t }: { t: any }) {
                     </span>
                   )}
                   {done && <span className="n" style={{ fontSize: 15, color: 'var(--tx2)' }}>Load {done.load}{done.distanceKm ? ` · ${done.distanceKm} km` : ` · ${done.durationMin} min`}</span>}
-                  <span style={{ marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 11, fontWeight: 600, color: done ? 'var(--g)' : notOnWatch ? 'var(--y)' : sched ? 'var(--g)' : plan ? 'var(--tx2)' : 'var(--tx3)' }}>
-                    <Icon d={done ? IC.check : notOnWatch ? IC.warn : sched ? IC.check : plan ? IC.clock : IC.minus} size={11} sw={2.8} />
-                    {done ? 'Done' : notOnWatch ? 'Changed · not on the watch' : sched ? 'On the watch' : plan ? (plan.workout ? 'Planned · goes on the watch' : 'Planned · off the watch') : raceOnly ? (d.isFuture ? 'Race day' : d.isToday ? 'Race day · nothing logged yet' : 'Nothing logged') : d.isFuture ? 'Planned' : d.isToday ? 'Nothing logged yet' : 'Rested'}
+                  <span style={{ marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 11, fontWeight: 600, color: done ? 'var(--g)' : notOnWatch ? 'var(--y)' : sched || plan?.on_watch ? 'var(--g)' : plan ? 'var(--tx2)' : 'var(--tx3)' }}>
+                    <Icon d={done ? IC.check : notOnWatch ? IC.warn : sched || plan?.on_watch ? IC.check : plan ? IC.clock : IC.minus} size={11} sw={2.8} />
+                    {done ? 'Done' : notOnWatch ? 'Changed · not on the watch' : sched || plan?.on_watch ? 'On the watch' : plan ? (plan.workout ? 'Planned · goes on the watch' : 'Planned · off the watch') : raceOnly ? (d.isFuture ? 'Race day' : d.isToday ? 'Race day · nothing logged yet' : 'Nothing logged') : d.isFuture ? 'Planned' : d.isToday ? 'Nothing logged yet' : 'Rested'}
                   </span>
                 </Link>
                 {flagDay && (

@@ -418,7 +418,7 @@ def _week_plan(A, start: str, end: str, acts: list) -> dict:
         return out
 
     out = []
-    for i in ed.load("scheduled.json") or []:
+    for i in _scheduled(A):
         d, title = i.get("date") or "", (i.get("title") or "").strip()
         if start <= d <= end:
             tk = i.get("sportTypeKey")
@@ -546,7 +546,7 @@ def v_today(A) -> dict:
               "sport": i.get("sportTypeKey"), "badge": sports.badge(i.get("sportTypeKey")),
               "done": bool(i.get("associatedActivityId")),
               "day": names.get((i.get("title") or "").strip())}
-             for i in (ed.load("scheduled.json") or []) if monday <= (i.get("date") or "") <= sunday]
+             for i in _scheduled(A) if monday <= (i.get("date") or "") <= sunday]
     trends = dash.get("trends") or {}
     return {
         "today": today,
@@ -1451,9 +1451,10 @@ def _week(A, days_by_key: dict, sync: dict, planned_today: str) -> dict:
             ss = [session({"day": by_name.get(x.get("title")),
                            "workout": None if x.get("title") in by_name else managed_names.get(x.get("title")),
                            "sport": x.get("sportTypeKey"), "title": x.get("title")})
-                  for x in (ed.load("scheduled.json") or []) if x.get("date") == day_iso]
+                  for x in _scheduled(A) if x.get("date") == day_iso]
             ss += [session({"sport": p["sport"], "title": p["title"], "detail": p.get("detail"),
-                            "platform": p.get("platform")}) for p in _planned(A, start, end) if p["date"] == day_iso]
+                            "platform": p.get("platform"), "workout": p.get("workout")})
+                   for p in _planned(A, start, end) if p["date"] == day_iso]
             out.append({"dow": k, "sessions": ss})
         source = "calendar"
     for i, d in enumerate(out):
@@ -1656,6 +1657,44 @@ def _planned_badge(i: dict) -> dict:
     return {**b, "sport": PLATFORMS[p], "icon": p} if p in PLATFORMS else b
 
 
+# What a plan.json session carries that a Garmin calendar entry cannot: the Zwift workout to open, what the
+# session is for (its fuel reads it) and the app that runs it.
+PLAN_ONLY = ("zwift_workout", "intent", "platform")
+
+
+def _mirrors(A, sched: list | None = None) -> dict:
+    """The Garmin calendar entries a plan.json session stands for: (date, title) → that calendar entry.
+
+    A plan session MIRRORS a watch entry when it names the managed `workout` Garmin has on that day AND
+    carries something the watch entry cannot (PLAN_ONLY). Then the app lists ONE entry, the plan
+    session's, with the watch's state on it. Before 2026-11-28 a Zwift ride and its watch copy showed
+    twice, and the rule that hid a plan session once Garmin had it would have kept the bare copy and
+    dropped the Zwift link and the fuel. A plan session with none of those (an accepted week's gym day
+    waiting for the watch) still gives way to the watch entry, as before (2026-10-16). Matched on the
+    workout's own name and the date, never on the sport: two rides on one day stay two rides."""
+    f = A.plan_path
+    if not f.exists():
+        return {}
+    names = _workout_names(A)
+    sched = (_ed().load("scheduled.json") or []) if sched is None else sched
+    by_key = {(i.get("date"), (i.get("title") or "").strip()): i for i in sched}
+    out = {}
+    for p in json.loads(f.read_text()).get("sessions") or []:
+        if p.get("workout") and any(p.get(k) for k in PLAN_ONLY):
+            k = (p.get("date"), names.get(p["workout"], ""))
+            if k in by_key:
+                out[k] = by_key[k]
+    return out
+
+
+def _scheduled(A) -> list:
+    """Garmin's calendar (scheduled.json) as the app lists it: without the entries a plan.json session
+    stands for (_mirrors), since _planned lists that session in their place."""
+    sched = _ed().load("scheduled.json") or []
+    mirrored = _mirrors(A, sched)
+    return [i for i in sched if (i.get("date"), (i.get("title") or "").strip()) not in mirrored]
+
+
 def _planned(A, start: str, end: str | None = None) -> list:
     """Sessions the coach planned that are not on Garmin's calendar, from athletes/<name>/plan.json:
     those that never go to the watch — Zwift (Zwift runs it), the long ride, tennis — and, naming a
@@ -1663,8 +1702,9 @@ def _planned(A, start: str, end: str | None = None) -> list:
     and the next two days are kept there). Without the second kind an accepted week showed its later gym
     days as Rest (2026-10-16, his report: Legs on 10-20 accepted, Rest on the Plan screen). A watch
     session hides itself once Garmin's calendar has that workout on that day — the watch entry shows it
-    then. `done` when that day logged the same kind of sport, the rule the Plan screen applies to watch
-    entries."""
+    then — unless it MIRRORS that entry (_mirrors: it carries a Zwift workout, an intent or a platform),
+    when it stays as the one entry, `on_watch` true. `done` when that day logged the same kind of sport,
+    the rule the Plan screen applies to watch entries, or when the watch entry it mirrors is done."""
     f = A.plan_path
     if not f.exists():
         return []
@@ -1673,8 +1713,13 @@ def _planned(A, start: str, end: str | None = None) -> list:
     if not items:
         return []
     names = _workout_names(A)
-    on_watch = {(i.get("date"), (i.get("title") or "").strip()) for i in (_ed().load("scheduled.json") or [])}
-    items = [i for i in items if not (i.get("workout") and (i["date"], names.get(i["workout"], "")) in on_watch)]
+    sched = _ed().load("scheduled.json") or []
+    on_watch = {(i.get("date"), (i.get("title") or "").strip()) for i in sched}
+    mirrored = _mirrors(A, sched)
+
+    def watch_key(i: dict) -> tuple:
+        return (i["date"], names.get(i.get("workout"), "")) if i.get("workout") else (None, None)
+    items = [i for i in items if watch_key(i) not in on_watch or watch_key(i) in mirrored]
     logged = {(a["startTimeLocal"][:10], sports.badge((a.get("activityType") or {}).get("typeKey"))["icon"])
               for a in _ed().all_activities() if a["startTimeLocal"][:10] >= start}
     import fuel
@@ -1687,7 +1732,9 @@ def _planned(A, start: str, end: str | None = None) -> list:
              # Its fuel (docs/DESIGN.md (fuelling and score) §4): from its intent and minutes, in the athlete's own
              # products — null when it names no intent, since the rule needs one and guesses none.
              "intent": i.get("intent"), "fuel": fuel.for_session(i, cfg, cat),
-             "done": (i["date"], sports.badge(i["sport"])["icon"]) in logged}
+             "on_watch": watch_key(i) in mirrored,
+             "done": (i["date"], sports.badge(i["sport"])["icon"]) in logged
+                     or bool((mirrored.get(watch_key(i)) or {}).get("associatedActivityId"))}
             for i in sorted(items, key=lambda i: i["date"])]
 
 
@@ -1881,7 +1928,7 @@ def v_races(A) -> dict:
 @view("calendar")
 def v_calendar(A) -> dict:
     ed = _ed()
-    sched = ed.load("scheduled.json") or []
+    sched = _scheduled(A)
     start = (TODAY() - dt.timedelta(days=42)).isoformat()
     done = [{"date": a["startTimeLocal"][:10], "id": a["activityId"], "title": a.get("activityName"),
              "group": _sid_group(a), **sports.badge((a.get("activityType") or {}).get("typeKey"))}

@@ -738,7 +738,10 @@ def test_off_watch_plan_is_well_formed():
     screens show beside the Garmin calendar. Every entry needs a real date, a title and a sport the app
     can name. A watch session names its managed `workout` and carries that workout's own name and sport,
     so the app can hide it once Garmin's calendar has it (2026-10-16); any other entry may not be a
-    watch workout, or the same session would show twice and a push would never be offered for it."""
+    watch workout, or the same session would show twice and a push would never be offered for it.
+    A MIRROR (2026-11-28) names its `workout` and carries what the watch entry cannot (a Zwift workout,
+    an intent, a platform: app_data.PLAN_ONLY): it keeps its own title, in the workout's sport group,
+    and the app folds the watch entry into it."""
     if not A.plan_path.exists():
         return
     import sports
@@ -753,8 +756,13 @@ def test_off_watch_plan_is_well_formed():
         if s.get("workout"):
             assert s["workout"] in A.managed, f"{s['workout']!r} is not one of the managed workouts"
             w = json.loads((A.workouts_dir / f"{s['workout']}.json").read_text())
-            assert s["title"] == w.get("workoutName"), f"{s['date']}: title {s['title']!r} must be {w.get('workoutName')!r}"
-            assert s["sport"] == (w.get("sportType") or {}).get("sportTypeKey"), f"{s['date']}: sport must be the workout's"
+            wsport = (w.get("sportType") or {}).get("sportTypeKey")
+            if any(s.get(k) for k in __import__("app_data").PLAN_ONLY):
+                assert sports.group(s["sport"]) == sports.group(wsport), (
+                    f"{s['date']}: {s['sport']} mirrors a {wsport} workout — not the same sport")
+            else:
+                assert s["title"] == w.get("workoutName"), f"{s['date']}: title {s['title']!r} must be {w.get('workoutName')!r}"
+                assert s["sport"] == wsport, f"{s['date']}: sport must be the workout's"
         else:
             assert s["title"] not in watch, f"{s['title']} is a watch workout — name it as `workout`, or schedule it"
         import app_data
@@ -828,6 +836,49 @@ def test_an_accepted_watch_session_shows_until_the_watch_has_it():
         finally:
             app_data._ed = saved
     assert got == [("2026-10-20", "Gym · Legs + Speed", "d3_legs"), ("2026-10-20", "Long ride", None)], got
+
+
+def test_a_plan_session_that_mirrors_a_watch_entry_lists_once_with_both():
+    """A Zwift ride in plan.json and its copy on the watch are one session (2026-11-28): the app lists the
+    plan session — its Zwift workout, intent and fuel — once, marked on the watch, and the calendar entry
+    it stands for drops out of every list. A placeholder with nothing the watch lacks still gives way to
+    the watch entry, and a second ride the same day that the plan does not name stays."""
+    import tempfile
+    import types
+    import app_data
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        for key, name, sport in (("zw_easy", "Zwift · Easy", "cycling"), ("d3_legs", "Gym · Legs + Speed", "strength_training"),
+                                 ("ride_long", "Ride · Long", "cycling")):
+            (tmp / f"{key}.json").write_text(json.dumps({"workoutName": name, "sportType": {"sportTypeKey": sport}}))
+        zw = {"name": "Some Workout", "url": "https://whatsonzwift.com/workouts/endurance/some-workout", "duration_min": 45}
+        (tmp / "plan.json").write_text(json.dumps({"sessions": [
+            {"date": "2030-01-02", "title": "Zwift · Easy Z2 45′", "sport": "virtual_ride", "platform": "zwift",
+             "intent": "endurance", "duration_min": 45, "zwift_workout": zw, "workout": "zw_easy"},
+            {"date": "2030-01-03", "title": "Gym · Legs + Speed", "sport": "strength_training", "workout": "d3_legs"},
+            {"date": "2030-01-04", "title": "Zwift · Easy Z2 45′", "sport": "virtual_ride", "platform": "zwift",
+             "intent": "endurance", "duration_min": 45, "zwift_workout": zw, "workout": "zw_easy"}]}))
+        fake_a = types.SimpleNamespace(plan_path=tmp / "plan.json", managed=["zw_easy", "d3_legs", "ride_long"],
+                                       workouts_dir=tmp, fuel_path=tmp / "fuel.json")
+        cal = [{"date": "2030-01-02", "title": "Zwift · Easy", "associatedActivityId": None},
+               {"date": "2030-01-02", "title": "Ride · Long"},
+               {"date": "2030-01-03", "title": "Gym · Legs + Speed"}]
+        fake_ed = types.SimpleNamespace(load=lambda name: cal if name == "scheduled.json" else None, all_activities=lambda: [])
+        saved = app_data._ed
+        app_data._ed = lambda: fake_ed
+        try:
+            planned = app_data._planned(fake_a, "2030-01-01")
+            listed = [(i["date"], i["title"]) for i in app_data._scheduled(fake_a)]
+            cal[0]["associatedActivityId"] = 123   # the copy was started: the session counts as done
+            done = [p["done"] for p in app_data._planned(fake_a, "2030-01-01")]
+        finally:
+            app_data._ed = saved
+    got = [(p["date"], p["title"], p["on_watch"], bool(p["zwift_workout"]), p["intent"]) for p in planned]
+    assert got == [("2030-01-02", "Zwift · Easy Z2 45′", True, True, "endurance"),
+                   ("2030-01-04", "Zwift · Easy Z2 45′", False, True, "endurance")], got
+    assert listed == [("2030-01-02", "Ride · Long"), ("2030-01-03", "Gym · Legs + Speed")], (
+        "the mirrored copy is still listed, or an unmirrored entry was dropped", listed)
+    assert done == [True, False], done
 
 
 def test_app_fixtures_build_and_honour_their_contracts():
@@ -2155,8 +2206,8 @@ def test_the_gate_passes_cardio_and_refuses_unproven_sports():
               "workoutSegments": [{"segmentOrder": 1, "sportType": sport, "workoutSteps": [step]}]}
     ok, report = _validate(cardio)
     assert ok, f"a well-formed cardio workout failed the gate: {report}"
-    # Running became a format on 2026-10-11; cycling workouts are still unproven here.
-    cardio["sportType"] = {"sportTypeId": 2, "sportTypeKey": "cycling"}
+    # Running became a format on 2026-10-11 and cycling on 2026-11-28; hiking is still unproven here.
+    cardio["sportType"] = {"sportTypeId": 18, "sportTypeKey": "hiking"}
     assert not _validate(cardio)[0], "a sport with no proven payload format passed the gate"
 
 
@@ -2235,6 +2286,80 @@ def test_the_sync_signature_carries_a_run_target_and_spares_every_other_step():
     rows = json.loads(sw.comparable(base))["steps"]
     assert len(rows[0]) == 10, "a no-target step's signature changed shape — every recorded hash would break"
     assert len(rows[1]) == 14 and rows[1][10:] == ["heart.rate.zone", 118.0, 140.0, None]
+
+
+# --- rides (2026-11-28) ---------------------------------------------------------
+# A ride step carries one target, a custom power range in watts or a heart-rate range in bpm, as an
+# alert on the watch. Connect calls the power range "power.zone" (id 2) with the watts in
+# targetValueOne/Two and no zone number. A ride never ends on distance: indoors the distance is the
+# trainer app's, and outdoors the plan is time or the lap button.
+
+def _ride():
+    import workout_dsl as d
+    return d.ride_workout("TEST · Ride", "A test ride.", [
+        d.Ride("warmup", seconds=600, note="Easy spin"),
+        d.Ride("interval", seconds=900, watts=(205, 215), note="Tempo"),
+        d.Repeat(3, [d.Ride("interval", seconds=180, watts=(290, 305)),
+                     d.Ride("recovery", seconds=180, note="Easy")]),
+        d.Ride("interval", hr=(95, 138), note="Z2 home. Lap when done.", estimate_s=3600),
+        d.Ride("cooldown", seconds=300)])
+
+
+def test_a_ride_encodes_power_and_heart_rate_targets_and_its_estimate():
+    import workout_dsl as d
+    wk = _ride()
+    assert wk["sportType"] == {"sportTypeId": 2, "sportTypeKey": "cycling", "displayOrder": 2}
+    st = wk["workoutSegments"][0]["workoutSteps"]
+    assert st[1]["targetType"] == {"workoutTargetTypeId": 2, "workoutTargetTypeKey": "power.zone", "displayOrder": 2}
+    assert (st[1]["targetValueOne"], st[1]["targetValueTwo"], st[1]["zoneNumber"]) == (205.0, 215.0, None)
+    assert st[3]["targetType"]["workoutTargetTypeKey"] == "heart.rate.zone" and st[3]["targetValueTwo"] == 138.0
+    assert st[3]["endCondition"]["conditionTypeKey"] == "lap.button" and st[0]["targetType"]["workoutTargetTypeKey"] == "no.target"
+    assert wk["estimatedDurationInSecs"] == 600 + 900 + 3 * 360 + 3600 + 300
+    for bad in (lambda: d.ride_workout("R", None, [d.Ride("interval", seconds=60, watts=(200, 210), hr=(120, 140))]),
+                lambda: d.ride_workout("R", None, [d.Ride("interval", seconds=60, watts=(210, 200))]),
+                lambda: d.ride_workout("R", None, [d.Ride("interval", seconds=60, watts=(0, 200))]),
+                lambda: d.ride_workout("R", None, [d.Ride("interval", note="no estimate")]),
+                lambda: d.run_workout("R", None, [d.Ride("interval", seconds=60)])):
+        try:
+            bad()
+        except ValueError:
+            continue
+        raise AssertionError("two targets, an inverted or zero power range, a lap step with no estimate, "
+                             "or a ride step in a run was accepted")
+
+
+def test_the_gate_passes_a_ride_and_checks_its_targets():
+    check = _validate
+    ok, report = check(_ride())
+    assert ok, f"a well-formed ride failed the gate: {report}"
+
+    def broken(mutate, n=1):
+        wk = _ride()
+        mutate(wk["workoutSegments"][0]["workoutSteps"][n])
+        return not check(wk)[0]
+    assert broken(lambda st: st["targetType"].update(workoutTargetTypeId=4)), (
+        "a power key carrying the heart-rate id passed — Garmin reads the id")
+    assert broken(lambda st: st.update(targetValueOne=0.81, targetValueTwo=0.85)), (
+        "a power range given as a fraction of FTP passed (it would alert at 1 W)")
+    assert broken(lambda st: st.update(zoneNumber=3)), "an unproven power zone-number target passed"
+    assert broken(lambda st: st.update(endCondition=_cond("distance"), endConditionValue=10000)), (
+        "a ride step ending on distance passed")
+    run = _run()
+    run["workoutSegments"][0]["workoutSteps"][1].update(
+        targetType={"workoutTargetTypeId": 2, "workoutTargetTypeKey": "power.zone"}, targetValueOne=200.0,
+        targetValueTwo=250.0)
+    assert not _validate(run)[0], "a power target on a run passed: it is proven on rides only"
+
+
+def test_the_sync_signature_carries_a_ride_power_target():
+    import copy
+    import sync_workouts as sw
+    base = _ride()
+    changed = copy.deepcopy(base)
+    changed["workoutSegments"][0]["workoutSteps"][1]["targetValueTwo"] = 220.0
+    assert sw.comparable(base) != sw.comparable(changed), "a power target change is invisible to sync"
+    rows = json.loads(sw.comparable(base))["steps"]
+    assert rows[1][10:] == ["power.zone", 205.0, 215.0, None], rows[1]
 
 
 def test_sync_supersedes_a_renamed_workout_by_its_previous_name():

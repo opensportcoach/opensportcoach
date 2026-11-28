@@ -5,7 +5,7 @@ Usage:
   python scripts/validate_workout.py athletes/<name>/workouts/<file>.json
 
 Dispatches on the workout's sportTypeKey to the rules for each PROVEN payload format
-(workouts/FORMAT.md): strength_training, swimming (pool) and cardio_training. A sport with no
+(workouts/FORMAT.md): strength_training, swimming (pool), cardio_training, running, cycling and mobility. A sport with no
 proven format FAILS — an unproven payload is exactly what this gate exists to stop.
 
 Every format: workoutName, segments whose sport matches the workout's, repeat groups with
@@ -22,6 +22,9 @@ Per format:
   cardio_training    work ends on time/distance/reps/lap.button.
   running            work ends on time/distance/lap.button; a target is no.target or a custom
                      heart-rate range in bpm (60 <= low < high <= 220). Format added 2026-10-11.
+  cycling            work ends on time/lap.button (never distance); a target is no.target, a custom
+                     power range in watts (1 <= low < high <= 2000) or a heart-rate range in bpm.
+                     Format added 2026-11-28.
 
 Every step: stepTypeId must agree with its stepTypeKey, and targetType id with its key — Garmin
 reads the ids and re-resolves the names, so a wrong id comes back looking plausible.
@@ -54,6 +57,7 @@ WORK_END = {
     "swimming": {"distance", "time", "lap.button"},
     "cardio_training": {"time", "distance", "reps", "lap.button"},
     "running": {"time", "distance", "lap.button"},
+    "cycling": {"time", "lap.button"},
     "mobility": {"time", "lap.button"},
 }
 
@@ -64,9 +68,10 @@ STEP_TYPE_IDS = {"warmup": 1, "cooldown": 2, "interval": 3, "recovery": 4, "rest
 
 # workoutTargetTypeKey -> workoutTargetTypeId, and the sports each target is allowed on. Only
 # targets this repo generates are listed: anything else fails until it is proven by a round trip.
-TARGET_TYPE_IDS = {"no.target": 1, "heart.rate.zone": 4}
-TARGET_SPORTS = {"heart.rate.zone": {"running"}}
+TARGET_TYPE_IDS = {"no.target": 1, "power.zone": 2, "heart.rate.zone": 4}
+TARGET_SPORTS = {"heart.rate.zone": {"running", "cycling"}, "power.zone": {"cycling"}}
 HR_BPM = (60, 220)
+POWER_W = (1, 2000)
 
 
 def iter_steps(steps):
@@ -111,6 +116,11 @@ def target_error(step: dict, sport: str) -> str | None:
             return "heart-rate target by zone number is unproven; give a bpm range"
         if not (_num(lo) and _num(hi) and HR_BPM[0] <= lo < hi <= HR_BPM[1]):
             return f"heart-rate range {lo!r}-{hi!r} must be bpm with {HR_BPM[0]} <= low < high <= {HR_BPM[1]}"
+    if key == "power.zone":
+        if step.get("zoneNumber") is not None:
+            return "power target by zone number is unproven; give a range in watts"
+        if not (_num(lo) and _num(hi) and POWER_W[0] <= lo < hi <= POWER_W[1]):
+            return f"power range {lo!r}-{hi!r} must be watts with {POWER_W[0]} <= low < high <= {POWER_W[1]}"
     return None
 
 
@@ -237,7 +247,7 @@ def validate(path: Path) -> tuple[bool, list[str]]:
                     fail(f"{label}: {value} m is not a whole number of {pool} m lengths")
                     continue
                 report.append(f"[OK]   {label}: {end} {value} stroke={stroke} equipment={equip}")
-            elif sport == "running":
+            elif sport in ("running", "cycling"):
                 t = step.get("targetType") or {}
                 tgt = t.get("workoutTargetTypeKey") or "no.target"
                 rng = "" if tgt == "no.target" else f" {step.get('targetValueOne'):g}-{step.get('targetValueTwo'):g}"
