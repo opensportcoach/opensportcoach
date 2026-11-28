@@ -1,28 +1,24 @@
 {
  "view": "workout",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:18",
+ "generated_at": "2026-11-28T14:13:07",
  "id": 21000000010,
- "date": "2026-11-20",
- "start": "2026-11-20 09:30:00",
- "group": "swim",
- "type": "lap_swimming",
- "sport": "Pool swim",
- "icon": "swim",
- "kind": "endurance",
- "title": "Pool swim",
+ "date": "2026-11-28",
+ "start": "2026-11-28 18:04:00",
+ "group": "strength",
+ "type": "strength_training",
+ "sport": "Strength",
+ "icon": "strength",
+ "kind": "strength",
+ "title": "D1 · Push",
  "summary": {
-  "duration": 2520.0,
-  "movingDuration": 2290.0,
-  "distance": 1700.0,
-  "averageSpeed": 0.6944444444444444,
-  "averageHR": 132,
-  "maxHR": 158,
-  "calories": 340,
-  "activityTrainingLoad": 38,
-  "poolLength": 25.0,
-  "activeLengths": 68,
-  "averageSwolf": 41
+  "duration": 3018.9,
+  "averageHR": 104,
+  "maxHR": 153,
+  "calories": 431,
+  "activityTrainingLoad": 19,
+  "aerobicTrainingEffect": 1.8,
+  "anaerobicTrainingEffect": 1.2
  },
  "annotation": null,
  "reviews": [],
@@ -92,779 +88,3214 @@
    "caffeine"
   ],
   "due": false,
-  "minutes": 38,
-  "loggable": false
+  "minutes": 50,
+  "loggable": true
  },
  "score": {
   "id": 21000000010,
-  "date": "2026-11-20",
-  "title": "Pool swim",
-  "type": "lap_swimming",
-  "group": "swim",
-  "total": 96,
+  "date": "2026-11-28",
+  "title": "D1 · Push",
+  "type": "strength_training",
+  "group": "strength",
+  "total": 100,
   "band": "as_planned",
   "band_label": "As planned",
   "parts": [
    {
-    "key": "distance",
-    "label": "Distance",
+    "key": "sets",
+    "label": "Sets done",
     "weight": 35,
-    "measure": "swum vs planned: ±10 % full, ±50 % nothing",
-    "planned_text": "1,800 m",
-    "done_text": "1,700 m",
+    "measure": "done ÷ planned, capped at planned",
+    "planned_text": "19 sets",
+    "done_text": "19",
     "detail": {
-     "planned_m": 1800,
-     "swum_m": 1700
+     "planned": 19,
+     "done": 19,
+     "skipped": [],
+     "unknown": 0
     },
     "score": 1.0,
     "points": 35.0,
     "dropped": null
    },
    {
-    "key": "swims",
-    "label": "Swims done",
-    "weight": 40,
-    "measure": "planned swims matched by a lap ÷ planned",
-    "planned_text": "11 swims",
-    "done_text": "10",
-    "detail": {
-     "planned": 11,
-     "done": 10
-    },
-    "score": 0.909,
-    "points": 36.4,
-    "dropped": null
-   },
-   {
-    "key": "swim_pacing",
-    "label": "Pacing",
+    "key": "reps",
+    "label": "Reps",
     "weight": 25,
-    "measure": "evenness of each repeated set: pace spread 3 % or under full",
-    "planned_text": "even sets · within 3 %",
-    "done_text": "spread 2.7 % at worst",
+    "measure": "hit ÷ target on each set, capped",
+    "planned_text": "209 reps",
+    "done_text": "209 reps",
     "detail": {
-     "sets": 1,
-     "worst_spread": 0.027
+     "sets": 19,
+     "rep_target": 209,
+     "rep_done": 209,
+     "sec_target": 0,
+     "sec_done": 0
     },
     "score": 1.0,
     "points": 25.0,
     "dropped": null
+   },
+   {
+    "key": "load",
+    "label": "Load",
+    "weight": 25,
+    "measure": "lifted ÷ asked, capped at 100 % — over is flagged, not rewarded",
+    "planned_text": "as prescribed",
+    "done_text": "100 % of the ask",
+    "detail": {
+     "sets": 19,
+     "flagged": 0
+    },
+    "score": 1.0,
+    "points": 25.0,
+    "dropped": null
+   },
+   {
+    "key": "rest",
+    "label": "Rest",
+    "weight": 10,
+    "measure": "rests inside 0.75–1.5 × the prescribed rest",
+    "planned_text": "13 rests in their window",
+    "done_text": "13",
+    "detail": {
+     "in_band": 13,
+     "rests": 13
+    },
+    "score": 1.0,
+    "points": 10.0,
+    "dropped": null
    }
   ],
   "coverage": 1.0,
-  "out_of": 100,
-  "earned": 96.4,
+  "out_of": 95,
+  "earned": 95.0,
   "excluded": null,
-  "against": "Swim · Aerobic 1800 · the workout the watch ran",
-  "summary": "1 of 11 planned swims not done. Everything else was on target.",
+  "against": "D1 · Push · program.py (working copy)",
+  "summary": "Done as agreed.",
   "headline": null,
-  "foot": "Score = 96.4 ÷ 100 points that could be scored.",
+  "foot": "Score = 95.0 ÷ 95 points that could be scored.",
   "capped": null,
   "provisional": false,
-  "flags": [
+  "flags": [],
+  "day": "d1",
+  "rows": [
    {
-    "key": "missed",
-    "text": "1 planned swim has no matching lap."
+    "exid": "D1E1",
+    "label": "Bench press",
+    "key": [
+     "BENCH_PRESS",
+     "BARBELL_BENCH_PRESS"
+    ],
+    "planned": "4 × 8 @ 80",
+    "sets": [
+     4,
+     4
+    ],
+    "done": "8 @ 80 · 8 @ 80 · 8 @ 80 · 8 @ 80",
+    "reps": 1.0,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   },
+   {
+    "exid": "D1E2",
+    "label": "Incline DB press",
+    "key": [
+     "BENCH_PRESS",
+     "INCLINE_DUMBBELL_BENCH_PRESS"
+    ],
+    "planned": "3 × 10 @ 26",
+    "sets": [
+     3,
+     3
+    ],
+    "done": "10 @ 26 · 10 @ 26 · 10 @ 26",
+    "reps": 1.0,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   },
+   {
+    "exid": "D1E3",
+    "label": "Seated DB press",
+    "key": [
+     "SHOULDER_PRESS",
+     "SEATED_DUMBBELL_SHOULDER_PRESS"
+    ],
+    "planned": "3 × 10 @ 20",
+    "sets": [
+     3,
+     3
+    ],
+    "done": "10 @ 20 · 10 @ 20 · 10 @ 20",
+    "reps": 1.0,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   },
+   {
+    "exid": "D1E4",
+    "label": "Lateral raise",
+    "key": [
+     "LATERAL_RAISE",
+     "DUMBBELL_LATERAL_RAISE"
+    ],
+    "planned": "3 × 15 @ 10",
+    "sets": [
+     3,
+     3
+    ],
+    "done": "15 @ 10 · 15 @ 10 · 15 @ 10",
+    "reps": 1.0,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   },
+   {
+    "exid": "D1E5",
+    "label": "Cable crossover",
+    "key": [
+     "FLYE",
+     "CABLE_CROSSOVER"
+    ],
+    "planned": "3 × 12 @ 15",
+    "sets": [
+     3,
+     3
+    ],
+    "done": "12 @ 15 · 12 @ 15 · 12 @ 15",
+    "reps": 1.0,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   },
+   {
+    "exid": "D1E6",
+    "label": "Rope pressdown",
+    "key": [
+     "TRICEPS_EXTENSION",
+     "ROPE_PRESSDOWN"
+    ],
+    "planned": "3 × 12 @ 32",
+    "sets": [
+     3,
+     3
+    ],
+    "done": "12 @ 32.5 · 12 @ 32.5 · 12 @ 32.5",
+    "reps": 1.0,
+    "load": 1.0,
+    "load_dropped": null,
+    "dropped": null
+   }
+  ],
+  "chips": [],
+  "unnamed_sets": 0
+ },
+ "hr": [
+  [
+   0,
+   96
+  ],
+  [
+   5,
+   97
+  ],
+  [
+   10,
+   99
+  ],
+  [
+   15,
+   99
+  ],
+  [
+   20,
+   97
+  ],
+  [
+   25,
+   98
+  ],
+  [
+   30,
+   95
+  ],
+  [
+   35,
+   94
+  ],
+  [
+   40,
+   97
+  ],
+  [
+   45,
+   94
+  ],
+  [
+   50,
+   93
+  ],
+  [
+   55,
+   91
+  ],
+  [
+   60,
+   98
+  ],
+  [
+   65,
+   91
+  ],
+  [
+   70,
+   100
+  ],
+  [
+   75,
+   95
+  ],
+  [
+   80,
+   95
+  ],
+  [
+   85,
+   96
+  ],
+  [
+   90,
+   97
+  ],
+  [
+   95,
+   101
+  ],
+  [
+   100,
+   94
+  ],
+  [
+   105,
+   99
+  ],
+  [
+   110,
+   92
+  ],
+  [
+   115,
+   92
+  ],
+  [
+   120,
+   98
+  ],
+  [
+   125,
+   96
+  ],
+  [
+   130,
+   100
+  ],
+  [
+   135,
+   98
+  ],
+  [
+   140,
+   99
+  ],
+  [
+   145,
+   94
+  ],
+  [
+   150,
+   98
+  ],
+  [
+   155,
+   95
+  ],
+  [
+   160,
+   97
+  ],
+  [
+   165,
+   98
+  ],
+  [
+   170,
+   101
+  ],
+  [
+   175,
+   94
+  ],
+  [
+   180,
+   98
+  ],
+  [
+   185,
+   101
+  ],
+  [
+   190,
+   92
+  ],
+  [
+   195,
+   99
+  ],
+  [
+   200,
+   93
+  ],
+  [
+   205,
+   97
+  ],
+  [
+   210,
+   96
+  ],
+  [
+   215,
+   98
+  ],
+  [
+   220,
+   99
+  ],
+  [
+   225,
+   92
+  ],
+  [
+   230,
+   98
+  ],
+  [
+   235,
+   97
+  ],
+  [
+   240,
+   96
+  ],
+  [
+   245,
+   96
+  ],
+  [
+   250,
+   94
+  ],
+  [
+   255,
+   94
+  ],
+  [
+   260,
+   100
+  ],
+  [
+   265,
+   94
+  ],
+  [
+   270,
+   97
+  ],
+  [
+   275,
+   101
+  ],
+  [
+   280,
+   97
+  ],
+  [
+   285,
+   96
+  ],
+  [
+   290,
+   96
+  ],
+  [
+   295,
+   96
+  ],
+  [
+   300,
+   93
+  ],
+  [
+   305,
+   97
+  ],
+  [
+   310,
+   97
+  ],
+  [
+   315,
+   99
+  ],
+  [
+   320,
+   96
+  ],
+  [
+   325,
+   102
+  ],
+  [
+   330,
+   95
+  ],
+  [
+   335,
+   102
+  ],
+  [
+   340,
+   98
+  ],
+  [
+   345,
+   100
+  ],
+  [
+   350,
+   103
+  ],
+  [
+   355,
+   101
+  ],
+  [
+   360,
+   96
+  ],
+  [
+   365,
+   101
+  ],
+  [
+   370,
+   101
+  ],
+  [
+   375,
+   102
+  ],
+  [
+   380,
+   95
+  ],
+  [
+   385,
+   100
+  ],
+  [
+   390,
+   104
+  ],
+  [
+   395,
+   103
+  ],
+  [
+   400,
+   100
+  ],
+  [
+   405,
+   95
+  ],
+  [
+   410,
+   95
+  ],
+  [
+   415,
+   95
+  ],
+  [
+   420,
+   102
+  ],
+  [
+   425,
+   95
+  ],
+  [
+   430,
+   99
+  ],
+  [
+   435,
+   103
+  ],
+  [
+   440,
+   101
+  ],
+  [
+   445,
+   98
+  ],
+  [
+   450,
+   95
+  ],
+  [
+   455,
+   97
+  ],
+  [
+   460,
+   101
+  ],
+  [
+   465,
+   96
+  ],
+  [
+   470,
+   101
+  ],
+  [
+   475,
+   99
+  ],
+  [
+   480,
+   101
+  ],
+  [
+   485,
+   101
+  ],
+  [
+   490,
+   97
+  ],
+  [
+   495,
+   103
+  ],
+  [
+   500,
+   97
+  ],
+  [
+   505,
+   98
+  ],
+  [
+   510,
+   98
+  ],
+  [
+   515,
+   98
+  ],
+  [
+   520,
+   95
+  ],
+  [
+   525,
+   96
+  ],
+  [
+   530,
+   102
+  ],
+  [
+   535,
+   102
+  ],
+  [
+   540,
+   97
+  ],
+  [
+   545,
+   97
+  ],
+  [
+   550,
+   104
+  ],
+  [
+   555,
+   96
+  ],
+  [
+   560,
+   102
+  ],
+  [
+   565,
+   105
+  ],
+  [
+   570,
+   102
+  ],
+  [
+   575,
+   103
+  ],
+  [
+   580,
+   97
+  ],
+  [
+   585,
+   103
+  ],
+  [
+   590,
+   100
+  ],
+  [
+   595,
+   101
+  ],
+  [
+   600,
+   97
+  ],
+  [
+   605,
+   103
+  ],
+  [
+   610,
+   97
+  ],
+  [
+   615,
+   105
+  ],
+  [
+   620,
+   103
+  ],
+  [
+   625,
+   106
+  ],
+  [
+   630,
+   99
+  ],
+  [
+   635,
+   106
+  ],
+  [
+   640,
+   97
+  ],
+  [
+   645,
+   99
+  ],
+  [
+   650,
+   102
+  ],
+  [
+   655,
+   99
+  ],
+  [
+   660,
+   97
+  ],
+  [
+   665,
+   104
+  ],
+  [
+   670,
+   104
+  ],
+  [
+   675,
+   103
+  ],
+  [
+   680,
+   98
+  ],
+  [
+   685,
+   101
+  ],
+  [
+   690,
+   101
+  ],
+  [
+   695,
+   101
+  ],
+  [
+   700,
+   98
+  ],
+  [
+   705,
+   106
+  ],
+  [
+   710,
+   99
+  ],
+  [
+   715,
+   104
+  ],
+  [
+   720,
+   102
+  ],
+  [
+   725,
+   101
+  ],
+  [
+   730,
+   100
+  ],
+  [
+   735,
+   99
+  ],
+  [
+   740,
+   106
+  ],
+  [
+   745,
+   105
+  ],
+  [
+   750,
+   99
+  ],
+  [
+   755,
+   102
+  ],
+  [
+   760,
+   100
+  ],
+  [
+   765,
+   102
+  ],
+  [
+   770,
+   105
+  ],
+  [
+   775,
+   100
+  ],
+  [
+   780,
+   104
+  ],
+  [
+   785,
+   107
+  ],
+  [
+   790,
+   105
+  ],
+  [
+   795,
+   107
+  ],
+  [
+   800,
+   107
+  ],
+  [
+   805,
+   99
+  ],
+  [
+   810,
+   107
+  ],
+  [
+   815,
+   103
+  ],
+  [
+   820,
+   99
+  ],
+  [
+   825,
+   107
+  ],
+  [
+   830,
+   107
+  ],
+  [
+   835,
+   107
+  ],
+  [
+   840,
+   102
+  ],
+  [
+   845,
+   104
+  ],
+  [
+   850,
+   108
+  ],
+  [
+   855,
+   101
+  ],
+  [
+   860,
+   104
+  ],
+  [
+   865,
+   107
+  ],
+  [
+   870,
+   103
+  ],
+  [
+   875,
+   99
+  ],
+  [
+   880,
+   100
+  ],
+  [
+   885,
+   103
+  ],
+  [
+   890,
+   106
+  ],
+  [
+   895,
+   99
+  ],
+  [
+   900,
+   104
+  ],
+  [
+   905,
+   102
+  ],
+  [
+   910,
+   106
+  ],
+  [
+   915,
+   101
+  ],
+  [
+   920,
+   107
+  ],
+  [
+   925,
+   100
+  ],
+  [
+   930,
+   106
+  ],
+  [
+   935,
+   103
+  ],
+  [
+   940,
+   104
+  ],
+  [
+   945,
+   100
+  ],
+  [
+   950,
+   107
+  ],
+  [
+   955,
+   103
+  ],
+  [
+   960,
+   101
+  ],
+  [
+   965,
+   102
+  ],
+  [
+   970,
+   101
+  ],
+  [
+   975,
+   105
+  ],
+  [
+   980,
+   109
+  ],
+  [
+   985,
+   109
+  ],
+  [
+   990,
+   105
+  ],
+  [
+   995,
+   103
+  ],
+  [
+   1000,
+   105
+  ],
+  [
+   1005,
+   104
+  ],
+  [
+   1010,
+   105
+  ],
+  [
+   1015,
+   108
+  ],
+  [
+   1020,
+   110
+  ],
+  [
+   1025,
+   101
+  ],
+  [
+   1030,
+   103
+  ],
+  [
+   1035,
+   106
+  ],
+  [
+   1040,
+   103
+  ],
+  [
+   1045,
+   110
+  ],
+  [
+   1050,
+   107
+  ],
+  [
+   1055,
+   107
+  ],
+  [
+   1060,
+   103
+  ],
+  [
+   1065,
+   106
+  ],
+  [
+   1070,
+   105
+  ],
+  [
+   1075,
+   105
+  ],
+  [
+   1080,
+   105
+  ],
+  [
+   1085,
+   103
+  ],
+  [
+   1090,
+   103
+  ],
+  [
+   1095,
+   105
+  ],
+  [
+   1100,
+   102
+  ],
+  [
+   1105,
+   111
+  ],
+  [
+   1110,
+   102
+  ],
+  [
+   1115,
+   106
+  ],
+  [
+   1120,
+   103
+  ],
+  [
+   1125,
+   103
+  ],
+  [
+   1130,
+   107
+  ],
+  [
+   1135,
+   110
+  ],
+  [
+   1140,
+   111
+  ],
+  [
+   1145,
+   104
+  ],
+  [
+   1150,
+   105
+  ],
+  [
+   1155,
+   108
+  ],
+  [
+   1160,
+   106
+  ],
+  [
+   1165,
+   103
+  ],
+  [
+   1170,
+   111
+  ],
+  [
+   1175,
+   109
+  ],
+  [
+   1180,
+   109
+  ],
+  [
+   1185,
+   104
+  ],
+  [
+   1190,
+   110
+  ],
+  [
+   1195,
+   104
+  ],
+  [
+   1200,
+   110
+  ],
+  [
+   1205,
+   110
+  ],
+  [
+   1210,
+   103
+  ],
+  [
+   1215,
+   102
+  ],
+  [
+   1220,
+   106
+  ],
+  [
+   1225,
+   112
+  ],
+  [
+   1230,
+   112
+  ],
+  [
+   1235,
+   112
+  ],
+  [
+   1240,
+   106
+  ],
+  [
+   1245,
+   111
+  ],
+  [
+   1250,
+   112
+  ],
+  [
+   1255,
+   108
+  ],
+  [
+   1260,
+   109
+  ],
+  [
+   1265,
+   112
+  ],
+  [
+   1270,
+   108
+  ],
+  [
+   1275,
+   111
+  ],
+  [
+   1280,
+   107
+  ],
+  [
+   1285,
+   104
+  ],
+  [
+   1290,
+   106
+  ],
+  [
+   1295,
+   105
+  ],
+  [
+   1300,
+   109
+  ],
+  [
+   1305,
+   109
+  ],
+  [
+   1310,
+   113
+  ],
+  [
+   1315,
+   109
+  ],
+  [
+   1320,
+   108
+  ],
+  [
+   1325,
+   104
+  ],
+  [
+   1330,
+   109
+  ],
+  [
+   1335,
+   109
+  ],
+  [
+   1340,
+   106
+  ],
+  [
+   1345,
+   112
+  ],
+  [
+   1350,
+   106
+  ],
+  [
+   1355,
+   105
+  ],
+  [
+   1360,
+   109
+  ],
+  [
+   1365,
+   107
+  ],
+  [
+   1370,
+   104
+  ],
+  [
+   1375,
+   110
+  ],
+  [
+   1380,
+   114
+  ],
+  [
+   1385,
+   104
+  ],
+  [
+   1390,
+   112
+  ],
+  [
+   1395,
+   112
+  ],
+  [
+   1400,
+   109
+  ],
+  [
+   1405,
+   107
+  ],
+  [
+   1410,
+   110
+  ],
+  [
+   1415,
+   109
+  ],
+  [
+   1420,
+   111
+  ],
+  [
+   1425,
+   112
+  ],
+  [
+   1430,
+   114
+  ],
+  [
+   1435,
+   112
+  ],
+  [
+   1440,
+   111
+  ],
+  [
+   1445,
+   105
+  ],
+  [
+   1450,
+   106
+  ],
+  [
+   1455,
+   108
+  ],
+  [
+   1460,
+   108
+  ],
+  [
+   1465,
+   114
+  ],
+  [
+   1470,
+   114
+  ],
+  [
+   1475,
+   110
+  ],
+  [
+   1480,
+   113
+  ],
+  [
+   1485,
+   110
+  ],
+  [
+   1490,
+   111
+  ],
+  [
+   1495,
+   112
+  ],
+  [
+   1500,
+   111
+  ],
+  [
+   1505,
+   111
+  ],
+  [
+   1510,
+   111
+  ],
+  [
+   1515,
+   112
+  ],
+  [
+   1520,
+   113
+  ],
+  [
+   1525,
+   111
+  ],
+  [
+   1530,
+   109
+  ],
+  [
+   1535,
+   111
+  ],
+  [
+   1540,
+   109
+  ],
+  [
+   1545,
+   115
+  ],
+  [
+   1550,
+   114
+  ],
+  [
+   1555,
+   114
+  ],
+  [
+   1560,
+   115
+  ],
+  [
+   1565,
+   115
+  ],
+  [
+   1570,
+   112
+  ],
+  [
+   1575,
+   115
+  ],
+  [
+   1580,
+   107
+  ],
+  [
+   1585,
+   106
+  ],
+  [
+   1590,
+   113
+  ],
+  [
+   1595,
+   107
+  ],
+  [
+   1600,
+   112
+  ],
+  [
+   1605,
+   113
+  ],
+  [
+   1610,
+   115
+  ],
+  [
+   1615,
+   113
+  ],
+  [
+   1620,
+   110
+  ],
+  [
+   1625,
+   112
+  ],
+  [
+   1630,
+   108
+  ],
+  [
+   1635,
+   111
+  ],
+  [
+   1640,
+   108
+  ],
+  [
+   1645,
+   114
+  ],
+  [
+   1650,
+   113
+  ],
+  [
+   1655,
+   115
+  ],
+  [
+   1660,
+   107
+  ],
+  [
+   1665,
+   111
+  ],
+  [
+   1670,
+   107
+  ],
+  [
+   1675,
+   109
+  ],
+  [
+   1680,
+   115
+  ],
+  [
+   1685,
+   115
+  ],
+  [
+   1690,
+   110
+  ],
+  [
+   1695,
+   110
+  ],
+  [
+   1700,
+   111
+  ],
+  [
+   1705,
+   112
+  ],
+  [
+   1710,
+   114
+  ],
+  [
+   1715,
+   114
+  ],
+  [
+   1720,
+   108
+  ],
+  [
+   1725,
+   108
+  ],
+  [
+   1730,
+   110
+  ],
+  [
+   1735,
+   117
+  ],
+  [
+   1740,
+   112
+  ],
+  [
+   1745,
+   112
+  ],
+  [
+   1750,
+   115
+  ],
+  [
+   1755,
+   112
+  ],
+  [
+   1760,
+   117
+  ],
+  [
+   1765,
+   113
+  ],
+  [
+   1770,
+   114
+  ],
+  [
+   1775,
+   118
+  ],
+  [
+   1780,
+   117
+  ],
+  [
+   1785,
+   114
+  ],
+  [
+   1790,
+   110
+  ],
+  [
+   1795,
+   108
+  ],
+  [
+   1800,
+   111
+  ],
+  [
+   1805,
+   111
+  ],
+  [
+   1810,
+   110
+  ],
+  [
+   1815,
+   114
+  ],
+  [
+   1820,
+   115
+  ],
+  [
+   1825,
+   113
+  ],
+  [
+   1830,
+   116
+  ],
+  [
+   1835,
+   118
+  ],
+  [
+   1840,
+   113
+  ],
+  [
+   1845,
+   118
+  ],
+  [
+   1850,
+   113
+  ],
+  [
+   1855,
+   112
+  ],
+  [
+   1860,
+   109
+  ],
+  [
+   1865,
+   109
+  ],
+  [
+   1870,
+   110
+  ],
+  [
+   1875,
+   116
+  ],
+  [
+   1880,
+   110
+  ],
+  [
+   1885,
+   118
+  ],
+  [
+   1890,
+   113
+  ],
+  [
+   1895,
+   109
+  ],
+  [
+   1900,
+   109
+  ],
+  [
+   1905,
+   113
+  ],
+  [
+   1910,
+   118
+  ],
+  [
+   1915,
+   116
+  ],
+  [
+   1920,
+   112
+  ],
+  [
+   1925,
+   115
+  ],
+  [
+   1930,
+   116
+  ],
+  [
+   1935,
+   114
+  ],
+  [
+   1940,
+   118
+  ],
+  [
+   1945,
+   119
+  ],
+  [
+   1950,
+   117
+  ],
+  [
+   1955,
+   111
+  ],
+  [
+   1960,
+   110
+  ],
+  [
+   1965,
+   113
+  ],
+  [
+   1970,
+   113
+  ],
+  [
+   1975,
+   110
+  ],
+  [
+   1980,
+   113
+  ],
+  [
+   1985,
+   115
+  ],
+  [
+   1990,
+   110
+  ],
+  [
+   1995,
+   114
+  ],
+  [
+   2000,
+   114
+  ],
+  [
+   2005,
+   111
+  ],
+  [
+   2010,
+   118
+  ],
+  [
+   2015,
+   113
+  ],
+  [
+   2020,
+   118
+  ],
+  [
+   2025,
+   120
+  ],
+  [
+   2030,
+   119
+  ],
+  [
+   2035,
+   117
+  ],
+  [
+   2040,
+   111
+  ],
+  [
+   2045,
+   114
+  ],
+  [
+   2050,
+   117
+  ],
+  [
+   2055,
+   116
+  ],
+  [
+   2060,
+   115
+  ],
+  [
+   2065,
+   115
+  ],
+  [
+   2070,
+   120
+  ],
+  [
+   2075,
+   114
+  ],
+  [
+   2080,
+   118
+  ],
+  [
+   2085,
+   112
+  ],
+  [
+   2090,
+   113
+  ],
+  [
+   2095,
+   118
+  ],
+  [
+   2100,
+   118
+  ],
+  [
+   2105,
+   120
+  ],
+  [
+   2110,
+   112
+  ],
+  [
+   2115,
+   121
+  ],
+  [
+   2120,
+   117
+  ],
+  [
+   2125,
+   115
+  ],
+  [
+   2130,
+   121
+  ],
+  [
+   2135,
+   119
+  ],
+  [
+   2140,
+   113
+  ],
+  [
+   2145,
+   120
+  ],
+  [
+   2150,
+   114
+  ],
+  [
+   2155,
+   113
+  ],
+  [
+   2160,
+   112
+  ],
+  [
+   2165,
+   114
+  ],
+  [
+   2170,
+   118
+  ],
+  [
+   2175,
+   120
+  ],
+  [
+   2180,
+   115
+  ],
+  [
+   2185,
+   116
+  ],
+  [
+   2190,
+   114
+  ],
+  [
+   2195,
+   121
+  ],
+  [
+   2200,
+   118
+  ],
+  [
+   2205,
+   121
+  ],
+  [
+   2210,
+   115
+  ],
+  [
+   2215,
+   113
+  ],
+  [
+   2220,
+   118
+  ],
+  [
+   2225,
+   119
+  ],
+  [
+   2230,
+   116
+  ],
+  [
+   2235,
+   117
+  ],
+  [
+   2240,
+   121
+  ],
+  [
+   2245,
+   121
+  ],
+  [
+   2250,
+   121
+  ],
+  [
+   2255,
+   121
+  ],
+  [
+   2260,
+   121
+  ],
+  [
+   2265,
+   118
+  ],
+  [
+   2270,
+   120
+  ],
+  [
+   2275,
+   121
+  ],
+  [
+   2280,
+   115
+  ],
+  [
+   2285,
+   117
+  ],
+  [
+   2290,
+   123
+  ],
+  [
+   2295,
+   117
+  ],
+  [
+   2300,
+   114
+  ],
+  [
+   2305,
+   116
+  ],
+  [
+   2310,
+   116
+  ],
+  [
+   2315,
+   116
+  ],
+  [
+   2320,
+   121
+  ],
+  [
+   2325,
+   117
+  ],
+  [
+   2330,
+   123
+  ],
+  [
+   2335,
+   117
+  ],
+  [
+   2340,
+   119
+  ],
+  [
+   2345,
+   120
+  ],
+  [
+   2350,
+   122
+  ],
+  [
+   2355,
+   116
+  ],
+  [
+   2360,
+   117
+  ],
+  [
+   2365,
+   118
+  ],
+  [
+   2370,
+   121
+  ],
+  [
+   2375,
+   117
+  ],
+  [
+   2380,
+   121
+  ],
+  [
+   2385,
+   123
+  ],
+  [
+   2390,
+   118
+  ],
+  [
+   2395,
+   115
+  ],
+  [
+   2400,
+   119
+  ],
+  [
+   2405,
+   115
+  ],
+  [
+   2410,
+   117
+  ],
+  [
+   2415,
+   120
+  ],
+  [
+   2420,
+   122
+  ],
+  [
+   2425,
+   118
+  ],
+  [
+   2430,
+   123
+  ],
+  [
+   2435,
+   120
+  ],
+  [
+   2440,
+   123
+  ],
+  [
+   2445,
+   122
+  ],
+  [
+   2450,
+   121
+  ],
+  [
+   2455,
+   116
+  ],
+  [
+   2460,
+   120
+  ],
+  [
+   2465,
+   115
+  ],
+  [
+   2470,
+   123
+  ],
+  [
+   2475,
+   122
+  ],
+  [
+   2480,
+   117
+  ],
+  [
+   2485,
+   122
+  ],
+  [
+   2490,
+   117
+  ],
+  [
+   2495,
+   121
+  ],
+  [
+   2500,
+   116
+  ],
+  [
+   2505,
+   116
+  ],
+  [
+   2510,
+   124
+  ],
+  [
+   2515,
+   119
+  ],
+  [
+   2520,
+   124
+  ],
+  [
+   2525,
+   123
+  ],
+  [
+   2530,
+   122
+  ],
+  [
+   2535,
+   121
+  ],
+  [
+   2540,
+   119
+  ],
+  [
+   2545,
+   121
+  ],
+  [
+   2550,
+   122
+  ],
+  [
+   2555,
+   122
+  ],
+  [
+   2560,
+   120
+  ],
+  [
+   2565,
+   117
+  ],
+  [
+   2570,
+   117
+  ],
+  [
+   2575,
+   120
+  ],
+  [
+   2580,
+   121
+  ],
+  [
+   2585,
+   122
+  ],
+  [
+   2590,
+   126
+  ],
+  [
+   2595,
+   121
+  ],
+  [
+   2600,
+   118
+  ],
+  [
+   2605,
+   124
+  ],
+  [
+   2610,
+   124
+  ],
+  [
+   2615,
+   125
+  ],
+  [
+   2620,
+   120
+  ],
+  [
+   2625,
+   120
+  ],
+  [
+   2630,
+   119
+  ],
+  [
+   2635,
+   125
+  ],
+  [
+   2640,
+   122
+  ],
+  [
+   2645,
+   121
+  ],
+  [
+   2650,
+   126
+  ],
+  [
+   2655,
+   118
+  ],
+  [
+   2660,
+   126
+  ],
+  [
+   2665,
+   117
+  ],
+  [
+   2670,
+   125
+  ],
+  [
+   2675,
+   120
+  ],
+  [
+   2680,
+   121
+  ],
+  [
+   2685,
+   122
+  ],
+  [
+   2690,
+   117
+  ],
+  [
+   2695,
+   125
+  ],
+  [
+   2700,
+   117
+  ],
+  [
+   2705,
+   125
+  ],
+  [
+   2710,
+   123
+  ],
+  [
+   2715,
+   124
+  ],
+  [
+   2720,
+   124
+  ],
+  [
+   2725,
+   124
+  ],
+  [
+   2730,
+   124
+  ],
+  [
+   2735,
+   126
+  ],
+  [
+   2740,
+   127
+  ],
+  [
+   2745,
+   121
+  ],
+  [
+   2750,
+   122
+  ],
+  [
+   2755,
+   126
+  ],
+  [
+   2760,
+   119
+  ],
+  [
+   2765,
+   123
+  ],
+  [
+   2770,
+   124
+  ],
+  [
+   2775,
+   120
+  ],
+  [
+   2780,
+   121
+  ],
+  [
+   2785,
+   120
+  ],
+  [
+   2790,
+   121
+  ],
+  [
+   2795,
+   124
+  ],
+  [
+   2800,
+   123
+  ],
+  [
+   2805,
+   123
+  ],
+  [
+   2810,
+   123
+  ],
+  [
+   2815,
+   126
+  ],
+  [
+   2820,
+   127
+  ],
+  [
+   2825,
+   128
+  ],
+  [
+   2830,
+   119
+  ],
+  [
+   2835,
+   118
+  ],
+  [
+   2840,
+   119
+  ],
+  [
+   2845,
+   119
+  ],
+  [
+   2850,
+   125
+  ],
+  [
+   2855,
+   119
+  ],
+  [
+   2860,
+   125
+  ],
+  [
+   2865,
+   119
+  ],
+  [
+   2870,
+   145
+  ],
+  [
+   2875,
+   145
+  ],
+  [
+   2880,
+   145
+  ],
+  [
+   2885,
+   145
+  ],
+  [
+   2890,
+   145
+  ],
+  [
+   2895,
+   145
+  ],
+  [
+   2900,
+   145
+  ],
+  [
+   2905,
+   145
+  ],
+  [
+   2910,
+   145
+  ],
+  [
+   2915,
+   145
+  ],
+  [
+   2920,
+   145
+  ],
+  [
+   2925,
+   145
+  ],
+  [
+   2930,
+   145
+  ],
+  [
+   2935,
+   145
+  ],
+  [
+   2940,
+   145
+  ],
+  [
+   2945,
+   145
+  ],
+  [
+   2950,
+   145
+  ],
+  [
+   2955,
+   145
+  ],
+  [
+   2960,
+   145
+  ],
+  [
+   2965,
+   145
+  ],
+  [
+   2970,
+   145
+  ],
+  [
+   2975,
+   145
+  ],
+  [
+   2980,
+   145
+  ],
+  [
+   2985,
+   145
+  ],
+  [
+   2990,
+   145
+  ],
+  [
+   2995,
+   145
+  ],
+  [
+   3000,
+   145
+  ],
+  [
+   3005,
+   145
+  ],
+  [
+   3010,
+   145
+  ],
+  [
+   3015,
+   145
+  ]
+ ],
+ "day": "d1",
+ "planned": {
+  "key": "d1",
+  "name": "D1 · Push",
+  "exercises": [
+   {
+    "exid": "D1E1",
+    "routine": "Bench press",
+    "category": "BENCH_PRESS",
+    "name": "BARBELL_BENCH_PRESS",
+    "label": "Barbell Bench Press",
+    "sets": 4,
+    "value": 8,
+    "weight": 80.0,
+    "rest_s": 150,
+    "kind": "reps",
+    "phase": "strength",
+    "per_hand": false,
+    "machine": false,
+    "weight_then": 80.0
+   },
+   {
+    "exid": "D1E2",
+    "routine": "Incline DB press",
+    "category": "BENCH_PRESS",
+    "name": "INCLINE_DUMBBELL_BENCH_PRESS",
+    "label": "Incline Dumbbell Bench Press",
+    "sets": 3,
+    "value": 10,
+    "weight": 26.0,
+    "rest_s": 120,
+    "kind": "reps",
+    "phase": "hypertrophy",
+    "per_hand": true,
+    "machine": false,
+    "weight_then": 26.0
+   },
+   {
+    "exid": "D1E3",
+    "routine": "Seated DB press",
+    "category": "SHOULDER_PRESS",
+    "name": "SEATED_DUMBBELL_SHOULDER_PRESS",
+    "label": "Seated Dumbbell Shoulder Press",
+    "sets": 3,
+    "value": 10,
+    "weight": 20.0,
+    "rest_s": 120,
+    "kind": "reps",
+    "phase": "hypertrophy",
+    "per_hand": true,
+    "machine": false,
+    "weight_then": 20.0
+   },
+   {
+    "exid": "D1E4",
+    "routine": "Lateral raise",
+    "category": "LATERAL_RAISE",
+    "name": "DUMBBELL_LATERAL_RAISE",
+    "label": "Dumbbell Lateral Raise",
+    "sets": 3,
+    "value": 15,
+    "weight": 10.0,
+    "rest_s": 75,
+    "kind": "reps",
+    "phase": "hypertrophy",
+    "per_hand": true,
+    "machine": false,
+    "weight_then": 10.0
+   },
+   {
+    "exid": "D1E5",
+    "routine": "Cable crossover",
+    "category": "FLYE",
+    "name": "CABLE_CROSSOVER",
+    "label": "Cable Crossover",
+    "sets": 3,
+    "value": 12,
+    "weight": 15.0,
+    "rest_s": 75,
+    "kind": "reps",
+    "phase": "hypertrophy",
+    "per_hand": false,
+    "machine": false,
+    "weight_then": 15.0
+   },
+   {
+    "exid": "D1E6",
+    "routine": "Rope pressdown",
+    "category": "TRICEPS_EXTENSION",
+    "name": "ROPE_PRESSDOWN",
+    "label": "Rope Pressdown",
+    "sets": 3,
+    "value": 12,
+    "weight": 32.0,
+    "rest_s": 75,
+    "kind": "reps",
+    "phase": "hypertrophy",
+    "per_hand": false,
+    "machine": false,
+    "weight_then": 32.0
    }
   ]
  },
- "laps": [
+ "exercises": [
   {
-   "distance": 300.0,
-   "duration": 405.0,
-   "movingDuration": 405.0,
-   "averageHR": 124,
-   "lengthDTOs": [
+   "key": [
+    "BENCH_PRESS",
+    "BARBELL_BENCH_PRESS"
+   ],
+   "label": "Barbell Bench Press",
+   "muscle": "Chest",
+   "unnamed": false,
+   "per_hand": false,
+   "per_side": false,
+   "machine": false,
+   "sets": [
     {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "weight": 80.0,
+     "reps": 8,
+     "duration_s": 32,
+     "rest_after_s": 164,
+     "start": "2026-11-28T18:04:00.0",
+     "e1rm": 101.3,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "weight": 80.0,
+     "reps": 8,
+     "duration_s": 30,
+     "rest_after_s": 168,
+     "start": "2026-11-28T18:07:16.200000.0",
+     "e1rm": 101.3,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "weight": 80.0,
+     "reps": 8,
+     "duration_s": 33,
+     "rest_after_s": 160,
+     "start": "2026-11-28T18:10:34.400000.0",
+     "e1rm": 101.3,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.8,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 80.0,
+     "reps_logged": 8,
+     "weight": 80.0,
+     "reps": 8,
+     "duration_s": 34,
+     "rest_after_s": 144,
+     "start": "2026-11-28T18:13:47.600000.0",
+     "e1rm": 101.3,
+     "pr": false,
+     "auto_detected": false
     }
-   ]
-  },
-  {
-   "distance": 0.0,
-   "duration": 30.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 100.0,
-   "duration": 127.0,
-   "movingDuration": 127.0,
-   "averageHR": 132,
-   "lengthDTOs": [
+   ],
+   "history": [
     {
-     "distance": 25.0,
-     "duration": 31.8,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-16",
+     "top": 77.5,
+     "volume": 2402
     },
     {
-     "distance": 25.0,
-     "duration": 31.8,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-23",
+     "top": 80.0,
+     "volume": 2560
     },
     {
-     "distance": 25.0,
-     "duration": 31.8,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 31.8,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-28",
+     "top": 80.0,
+     "volume": 2560
     }
-   ]
+   ],
+   "signal": "bump",
+   "phase": "strength"
   },
   {
-   "distance": 0.0,
-   "duration": 20.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 100.0,
-   "duration": 128.0,
-   "movingDuration": 128.0,
-   "averageHR": 133,
-   "lengthDTOs": [
+   "key": [
+    "BENCH_PRESS",
+    "INCLINE_DUMBBELL_BENCH_PRESS"
+   ],
+   "label": "Incline Dumbbell Bench Press",
+   "muscle": "Chest",
+   "unnamed": false,
+   "per_hand": true,
+   "per_side": false,
+   "machine": false,
+   "sets": [
     {
-     "distance": 25.0,
-     "duration": 32.0,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 52.0,
+     "reps_logged": 10,
+     "weight": 26.0,
+     "reps": 10,
+     "duration_s": 41,
+     "rest_after_s": 140,
+     "start": "2026-11-28T18:16:45.500000.0",
+     "e1rm": 34.7,
+     "pr": true,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 32.0,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 52.0,
+     "reps_logged": 10,
+     "weight": 26.0,
+     "reps": 10,
+     "duration_s": 40,
+     "rest_after_s": 116,
+     "start": "2026-11-28T18:19:46.700000.0",
+     "e1rm": 34.7,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 32.0,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 32.0,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 52.0,
+     "reps_logged": 10,
+     "weight": 26.0,
+     "reps": 10,
+     "duration_s": 38,
+     "rest_after_s": 125,
+     "start": "2026-11-28T18:22:22.900000.0",
+     "e1rm": 34.7,
+     "pr": false,
+     "auto_detected": false
     }
-   ]
-  },
-  {
-   "distance": 0.0,
-   "duration": 20.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 100.0,
-   "duration": 129.0,
-   "movingDuration": 129.0,
-   "averageHR": 134,
-   "lengthDTOs": [
+   ],
+   "history": [
     {
-     "distance": 25.0,
-     "duration": 32.2,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-16",
+     "top": 26.0,
+     "volume": 1508
     },
     {
-     "distance": 25.0,
-     "duration": 32.2,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-23",
+     "top": 26.0,
+     "volume": 1560
     },
     {
-     "distance": 25.0,
-     "duration": 32.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 32.2,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-28",
+     "top": 26.0,
+     "volume": 1560
     }
-   ]
+   ],
+   "signal": "bump",
+   "phase": "hypertrophy"
   },
   {
-   "distance": 0.0,
-   "duration": 20.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 100.0,
-   "duration": 129.0,
-   "movingDuration": 129.0,
-   "averageHR": 135,
-   "lengthDTOs": [
+   "key": [
+    "SHOULDER_PRESS",
+    "SEATED_DUMBBELL_SHOULDER_PRESS"
+   ],
+   "label": "Seated Dumbbell Shoulder Press",
+   "muscle": "Delts",
+   "unnamed": false,
+   "per_hand": true,
+   "per_side": false,
+   "machine": false,
+   "sets": [
     {
-     "distance": 25.0,
-     "duration": 32.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 40.0,
+     "reps_logged": 10,
+     "weight": 20.0,
+     "reps": 10,
+     "duration_s": 40,
+     "rest_after_s": 133,
+     "start": "2026-11-28T18:25:05.400000.0",
+     "e1rm": 26.7,
+     "pr": true,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 32.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 40.0,
+     "reps_logged": 10,
+     "weight": 20.0,
+     "reps": 10,
+     "duration_s": 42,
+     "rest_after_s": 144,
+     "start": "2026-11-28T18:27:58.600000.0",
+     "e1rm": 26.7,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 32.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 32.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 40.0,
+     "reps_logged": 10,
+     "weight": 20.0,
+     "reps": 10,
+     "duration_s": 39,
+     "rest_after_s": 116,
+     "start": "2026-11-28T18:31:04.300000.0",
+     "e1rm": 26.7,
+     "pr": false,
+     "auto_detected": false
     }
-   ]
-  },
-  {
-   "distance": 0.0,
-   "duration": 20.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 100.0,
-   "duration": 130.0,
-   "movingDuration": 130.0,
-   "averageHR": 136,
-   "lengthDTOs": [
+   ],
+   "history": [
     {
-     "distance": 25.0,
-     "duration": 32.5,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-16",
+     "top": 20.0,
+     "volume": 1120
     },
     {
-     "distance": 25.0,
-     "duration": 32.5,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-23",
+     "top": 20.0,
+     "volume": 1200
     },
     {
-     "distance": 25.0,
-     "duration": 32.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 32.5,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-28",
+     "top": 20.0,
+     "volume": 1200
     }
-   ]
+   ],
+   "signal": "bump",
+   "phase": "hypertrophy"
   },
   {
-   "distance": 0.0,
-   "duration": 20.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 100.0,
-   "duration": 133.0,
-   "movingDuration": 133.0,
-   "averageHR": 137,
-   "lengthDTOs": [
+   "key": [
+    "LATERAL_RAISE",
+    "DUMBBELL_LATERAL_RAISE"
+   ],
+   "label": "Dumbbell Lateral Raise",
+   "muscle": "Delts",
+   "unnamed": false,
+   "per_hand": true,
+   "per_side": false,
+   "machine": false,
+   "sets": [
     {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 20.0,
+     "reps_logged": 15,
+     "weight": 10.0,
+     "reps": 15,
+     "duration_s": 54,
+     "rest_after_s": 76,
+     "start": "2026-11-28T18:33:39.0",
+     "e1rm": 14.0,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 20.0,
+     "reps_logged": 15,
+     "weight": 10.0,
+     "reps": 15,
+     "duration_s": 56,
+     "rest_after_s": 88,
+     "start": "2026-11-28T18:35:49.300000.0",
+     "e1rm": 14.0,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 20.0,
+     "reps_logged": 15,
+     "weight": 10.0,
+     "reps": 15,
+     "duration_s": 55,
+     "rest_after_s": 84,
+     "start": "2026-11-28T18:38:13.300000.0",
+     "e1rm": 14.0,
+     "pr": false,
+     "auto_detected": false
     }
-   ]
-  },
-  {
-   "distance": 0.0,
-   "duration": 20.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 100.0,
-   "duration": 137.0,
-   "movingDuration": 137.0,
-   "averageHR": 138,
-   "lengthDTOs": [
+   ],
+   "history": [
     {
-     "distance": 25.0,
-     "duration": 34.2,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-16",
+     "top": 10.0,
+     "volume": 880
     },
     {
-     "distance": 25.0,
-     "duration": 34.2,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-23",
+     "top": 10.0,
+     "volume": 900
     },
     {
-     "distance": 25.0,
-     "duration": 34.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 34.2,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-28",
+     "top": 10.0,
+     "volume": 900
     }
-   ]
+   ],
+   "signal": "bump",
+   "phase": "hypertrophy"
   },
   {
-   "distance": 0.0,
-   "duration": 20.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 0.0,
-   "duration": 40.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 400.0,
-   "duration": 532.0,
-   "movingDuration": 532.0,
-   "averageHR": 140,
-   "lengthDTOs": [
+   "key": [
+    "FLYE",
+    "CABLE_CROSSOVER"
+   ],
+   "label": "Cable Crossover",
+   "muscle": "Chest",
+   "unnamed": false,
+   "per_hand": false,
+   "per_side": false,
+   "machine": false,
+   "sets": [
     {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 15.0,
+     "reps_logged": 12,
+     "weight": 15.0,
+     "reps": 12,
+     "duration_s": 45,
+     "rest_after_s": 88,
+     "start": "2026-11-28T18:40:32.500000.0",
+     "e1rm": 21.0,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 15.0,
+     "reps_logged": 12,
+     "weight": 15.0,
+     "reps": 12,
+     "duration_s": 48,
+     "rest_after_s": 91,
+     "start": "2026-11-28T18:42:45.200000.0",
+     "e1rm": 21.0,
+     "pr": false,
+     "auto_detected": false
     },
     {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 33.2,
-     "totalNumberOfStrokes": 17
+     "type": "working",
+     "weight_logged": 15.0,
+     "reps_logged": 12,
+     "weight": 15.0,
+     "reps": 12,
+     "duration_s": 42,
+     "rest_after_s": 96,
+     "start": "2026-11-28T18:45:03.800000.0",
+     "e1rm": 21.0,
+     "pr": false,
+     "auto_detected": false
     }
-   ]
-  },
-  {
-   "distance": 0.0,
-   "duration": 45.0,
-   "movingDuration": 0.0
-  },
-  {
-   "distance": 300.0,
-   "duration": 450.0,
-   "movingDuration": 450.0,
-   "averageHR": 126,
-   "lengthDTOs": [
+   ],
+   "history": [
     {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-16",
+     "top": 15.0,
+     "volume": 510
     },
     {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-23",
+     "top": 15.0,
+     "volume": 540
     },
     {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
-    },
-    {
-     "distance": 25.0,
-     "duration": 37.5,
-     "totalNumberOfStrokes": 17
+     "date": "2026-11-28",
+     "top": 15.0,
+     "volume": 540
     }
-   ]
+   ],
+   "signal": "bump",
+   "phase": "hypertrophy"
+  },
+  {
+   "key": [
+    "TRICEPS_EXTENSION",
+    "ROPE_PRESSDOWN"
+   ],
+   "label": "Rope Pressdown",
+   "muscle": "Triceps",
+   "unnamed": false,
+   "per_hand": false,
+   "per_side": false,
+   "machine": false,
+   "sets": [
+    {
+     "type": "working",
+     "weight_logged": 32.5,
+     "reps_logged": 12,
+     "weight": 32.5,
+     "reps": 12,
+     "duration_s": 48,
+     "rest_after_s": 100,
+     "start": "2026-11-28T18:47:22.200000.0",
+     "e1rm": 45.5,
+     "pr": false,
+     "auto_detected": false
+    },
+    {
+     "type": "working",
+     "weight_logged": 32.5,
+     "reps_logged": 12,
+     "weight": 32.5,
+     "reps": 12,
+     "duration_s": 48,
+     "rest_after_s": 85,
+     "start": "2026-11-28T18:49:49.900000.0",
+     "e1rm": 45.5,
+     "pr": false,
+     "auto_detected": false
+    },
+    {
+     "type": "working",
+     "weight_logged": 32.5,
+     "reps_logged": 12,
+     "weight": 32.5,
+     "reps": 12,
+     "duration_s": 45,
+     "rest_after_s": 91,
+     "start": "2026-11-28T18:52:02.900000.0",
+     "e1rm": 45.5,
+     "pr": false,
+     "auto_detected": true
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-16",
+     "top": 32.5,
+     "volume": 1138
+    },
+    {
+     "date": "2026-11-23",
+     "top": 32.5,
+     "volume": 1170
+    },
+    {
+     "date": "2026-11-28",
+     "top": 32.5,
+     "volume": 1170
+    }
+   ],
+   "signal": "bump",
+   "phase": "hypertrophy"
   }
  ],
- "review": {
-  "id": 21000000010,
-  "sport": "swim",
-  "type": "lap_swimming",
-  "metrics": {
-   "distance": {
-    "value": 1700,
-    "source": "garmin",
-    "unit": "m"
-   },
-   "moving_s": {
-    "value": 2290,
-    "source": "garmin",
-    "unit": "s"
-   },
-   "pace_100": {
-    "value": 135,
-    "source": "computed",
-    "unit": "s/100m"
-   },
-   "swolf": {
-    "value": 41,
-    "source": "garmin",
-    "unit": ""
-   },
-   "strokes_per_length": {
-    "value": 17.5,
-    "source": "garmin",
-    "unit": ""
-   },
-   "avg_hr": {
-    "value": 132,
-    "source": "garmin",
-    "unit": "bpm"
-   },
-   "pace_spread": {
-    "value": 2.7,
-    "source": "computed",
-    "unit": "%"
-   }
+ "active_s": 810,
+ "rest_s": 2209,
+ "tonnage": 7930,
+ "muscles": [
+  {
+   "muscle": "Chest",
+   "sets": 10,
+   "planned_week": 10
   },
-  "intervals": [
-   {
-    "n": 1,
-    "metres": 300,
-    "secs": 405,
-    "pace_100": 135.0,
-    "swolf": 51,
-    "stroke": "FREESTYLE",
-    "hr": 124,
-    "planned": {
-     "n": 1,
-     "note": "Easy, long strokes",
-     "kind": "warmup"
-    }
-   },
-   {
-    "n": 2,
-    "metres": 100,
-    "secs": 127,
-    "pace_100": 127.0,
-    "swolf": 49,
-    "stroke": "FREESTYLE",
-    "hr": 132,
-    "planned": {
-     "n": 2,
-     "note": "Steady, same time each",
-     "kind": "main"
-    }
-   },
-   {
-    "n": 3,
-    "metres": 100,
-    "secs": 128,
-    "pace_100": 128.0,
-    "swolf": 49,
-    "stroke": "FREESTYLE",
-    "hr": 133,
-    "planned": {
-     "n": 3,
-     "note": "Steady, same time each",
-     "kind": "main"
-    }
-   },
-   {
-    "n": 4,
-    "metres": 100,
-    "secs": 129,
-    "pace_100": 129.0,
-    "swolf": 49,
-    "stroke": "FREESTYLE",
-    "hr": 134,
-    "planned": {
-     "n": 4,
-     "note": "Steady, same time each",
-     "kind": "main"
-    }
-   },
-   {
-    "n": 5,
-    "metres": 100,
-    "secs": 129,
-    "pace_100": 129.0,
-    "swolf": 49,
-    "stroke": "FREESTYLE",
-    "hr": 135,
-    "planned": {
-     "n": 5,
-     "note": "Steady, same time each",
-     "kind": "main"
-    }
-   },
-   {
-    "n": 6,
-    "metres": 100,
-    "secs": 130,
-    "pace_100": 130.0,
-    "swolf": 50,
-    "stroke": "FREESTYLE",
-    "hr": 136,
-    "planned": {
-     "n": 6,
-     "note": "Steady, same time each",
-     "kind": "main"
-    }
-   },
-   {
-    "n": 7,
-    "metres": 100,
-    "secs": 133,
-    "pace_100": 133.0,
-    "swolf": 50,
-    "stroke": "FREESTYLE",
-    "hr": 137,
-    "planned": {
-     "n": 7,
-     "note": "Steady, same time each",
-     "kind": "main"
-    }
-   },
-   {
-    "n": 8,
-    "metres": 100,
-    "secs": 137,
-    "pace_100": 137.0,
-    "swolf": 51,
-    "stroke": "FREESTYLE",
-    "hr": 138,
-    "planned": {
-     "n": 8,
-     "note": "Steady, same time each",
-     "kind": "main"
-    }
-   },
-   {
-    "n": 9,
-    "metres": 400,
-    "secs": 532,
-    "pace_100": 133.0,
-    "swolf": 50,
-    "stroke": "FREESTYLE",
-    "hr": 140,
-    "planned": {
-     "n": 10,
-     "note": "Steady, negative split",
-     "kind": "main"
-    }
-   },
-   {
-    "n": 10,
-    "metres": 300,
-    "secs": 450,
-    "pace_100": 150.0,
-    "swolf": 54,
-    "stroke": "FREESTYLE",
-    "hr": 126,
-    "planned": {
-     "n": 11,
-     "note": "Easy",
-     "kind": "cooldown"
-    }
-   }
-  ],
-  "planned": {
-   "key": "swim_aerobic_1800",
-   "name": "Swim · Aerobic 1800",
-   "matched_by": "the workout id the watch recorded",
-   "version": "swim_aerobic_1800.json (current)",
-   "metres": 1800.0,
-   "swims": 11,
-   "done": 10
+  {
+   "muscle": "Delts",
+   "sets": 6,
+   "planned_week": 6
   },
-  "sets": [
-   {
-    "reps": 8,
-    "done": 7,
-    "metres": 100.0,
-    "note": "Steady, same time each",
-    "pace_spread": 0.027
-   }
-  ],
-  "flags": [
-   {
-    "key": "missed",
-    "text": "1 planned swim has no matching lap."
-   }
-  ],
-  "definitions": {
-   "pace_100": "Moving time per 100 m: the time spent swimming (rests excluded) ÷ the distance × 100.",
-   "swolf": "SWOLF: seconds plus strokes for one length. Lower is more efficient; compare only in the same pool.",
-   "strokes_per_length": "Average strokes per pool length.",
-   "css_100": "Critical swim speed per 100 m: (T400 − T200) ÷ 2, from this session's all-out 400 and 200.",
-   "pace_spread": "How much the pace of a set's reps varied: standard deviation ÷ mean. Under 3 % is even.",
-   "run_spread": "How much a circuit's run legs varied in time: standard deviation ÷ mean.",
-   "stray_laps": "Laps under 10 s on a lap-button session: a button pressed twice, which shifts every step after it."
+  {
+   "muscle": "Triceps",
+   "sets": 3,
+   "planned_week": 3
   }
- },
+ ],
  "defs": {
+  "e1rm": {
+   "source": "computed",
+   "definition": "Estimated 1-rep max (Epley): load × (1 + reps / 30), reps capped at 12. Per-hand lifts use the per-hand load; plate-loaded machines have none."
+  },
+  "tonnage": {
+   "source": "computed",
+   "definition": "Σ weight × reps over every logged set, warm-ups included — they were lifted."
+  },
   "load": {
    "source": "garmin",
    "definition": "Garmin training load: EPOC, from heart rate. It barely registers lifting — read strength by tonnage and sets, never with cardio in one number."
   },
   "fuel_band": {
    "source": "computed",
-   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to under 2.5 h: 30–60 g/h easy, about 60 hard. 2.5 h or more: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
   },
   "fuel_target": {
    "source": "computed",

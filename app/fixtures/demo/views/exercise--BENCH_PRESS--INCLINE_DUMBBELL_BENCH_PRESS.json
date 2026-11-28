@@ -1,7 +1,7 @@
 {
  "view": "exercise",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:15",
+ "generated_at": "2026-11-28T14:12:56",
  "category": "BENCH_PRESS",
  "name": "INCLINE_DUMBBELL_BENCH_PRESS",
  "label": "Incline Dumbbell Bench Press",
@@ -34,8 +34,8 @@
    "sets": 3,
    "weight": 26.0,
    "reps": 10,
-   "since": "2026-11-21",
-   "since_ts": "2026-11-21 15:15:10",
+   "since": "2026-11-28",
+   "since_ts": "2026-11-28 14:12:53",
    "changes": []
   }
  ],
@@ -49,18 +49,18 @@
    "value": 10,
    "weight": 26.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-16",
+   "last": "2026-11-23",
    "skipped": 0,
    "implied_e1rm": 34.7,
    "best_e1rm": 34.7,
    "verdict": "FRESH — not tried yet",
-   "line": "D1E2 INCLINE_DUMBBELL_BENCH_PRESS            3x10@26           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D1E2 INCLINE_DUMBBELL_BENCH_PRESS            3x10@26           2026-11-28     0    0  FRESH — not tried yet"
   }
  ],
  "trend": [
@@ -72,13 +72,6 @@
    "class": "FLAT",
    "score": "e1rm",
    "points": [
-    {
-     "date": "2026-07-20",
-     "score": 24.0,
-     "weight": 18.0,
-     "reps": 10,
-     "annotated": false
-    },
     {
      "date": "2026-07-27",
      "score": 24.0,
@@ -116,8 +109,8 @@
     },
     {
      "date": "2026-08-31",
-     "score": 26.7,
-     "weight": 20.0,
+     "score": 24.0,
+     "weight": 18.0,
      "reps": 10,
      "annotated": false
     },
@@ -137,8 +130,8 @@
     },
     {
      "date": "2026-09-21",
-     "score": 29.3,
-     "weight": 22.0,
+     "score": 26.7,
+     "weight": 20.0,
      "reps": 10,
      "annotated": false
     },
@@ -158,17 +151,17 @@
     },
     {
      "date": "2026-10-12",
+     "score": 29.3,
+     "weight": 22.0,
+     "reps": 10,
+     "annotated": false
+    },
+    {
+     "date": "2026-10-19",
      "score": 26.7,
      "weight": 20.0,
      "reps": 10,
      "annotated": true
-    },
-    {
-     "date": "2026-10-19",
-     "score": 32.0,
-     "weight": 24.0,
-     "reps": 10,
-     "annotated": false
     },
     {
      "date": "2026-10-26",
@@ -179,8 +172,8 @@
     },
     {
      "date": "2026-11-02",
-     "score": 34.7,
-     "weight": 26.0,
+     "score": 32.0,
+     "weight": 24.0,
      "reps": 10,
      "annotated": false
     },
@@ -197,53 +190,22 @@
      "weight": 26.0,
      "reps": 10,
      "annotated": false
+    },
+    {
+     "date": "2026-11-23",
+     "score": 34.7,
+     "weight": 26.0,
+     "reps": 10,
+     "annotated": false
     }
    ]
   }
  ],
  "sessions": [
   {
-   "date": "2026-07-20",
-   "day": "d1",
-   "activity_id": 21000000005,
-   "sets": [
-    {
-     "weight": 18.0,
-     "reps": 10,
-     "weight_logged": 36.0,
-     "reps_logged": 10,
-     "e1rm": 24.0
-    },
-    {
-     "weight": 18.0,
-     "reps": 10,
-     "weight_logged": 36.0,
-     "reps_logged": 10,
-     "e1rm": 24.0
-    },
-    {
-     "weight": 18.0,
-     "reps": 8,
-     "weight_logged": 36.0,
-     "reps_logged": 8,
-     "e1rm": 22.8
-    }
-   ],
-   "top": {
-    "weight": 18.0,
-    "reps": 10,
-    "weight_logged": 36.0,
-    "reps_logged": 10,
-    "e1rm": 24.0
-   },
-   "volume": 1008,
-   "best_e1rm": 24.0,
-   "annotated": false
-  },
-  {
    "date": "2026-07-27",
    "day": "d1",
-   "activity_id": 21000000011,
+   "activity_id": 21000000006,
    "sets": [
     {
      "weight": 18.0,
@@ -281,7 +243,45 @@
   {
    "date": "2026-08-03",
    "day": "d1",
-   "activity_id": 21000000016,
+   "activity_id": 21000000011,
+   "sets": [
+    {
+     "weight": 18.0,
+     "reps": 10,
+     "weight_logged": 36.0,
+     "reps_logged": 10,
+     "e1rm": 24.0
+    },
+    {
+     "weight": 18.0,
+     "reps": 10,
+     "weight_logged": 36.0,
+     "reps_logged": 10,
+     "e1rm": 24.0
+    },
+    {
+     "weight": 18.0,
+     "reps": 9,
+     "weight_logged": 36.0,
+     "reps_logged": 9,
+     "e1rm": 23.4
+    }
+   ],
+   "top": {
+    "weight": 18.0,
+    "reps": 10,
+    "weight_logged": 36.0,
+    "reps_logged": 10,
+    "e1rm": 24.0
+   },
+   "volume": 1044,
+   "best_e1rm": 24.0,
+   "annotated": false
+  },
+  {
+   "date": "2026-08-10",
+   "day": "d1",
+   "activity_id": 21000000017,
    "sets": [
     {
      "weight": 18.0,
@@ -317,7 +317,7 @@
    "annotated": false
   },
   {
-   "date": "2026-08-10",
+   "date": "2026-08-17",
    "day": "d1",
    "activity_id": 21000000022,
    "sets": [
@@ -355,9 +355,9 @@
    "annotated": false
   },
   {
-   "date": "2026-08-17",
+   "date": "2026-08-24",
    "day": "d1",
-   "activity_id": 21000000027,
+   "activity_id": 21000000028,
    "sets": [
     {
      "weight": 18.0,
@@ -393,7 +393,7 @@
    "annotated": false
   },
   {
-   "date": "2026-08-24",
+   "date": "2026-08-31",
    "day": "d1",
    "activity_id": 21000000033,
    "sets": [
@@ -431,47 +431,9 @@
    "annotated": false
   },
   {
-   "date": "2026-08-31",
-   "day": "d1",
-   "activity_id": 21000000038,
-   "sets": [
-    {
-     "weight": 20.0,
-     "reps": 10,
-     "weight_logged": 40.0,
-     "reps_logged": 10,
-     "e1rm": 26.7
-    },
-    {
-     "weight": 20.0,
-     "reps": 10,
-     "weight_logged": 40.0,
-     "reps_logged": 10,
-     "e1rm": 26.7
-    },
-    {
-     "weight": 20.0,
-     "reps": 9,
-     "weight_logged": 40.0,
-     "reps_logged": 9,
-     "e1rm": 26.0
-    }
-   ],
-   "top": {
-    "weight": 20.0,
-    "reps": 10,
-    "weight_logged": 40.0,
-    "reps_logged": 10,
-    "e1rm": 26.7
-   },
-   "volume": 1160,
-   "best_e1rm": 26.7,
-   "annotated": false
-  },
-  {
    "date": "2026-09-07",
    "day": "d1",
-   "activity_id": 21000000044,
+   "activity_id": 21000000039,
    "sets": [
     {
      "weight": 20.0,
@@ -509,7 +471,45 @@
   {
    "date": "2026-09-14",
    "day": "d1",
-   "activity_id": 21000000049,
+   "activity_id": 21000000044,
+   "sets": [
+    {
+     "weight": 20.0,
+     "reps": 10,
+     "weight_logged": 40.0,
+     "reps_logged": 10,
+     "e1rm": 26.7
+    },
+    {
+     "weight": 20.0,
+     "reps": 10,
+     "weight_logged": 40.0,
+     "reps_logged": 10,
+     "e1rm": 26.7
+    },
+    {
+     "weight": 20.0,
+     "reps": 8,
+     "weight_logged": 40.0,
+     "reps_logged": 8,
+     "e1rm": 25.3
+    }
+   ],
+   "top": {
+    "weight": 20.0,
+    "reps": 10,
+    "weight_logged": 40.0,
+    "reps_logged": 10,
+    "e1rm": 26.7
+   },
+   "volume": 1120,
+   "best_e1rm": 26.7,
+   "annotated": false
+  },
+  {
+   "date": "2026-09-21",
+   "day": "d1",
+   "activity_id": 21000000050,
    "sets": [
     {
      "weight": 20.0,
@@ -545,47 +545,9 @@
    "annotated": false
   },
   {
-   "date": "2026-09-21",
-   "day": "d1",
-   "activity_id": 21000000055,
-   "sets": [
-    {
-     "weight": 22.0,
-     "reps": 10,
-     "weight_logged": 44.0,
-     "reps_logged": 10,
-     "e1rm": 29.3
-    },
-    {
-     "weight": 22.0,
-     "reps": 10,
-     "weight_logged": 44.0,
-     "reps_logged": 10,
-     "e1rm": 29.3
-    },
-    {
-     "weight": 22.0,
-     "reps": 9,
-     "weight_logged": 44.0,
-     "reps_logged": 9,
-     "e1rm": 28.6
-    }
-   ],
-   "top": {
-    "weight": 22.0,
-    "reps": 10,
-    "weight_logged": 44.0,
-    "reps_logged": 10,
-    "e1rm": 29.3
-   },
-   "volume": 1276,
-   "best_e1rm": 29.3,
-   "annotated": false
-  },
-  {
    "date": "2026-09-28",
    "day": "d1",
-   "activity_id": 21000000060,
+   "activity_id": 21000000055,
    "sets": [
     {
      "weight": 22.0,
@@ -623,6 +585,44 @@
   {
    "date": "2026-10-05",
    "day": "d1",
+   "activity_id": 21000000061,
+   "sets": [
+    {
+     "weight": 22.0,
+     "reps": 10,
+     "weight_logged": 44.0,
+     "reps_logged": 10,
+     "e1rm": 29.3
+    },
+    {
+     "weight": 22.0,
+     "reps": 10,
+     "weight_logged": 44.0,
+     "reps_logged": 10,
+     "e1rm": 29.3
+    },
+    {
+     "weight": 22.0,
+     "reps": 8,
+     "weight_logged": 44.0,
+     "reps_logged": 8,
+     "e1rm": 27.9
+    }
+   ],
+   "top": {
+    "weight": 22.0,
+    "reps": 10,
+    "weight_logged": 44.0,
+    "reps_logged": 10,
+    "e1rm": 29.3
+   },
+   "volume": 1232,
+   "best_e1rm": 29.3,
+   "annotated": false
+  },
+  {
+   "date": "2026-10-12",
+   "day": "d1",
    "activity_id": 21000000066,
    "sets": [
     {
@@ -659,9 +659,9 @@
    "annotated": false
   },
   {
-   "date": "2026-10-12",
+   "date": "2026-10-19",
    "day": "d1",
-   "activity_id": 21000000071,
+   "activity_id": 21000000072,
    "sets": [
     {
      "weight": 20.0,
@@ -679,10 +679,10 @@
     },
     {
      "weight": 20.0,
-     "reps": 9,
+     "reps": 8,
      "weight_logged": 40.0,
-     "reps_logged": 9,
-     "e1rm": 26.0
+     "reps_logged": 8,
+     "e1rm": 25.3
     }
    ],
    "top": {
@@ -692,12 +692,12 @@
     "reps_logged": 10,
     "e1rm": 26.7
    },
-   "volume": 1160,
+   "volume": 1120,
    "best_e1rm": 26.7,
    "annotated": true
   },
   {
-   "date": "2026-10-19",
+   "date": "2026-10-26",
    "day": "d1",
    "activity_id": 21000000077,
    "sets": [
@@ -735,9 +735,9 @@
    "annotated": false
   },
   {
-   "date": "2026-10-26",
+   "date": "2026-11-02",
    "day": "d1",
-   "activity_id": 21000000082,
+   "activity_id": 21000000083,
    "sets": [
     {
      "weight": 24.0,
@@ -773,7 +773,7 @@
    "annotated": false
   },
   {
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "day": "d1",
    "activity_id": 21000000088,
    "sets": [
@@ -793,10 +793,10 @@
     },
     {
      "weight": 26.0,
-     "reps": 9,
+     "reps": 8,
      "weight_logged": 52.0,
-     "reps_logged": 9,
-     "e1rm": 33.8
+     "reps_logged": 8,
+     "e1rm": 32.9
     }
    ],
    "top": {
@@ -806,14 +806,14 @@
     "reps_logged": 10,
     "e1rm": 34.7
    },
-   "volume": 1508,
+   "volume": 1456,
    "best_e1rm": 34.7,
    "annotated": false
   },
   {
-   "date": "2026-11-09",
+   "date": "2026-11-16",
    "day": "d1",
-   "activity_id": 21000000093,
+   "activity_id": 21000000094,
    "sets": [
     {
      "weight": 26.0,
@@ -831,10 +831,10 @@
     },
     {
      "weight": 26.0,
-     "reps": 9,
+     "reps": 8,
      "weight_logged": 52.0,
-     "reps_logged": 9,
-     "e1rm": 33.8
+     "reps_logged": 8,
+     "e1rm": 32.9
     }
    ],
    "top": {
@@ -844,12 +844,12 @@
     "reps_logged": 10,
     "e1rm": 34.7
    },
-   "volume": 1508,
+   "volume": 1456,
    "best_e1rm": 34.7,
    "annotated": false
   },
   {
-   "date": "2026-11-16",
+   "date": "2026-11-23",
    "day": "d1",
    "activity_id": 21000000099,
    "sets": [

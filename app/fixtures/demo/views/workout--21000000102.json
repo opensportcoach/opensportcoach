@@ -1,10 +1,10 @@
 {
  "view": "workout",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:14",
+ "generated_at": "2026-11-28T14:12:56",
  "id": 21000000102,
- "date": "2026-11-20",
- "start": "2026-11-20 09:30:00",
+ "date": "2026-11-27",
+ "start": "2026-11-27 09:30:00",
  "group": "swim",
  "type": "lap_swimming",
  "sport": "Pool swim",
@@ -95,7 +95,7 @@
  },
  "score": {
   "id": 21000000102,
-  "date": "2026-11-20",
+  "date": "2026-11-27",
   "title": "Pool swim",
   "type": "lap_swimming",
   "group": "swim",
@@ -139,24 +139,24 @@
     "weight": 25,
     "measure": "evenness of each repeated set: pace spread 3 % or under full",
     "planned_text": "even sets · within 3 %",
-    "done_text": "spread 3.3 % at worst",
+    "done_text": "spread 3.4 % at worst",
     "detail": {
      "sets": 1,
-     "worst_spread": 0.033
+     "worst_spread": 0.034
     },
-    "score": 0.957,
-    "points": 23.9,
+    "score": 0.943,
+    "points": 23.6,
     "dropped": null
    }
   ],
   "coverage": 1.0,
   "out_of": 100,
-  "earned": 95.3,
+  "earned": 94.9,
   "excluded": null,
   "against": "Swim · Aerobic 1800 · the workout the watch ran",
   "summary": "1 of 11 planned swims not done. Everything else was on target.",
   "headline": null,
-  "foot": "Score = 95.3 ÷ 100 points that could be scored.",
+  "foot": "Score = 94.9 ÷ 100 points that could be scored.",
   "capped": null,
   "provisional": false,
   "flags": [
@@ -242,28 +242,28 @@
   },
   {
    "distance": 100.0,
-   "duration": 129.0,
-   "movingDuration": 129.0,
+   "duration": 127.0,
+   "movingDuration": 127.0,
    "averageHR": 132,
    "lengthDTOs": [
     {
      "distance": 25.0,
-     "duration": 32.2,
+     "duration": 31.8,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 32.2,
+     "duration": 31.8,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 32.2,
+     "duration": 31.8,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 32.2,
+     "duration": 31.8,
      "totalNumberOfStrokes": 17
     }
    ]
@@ -275,28 +275,28 @@
   },
   {
    "distance": 100.0,
-   "duration": 127.0,
-   "movingDuration": 127.0,
+   "duration": 128.0,
+   "movingDuration": 128.0,
    "averageHR": 133,
    "lengthDTOs": [
     {
      "distance": 25.0,
-     "duration": 31.8,
+     "duration": 32.0,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 31.8,
+     "duration": 32.0,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 31.8,
+     "duration": 32.0,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 31.8,
+     "duration": 32.0,
      "totalNumberOfStrokes": 17
     }
    ]
@@ -308,28 +308,28 @@
   },
   {
    "distance": 100.0,
-   "duration": 129.0,
-   "movingDuration": 129.0,
+   "duration": 130.0,
+   "movingDuration": 130.0,
    "averageHR": 134,
    "lengthDTOs": [
     {
      "distance": 25.0,
-     "duration": 32.2,
+     "duration": 32.5,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 32.2,
+     "duration": 32.5,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 32.2,
+     "duration": 32.5,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 32.2,
+     "duration": 32.5,
      "totalNumberOfStrokes": 17
     }
    ]
@@ -374,28 +374,28 @@
   },
   {
    "distance": 100.0,
-   "duration": 132.0,
-   "movingDuration": 132.0,
+   "duration": 130.0,
+   "movingDuration": 130.0,
    "averageHR": 136,
    "lengthDTOs": [
     {
      "distance": 25.0,
-     "duration": 33.0,
+     "duration": 32.5,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 33.0,
+     "duration": 32.5,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 33.0,
+     "duration": 32.5,
      "totalNumberOfStrokes": 17
     },
     {
      "distance": 25.0,
-     "duration": 33.0,
+     "duration": 32.5,
      "totalNumberOfStrokes": 17
     }
    ]
@@ -674,7 +674,7 @@
     "unit": "bpm"
    },
    "pace_spread": {
-    "value": 3.3,
+    "value": 3.4,
     "source": "computed",
     "unit": "%"
    }
@@ -697,8 +697,8 @@
    {
     "n": 2,
     "metres": 100,
-    "secs": 129,
-    "pace_100": 129.0,
+    "secs": 127,
+    "pace_100": 127.0,
     "swolf": 49,
     "stroke": "FREESTYLE",
     "hr": 132,
@@ -711,8 +711,8 @@
    {
     "n": 3,
     "metres": 100,
-    "secs": 127,
-    "pace_100": 127.0,
+    "secs": 128,
+    "pace_100": 128.0,
     "swolf": 49,
     "stroke": "FREESTYLE",
     "hr": 133,
@@ -725,9 +725,9 @@
    {
     "n": 4,
     "metres": 100,
-    "secs": 129,
-    "pace_100": 129.0,
-    "swolf": 49,
+    "secs": 130,
+    "pace_100": 130.0,
+    "swolf": 50,
     "stroke": "FREESTYLE",
     "hr": 134,
     "planned": {
@@ -753,8 +753,8 @@
    {
     "n": 6,
     "metres": 100,
-    "secs": 132,
-    "pace_100": 132.0,
+    "secs": 130,
+    "pace_100": 130.0,
     "swolf": 50,
     "stroke": "FREESTYLE",
     "hr": 136,
@@ -836,7 +836,7 @@
     "done": 7,
     "metres": 100.0,
     "note": "Steady, same time each",
-    "pace_spread": 0.033
+    "pace_spread": 0.034
    }
   ],
   "flags": [
@@ -862,7 +862,7 @@
   },
   "fuel_band": {
    "source": "computed",
-   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to under 2.5 h: 30–60 g/h easy, about 60 hard. 2.5 h or more: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
   },
   "fuel_target": {
    "source": "computed",

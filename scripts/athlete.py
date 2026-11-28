@@ -93,6 +93,12 @@ class Athlete:
         return self.root / "races.json"
 
     @property
+    def trips_path(self) -> Path:
+        """Their trips: the days they are away from their usual setup, where, and what each place has
+        — gym, pool, bike, trainer, running, courts (docs/DESIGN.md (trips)). Absent = no trips."""
+        return self.root / "trips.json"
+
+    @property
     def fuel_path(self) -> Path:
         """Their fuelling setup: the products they own, how they mix a bottle, the rate their gut is
         trained to, caffeine, and which setup questions are answered (docs/DESIGN.md (fuelling and score) §2–3).
@@ -166,6 +172,13 @@ class Athlete:
         """Session modules — swims, runs, circuits, mobility — relative to the athlete folder, each
         exposing WORKOUTS (scripts/workout_dsl.py). scripts/build_sessions.py builds them."""
         return [self.root / s for s in self.config.get("sessions") or []]
+
+    @property
+    def workout_needs(self) -> dict:
+        """Managed workout key -> what it needs where it is done (scripts/trips.py ACCESS), where its
+        sport alone would say something else: the watch copy of a Zwift ride is a `cycling` workout
+        that needs the trainer, not the bike; a bodyweight circuit needs nothing. Absent = its sport's."""
+        return {k: list(v) for k, v in (self.config.get("workout_needs") or {}).items()}
 
     @property
     def generators(self) -> list:

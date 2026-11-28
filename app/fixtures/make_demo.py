@@ -660,6 +660,20 @@ def demo_races() -> dict:
     ]}
 
 
+# Trips (docs/DESIGN.md (trips)): two synthetic places. The first starts next Monday, on the day the watch has
+# D1 · Push — a clash the Plan screen shows — and its bike is a maybe due an answer, which Today asks; the
+# second, three weeks out, has a pool, the bike and courts, and travel days with a home part.
+def demo_trips() -> dict:
+    monday = TODAY - dt.timedelta(days=TODAY.weekday())
+    d = lambda n: (monday + dt.timedelta(days=n)).isoformat()  # noqa: E731
+    away = {"gym": "no", "pool": "no", "bike": "maybe", "trainer": "no", "run": "yes", "courts": "no"}
+    return {"_why": "SYNTHETIC — app/fixtures/make_demo.py.", "home": {"where": "Rivertown"}, "trips": [
+        {"id": "lakeside", "where": "Lakeside", "from": d(7), "to": d(10), "access": away, "time": "limited",
+         "note": "Runs if time allows."},
+        {"id": "hill-town", "where": "Hill Town", "from": d(21), "to": d(27),
+         "access": {**away, "pool": "yes", "bike": "yes", "courts": "yes"}, "leave": "evening", "back": "morning"}]}
+
+
 def write_own_files(a: Path, annotations: dict) -> None:
     if SPARSE:   # a new athlete: the intake's goal, nothing else yet
         # ...and no races.json at all: the views without one (docs/DESIGN.md (races) §8). The scaffold's empty
@@ -698,6 +712,7 @@ def write_own_files(a: Path, annotations: dict) -> None:
         {"date": sunday.isoformat(), "title": "Long ride · Z2", "sport": "road_biking", "duration_min": 150, "intent": "endurance",
          "detail": "Zone 2 throughout, 60–75 % FTP.", "why": "The week's long ride."}]})
     dump(a / "races.json", demo_races())
+    dump(a / "trips.json", demo_trips())
     logs = a / "logs"
     (logs / f"{TODAY}.md").write_text(f"# Daily · {TODAY}\n\nTRAIN · D2 Pull — recovered, and Pull is 8 days old.\n")
     monday = TODAY - dt.timedelta(days=TODAY.weekday())
@@ -953,7 +968,7 @@ def main() -> None:
             shutil.rmtree(out)
         views = json.loads(run(["scripts/app_data.py", "sessions"], env))["sessions"]
         calls = [(v, None) for v in ("today", "recovery", "load", "strength", "sessions", "program", "calendar",
-                                     "races", "body", "journal", "memory", "system", "fuel")]
+                                     "races", "trips", "body", "journal", "memory", "system", "fuel")]
         # The latest of each group, the circuit (stations), and another sport (tennis — never a circuit).
         picks = [lambda s, g=g: s["group"] == g for g in ("strength", "run", "swim", "bike")]
         picks += [lambda s: s["kind"] == "circuit", lambda s: s["kind"] == "sport"]

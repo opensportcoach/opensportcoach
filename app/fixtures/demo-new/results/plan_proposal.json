@@ -2,17 +2,17 @@
  "kind": "plan_proposal",
  "request_id": "r2",
  "id": "plan-next-week",
- "title": "Next week 23 Nov",
+ "title": "Next week 30 Nov",
  "headline": "Bench and quads up, a CSS test, and a long ride.",
  "version": {
   "n": 2,
   "of": 2,
   "note": "Proposal 1 kept the circuit on Sunday."
  },
- "based_on_data_as_of": "2026-11-21T07:40:00",
+ "based_on_data_as_of": "2026-11-28T07:40:00",
  "days": [
   {
-   "date": "2026-11-23",
+   "date": "2026-11-30",
    "type": "session",
    "workout_key": "d1",
    "sport": "strength",
@@ -33,7 +33,7 @@
    "benchmark": false
   },
   {
-   "date": "2026-11-24",
+   "date": "2026-12-01",
    "type": "cardio",
    "workout_key": null,
    "sport": "run",
@@ -54,7 +54,7 @@
    "benchmark": false
   },
   {
-   "date": "2026-11-25",
+   "date": "2026-12-02",
    "type": "rest",
    "workout_key": null,
    "sport": null,
@@ -69,7 +69,7 @@
    "benchmark": false
   },
   {
-   "date": "2026-11-26",
+   "date": "2026-12-03",
    "type": "session",
    "workout_key": "d2",
    "sport": "strength",
@@ -78,13 +78,13 @@
    "change": "moved",
    "from": "Fri",
    "to": "Thu",
-   "from_date": "2026-11-27",
+   "from_date": "2026-12-04",
    "reason": "Moves up a day so the CSS test gets Friday after a rest day.",
    "evidence": [],
    "benchmark": false
   },
   {
-   "date": "2026-11-27",
+   "date": "2026-12-04",
    "type": "cardio",
    "workout_key": null,
    "sport": "swim",
@@ -105,7 +105,7 @@
    "benchmark": true
   },
   {
-   "date": "2026-11-28",
+   "date": "2026-12-05",
    "type": "session",
    "workout_key": "d3",
    "sport": "strength",
@@ -126,7 +126,7 @@
    "benchmark": false
   },
   {
-   "date": "2026-11-29",
+   "date": "2026-12-06",
    "type": "cardio",
    "workout_key": null,
    "sport": "zwift",
@@ -154,7 +154,7 @@
    }
   },
   {
-   "date": "2026-11-29",
+   "date": "2026-12-06",
    "type": "session",
    "workout_key": null,
    "sport": "circuit",
@@ -239,8 +239,8 @@
    "status": "near_limit",
    "rule": "Two hard days back to back.",
    "detail": "CSS test Fri, Legs Sat — different systems, allowed.",
-   "from": "2026-11-27",
-   "to": "2026-11-28"
+   "from": "2026-12-04",
+   "to": "2026-12-05"
   }
  ],
  "needs_push": true

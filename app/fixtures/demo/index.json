@@ -1,7 +1,7 @@
 {
  "athlete": "demo",
  "display": "Rocky",
- "generated_on": "2026-11-21",
+ "generated_on": "2026-11-28",
  "views": {
   "today": [
    {
@@ -51,6 +51,12 @@
     "file": "views/races.json"
    }
   ],
+  "trips": [
+   {
+    "arg": null,
+    "file": "views/trips.json"
+   }
+  ],
   "body": [
    {
     "arg": null,
@@ -95,8 +101,8 @@
     "file": "views/workout--21000000102.json"
    },
    {
-    "arg": "21000000098",
-    "file": "views/workout--21000000098.json"
+    "arg": "21000000093",
+    "file": "views/workout--21000000093.json"
    },
    {
     "arg": "21000000103",
@@ -131,16 +137,16 @@
   ],
   "journal-entry": [
    {
-    "arg": "2026-11-21.md",
-    "file": "views/journal-entry--2026-11-21.md.json"
+    "arg": "2026-11-28.md",
+    "file": "views/journal-entry--2026-11-28.md.json"
    },
    {
-    "arg": "2026-11-16-review.md",
-    "file": "views/journal-entry--2026-11-16-review.md.json"
+    "arg": "2026-11-23-review.md",
+    "file": "views/journal-entry--2026-11-23-review.md.json"
    },
    {
-    "arg": "2026-11-15-21000000098-review.md",
-    "file": "views/journal-entry--2026-11-15-21000000098-review.md.json"
+    "arg": "2026-11-15-21000000093-review.md",
+    "file": "views/journal-entry--2026-11-15-21000000093-review.md.json"
    }
   ]
  },

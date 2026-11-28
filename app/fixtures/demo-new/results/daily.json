@@ -1,8 +1,8 @@
 {
  "kind": "daily",
- "date": "2026-11-21",
- "generated_at": "2026-11-21T15:15:18",
- "data_as_of": "2026-11-21T15:13:18",
+ "date": "2026-11-28",
+ "generated_at": "2026-11-28T14:13:08",
+ "data_as_of": "2026-11-28T14:11:08",
  "recommendation": {
   "verb": "TRAIN",
   "workout_key": "d2",
@@ -34,7 +34,7 @@
   "note": null
  },
  "review": {
-  "session_date": "2026-11-16",
+  "session_date": "2026-11-23",
   "day_key": "d1",
   "lines": [
    {
@@ -65,7 +65,7 @@
     "from": 80,
     "to": 82.5,
     "evidence_dates": [
-     "2026-11-16"
+     "2026-11-23"
     ]
    }
   },

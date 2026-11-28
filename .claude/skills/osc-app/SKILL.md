@@ -70,6 +70,7 @@ Every event: `<channel source="osc-app" request_id="r7" kind="…">text</channel
 | `workflow` audit | `/osc-audit` | `review` (subject `month`) |
 | `workflow` races ("Check dates") | `/osc-race`'s date check: look each race up, **record it in `races.json` first** | `race_check` (validated against `races.json`) |
 | `plan` (`move`, `to` when it's a calendar move) | Propose days and program changes, each with its reason. **No repo edits.** | `plan_proposal` |
+| `plan` with `about` `trip <id>` ("Replan around it") | Re-plan the days the trip touches and the days around it (`osc-week` step 7), with each change's reason. **No repo edits.** | `plan_proposal` (checked against `trips.json`) |
 | `plan` with `proposal` | The athlete asks for a **new version** of that proposal — reverted changes and their own words are in the text. Re-check the **whole** week against the rules, never patch only the reverted items; `version` goes up by one. **No repo edits.** | `plan_proposal` |
 | `accept` with `proposal` | Apply that plan proposal: `program.py` + `CURRENT_ROUTINE.md` (+ `update_progression_log.py`); **every day of the week into the calendar** — what their `ATHLETE.md` puts on the watch through the push (the horizon — today + 2 by default — or the whole week), the rest into `plan.json` (off-watch sessions as before, later watch sessions naming their `workout`, see `osc-week`); then `/osc-push`'s gate, then its dry run with `--plan-json` | `push_plan` (or `app_reply` if Garmin needs nothing) |
 | `accept` with `pending_id` | The daily's pending item with that id (a bump, usually): apply it as above | `push_plan`, or `app_reply` |
@@ -104,6 +105,12 @@ setup itself, through the server's own actions (`/api/actions/fuel`, `/api/actio
 `athletes/<name>/fuel.json` and `logs/fuel.json`: commit those with the day's athlete commit. A
 `question` asking to **add a fuel product** is yours: read it off the maker's page, show it, add it
 with `scripts/fuel.py add-product`, and commit it on its own (an engine change).
+
+**Trips are not requests either** (docs/DESIGN.md (trips)). The page adds, changes and removes trips and
+settles a maybe ("Is your bike coming?") through the server's own action (`/api/actions/trips` →
+`scripts/trips.py save` / `remove` / `answer`, no model). They change `athletes/<name>/trips.json`:
+commit it with the day's athlete commit. The clashes that follow show on Plan and Today; "Replan around
+it" is the `plan` request above.
 
 Structured results: write the JSON to `data/<name>/app/results/<request_id>.json`, validate it
 (`scripts/app_contracts.py validate <kind> <file>`), then `app_publish(request_id, kind, file)`. The

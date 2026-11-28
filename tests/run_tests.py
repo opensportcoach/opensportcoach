@@ -640,7 +640,7 @@ def test_every_app_view_builds_for_every_athlete():
     import export_dashboard_data as ed_   # the app groups lifts by the chart's own attribution
     assert all(x["muscle"] == ed_.muscle_of(x["category"], x["name"]) for x in lifts)
     journal = app_data.run_view("journal")["entries"]
-    calls = [(v, None) for v in ("today", "recovery", "load", "program", "calendar", "races", "body", "memory", "system")]
+    calls = [(v, None) for v in ("today", "recovery", "load", "program", "calendar", "races", "trips", "body", "memory", "system")]
     for grp in ("strength", "run", "swim", "bike", "other"):
         hit = next((s for s in sessions if s["group"] == grp), None)
         if hit:
@@ -708,6 +708,13 @@ def test_every_app_view_builds_for_every_athlete():
     rv, line = app_data.run_view("races"), today["race"]
     assert ((line or {}).get("next") or {}).get("id") == (rv["next"] or {}).get("id"), (line, rv["next"])
     assert ((line or {}).get("window") or {}).get("window") == rv["today"]["window"], (line, rv["today"])
+    # One set of trips (docs/DESIGN.md (trips)): Today's line, the calendar and the trips view read the same trips.py.
+    tv, cal = app_data.run_view("trips"), app_data.run_view("calendar")
+    assert cal["trip_clashes"] == tv["clashes"], (cal["trip_clashes"], tv["clashes"])
+    assert {d["trip"]["id"] for d in cal["trip_days"]} <= {t["id"] for t in tv["trips"]}
+    tl = today["trip"]
+    assert tl is None or (tl["today"]["away"] == tv["today"]["away"] and tl["clashes"] == len(tv["clashes"])), (tl, tv["today"])
+    assert all(q["due"] for q in (tl or {}).get("questions") or []), "Today asks only the maybes due"
 
 
 def test_every_watch_step_is_tied_to_its_exercise_row():
@@ -769,6 +776,10 @@ def test_off_watch_plan_is_well_formed():
         assert s.get("platform") in (None, *app_data.PLATFORMS), f"{s.get('platform')!r}: the app has no mark for it"
         # Today's This week draws a planned session by its minutes; without them it uses the sport's typical time.
         assert s.get("duration_min") is None or (isinstance(s["duration_min"], int) and s["duration_min"] > 0), s
+        # What it needs where it is done (docs/DESIGN.md (trips)): places scripts/trips.py knows, or none said.
+        import trips
+        assert s.get("needs") is None or (isinstance(s["needs"], list) and set(s["needs"]) <= set(trips.ACCESS)), \
+            f"{s['date']} {s['title']}: needs {s.get('needs')!r} — places are {list(trips.ACCESS)}"
         # Its intent is what its fuel plan reads (docs/DESIGN.md (fuelling and score) §4.3): one of the rule's own, or none.
         import formulas
         assert s.get("intent") is None or s["intent"] in formulas.INTENTS, \
@@ -895,7 +906,7 @@ def test_app_fixtures_build_and_honour_their_contracts():
                                   env={k: v for k, v in os.environ.items() if not k.startswith("OSC_")})
             assert proc.returncode == 0, extra + [proc.stdout + proc.stderr]
             index = json.loads((Path(tmp) / "index.json").read_text())
-            assert {"today", "recovery", "load", "strength", "workout", "exercise", "program", "races"} <= set(index["views"])
+            assert {"today", "recovery", "load", "strength", "workout", "exercise", "program", "races", "trips"} <= set(index["views"])
             view = lambda n: json.loads((Path(tmp) / "views" / f"{n}.json").read_text())  # noqa: E731
             races_v, today_v, cal_v, prog_v = view("races"), view("today"), view("calendar"), view("program")
             if not extra:   # four races (docs/DESIGN.md (races) §6): an A race ahead, one that differs, two run with results
@@ -916,9 +927,20 @@ def test_app_fixtures_build_and_honour_their_contracts():
                 assert today_v["race"]["next"]["id"] == races_v["next"]["id"], today_v["race"]
                 assert {x["window"] for x in cal_v["race_days"]} >= {"easy", "taper", "race", "recovery"}, cal_v["race_days"]
                 assert prog_v["season"]["current"]["name"] == prog_v["block"]["name"], prog_v["season"]["current"]
+                # Two trips (docs/DESIGN.md (trips)): Lakeside next Monday clashes with D1 · Push on the watch and asks
+                # for its maybe bike; Hill Town three weeks out has neither.
+                trips_v = view("trips")
+                lake, hill = trips_v["trips"]
+                assert [c["title"] for c in lake["clashes"]] == ["D1 · Push"] and lake["clashes"][0]["on_watch"], lake["clashes"]
+                assert [q["access"] for q in lake["questions"]] == ["bike"] and lake["questions"][0]["due"], lake["questions"]
+                assert not hill["clashes"] and not hill["questions"], hill
+                assert today_v["trip"]["trip"]["id"] == "lakeside" and today_v["trip"]["questions"], today_v["trip"]
+                assert len(cal_v["trip_days"]) == lake["days"] + hill["days"] and cal_v["trip_clashes"] == trips_v["clashes"]
             else:   # none: the views without races.json
                 assert races_v["races"] == [] and races_v["next"] is None and races_v["season"] is None, races_v
                 assert today_v["race"] is None and cal_v["race_days"] == [] and prog_v["season"] is None
+                # ...nor trips.json: no trip, no day away, no clash.
+                assert view("trips")["trips"] == [] and today_v["trip"] is None and cal_v["trip_days"] == cal_v["trip_clashes"] == []
             if not extra:   # a circuit shows its stations; a review shows on its own session only (M3, M4)
                 views = {e["arg"]: json.loads((Path(tmp) / e["file"]).read_text()) for e in index["views"]["workout"]}
                 circuit = next(v for v in views.values() if v["group"] == "other")
@@ -1344,6 +1366,168 @@ def test_race_check_is_due_by_its_rules_only():
     assert due(ago(-3), ago(1)) is None and due(ago(-3), ago(2)) == "date"   # start times, ~3 days out
     assert due(ago(1), ago(10)) == "result" and due(ago(1), ago(10), result={"time": "1:50:00"}) is None
     assert due(ago(1), ago(10), entry="dns") is None and due(ago(-10), None, entry="dns") is None
+
+
+# --------------------------------------------------------------------------- #
+# trips (docs/DESIGN.md (trips), 2026-11-28)
+# --------------------------------------------------------------------------- #
+# An athlete's trips are athletes/<name>/trips.json; what a trip day allows and what a session needs are
+# scripts/trips.py. These hold the file to its shape, the rules to their definitions, and every plan the
+# coach writes to the places the athlete will be.
+def test_trips_are_well_formed():
+    """athletes/<name>/trips.json is what the daily, the week planner and the app read: every trip has a
+    slug id, a place, dates in order, yes · maybe · no for EVERY place in trips.ACCESS (nothing assumed to
+    be there), a known time and travel parts, and no two trips share a day. A maybe that was settled keeps
+    the day it was, and is no longer a maybe. athlete.json → workout_needs names managed workouts and
+    places the engine knows."""
+    import trips
+    for key, needs in A.workout_needs.items():
+        assert key in A.managed, f"workout_needs: {key!r} is not a managed workout"
+        assert set(needs) <= set(trips.ACCESS), f"workout_needs.{key}: {sorted(set(needs) - set(trips.ACCESS))} unknown"
+    if not A.trips_path.exists():
+        return
+    raw = json.loads(A.trips_path.read_text())
+    assert isinstance(raw.get("trips"), list), "trips.json needs a trips list"
+    assert raw.get("home") is None or isinstance(raw["home"], dict), "home is {where} or null"
+    ids = [t.get("id") for t in raw["trips"]]
+    assert len(ids) == len(set(ids)), f"trip ids must be unique: {ids}"
+    for t in raw["trips"]:
+        bad = trips.problems(t, raw["trips"])
+        assert not bad, f"{t.get('id')}: {'; '.join(bad)}"
+
+
+def test_trip_rules_are_keyed_on_sport_and_how_it_is_done():
+    """What a session needs is keyed on its sport AND how it is done — never on the sport group, the
+    lookup defect CLAUDE.md lists first: a Zwift ride and an outdoor ride are both "bike", yet one needs the
+    trainer and the other the bike, and the watch's copy of a Zwift ride is a `cycling` workout that needs
+    the trainer once declared. A sport the engine has no default for is unknown, never guessed. A maybe is
+    a no until answered (the owner's call, 2026-11-28). A travel day holds no intensity and no test, and
+    gives one home session when the athlete leaves after the morning or is back before the evening."""
+    import types
+    import sports
+    import trips
+    for tk in trips.NEEDS:
+        assert tk in sports.SPORT_LABEL, f"NEEDS names {tk!r}, which sports.py doesn't know"
+    assert set(trips.PROPOSAL_NEEDS) | {None} >= {"strength", "run", "bike", "zwift", "swim", "circuit", "tennis", "other"}
+    for needs in [*trips.NEEDS.values(), *trips.PLATFORM_NEEDS.values(), *(v for v in trips.PROPOSAL_NEEDS.values() if v)]:
+        assert set(needs) <= set(trips.ACCESS), needs
+    fake = types.SimpleNamespace(workout_needs={"zw_copy": ["trainer"], "hotel": []})
+    assert trips.needs_of({"sport": "virtual_ride", "platform": "zwift"}, fake) == ("trainer",)
+    assert trips.needs_of({"sport": "road_biking"}, fake) == ("bike",)
+    assert trips.needs_of({"sport": "cycling", "workout": "zw_copy"}, fake) == ("trainer",)
+    assert trips.workout_needs("zw_copy", "cycling", fake) == ("trainer",) and trips.workout_needs("x", "cycling", fake) == ("bike",)
+    assert trips.needs_of({"sport": "strength_training", "needs": []}, fake) == ()
+    assert trips.needs_of({"sport": "open_water_swimming"}, fake) is None
+    assert trips.proposal_needs({"type": "session", "sport": None}, fake) == ("gym",)
+    assert trips.proposal_needs({"type": "session", "sport": "strength", "workout_key": "hotel"}, fake) == ()
+    assert trips.proposal_needs({"type": "rest"}, fake) == ()
+    away = {"gym": "no", "pool": "no", "bike": "maybe", "trainer": "no", "run": "yes", "courts": "no"}
+    assert trips.allows(("run",), away)["ok"] and not trips.allows(("bike",), away)["ok"]
+    assert trips.allows(("bike",), away)["unsure"] == ["bike"] and trips.allows(("gym",), away)["missing"] == ["gym"]
+    assert trips.allows(None, away)["unknown"] and trips.allows(None, None)["ok"], "unknown is refused away, fine at home"
+    t = {"id": "lake-2026-12", "where": "Lake", "from": "2026-12-04", "to": "2026-12-07", "access": away}
+    assert [x["travel"] for x in trips.days_of(t)] == ["leave", None, None, "back"]
+    assert [x["home"] for x in trips.days_of({**t, "leave": "evening", "back": "morning"})] == \
+        ["before you leave", None, None, "after you are back"]
+    assert [x["home"] for x in trips.days_of({**t, "leave": "morning", "back": "evening"})] == [None] * 4
+    assert trips.on("2026-12-03", [t])["away"] is False and trips.on("2026-12-03", [t])["days_to"] == 1
+    p = trips.on("2026-12-05", [t])
+    assert p["away"] and p["day"] == 2 and p["of"] == 4 and p["travel"] is None and p["access"] == away
+    common = dict(trips=[t], scheduled=[], benchmarks=[], names={"zw_copy": "Zwift · Copy"})
+    cs = trips.clashes(fake, "2026-11-28", plan=[
+        {"date": "2026-12-04", "title": "Easy run", "sport": "running", "intent": "endurance"},
+        {"date": "2026-12-04", "title": "Run VO2", "sport": "running", "intent": "vo2"},
+        {"date": "2026-12-05", "title": "Long run", "sport": "running"},
+        {"date": "2026-12-05", "title": "Hotel circuit", "sport": "cardio_training", "needs": []},
+        {"date": "2026-12-06", "title": "Long ride", "sport": "cycling"},
+        {"date": "2026-12-06", "title": "Zwift", "sport": "virtual_ride", "platform": "zwift"},
+        {"date": "2026-12-08", "title": "Gym", "sport": "strength_training"}], **common)
+    assert [(c["date"], c["title"]) for c in cs] == [("2026-12-04", "Run VO2"), ("2026-12-06", "Long ride"), ("2026-12-06", "Zwift")], cs
+    assert cs[0]["hard"] and cs[1]["unsure"] == ["bike"] and cs[2]["missing"] == ["trainer"]
+    bench = trips.clashes(fake, "2026-11-28", plan=[], trips=[t], scheduled=[], names={},
+                          benchmarks=[{"id": "5k", "name": "5 km", "sport": "running", "due": "2026-12-07"},
+                                      {"id": "ftp", "name": "FTP", "sport": "virtual_ride", "due": "2026-12-05"}])
+    assert [c["title"] for c in bench] == ["FTP", "5 km"], "a test needs its place, and never lands on a travel day"
+
+
+def test_trips_are_written_only_through_their_rules():
+    """trips.py save refuses what a trip can't be — a place left unanswered, an overlap, dates out of order —
+    and writes nothing then; a settled maybe records its day; answer settles only a maybe."""
+    import tempfile
+    import trips
+    with tempfile.TemporaryDirectory() as tmp:
+        A_ = athlete.Athlete("nobody", Path(tmp))
+        (Path(tmp) / "athlete.json").write_text("{}")
+        acc = {k: "no" for k in trips.ACCESS} | {"run": "yes", "bike": "maybe"}
+        t = trips.save({"where": "Lake", "from": "2026-12-04", "to": "2026-12-07", "access": acc}, A_)
+        assert t["id"] == "lake-2026-12" and "answered" not in t
+        for bad in ({"where": "Hill", "from": "2026-12-07", "to": "2026-12-09", "access": acc},     # shares the 7th
+                    {"where": "Hill", "from": "2027-01-09", "to": "2027-01-02", "access": acc},     # backwards
+                    {"where": "Hill", "from": "2027-01-02", "to": "2027-01-09", "access": {"run": "yes"}}):
+            try:
+                trips.save(bad, A_)
+            except ValueError:
+                continue
+            raise AssertionError(f"saved {bad}")
+        assert [x["id"] for x in trips.trips_of(A_)] == ["lake-2026-12"], "a refused trip writes nothing"
+        settled = trips.answer("lake-2026-12", "bike", "no", A_)
+        assert settled["access"]["bike"] == "no" and settled["answered"] == {"bike": dt.date.today().isoformat()}
+        try:
+            trips.answer("lake-2026-12", "bike", "yes", A_)
+            raise AssertionError("answered a place that is no longer a maybe")
+        except ValueError:
+            pass
+        assert not trips.problems(trips.trips_of(A_)[0], trips.trips_of(A_))
+        trips.remove("lake-2026-12", A_)
+        assert trips.trips_of(A_) == []
+
+
+def test_no_planned_session_or_benchmark_needs_what_a_trip_lacks():
+    """The coach plans each trip day with what that place has (docs/DESIGN.md (trips)): no plan.json session
+    from today on and no benchmark due needs what its trip day doesn't have — a maybe counts as not there
+    — and no hard session or test lands on a travel day. The Garmin calendar is NOT held here: a watch
+    entry is fixed by a push, which this suite gates, so the daily reads those clashes from trips.py check."""
+    import trips
+    cs = [c for c in trips.clashes(A, dt.date.today(), scheduled=[]) if c["source"] in ("plan", "benchmark")]
+    assert not cs, "; ".join(f"{c['date']} {c['title']} ({c['source']}): {c['why']}" for c in cs)
+
+
+def test_a_watch_copy_needs_what_its_plan_session_needs():
+    """The watch's copy of a Zwift ride is a `cycling` workout: by its sport alone it would need the bike,
+    and a trip with the bike but not the trainer would let it through. So a managed workout that a plan.json
+    session names, run by an app (`platform`), declares what that session needs in athlete.json →
+    workout_needs — the same answer from either side (docs/DESIGN.md (trips))."""
+    import trips
+    if not A.plan_path.exists():
+        return
+    for s in json.loads(A.plan_path.read_text()).get("sessions") or []:
+        key = s.get("workout")
+        if not key or s.get("platform") not in trips.PLATFORM_NEEDS:
+            continue
+        w = json.loads((A.workouts_dir / f"{key}.json").read_text())
+        sport = (w.get("sportType") or {}).get("sportTypeKey")
+        assert trips.workout_needs(key, sport, A) == trips.needs_of(s, A), (
+            f"{key}: the plan's {s['title']} needs {trips.needs_of(s, A)}, the watch workout {trips.workout_needs(key, sport, A)} "
+            f"— declare it in athlete.json → workout_needs")
+
+
+def test_a_proposal_or_a_call_cannot_need_what_a_trip_lacks():
+    """The plan_proposal and daily contracts are checked against the trips (scripts/app_contracts.py
+    check_trips): a gym day proposed in a place with no gym, or a ride on a bike that is still a maybe, is
+    refused before the app shows it; a run there, a bodyweight session (`needs` []), a removed day and a
+    rest day pass."""
+    import types
+    import app_contracts
+    acc = {"gym": "no", "pool": "no", "bike": "maybe", "trainer": "no", "run": "yes", "courts": "no"}
+    t = [{"id": "lake-2026-12", "where": "Lake", "from": "2026-12-04", "to": "2026-12-07", "access": acc}]
+    fake = types.SimpleNamespace(workout_needs={}, workouts_dir=Path("/nonexistent"))
+    day = lambda **kw: {"date": "2026-12-05", "type": "session", "title": "x", "change": "added", "reason": "r", **kw}  # noqa: E731
+    out = app_contracts.check_trips("plan_proposal", {"days": [
+        day(sport="strength"), day(sport="bike"), day(sport="run"), day(sport="strength", needs=[]),
+        day(sport="strength", change="removed"), day(type="rest"), day(date="2026-12-09", sport="strength")]}, fake, t)
+    assert [o.split(":")[0] for o in out] == ["days/0", "days/1"], out
+    assert "no gym in Lake" in out[0] and "maybe" in out[1], out
+    assert app_contracts.check_trips("plan_proposal", {"days": [day(sport="strength")]}, fake, []) == []
 
 
 # --- docs/code lockstep -------------------------------------------------------

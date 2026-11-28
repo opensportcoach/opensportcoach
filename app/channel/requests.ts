@@ -114,3 +114,63 @@ export function checkRequest(kind: string, params: Record<string, unknown> | und
   if (kind === 'checkin' && !(Number.isInteger(p.feel) && (p.feel as number) >= 1 && (p.feel as number) <= 5)) return 'checkin.feel must be 1–5';
   return null;
 }
+
+// --- trips (docs/DESIGN.md (trips)) ----------------------------------------------------------------------
+// Not requests either: the page writes the athlete's own trips through the server's action, which runs
+// scripts/trips.py with no model. trips.py checks the rest (overlaps, dates in order); this holds the shape.
+export const TRIP_ACCESS = ['gym', 'pool', 'bike', 'trainer', 'run', 'courts'] as const;
+export type TripAccess = (typeof TRIP_ACCESS)[number];
+export type TripState = 'yes' | 'maybe' | 'no';
+export interface TripBody {
+  id?: string;
+  where: string;
+  from: string;
+  to: string;
+  access: Record<TripAccess, TripState>;
+  time?: 'normal' | 'limited' | null;
+  leave?: 'morning' | 'afternoon' | 'evening' | null;
+  back?: 'morning' | 'afternoon' | 'evening' | null;
+  note?: string | null;
+}
+/** POST /api/actions/trips: save a trip (add, or replace by id), remove one, or settle a maybe. */
+export type TripAction =
+  | { action: 'save'; trip: TripBody }
+  | { action: 'remove'; id: string }
+  | { action: 'answer'; id: string; access: TripAccess; state: 'yes' | 'no' };
+const TRIP_ID = /^[a-z0-9][a-z0-9-]{0,47}$/;
+const ISO = /^\d{4}-\d{2}-\d{2}$/;
+const PARTS = ['morning', 'afternoon', 'evening'];
+
+export function checkTrip(b: unknown): string | null {
+  const x = (b ?? {}) as Record<string, unknown>;
+  const only = (keys: string[]) => Object.keys(x).find((k) => !keys.includes(k));
+  if (x.action === 'remove') {
+    if (only(['action', 'id'])) return `remove takes no "${only(['action', 'id'])}"`;
+    return typeof x.id === 'string' && TRIP_ID.test(x.id) ? null : 'remove names the trip by its id';
+  }
+  if (x.action === 'answer') {
+    if (only(['action', 'id', 'access', 'state'])) return `answer takes no "${only(['action', 'id', 'access', 'state'])}"`;
+    if (typeof x.id !== 'string' || !TRIP_ID.test(x.id)) return 'answer names the trip by its id';
+    if (!TRIP_ACCESS.includes(x.access as TripAccess)) return `access is one of ${TRIP_ACCESS.join(', ')}`;
+    return x.state === 'yes' || x.state === 'no' ? null : 'an answer is yes or no';
+  }
+  if (x.action !== 'save') return 'action is save, remove or answer';
+  if (only(['action', 'trip'])) return `save takes no "${only(['action', 'trip'])}"`;
+  const t = (x.trip ?? {}) as Record<string, unknown>;
+  const keys = ['id', 'where', 'from', 'to', 'access', 'time', 'leave', 'back', 'note'];
+  const extra = Object.keys(t).find((k) => !keys.includes(k));
+  if (extra) return `a trip has no "${extra}"`;
+  if (t.id != null && (typeof t.id !== 'string' || !TRIP_ID.test(t.id))) return 'id is a lowercase slug';
+  if (typeof t.where !== 'string' || !t.where.trim() || t.where.length > 60) return 'say where (at most 60 characters)';
+  if (typeof t.from !== 'string' || !ISO.test(t.from) || typeof t.to !== 'string' || !ISO.test(t.to)) return 'from and to are dates';
+  if (t.to < t.from) return 'it ends before it starts';
+  const acc = (t.access ?? {}) as Record<string, unknown>;
+  if (typeof t.access !== 'object' || t.access === null) return 'say yes, maybe or no for every place';
+  for (const k of TRIP_ACCESS) if (!['yes', 'maybe', 'no'].includes(String(acc[k]))) return `say yes, maybe or no for ${k}`;
+  const unknown = Object.keys(acc).find((k) => !TRIP_ACCESS.includes(k as TripAccess));
+  if (unknown) return `no place "${unknown}"`;
+  if (t.time != null && t.time !== 'normal' && t.time !== 'limited') return 'time is normal or limited';
+  for (const k of ['leave', 'back']) if (t[k] != null && !PARTS.includes(String(t[k]))) return `${k} is morning, afternoon or evening`;
+  if (t.note != null && (typeof t.note !== 'string' || t.note.length > 300)) return 'note is text, at most 300 characters';
+  return null;
+}

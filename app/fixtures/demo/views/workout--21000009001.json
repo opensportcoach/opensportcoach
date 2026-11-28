@@ -1,7 +1,7 @@
 {
  "view": "workout",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:15",
+ "generated_at": "2026-11-28T14:12:56",
  "id": 21000009001,
  "date": "2026-10-11",
  "start": "2026-10-11 09:00:00",
@@ -181,7 +181,7 @@
   },
   "fuel_band": {
    "source": "computed",
-   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to 2.5 h: 30–60 g/h easy, about 60 hard. Over 2.5 h: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
+   "definition": "Carbohydrate during a session, by its length, how hard it is and the sport. Under an hour: none. 60–90 min: none if easy, about 30 g/h if hard. 90 min to under 2.5 h: 30–60 g/h easy, about 60 hard. 2.5 h or more: 60–90 g/h of glucose and fructose. Runs take the lower half of each band; swims none. Sources: ACSM 2016; Jeukendrup 2014."
   },
   "fuel_target": {
    "source": "computed",

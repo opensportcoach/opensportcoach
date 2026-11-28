@@ -1,7 +1,7 @@
 {
  "athlete": "demo",
  "display": "Sam",
- "generated_on": "2026-11-21",
+ "generated_on": "2026-11-28",
  "views": {
   "today": [
    {
@@ -51,6 +51,12 @@
     "file": "views/races.json"
    }
   ],
+  "trips": [
+   {
+    "arg": null,
+    "file": "views/trips.json"
+   }
+  ],
   "body": [
    {
     "arg": null,
@@ -83,24 +89,20 @@
   ],
   "workout": [
    {
-    "arg": "21000000011",
-    "file": "views/workout--21000000011.json"
-   },
-   {
-    "arg": "21000000008",
-    "file": "views/workout--21000000008.json"
-   },
-   {
     "arg": "21000000010",
     "file": "views/workout--21000000010.json"
    },
    {
-    "arg": "21000000006",
-    "file": "views/workout--21000000006.json"
+    "arg": "21000000007",
+    "file": "views/workout--21000000007.json"
    },
    {
-    "arg": "21000000012",
-    "file": "views/workout--21000000012.json"
+    "arg": "21000000009",
+    "file": "views/workout--21000000009.json"
+   },
+   {
+    "arg": "21000000011",
+    "file": "views/workout--21000000011.json"
    }
   ],
   "exercise": [
@@ -116,18 +118,11 @@
     "arg": "SQUAT/LEG_PRESS",
     "file": "views/exercise--SQUAT--LEG_PRESS.json"
    }
-  ],
-  "journal-entry": [
-   {
-    "arg": "2026-11-15-21000000006-review.md",
-    "file": "views/journal-entry--2026-11-15-21000000006-review.md.json"
-   }
   ]
  },
  "results": [
   "answer",
   "daily",
-  "endurance_review",
   "plan_proposal",
   "push_plan",
   "push_result",

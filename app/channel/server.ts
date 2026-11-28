@@ -188,6 +188,19 @@ const handler = createHandler({
       const last = (t: string) => t.trim().split('\n').at(-1) ?? '';
       return out.code === 0 ? { error: null, summary: last(out.stdout) } : { error: last(out.stderr).replace(/^REFUSED: /, '') || 'not saved' };
     },
+  // Trips (docs/DESIGN.md (trips)): scripts/trips.py writes the bound athlete's trips.json, no model, and
+  // refuses what it can't hold (an overlap, a place it doesn't know). The demo writes nothing.
+  trips: MODE === 'fixtures'
+    ? async () => ({ error: null, summary: 'Saved · demo data, so nothing was written' })
+    : async (body) => {
+      const args = body.action === 'save' ? ['scripts/trips.py', 'save', '--json', JSON.stringify(body.trip)]
+        : body.action === 'remove' ? ['scripts/trips.py', 'remove', String(body.id)]
+          : ['scripts/trips.py', 'answer', String(body.id), String(body.access), String(body.state)];
+      const out = await python(args);
+      cache.clear();
+      const last = (t: string) => t.trim().split('\n').at(-1) ?? '';
+      return out.code === 0 ? { error: null, summary: last(out.stdout) } : { error: last(out.stderr).replace(/^REFUSED: /, '') || 'not saved' };
+    },
   status: () => status,
   outdated,
   staticDir: STATIC,

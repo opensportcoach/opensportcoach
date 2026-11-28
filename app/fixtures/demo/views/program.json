@@ -1,7 +1,7 @@
 {
  "view": "program",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:13",
+ "generated_at": "2026-11-28T14:12:55",
  "days": [
   {
    "key": "d1",
@@ -61,18 +61,18 @@
       "value": 8,
       "weight": 80.0,
       "kind": "reps",
-      "since": "2026-10-31",
+      "since": "2026-11-07",
       "sessions": 3,
       "met": 1,
       "status": "ok",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-16",
+      "last": "2026-11-23",
       "skipped": 0,
       "implied_e1rm": 101.3,
       "best_e1rm": 101.3,
       "verdict": "ok",
-      "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-10-31     3    1  ok"
+      "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-11-07     3    1  ok"
      }
     },
     {
@@ -120,18 +120,18 @@
       "value": 10,
       "weight": 26.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-16",
+      "last": "2026-11-23",
       "skipped": 0,
       "implied_e1rm": 34.7,
       "best_e1rm": 34.7,
       "verdict": "FRESH — not tried yet",
-      "line": "D1E2 INCLINE_DUMBBELL_BENCH_PRESS            3x10@26           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D1E2 INCLINE_DUMBBELL_BENCH_PRESS            3x10@26           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -179,18 +179,18 @@
       "value": 10,
       "weight": 20.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-16",
+      "last": "2026-11-23",
       "skipped": 0,
       "implied_e1rm": 26.7,
       "best_e1rm": 26.7,
       "verdict": "FRESH — not tried yet",
-      "line": "D1E3 SEATED_DUMBBELL_SHOULDER_PRESS          3x10@20           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D1E3 SEATED_DUMBBELL_SHOULDER_PRESS          3x10@20           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -238,18 +238,18 @@
       "value": 15,
       "weight": 10.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-16",
+      "last": "2026-11-23",
       "skipped": 0,
       "implied_e1rm": 14.0,
       "best_e1rm": 14.0,
       "verdict": "FRESH — not tried yet",
-      "line": "D1E4 DUMBBELL_LATERAL_RAISE                  3x15@10           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D1E4 DUMBBELL_LATERAL_RAISE                  3x15@10           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -297,18 +297,18 @@
       "value": 12,
       "weight": 15.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-16",
+      "last": "2026-11-23",
       "skipped": 0,
       "implied_e1rm": 21.0,
       "best_e1rm": 21.0,
       "verdict": "FRESH — not tried yet",
-      "line": "D1E5 CABLE_CROSSOVER                         3x12@15           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D1E5 CABLE_CROSSOVER                         3x12@15           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -356,18 +356,18 @@
       "value": 12,
       "weight": 32.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-16",
+      "last": "2026-11-23",
       "skipped": 0,
       "implied_e1rm": 44.8,
       "best_e1rm": 45.5,
       "verdict": "FRESH — not tried yet",
-      "line": "D1E6 ROPE_PRESSDOWN                          3x12@32           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D1E6 ROPE_PRESSDOWN                          3x12@32           2026-11-28     0    0  FRESH — not tried yet"
      }
     }
    ],
@@ -767,7 +767,7 @@
    "rotation": {
     "day": "d1",
     "label": "D1 · Push",
-    "last": "2026-11-16",
+    "last": "2026-11-23",
     "age": 5,
     "starved": false
    },
@@ -840,18 +840,18 @@
       "value": 10,
       "weight": 65.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-19",
+      "last": "2026-11-26",
       "skipped": 0,
       "implied_e1rm": 86.7,
       "best_e1rm": 86.7,
       "verdict": "FRESH — not tried yet",
-      "line": "D2E1 CLOSE_GRIP_LAT_PULLDOWN                 4x10@65           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D2E1 CLOSE_GRIP_LAT_PULLDOWN                 4x10@65           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -899,18 +899,18 @@
       "value": 8,
       "weight": 70.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-19",
+      "last": "2026-11-26",
       "skipped": 0,
       "implied_e1rm": 88.7,
       "best_e1rm": 88.7,
       "verdict": "FRESH — not tried yet",
-      "line": "D2E2 BARBELL_ROW                             4x8@70            2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D2E2 BARBELL_ROW                             4x8@70            2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -958,18 +958,18 @@
       "value": 10,
       "weight": 30.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-19",
+      "last": "2026-11-26",
       "skipped": 0,
       "implied_e1rm": 40.0,
       "best_e1rm": 40.0,
       "verdict": "FRESH — not tried yet",
-      "line": "D2E3 DUMBBELL_ROW                            3x10@30           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D2E3 DUMBBELL_ROW                            3x10@30           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -1017,18 +1017,18 @@
       "value": 12,
       "weight": 14.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-19",
+      "last": "2026-11-26",
       "skipped": 0,
       "implied_e1rm": 19.6,
       "best_e1rm": 19.6,
       "verdict": "FRESH — not tried yet",
-      "line": "D2E4 DUMBBELL_BICEPS_CURL                    3x12@14           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D2E4 DUMBBELL_BICEPS_CURL                    3x12@14           2026-11-28     0    0  FRESH — not tried yet"
      }
     }
    ],
@@ -1187,7 +1187,7 @@
    "rotation": {
     "day": "d2",
     "label": "D2 · Pull",
-    "last": "2026-11-19",
+    "last": "2026-11-26",
     "age": 2,
     "starved": false
    },
@@ -1242,18 +1242,18 @@
       "value": 8,
       "weight": 100.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-14",
+      "last": "2026-11-21",
       "skipped": 0,
       "implied_e1rm": 126.7,
       "best_e1rm": 126.7,
       "verdict": "FRESH — not tried yet",
-      "line": "D3E1 BARBELL_BACK_SQUAT                      4x8@100           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D3E1 BARBELL_BACK_SQUAT                      4x8@100           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -1301,18 +1301,18 @@
       "value": 10,
       "weight": 90.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-14",
+      "last": "2026-11-21",
       "skipped": 0,
       "implied_e1rm": 120.0,
       "best_e1rm": 120.0,
       "verdict": "FRESH — not tried yet",
-      "line": "D3E2 ROMANIAN_DEADLIFT                       3x10@90           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D3E2 ROMANIAN_DEADLIFT                       3x10@90           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -1360,18 +1360,18 @@
       "value": 12,
       "weight": 120.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-14",
+      "last": "2026-11-21",
       "skipped": 0,
       "implied_e1rm": 168.0,
       "best_e1rm": 168.0,
       "verdict": "FRESH — not tried yet",
-      "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -1419,18 +1419,18 @@
       "value": 12,
       "weight": 45.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-14",
+      "last": "2026-11-21",
       "skipped": 0,
       "implied_e1rm": 63.0,
       "best_e1rm": 63.0,
       "verdict": "FRESH — not tried yet",
-      "line": "D3E4 LEG_CURL                                3x12@45           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D3E4 LEG_CURL                                3x12@45           2026-11-28     0    0  FRESH — not tried yet"
      }
     },
     {
@@ -1478,18 +1478,18 @@
       "value": 15,
       "weight": 60.0,
       "kind": "reps",
-      "since": "2026-11-21",
+      "since": "2026-11-28",
       "sessions": 0,
       "met": 0,
       "status": "fresh",
       "abandoned": false,
       "impossible": false,
-      "last": "2026-11-14",
+      "last": "2026-11-21",
       "skipped": 0,
       "implied_e1rm": 84.0,
       "best_e1rm": 84.0,
       "verdict": "FRESH — not tried yet",
-      "line": "D3E5 STANDING_CALF_RAISE                     4x15@60           2026-11-21     0    0  FRESH — not tried yet"
+      "line": "D3E5 STANDING_CALF_RAISE                     4x15@60           2026-11-28     0    0  FRESH — not tried yet"
      }
     }
    ],
@@ -1749,7 +1749,7 @@
    "rotation": {
     "day": "d3",
     "label": "D3 · Legs",
-    "last": "2026-11-14",
+    "last": "2026-11-21",
     "age": 7,
     "starved": false
    },
@@ -1758,27 +1758,27 @@
  ],
  "other_workouts": [],
  "rotation": {
-  "today": "2026-11-21",
+  "today": "2026-11-28",
   "starved_after_days": 7,
   "days": [
    {
     "day": "d1",
     "label": "D1 · Push",
-    "last": "2026-11-16",
+    "last": "2026-11-23",
     "age": 5,
     "starved": false
    },
    {
     "day": "d2",
     "label": "D2 · Pull",
-    "last": "2026-11-19",
+    "last": "2026-11-26",
     "age": 2,
     "starved": false
    },
    {
     "day": "d3",
     "label": "D3 · Legs",
-    "last": "2026-11-14",
+    "last": "2026-11-21",
     "age": 7,
     "starved": false
    }
@@ -1796,7 +1796,7 @@
    "value": 45,
    "weight": null,
    "kind": "time",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
@@ -1807,7 +1807,7 @@
    "implied_e1rm": null,
    "best_e1rm": null,
    "verdict": "FRESH — not tried yet",
-   "line": "C1 PLANK                                     3x45s@BW          2026-11-21     0    0  FRESH — not tried yet"
+   "line": "C1 PLANK                                     3x45s@BW          2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d1",
@@ -1818,7 +1818,7 @@
    "value": 12,
    "weight": null,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
@@ -1829,7 +1829,7 @@
    "implied_e1rm": null,
    "best_e1rm": null,
    "verdict": "FRESH — not tried yet",
-   "line": "C2 DEAD_BUG                                  2x12@BW           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "C2 DEAD_BUG                                  2x12@BW           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d1",
@@ -1840,18 +1840,18 @@
    "value": 8,
    "weight": 80.0,
    "kind": "reps",
-   "since": "2026-10-31",
+   "since": "2026-11-07",
    "sessions": 3,
    "met": 1,
    "status": "ok",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-16",
+   "last": "2026-11-23",
    "skipped": 0,
    "implied_e1rm": 101.3,
    "best_e1rm": 101.3,
    "verdict": "ok",
-   "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-10-31     3    1  ok"
+   "line": "D1E1 BARBELL_BENCH_PRESS                     4x8@80            2026-11-07     3    1  ok"
   },
   {
    "day": "d1",
@@ -1862,18 +1862,18 @@
    "value": 10,
    "weight": 26.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-16",
+   "last": "2026-11-23",
    "skipped": 0,
    "implied_e1rm": 34.7,
    "best_e1rm": 34.7,
    "verdict": "FRESH — not tried yet",
-   "line": "D1E2 INCLINE_DUMBBELL_BENCH_PRESS            3x10@26           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D1E2 INCLINE_DUMBBELL_BENCH_PRESS            3x10@26           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d1",
@@ -1884,18 +1884,18 @@
    "value": 10,
    "weight": 20.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-16",
+   "last": "2026-11-23",
    "skipped": 0,
    "implied_e1rm": 26.7,
    "best_e1rm": 26.7,
    "verdict": "FRESH — not tried yet",
-   "line": "D1E3 SEATED_DUMBBELL_SHOULDER_PRESS          3x10@20           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D1E3 SEATED_DUMBBELL_SHOULDER_PRESS          3x10@20           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d1",
@@ -1906,18 +1906,18 @@
    "value": 15,
    "weight": 10.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-16",
+   "last": "2026-11-23",
    "skipped": 0,
    "implied_e1rm": 14.0,
    "best_e1rm": 14.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D1E4 DUMBBELL_LATERAL_RAISE                  3x15@10           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D1E4 DUMBBELL_LATERAL_RAISE                  3x15@10           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d1",
@@ -1928,18 +1928,18 @@
    "value": 12,
    "weight": 15.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-16",
+   "last": "2026-11-23",
    "skipped": 0,
    "implied_e1rm": 21.0,
    "best_e1rm": 21.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D1E5 CABLE_CROSSOVER                         3x12@15           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D1E5 CABLE_CROSSOVER                         3x12@15           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d1",
@@ -1950,18 +1950,18 @@
    "value": 12,
    "weight": 32.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-16",
+   "last": "2026-11-23",
    "skipped": 0,
    "implied_e1rm": 44.8,
    "best_e1rm": 45.5,
    "verdict": "FRESH — not tried yet",
-   "line": "D1E6 ROPE_PRESSDOWN                          3x12@32           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D1E6 ROPE_PRESSDOWN                          3x12@32           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d2",
@@ -1972,18 +1972,18 @@
    "value": 10,
    "weight": 65.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-19",
+   "last": "2026-11-26",
    "skipped": 0,
    "implied_e1rm": 86.7,
    "best_e1rm": 86.7,
    "verdict": "FRESH — not tried yet",
-   "line": "D2E1 CLOSE_GRIP_LAT_PULLDOWN                 4x10@65           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D2E1 CLOSE_GRIP_LAT_PULLDOWN                 4x10@65           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d2",
@@ -1994,18 +1994,18 @@
    "value": 8,
    "weight": 70.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-19",
+   "last": "2026-11-26",
    "skipped": 0,
    "implied_e1rm": 88.7,
    "best_e1rm": 88.7,
    "verdict": "FRESH — not tried yet",
-   "line": "D2E2 BARBELL_ROW                             4x8@70            2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D2E2 BARBELL_ROW                             4x8@70            2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d2",
@@ -2016,18 +2016,18 @@
    "value": 10,
    "weight": 30.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-19",
+   "last": "2026-11-26",
    "skipped": 0,
    "implied_e1rm": 40.0,
    "best_e1rm": 40.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D2E3 DUMBBELL_ROW                            3x10@30           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D2E3 DUMBBELL_ROW                            3x10@30           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d2",
@@ -2038,18 +2038,18 @@
    "value": 12,
    "weight": 14.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-19",
+   "last": "2026-11-26",
    "skipped": 0,
    "implied_e1rm": 19.6,
    "best_e1rm": 19.6,
    "verdict": "FRESH — not tried yet",
-   "line": "D2E4 DUMBBELL_BICEPS_CURL                    3x12@14           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D2E4 DUMBBELL_BICEPS_CURL                    3x12@14           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d3",
@@ -2060,7 +2060,7 @@
    "value": 10,
    "weight": null,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
@@ -2071,7 +2071,7 @@
    "implied_e1rm": null,
    "best_e1rm": null,
    "verdict": "FRESH — not tried yet",
-   "line": "C3 KNEELING_AB_WHEEL                         3x10@BW           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "C3 KNEELING_AB_WHEEL                         3x10@BW           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d3",
@@ -2082,18 +2082,18 @@
    "value": 8,
    "weight": 100.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-14",
+   "last": "2026-11-21",
    "skipped": 0,
    "implied_e1rm": 126.7,
    "best_e1rm": 126.7,
    "verdict": "FRESH — not tried yet",
-   "line": "D3E1 BARBELL_BACK_SQUAT                      4x8@100           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D3E1 BARBELL_BACK_SQUAT                      4x8@100           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d3",
@@ -2104,18 +2104,18 @@
    "value": 10,
    "weight": 90.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-14",
+   "last": "2026-11-21",
    "skipped": 0,
    "implied_e1rm": 120.0,
    "best_e1rm": 120.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D3E2 ROMANIAN_DEADLIFT                       3x10@90           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D3E2 ROMANIAN_DEADLIFT                       3x10@90           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d3",
@@ -2126,18 +2126,18 @@
    "value": 12,
    "weight": 120.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-14",
+   "last": "2026-11-21",
    "skipped": 0,
    "implied_e1rm": 168.0,
    "best_e1rm": 168.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D3E3 LEG_PRESS                               3x12@120          2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d3",
@@ -2148,18 +2148,18 @@
    "value": 12,
    "weight": 45.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-14",
+   "last": "2026-11-21",
    "skipped": 0,
    "implied_e1rm": 63.0,
    "best_e1rm": 63.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D3E4 LEG_CURL                                3x12@45           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D3E4 LEG_CURL                                3x12@45           2026-11-28     0    0  FRESH — not tried yet"
   },
   {
    "day": "d3",
@@ -2170,18 +2170,18 @@
    "value": 15,
    "weight": 60.0,
    "kind": "reps",
-   "since": "2026-11-21",
+   "since": "2026-11-28",
    "sessions": 0,
    "met": 0,
    "status": "fresh",
    "abandoned": false,
    "impossible": false,
-   "last": "2026-11-14",
+   "last": "2026-11-21",
    "skipped": 0,
    "implied_e1rm": 84.0,
    "best_e1rm": 84.0,
    "verdict": "FRESH — not tried yet",
-   "line": "D3E5 STANDING_CALF_RAISE                     4x15@60           2026-11-21     0    0  FRESH — not tried yet"
+   "line": "D3E5 STANDING_CALF_RAISE                     4x15@60           2026-11-28     0    0  FRESH — not tried yet"
   }
  ],
  "changes": [
@@ -2189,7 +2189,7 @@
    "prescription": "d1/D1E1",
    "category": "BENCH_PRESS",
    "name": "BARBELL_BENCH_PRESS",
-   "date": "2026-10-31",
+   "date": "2026-11-07",
    "from": 77.5,
    "to": 80.0,
    "reps": 8
@@ -2197,7 +2197,7 @@
  ],
  "block": {
   "name": "Hypertrophy",
-  "start": "2026-08-17",
+  "start": "2026-08-24",
   "weeks": 16,
   "week": 14,
   "over": false
@@ -2266,7 +2266,7 @@
       "sync": "in_sync"
      }
     ],
-    "date": "2026-11-16",
+    "date": "2026-11-23",
     "today": false
    },
    {
@@ -2290,13 +2290,13 @@
       "sync": "none"
      }
     ],
-    "date": "2026-11-17",
+    "date": "2026-11-24",
     "today": false
    },
    {
     "dow": "wed",
     "sessions": [],
-    "date": "2026-11-18",
+    "date": "2026-11-25",
     "today": false
    },
    {
@@ -2320,7 +2320,7 @@
       "sync": "in_sync"
      }
     ],
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "today": false
    },
    {
@@ -2344,7 +2344,7 @@
       "sync": "none"
      }
     ],
-    "date": "2026-11-20",
+    "date": "2026-11-27",
     "today": false
    },
    {
@@ -2385,7 +2385,7 @@
       "sync": "external"
      }
     ],
-    "date": "2026-11-21",
+    "date": "2026-11-28",
     "today": true
    },
    {
@@ -2409,7 +2409,7 @@
       "sync": "none"
      }
     ],
-    "date": "2026-11-22",
+    "date": "2026-11-29",
     "today": false
    }
   ]
@@ -2491,27 +2491,27 @@
   }
  ],
  "cardio": {
-  "start": "2026-11-09",
+  "start": "2026-11-16",
   "weeks": [
    {
     "n": 1,
-    "start": "2026-11-09",
-    "end": "2026-11-15"
-   },
-   {
-    "n": 2,
     "start": "2026-11-16",
     "end": "2026-11-22"
    },
    {
-    "n": 3,
+    "n": 2,
     "start": "2026-11-23",
     "end": "2026-11-29"
    },
    {
-    "n": 4,
+    "n": 3,
     "start": "2026-11-30",
     "end": "2026-12-06"
+   },
+   {
+    "n": 4,
+    "start": "2026-12-07",
+    "end": "2026-12-13"
    }
   ],
   "current": 1,
@@ -2606,10 +2606,10 @@
     "kind": "endurance"
    },
    "unit": "/100 m",
-   "due": "2026-11-27",
-   "next": "2026-11-27",
+   "due": "2026-12-04",
+   "next": "2026-12-04",
    "retest_days": 42,
-   "retest": "2027-01-08",
+   "retest": "2027-01-15",
    "last": null,
    "overdue": false,
    "results": []
@@ -2625,18 +2625,18 @@
     "kind": "endurance"
    },
    "unit": "min",
-   "due": "2026-12-06",
-   "next": "2026-12-06",
+   "due": "2026-12-13",
+   "next": "2026-12-13",
    "retest_days": 42,
-   "retest": "2027-01-17",
+   "retest": "2027-01-24",
    "last": {
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "value": "24:10"
    },
    "overdue": false,
    "results": [
     {
-     "date": "2026-10-12",
+     "date": "2026-10-19",
      "value": "24:10"
     }
    ]
@@ -2745,7 +2745,7 @@
  "versions": [
   {
    "id": "v2",
-   "date": "2026-11-01",
+   "date": "2026-11-08",
    "title": "Core block on two days",
    "rationale": "A short anti-movement block opens D1 and D3.",
    "changes": [
@@ -2764,7 +2764,7 @@
   },
   {
    "id": "v1",
-   "date": "2026-08-17",
+   "date": "2026-08-24",
    "title": "Hypertrophy split",
    "rationale": "Three days, push · pull · legs.",
    "changes": [
@@ -2779,7 +2779,7 @@
      "prescription": "d1/D1E1",
      "category": "BENCH_PRESS",
      "name": "BARBELL_BENCH_PRESS",
-     "date": "2026-10-31",
+     "date": "2026-11-07",
      "from": 77.5,
      "to": 80.0,
      "reps": 8
@@ -2818,7 +2818,7 @@
    "icon": "race",
    "priority": "A",
    "entry": "entered",
-   "date": "2027-02-28",
+   "date": "2027-03-07",
    "dow": "Sun",
    "start": "07:00",
    "days_to": 99,
@@ -2833,8 +2833,8 @@
   "blocks": [
    {
     "name": "Hypertrophy",
-    "start": "2026-08-17",
-    "end": "2026-12-06",
+    "start": "2026-08-24",
+    "end": "2026-12-13",
     "weeks": 16,
     "emphasis": "Upper-body size on an endurance base",
     "current": true,
@@ -2852,8 +2852,8 @@
    },
    {
     "name": "Endurance base",
-    "start": "2026-12-07",
-    "end": "2027-01-17",
+    "start": "2026-12-14",
+    "end": "2027-01-24",
     "weeks": 6,
     "emphasis": "Aerobic volume; the gravel race in week 2",
     "current": false,
@@ -2867,8 +2867,8 @@
    },
    {
     "name": "Race build",
-    "start": "2027-01-18",
-    "end": "2027-02-28",
+    "start": "2027-01-25",
+    "end": "2027-03-07",
     "weeks": 6,
     "emphasis": "Bricks, open water, then the taper",
     "current": false,
@@ -2884,8 +2884,8 @@
   "planned": true,
   "current": {
    "name": "Hypertrophy",
-   "start": "2026-08-17",
-   "end": "2026-12-06",
+   "start": "2026-08-24",
+   "end": "2026-12-13",
    "weeks": 16,
    "emphasis": "Upper-body size on an endurance base",
    "current": true,
@@ -2913,8 +2913,8 @@
     "date": "2026-10-11",
     "dow": "Sun",
     "start": "09:00",
-    "days_to": -41,
-    "weeks_to": -5.9,
+    "days_to": -48,
+    "weeks_to": -6.9,
     "past": true,
     "countdown": false,
     "target": {
@@ -2930,11 +2930,11 @@
     "icon": "race",
     "priority": "B",
     "entry": "done",
-    "date": "2026-10-25",
+    "date": "2026-11-08",
     "dow": "Sun",
     "start": "07:30",
-    "days_to": -27,
-    "weeks_to": -3.9,
+    "days_to": -20,
+    "weeks_to": -2.9,
     "past": true,
     "countdown": false,
     "target": {
@@ -2950,7 +2950,7 @@
     "icon": "bike",
     "priority": "B",
     "entry": "entered",
-    "date": "2026-12-20",
+    "date": "2026-12-27",
     "dow": "Sun",
     "start": "08:00",
     "days_to": 29,
@@ -2970,7 +2970,7 @@
     "icon": "race",
     "priority": "A",
     "entry": "entered",
-    "date": "2027-02-28",
+    "date": "2027-03-07",
     "dow": "Sun",
     "start": "07:00",
     "days_to": 99,
@@ -2991,7 +2991,7 @@
    "icon": "bike",
    "priority": "B",
    "entry": "entered",
-   "date": "2026-12-20",
+   "date": "2026-12-27",
    "dow": "Sun",
    "start": "08:00",
    "days_to": 29,

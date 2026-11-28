@@ -52,7 +52,7 @@ export function cookieToken(headers: IncomingHttpHeaders): string | undefined {
 /** The views the page may ask for, and the shape of each one's argument. Nothing else reaches Python. */
 export const VIEWS: Record<string, RegExp | null> = {
   today: null, recovery: null, load: null, strength: null, sessions: null, program: null,
-  calendar: null, body: null, journal: null, memory: null, system: null, races: null, fuel: null,
+  calendar: null, body: null, journal: null, memory: null, system: null, races: null, fuel: null, trips: null,
   workout: /^\d{1,20}$/,
   exercise: /^[A-Z0-9_]{1,64}\/[A-Z0-9_]{1,96}$/,
   'journal-entry': /^[\w.-]{1,96}\.md$/,
@@ -68,7 +68,7 @@ export function checkView(name: string, arg: string | null): string | null {
 
 // The request vocabulary lives in requests.ts (no Node imports), so the page's tests check every
 // request they send against the server's own rules.
-export { REQUEST_KINDS, REQUEST_PARAMS, checkFuelLog, checkFuelSetup, checkRequest } from './requests.ts';
+export { REQUEST_KINDS, REQUEST_PARAMS, checkFuelLog, checkFuelSetup, checkRequest, checkTrip } from './requests.ts';
 
 export type RequestState = 'QUEUED' | 'WORKING' | 'DONE' | 'FAILED';
 

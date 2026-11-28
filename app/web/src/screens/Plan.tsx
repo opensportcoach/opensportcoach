@@ -7,6 +7,8 @@ import { day, dow, dshort, isoDate, monthName, tip, todayIso } from '../lib/fmt'
 import { ErrorBox, IC, Icon, PageTitle, Skeleton } from '../components/ui';
 import { SportIcon, SportTag } from '../components/SportIcon';
 import { RaceTile, WinLegend, WinSwatch } from '../components/Races';
+import { TripClashes, TripDayTag } from '../components/Trips';
+import type { TripDayRow } from '../lib/trips';
 import { WIN, shortDay, type RaceCard } from '../lib/races';
 import { calendarEntries, plannedKey, type Entry, type EntryKind } from '../lib/calendar';
 import { ZwiftWorkoutLine } from '../components/ZwiftWorkout';
@@ -66,7 +68,7 @@ export default function Plan() {
   const thisMonday = mondayOf(today);
   // How far the calendar can go: the view holds six weeks of sessions and the scheduled month.
   // …and every day a race shapes, so a race months ahead is one click away.
-  const dates = [...c.done, ...c.scheduled, ...(c.planned ?? []), ...(c.race_days ?? [])].map((x: any) => x.date as string).filter(Boolean).sort();
+  const dates = [...c.done, ...c.scheduled, ...(c.planned ?? []), ...(c.race_days ?? []), ...(c.trip_days ?? [])].map((x: any) => x.date as string).filter(Boolean).sort();
   const first = dates[0] ?? today;
   const last = dates[dates.length - 1] ?? today;
   const range = mode === 'week'
@@ -81,6 +83,8 @@ export default function Plan() {
   // The days a race shapes (calendar.race_days, from scripts/races.py): one row per day per race.
   const raceDay: Record<string, any> = Object.fromEntries((c.race_days ?? []).map((x: any) => [x.date, x]));
   const raceCard = (id: string) => rv.data?.races.find((r) => r.id === id);
+  // The days away (calendar.trip_days, from scripts/trips.py): a day is in one trip at most.
+  const tripDay: Record<string, TripDayRow> = Object.fromEntries((c.trip_days ?? []).map((x: TripDayRow) => [x.date, x]));
   // A benchmark due inside a race's window: the tests forbid it, so this shows only while a move is pending.
   const clashes = (p.benchmarks ?? []).filter((b: any) => raceDay[b.next]);
   const pick = (e: Entry, date: string) => { picked.current = true; setSel({ id: idOf(e), date }); };
@@ -160,8 +164,11 @@ export default function Plan() {
         ))}
         <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ width: 12, height: 12, borderRadius: 3, border: '1px dashed var(--ln2)' }} />Rest</span>
         <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ width: 12, height: 12, borderRadius: 3, border: '2px solid var(--tx)', boxSizing: 'border-box' }} />Open below</span>
+        {(c.trip_days ?? []).length > 0 && <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ width: 12, height: 12, borderRadius: 3, border: '1px dashed var(--c)', background: 'var(--ct)' }} />Away</span>}
         {(c.race_days ?? []).length > 0 && <WinLegend windows={['easy', 'taper', 'recovery', 'race']} defs={rv.data ? (rv.data as any).defs : undefined} />}
       </div>
+      {/* Sessions planned where a trip can't hold them (scripts/trips.py → clashes): one request replans around it. */}
+      <TripClashes clashes={c.trip_clashes ?? []} defs={c.defs} offline={offline} send={send} />
       {clashes.map((b: any) => {
         const rd = raceDay[b.next];
         return (
@@ -184,6 +191,7 @@ export default function Plan() {
                     <span className="n" style={{ fontSize: 18, color: d === today ? 'var(--tx)' : 'var(--tx3)' }}>{Number(d.slice(8))}</span>
                   </div>
                   {raceDay[d] && <RaceDayTag rd={raceDay[d]} card={raceCard(raceDay[d].race.id)} />}
+                  {tripDay[d] && <TripDayTag td={tripDay[d]} defs={c.defs} />}
                   {!es.length && !raceDay[d] && <div style={{ minHeight: 112, borderRadius: 12, border: '1px dashed var(--ln2)', display: 'grid', placeItems: 'center', fontSize: 13, color: 'var(--tx3)' }}>{d < today ? 'Rested' : 'Rest'}</div>}
                   {es.map((e: any, i: number) => {
                     const k = KIND_STYLE[e.kind] ?? KIND_STYLE.watch;
@@ -208,7 +216,7 @@ export default function Plan() {
             })}
           </div>
         </section>
-      ) : <Month first={monthFirst} today={today} entries={entries} isOn={isOn} pick={pick} raceDay={raceDay} raceCard={raceCard} />}
+      ) : <Month first={monthFirst} today={today} entries={entries} isOn={isOn} pick={pick} raceDay={raceDay} raceCard={raceCard} tripDay={tripDay} />}
       <div ref={detail} style={{ display: 'flex', flexDirection: 'column', gap: 20, scrollMarginTop: 16 }}>
         {cur ? (
           <SessionPanel key={`${idOf(cur.entry)}@${cur.date}`} picked={cur} look={KIND_STYLE[cur.entry.kind] ?? KIND_STYLE.watch}
@@ -257,9 +265,9 @@ function RaceDayTag({ rd, card }: { rd: any; card?: RaceCard }) {
   );
 }
 
-function Month({ first, today, entries, isOn, pick, raceDay, raceCard }: {
+function Month({ first, today, entries, isOn, pick, raceDay, raceCard, tripDay }: {
   first: string; today: string; entries: (d: string) => Entry[]; isOn: (e: Entry, d: string) => boolean; pick: (e: Entry, d: string) => void;
-  raceDay: Record<string, any>; raceCard: (id: string) => RaceCard | undefined;
+  raceDay: Record<string, any>; raceCard: (id: string) => RaceCard | undefined; tripDay: Record<string, TripDayRow>;
 }) {
   const start = mondayOf(first);
   const lead = (new Date(`${first}T12:00:00`).getDay() + 6) % 7;   // days of the previous month in the first row
@@ -276,10 +284,11 @@ function Month({ first, today, entries, isOn, pick, raceDay, raceCard }: {
         const card = rd?.window === 'race' ? raceCard(rd.race.id) : undefined;
         return (
           <div key={d} className={k?.cls} data-tip={rd ? `${rd.race.name} · ${rd.window === 'race' ? 'race day' : `${WIN[rd.window].word.toLowerCase()} day ${rd.day} of ${rd.of}`}.` : undefined}
-            style={{ minHeight: 76, padding: 6, borderRadius: 10, border: `${rd?.window === 'race' ? 2 : 1}px solid ${d === today ? 'var(--tx)' : rd ? (k ? k.bc : 'var(--tx)') : 'var(--ln)'}`, background: k && !k.cls ? k.bg : k ? undefined : other ? 'transparent' : 'var(--s1)', opacity: other ? 0.45 : 1, display: 'flex', flexDirection: 'column', gap: 3, minWidth: 0 }}>
+            style={{ minHeight: 76, padding: 6, borderRadius: 10, border: `${rd?.window === 'race' ? 2 : 1}px ${tripDay[d] && !rd ? 'dashed' : 'solid'} ${d === today ? 'var(--tx)' : rd ? (k ? k.bc : 'var(--tx)') : tripDay[d] ? 'var(--c)' : 'var(--ln)'}`, background: k && !k.cls ? k.bg : k ? undefined : other ? 'transparent' : 'var(--s1)', opacity: other ? 0.45 : 1, display: 'flex', flexDirection: 'column', gap: 3, minWidth: 0 }}>
             <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span className="n" style={{ fontSize: 13, color: d === today ? 'var(--tx)' : 'var(--tx3)' }}>{Number(d.slice(8))}</span>
               {k && <span className="l" style={{ fontSize: 8, color: k.bc }}>{k.word}</span>}
+              {!k && tripDay[d] && <span className="l" data-tip={`${tripDay[d].trip.where} · day ${tripDay[d].day} of ${tripDay[d].of}.`} style={{ fontSize: 8, color: 'var(--c)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{tripDay[d].trip.where}</span>}
             </span>
             {rd?.window === 'race' && (
               <Link to={`/race/${encodeURIComponent(rd.race.id)}`} style={{ display: 'flex', alignItems: 'center', gap: 5, minWidth: 0 }}>

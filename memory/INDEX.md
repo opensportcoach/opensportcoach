@@ -17,6 +17,7 @@ field that matters**: it names the assertion that makes a fact non-optional. A f
 - [A fuelling product's numbers are read off the maker's page, never recalled](convention/fuel-products-verified.md) — since 2026-11-06
 - [The watch shows the range TOP](convention/range-top-progression.md) — since 2026-07-16
 - [The execution score is the engine's, never the coach's](convention/score-is-the-engines.md) — since 2026-11-07
+- [A maybe on a trip is planned as a no](convention/trip-maybe-is-no.md) — since 2026-11-28
 - [A Zwift workout's prescription is on whatsonzwift.com — optional, Garmin stays the truth](convention/zwift-prescription-lookup.md) — since 2026-07-21 ⚠ unenforced
 - [Every planned Zwift ride names a workout from Zwift's library](convention/zwift-workout-named.md) — since 2026-11-05
 

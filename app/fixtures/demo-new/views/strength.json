@@ -1,41 +1,41 @@
 {
  "view": "strength",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:16",
+ "generated_at": "2026-11-28T14:13:07",
  "key_lifts": {
   "Bench press": [
    {
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "e1rm": 98.2
    },
    {
-    "date": "2026-11-16",
+    "date": "2026-11-23",
     "e1rm": 101.3
    },
    {
-    "date": "2026-11-21",
+    "date": "2026-11-28",
     "e1rm": 101.3
    }
   ],
   "Back squat": [
    {
-    "date": "2026-11-14",
+    "date": "2026-11-21",
     "e1rm": 126.7
    }
   ],
   "Romanian deadlift": [
    {
-    "date": "2026-11-14",
+    "date": "2026-11-21",
     "e1rm": 120.0
    }
   ],
   "Barbell row": [
    {
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "e1rm": 88.7
    },
    {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "e1rm": 88.7
    }
   ]
@@ -44,25 +44,25 @@
   {
    "lift": "Back squat",
    "e1rm": 126.7,
-   "date": "2026-11-14",
+   "date": "2026-11-21",
    "isRecent": true
   },
   {
    "lift": "Romanian deadlift",
    "e1rm": 120.0,
-   "date": "2026-11-14",
+   "date": "2026-11-21",
    "isRecent": true
   },
   {
    "lift": "Bench press",
    "e1rm": 101.3,
-   "date": "2026-11-16",
+   "date": "2026-11-23",
    "isRecent": true
   },
   {
    "lift": "Barbell row",
    "e1rm": 88.7,
-   "date": "2026-11-12",
+   "date": "2026-11-19",
    "isRecent": true
   }
  ],
@@ -130,13 +130,13 @@
  ],
  "weekly": [
   {
-   "week": "2026-W46",
-   "tonnage": 28718,
+   "week": "2026-W47",
+   "tonnage": 28670,
    "sets": 50,
    "deload": false
   },
   {
-   "week": "2026-W47",
+   "week": "2026-W48",
    "tonnage": 22608,
    "sets": 52,
    "deload": false
@@ -152,21 +152,21 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-09",
+     "date": "2026-11-16",
      "score": 98.2,
      "weight": 77.5,
      "reps": 8,
      "annotated": false
     },
     {
-     "date": "2026-11-16",
+     "date": "2026-11-23",
      "score": 101.3,
      "weight": 80.0,
      "reps": 8,
      "annotated": false
     },
     {
-     "date": "2026-11-21",
+     "date": "2026-11-28",
      "score": 101.3,
      "weight": 80.0,
      "reps": 8,
@@ -174,7 +174,7 @@
     }
    ],
    "muscle": "Chest",
-   "last": "2026-11-21"
+   "last": "2026-11-28"
   },
   {
    "category": "BENCH_PRESS",
@@ -185,13 +185,6 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-09",
-     "score": 34.7,
-     "weight": 26.0,
-     "reps": 10,
-     "annotated": false
-    },
-    {
      "date": "2026-11-16",
      "score": 34.7,
      "weight": 26.0,
@@ -199,7 +192,14 @@
      "annotated": false
     },
     {
-     "date": "2026-11-21",
+     "date": "2026-11-23",
+     "score": 34.7,
+     "weight": 26.0,
+     "reps": 10,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-28",
      "score": 34.7,
      "weight": 26.0,
      "reps": 10,
@@ -207,7 +207,7 @@
     }
    ],
    "muscle": "Chest",
-   "last": "2026-11-21"
+   "last": "2026-11-28"
   },
   {
    "category": "SHOULDER_PRESS",
@@ -218,13 +218,6 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-09",
-     "score": 26.7,
-     "weight": 20.0,
-     "reps": 10,
-     "annotated": false
-    },
-    {
      "date": "2026-11-16",
      "score": 26.7,
      "weight": 20.0,
@@ -232,7 +225,14 @@
      "annotated": false
     },
     {
-     "date": "2026-11-21",
+     "date": "2026-11-23",
+     "score": 26.7,
+     "weight": 20.0,
+     "reps": 10,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-28",
      "score": 26.7,
      "weight": 20.0,
      "reps": 10,
@@ -240,7 +240,7 @@
     }
    ],
    "muscle": "Delts",
-   "last": "2026-11-21"
+   "last": "2026-11-28"
   },
   {
    "category": "LATERAL_RAISE",
@@ -251,13 +251,6 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-09",
-     "score": 14.0,
-     "weight": 10.0,
-     "reps": 15,
-     "annotated": false
-    },
-    {
      "date": "2026-11-16",
      "score": 14.0,
      "weight": 10.0,
@@ -265,7 +258,14 @@
      "annotated": false
     },
     {
-     "date": "2026-11-21",
+     "date": "2026-11-23",
+     "score": 14.0,
+     "weight": 10.0,
+     "reps": 15,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-28",
      "score": 14.0,
      "weight": 10.0,
      "reps": 15,
@@ -273,7 +273,7 @@
     }
    ],
    "muscle": "Delts",
-   "last": "2026-11-21"
+   "last": "2026-11-28"
   },
   {
    "category": "FLYE",
@@ -284,13 +284,6 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-09",
-     "score": 21.0,
-     "weight": 15.0,
-     "reps": 12,
-     "annotated": false
-    },
-    {
      "date": "2026-11-16",
      "score": 21.0,
      "weight": 15.0,
@@ -298,7 +291,14 @@
      "annotated": false
     },
     {
-     "date": "2026-11-21",
+     "date": "2026-11-23",
+     "score": 21.0,
+     "weight": 15.0,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-28",
      "score": 21.0,
      "weight": 15.0,
      "reps": 12,
@@ -306,7 +306,7 @@
     }
    ],
    "muscle": "Chest",
-   "last": "2026-11-21"
+   "last": "2026-11-28"
   },
   {
    "category": "TRICEPS_EXTENSION",
@@ -317,13 +317,6 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-09",
-     "score": 45.5,
-     "weight": 32.5,
-     "reps": 12,
-     "annotated": false
-    },
-    {
      "date": "2026-11-16",
      "score": 45.5,
      "weight": 32.5,
@@ -331,7 +324,14 @@
      "annotated": false
     },
     {
-     "date": "2026-11-21",
+     "date": "2026-11-23",
+     "score": 45.5,
+     "weight": 32.5,
+     "reps": 12,
+     "annotated": false
+    },
+    {
+     "date": "2026-11-28",
      "score": 45.5,
      "weight": 32.5,
      "reps": 12,
@@ -339,7 +339,7 @@
     }
    ],
    "muscle": "Triceps",
-   "last": "2026-11-21"
+   "last": "2026-11-28"
   },
   {
    "category": "PULL_UP",
@@ -350,14 +350,14 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-12",
+     "date": "2026-11-19",
      "score": 83.3,
      "weight": 62.5,
      "reps": 10,
      "annotated": false
     },
     {
-     "date": "2026-11-19",
+     "date": "2026-11-26",
      "score": 86.7,
      "weight": 65.0,
      "reps": 10,
@@ -365,7 +365,7 @@
     }
    ],
    "muscle": "Back",
-   "last": "2026-11-19"
+   "last": "2026-11-26"
   },
   {
    "category": "ROW",
@@ -376,14 +376,14 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-12",
+     "date": "2026-11-19",
      "score": 88.7,
      "weight": 70.0,
      "reps": 8,
      "annotated": false
     },
     {
-     "date": "2026-11-19",
+     "date": "2026-11-26",
      "score": 88.7,
      "weight": 70.0,
      "reps": 8,
@@ -391,7 +391,7 @@
     }
    ],
    "muscle": "Back",
-   "last": "2026-11-19"
+   "last": "2026-11-26"
   },
   {
    "category": "ROW",
@@ -402,14 +402,14 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-12",
+     "date": "2026-11-19",
      "score": 40.0,
      "weight": 30.0,
      "reps": 10,
      "annotated": false
     },
     {
-     "date": "2026-11-19",
+     "date": "2026-11-26",
      "score": 40.0,
      "weight": 30.0,
      "reps": 10,
@@ -417,7 +417,7 @@
     }
    ],
    "muscle": "Back",
-   "last": "2026-11-19"
+   "last": "2026-11-26"
   },
   {
    "category": "CURL",
@@ -428,14 +428,14 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-12",
+     "date": "2026-11-19",
      "score": 19.6,
      "weight": 14.0,
      "reps": 12,
      "annotated": false
     },
     {
-     "date": "2026-11-19",
+     "date": "2026-11-26",
      "score": 19.6,
      "weight": 14.0,
      "reps": 12,
@@ -443,7 +443,7 @@
     }
    ],
    "muscle": "Biceps",
-   "last": "2026-11-19"
+   "last": "2026-11-26"
   },
   {
    "category": "SQUAT",
@@ -454,7 +454,7 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-14",
+     "date": "2026-11-21",
      "score": 126.7,
      "weight": 100.0,
      "reps": 8,
@@ -462,7 +462,7 @@
     }
    ],
    "muscle": "Quads",
-   "last": "2026-11-14"
+   "last": "2026-11-21"
   },
   {
    "category": "DEADLIFT",
@@ -473,7 +473,7 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-14",
+     "date": "2026-11-21",
      "score": 120.0,
      "weight": 90.0,
      "reps": 10,
@@ -481,7 +481,7 @@
     }
    ],
    "muscle": "Hams/Glutes",
-   "last": "2026-11-14"
+   "last": "2026-11-21"
   },
   {
    "category": "SQUAT",
@@ -492,7 +492,7 @@
    "score": "disc load",
    "points": [
     {
-     "date": "2026-11-14",
+     "date": "2026-11-21",
      "score": 120.0,
      "weight": 120.0,
      "reps": 12,
@@ -500,7 +500,7 @@
     }
    ],
    "muscle": "Quads",
-   "last": "2026-11-14"
+   "last": "2026-11-21"
   },
   {
    "category": "LEG_CURL",
@@ -511,7 +511,7 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-14",
+     "date": "2026-11-21",
      "score": 63.0,
      "weight": 45.0,
      "reps": 12,
@@ -519,7 +519,7 @@
     }
    ],
    "muscle": "Hams/Glutes",
-   "last": "2026-11-14"
+   "last": "2026-11-21"
   },
   {
    "category": "CALF_RAISE",
@@ -530,7 +530,7 @@
    "score": "e1rm",
    "points": [
     {
-     "date": "2026-11-14",
+     "date": "2026-11-21",
      "score": 84.0,
      "weight": 60.0,
      "reps": 15,
@@ -538,7 +538,7 @@
     }
    ],
    "muscle": "Calves",
-   "last": "2026-11-14"
+   "last": "2026-11-21"
   }
  ],
  "muscles": [
@@ -561,7 +561,7 @@
    "exid": "D1E1",
    "category": "BENCH_PRESS",
    "name": "BARBELL_BENCH_PRESS",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 4,
    "reps_target": 8,
    "weight": 80.0,
@@ -570,14 +570,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E2",
    "category": "BENCH_PRESS",
    "name": "INCLINE_DUMBBELL_BENCH_PRESS",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 10,
    "weight": 26.0,
@@ -586,14 +586,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E3",
    "category": "SHOULDER_PRESS",
    "name": "SEATED_DUMBBELL_SHOULDER_PRESS",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 10,
    "weight": 20.0,
@@ -602,14 +602,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E4",
    "category": "LATERAL_RAISE",
    "name": "DUMBBELL_LATERAL_RAISE",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 15,
    "weight": 10.0,
@@ -618,14 +618,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E5",
    "category": "FLYE",
    "name": "CABLE_CROSSOVER",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 12,
    "weight": 15.0,
@@ -634,14 +634,14 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   },
   {
    "day": "d1",
    "exid": "D1E6",
    "category": "TRICEPS_EXTENSION",
    "name": "ROPE_PRESSDOWN",
-   "date": "2026-11-21",
+   "date": "2026-11-28",
    "sets_done": 3,
    "reps_target": 12,
    "weight": 32.5,
@@ -650,7 +650,7 @@
    "kind": "reps",
    "block": "main",
    "sessions_clean": 1,
-   "earned_on": "2026-11-21"
+   "earned_on": "2026-11-28"
   }
  ],
  "classes": {

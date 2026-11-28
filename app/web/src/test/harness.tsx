@@ -8,7 +8,7 @@ import type { ReactNode } from 'react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { vi } from 'vitest';
 import { StoreCtx, ViewCache, type AppState, type Store } from '../lib/api';
-import { checkFuelLog, checkFuelSetup, checkRequest } from '../../../channel/requests';
+import { checkFuelLog, checkFuelSetup, checkRequest, checkTrip } from '../../../channel/requests';
 
 // jsdom lays nothing out, so it has no scrollIntoView; the screens call it to bring a picked item into view.
 if (!Element.prototype.scrollIntoView) Element.prototype.scrollIntoView = () => undefined;
@@ -64,12 +64,19 @@ export const fuelChecked = () => vi.fn(async (action: 'log' | 'setup', body: unk
   return 'Saved';
 });
 
+/** The store's `trips` refuses what the server's trips action refuses — the same check (requests.ts). */
+export const tripsChecked = () => vi.fn(async (body: unknown) => {
+  const bad = checkTrip(body);
+  if (bad) throw new Error(bad);
+  return 'Saved';
+});
+
 export function store(over: Partial<Store> = {}, state: Partial<AppState> = {}): Store {
   return {
     state: { athlete: 'demo', display: 'Rocky', garmin_account: 'Rocky B.', mode: 'fixtures', coach: 'online', requests: [],
       status: null, refresh: { state: 'idle' }, ...state },
     error: null, dataVersion: 0, refreshing: false, views: new ViewCache(),
-    ask: askChecked(), confirm: vi.fn(async () => ({}) as never), refresh: vi.fn(async () => undefined), fuel: fuelChecked(),
+    ask: askChecked(), confirm: vi.fn(async () => ({}) as never), refresh: vi.fn(async () => undefined), fuel: fuelChecked(), trips: tripsChecked(),
     about: null, setAbout: vi.fn(), askAbout: vi.fn(), askFocus: 0, dockOpen: false, setDockOpen: vi.fn(),
     sendToWatch: null, openSendToWatch: vi.fn(),
     ...over,

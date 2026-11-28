@@ -70,6 +70,10 @@ Load `athletes/<name>/dashboard.json` and decide. **Only run what the answer war
 | the athlete has a **`races.json`** | `races.py on <today>` — today's race window binds the call (step 4); a race 8 weeks out or less gets a countdown line |
 | `races.py check` **lists a race** | look it up online with `osc-race` — in an attended session only |
 | **yesterday was a race** | record its result with `osc-race`; the recovery window has started |
+| the athlete has a **`trips.json`** | `trips.py on <today>` — a trip day binds the call (step 4); `trips.py check` lists what clashes with a trip and the maybes due an answer |
+| `trips.py check` **lists a clash** | a plan.json session moves or changes now (no push); a watch entry is a Send-to-watch (`osc-push`). Ask before moving anything they chose |
+| `trips.py check` **lists a question** ("Is your bike coming?") | ask it, in the app or the chat; record the answer with `trips.py answer <id> <place> yes\|no` |
+| they say they'll **be away** ("I'm in Lisbon 3–6 May, no gym") | record it with `trips.py save --json '<trip>'` (every place yes · maybe · no — ask for any they didn't say), then replan the days it touches (`osc-week`) |
 | **nothing happened** since the last check-in | say so in two lines and stop. Do not manufacture analysis. |
 
 ## 3. Review a new session, if there is one
@@ -93,6 +97,12 @@ next number to beat, and the block review (`osc-week`) reads it.
   keeps short race-pace efforts. On **race day** the call is the race: the start time, the warm-up, the
   fuel, nothing else. A **recovery** day has no intensity and no long ride or run, and the call says when
   it ends. Inside a window, nothing below overrides it.
+- **Then the place** (`trips.py on <today>`; `scripts/trips.py` defines it). On a trip day, only what that
+  place has — **a maybe is a no until they confirm it**. No gym: a bodyweight session (needs nothing, and
+  passes their `tests.py` like any other) or a run, never a gym day. A **travel day** (the first and last)
+  is light: no intensity, no test, nothing long; a home session fits only in the part of the day they are
+  home (`leave` / `back`). With **limited time**, every session is short and optional. The call that names
+  a workout is checked against the trip by the `daily` contract.
 - `rotation_status.py` first — **a split day untrained >7 days outranks next-in-rotation.**
 - Then readiness. **Ask how they feel; their answer outranks the numbers.** Recovery review covers
   every day, rest days included. **In the app, ask on the page, never only in the terminal:**

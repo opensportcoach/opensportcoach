@@ -381,7 +381,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -398,7 +398,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -413,7 +413,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -430,7 +430,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -445,7 +445,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -460,7 +460,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -477,7 +477,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -492,7 +492,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -507,7 +507,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -522,7 +522,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -539,7 +539,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -554,7 +554,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -569,7 +569,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -584,7 +584,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -599,7 +599,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -616,7 +616,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -631,7 +631,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -646,7 +646,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -661,7 +661,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -676,7 +676,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -691,7 +691,7 @@ export interface EnduranceReview {
           claim: string;
           evidence: {
             /**
-             * A path into endurance_metrics.py's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>.
+             * A path into the engine's output for this activity: metrics.<key> (its value), bests.<key>, zones.<hr|power>.<n> (that zone's % of time), thresholds.<ftp|threshold_hr>, intervals.<n>.<field> (a ride or run's lap, every lap once there are two or more: secs, metres, hr, power, cadence, pace in s/km for a run; a swim's rep or a circuit's step: secs, metres, hr, pace_100, swolf).
              */
             metric: string;
             /**
@@ -833,6 +833,10 @@ export interface PlanProposal {
        */
       sport?: "strength" | "run" | "bike" | "zwift" | "swim" | "circuit" | "tennis" | "other" | null;
       /**
+       * What the session needs where it is done (scripts/trips.py ACCESS), when its sport would say otherwise — [] for a bodyweight session on a trip. Absent: its sport's. On a trip day the validator refuses a day that needs what the trip doesn't have.
+       */
+      needs?: ("gym" | "pool" | "bike" | "trainer" | "run" | "courts")[] | null;
+      /**
        * A Zwift day's workout from Zwift's library, as whatsonzwift.com documents it — required on every Zwift day that isn't removed (his rule, 2026-11-05). Read the fields off the page with scripts/zwift_workouts.py <url>; never invent one. Carried into plan.json on accept.
        */
       zwift_workout?: {
@@ -902,6 +906,10 @@ export interface PlanProposal {
        * What it is, for its icon and colour. Absent or null: a session is strength, cardio is other, rest is rest.
        */
       sport?: "strength" | "run" | "bike" | "zwift" | "swim" | "circuit" | "tennis" | "other" | null;
+      /**
+       * What the session needs where it is done (scripts/trips.py ACCESS), when its sport would say otherwise — [] for a bodyweight session on a trip. Absent: its sport's. On a trip day the validator refuses a day that needs what the trip doesn't have.
+       */
+      needs?: ("gym" | "pool" | "bike" | "trainer" | "run" | "courts")[] | null;
       /**
        * A Zwift day's workout from Zwift's library, as whatsonzwift.com documents it — required on every Zwift day that isn't removed (his rule, 2026-11-05). Read the fields off the page with scripts/zwift_workouts.py <url>; never invent one. Carried into plan.json on accept.
        */

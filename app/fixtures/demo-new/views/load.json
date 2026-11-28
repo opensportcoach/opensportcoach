@@ -1,102 +1,88 @@
 {
  "view": "load",
  "athlete": "demo",
- "generated_at": "2026-11-21T15:15:16",
+ "generated_at": "2026-11-28T14:13:07",
  "model": [
   {
-   "date": "2026-11-09",
+   "date": "2026-11-16",
    "fitness": 0.5,
-   "fatigue": 2.7,
-   "form": -2.3
+   "fatigue": 3.3,
+   "form": -2.7
   },
   {
-   "date": "2026-11-10",
+   "date": "2026-11-17",
    "fitness": 2.0,
    "fatigue": 11.5,
    "form": -9.5
   },
   {
-   "date": "2026-11-11",
-   "fitness": 3.7,
-   "fatigue": 20.4,
-   "form": -16.7
-  },
-  {
-   "date": "2026-11-12",
-   "fitness": 4.1,
-   "fatigue": 20.8,
-   "form": -16.6
-  },
-  {
-   "date": "2026-11-13",
-   "fitness": 4.9,
-   "fatigue": 23.2,
-   "form": -18.3
-  },
-  {
-   "date": "2026-11-14",
-   "fitness": 5.4,
-   "fatigue": 23.5,
-   "form": -18.1
-  },
-  {
-   "date": "2026-11-15",
-   "fitness": 7.6,
-   "fatigue": 33.7,
-   "form": -26.1
-  },
-  {
-   "date": "2026-11-16",
-   "fitness": 7.8,
-   "fatigue": 31.3,
-   "form": -23.5
-  },
-  {
-   "date": "2026-11-17",
-   "fitness": 9.2,
-   "fatigue": 36.4,
-   "form": -27.2
-  },
-  {
    "date": "2026-11-18",
-   "fitness": 9.0,
-   "fatigue": 31.2,
-   "form": -22.2
+   "fitness": 3.7,
+   "fatigue": 20.5,
+   "form": -16.8
   },
   {
    "date": "2026-11-19",
-   "fitness": 9.1,
-   "fatigue": 29.0,
-   "form": -19.9
+   "fitness": 4.0,
+   "fatigue": 19.8,
+   "form": -15.8
   },
   {
    "date": "2026-11-20",
-   "fitness": 9.8,
-   "fatigue": 30.3,
-   "form": -20.5
+   "fitness": 4.8,
+   "fatigue": 22.4,
+   "form": -17.6
   },
   {
    "date": "2026-11-21",
-   "fitness": 10.2,
-   "fatigue": 29.8,
-   "form": -19.6
+   "fitness": 5.1,
+   "fatigue": 21.8,
+   "form": -16.7
+  },
+  {
+   "date": "2026-11-22",
+   "fitness": 5.0,
+   "fatigue": 18.7,
+   "form": -13.7
+  },
+  {
+   "date": "2026-11-23",
+   "fitness": 5.3,
+   "fatigue": 18.3,
+   "form": -13.0
+  },
+  {
+   "date": "2026-11-24",
+   "fitness": 6.5,
+   "fatigue": 23.7,
+   "form": -17.2
+  },
+  {
+   "date": "2026-11-25",
+   "fitness": 6.3,
+   "fatigue": 20.3,
+   "form": -14.0
+  },
+  {
+   "date": "2026-11-26",
+   "fitness": 6.6,
+   "fatigue": 20.1,
+   "form": -13.5
+  },
+  {
+   "date": "2026-11-27",
+   "fitness": 7.4,
+   "fatigue": 22.7,
+   "form": -15.3
+  },
+  {
+   "date": "2026-11-28",
+   "fitness": 7.6,
+   "fatigue": 22.1,
+   "form": -14.5
   }
  ],
  "weeks": [
-  {
-   "week": "2026-W36",
-   "monday": "2026-08-31",
-   "cardio": {},
-   "cardio_total": 0,
-   "strength_load": 0,
-   "tonnage": 0,
-   "sets": 0,
-   "sessions": 0,
-   "km": 0.0,
-   "minutes": {},
-   "sports": {},
-   "sport_kind": {}
-  },
   {
    "week": "2026-W37",
    "monday": "2026-09-07",
@@ -226,32 +212,43 @@
   {
    "week": "2026-W46",
    "monday": "2026-11-09",
+   "cardio": {},
+   "cardio_total": 0,
+   "strength_load": 0,
+   "tonnage": 0,
+   "sets": 0,
+   "sessions": 0,
+   "km": 0.0,
+   "minutes": {},
+   "sports": {},
+   "sport_kind": {}
+  },
+  {
+   "week": "2026-W47",
+   "monday": "2026-11-16",
    "cardio": {
-    "bike": 95,
     "swim": 38,
     "circuit": 74,
-    "run": 64
+    "run": 61
    },
-   "cardio_total": 271,
-   "strength_load": 67,
-   "tonnage": 28718,
+   "cardio_total": 173,
+   "strength_load": 57,
+   "tonnage": 28670,
    "sets": 50,
-   "sessions": 7,
-   "km": 52.2,
+   "sessions": 6,
+   "km": 7.5,
    "minutes": {
-    "endurance": 157,
-    "strength": 132,
+    "strength": 130,
+    "endurance": 69,
     "circuit": 47
    },
    "sports": {
-    "Strength": 132,
-    "Road ride": 90,
+    "Strength": 130,
     "Indoor cardio": 47,
     "Pool swim": 36,
-    "Run": 31
+    "Run": 33
    },
    "sport_kind": {
-    "Road ride": "endurance",
     "Strength": "strength",
     "Pool swim": "endurance",
     "Indoor cardio": "circuit",
@@ -259,26 +256,26 @@
    }
   },
   {
-   "week": "2026-W47",
-   "monday": "2026-11-16",
+   "week": "2026-W48",
+   "monday": "2026-11-23",
    "cardio": {
     "swim": 38,
-    "run": 67
+    "run": 56
    },
-   "cardio_total": 105,
-   "strength_load": 60,
+   "cardio_total": 94,
+   "strength_load": 54,
    "tonnage": 22608,
    "sets": 52,
    "sessions": 5,
-   "km": 6.6,
+   "km": 7.2,
    "minutes": {
-    "strength": 131,
-    "endurance": 71
+    "strength": 135,
+    "endurance": 74
    },
    "sports": {
-    "Strength": 131,
+    "Strength": 135,
     "Pool swim": 42,
-    "Run": 29
+    "Run": 32
    },
    "sport_kind": {
     "Strength": "strength",
@@ -291,11 +288,6 @@
  "acwr": {
   "cardio": null,
   "strength": [
-   {
-    "week": "2026-W36",
-    "end": "2026-09-06",
-    "ratio": null
-   },
    {
     "week": "2026-W37",
     "end": "2026-09-13",
@@ -348,7 +340,12 @@
    },
    {
     "week": "2026-W47",
-    "end": "2026-11-21",
+    "end": "2026-11-22",
+    "ratio": null
+   },
+   {
+    "week": "2026-W48",
+    "end": "2026-11-28",
     "ratio": null
    }
   ],
@@ -363,21 +360,21 @@
   "bike": null
  },
  "week": {
-  "label": "Nov 16 – Nov 22",
-  "weekLoad": 165,
+  "label": "Nov 23 – Nov 29",
+  "weekLoad": 148,
   "activeDays": 5,
-  "cardioLoad": 105,
-  "strengthLoad": 60,
+  "cardioLoad": 94,
+  "strengthLoad": 54,
   "days": [
    {
-    "date": "2026-11-16",
+    "date": "2026-11-23",
     "dow": "Mon",
-    "dom": 16,
+    "dom": 23,
     "isToday": false,
     "isFuture": false,
-    "totalLoad": 17,
-    "strain": 1.4,
-    "readiness": 54,
+    "totalLoad": 16,
+    "strain": 1.3,
+    "readiness": 75,
     "items": [
      {
       "group": "strength",
@@ -385,23 +382,23 @@
       "sport": "Strength",
       "icon": "strength",
       "kind": "strength",
-      "id": 21000000007,
+      "id": 21000000006,
       "name": "D1 · Push",
-      "durationMin": 47,
+      "durationMin": 49,
       "distanceKm": null,
-      "load": 17
+      "load": 16
      }
     ]
    },
    {
-    "date": "2026-11-17",
+    "date": "2026-11-24",
     "dow": "Tue",
-    "dom": 17,
+    "dom": 24,
     "isToday": false,
     "isFuture": false,
-    "totalLoad": 67,
-    "strain": 5.6,
-    "readiness": 55,
+    "totalLoad": 56,
+    "strain": 4.7,
+    "readiness": 72,
     "items": [
      {
       "group": "run",
@@ -409,34 +406,34 @@
       "sport": "Run",
       "icon": "run",
       "kind": "endurance",
-      "id": 21000000008,
+      "id": 21000000007,
       "name": "Easy run",
-      "durationMin": 29,
-      "distanceKm": 4.9,
-      "load": 67
+      "durationMin": 32,
+      "distanceKm": 5.5,
+      "load": 56
      }
     ]
    },
    {
-    "date": "2026-11-18",
+    "date": "2026-11-25",
     "dow": "Wed",
-    "dom": 18,
+    "dom": 25,
     "isToday": false,
     "isFuture": false,
     "totalLoad": 0,
     "strain": 0.0,
-    "readiness": 62,
+    "readiness": 89,
     "items": []
    },
    {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "dow": "Thu",
-    "dom": 19,
+    "dom": 26,
     "isToday": false,
     "isFuture": false,
-    "totalLoad": 16,
-    "strain": 1.3,
-    "readiness": 72,
+    "totalLoad": 19,
+    "strain": 1.6,
+    "readiness": 68,
     "items": [
      {
       "group": "strength",
@@ -444,23 +441,23 @@
       "sport": "Strength",
       "icon": "strength",
       "kind": "strength",
-      "id": 21000000009,
+      "id": 21000000008,
       "name": "D2 · Pull",
       "durationMin": 36,
       "distanceKm": null,
-      "load": 16
+      "load": 19
      }
     ]
    },
    {
-    "date": "2026-11-20",
+    "date": "2026-11-27",
     "dow": "Fri",
-    "dom": 20,
+    "dom": 27,
     "isToday": false,
     "isFuture": false,
     "totalLoad": 38,
     "strain": 3.2,
-    "readiness": 67,
+    "readiness": 72,
     "items": [
      {
       "group": "swim",
@@ -468,7 +465,7 @@
       "sport": "Pool swim",
       "icon": "swim",
       "kind": "endurance",
-      "id": 21000000010,
+      "id": 21000000009,
       "name": "Pool swim",
       "durationMin": 42,
       "distanceKm": 1.7,
@@ -477,13 +474,13 @@
     ]
    },
    {
-    "date": "2026-11-21",
+    "date": "2026-11-28",
     "dow": "Sat",
-    "dom": 21,
+    "dom": 28,
     "isToday": true,
     "isFuture": false,
-    "totalLoad": 27,
-    "strain": 2.3,
+    "totalLoad": 19,
+    "strain": 1.6,
     "readiness": null,
     "items": [
      {
@@ -492,18 +489,18 @@
       "sport": "Strength",
       "icon": "strength",
       "kind": "strength",
-      "id": 21000000011,
+      "id": 21000000010,
       "name": "D1 · Push",
-      "durationMin": 48,
+      "durationMin": 50,
       "distanceKm": null,
-      "load": 27
+      "load": 19
      }
     ]
    },
    {
-    "date": "2026-11-22",
+    "date": "2026-11-29",
     "dow": "Sun",
-    "dom": 22,
+    "dom": 29,
     "isToday": false,
     "isFuture": true,
     "totalLoad": 0,
@@ -529,7 +526,7 @@
    }
   },
   "load": {
-   "done": 105,
+   "done": 94,
    "band": [
     150,
     250
