@@ -20,6 +20,8 @@ export function calendarEntries(c: any, today: string): (d: string) => Entry[] {
     // Planned off the watch (plan.json): Zwift runs its own workouts, the long ride needs no steps.
     // Done when that day logged the same kind of sport — the view decides, by the rule above.
     ...(c.planned ?? []).filter((x: any) => x.date === d && !x.done)
-      .map((x: any) => ({ kind: (d < today ? 'missed' : x.workout ? 'upcoming' : 'planned') as EntryKind, title: x.title, badge: x.badge, key: x.workout ?? plannedKey(x), zwift: x.zwift_workout ?? undefined, fuel: x.fuel ?? undefined })),
+      // `on_watch`: it stands for a watch entry the view folded into it (app_data._mirrors: a Zwift ride and its
+      // watch copy are one session), so it reads as on the watch and keeps its Zwift workout and fuel.
+      .map((x: any) => ({ kind: (d < today ? 'missed' : x.on_watch ? 'watch' : x.workout ? 'upcoming' : 'planned') as EntryKind, title: x.title, badge: x.badge, key: x.workout ?? plannedKey(x), zwift: x.zwift_workout ?? undefined, fuel: x.fuel ?? undefined })),
   ];
 }

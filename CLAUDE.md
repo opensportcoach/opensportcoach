@@ -151,8 +151,10 @@ All Garmin interaction goes through the **`garminconnect`** library
   for scheduling — read it through `garmin_client.read_scheduled_workouts`, which derives the month
   window from today and dedupes by schedule id. **Unscheduling needs the SCHEDULE id, not the
   workout id.**
-- Five workout formats are proven: `strength_training`, `swimming` (pool), `running`, `cardio_training`
-  (sportTypeId 6: circuits, HYROX) and `mobility` (11). `workouts/FORMAT.md` documents the payloads.
+- Six workout formats: `strength_training`, `swimming` (pool), `running`, `cardio_training`
+  (sportTypeId 6: circuits, HYROX), `mobility` (11) and `cycling` (2: power or heart-rate ranges, proven
+  2026-11-28). A Zwift ride on the watch is a copy: Zwift
+  records the ride, so starting the copy too counts it twice. `workouts/FORMAT.md` documents the payloads.
   **Never write a payload by hand:** gym days come from `program.py`; everything else is data in the
   athlete's `sessions` modules (athlete.json → sessions), encoded by `scripts/workout_dsl.py`.
 - **The watch shows the END CONDITION as the step headline** and the description only as grey

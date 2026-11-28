@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the athlete's swims, runs, circuits and mobility routines into workout JSON.
+"""Build the athlete's swims, runs, rides, circuits and mobility routines into workout JSON.
 
     .venv/bin/python scripts/build_sessions.py            # every module in athlete.json → sessions
     (scripts/build_workouts.py runs it after the strength days, so one build makes everything)

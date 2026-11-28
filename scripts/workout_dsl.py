@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Structured workouts beyond the gym — pool swims, runs, circuits (HYROX-style) and mobility — written
-as plain data and encoded, once, the way Garmin's watch receives them.
+"""Structured workouts beyond the gym — pool swims, runs, rides, circuits (HYROX-style) and mobility —
+written as plain data and encoded, once, the way Garmin's watch receives them.
 
 An athlete declares their sessions in a module in their own folder, listed in athlete.json → sessions:
 
@@ -31,6 +31,10 @@ real watch before it was written here. Things the watch taught us, kept as rules
   * Text that reaches the watch stays plain ASCII-friendly: an accented letter can come back from
     Garmin in another Unicode form and make a synced workout look changed. `plain` warns on it.
   * Kick and pull are a drillType on a freestyle step, with the board / buoy / fins as equipment.
+  * A ride step carries ONE target, a custom power range in watts or a heart-rate range in bpm: the
+    watch alerts outside it. Never both, and never a zone number (the athlete's zones on Garmin are not
+    the plan's). Distance never ends a ride step: indoors the trainer's distance is Zwift's, and
+    outdoors the plan is time or the lap button.
 """
 from __future__ import annotations
 
@@ -41,7 +45,7 @@ from pathlib import Path
 
 # --- Garmin's workout enums (Connect's WORKOUT enums, which are not the FIT activity enums) ----------
 STEP_IDS = {"warmup": 1, "cooldown": 2, "interval": 3, "recovery": 4, "rest": 5, "repeat": 6, "main": 8}
-SPORTS = {"swimming": 4, "running": 1, "cardio_training": 6, "mobility": 11}
+SPORTS = {"swimming": 4, "running": 1, "cycling": 2, "cardio_training": 6, "mobility": 11}
 COND_IDS = {"lap.button": 1, "time": 2, "distance": 3, "iterations": 7, "fixed.rest": 8}
 STROKES = {"any_stroke": 1, "backstroke": 2, "breaststroke": 3, "drill": 4, "fly": 5, "free": 6, "im": 7,
            "mixed": 8}
@@ -54,6 +58,10 @@ METER = {"unitId": 1, "unitKey": "meter", "factor": 100.0}
 KG = {"unitId": 8, "unitKey": "kilogram", "factor": 1000.0}
 NO_TARGET = {"workoutTargetTypeId": 1, "workoutTargetTypeKey": "no.target", "displayOrder": 1}
 HR_TARGET = {"workoutTargetTypeId": 4, "workoutTargetTypeKey": "heart.rate.zone", "displayOrder": 4}
+# A custom power range: Connect's "power.zone" target with the watts in targetValueOne/Two and no zone.
+POWER_TARGET = {"workoutTargetTypeId": 2, "workoutTargetTypeKey": "power.zone", "displayOrder": 2}
+HR_BPM = (60, 220)
+POWER_W = (1, 2000)
 CATALOG_PATH = Path(__file__).resolve().parent.parent / "workouts" / "EXERCISE_CATALOG.json"
 
 
@@ -110,6 +118,19 @@ class Run:
 
 
 @dataclass(frozen=True)
+class Ride:
+    """One ride step. Ends on `seconds`, else on the lap button. One target at most, an alert on the
+    watch: `watts` (low, high), a custom power range, or `hr` (low, high) bpm. kind: warmup · interval ·
+    recovery · cooldown. `estimate_s`: what a lap-button step is assumed to last, for the estimate."""
+    kind: str
+    seconds: int | None = None
+    watts: tuple[int, int] | None = None
+    hr: tuple[int, int] | None = None
+    note: str | None = None
+    estimate_s: int | None = None
+
+
+@dataclass(frozen=True)
 class Station:
     """One circuit or mobility step: a catalog exercise (category, name), done for `seconds`, `metres`
     or until the lap button, optionally with `kg`. kind: warmup · interval · rest · cooldown. A rest
@@ -138,6 +159,13 @@ class Repeat:
 
 
 # --- the encoder ------------------------------------------------------------------------------------
+def _range_target(s: dict, target: dict, rng: tuple, bounds: tuple, what: str, unit: str) -> None:
+    lo, hi = rng
+    if not bounds[0] <= lo < hi <= bounds[1]:
+        raise ValueError(f"{what} range {rng} is not low < high within {bounds[0]}-{bounds[1]} {unit}")
+    s.update(targetType=target, targetValueOne=float(lo), targetValueTwo=float(hi), zoneNumber=None)
+
+
 class _Encoder:
     def __init__(self, sport: str):
         self.sport, self.order, self.groups = sport, 0, 0
@@ -193,10 +221,18 @@ class _Encoder:
                 raise ValueError("a Run step outside a run workout")
             s = self._end(self._base(item.kind, child, item.note), item.seconds, item.metres)
             if item.hr:
-                lo, hi = item.hr
-                if not 60 <= lo < hi <= 220:
-                    raise ValueError(f"heart-rate range {item.hr} is not low < high within 60-220 bpm")
-                s.update(targetType=HR_TARGET, targetValueOne=float(lo), targetValueTwo=float(hi), zoneNumber=None)
+                _range_target(s, HR_TARGET, item.hr, HR_BPM, "heart-rate", "bpm")
+            return s
+        if isinstance(item, Ride):
+            if self.sport != "cycling":
+                raise ValueError("a Ride step outside a ride workout")
+            if item.watts and item.hr:
+                raise ValueError(f"ride step {item.note!r}: one target, watts or heart rate, not both")
+            s = self._end(self._base(item.kind, child, item.note), item.seconds)
+            if item.watts:
+                _range_target(s, POWER_TARGET, item.watts, POWER_W, "power", "W")
+            elif item.hr:
+                _range_target(s, HR_TARGET, item.hr, HR_BPM, "heart-rate", "bpm")
             return s
         if isinstance(item, Station):
             if self.sport not in ("cardio_training", "mobility"):
@@ -270,19 +306,28 @@ def _estimate(items) -> int:
     for i in items:
         if isinstance(i, Repeat):
             total += i.n * _estimate(i.steps)
-        elif isinstance(i, (Run, Station)):
+        elif isinstance(i, (Run, Ride, Station)):
             if i.seconds is not None:
                 total += i.seconds
             elif isinstance(i, Run) and i.estimate_s is None and i.metres is None:
                 raise ValueError(f"lap-button run step {i.note!r} needs estimate_s (its usual duration)")
+            elif isinstance(i, Ride) and i.estimate_s is None:
+                raise ValueError(f"lap-button ride step {i.note!r} needs estimate_s (its usual duration)")
             else:
-                total += (i.estimate_s if isinstance(i, Run) else 0) or 0
+                total += (i.estimate_s if isinstance(i, (Run, Ride)) else 0) or 0
     return total
 
 
 def run_workout(name: str, desc: str | None, steps: list) -> dict:
     """A structured run. Its estimated duration counts each lap-button step at its estimate_s."""
     return _workout("running", name, desc, steps, estimatedDurationInSecs=_estimate(steps))
+
+
+def ride_workout(name: str, desc: str | None, steps: list) -> dict:
+    """A structured ride, indoors or out: time or lap-button steps, each with at most one target (a
+    power range in watts or a heart-rate range in bpm). Its estimated duration counts each lap-button
+    step at its estimate_s."""
+    return _workout("cycling", name, desc, steps, estimatedDurationInSecs=_estimate(steps))
 
 
 def _check_stations(steps: list, max_note: int | None, every_step_named: bool) -> None:
