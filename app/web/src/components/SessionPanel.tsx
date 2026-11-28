@@ -8,12 +8,14 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useStore, useView, type AppRequest, type Defs } from '../lib/api';
 import { day, dow, dshort, isoDate, kg, mmss, nf, pl, tip, todayIso } from '../lib/fmt';
-import { IC, Icon, Markdown } from './ui';
+import { IC, Icon } from './ui';
+import { Markdown } from './Markdown';
 import { SportTag } from './SportIcon';
 import { WatchSendButton } from './WatchSend';
 import { ZWIFT_RULE_FROM, ZwiftWorkoutCard, ZwiftWorkoutMissing } from './ZwiftWorkout';
 import { FUEL_ICON, FuelPlanCard, cueHref, fuelHref } from './Fuel';
 import { badgeTip, bandOf } from './Score';
+import { WorkoutProfile } from './WorkoutProfile';
 import type { Entry } from '../lib/calendar';
 
 export interface Look { col: string; bg: string; icon: string; word: string; dashed?: boolean }
@@ -63,7 +65,7 @@ export function SessionPanel({ picked, look, index, prev, next, close, prog, cal
       <span aria-hidden="true" className="sp-notch" style={{ left: `calc(${(((index + 0.5) / 7) * 100).toFixed(2)}% - 8px)` }} />
       {done ? <DonePanel id={String(entry.id)} head={head} same={same} />
         : dayView ? <PlannedGym d={dayView} head={head} same={same} prog={prog} />
-          : other ? <PlannedWatch w={other} head={head} same={same} prog={prog} />
+          : other ? <PlannedWatch w={other} head={head} same={same} prog={prog} cal={cal} />
             : <PlannedOff plan={plan} head={head} same={same} />}
     </section>
   );
@@ -385,8 +387,10 @@ function MoveForm({ name, close }: { name: string; close: () => void }) {
 }
 
 /** The watch, step by step, tied to the selected row: the face, the counter, and how the row runs. */
-function WatchRail({ steps, step, setStep, codeOf, changed, sync, defs, name }: {
+function WatchRail({ steps, step, setStep, codeOf, changed, sync, defs, name, face = true }: {
   steps: any[]; step: number; setStep: (n: number) => void; codeOf: Record<string, string>; changed: boolean; sync: any; defs: Defs; name: string;
+  /** The watch face and step counter — a ride or run draws its profile instead (components/WorkoutProfile.tsx). */
+  face?: boolean;
 }) {
   const work = steps.filter((s) => s.kind !== 'repeat');
   const sy = changed ? SYNC.changed : SYNC[sync?.state ?? 'unknown'] ?? SYNC.unknown;
@@ -412,12 +416,13 @@ function WatchRail({ steps, step, setStep, codeOf, changed, sync, defs, name }: 
   const meta = [cur.weight ? `${kg(cur.weight)} kg` : null, rounds(cur) > 1 ? `× ${rounds(cur)}` : 'once'].filter(Boolean).join(' · ');
   return (
     <div className="sp-watch">
-      <div className="sp-watch-g">
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+      {/* Without the face, the heading and the steps are one group: two side by side left a column empty. */}
+      <div className="sp-watch-g" style={face ? undefined : { display: 'contents' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, ...(face ? {} : { flex: '1 1 100%' }) }}>
         <h3 className="l" style={{ color: 'var(--tx)' }}>On the watch</h3>
         <span data-tip={tip(defs, 'watch_sync')} tabIndex={0} style={{ marginLeft: 'auto', display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 12, fontWeight: 700, color: sy[1] }}><Icon d={sy[2]} size={12} sw={2.8} />{sy[0]}</span>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 18, flexWrap: 'wrap' }}>
+      {face && <div style={{ display: 'flex', alignItems: 'center', gap: 18, flexWrap: 'wrap' }}>
         <div aria-label="Watch face" role="img" style={{ flex: 'none', width: 176, height: 176, borderRadius: '50%', background: '#000', border: '8px solid #23272B', boxShadow: '0 0 0 2px #3A3F44, var(--sh)', display: 'grid', placeItems: 'center', textAlign: 'center', boxSizing: 'border-box' }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, maxWidth: 128 }}>
             <span style={{ font: '600 10px/1 Barlow, sans-serif', letterSpacing: '.12em', color: '#8F98A0' }}>{changed ? 'ON THE WATCH NOW' : `STEP ${i + 1}/${work.length}`}</span>
@@ -435,7 +440,7 @@ function WatchRail({ steps, step, setStep, codeOf, changed, sync, defs, name }: 
             <button type="button" className="hv" aria-label="Next watch step" disabled={i >= work.length - 1} onClick={() => setStep(i + 1)} style={stepBtn}><Icon d="M9 6l6 6-6 6" size={14} sw={2.6} /></button>
           </div>
         </div>
-      </div>
+      </div>}
       {changed && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, padding: '12px 14px', borderRadius: 12, border: '1px dashed var(--y)' }}>
           <span style={{ fontSize: 13, lineHeight: 1.45 }}>The steps below are the <b>new version</b> — what the watch runs once you send. Until then it runs the earlier one.</span>
@@ -479,9 +484,9 @@ function WatchRail({ steps, step, setStep, codeOf, changed, sync, defs, name }: 
 const stepBtn = { width: 40, height: 36, borderRadius: 10, border: '1px solid var(--ln2)', background: 'transparent', color: 'var(--tx)', display: 'grid', placeItems: 'center' } as const;
 const endTag = { padding: '1px 6px', borderRadius: 5, border: '1px solid var(--ln)', fontSize: 10, fontWeight: 700, letterSpacing: '.06em', justifySelf: 'start' } as const;
 
-// --- planned: a watch workout that isn't a gym day (a pool swim) ---------------------------------
+// --- planned: a watch workout that isn't a gym day (a pool swim, a run, a ride) -----------------------
 
-function PlannedWatch({ w, head, same, prog }: { w: any; head: Head; same: any; prog: any }) {
+function PlannedWatch({ w, head, same, prog, cal }: { w: any; head: Head; same: any; prog: any; cal: any }) {
   const { state, askAbout } = useStore();
   const offline = state?.coach !== 'online';
   const [step, setStep] = useState(0);
@@ -491,17 +496,29 @@ function PlannedWatch({ w, head, same, prog }: { w: any; head: Head; same: any; 
   const steps: any[] = w.watch ?? [];
   const work = steps.filter((s) => s.kind !== 'repeat');
   const sent = lastSent(state?.requests, w.name);
+  // The plan.json session this watch workout stands for that day (a Zwift ride and its watch copy are one
+  // session, app_data._mirrors): its Zwift workout, its reason and its fuel belong on this panel too.
+  const plan = (cal?.planned ?? []).find((x: any) => x.date === head.date && x.workout === w.key) ?? null;
+  // A ride or a run draws as Zwift draws a workout (his ask, 2026-11-28), in place of the watch face.
+  const profile = w.profile && work.length ? w.profile : null;
+  const est = w.est_s ? Math.round(w.est_s / 60) : null;
   return (
     <>
       <Header h={head} title={w.name} stamp={changed ? 'plan changed · the watch has the earlier version' : sent ? `sent ${sent} · verified` : sync?.id ? `on the watch · Garmin workout ${sync.id}` : undefined} stampTip={tip(prog.defs, 'watch_sync')} actions={<>
         {changed && <WatchSendButton style={{ minHeight: 40 }} />}
         <button type="button" className="btn2 hv" disabled={offline} onClick={() => askAbout(`${w.name}${head.date ? ` · ${day(head.date)}` : ''}`)}><Icon d={IC.chat} size={14} sw={2} />Ask about it</button>
       </>} />
-      <Kpis items={work.length ? [{ l: 'On the watch', v: String(work.length), u: 'steps', sub: SYNC[sync?.state ?? 'unknown']?.[0].toLowerCase(), tip: 'Steps in the generated workout file. Source: the workout file.' }] : []} />
-      <Context why={null} same={same} />
-      <Body railLabel="How the watch runs it" main={
-        <span style={{ fontSize: 14, color: 'var(--tx2)' }}>{w.badge?.sport ?? w.sport?.replace(/_/g, ' ')} workout — the watch runs it step by step; every step is on the right. Cardio load stays its own number, never added to strength sets or kilos.</span>
-      } rail={<WatchRail steps={steps} step={step} setStep={setStep} codeOf={{}} changed={changed} sync={sync} defs={prog.defs ?? {}} name={w.name} />} />
+      <Kpis items={work.length ? [
+        ...(profile && est ? [{ l: 'Estimated time', v: `≈ ${est}`, u: 'min', sub: work.some((s) => !s.secs) ? 'steps that end on Lap at the plan’s estimate' : 'every step timed', tip: 'The workout file’s estimated duration. Source: the workout file.' }] : []),
+        { l: 'On the watch', v: String(work.length), u: 'steps', sub: SYNC[sync?.state ?? 'unknown']?.[0].toLowerCase(), tip: 'Steps in the generated workout file. Source: the workout file.' },
+      ] : []} />
+      <Context why={plan?.why ? { label: 'Why it’s there', stamp: 'coach', text: plan.why } : null} same={same} />
+      <Body railLabel="How the watch runs it" main={<>
+        {profile && <WorkoutProfile steps={steps} est={w.est_s} ctx={profile} sel={work[Math.min(step, work.length - 1)]} pick={(s) => setStep(Math.max(0, work.indexOf(s)))} />}
+        {plan?.zwift_workout && <ZwiftWorkoutCard w={plan.zwift_workout} />}
+        {plan?.fuel && <FuelPlanCard plan={plan.fuel} ctx={`${plan.title} · ${plan.intent}`} cueHref={cueHref(plan)} />}
+        <span style={{ fontSize: 14, color: 'var(--tx2)' }}>{w.badge?.sport ?? w.sport?.replace(/_/g, ' ')} workout — the watch runs it step by step; every step is listed under On the watch.{plan?.platform === 'zwift' ? ' Zwift records the ride: the watch’s copy is for the steps, so don’t start it as well.' : ''} Cardio load stays its own number, never added to strength sets or kilos.</span>
+      </>} rail={<WatchRail steps={steps} step={step} setStep={setStep} codeOf={{}} changed={changed} sync={sync} defs={prog.defs ?? {}} name={w.name} face={!profile} />} />
     </>
   );
 }

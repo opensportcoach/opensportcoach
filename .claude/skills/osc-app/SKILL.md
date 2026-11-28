@@ -66,7 +66,7 @@ Every event: `<channel source="osc-app" request_id="r7" kind="…">text</channel
 | `workflow` daily | `/osc-daily` in app mode (above) | `app_publish(id, "daily", file)` |
 | `workflow` week | `/osc-week` | `plan_proposal` and/or `app_reply` |
 | `workflow` review `<date>` | `/osc-review <date>` | `review` |
-| `workflow` review with `activity_id` ("Analyse this ride/run") | `/osc-review` → the rubric for its sport (`run.md`, `ride.md`, `swim.md`, `circuit.md`) | `endurance_review` (evidence-checked) |
+| `workflow` review with `activity_id` ("Analyse this ride/run") | `/osc-review` → the rubric for its sport (`run.md`, `ride.md`, `swim.md`, `circuit.md`). **`auto` true:** the server queued it by itself — every new ride and run of the last 7 days that no review names is analysed after a data refresh, no click (his call, 2026-11-28). Arriving during the startup daily, it waits: publish the daily first, then answer them in order | `endurance_review` (evidence-checked) |
 | `workflow` audit | `/osc-audit` | `review` (subject `month`) |
 | `workflow` races ("Check dates") | `/osc-race`'s date check: look each race up, **record it in `races.json` first** | `race_check` (validated against `races.json`) |
 | `plan` (`move`, `to` when it's a calendar move) | Propose days and program changes, each with its reason. **No repo edits.** | `plan_proposal` |

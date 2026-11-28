@@ -835,6 +835,7 @@ def v_sessions(A) -> dict:
     import strength_sessions as ss
     fuel_cfg = fuel.load_cfg(A)
     fuel_log = {r["activity_id"]: r for r in fuel.load_log(A)["records"]}
+    reviewed = _reviewed_ids(A)
     out = []
     for a in ed.all_activities():
         grp = _sid_group(a)
@@ -855,6 +856,10 @@ def v_sessions(A) -> dict:
             s = fuel.summary(rec, a)
             row.update(fuel_g=s["g"], fuel_g_h=s["g_h"])
         row["fuel_due"] = fuel.is_due(a, grp, fuel_cfg, rec is not None)
+        # A ride or run the coach has reviewed: the app's server queues an analysis for one that isn't
+        # (app/channel/lib.ts dueAnalyses — every new ride and run is analysed without a click).
+        if grp in ("bike", "run"):
+            row["reviewed"] = a["activityId"] in reviewed
         # The score (docs/DESIGN.md (fuelling and score) §6.3): every row of a sport it has a rule for.
         row["score"] = _score_cell(_score(a))
         out.append(row)
@@ -927,6 +932,7 @@ def v_workout(A, activity_id: str) -> dict:
     if grp in ("bike", "run"):
         import endurance_metrics as em   # docs/DESIGN.md (rides and runs): the same numbers the review cites
         out["endurance"] = em.analyse(aid)
+        out["analysis"] = _analysis_for(A, date, aid)
     import session_review   # a pool swim or a circuit against the workout it followed
     if session_review.kind_of((a.get("activityType") or {}).get("typeKey")):
         out["review"] = session_review.analyse(aid)
@@ -1163,6 +1169,35 @@ def _reviews_for(A, date: str, aid: int, grp: str) -> list:
     return out
 
 
+def _analysis_for(A, date: str, aid: int) -> dict | None:
+    """The coach's analysis of a ride or run (an `endurance_review`), kept on disk so the page shows it after
+    the app's request list has moved on: the copy the review writes beside its markdown
+    (`logs/<date>-<id>-review.json`, osc-review step 6), else the newest result the app published for it."""
+    own = A.logs_dir / f"{date}-{aid}-review.json"
+    candidates = [own] if own.exists() else []
+    results = A.app_dir / "results"
+    if not candidates and results.exists():
+        candidates = sorted(results.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
+    for f in candidates:
+        try:
+            p = json.loads(f.read_text())
+        except (OSError, ValueError):
+            continue
+        if isinstance(p, dict) and p.get("kind") == "endurance_review" and str(p.get("activity_id")) == str(aid):
+            return p
+    return None
+
+
+REVIEW_FILE = re.compile(r"^\d{4}-\d{2}-\d{2}-(\d{8,})-review\.(?:md|json)$")
+
+
+def _reviewed_ids(A) -> set:
+    """The activities a review names in its file name (`<date>-<id>-review.md`, as rides and runs are written)."""
+    if not A.logs_dir.exists():
+        return set()
+    return {int(m.group(1)) for f in A.logs_dir.iterdir() if (m := REVIEW_FILE.match(f.name))}
+
+
 def _best_e1rm_before(day: str) -> dict:
     """(category, name) -> best normalized e1RM in sessions strictly before `day` (for PR marks)."""
     ed = _ed()
@@ -1263,19 +1298,59 @@ def _watch_steps(w: dict) -> list:
                 walk(s.get("workoutSteps") or [], depth + 1)
             else:
                 cond = (s.get("endCondition") or {}).get("conditionTypeKey")
+                v = s.get("endConditionValue")
+                note = (s.get("description") or "").strip() or None
                 out.append({"kind": (s.get("stepType") or {}).get("stepTypeKey"), "headline": headline(s),
-                            "sub": (s.get("description") or "").strip() or None,
+                            "sub": note,
                             "weight": s.get("weightValue"), "depth": depth,
                             # What ends the step: the time runs out on its own, or it waits for Lap
                             # (a reps step too — the watch counts, the athlete presses Lap).
                             "end": STEP_END.get(cond, cond),
-                            "exercise": f"{s['category']}/{s['exerciseName']}" if s.get("exerciseName") else None})
+                            "exercise": f"{s['category']}/{s['exerciseName']}" if s.get("exerciseName") else None,
+                            # The workout profile (Plan, a ride or a run): how long, and the target the
+                            # watch alerts on — the file's own values, nothing derived.
+                            "secs": round(v) if cond in ("time", "fixed.rest") and v else None,
+                            "target": _step_target(s),
+                            "ramp": _step_ramp(note)})
     for seg in w.get("workoutSegments") or []:
         walk(seg.get("workoutSteps") or [])
     return out
 
 
 STEP_END = {"time": "timer", "fixed.rest": "timer", "lap.button": "lap", "reps": "lap", "distance": "distance"}
+# The targets the proven formats carry (workouts/FORMAT.md): a custom power range in watts on rides, a
+# heart-rate range in bpm on runs and rides. Any other target type draws as "no target".
+TARGET_KIND = {"power.zone": "power", "heart.rate.zone": "hr"}
+# A ramp is no Garmin target (the watch cannot follow one), so a ride's warm-up states it in its note,
+# as the athlete reads it on the watch: "Ramp 64 -> 190 W." — the profile draws exactly those watts.
+RAMP_NOTE = re.compile(r"\b(\d{2,4})\s*(?:->|→)\s*(\d{2,4})\s*W\b")
+
+
+def _step_target(s: dict) -> dict | None:
+    kind = TARGET_KIND.get((s.get("targetType") or {}).get("workoutTargetTypeKey"))
+    lo, hi = s.get("targetValueOne"), s.get("targetValueTwo")
+    if not kind or s.get("zoneNumber") is not None or not isinstance(lo, (int, float)) or not isinstance(hi, (int, float)):
+        return None
+    return {"kind": kind, "lo": round(lo), "hi": round(hi)}
+
+
+def _step_ramp(note: str | None) -> list | None:
+    m = RAMP_NOTE.search(note or "")
+    return [int(m.group(1)), int(m.group(2))] if m else None
+
+
+def _hr_zone_lows(group: str) -> list | None:
+    """The heart-rate zone floors Garmin used on the athlete's latest activity of THIS sport group: run and
+    bike zones differ, so a run never borrows a ride's (endurance_metrics.zones). None without one."""
+    import endurance_metrics as em
+    ed = _ed()
+    for a in sorted(ed.all_activities(), key=lambda x: x.get("startTimeLocal") or "", reverse=True):
+        if _sid_group(a) != group:
+            continue
+        zs = em.zones(ed.load(f"activity_{a['activityId']}_hrzones.json"), "bpm")
+        if zs and all(z.get("low") for z in zs):
+            return [{"zone": z["zone"], "low": z["low"]} for z in zs]
+    return None
 
 
 def _tag_rows(steps: list | None, rows: list[tuple[str, int]]) -> None:
@@ -1625,16 +1700,25 @@ def v_program(A) -> dict:
         d["removed"] = [r for r in removed if r.get("day") == key]
         days.append(d)
     others = []
+    zone_lows: dict = {}
     for key in A.managed:
         if key in A.program.PROGRAM:
             continue
         f = A.workouts_dir / f"{key}.json"
         if f.exists():
             w = json.loads(f.read_text())
-            others.append({"key": key, "name": w.get("workoutName"),
-                           "sport": (w.get("sportType") or {}).get("sportTypeKey"),
-                           "badge": sports.badge((w.get("sportType") or {}).get("sportTypeKey")),
-                           "watch": _watch_steps(w)})
+            sport = (w.get("sportType") or {}).get("sportTypeKey")
+            row = {"key": key, "name": w.get("workoutName"), "sport": sport, "badge": sports.badge(sport),
+                   "watch": _watch_steps(w), "est_s": w.get("estimatedDurationInSecs")}
+            # A ride or a run draws as a workout profile (Plan): watts against the FTP the metrics use, and
+            # heart rate against the zones Garmin used on the latest session of the same sport.
+            grp = PROFILE_GROUP.get(sport)
+            if grp:
+                if grp not in zone_lows:
+                    zone_lows[grp] = _hr_zone_lows(grp)
+                ftp = _ftp() if grp == "bike" else None
+                row["profile"] = {"group": grp, "ftp": ftp, "hr_zones": zone_lows[grp]}
+            others.append(row)
     changes = []
     for k, h in pa.load_history().items():
         for ch in h.get("changes") or []:
@@ -1654,6 +1738,15 @@ def v_program(A) -> dict:
             "season": _season(A),
             "defs": defs("audit", "starved", "watch_sync", "est_time", "phase", "next_target",
                          "planned_volume", "e1rm")}
+
+
+PROFILE_GROUP = {"cycling": "bike", "running": "run"}   # the watch formats drawn as a workout profile
+
+
+def _ftp() -> dict | None:
+    """The FTP every ride metric uses (endurance_metrics.thresholds: athlete.json wins over Garmin)."""
+    import endurance_metrics as em
+    return em.thresholds()["ftp"]
 
 
 PLATFORMS = {"zwift": "Zwift"}   # an app that runs the session itself; the tag shows its name and mark

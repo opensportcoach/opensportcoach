@@ -25,7 +25,7 @@ import { join, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ChannelCoach, type Coach, MockCoach } from './coach.ts';
 import { type CoachStatus, Events, type Who, createHandler } from './http.ts';
-import { type AppRequest, RequestBook, newToken } from './lib.ts';
+import { type AppRequest, RequestBook, type SessionRow, dueAnalyses, newToken } from './lib.ts';
 
 const REPO = fileURLToPath(new URL('../..', import.meta.url));
 const PYTHON = join(REPO, '.venv', 'bin', 'python');
@@ -205,7 +205,29 @@ const handler = createHandler({
   outdated,
   staticDir: STATIC,
   onChange: persist,
+  afterRefresh: () => { queueAnalyses().catch((e) => log(`analyses not queued: ${e instanceof Error ? e.message : e}`)); },
 }, events);
+
+/** Every new ride and run is analysed without a click (his call, 2026-11-28; lib.ts dueAnalyses): after new
+ * data, one review request per ride or run of the last days that no review names, sent to the coach in order. */
+let queueing = false;
+async function queueAnalyses(): Promise<void> {
+  const c = coach;
+  if (!c || queueing) return;
+  queueing = true;
+  try {
+    const view = await (MODE === 'fixtures' ? fixtureView : pythonView)('sessions', null) as { sessions?: SessionRow[] };
+    const d = new Date();
+    const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    for (const due of dueAnalyses(view.sessions ?? [], book.all(), today)) {
+      const r = book.add('workflow', due.text, due.params);
+      await c.send(r);
+      emitRequest(r);
+    }
+  } finally {
+    queueing = false;
+  }
+}
 
 function listen(): Promise<void> {
   return new Promise((ok, fail) => {
